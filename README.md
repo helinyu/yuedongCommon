@@ -1,2 +1,2 @@
 # yuedongCommon
-function test 
+before finished the project , we must test some function to ...
