@@ -1,0 +1,32 @@
+PODS:
+  - AMap3DMap (4.6.1):
+    - AMapFoundation (~> 1.3)
+  - AMapFoundation (1.4.0)
+  - AMapLocation (2.3.1):
+    - AMapFoundation (~> 1.3)
+  - AMapSearch (4.5.0):
+    - AMapFoundation (~> 1.2)
+  - DateTools (2.0.0)
+  - Masonry (1.0.2)
+  - TYPagerController (1.0.2)
+
+DEPENDENCIES:
+  - AMap3DMap (~> 4.6.1)
+  - AMapLocation (~> 2.3.0)
+  - AMapSearch (~> 4.5.0)
+  - DateTools (~> 2.0.0)
+  - Masonry (~> 1.0.2)
+  - TYPagerController
+
+SPEC CHECKSUMS:
+  AMap3DMap: eb6656fb441ed7eb310b3c121032e947d4d649e5
+  AMapFoundation: 458974f46a39df8407fd818ab83d2630d494c726
+  AMapLocation: 6016f0e09c127461c9c8e36945f34c0f037ad962
+  AMapSearch: 7a6ebc20a42e34a021b042b047f198082fc2fc30
+  DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  TYPagerController: 0b3e3e589a217ff537d5f78e1e76594beaa4cfc6
+
+PODFILE CHECKSUM: 02a365a3ac21b126f33a693dc63edfcce12680db
+
+COCOAPODS: 1.1.1
