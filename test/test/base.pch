@@ -16,8 +16,10 @@
 #define SCREEN_WIDTH CGRectGetWidth(SCREEN_BOUNDS)
 #define SCREEN_HEIGHT CGRectGetHeight(SCREEN_BOUNDS)
 
-
 #define MeMainText @"我的主页";
+
+//header file (.h)
+#import "Masonry.h"
 
 
 #endif /* base_pch */

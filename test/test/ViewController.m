@@ -36,6 +36,8 @@
 #import "HLYTableCollectionViewController.h"
 #import "HLYShadownViewController.h"
 #import "HLYRedTextTipViewController.h"
+#import "HLYAudioViewController.h"
+#import "HLYBackDropController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -62,6 +64,8 @@
     MainStoryboardViewController *mainStoryVC = [[UIStoryboard storyboardWithName:@"storyboard" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([MainStoryboardViewController class])];
     
     self.dataSource = @[
+                        @[@"背景相册选择",[HLYBackDropController new]],
+                        @[@"audio player ",[HLYAudioViewController new]],
                         @[@"显示红色文案",[HLYRedTextTipViewController new]],
                         @[@"设置阴影",[HLYShadownViewController new]],
                         @[@"tabel collection view ",[HLYTableCollectionViewController new]],

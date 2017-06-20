@@ -49,19 +49,19 @@
     
 }
 
-- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
-}
-
-- (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
-                                            animationControllerForOperation:(UINavigationControllerOperation)operation
-                                                         fromViewController:(UIViewController *)fromVC
-                                                           toViewController:(UIViewController *)toVC  NS_AVAILABLE_IOS(7_0) {
-    if(operation == UINavigationControllerOperationPush) {
-        return [VCNavTransitionAnimator new];
-    }else{
-        return [YDBaseTransitionAnimator new];
-    }
-}
+//- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+//}
+//
+//- (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+//                                            animationControllerForOperation:(UINavigationControllerOperation)operation
+//                                                         fromViewController:(UIViewController *)fromVC
+//                                                           toViewController:(UIViewController *)toVC  NS_AVAILABLE_IOS(7_0) {
+//    if(operation == UINavigationControllerOperationPush) {
+//        return [VCNavTransitionAnimator new];
+//    }else{
+//        return [YDBaseTransitionAnimator new];
+//    }
+//}
 
 
 @end

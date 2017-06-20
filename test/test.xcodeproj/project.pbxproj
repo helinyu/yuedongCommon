@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B79C5E7C731D80DF88CB4722 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */; };
+		DC04101F1EF80E07000B69A3 /* HLYAudioPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC04101E1EF80E07000B69A3 /* HLYAudioPlayerManager.m */; };
+		DC0410221EF80E1E000B69A3 /* HLYAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0410211EF80E1E000B69A3 /* HLYAudioViewController.m */; };
+		DC0410261EF8112F000B69A3 /* HLYAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0410251EF8112F000B69A3 /* HLYAudioView.m */; };
+		DC04102B1EF817CF000B69A3 /* Audio.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC04102A1EF817CF000B69A3 /* Audio.xcassets */; };
+		DC04102D1EF81C98000B69A3 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC04102C1EF81C98000B69A3 /* test.mp3 */; };
 		DC05043E1EBDC45800718AAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC05043D1EBDC45800718AAD /* main.m */; };
 		DC0504411EBDC45900718AAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0504401EBDC45900718AAD /* AppDelegate.m */; };
 		DC0504441EBDC45900718AAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0504431EBDC45900718AAD /* ViewController.m */; };
@@ -22,6 +27,13 @@
 		DC06099F1EE79CF30061713D /* HLYTableCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC06099E1EE79CF30061713D /* HLYTableCollectionViewController.m */; };
 		DC0609A21EE7A1230061713D /* HLYTableCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0609A11EE7A1230061713D /* HLYTableCollectionViewCell.m */; };
 		DC0609A51EE7A3530061713D /* HLYInnerCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0609A41EE7A3530061713D /* HLYInnerCollectionCell.m */; };
+		DC2089481EF8EEF200B32F78 /* HLYBackDropController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2089471EF8EEF200B32F78 /* HLYBackDropController.m */; };
+		DC20894B1EF8F38200B32F78 /* HLYBackDropMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = DC20894A1EF8F38200B32F78 /* HLYBackDropMgr.m */; };
+		DC20894E1EF8FD0D00B32F78 /* HLYBackDropOnlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC20894D1EF8FD0D00B32F78 /* HLYBackDropOnlineViewController.m */; };
+		DC2089531EF9014200B32F78 /* HLYOnlinePictureCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2089521EF9014200B32F78 /* HLYOnlinePictureCCell.m */; };
+		DC2089561EF9019200B32F78 /* HLYBackdropModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2089551EF9019200B32F78 /* HLYBackdropModel.m */; };
+		DC2089591EF903DB00B32F78 /* HLYPicStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2089581EF903DB00B32F78 /* HLYPicStatusView.m */; };
+		DC20895B1EF9072B00B32F78 /* Backdrop.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC20895A1EF9072B00B32F78 /* Backdrop.xcassets */; };
 		DC22AF6F1EDE61A000629439 /* HLYWeightAndFatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DC22AF6E1EDE61A000629439 /* HLYWeightAndFatModel.m */; };
 		DC22AF791EDE762A00629439 /* HLYCaShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC22AF781EDE762A00629439 /* HLYCaShapeLayerViewController.m */; };
 		DC22AF7C1EDE994B00629439 /* HLYChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC22AF7B1EDE994B00629439 /* HLYChartView.m */; };
@@ -74,6 +86,8 @@
 		DCAAFF8A1ED96BF9008DEE65 /* LYThirdFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAAFF891ED96BF9008DEE65 /* LYThirdFromViewController.m */; };
 		DCAAFF8E1ED96E11008DEE65 /* LyFourthAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAAFF8D1ED96E11008DEE65 /* LyFourthAnimationViewController.m */; };
 		DCAAFF941ED9762C008DEE65 /* YDBaseTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAAFF931ED9762C008DEE65 /* YDBaseTransitionAnimator.m */; };
+		DCAB14861EF922670062942F /* Snip20170620_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DCAB14851EF922670062942F /* Snip20170620_2.png */; };
+		DCAB14881EF930BE0062942F /* Snip20170620_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DCAB14871EF930BE0062942F /* Snip20170620_1.png */; };
 		DCAB15491EE93B2000D608A5 /* HLYShadownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAB15481EE93B2000D608A5 /* HLYShadownViewController.m */; };
 		DCABF5FF1EC04DDB005E4E59 /* TestPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCABF5FE1EC04DDB005E4E59 /* TestPageViewController.m */; };
 		DCABF6021EC04EEC005E4E59 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCABF6011EC04EEC005E4E59 /* FirstViewController.m */; };
@@ -117,17 +131,25 @@
 /* Begin PBXFileReference section */
 		89914FF9277B52F087EA3821 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC04101D1EF80E07000B69A3 /* HLYAudioPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAudioPlayerManager.h; sourceTree = "<group>"; };
+		DC04101E1EF80E07000B69A3 /* HLYAudioPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAudioPlayerManager.m; sourceTree = "<group>"; };
+		DC0410201EF80E1E000B69A3 /* HLYAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAudioViewController.h; sourceTree = "<group>"; };
+		DC0410211EF80E1E000B69A3 /* HLYAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAudioViewController.m; sourceTree = "<group>"; };
+		DC0410241EF8112F000B69A3 /* HLYAudioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAudioView.h; sourceTree = "<group>"; };
+		DC0410251EF8112F000B69A3 /* HLYAudioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAudioView.m; sourceTree = "<group>"; };
+		DC04102A1EF817CF000B69A3 /* Audio.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Audio.xcassets; sourceTree = "<group>"; };
+		DC04102C1EF81C98000B69A3 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
 		DC0504391EBDC45800718AAD /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC05043D1EBDC45800718AAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DC05043F1EBDC45800718AAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DC0504401EBDC45900718AAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DC0504421EBDC45900718AAD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DC0504431EBDC45900718AAD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DC05043D1EBDC45800718AAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
+		DC05043F1EBDC45800718AAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		DC0504401EBDC45900718AAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
+		DC0504421EBDC45900718AAD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		DC0504431EBDC45900718AAD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		DC0504461EBDC45900718AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC0504491EBDC45900718AAD /* test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = test.xcdatamodel; sourceTree = "<group>"; };
-		DC05044B1EBDC45900718AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC05044B1EBDC45900718AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		DC05044E1EBDC45900718AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DC0504501EBDC45900718AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC0504501EBDC45900718AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		DC0504551EBDC45900718AAD /* testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC0504591EBDC45900718AAD /* testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testTests.m; sourceTree = "<group>"; };
 		DC05045B1EBDC45900718AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -144,6 +166,19 @@
 		DC0609A11EE7A1230061713D /* HLYTableCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYTableCollectionViewCell.m; sourceTree = "<group>"; };
 		DC0609A31EE7A3530061713D /* HLYInnerCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYInnerCollectionCell.h; sourceTree = "<group>"; };
 		DC0609A41EE7A3530061713D /* HLYInnerCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYInnerCollectionCell.m; sourceTree = "<group>"; };
+		DC2089461EF8EEF200B32F78 /* HLYBackDropController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYBackDropController.h; sourceTree = "<group>"; };
+		DC2089471EF8EEF200B32F78 /* HLYBackDropController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYBackDropController.m; sourceTree = "<group>"; };
+		DC2089491EF8F38200B32F78 /* HLYBackDropMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYBackDropMgr.h; sourceTree = "<group>"; };
+		DC20894A1EF8F38200B32F78 /* HLYBackDropMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYBackDropMgr.m; sourceTree = "<group>"; };
+		DC20894C1EF8FD0D00B32F78 /* HLYBackDropOnlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYBackDropOnlineViewController.h; sourceTree = "<group>"; };
+		DC20894D1EF8FD0D00B32F78 /* HLYBackDropOnlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYBackDropOnlineViewController.m; sourceTree = "<group>"; };
+		DC2089511EF9014200B32F78 /* HLYOnlinePictureCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYOnlinePictureCCell.h; sourceTree = "<group>"; };
+		DC2089521EF9014200B32F78 /* HLYOnlinePictureCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYOnlinePictureCCell.m; sourceTree = "<group>"; };
+		DC2089541EF9019200B32F78 /* HLYBackdropModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYBackdropModel.h; sourceTree = "<group>"; };
+		DC2089551EF9019200B32F78 /* HLYBackdropModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYBackdropModel.m; sourceTree = "<group>"; };
+		DC2089571EF903DB00B32F78 /* HLYPicStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYPicStatusView.h; sourceTree = "<group>"; };
+		DC2089581EF903DB00B32F78 /* HLYPicStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYPicStatusView.m; sourceTree = "<group>"; };
+		DC20895A1EF9072B00B32F78 /* Backdrop.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Backdrop.xcassets; sourceTree = "<group>"; };
 		DC22AF6D1EDE61A000629439 /* HLYWeightAndFatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYWeightAndFatModel.h; sourceTree = "<group>"; };
 		DC22AF6E1EDE61A000629439 /* HLYWeightAndFatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYWeightAndFatModel.m; sourceTree = "<group>"; };
 		DC22AF771EDE762A00629439 /* HLYCaShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYCaShapeLayerViewController.h; sourceTree = "<group>"; };
@@ -159,8 +194,8 @@
 		DC48E7AE1EEF9F7B00DEBC6A /* HLYRedTextTipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYRedTextTipViewController.m; sourceTree = "<group>"; };
 		DC6C0E831EC43CDC006B7581 /* MASExampleUpdateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASExampleUpdateView.h; sourceTree = "<group>"; };
 		DC6C0E841EC43CDC006B7581 /* MASExampleUpdateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASExampleUpdateView.m; sourceTree = "<group>"; };
-		DC6C0E861EC442D0006B7581 /* SecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondView.h; sourceTree = "<group>"; };
-		DC6C0E871EC442D0006B7581 /* SecondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondView.m; sourceTree = "<group>"; };
+		DC6C0E861EC442D0006B7581 /* SecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondView.h; path = ../SecondView.h; sourceTree = "<group>"; };
+		DC6C0E871EC442D0006B7581 /* SecondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondView.m; path = ../SecondView.m; sourceTree = "<group>"; };
 		DC6C0E8A1EC46802006B7581 /* VCPresentTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCPresentTransitionViewController.h; sourceTree = "<group>"; };
 		DC6C0E8B1EC46802006B7581 /* VCPresentTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCPresentTransitionViewController.m; sourceTree = "<group>"; };
 		DC6C0E8D1EC468E1006B7581 /* VCToPresentedTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCToPresentedTransitionViewController.h; sourceTree = "<group>"; };
@@ -195,7 +230,7 @@
 		DC783F131EE698B700CF132C /* HLYRelativeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYRelativeCollectionViewCell.m; sourceTree = "<group>"; };
 		DC7FF26E1ED9138000FC6AE4 /* LYTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTransitionViewController.h; sourceTree = "<group>"; };
 		DC7FF26F1ED9138000FC6AE4 /* LYTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTransitionViewController.m; sourceTree = "<group>"; };
-		DC7FF2711ED9286900FC6AE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DC7FF2711ED9286900FC6AE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		DCAAFF3F1ED92DE4008DEE65 /* LYPresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYPresentViewController.h; sourceTree = "<group>"; };
 		DCAAFF401ED92DE5008DEE65 /* LYPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPresentViewController.m; sourceTree = "<group>"; };
 		DCAAFF431ED92E3B008DEE65 /* UIWindow+VisibleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+VisibleViewController.h"; sourceTree = "<group>"; };
@@ -244,19 +279,21 @@
 		DCAAFF8D1ED96E11008DEE65 /* LyFourthAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyFourthAnimationViewController.m; sourceTree = "<group>"; };
 		DCAAFF921ED9762C008DEE65 /* YDBaseTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBaseTransitionAnimator.h; sourceTree = "<group>"; };
 		DCAAFF931ED9762C008DEE65 /* YDBaseTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBaseTransitionAnimator.m; sourceTree = "<group>"; };
+		DCAB14851EF922670062942F /* Snip20170620_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20170620_2.png; sourceTree = "<group>"; };
+		DCAB14871EF930BE0062942F /* Snip20170620_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20170620_1.png; sourceTree = "<group>"; };
 		DCAB15471EE93B2000D608A5 /* HLYShadownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYShadownViewController.h; sourceTree = "<group>"; };
 		DCAB15481EE93B2000D608A5 /* HLYShadownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYShadownViewController.m; sourceTree = "<group>"; };
-		DCABF5FD1EC04DDB005E4E59 /* TestPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPageViewController.h; sourceTree = "<group>"; };
-		DCABF5FE1EC04DDB005E4E59 /* TestPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPageViewController.m; sourceTree = "<group>"; };
-		DCABF6001EC04EEC005E4E59 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		DCABF6011EC04EEC005E4E59 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		DCABF5FD1EC04DDB005E4E59 /* TestPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestPageViewController.h; path = ../TestPageViewController.h; sourceTree = "<group>"; };
+		DCABF5FE1EC04DDB005E4E59 /* TestPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestPageViewController.m; path = ../TestPageViewController.m; sourceTree = "<group>"; };
+		DCABF6001EC04EEC005E4E59 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = ../FirstViewController.h; sourceTree = "<group>"; };
+		DCABF6011EC04EEC005E4E59 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = ../FirstViewController.m; sourceTree = "<group>"; };
 		DCABF6031EC04EF4005E4E59 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		DCABF6041EC04EF4005E4E59 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		DCAFD42D1ED2993200D25E7C /* MeMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeMainViewController.h; sourceTree = "<group>"; };
 		DCAFD42E1ED2993200D25E7C /* MeMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeMainViewController.m; sourceTree = "<group>"; };
 		DCAFD4311ED29A0700D25E7C /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		DCAFD4321ED29A0700D25E7C /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		DCAFD4341ED29D0600D25E7C /* base.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = base.pch; sourceTree = "<group>"; };
+		DCAFD4341ED29D0600D25E7C /* base.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = base.pch; path = ../base.pch; sourceTree = "<group>"; };
 		DCAFD4371ED29F6E00D25E7C /* TTNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNavigationItem.h; sourceTree = "<group>"; };
 		DCAFD4381ED29F6E00D25E7C /* TTNavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTNavigationItem.m; sourceTree = "<group>"; };
 		DCAFD43C1ED29F9900D25E7C /* TTNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNavigationBar.h; sourceTree = "<group>"; };
@@ -336,6 +373,79 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DC04100F1EF80D2C000B69A3 /* ProjectInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DC6C0E861EC442D0006B7581 /* SecondView.h */,
+				DC6C0E871EC442D0006B7581 /* SecondView.m */,
+				DC05044B1EBDC45900718AAD /* Assets.xcassets */,
+				DC05044D1EBDC45900718AAD /* LaunchScreen.storyboard */,
+				DC0504501EBDC45900718AAD /* Info.plist */,
+				DC0504481EBDC45900718AAD /* test.xcdatamodeld */,
+				DC7FF2711ED9286900FC6AE4 /* Images.xcassets */,
+				DC05043C1EBDC45800718AAD /* Supporting Files */,
+				DC05043D1EBDC45800718AAD /* main.m */,
+				DCAFD4341ED29D0600D25E7C /* base.pch */,
+				DC05043F1EBDC45800718AAD /* AppDelegate.h */,
+				DC0504401EBDC45900718AAD /* AppDelegate.m */,
+				DC0504421EBDC45900718AAD /* ViewController.h */,
+				DC0504431EBDC45900718AAD /* ViewController.m */,
+				DC0504451EBDC45900718AAD /* Main.storyboard */,
+				DCABF5FD1EC04DDB005E4E59 /* TestPageViewController.h */,
+				DCABF5FE1EC04DDB005E4E59 /* TestPageViewController.m */,
+				DCABF6001EC04EEC005E4E59 /* FirstViewController.h */,
+				DCABF6011EC04EEC005E4E59 /* FirstViewController.m */,
+			);
+			path = ProjectInfo;
+			sourceTree = "<group>";
+		};
+		DC0410101EF80D77000B69A3 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				DC0410231EF80ED3000B69A3 /* Views */,
+				DC0410181EF80DD0000B69A3 /* Vc */,
+				DC0410191EF80DE4000B69A3 /* Manager */,
+				DC0410291EF817AD000B69A3 /* Resources */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
+		DC0410181EF80DD0000B69A3 /* Vc */ = {
+			isa = PBXGroup;
+			children = (
+				DC0410201EF80E1E000B69A3 /* HLYAudioViewController.h */,
+				DC0410211EF80E1E000B69A3 /* HLYAudioViewController.m */,
+			);
+			path = Vc;
+			sourceTree = "<group>";
+		};
+		DC0410191EF80DE4000B69A3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				DC04101D1EF80E07000B69A3 /* HLYAudioPlayerManager.h */,
+				DC04101E1EF80E07000B69A3 /* HLYAudioPlayerManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		DC0410231EF80ED3000B69A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC0410241EF8112F000B69A3 /* HLYAudioView.h */,
+				DC0410251EF8112F000B69A3 /* HLYAudioView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC0410291EF817AD000B69A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC04102C1EF81C98000B69A3 /* test.mp3 */,
+				DC04102A1EF817CF000B69A3 /* Audio.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		DC0504301EBDC45800718AAD = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +471,9 @@
 		DC05043B1EBDC45800718AAD /* test */ = {
 			isa = PBXGroup;
 			children = (
+				DC2089451EF8EEDA00B32F78 /* backdrop */,
+				DC0410101EF80D77000B69A3 /* audio */,
+				DC04100F1EF80D2C000B69A3 /* ProjectInfo */,
 				DC48E7AC1EEF9F6300DEBC6A /* red text tip */,
 				DCAB15461EE93B0B00D608A5 /* shadow */,
 				DC06099C1EE79CD10061713D /* tableview+collectionview */,
@@ -387,23 +500,6 @@
 				DC6C0E931EC47651006B7581 /* navigation transition */,
 				DC6C0E891EC467DF006B7581 /* present transition */,
 				DCAFD4421ED2D8F000D25E7C /* circle animation */,
-				DC05043F1EBDC45800718AAD /* AppDelegate.h */,
-				DC0504401EBDC45900718AAD /* AppDelegate.m */,
-				DC0504421EBDC45900718AAD /* ViewController.h */,
-				DC0504431EBDC45900718AAD /* ViewController.m */,
-				DC0504451EBDC45900718AAD /* Main.storyboard */,
-				DCABF5FD1EC04DDB005E4E59 /* TestPageViewController.h */,
-				DCABF5FE1EC04DDB005E4E59 /* TestPageViewController.m */,
-				DCABF6001EC04EEC005E4E59 /* FirstViewController.h */,
-				DCABF6011EC04EEC005E4E59 /* FirstViewController.m */,
-				DC6C0E861EC442D0006B7581 /* SecondView.h */,
-				DC6C0E871EC442D0006B7581 /* SecondView.m */,
-				DC05044B1EBDC45900718AAD /* Assets.xcassets */,
-				DC05044D1EBDC45900718AAD /* LaunchScreen.storyboard */,
-				DC0504501EBDC45900718AAD /* Info.plist */,
-				DC0504481EBDC45900718AAD /* test.xcdatamodeld */,
-				DC7FF2711ED9286900FC6AE4 /* Images.xcassets */,
-				DC05043C1EBDC45800718AAD /* Supporting Files */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -411,10 +507,9 @@
 		DC05043C1EBDC45800718AAD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DC05043D1EBDC45800718AAD /* main.m */,
-				DCAFD4341ED29D0600D25E7C /* base.pch */,
 			);
 			name = "Supporting Files";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		DC0504581EBDC45900718AAD /* testTests */ = {
@@ -457,6 +552,28 @@
 				DC0609A41EE7A3530061713D /* HLYInnerCollectionCell.m */,
 			);
 			name = "tableview+collectionview";
+			sourceTree = "<group>";
+		};
+		DC2089451EF8EEDA00B32F78 /* backdrop */ = {
+			isa = PBXGroup;
+			children = (
+				DC2089461EF8EEF200B32F78 /* HLYBackDropController.h */,
+				DC2089471EF8EEF200B32F78 /* HLYBackDropController.m */,
+				DC20894C1EF8FD0D00B32F78 /* HLYBackDropOnlineViewController.h */,
+				DC20894D1EF8FD0D00B32F78 /* HLYBackDropOnlineViewController.m */,
+				DC2089491EF8F38200B32F78 /* HLYBackDropMgr.h */,
+				DC20894A1EF8F38200B32F78 /* HLYBackDropMgr.m */,
+				DC2089511EF9014200B32F78 /* HLYOnlinePictureCCell.h */,
+				DC2089521EF9014200B32F78 /* HLYOnlinePictureCCell.m */,
+				DC2089541EF9019200B32F78 /* HLYBackdropModel.h */,
+				DC2089551EF9019200B32F78 /* HLYBackdropModel.m */,
+				DC2089571EF903DB00B32F78 /* HLYPicStatusView.h */,
+				DC2089581EF903DB00B32F78 /* HLYPicStatusView.m */,
+				DC20895A1EF9072B00B32F78 /* Backdrop.xcassets */,
+				DCAB14871EF930BE0062942F /* Snip20170620_1.png */,
+				DCAB14851EF922670062942F /* Snip20170620_2.png */,
+			);
+			path = backdrop;
 			sourceTree = "<group>";
 		};
 		DC22AF761EDE761100629439 /* testLayer */ = {
@@ -967,12 +1084,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCAB14861EF922670062942F /* Snip20170620_2.png in Resources */,
 				DC05044F1EBDC45900718AAD /* LaunchScreen.storyboard in Resources */,
 				DC783F0E1EE68E7900CF132C /* Snip20170606_1.png in Resources */,
 				DC7FF2721ED9286900FC6AE4 /* Images.xcassets in Resources */,
 				DC783F051EE6818600CF132C /* HLYCollectionViewCell.xib in Resources */,
+				DCAB14881EF930BE0062942F /* Snip20170620_1.png in Resources */,
+				DC04102B1EF817CF000B69A3 /* Audio.xcassets in Resources */,
 				DC27A62E1ED338B0001CE499 /* storyboard.storyboard in Resources */,
 				DC05044C1EBDC45900718AAD /* Assets.xcassets in Resources */,
+				DC20895B1EF9072B00B32F78 /* Backdrop.xcassets in Resources */,
+				DC04102D1EF81C98000B69A3 /* test.mp3 in Resources */,
 				DC0504471EBDC45900718AAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1059,7 +1181,10 @@
 				DC06099B1EE798C30061713D /* HLyTestCollectionViewCell.m in Sources */,
 				DCCED4431EE00F0400CEA54D /* MAHeaderView.m in Sources */,
 				DCAAFF841ED96B96008DEE65 /* LYThirdAnimationViewController.m in Sources */,
+				DC20894E1EF8FD0D00B32F78 /* HLYBackDropOnlineViewController.m in Sources */,
 				DC0609981EE7985B0061713D /* HLYCollectionViewController.m in Sources */,
+				DC04101F1EF80E07000B69A3 /* HLYAudioPlayerManager.m in Sources */,
+				DC0410261EF8112F000B69A3 /* HLYAudioView.m in Sources */,
 				DC48E7AF1EEF9F7B00DEBC6A /* HLYRedTextTipViewController.m in Sources */,
 				DCAAFF761ED9576C008DEE65 /* UIViewController+WTKAnimationTransitioningSnapshot.m in Sources */,
 				DC6C0EA61EC48EBC006B7581 /* YDAnimationView.m in Sources */,
@@ -1069,6 +1194,7 @@
 				DC30A33C1ED51C2C00830DF3 /* LYBluetoothViewController.m in Sources */,
 				DCAAFF581ED92E3B008DEE65 /* YDPresentationTransitionExpansion.m in Sources */,
 				DCAFD4411ED2B44300D25E7C /* TTNavigationController.m in Sources */,
+				DC2089481EF8EEF200B32F78 /* HLYBackDropController.m in Sources */,
 				DC0504441EBDC45900718AAD /* ViewController.m in Sources */,
 				DC7FF2701ED9138000FC6AE4 /* LYTransitionViewController.m in Sources */,
 				DCAAFF871ED96BCC008DEE65 /* LYThirdToViewController.m in Sources */,
@@ -1099,6 +1225,7 @@
 				DC05044A1EBDC45900718AAD /* test.xcdatamodeld in Sources */,
 				DCAAFF5A1ED92E3B008DEE65 /* YDViewControllerAnimatedTransition.m in Sources */,
 				DCAAFF7D1ED95B30008DEE65 /* WTKNavigationController.m in Sources */,
+				DC2089531EF9014200B32F78 /* HLYOnlinePictureCCell.m in Sources */,
 				DCAFD4331ED29A0700D25E7C /* BaseViewController.m in Sources */,
 				DCAAFF551ED92E3B008DEE65 /* YDDismissalTransitionExpansion.m in Sources */,
 				DCABF6051EC04EF4005E4E59 /* SecondViewController.m in Sources */,
@@ -1111,6 +1238,7 @@
 				DC0609A21EE7A1230061713D /* HLYTableCollectionViewCell.m in Sources */,
 				DC6C0E881EC442D0006B7581 /* SecondView.m in Sources */,
 				DC6C0E961EC4766E006B7581 /* VCNavPushingViewController.m in Sources */,
+				DC20894B1EF8F38200B32F78 /* HLYBackDropMgr.m in Sources */,
 				DCD8177C1EE15F8D003A8564 /* HLYTableViewViewController.m in Sources */,
 				DC22AF791EDE762A00629439 /* HLYCaShapeLayerViewController.m in Sources */,
 				DCAAFF701ED956FA008DEE65 /* WTKBaseAnimation.m in Sources */,
@@ -1118,10 +1246,13 @@
 				DCAAFF541ED92E3B008DEE65 /* YDDismissalTransitionDownSpring.m in Sources */,
 				DCABF5FF1EC04DDB005E4E59 /* TestPageViewController.m in Sources */,
 				DC22AF7C1EDE994B00629439 /* HLYChartView.m in Sources */,
+				DC2089591EF903DB00B32F78 /* HLYPicStatusView.m in Sources */,
 				DC0504411EBDC45900718AAD /* AppDelegate.m in Sources */,
 				DCAAFF7A1ED959DB008DEE65 /* LYNewViewController.m in Sources */,
 				DC05043E1EBDC45800718AAD /* main.m in Sources */,
+				DC2089561EF9019200B32F78 /* HLYBackdropModel.m in Sources */,
 				DCAB15491EE93B2000D608A5 /* HLYShadownViewController.m in Sources */,
+				DC0410221EF80E1E000B69A3 /* HLYAudioViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1163,6 +1294,7 @@
 				DC0504461EBDC45900718AAD /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		DC05044D1EBDC45900718AAD /* LaunchScreen.storyboard */ = {
@@ -1171,6 +1303,7 @@
 				DC05044E1EBDC45900718AAD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1410,7 +1543,8 @@
 				DC0504491EBDC45900718AAD /* test.xcdatamodel */,
 			);
 			currentVersion = DC0504491EBDC45900718AAD /* test.xcdatamodel */;
-			path = test.xcdatamodeld;
+			name = test.xcdatamodeld;
+			path = ../test.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
