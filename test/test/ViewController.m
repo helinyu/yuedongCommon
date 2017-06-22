@@ -38,6 +38,7 @@
 #import "HLYRedTextTipViewController.h"
 #import "HLYAudioViewController.h"
 #import "HLYBackDropController.h"
+#import "YDJsonViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -64,6 +65,7 @@
     MainStoryboardViewController *mainStoryVC = [[UIStoryboard storyboardWithName:@"storyboard" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([MainStoryboardViewController class])];
     
     self.dataSource = @[
+                        @[@"数据解析 string 上的方法的处理",[YDJsonViewController new]],
                         @[@"背景相册选择",[HLYBackDropController new]],
                         @[@"audio player ",[HLYAudioViewController new]],
                         @[@"显示红色文案",[HLYRedTextTipViewController new]],
