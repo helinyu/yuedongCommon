@@ -42,7 +42,6 @@ static NSString *const cellIdentifier = @"weight.and.fat.cell.id";
     return 1;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     HLYWeightAndFatModel *model = [HLYWeightAndFatModel new];
     HLYWeightAndFatCell *cell = [HLYWeightAndFatCell reusableCellForTableView:tableView cellId:cellIdentifier model:model indexPath:indexPath action:^{

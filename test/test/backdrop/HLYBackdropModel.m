@@ -20,7 +20,6 @@
 
 @property (nonatomic, copy, readwrite) NSString *picUrl;
 @property (nonatomic, assign, readwrite) HLYPicStatusType type;
-@property (nonatomic, assign, readwrite) CGFloat progress;
 @property (nonatomic, copy, readwrite) NSString *statusImageUrl;
 
 @end

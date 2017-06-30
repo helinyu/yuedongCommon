@@ -12,7 +12,9 @@
 @interface HLYPicStatusView ()
 
 @property (nonatomic, strong) UIImageView *statusImageView;
-@property (nonatomic, strong) UIView *progressView;
+//@property (nonatomic, strong) UIView *progressView;
+
+@property (nonatomic, strong)  CAShapeLayer *progressLayer;
 
 @end
 
@@ -29,25 +31,63 @@
 
 - (void)comInit:(CGRect)frame {
     
-    self.backgroundColor = [UIColor colorWithRed:151.f/255.f green:151.f/255.f blue:151.f/255.f alpha:0.9f];
+    self.backgroundColor = [UIColor grayColor];
     
-    _progressView = [[UIView alloc] initWithFrame:self.bounds];
-    [self addSubview:_progressView];
-    _progressView.backgroundColor = [UIColor colorWithRed:17.f/255.f green:211.f/255.f blue:154.f/255.f alpha:1.f];
-    
-    _statusImageView = [UIImageView new];
-    CGFloat width = CGRectGetWidth(frame);
-    CGFloat height = CGRectGetHeight(frame);
-    _statusImageView.frame = CGRectMake((width-height)/2.f, 0, height, height);
-    
-    [self addSubview:_statusImageView];
-    
+    _progressLayer = [CAShapeLayer new];
+    [self.layer addSublayer:_progressLayer];
+    self.layer.masksToBounds = YES;
+     _progressLayer.lineWidth = 10.f;
+    _progressLayer.strokeColor = [UIColor blueColor].CGColor;
+    _progressLayer.lineCap = kCALineCapSquare;
+//    [UIColor colorWithRed:151.f/255.f green:151.f/255.f blue:151.f/255.f alpha:0.9f];
+//    _statusImageView = [UIImageView new];
+//    CGFloat width = CGRectGetWidth(frame);
+//    CGFloat height = CGRectGetHeight(frame);
+//    _statusImageView.frame = CGRectMake((width-height)/2.f, 0, height, height);
+//    [self addSubview:_statusImageView];
 }
 
 - (void)configureStatusWithItem:(HLYBackdropOnlineModel *)item {
-    _statusImageView.image = [UIImage imageNamed:item.statusImageUrl];
-    _progressView.frame = CGRectMake(0, 0, CGRectGetWidth(self.bounds)*item.progress, CGRectGetHeight(self.bounds));
+    [_progressLayer removeAllAnimations];
+
     
+    switch (item.type) {
+        case HLYPicStatusTypeLoadNeed:
+        {
+            _progressLayer.hidden = YES;
+        }
+            break;
+        case HLYPicStatusTypeLoading:
+        {
+            _progressLayer.hidden = NO;
+            UIBezierPath *linePath = [UIBezierPath bezierPath];
+            [linePath moveToPoint:CGPointMake(item.progress,CGRectGetHeight(self.bounds)/2)];
+            [linePath addLineToPoint:CGPointMake(CGRectGetWidth(self.bounds)*0.9,CGRectGetHeight(self.bounds)/2)];
+            CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+            pathAnimation.duration = 10;
+            pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+            pathAnimation.fromValue = @0;
+            pathAnimation.toValue = @1;
+            pathAnimation.autoreverses = NO;
+            pathAnimation.repeatCount = 1;
+            [_progressLayer addAnimation:pathAnimation forKey:@"strokeEndAnimation"];
+            _progressLayer.path = linePath.CGPath;
+        }
+            break;
+        case HLYPicStatusTypeLoaded:
+        {
+            _progressLayer.hidden = YES;
+        }
+            break;
+        case HLYPicStatusTypeChoice:
+        {
+            _progressLayer.hidden = NO;
+            _progressLayer.frame = self.bounds;
+        }
+            break;
+        default:
+            break;
+    }
 }
 
 @end

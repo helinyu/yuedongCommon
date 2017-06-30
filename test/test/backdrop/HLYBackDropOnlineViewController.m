@@ -48,8 +48,14 @@ static const NSInteger numberOfALine = 3.f;
     [_collectionView registerClass:[HLYOnlinePictureCCell class] forCellWithReuseIdentifier:onlineSourceCellIdentifier];
     _collectionView.dataSource = self;
     _collectionView.delegate = self;
+
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"刷新" style:UIBarButtonItemStylePlain target:self action:@selector(onReload)];
     
     [self createViewConstraints];
+}
+
+- (void)onReload {
+    [self.collectionView reloadData];
 }
 
 /**
@@ -73,7 +79,6 @@ static const NSInteger numberOfALine = 3.f;
  */
 - (void)msDataInit {
     [super msDataInit];
-    
     [[HLYBackDropMgr shareInstance] initOnlinPictureSoruces];
 }
 
@@ -114,6 +119,10 @@ static const NSInteger numberOfALine = 3.f;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
 }
 
 #pragma mark -- collectionView datasource 

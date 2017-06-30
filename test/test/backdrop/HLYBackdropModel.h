@@ -23,7 +23,7 @@ typedef NS_ENUM(NSInteger, HLYPicStatusType) {
 
 @property (nonatomic, copy, readonly) NSString *picUrl;
 @property (nonatomic, assign, readonly) HLYPicStatusType type;
-@property (nonatomic, assign, readonly) CGFloat progress;
+@property (nonatomic, assign) CGFloat progress;
 @property (nonatomic, copy, readonly) NSString *statusImageUrl;
 
 - (void)configureItemWithType:(HLYPicStatusType)type picUrl:(NSString *)url progress:(CGFloat)progress statusImage:(NSString *)iconUrlString;

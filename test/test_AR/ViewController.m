@@ -1,16 +1,13 @@
 //
 //  ViewController.m
-//  test_effective
+//  test_AR
 //
-//  Created by felix on 2017/6/21.
+//  Created by felix on 2017/6/28.
 //  Copyright © 2017年 forest. All rights reserved.
-///Users/felix/yuedongCommon/test/test_effective/第2章
-
-#import "HLYPropertyViewController.h"
+//
 
 #import "ViewController.h"
-#import "HLy7ViewController.h"
-#import "HLY8ViewController.h"
+#import "HLY0ViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -36,9 +33,7 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     self.dataSource = @[
-                        @[@"第八条特性的理解",[HLY8ViewController new]],
-                        @[@"setter 或者getter 使用",[HLy7ViewController new]],
-                        @[@"属性测试",[HLYPropertyViewController new]]
+                        @[@"第0次AR实验",[HLY0ViewController new]],
                         ];
 }
 

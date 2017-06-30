@@ -39,6 +39,7 @@
 #import "HLYAudioViewController.h"
 #import "HLYBackDropController.h"
 #import "YDJsonViewController.h"
+#import "HLYAnimationViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -65,6 +66,7 @@
     MainStoryboardViewController *mainStoryVC = [[UIStoryboard storyboardWithName:@"storyboard" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([MainStoryboardViewController class])];
     
     self.dataSource = @[
+                        @[@"uiview 上面的动画",[HLYAnimationViewController new]],
                         @[@"数据解析 string 上的方法的处理",[YDJsonViewController new]],
                         @[@"背景相册选择",[HLYBackDropController new]],
                         @[@"audio player ",[HLYAudioViewController new]],
