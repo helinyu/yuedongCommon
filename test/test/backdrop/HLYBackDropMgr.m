@@ -45,14 +45,22 @@ static HLYBackDropMgr *singleTon = nil;
         _onlinePicSources = [NSMutableArray new];
         for (NSInteger index = 0; index < 9; index++) {
             NSInteger currentType = index %4;
+            NSInteger hah = index/4;
             NSString *statusImageUrl = @"";
             CGFloat progressPercent = 0.f;
             switch (currentType) {
                 case HLYPicStatusTypeLoadNeed:
                     statusImageUrl = @"icon_download";
+                    progressPercent = 0.f;
                     break;
                 case HLYPicStatusTypeLoading:
-                    progressPercent = 0.5f;
+                {
+                    if (hah == 0) {
+                        progressPercent = 0.f;
+                    }else if(hah == 1) {
+                        progressPercent = .3f;
+                    }
+                }
                     break;
                 case HLYPicStatusTypeLoaded:
                     break;
