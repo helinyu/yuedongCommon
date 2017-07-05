@@ -8,12 +8,17 @@
 target 'test' do
 
 platform :ios, '7.0'
-	pod 'TYPagerController'
+    pod 'TYPagerController'
     pod 'Masonry', '~> 1.0.2'
     pod 'AMap3DMap', '~> 4.6.1'
     pod 'AMapSearch', '~> 4.5.0'
     pod 'AMapLocation', '~> 2.3.0'
     pod 'DateTools', '~> 2.0.0'
+end
+
+
+target 'test_babyBlueTooth' do
+	pod 'LEBluetooth', '~> 0.1.0'
 end
 
 #platform :ios, '8.0'
