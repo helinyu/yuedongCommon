@@ -40,6 +40,8 @@
 #import "HLYBackDropController.h"
 #import "YDJsonViewController.h"
 #import "HLYAnimationViewController.h"
+#import "HLYAnimationCollectionViewController.h"
+#import "HLYShapeLayerViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -66,6 +68,8 @@
     MainStoryboardViewController *mainStoryVC = [[UIStoryboard storyboardWithName:@"storyboard" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([MainStoryboardViewController class])];
     
     self.dataSource = @[
+                        @[@"cashapelayer 的检测",[HLYShapeLayerViewController new]],
+                        @[@"collection view cell上面的动画",[HLYAnimationCollectionViewController new]],
                         @[@"uiview 上面的动画",[HLYAnimationViewController new]],
                         @[@"数据解析 string 上的方法的处理",[YDJsonViewController new]],
                         @[@"背景相册选择",[HLYBackDropController new]],

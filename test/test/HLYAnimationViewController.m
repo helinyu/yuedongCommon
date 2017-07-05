@@ -22,6 +22,8 @@
 
 @end
 
+static NSInteger tap = 1;
+
 @implementation HLYAnimationViewController
 
 - (void)viewDidLoad {
@@ -40,6 +42,11 @@
     self.animationLayer1 = [CALayer new];
     self.animationLayer1 = [CALayer new];
     
+    _progressLayer = [CAShapeLayer new];
+    [self.view.layer addSublayer:_progressLayer];
+    _progressLayer.backgroundColor = [UIColor greenColor].CGColor;
+    self.view.layer.masksToBounds = YES;
+
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setTitle:@"动画" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(toAction:) forControlEvents:UIControlEventTouchUpInside];
@@ -53,20 +60,19 @@
 }
 
 - (void)toAction:(UIButton *)sender {
+    tap++;
     NSLog(@"动画1");
-    _progressLayer = [CAShapeLayer new];
-    [self.view.layer addSublayer:_progressLayer];
-    self.view.layer.masksToBounds = YES;
     UIBezierPath *linePath = [UIBezierPath bezierPath];
-    [linePath moveToPoint:CGPointMake(0,self.view.center.y)];
-    [linePath addLineToPoint:CGPointMake(CGRectGetWidth(self.view.bounds),self.view.center.y)];
+    _progressLayer.frame = CGRectMake(0, 10 *tap, tap *5, 5);
+    [linePath moveToPoint:CGPointMake(tap *5,2.5)];
+    [linePath addLineToPoint:CGPointMake(CGRectGetWidth(self.view.bounds),2.5)];
     _progressLayer.path = linePath.CGPath;
-    _progressLayer.lineWidth = 10.f;
+    _progressLayer.lineWidth = 5.f;
     _progressLayer.strokeColor = [UIColor blueColor].CGColor;
     _progressLayer.lineCap = kCALineCapSquare;
     [_progressLayer removeAllAnimations];
     CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    pathAnimation.duration = 10;
+    pathAnimation.duration = 4;
     pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     pathAnimation.fromValue = @0;
     pathAnimation.toValue = @1;

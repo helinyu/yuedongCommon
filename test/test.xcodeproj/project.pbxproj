@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41ABCEF81F0BC51200927CCC /* HLYAnimationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */; };
+		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
+		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
+		41E0D8E21F0CDBA500E16E9E /* HLYShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8E11F0CDBA500E16E9E /* HLYShapeLayerViewController.m */; };
 		B79C5E7C731D80DF88CB4722 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */; };
 		DC04101F1EF80E07000B69A3 /* HLYAudioPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC04101E1EF80E07000B69A3 /* HLYAudioPlayerManager.m */; };
 		DC0410221EF80E1E000B69A3 /* HLYAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0410211EF80E1E000B69A3 /* HLYAudioViewController.m */; };
@@ -140,6 +144,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41ABCEF61F0BC51200927CCC /* HLYAnimationCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAnimationCollectionViewController.h; sourceTree = "<group>"; };
+		41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAnimationCollectionViewController.m; sourceTree = "<group>"; };
+		41ABCEF91F0BC57700927CCC /* AnimationCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationCollectionViewCell.h; path = "数据解析/AnimationCollectionViewCell.h"; sourceTree = "<group>"; };
+		41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimationCollectionViewCell.m; path = "数据解析/AnimationCollectionViewCell.m"; sourceTree = "<group>"; };
+		41E0D8D81F0C785D00E16E9E /* YDBgImageStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBgImageStatusView.h; sourceTree = "<group>"; };
+		41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBgImageStatusView.m; sourceTree = "<group>"; };
+		41E0D8E01F0CDBA500E16E9E /* HLYShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYShapeLayerViewController.h; sourceTree = "<group>"; };
+		41E0D8E11F0CDBA500E16E9E /* HLYShapeLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYShapeLayerViewController.m; sourceTree = "<group>"; };
 		89914FF9277B52F087EA3821 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC04101D1EF80E07000B69A3 /* HLYAudioPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAudioPlayerManager.h; sourceTree = "<group>"; };
@@ -417,6 +429,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41ABCEF51F0BC4F800927CCC /* collectionview cell 上的动画 */ = {
+			isa = PBXGroup;
+			children = (
+				41ABCEF61F0BC51200927CCC /* HLYAnimationCollectionViewController.h */,
+				41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */,
+				41ABCEF91F0BC57700927CCC /* AnimationCollectionViewCell.h */,
+				41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */,
+				41E0D8D81F0C785D00E16E9E /* YDBgImageStatusView.h */,
+				41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */,
+			);
+			name = "collectionview cell 上的动画";
+			sourceTree = "<group>";
+		};
+		41E0D8DF1F0CDB8800E16E9E /* CAShapeLayer */ = {
+			isa = PBXGroup;
+			children = (
+				41E0D8E01F0CDBA500E16E9E /* HLYShapeLayerViewController.h */,
+				41E0D8E11F0CDBA500E16E9E /* HLYShapeLayerViewController.m */,
+			);
+			name = CAShapeLayer;
+			sourceTree = "<group>";
+		};
 		74B13597549662E119950E0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -536,6 +570,8 @@
 		DC05043B1EBDC45800718AAD /* test */ = {
 			isa = PBXGroup;
 			children = (
+				41E0D8DF1F0CDB8800E16E9E /* CAShapeLayer */,
+				41ABCEF51F0BC4F800927CCC /* collectionview cell 上的动画 */,
 				DCEE83821EFD12910043403B /* 动画 */,
 				DCA9A0F31EFA7A500010D510 /* 数据解析 */,
 				DC2089451EF8EEDA00B32F78 /* backdrop */,
@@ -1425,6 +1461,7 @@
 				DC783F091EE6843F00CF132C /* HLYMIneTAbleViewController.m in Sources */,
 				DCABF6021EC04EEC005E4E59 /* FirstViewController.m in Sources */,
 				DC783F0C1EE6858900CF132C /* HLYBaseView.m in Sources */,
+				41ABCEF81F0BC51200927CCC /* HLYAnimationCollectionViewController.m in Sources */,
 				DCEE83851EFD12AE0043403B /* HLYAnimationViewController.m in Sources */,
 				DCAAFF531ED92E3B008DEE65 /* UIWindow+VisibleViewController.m in Sources */,
 				DCC500681EDE5FD800A65D60 /* HLYWeightAndFatCell.m in Sources */,
@@ -1436,6 +1473,7 @@
 				DCD8179C1EE1902A003A8564 /* HLYCategoryViewController.m in Sources */,
 				DCAAFF591ED92E3B008DEE65 /* YDPresentationTransitionPointPop.m in Sources */,
 				DCAFD42F1ED2993200D25E7C /* MeMainViewController.m in Sources */,
+				41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */,
 				DC22AF6F1EDE61A000629439 /* HLYWeightAndFatModel.m in Sources */,
 				DCAAFF561ED92E3B008DEE65 /* YDDismissalTransitionPointPop.m in Sources */,
 				DCAAFF731ED9574D008DEE65 /* WTKBaseViewController.m in Sources */,
@@ -1452,6 +1490,7 @@
 				DCAAFF571ED92E3B008DEE65 /* YDPresentationTransitionDownSpring.m in Sources */,
 				DC6C0E851EC43CDC006B7581 /* MASExampleUpdateView.m in Sources */,
 				DCAAFF6D1ED956ED008DEE65 /* WTKAnimationRound.m in Sources */,
+				41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */,
 				DCAFD4451ED2D91100D25E7C /* CircleAnimationViewController.m in Sources */,
 				DC0609A21EE7A1230061713D /* HLYTableCollectionViewCell.m in Sources */,
 				DC6C0E881EC442D0006B7581 /* SecondView.m in Sources */,
@@ -1467,6 +1506,7 @@
 				DC22AF7C1EDE994B00629439 /* HLYChartView.m in Sources */,
 				DC2089591EF903DB00B32F78 /* HLYPicStatusView.m in Sources */,
 				DC0504411EBDC45900718AAD /* AppDelegate.m in Sources */,
+				41E0D8E21F0CDBA500E16E9E /* HLYShapeLayerViewController.m in Sources */,
 				DCAAFF7A1ED959DB008DEE65 /* LYNewViewController.m in Sources */,
 				DC05043E1EBDC45800718AAD /* main.m in Sources */,
 				DC2089561EF9019200B32F78 /* HLYBackdropModel.m in Sources */,
@@ -1863,6 +1903,7 @@
 				DCEE85E21F035DD700CAC9CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
