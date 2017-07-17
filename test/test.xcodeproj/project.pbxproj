@@ -19,6 +19,7 @@
 		41E0D8F71F0CF72900E16E9E /* test_babyBlueTooth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8F51F0CF72900E16E9E /* test_babyBlueTooth.xcdatamodeld */; };
 		41E0D8F91F0CF72900E16E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E0D8F81F0CF72900E16E9E /* Assets.xcassets */; };
 		41E0D8FC1F0CF72900E16E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E0D8FA1F0CF72900E16E9E /* LaunchScreen.storyboard */; };
+		41F760011F1C9F2100AB66AE /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F760001F1C9F2100AB66AE /* HealthKit.framework */; };
 		B79C5E7C731D80DF88CB4722 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */; };
 		DC04101F1EF80E07000B69A3 /* HLYAudioPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC04101E1EF80E07000B69A3 /* HLYAudioPlayerManager.m */; };
 		DC0410221EF80E1E000B69A3 /* HLYAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0410211EF80E1E000B69A3 /* HLYAudioViewController.m */; };
@@ -192,6 +193,8 @@
 		41E0D8FD1F0CF72900E16E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41E0D9021F0CF72900E16E9E /* test_babyBlueToothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test_babyBlueToothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0D90D1F0CF72900E16E9E /* test_babyBlueToothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test_babyBlueToothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41F75FFF1F1C9F2100AB66AE /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
+		41F760001F1C9F2100AB66AE /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		52F26FB17AF2BC0D6B5EA7B0 /* libPods-test_babyBlueTooth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test_babyBlueTooth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89914FF9277B52F087EA3821 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -463,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCC3FC151ED83D5C00C88BF6 /* libz.tbd in Frameworks */,
+				41F760011F1C9F2100AB66AE /* HealthKit.framework in Frameworks */,
 				DCC3FC131ED83D0A00C88BF6 /* libz.1.1.3.tbd in Frameworks */,
 				B79C5E7C731D80DF88CB4722 /* libPods-test.a in Frameworks */,
 			);
@@ -492,6 +496,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41983FE71F0DF4F1002EA0BD /* collectionview  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "collectionview ";
+			sourceTree = "<group>";
+		};
 		41ABCEF51F0BC4F800927CCC /* collectionview cell 上的动画 */ = {
 			isa = PBXGroup;
 			children = (
@@ -542,6 +553,7 @@
 		74B13597549662E119950E0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				41F760001F1C9F2100AB66AE /* HealthKit.framework */,
 				DCC3FC141ED83D5C00C88BF6 /* libz.tbd */,
 				DCC3FC121ED83D0A00C88BF6 /* libz.1.1.3.tbd */,
 				CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */,
@@ -665,6 +677,8 @@
 		DC05043B1EBDC45800718AAD /* test */ = {
 			isa = PBXGroup;
 			children = (
+				41F75FFF1F1C9F2100AB66AE /* test.entitlements */,
+				41983FE71F0DF4F1002EA0BD /* collectionview  */,
 				41E0D8DF1F0CDB8800E16E9E /* CAShapeLayer */,
 				41ABCEF51F0BC4F800927CCC /* collectionview cell 上的动画 */,
 				DCEE83821EFD12910043403B /* 动画 */,
@@ -1425,8 +1439,8 @@
 				TargetAttributes = {
 					41E0D8E61F0CF72800E16E9E = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = D2XBEJ6876;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Manual;
 					};
 					41E0D9011F0CF72900E16E9E = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -1442,8 +1456,13 @@
 					};
 					DC0504381EBDC45800718AAD = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 5992BVN2L6;
+						DevelopmentTeam = 2ERYNAFK87;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					DC42B61F1F02BB030065F49E = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -1924,12 +1943,14 @@
 			baseConfigurationReference = 31ADDEDE9375D935C58B3213 /* Pods-test_babyBlueTooth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				INFOPLIST_FILE = test_babyBlueTooth/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dtspread.apps.test-babyBlueTooth";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 			};
 			name = Debug;
 		};
@@ -1938,12 +1959,13 @@
 			baseConfigurationReference = 2FEF8E7DFCEAAF0863C38B8A /* Pods-test_babyBlueTooth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = test_babyBlueTooth/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dtspread.apps.test-babyBlueTooth";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -2099,7 +2121,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 5992BVN2L6;
+				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/test",
@@ -2108,10 +2131,10 @@
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vanchu.apps.guimiquan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "76070d7b-a4e6-41c2-b9bc-8fb897b6dffb";
-				PROVISIONING_PROFILE_SPECIFIER = "guimiquan-dev";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 			};
 			name = Debug;
 		};
@@ -2121,6 +2144,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
 				DEVELOPMENT_TEAM = 5992BVN2L6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2130,7 +2154,7 @@
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vanchu.apps.guimiquan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "76070d7b-a4e6-41c2-b9bc-8fb897b6dffb";
 				PROVISIONING_PROFILE_SPECIFIER = "guimiquan-dev";
@@ -2243,6 +2267,7 @@
 				41E0D9161F0CF72A00E16E9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41E0D9171F0CF72A00E16E9E /* Build configuration list for PBXNativeTarget "test_babyBlueToothTests" */ = {
 			isa = XCConfigurationList;
@@ -2251,6 +2276,7 @@
 				41E0D9191F0CF72A00E16E9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41E0D91A1F0CF72A00E16E9E /* Build configuration list for PBXNativeTarget "test_babyBlueToothUITests" */ = {
 			isa = XCConfigurationList;
@@ -2259,6 +2285,7 @@
 				41E0D91C1F0CF72A00E16E9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC0504341EBDC45800718AAD /* Build configuration list for PBXProject "test" */ = {
 			isa = XCConfigurationList;
