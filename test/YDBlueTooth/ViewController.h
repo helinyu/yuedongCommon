@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@class BabyBluetooth;
+@class CBPeripheral;
 
 @interface ViewController : UIViewController
 
+//@property (nonatomic, strong) BabyBluetooth *baby;
+
+@property __block NSMutableArray *services;
+@property(strong,nonatomic) CBPeripheral *currPeripheral;
 
 @end
 

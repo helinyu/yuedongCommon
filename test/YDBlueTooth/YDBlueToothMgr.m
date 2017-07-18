@@ -69,7 +69,7 @@ static NSString *const connectionChannel = @"connection.channel";
     BabyRhythm *rhythm = [BabyRhythm new];
     
     [_bluetooth setBlockOnCentralManagerDidUpdateState:^(CBCentralManager *central) {
-        if (central.state == CBManagerStatePoweredOn) {
+        if (central.state == CBCentralManagerStatePoweredOn) {
             [SVProgressHUD showInfoWithStatus:@"设备打开成功，开始扫描设备"];
             NSLog(@"设备打开成功，开始扫描蓝牙设备");
         }

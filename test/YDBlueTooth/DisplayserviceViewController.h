@@ -7,10 +7,19 @@
 //
 
 #import "ViewController.h"
-@class YDBlueToothMgr;
+//@class YDBlueToothMgr;
+@class CBPeripheral;
 
 @interface DisplayserviceViewController : ViewController
+{
+    @public
+    BabyBluetooth *baby;
 
-@property (nonatomic, strong) YDBlueToothMgr *mgr;
+}
+
+@property __block NSMutableArray *services;
+@property(strong,nonatomic)CBPeripheral *currPeripheral;
+
+//@property (nonatomic, strong) YDBlueToothMgr *mgr;
 
 @end
