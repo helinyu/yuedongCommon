@@ -17,6 +17,7 @@
 		418D300A1F1DA36000894079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418D30091F1DA36000894079 /* Assets.xcassets */; };
 		418D300D1F1DA36000894079 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418D300B1F1DA36000894079 /* LaunchScreen.storyboard */; };
 		418D30311F1DAEB900894079 /* YDBlueToothMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D30301F1DAEB900894079 /* YDBlueToothMgr.m */; };
+		418D30341F1DC2ED00894079 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D30331F1DC2ED00894079 /* UIView+Layout.m */; };
 		41ABCEF81F0BC51200927CCC /* HLYAnimationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */; };
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
@@ -36,6 +37,7 @@
 		41F760341F1CB4E800AB66AE /* test_peripheral.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41F760321F1CB4E800AB66AE /* test_peripheral.xcdatamodeld */; };
 		41F760361F1CB4E800AB66AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F760351F1CB4E800AB66AE /* Assets.xcassets */; };
 		41F760391F1CB4E800AB66AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F760371F1CB4E800AB66AE /* LaunchScreen.storyboard */; };
+		48D729F3BF99F4A4F2FF1048 /* libPods-YDBlueTooth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B663388472CC30E40AA8F5 /* libPods-YDBlueTooth.a */; };
 		B79C5E7C731D80DF88CB4722 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */; };
 		DC04101F1EF80E07000B69A3 /* HLYAudioPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC04101E1EF80E07000B69A3 /* HLYAudioPlayerManager.m */; };
 		DC0410221EF80E1E000B69A3 /* HLYAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0410211EF80E1E000B69A3 /* HLYAudioViewController.m */; };
@@ -169,6 +171,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		065563C11B960CC4E9129709 /* Pods-YDBlueTooth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDBlueTooth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YDBlueTooth/Pods-YDBlueTooth.debug.xcconfig"; sourceTree = "<group>"; };
+		10B663388472CC30E40AA8F5 /* libPods-YDBlueTooth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YDBlueTooth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FEF8E7DFCEAAF0863C38B8A /* Pods-test_babyBlueTooth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_babyBlueTooth.release.xcconfig"; path = "Pods/Target Support Files/Pods-test_babyBlueTooth/Pods-test_babyBlueTooth.release.xcconfig"; sourceTree = "<group>"; };
 		31ADDEDE9375D935C58B3213 /* Pods-test_babyBlueTooth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_babyBlueTooth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test_babyBlueTooth/Pods-test_babyBlueTooth.debug.xcconfig"; sourceTree = "<group>"; };
 		418D2FF01F1D115300894079 /* LYAlgorithmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYAlgorithmViewController.h; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 		418D300E1F1DA36000894079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		418D302F1F1DAEB900894079 /* YDBlueToothMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBlueToothMgr.h; sourceTree = "<group>"; };
 		418D30301F1DAEB900894079 /* YDBlueToothMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBlueToothMgr.m; sourceTree = "<group>"; };
+		418D30321F1DC2ED00894079 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		418D30331F1DC2ED00894079 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
 		41ABCEF61F0BC51200927CCC /* HLYAnimationCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAnimationCollectionViewController.h; sourceTree = "<group>"; };
 		41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAnimationCollectionViewController.m; sourceTree = "<group>"; };
 		41ABCEF91F0BC57700927CCC /* AnimationCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationCollectionViewCell.h; path = "数据解析/AnimationCollectionViewCell.h"; sourceTree = "<group>"; };
@@ -458,6 +464,7 @@
 		DCEE85C51F035DD700CAC9CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCEE85C71F035DD700CAC9CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCEE85C81F035DD700CAC9CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E08FB385B85BCD602F1865BF /* Pods-YDBlueTooth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDBlueTooth.release.xcconfig"; path = "Pods/Target Support Files/Pods-YDBlueTooth/Pods-YDBlueTooth.release.xcconfig"; sourceTree = "<group>"; };
 		F8A481B59EF84D29E58DAF85 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -466,6 +473,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48D729F3BF99F4A4F2FF1048 /* libPods-YDBlueTooth.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +539,7 @@
 		418D2FF91F1DA36000894079 /* YDBlueTooth */ = {
 			isa = PBXGroup;
 			children = (
+				418D30351F1DC2F100894079 /* category */,
 				418D302E1F1DAE8F00894079 /* mgr */,
 				418D2FFD1F1DA36000894079 /* AppDelegate.h */,
 				418D2FFE1F1DA36000894079 /* AppDelegate.m */,
@@ -561,6 +570,15 @@
 				418D30301F1DAEB900894079 /* YDBlueToothMgr.m */,
 			);
 			name = mgr;
+			sourceTree = "<group>";
+		};
+		418D30351F1DC2F100894079 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				418D30321F1DC2ED00894079 /* UIView+Layout.h */,
+				418D30331F1DC2ED00894079 /* UIView+Layout.m */,
+			);
+			name = category;
 			sourceTree = "<group>";
 		};
 		41983FE71F0DF4F1002EA0BD /* collectionview  */ = {
@@ -650,6 +668,7 @@
 				DCC3FC121ED83D0A00C88BF6 /* libz.1.1.3.tbd */,
 				CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */,
 				52F26FB17AF2BC0D6B5EA7B0 /* libPods-test_babyBlueTooth.a */,
+				10B663388472CC30E40AA8F5 /* libPods-YDBlueTooth.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -661,6 +680,8 @@
 				F8A481B59EF84D29E58DAF85 /* Pods-test.release.xcconfig */,
 				31ADDEDE9375D935C58B3213 /* Pods-test_babyBlueTooth.debug.xcconfig */,
 				2FEF8E7DFCEAAF0863C38B8A /* Pods-test_babyBlueTooth.release.xcconfig */,
+				065563C11B960CC4E9129709 /* Pods-YDBlueTooth.debug.xcconfig */,
+				E08FB385B85BCD602F1865BF /* Pods-YDBlueTooth.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1400,9 +1421,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 418D302B1F1DA36100894079 /* Build configuration list for PBXNativeTarget "YDBlueTooth" */;
 			buildPhases = (
+				4217F367B2B19763D0918D61 /* [CP] Check Pods Manifest.lock */,
 				418D2FF41F1DA36000894079 /* Sources */,
 				418D2FF51F1DA36000894079 /* Frameworks */,
 				418D2FF61F1DA36000894079 /* Resources */,
+				D9A8A0EB56756AD174E19A7A /* [CP] Embed Pods Frameworks */,
+				8E29087B04FD8FF6E318301E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1532,8 +1556,8 @@
 				TargetAttributes = {
 					418D2FF71F1DA36000894079 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = D2XBEJ6876;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Manual;
 					};
 					41E0D8E61F0CF72800E16E9E = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -1709,6 +1733,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4217F367B2B19763D0918D61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		841AC95AF2BA5235F7FF7A18 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1722,6 +1761,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E29087B04FD8FF6E318301E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YDBlueTooth/Pods-YDBlueTooth-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B2D864664C85B357FE66DCE6 /* [CP] Embed Pods Frameworks */ = {
@@ -1754,6 +1808,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test_babyBlueTooth/Pods-test_babyBlueTooth-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D9A8A0EB56756AD174E19A7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YDBlueTooth/Pods-YDBlueTooth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DAC3619E634DF58223ECABC9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1778,6 +1847,7 @@
 			files = (
 				418D30021F1DA36000894079 /* ViewController.m in Sources */,
 				418D2FFF1F1DA36000894079 /* AppDelegate.m in Sources */,
+				418D30341F1DC2ED00894079 /* UIView+Layout.m in Sources */,
 				418D30311F1DAEB900894079 /* YDBlueToothMgr.m in Sources */,
 				418D2FFC1F1DA36000894079 /* main.m in Sources */,
 				418D30081F1DA36000894079 /* YDBlueTooth.xcdatamodeld in Sources */,
@@ -2066,27 +2136,32 @@
 /* Begin XCBuildConfiguration section */
 		418D30251F1DA36100894079 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 065563C11B960CC4E9129709 /* Pods-YDBlueTooth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				INFOPLIST_FILE = YDBlueTooth/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.YDBlueTooth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 			};
 			name = Debug;
 		};
 		418D30261F1DA36100894079 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E08FB385B85BCD602F1865BF /* Pods-YDBlueTooth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = YDBlueTooth/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.YDBlueTooth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

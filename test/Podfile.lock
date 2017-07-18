@@ -7,19 +7,20 @@ PODS:
   - AMapSearch (4.5.0):
     - AMapFoundation (~> 1.2)
   - BabyBluetooth (0.7.0)
-  - DateTools (2.0.0)
   - LEBluetooth (0.1.0):
     - BabyBluetooth
   - Masonry (1.0.2)
+  - SVProgressHUD (2.1.2)
   - TYPagerController (1.0.2)
 
 DEPENDENCIES:
   - AMap3DMap (~> 4.6.1)
   - AMapLocation (~> 2.3.0)
   - AMapSearch (~> 4.5.0)
-  - DateTools (~> 2.0.0)
+  - BabyBluetooth (~> 0.7.0)
   - LEBluetooth (~> 0.1.0)
   - Masonry (~> 1.0.2)
+  - SVProgressHUD (~> 2.1.2)
   - TYPagerController
 
 SPEC CHECKSUMS:
@@ -28,11 +29,11 @@ SPEC CHECKSUMS:
   AMapLocation: 6016f0e09c127461c9c8e36945f34c0f037ad962
   AMapSearch: 7a6ebc20a42e34a021b042b047f198082fc2fc30
   BabyBluetooth: d50758aecf24d4a0ab9271d69f0f116d6bee51c9
-  DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   LEBluetooth: ee4d6dec6d4abfb27f29520d05c4eef27bdfa05d
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   TYPagerController: 0b3e3e589a217ff537d5f78e1e76594beaa4cfc6
 
-PODFILE CHECKSUM: 268345023d75ce606bdce0dacf22e9eab48def9f
+PODFILE CHECKSUM: e36f69eb772033aafd3d6e70d40da0c4a1574a23
 
 COCOAPODS: 1.2.1
