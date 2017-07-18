@@ -38,11 +38,12 @@ static NSString *const reuseIdentifier = @"re.use.identifier";
     _tableView.delegate = self;
     
     _peripherals = [NSMutableArray<CBPeripheral *> new];
-    _centralManger = [[CBCentralManager alloc] initWithDelegate:self queue:dispatch_get_main_queue() options:nil];
+    _centralManger = [[CBCentralManager alloc] initWithDelegate:self queue:dispatch_get_main_queue() options:nil];// (1步) 创建中心控制
 }
 
 #pragma mark -- central manager delegate
 
+//2步 通过代理判断一下控制中心对蓝牙支持的状态
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central {
     
     if ([UIDevice currentDevice].systemVersion.floatValue >= 10.f) {
@@ -101,6 +102,7 @@ static NSString *const reuseIdentifier = @"re.use.identifier";
     NSLog(@"请在设置中打开蓝牙，");
 }
 
+// 3步骤 如果支持蓝牙并且启动，就会进行扫描蓝牙上面的服务
 - (void)scanPerialsWithCentral:(CBCentralManager *)central {
     if([UIDevice currentDevice].systemVersion.floatValue >= 9.f) {
         if (!central.isScanning) {
@@ -131,6 +133,7 @@ static NSString *const reuseIdentifier = @"re.use.identifier";
     
 }
 
+// 4步骤 发现外围沈北， 然后进行过滤显示外围设备
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *, id> *)advertisementData RSSI:(NSNumber *)RSSI {
     NSLog(@"peripheral name : %@,identifier : %@",peripheral.name,peripheral.identifier.UUIDString);
     BOOL flag = NO;
@@ -141,11 +144,12 @@ static NSString *const reuseIdentifier = @"re.use.identifier";
         }
     }
     if (!flag) {
-        [_peripherals addObject:peripheral];
+        [_peripherals addObject:peripheral];  // 注意这里要店家在一个数组中，好像只有这样，才可以连接成功
         [_tableView reloadData];
     }
 }
 
+// 7 步骤 查看是否连接成功，
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
 //    NSLog(@"peripheral state: %d : name=%@, identfifier : %@",peripheral.state,peripheral.name,peripheral.identifier.UUIDString);
     NSLog(@"peripheral state: %ld",(long)peripheral.state);
@@ -156,7 +160,7 @@ static NSString *const reuseIdentifier = @"re.use.identifier";
     peripheral.delegate = self;
     [_centralManger stopScan];
     
-    [peripheral discoverServices:nil];
+    [peripheral discoverServices:nil]; // 8 步骤； 如果连接成功 ，就扫描外围设备的服务
 //    [peripheral readRSSI];
 //    [peripheral discoverIncludedServices:nil forService:[CBService new]];
 //    [peripheral discoverDescriptorsForCharacteristic:[CBCharacteristic new]];
@@ -176,6 +180,7 @@ static NSString *const reuseIdentifier = @"re.use.identifier";
     NSAssert(!error ,@"didFailToConnectPeripheral ");
 }
 
+// 去掉连接外围设备
 - (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(nullable NSError *)error {
     NSLog(@"didDisconnectPeripheral:name=%@,identifier=%@",peripheral.name,peripheral.identifier.UUIDString);
     //停止扫描
@@ -207,6 +212,7 @@ static NSString *const reuseIdentifier = @"re.use.identifier";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [_centralManger connectPeripheral:_peripherals[indexPath.row] options:nil];
+//    6 步骤连接设备
 }
 
 - (void)didReceiveMemoryWarning {
@@ -278,6 +284,7 @@ static NSString *const reuseIdentifier = @"re.use.identifier";
  *						<i>peripheral</i>'s @link services @/link property.
  *
  */
+// 9 步骤 ，查看已经发现连接外围设备的服务
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(nullable NSError *)error {
     NSLog(@"scan service : %@",peripheral.services);
     if (error) {
@@ -285,9 +292,11 @@ static NSString *const reuseIdentifier = @"re.use.identifier";
         return;
     }
     
+//    10 步骤 --> 遍历服务里面的特征
     for (CBService *service in peripheral.services) {
-        NSLog(@"%@",service.UUID);
+        NSLog(@"serivce uuid: %@",service.UUID);
         //扫描每个service的Characteristics，扫描到后会进入方法  -(void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(NSError *)error
+//        peripheral.delegate = self;
         [peripheral discoverCharacteristics:nil forService:service];
     }
 }
@@ -306,16 +315,7 @@ static NSString *const reuseIdentifier = @"re.use.identifier";
     
 }
 
-/*!
- *  @method peripheral:didDiscoverCharacteristicsForService:error:
- *
- *  @param peripheral	The peripheral providing this information.
- *  @param service		The <code>CBService</code> object containing the characteristic(s).
- *	@param error		If an error occurred, the cause of the failure.
- *
- *  @discussion			This method returns the result of a @link discoverCharacteristics:forService: @/link call. If the characteristic(s) were read successfully,
- *						they can be retrieved via <i>service</i>'s <code>characteristics</code> property.
- */
+// 11 步骤， 进入服务的特征，然后 读取特征中的数据
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(nullable NSError *)error {
     if (error) {
         NSLog(@"did discver characteristics for service is error : %@",error);
@@ -339,7 +339,6 @@ static NSString *const reuseIdentifier = @"re.use.identifier";
         [peripheral discoverDescriptorsForCharacteristic:characteristic];
     }
     
-    NSLog(@"service is : ");
 }
 
 /*!
@@ -381,16 +380,6 @@ static NSString *const reuseIdentifier = @"re.use.identifier";
     
 }
 
-/*!
- *  @method peripheral:didDiscoverDescriptorsForCharacteristic:error:
- *
- *  @param peripheral		The peripheral providing this information.
- *  @param characteristic	A <code>CBCharacteristic</code> object.
- *	@param error			If an error occurred, the cause of the failure.
- *
- *  @discussion				This method returns the result of a @link discoverDescriptorsForCharacteristic: @/link call. If the descriptors were read successfully,
- *							they can be retrieved via <i>characteristic</i>'s <code>descriptors</code> property.
- */
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverDescriptorsForCharacteristic:(CBCharacteristic *)characteristic error:(nullable NSError *)error {
     NSLog(@"didDiscoverDescriptorsForCharacteristic: service=%@,properties=%lu, uuid=%@",characteristic.service,(unsigned long)characteristic.properties,characteristic.UUID);
     for (CBDescriptor *descri in characteristic.descriptors) {

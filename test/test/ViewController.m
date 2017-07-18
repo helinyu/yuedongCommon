@@ -42,6 +42,7 @@
 #import "HLYAnimationViewController.h"
 #import "HLYAnimationCollectionViewController.h"
 #import "HLYShapeLayerViewController.h"
+#import "LYAlgorithmViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -68,6 +69,7 @@
     MainStoryboardViewController *mainStoryVC = [[UIStoryboard storyboardWithName:@"storyboard" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([MainStoryboardViewController class])];
     
     self.dataSource = @[
+                        @[@"算法测试",[LYAlgorithmViewController new]],
                         @[@"cashapelayer 的检测",[HLYShapeLayerViewController new]],
                         @[@"collection view cell上面的动画",[HLYAnimationCollectionViewController new]],
                         @[@"uiview 上面的动画",[HLYAnimationViewController new]],

@@ -8,71 +8,72 @@
 
 /* Begin PBXBuildFile section */
 		01E09711F001C49F92A97060414E262B /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FA64553F9CAD6D735EA498CD08BD4D3 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		03158F86FC4EE6480A0961A4E4D8D246 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		0973959EA9F5EF2EC0DBC6545B6038CD /* Pods-test-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FD92BB2BF0BD5029278F5217599812 /* Pods-test-dummy.m */; };
 		0D5CF00AA1226E3E0E7DD1DD925F76BF /* BabyPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8DAABD811DCF2DA7C25029E5BC9F8E /* BabyPeripheralManager.m */; };
-		0DF10788817CBFF51D217B13A8FBB8ED /* TYPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9847E3443D8570083F54A93442FA46 /* TYPagerController.m */; };
 		13635B78121B99E5C03C92506A161607 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A496289757B2CD70A163E9DEAE97362 /* MASViewAttribute.m */; };
 		189089D2CF429C83EA04607BA6D8764B /* BabySpeaker.h in Headers */ = {isa = PBXBuildFile; fileRef = D48F0C1AD7A7F7A7EF613056A771F396 /* BabySpeaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DCC039404AFB98D27C7E9F5485DBC4E /* Pods-test-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FD92BB2BF0BD5029278F5217599812 /* Pods-test-dummy.m */; };
 		1F3BD3BC28432BB5E2F73501E06E4579 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = D282DD61F3939488B2FA2735F3FE990A /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21F329E651E0B72A6E4AC9559C92A1E2 /* BabyRhythm.h in Headers */ = {isa = PBXBuildFile; fileRef = E8773CD0C13F00685FDE3687DD8F1AAD /* BabyRhythm.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22999336504A5771D5E8FBE834B91705 /* Pods-test_babyBlueTooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0952E92D8EBEB2ECB1AAA3F97660DA /* Pods-test_babyBlueTooth-dummy.m */; };
 		24173055ED584F051AF15DD1ECDD8223 /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = F1E064304964907B6E3922772EA1BA08 /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24EF7168E0DB3E8F25C4365B8E71BF05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		2C6069B9F7A16B143A75C1427229BC57 /* LEBluetooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A6D5B5DFCEA601F97F00E3821B1187 /* LEBluetooth-dummy.m */; };
 		2DBB74B8B5DDB1F621433DD12BF35102 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB273BF2ECDD3BB74BE01D5FF734C94 /* MASViewConstraint.m */; };
+		37730E7C84BBA2BDDD20B7402FEEBFD8 /* TYPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9847E3443D8570083F54A93442FA46 /* TYPagerController.m */; };
 		3AB2909997784C1C476EF6D2A46A437C /* LEBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = DC86301C3F4E23A5DC774897CE48CACE /* LEBluetooth.m */; };
 		3E8E6916C563B9CB12AA417275FC6EB3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B573B96AABB0F934750C767D1C65AE7B /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		490CA524521F7D444EA58FA915D7E99C /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD5018CC491ACCD65D4F0BDB848173A /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49B903D576E09560C52AA92FDCC31A68 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 9023AF010C094BF726839FE2E90EC33D /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B709A17945C4474B8D28E52568F4930 /* TYTabTitleViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E9ECF5CDF1C99186115BC0CE2D2BE1 /* TYTabTitleViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CBE1B46550A3FB90FDD1CB9CBA7B7FE /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = EC1B0BEBC81A8DD3F25929F9CF26EAE1 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53D23A00E95CD9010CC582CD4C039575 /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 27F59157A4448DDE7243D32A26C0B76E /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B016342D938D9D48317465AFF1A502A /* TYTabButtonPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96A30A1584324C6EE49CD6344140298 /* TYTabButtonPagerController.m */; };
 		61CCEA01CBE8EFFA5515E7A0D8635AAE /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = AC569511BF4F9B1FDE1BABF36CC6A09E /* MASCompositeConstraint.m */; };
 		6209E20926D79222E59F58B962BFAA1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		6249770A7D163B0F3001D5A76C5FA01C /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F7141FC56886F970EAAB569E3DB167 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65FF98F97E624A9F65F316163B40E6B1 /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = F32639B0C0450D6D8E166103817BA03C /* DTError.m */; };
 		68216322A1397D13C4672F5BFB6BAE2A /* BabyBluetooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 051BD6E4FF542052996AB180BD0E0EA5 /* BabyBluetooth-dummy.m */; };
 		68F98758BA84B8EC3472A8C6FD646D16 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DFC352E817664DF1A55FCE1A9D74E9 /* Masonry-dummy.m */; };
-		6CF29C26DB7DECC0929F774ABE2A6D25 /* TYPagerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B8C3D072AFF9EE54E54B046140ED99 /* TYPagerController-dummy.m */; };
 		6D035B21F99373FFC94C2184EEE5D3EA /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = A907C0A9447678E0C7FA81BB04D37F53 /* DTTimePeriodGroup.m */; };
 		6E30295EEDAB51C6E626A80446C92C18 /* BabyBluetooth.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B40071135CC26E9655C7E9F101EB2BE /* BabyBluetooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E3821BF693336BB2811CD7624622DDF /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 033D7D20A98DF40043628E6E48988A8D /* DTTimePeriodChain.m */; };
 		70366D8894E5A2C31836F947A15C6EE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		7340011064AA898BCADF5C3B35023FD7 /* TYTabButtonPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96A30A1584324C6EE49CD6344140298 /* TYTabButtonPagerController.m */; };
+		743DA37729004860A9DA424B96D83560 /* TYTabButtonPagerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 318531858F08505E19498ADC0F6E0526 /* TYTabButtonPagerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7681427B4B48831724D10EF4B8174927 /* BabyDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9F862AAA30E48F47B15DF6A32354D /* BabyDefine.m */; };
 		78B3B735F7459684CA85D44D31153FA1 /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A97DAC41B7852F5DD2C8C435DCDAE2 /* BabyRhythm.m */; };
+		7929EDE50B1F43DBB44DC20E91A18341 /* TYTabTitleCellProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4E5208144ECEB8567331BF5F005EE0 /* TYTabTitleCellProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		792D5F4C3D387EF341CAC369A9352410 /* DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5244211BCFCB36F7E6C3730E9581AEF7 /* DateTools-dummy.m */; };
 		7BDDE51AF16FA53A09506EDB91E1C3C2 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 056AB888877F28162A59373F5891AA19 /* NSArray+MASAdditions.m */; };
+		809D169C85D5AE9DC906D094D7118FD8 /* TYTabTitleViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E9ECF5CDF1C99186115BC0CE2D2BE1 /* TYTabTitleViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		823DA3ACD9F2AA61FEB41205C435E016 /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = B65B221E20D37852AA63836BB218C479 /* BabyCallback.m */; };
+		82B811F4AFFF91D1475FAFB0928EB42B /* TYTabTitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F54DC8F67004EE2E8A16024712A5D8A /* TYTabTitleViewCell.m */; };
+		84551871AFE8E46680C7C3B07EBC2763 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		867E610E5D6C1C69E1BA81654C1CA02D /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = FDDE6E59AEB4FBE06834033E2FA701E4 /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86EE1CB5473A4A07081D8DE3A2C45924 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CCCEEFDF30F37DA073599E1A4C69E9B6 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89450A58FD91E5B227171FC75160E4EA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E250B4507A88AB3C0737EFC60D397B /* MASConstraint.m */; };
-		8AA7EC93621F69A1DBA24E063D67C292 /* TYPagerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 70FC83AF0983B5B7D90D55859037EAD7 /* TYPagerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B356942DF887255C026E3E0E6B1550F /* TYTabPagerController.h in Headers */ = {isa = PBXBuildFile; fileRef = BBA7857329C494F2419B146298E53084 /* TYTabPagerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FD4C75A0443F6B8EFBFD26B50079FA9 /* BabyOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB58EA09BC77A50E5E2F72DC2F2C9FD /* BabyOptions.m */; };
 		917708EF9C1E0FF3F52950702E64CFCF /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A95E05B54857F6FEF42FCFC82635293 /* DTTimePeriod.m */; };
 		955BE39896CA35F2A585DC3309E5FDA5 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A31BDB4709D8B560AFEFB46FE559EA1 /* MASLayoutConstraint.m */; };
+		95EB9594E63416D3FC72C13B03713FE1 /* TYPagerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 70FC83AF0983B5B7D90D55859037EAD7 /* TYPagerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		983CB852CBBFBC04C2A6BA407E34F59B /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CB84AF28BA6EC6804898B0D2A21E971A /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9934AEA2C891C201D8ED5746FF42FE1B /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 88678431D9E477F9C5500C912E0FE986 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C4FEAB24BB9424275FDDEEEC9CE4A2C /* Pods-test_babyBlueTooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0952E92D8EBEB2ECB1AAA3F97660DA /* Pods-test_babyBlueTooth-dummy.m */; };
 		A1FA046FDFC42676D17FEC387B10D24A /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7154B5D0561B44B96D004C58C6555 /* View+MASAdditions.m */; };
 		A2A2384846F2B0339E6C7E4ACCACDC0E /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 129C2C589FCF40C9F93E8ABB320CF325 /* BabyBluetooth.m */; };
 		A2CC7B671A0763FABCB08162D30E4C89 /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BDE7B6193C5EF15F926E55AA3C0C796 /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A357C49D39B2682FC57B9B4407BF605D /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF652185207237A5894424BDDD93A8E4 /* BabyToy.m */; };
-		A3EFAB999ECEC1FF4EC91A607F77DA4B /* TYTabButtonPagerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 318531858F08505E19498ADC0F6E0526 /* TYTabButtonPagerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3899000CC3839CDF09BCB5EF489B881 /* TYTabPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2092191B59BFE9AD420B2DC2528B1889 /* TYTabPagerController.m */; };
 		A6436E3CFFCBFE591E2D2A68ED90CAC6 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D7945F8B556942AF1F1A8CF6426565 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A83991D7C1373DF66020C2FDFC5D7564 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = DB7898E081433293E072EF0C4FE2C249 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A87AE8357BC25BE6909B66721C4B3808 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		ABA0FB9FB97C16DD62962473225BF789 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 650AE9BEE5AEC370177A5CE127A7EB4C /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF8F70251749BDAB5598325EB5ED5884 /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = DE42CFA55681F8FDB6D45BDBF43D397A /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BAF7566596B85AAD71ACEE72B0926AAD /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 0484B2CB5775556549C456726D519D39 /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C39EB7AB2744FF9826F3CBD1D85AD649 /* BabyCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 03AB24205A387EA9BA7AA6B300B2E7C2 /* BabyCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5E276C1C219C4736A07AA183C8B4A5E /* TYTabTitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F54DC8F67004EE2E8A16024712A5D8A /* TYTabTitleViewCell.m */; };
 		C6A07F406108F8A272C61D3E0003AC4D /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CCABA84BF555F7AC44FCB95F2FF91A9 /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C88F85D3200060BD98FC13EA58121706 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 334AB51F9C023FD3D85672C0177D5731 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA7E1603097C3299146952140496BDE3 /* TYTabPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2092191B59BFE9AD420B2DC2528B1889 /* TYTabPagerController.m */; };
 		CB46BDD2F505FD4C0BC3A3D212238A55 /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EA8FB5F5AA61AB9C83474F8B4C95B /* BabySpeaker.m */; };
+		CDBC4D5D0888DBA4476F0CF4D7E90F71 /* TYPagerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B8C3D072AFF9EE54E54B046140ED99 /* TYPagerController-dummy.m */; };
 		D7CE05A743B7ACD50796191FA442814C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C4F6B84E86C9B05F9E5104EE221AF7 /* ViewController+MASAdditions.m */; };
-		D7ECFF779B2BD0D0186B51978631D63E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		D8AB047BF392C79539CC00043227DE12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		D9601A235C598AF2FC78F35D027DA95B /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 511892B516542389709AED7F3358C903 /* BabyCentralManager.m */; };
 		DDFB9D8E0612A7F6151A240A805D17B7 /* BabyPeripheralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F5EE2BD3BC2E75A6C1D63E28734EC13 /* BabyPeripheralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF7F88B58B564EDF169EC0C9CF8E5124 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = CD67C8B3545B1EAB2878F3A44580F7C6 /* MASConstraintMaker.m */; };
@@ -80,10 +81,9 @@
 		E1E771349813022263F549BDF33CB4BB /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A02F45DED88FEC1DDABD4F4ACDB89E6 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5A4C7FDB4395B539F28307C74029C6A /* BabyDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = D6355DC82FBFD02548C60070C3327BC4 /* BabyDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E692A50B8E3E7B5B8C1A925A52592D86 /* BabyCentralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E17D1BB42747E621B5B5BBBD8A4FDA /* BabyCentralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6DF9B0962CD1F7C225F64F5D3DA0F5D /* TYTabPagerController.h in Headers */ = {isa = PBXBuildFile; fileRef = BBA7857329C494F2419B146298E53084 /* TYTabPagerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E7644BBE0B8D8C343874B904A90CA9B8 /* BabyToy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB4B6EEB708AD8D8EC5C3F00CD9FEE2 /* BabyToy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E7C2D39B0444E09CE41BA92C1933E5FB /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C3CB7AD40D523F1CAF2376B2338B6A /* NSDate+DateTools.m */; };
-		EBA9CD414443F53AC1CBE9BE8FD8178F /* TYTabTitleCellProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4E5208144ECEB8567331BF5F005EE0 /* TYTabTitleCellProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EACC2FFAFD7BB839A5ED64078A8B646D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		EC1206D32518125B60D3DC2DA29107D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		EC48DE078CA5E55922CCE02354D475CD /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D79D0540D69E10DF4C603842CA077C0 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0B56A7D38A399A2F67F9920C9526A66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
@@ -94,19 +94,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		06DC33B478572E106B8E1A5DF1806822 /* PBXContainerItemProxy */ = {
+		061E17270473DE68EF9C543848CD0737 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B35CB295C1DF6B318D4EC0A99AD1982D;
-			remoteInfo = BabyBluetooth;
+			remoteGlobalIDString = 9DC8D9E02903E93BD0B2FEC9D846EA20;
+			remoteInfo = Masonry;
 		};
-		106B87EC0C2F9E81320340CFEDBB0705 /* PBXContainerItemProxy */ = {
+		0E3F3CB6CB709EBBB1E1005CF27F046B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D9E56937F3139324F815AF267AA7F37B;
-			remoteInfo = TYPagerController;
+			remoteGlobalIDString = B36F6D48026E14827529F787D63D61B8;
+			remoteInfo = DateTools;
 		};
 		4BE17CF60EDA3DA249DB61E76C4545A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -115,26 +115,26 @@
 			remoteGlobalIDString = B35CB295C1DF6B318D4EC0A99AD1982D;
 			remoteInfo = BabyBluetooth;
 		};
-		AC9325B5579602274F1DC325B180B7EE /* PBXContainerItemProxy */ = {
+		9BA708299A00FE23B03A6106AF9E7CF0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9DC8D9E02903E93BD0B2FEC9D846EA20;
-			remoteInfo = Masonry;
+			remoteGlobalIDString = 0AF9911EF118E1E822E5A7AEF09D33FC;
+			remoteInfo = TYPagerController;
 		};
-		DD7991DC54965C3E5EB3BF571006392F /* PBXContainerItemProxy */ = {
+		9EF5DF712084C6C666441012FA2FEC93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0CD058751C51597F9D9C0EAF1BE952B7;
 			remoteInfo = LEBluetooth;
 		};
-		F1CB93B3364433088D7233609154C0C5 /* PBXContainerItemProxy */ = {
+		D76B1A339ADA4FB09238BA6F5C92249B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B36F6D48026E14827529F787D63D61B8;
-			remoteInfo = DateTools;
+			remoteGlobalIDString = B35CB295C1DF6B318D4EC0A99AD1982D;
+			remoteInfo = BabyBluetooth;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -325,11 +325,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4967C42E2683F265D553DE00300592BD /* Frameworks */ = {
+		0CBB09ECB2D489A627764F3021C13C40 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7ECFF779B2BD0D0186B51978631D63E /* Foundation.framework in Frameworks */,
+				D8AB047BF392C79539CC00043227DE12 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655087EC14254FF4B543EFD7526871E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EACC2FFAFD7BB839A5ED64078A8B646D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,19 +358,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98DE98BE328908B071E3E708258F7B85 /* Frameworks */ = {
+		9D78D98B1A31BD294E5CBA52409B10F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03158F86FC4EE6480A0961A4E4D8D246 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5BA1E5B6376B42A16EE7645603274A5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A87AE8357BC25BE6909B66721C4B3808 /* Foundation.framework in Frameworks */,
+				84551871AFE8E46680C7C3B07EBC2763 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -824,23 +824,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78F64BAA03C2275439A817CD3E206ED0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8AA7EC93621F69A1DBA24E063D67C292 /* TYPagerController.h in Headers */,
-				A3EFAB999ECEC1FF4EC91A607F77DA4B /* TYTabButtonPagerController.h in Headers */,
-				E6DF9B0962CD1F7C225F64F5D3DA0F5D /* TYTabPagerController.h in Headers */,
-				EBA9CD414443F53AC1CBE9BE8FD8178F /* TYTabTitleCellProtocol.h in Headers */,
-				4B709A17945C4474B8D28E52568F4930 /* TYTabTitleViewCell.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9B12AF8DD9137F4C413FDFB17C6EE9D2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FA63BB649D48A7DABAA6E292FC2EB53B /* LEBluetooth.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F0F733E411F6AB112C7FE40847A5946 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95EB9594E63416D3FC72C13B03713FE1 /* TYPagerController.h in Headers */,
+				743DA37729004860A9DA424B96D83560 /* TYTabButtonPagerController.h in Headers */,
+				8B356942DF887255C026E3E0E6B1550F /* TYTabPagerController.h in Headers */,
+				7929EDE50B1F43DBB44DC20E91A18341 /* TYTabTitleCellProtocol.h in Headers */,
+				809D169C85D5AE9DC906D094D7118FD8 /* TYTabTitleViewCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -885,23 +885,21 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		03B4EE49ED85DE9ADE691866C65B3485 /* Pods-test */ = {
+		0AF9911EF118E1E822E5A7AEF09D33FC /* TYPagerController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E2B22B4C0DA039C81F1458F397842B3 /* Build configuration list for PBXNativeTarget "Pods-test" */;
+			buildConfigurationList = CC725B05FB3789CFF7FFFFECD121039B /* Build configuration list for PBXNativeTarget "TYPagerController" */;
 			buildPhases = (
-				30096B01B0683A130574CF733D739901 /* Sources */,
-				98DE98BE328908B071E3E708258F7B85 /* Frameworks */,
+				5E2244F61D87B51C2726E3F5584B6334 /* Sources */,
+				0CBB09ECB2D489A627764F3021C13C40 /* Frameworks */,
+				9F0F733E411F6AB112C7FE40847A5946 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FED64C6456F507EB8A73E6CCFE37985E /* PBXTargetDependency */,
-				E1B566D155F8F19B02369CF4E38202AC /* PBXTargetDependency */,
-				7B7B4093CEDBACB9AA682A8186406723 /* PBXTargetDependency */,
 			);
-			name = "Pods-test";
-			productName = "Pods-test";
-			productReference = A92CF4077147CB65FC616E4B7BAB5921 /* libPods-test.a */;
+			name = TYPagerController;
+			productName = TYPagerController;
+			productReference = 642E8F2AC3CDA7C3B6AF18B53931A594 /* libTYPagerController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		0CD058751C51597F9D9C0EAF1BE952B7 /* LEBluetooth */ = {
@@ -922,22 +920,41 @@
 			productReference = 1FDD863959B0CCCBADAA4D2B6A5EB6D0 /* libLEBluetooth.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		1D317346632EC271F4F682EC93378E9D /* Pods-test_babyBlueTooth */ = {
+		19E589C787D6645A9166F69FF2F3A1E2 /* Pods-test_babyBlueTooth */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB1CA6B23406E517340E910C9EDD6E3D /* Build configuration list for PBXNativeTarget "Pods-test_babyBlueTooth" */;
+			buildConfigurationList = 32382BD2A03D776C590B0FF2BD49232D /* Build configuration list for PBXNativeTarget "Pods-test_babyBlueTooth" */;
 			buildPhases = (
-				4348FC9D5B8FC4D9B8E44B78E9AFCAC0 /* Sources */,
-				4967C42E2683F265D553DE00300592BD /* Frameworks */,
+				9B3EB8A7087079004280E68588C02A7A /* Sources */,
+				9D78D98B1A31BD294E5CBA52409B10F1 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3105BBBEE78831940196ADE6585913A4 /* PBXTargetDependency */,
-				469951610F98E7D0818214CD2FB70474 /* PBXTargetDependency */,
 			);
 			name = "Pods-test_babyBlueTooth";
 			productName = "Pods-test_babyBlueTooth";
 			productReference = 325E210C274FAECF3E3AD9D1A8F58AEC /* libPods-test_babyBlueTooth.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8187115148D34E03828557F04A152D0F /* Pods-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F40ED52A5690E4C6A9F78AD1E644314 /* Build configuration list for PBXNativeTarget "Pods-test" */;
+			buildPhases = (
+				0F5FCF9A999D22535ADE4179079F5A1C /* Sources */,
+				655087EC14254FF4B543EFD7526871E3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83B808FA83F4874A9AB5C74A223FB0AF /* PBXTargetDependency */,
+				2D22BA924603C0DA78FF36DECA7E9EF9 /* PBXTargetDependency */,
+				53E2F9BCF174540CCD931EC8BCDBFB63 /* PBXTargetDependency */,
+				E1339EF96CF2E0E4826EFE0362D48963 /* PBXTargetDependency */,
+				1488F562E38E159F6C147621BBD06111 /* PBXTargetDependency */,
+			);
+			name = "Pods-test";
+			productName = "Pods-test";
+			productReference = A92CF4077147CB65FC616E4B7BAB5921 /* libPods-test.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */ = {
@@ -991,23 +1008,6 @@
 			productReference = 2BE5F75D383D51A14C35D0C85409E9B3 /* libDateTools.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		D9E56937F3139324F815AF267AA7F37B /* TYPagerController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2D7C2A26138FD2EF8079A731E6DDFB94 /* Build configuration list for PBXNativeTarget "TYPagerController" */;
-			buildPhases = (
-				1CAFAEDEE25639050C9AD8C58B0FD79D /* Sources */,
-				A5BA1E5B6376B42A16EE7645603274A5 /* Frameworks */,
-				78F64BAA03C2275439A817CD3E206ED0 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TYPagerController;
-			productName = TYPagerController;
-			productReference = 642E8F2AC3CDA7C3B6AF18B53931A594 /* libTYPagerController.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1033,39 +1033,39 @@
 				B36F6D48026E14827529F787D63D61B8 /* DateTools */,
 				0CD058751C51597F9D9C0EAF1BE952B7 /* LEBluetooth */,
 				9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */,
-				03B4EE49ED85DE9ADE691866C65B3485 /* Pods-test */,
-				1D317346632EC271F4F682EC93378E9D /* Pods-test_babyBlueTooth */,
-				D9E56937F3139324F815AF267AA7F37B /* TYPagerController */,
+				8187115148D34E03828557F04A152D0F /* Pods-test */,
+				19E589C787D6645A9166F69FF2F3A1E2 /* Pods-test_babyBlueTooth */,
+				0AF9911EF118E1E822E5A7AEF09D33FC /* TYPagerController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1CAFAEDEE25639050C9AD8C58B0FD79D /* Sources */ = {
+		0F5FCF9A999D22535ADE4179079F5A1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CF29C26DB7DECC0929F774ABE2A6D25 /* TYPagerController-dummy.m in Sources */,
-				0DF10788817CBFF51D217B13A8FBB8ED /* TYPagerController.m in Sources */,
-				7340011064AA898BCADF5C3B35023FD7 /* TYTabButtonPagerController.m in Sources */,
-				CA7E1603097C3299146952140496BDE3 /* TYTabPagerController.m in Sources */,
-				C5E276C1C219C4736A07AA183C8B4A5E /* TYTabTitleViewCell.m in Sources */,
+				0973959EA9F5EF2EC0DBC6545B6038CD /* Pods-test-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30096B01B0683A130574CF733D739901 /* Sources */ = {
+		5E2244F61D87B51C2726E3F5584B6334 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DCC039404AFB98D27C7E9F5485DBC4E /* Pods-test-dummy.m in Sources */,
+				CDBC4D5D0888DBA4476F0CF4D7E90F71 /* TYPagerController-dummy.m in Sources */,
+				37730E7C84BBA2BDDD20B7402FEEBFD8 /* TYPagerController.m in Sources */,
+				5B016342D938D9D48317465AFF1A502A /* TYTabButtonPagerController.m in Sources */,
+				A3899000CC3839CDF09BCB5EF489B881 /* TYTabPagerController.m in Sources */,
+				82B811F4AFFF91D1475FAFB0928EB42B /* TYTabTitleViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4348FC9D5B8FC4D9B8E44B78E9AFCAC0 /* Sources */ = {
+		9B3EB8A7087079004280E68588C02A7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22999336504A5771D5E8FBE834B91705 /* Pods-test_babyBlueTooth-dummy.m in Sources */,
+				9C4FEAB24BB9424275FDDEEEC9CE4A2C /* Pods-test_babyBlueTooth-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1131,11 +1131,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3105BBBEE78831940196ADE6585913A4 /* PBXTargetDependency */ = {
+		1488F562E38E159F6C147621BBD06111 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = BabyBluetooth;
-			target = B35CB295C1DF6B318D4EC0A99AD1982D /* BabyBluetooth */;
-			targetProxy = 06DC33B478572E106B8E1A5DF1806822 /* PBXContainerItemProxy */;
+			name = TYPagerController;
+			target = 0AF9911EF118E1E822E5A7AEF09D33FC /* TYPagerController */;
+			targetProxy = 9BA708299A00FE23B03A6106AF9E7CF0 /* PBXContainerItemProxy */;
+		};
+		2D22BA924603C0DA78FF36DECA7E9EF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DateTools;
+			target = B36F6D48026E14827529F787D63D61B8 /* DateTools */;
+			targetProxy = 0E3F3CB6CB709EBBB1E1005CF27F046B /* PBXContainerItemProxy */;
 		};
 		38B7D1ED61EBD031604BAE26A1425187 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1143,55 +1149,49 @@
 			target = B35CB295C1DF6B318D4EC0A99AD1982D /* BabyBluetooth */;
 			targetProxy = 4BE17CF60EDA3DA249DB61E76C4545A6 /* PBXContainerItemProxy */;
 		};
-		469951610F98E7D0818214CD2FB70474 /* PBXTargetDependency */ = {
+		53E2F9BCF174540CCD931EC8BCDBFB63 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LEBluetooth;
 			target = 0CD058751C51597F9D9C0EAF1BE952B7 /* LEBluetooth */;
-			targetProxy = DD7991DC54965C3E5EB3BF571006392F /* PBXContainerItemProxy */;
+			targetProxy = 9EF5DF712084C6C666441012FA2FEC93 /* PBXContainerItemProxy */;
 		};
-		7B7B4093CEDBACB9AA682A8186406723 /* PBXTargetDependency */ = {
+		83B808FA83F4874A9AB5C74A223FB0AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TYPagerController;
-			target = D9E56937F3139324F815AF267AA7F37B /* TYPagerController */;
-			targetProxy = 106B87EC0C2F9E81320340CFEDBB0705 /* PBXContainerItemProxy */;
+			name = BabyBluetooth;
+			target = B35CB295C1DF6B318D4EC0A99AD1982D /* BabyBluetooth */;
+			targetProxy = D76B1A339ADA4FB09238BA6F5C92249B /* PBXContainerItemProxy */;
 		};
-		E1B566D155F8F19B02369CF4E38202AC /* PBXTargetDependency */ = {
+		E1339EF96CF2E0E4826EFE0362D48963 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
 			target = 9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */;
-			targetProxy = AC9325B5579602274F1DC325B180B7EE /* PBXContainerItemProxy */;
-		};
-		FED64C6456F507EB8A73E6CCFE37985E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DateTools;
-			target = B36F6D48026E14827529F787D63D61B8 /* DateTools */;
-			targetProxy = F1CB93B3364433088D7233609154C0C5 /* PBXContainerItemProxy */;
+			targetProxy = 061E17270473DE68EF9C543848CD0737 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1B4D100035DC09502E75A21F2F7B0A99 /* Release */ = {
+		1C39F3FEDE58236109D1365F1834CCF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 095A4A3E2827454EF13A3AB46792F62A /* TYPagerController.xcconfig */;
+			baseConfigurationReference = F426D72C5A643493E8374B64B1E2B6F3 /* Pods-test.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TYPagerController/TYPagerController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		3890D7C92DE120C2BA762135796CFA80 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1260,19 +1260,19 @@
 			};
 			name = Debug;
 		};
-		5532F8D203B325F01B07734475CFC63C /* Debug */ = {
+		4572A8C1E76BF1776B522F5B1B8895F3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F426D72C5A643493E8374B64B1E2B6F3 /* Pods-test.debug.xcconfig */;
+			baseConfigurationReference = 19236A5C160803DC13C9488DF48A53C0 /* Pods-test_babyBlueTooth.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1281,7 +1281,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		587B8ECC28E3A9FF4796C121925DC113 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1400,7 +1400,7 @@
 			};
 			name = Release;
 		};
-		6CC926CBC51F18662D904C987897C697 /* Release */ = {
+		7521DA1019182F8AD805D44EB2E651E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4079086ADB24587642A37C0EC3AB1B6E /* Pods-test.release.xcconfig */;
 			buildSettings = {
@@ -1422,6 +1422,29 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
+		};
+		7903310B317D7A4160235E021809C69D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3518481921651E33EC660663FC359C1C /* Pods-test_babyBlueTooth.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 		794EF2B6765E7B98BBEB610E49436185 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1446,28 +1469,28 @@
 			};
 			name = Debug;
 		};
-		9BE3E676B364810D3A04816697B4251A /* Release */ = {
+		9AAE8A62E94B36B2ADFD48C000DE6CFB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19236A5C160803DC13C9488DF48A53C0 /* Pods-test_babyBlueTooth.release.xcconfig */;
+			baseConfigurationReference = 095A4A3E2827454EF13A3AB46792F62A /* TYPagerController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/TYPagerController/TYPagerController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		A59DF39B1EFCE1F44A21F55C7CB82C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1481,29 +1504,6 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		B74E922A57E9A6D02B2186BFEDC7297D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 095A4A3E2827454EF13A3AB46792F62A /* TYPagerController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TYPagerController/TYPagerController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1538,28 +1538,28 @@
 			};
 			name = Release;
 		};
-		D8B001757419F93592B3FF7A2035053A /* Debug */ = {
+		E826A39A20BFDCF9C0DC3E676A512C77 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3518481921651E33EC660663FC359C1C /* Pods-test_babyBlueTooth.debug.xcconfig */;
+			baseConfigurationReference = 095A4A3E2827454EF13A3AB46792F62A /* TYPagerController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TYPagerController/TYPagerController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		FFFAECCE6804E0832E6E1C026A6C0607 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1587,20 +1587,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D7C2A26138FD2EF8079A731E6DDFB94 /* Build configuration list for PBXNativeTarget "TYPagerController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B74E922A57E9A6D02B2186BFEDC7297D /* Debug */,
-				1B4D100035DC09502E75A21F2F7B0A99 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				587B8ECC28E3A9FF4796C121925DC113 /* Debug */,
 				3890D7C92DE120C2BA762135796CFA80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F40ED52A5690E4C6A9F78AD1E644314 /* Build configuration list for PBXNativeTarget "Pods-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C39F3FEDE58236109D1365F1834CCF1 /* Debug */,
+				7521DA1019182F8AD805D44EB2E651E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32382BD2A03D776C590B0FF2BD49232D /* Build configuration list for PBXNativeTarget "Pods-test_babyBlueTooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7903310B317D7A4160235E021809C69D /* Debug */,
+				4572A8C1E76BF1776B522F5B1B8895F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1632,15 +1641,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E2B22B4C0DA039C81F1458F397842B3 /* Build configuration list for PBXNativeTarget "Pods-test" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5532F8D203B325F01B07734475CFC63C /* Debug */,
-				6CC926CBC51F18662D904C987897C697 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		B22F685545B3A2A0F2FE5E46F7C7ACE1 /* Build configuration list for PBXNativeTarget "LEBluetooth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1650,11 +1650,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB1CA6B23406E517340E910C9EDD6E3D /* Build configuration list for PBXNativeTarget "Pods-test_babyBlueTooth" */ = {
+		CC725B05FB3789CFF7FFFFECD121039B /* Build configuration list for PBXNativeTarget "TYPagerController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8B001757419F93592B3FF7A2035053A /* Debug */,
-				9BE3E676B364810D3A04816697B4251A /* Release */,
+				9AAE8A62E94B36B2ADFD48C000DE6CFB /* Debug */,
+				E826A39A20BFDCF9C0DC3E676A512C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
