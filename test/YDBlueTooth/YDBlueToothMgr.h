@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 @class CBPeripheral;
+@class CBService;
 
 typedef NS_ENUM(NSInteger, YDBlueToothFilterType) {
     YDBlueToothFilterTypeMatch = 0,  // match to filter and find the specify device
@@ -27,7 +28,8 @@ typedef NS_ENUM(NSInteger, YDBlueToothFilterType) {
 - (void)startScan;
 
 /*
- * blue tooth search & filter key word and  pattern
+ * @param :blue tooth search & filter key word and  pattern, required
+ * @discussion: this filed must field one and configure with the filterType
  */
 @property (nonatomic, copy) NSString *matchField;
 @property (nonatomic, copy) NSString *prefixField;
@@ -35,20 +37,19 @@ typedef NS_ENUM(NSInteger, YDBlueToothFilterType) {
 @property (nonatomic, copy) NSString *containField;
 
 /*
- * param : filterType
+ * param : filterType required
  * discussion : filter determine which type we will use to filter and find the specify bluetooth
  */
 @property (nonatomic, assign) YDBlueToothFilterType filterType;
 
-/*
- * param : peripherals , memory store peripheral to display & for selected
- * discussion : this attribute must be implement for selected and search service enable by it ,if not ,it will be not find the services
- */
-@property (nonatomic, strong) NSMutableArray<CBPeripheral *> *peripherals;
-
 
 #pragma mark -- action method
+//scan
+@property (nonatomic, copy) void(^scanCallBack)(NSArray<CBPeripheral *> *peripherals);
 
+@property (nonatomic, copy) void(^servicesCallBack)(NSArray<CBService *> *services);
+
+//connect
 - (void)onConnectBluetoothWithIndex:(NSInteger)index;
 
 @property (nonatomic, copy) void (^connectionCallBack)(BOOL success);
