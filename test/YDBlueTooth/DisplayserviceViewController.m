@@ -17,6 +17,8 @@
 #define height [UIScreen mainScreen].bounds.size.height
 #define channelOnPeropheralView @"peripheralView"
 
+#warning --  如果获取的数据失败，看看蓝牙耳机是否还在打开的状态？？？、
+
 @interface DisplayserviceViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
