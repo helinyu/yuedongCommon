@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4117D7681F1F385600237986 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4117D7671F1F385600237986 /* UIView+Layout.m */; };
 		41C307051F1F375A00D4D87C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C307041F1F375A00D4D87C /* AppDelegate.m */; };
 		41C307081F1F375A00D4D87C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C307071F1F375A00D4D87C /* ViewController.m */; };
 		41C3070B1F1F375A00D4D87C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C307091F1F375A00D4D87C /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4117D7661F1F385600237986 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Layout.h"; path = "../../../../yuedong/code/sports/GlobalLayer/ThirdPart/PreSupport/UIView+Layout.h"; sourceTree = "<group>"; };
+		4117D7671F1F385600237986 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Layout.m"; path = "../../../../yuedong/code/sports/GlobalLayer/ThirdPart/PreSupport/UIView+Layout.m"; sourceTree = "<group>"; };
 		41C307011F1F375A00D4D87C /* MyselfDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyselfDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C307031F1F375A00D4D87C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41C307041F1F375A00D4D87C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				F05F7BA71B7372300051C68A /* SVProgressHUD */,
+				4117D7661F1F385600237986 /* UIView+Layout.h */,
+				4117D7671F1F385600237986 /* UIView+Layout.m */,
 			);
 			name = Framework;
 			sourceTree = "<group>";
@@ -251,7 +256,8 @@
 				TargetAttributes = {
 					41C307001F1F375A00D4D87C = {
 						CreatedOnToolsVersion = 9.0;
-						DevelopmentTeam = D2XBEJ6876;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Manual;
 					};
 					E1807E6C1B6CA29100E99C63 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -377,6 +383,7 @@
 				F05F7BA61B733A240051C68A /* PeripheralInfo.m in Sources */,
 				F05F7BAF1B7372300051C68A /* SVProgressHUD.m in Sources */,
 				E1807E761B6CA29100E99C63 /* AppDelegate.m in Sources */,
+				4117D7681F1F385600237986 /* UIView+Layout.m in Sources */,
 				E1807E731B6CA29100E99C63 /* main.m in Sources */,
 				F05F7BB21B7442B50051C68A /* CharacteristicViewController.m in Sources */,
 				F05F7BAD1B7372300051C68A /* SVIndefiniteAnimatedView.m in Sources */,
@@ -439,14 +446,17 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = MyselfDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.MyselfDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -469,13 +479,15 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = MyselfDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.MyselfDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -607,6 +619,7 @@
 				41C3072F1F1F375B00D4D87C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1807E681B6CA29100E99C63 /* Build configuration list for PBXProject "BabyBluetoothAppDemo" */ = {
 			isa = XCConfigurationList;
