@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "UIView+Layout.h"
 #import <CoreBluetooth/CoreBluetooth.h>
+#import "BabyBluetooth.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
