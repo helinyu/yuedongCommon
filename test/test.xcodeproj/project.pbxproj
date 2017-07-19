@@ -34,40 +34,6 @@
 		41E0D8F71F0CF72900E16E9E /* test_babyBlueTooth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8F51F0CF72900E16E9E /* test_babyBlueTooth.xcdatamodeld */; };
 		41E0D8F91F0CF72900E16E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E0D8F81F0CF72900E16E9E /* Assets.xcassets */; };
 		41E0D8FC1F0CF72900E16E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E0D8FA1F0CF72900E16E9E /* LaunchScreen.storyboard */; };
-		41ED56F41F1F342900ABD3D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED569F1F1F342800ABD3D5 /* AppDelegate.m */; };
-		41ED56F51F1F342900ABD3D5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41ED56A01F1F342800ABD3D5 /* LaunchScreen.xib */; };
-		41ED56F61F1F342900ABD3D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41ED56A21F1F342800ABD3D5 /* Main.storyboard */; };
-		41ED56F71F1F342900ABD3D5 /* CharacteristicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED56A51F1F342800ABD3D5 /* CharacteristicViewController.m */; };
-		41ED56F81F1F342900ABD3D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41ED56A61F1F342800ABD3D5 /* Images.xcassets */; };
-		41ED56F91F1F342900ABD3D5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41ED56A71F1F342800ABD3D5 /* Info.plist */; };
-		41ED56FA1F1F342900ABD3D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED56A81F1F342800ABD3D5 /* main.m */; };
-		41ED56FB1F1F342900ABD3D5 /* PeripheralInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED56AA1F1F342800ABD3D5 /* PeripheralInfo.m */; };
-		41ED56FC1F1F342900ABD3D5 /* PeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED56AC1F1F342800ABD3D5 /* PeripheralViewController.m */; };
-		41ED56FD1F1F342900ABD3D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED56AE1F1F342800ABD3D5 /* ViewController.m */; };
-		41ED56FE1F1F342900ABD3D5 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED56B41F1F342800ABD3D5 /* SVIndefiniteAnimatedView.m */; };
-		41ED56FF1F1F342900ABD3D5 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 41ED56B51F1F342800ABD3D5 /* SVProgressHUD.bundle */; };
-		41ED57001F1F342900ABD3D5 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED56B71F1F342800ABD3D5 /* SVProgressHUD.m */; };
-		41ED57011F1F342900ABD3D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED56BB1F1F342800ABD3D5 /* AppDelegate.m */; };
-		41ED57021F1F342900ABD3D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41ED56BC1F1F342800ABD3D5 /* Main.storyboard */; };
-		41ED57031F1F342900ABD3D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41ED56BE1F1F342800ABD3D5 /* Images.xcassets */; };
-		41ED57041F1F342900ABD3D5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41ED56BF1F1F342800ABD3D5 /* Info.plist */; };
-		41ED57051F1F342900ABD3D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED56C01F1F342800ABD3D5 /* main.m */; };
-		41ED57061F1F342900ABD3D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED56C21F1F342800ABD3D5 /* ViewController.m */; };
-		41ED57071F1F342900ABD3D5 /* BabyBluetoothOSDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED56C71F1F342800ABD3D5 /* BabyBluetoothOSDemoTests.m */; };
-		41ED57081F1F342900ABD3D5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41ED56C81F1F342800ABD3D5 /* Info.plist */; };
-		41ED57091F1F342900ABD3D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED56CC1F1F342800ABD3D5 /* AppDelegate.m */; };
-		41ED570A1F1F342900ABD3D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41ED56CD1F1F342800ABD3D5 /* Assets.xcassets */; };
-		41ED570B1F1F342900ABD3D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41ED56CE1F1F342800ABD3D5 /* LaunchScreen.storyboard */; };
-		41ED570C1F1F342900ABD3D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41ED56D01F1F342800ABD3D5 /* Main.storyboard */; };
-		41ED570D1F1F342900ABD3D5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41ED56D21F1F342800ABD3D5 /* Info.plist */; };
-		41ED570E1F1F342900ABD3D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED56D31F1F342800ABD3D5 /* main.m */; };
-		41ED570F1F1F342900ABD3D5 /* peripheral_servers.json in Resources */ = {isa = PBXBuildFile; fileRef = 41ED56D41F1F342800ABD3D5 /* peripheral_servers.json */; };
-		41ED57101F1F342900ABD3D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED56D61F1F342800ABD3D5 /* ViewController.m */; };
-		41ED57111F1F342900ABD3D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ED56DC1F1F342800ABD3D5 /* AppDelegate.swift */; };
-		41ED57121F1F342900ABD3D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41ED56DD1F1F342800ABD3D5 /* Assets.xcassets */; };
-		41ED57131F1F342900ABD3D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41ED56DE1F1F342800ABD3D5 /* Main.storyboard */; };
-		41ED57141F1F342900ABD3D5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41ED56E01F1F342800ABD3D5 /* Info.plist */; };
-		41ED57151F1F342900ABD3D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ED56E11F1F342800ABD3D5 /* ViewController.swift */; };
 		41F760011F1C9F2100AB66AE /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F760001F1C9F2100AB66AE /* HealthKit.framework */; };
 		41F760281F1CB4E800AB66AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F760271F1CB4E800AB66AE /* main.m */; };
 		41F7602B1F1CB4E800AB66AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F7602A1F1CB4E800AB66AE /* AppDelegate.m */; };
@@ -209,44 +175,6 @@
 		DCEE85C91F035DD700CAC9CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEE85C81F035DD700CAC9CA /* main.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		41ED56E61F1F342900ABD3D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41ED56AF1F1F342800ABD3D5 /* BabyBluetoothAppDemo.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E1807E6D1B6CA29100E99C63;
-			remoteInfo = BabyBluetoothAppDemo;
-		};
-		41ED56EA1F1F342900ABD3D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41ED56C31F1F342800ABD3D5 /* BabyBluetoothOSDemo.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F0F534971B9C0FBE00285A3C;
-			remoteInfo = BabyBluetoothOSDemo;
-		};
-		41ED56EC1F1F342900ABD3D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41ED56C31F1F342800ABD3D5 /* BabyBluetoothOSDemo.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F0F534AD1B9C0FBE00285A3C;
-			remoteInfo = BabyBluetoothOSDemoTests;
-		};
-		41ED56EF1F1F342900ABD3D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41ED56D71F1F342800ABD3D5 /* BluetoothStubOnIOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E1D0BC231C1B189B00F46E04;
-			remoteInfo = BluetoothStubOnIOS;
-		};
-		41ED56F21F1F342900ABD3D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41ED56E21F1F342800ABD3D5 /* BluetoothStubOnOSX.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F03BCB8B1BBB8F1500D62A8E;
-			remoteInfo = BluetoothStubOnOSX;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		065563C11B960CC4E9129709 /* Pods-YDBlueTooth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDBlueTooth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YDBlueTooth/Pods-YDBlueTooth.debug.xcconfig"; sourceTree = "<group>"; };
 		10B663388472CC30E40AA8F5 /* libPods-YDBlueTooth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YDBlueTooth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -298,55 +226,6 @@
 		41E0D8F81F0CF72900E16E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41E0D8FB1F0CF72900E16E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41E0D8FD1F0CF72900E16E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41ED569E1F1F342800ABD3D5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		41ED569F1F1F342800ABD3D5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		41ED56A11F1F342800ABD3D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		41ED56A31F1F342800ABD3D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		41ED56A41F1F342800ABD3D5 /* CharacteristicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacteristicViewController.h; sourceTree = "<group>"; };
-		41ED56A51F1F342800ABD3D5 /* CharacteristicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacteristicViewController.m; sourceTree = "<group>"; };
-		41ED56A61F1F342800ABD3D5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		41ED56A71F1F342800ABD3D5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41ED56A81F1F342800ABD3D5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		41ED56A91F1F342800ABD3D5 /* PeripheralInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralInfo.h; sourceTree = "<group>"; };
-		41ED56AA1F1F342800ABD3D5 /* PeripheralInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralInfo.m; sourceTree = "<group>"; };
-		41ED56AB1F1F342800ABD3D5 /* PeripheralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralViewController.h; sourceTree = "<group>"; };
-		41ED56AC1F1F342800ABD3D5 /* PeripheralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralViewController.m; sourceTree = "<group>"; };
-		41ED56AD1F1F342800ABD3D5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		41ED56AE1F1F342800ABD3D5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		41ED56AF1F1F342800ABD3D5 /* BabyBluetoothAppDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BabyBluetoothAppDemo.xcodeproj; sourceTree = "<group>"; };
-		41ED56B31F1F342800ABD3D5 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		41ED56B41F1F342800ABD3D5 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		41ED56B51F1F342800ABD3D5 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		41ED56B61F1F342800ABD3D5 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		41ED56B71F1F342800ABD3D5 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
-		41ED56BA1F1F342800ABD3D5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		41ED56BB1F1F342800ABD3D5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		41ED56BD1F1F342800ABD3D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		41ED56BE1F1F342800ABD3D5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		41ED56BF1F1F342800ABD3D5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41ED56C01F1F342800ABD3D5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		41ED56C11F1F342800ABD3D5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		41ED56C21F1F342800ABD3D5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		41ED56C31F1F342800ABD3D5 /* BabyBluetoothOSDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BabyBluetoothOSDemo.xcodeproj; sourceTree = "<group>"; };
-		41ED56C71F1F342800ABD3D5 /* BabyBluetoothOSDemoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyBluetoothOSDemoTests.m; sourceTree = "<group>"; };
-		41ED56C81F1F342800ABD3D5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41ED56CB1F1F342800ABD3D5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		41ED56CC1F1F342800ABD3D5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		41ED56CD1F1F342800ABD3D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		41ED56CF1F1F342800ABD3D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		41ED56D11F1F342800ABD3D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		41ED56D21F1F342800ABD3D5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41ED56D31F1F342800ABD3D5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		41ED56D41F1F342800ABD3D5 /* peripheral_servers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = peripheral_servers.json; sourceTree = "<group>"; };
-		41ED56D51F1F342800ABD3D5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		41ED56D61F1F342800ABD3D5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		41ED56D71F1F342800ABD3D5 /* BluetoothStubOnIOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BluetoothStubOnIOS.xcodeproj; sourceTree = "<group>"; };
-		41ED56DC1F1F342800ABD3D5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41ED56DD1F1F342800ABD3D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		41ED56DF1F1F342800ABD3D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		41ED56E01F1F342800ABD3D5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41ED56E11F1F342800ABD3D5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		41ED56E21F1F342800ABD3D5 /* BluetoothStubOnOSX.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BluetoothStubOnOSX.xcodeproj; sourceTree = "<group>"; };
 		41F75FFF1F1C9F2100AB66AE /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
 		41F760001F1C9F2100AB66AE /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		41F760241F1CB4E700AB66AE /* test_peripheral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_peripheral.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -788,184 +667,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		41ED569A1F1F341500ABD3D5 /* demos */ = {
-			isa = PBXGroup;
-			children = (
-				41ED569B1F1F342800ABD3D5 /* BabyBluetoothExamples */,
-			);
-			path = demos;
-			sourceTree = "<group>";
-		};
-		41ED569B1F1F342800ABD3D5 /* BabyBluetoothExamples */ = {
-			isa = PBXGroup;
-			children = (
-				41ED569C1F1F342800ABD3D5 /* BabyBluetoothAppDemo */,
-				41ED56B81F1F342800ABD3D5 /* BabyBluetoothOSDemo */,
-				41ED56C91F1F342800ABD3D5 /* BluetoothStubOnIOS */,
-				41ED56DA1F1F342800ABD3D5 /* BluetoothStubOnOSX */,
-			);
-			name = BabyBluetoothExamples;
-			path = ../../../BabyBluetooth/BabyBluetoothExamples;
-			sourceTree = "<group>";
-		};
-		41ED569C1F1F342800ABD3D5 /* BabyBluetoothAppDemo */ = {
-			isa = PBXGroup;
-			children = (
-				41ED569D1F1F342800ABD3D5 /* BabyBluetoothAppDemo */,
-				41ED56AF1F1F342800ABD3D5 /* BabyBluetoothAppDemo.xcodeproj */,
-				41ED56B21F1F342800ABD3D5 /* SVProgressHUD */,
-			);
-			path = BabyBluetoothAppDemo;
-			sourceTree = "<group>";
-		};
-		41ED569D1F1F342800ABD3D5 /* BabyBluetoothAppDemo */ = {
-			isa = PBXGroup;
-			children = (
-				41ED569E1F1F342800ABD3D5 /* AppDelegate.h */,
-				41ED569F1F1F342800ABD3D5 /* AppDelegate.m */,
-				41ED56A01F1F342800ABD3D5 /* LaunchScreen.xib */,
-				41ED56A21F1F342800ABD3D5 /* Main.storyboard */,
-				41ED56A41F1F342800ABD3D5 /* CharacteristicViewController.h */,
-				41ED56A51F1F342800ABD3D5 /* CharacteristicViewController.m */,
-				41ED56A61F1F342800ABD3D5 /* Images.xcassets */,
-				41ED56A71F1F342800ABD3D5 /* Info.plist */,
-				41ED56A81F1F342800ABD3D5 /* main.m */,
-				41ED56A91F1F342800ABD3D5 /* PeripheralInfo.h */,
-				41ED56AA1F1F342800ABD3D5 /* PeripheralInfo.m */,
-				41ED56AB1F1F342800ABD3D5 /* PeripheralViewController.h */,
-				41ED56AC1F1F342800ABD3D5 /* PeripheralViewController.m */,
-				41ED56AD1F1F342800ABD3D5 /* ViewController.h */,
-				41ED56AE1F1F342800ABD3D5 /* ViewController.m */,
-			);
-			path = BabyBluetoothAppDemo;
-			sourceTree = "<group>";
-		};
-		41ED56B01F1F342800ABD3D5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				41ED56E71F1F342900ABD3D5 /* BabyBluetoothAppDemo.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		41ED56B21F1F342800ABD3D5 /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				41ED56B31F1F342800ABD3D5 /* SVIndefiniteAnimatedView.h */,
-				41ED56B41F1F342800ABD3D5 /* SVIndefiniteAnimatedView.m */,
-				41ED56B51F1F342800ABD3D5 /* SVProgressHUD.bundle */,
-				41ED56B61F1F342800ABD3D5 /* SVProgressHUD.h */,
-				41ED56B71F1F342800ABD3D5 /* SVProgressHUD.m */,
-			);
-			path = SVProgressHUD;
-			sourceTree = "<group>";
-		};
-		41ED56B81F1F342800ABD3D5 /* BabyBluetoothOSDemo */ = {
-			isa = PBXGroup;
-			children = (
-				41ED56B91F1F342800ABD3D5 /* BabyBluetoothOSDemo */,
-				41ED56C31F1F342800ABD3D5 /* BabyBluetoothOSDemo.xcodeproj */,
-				41ED56C61F1F342800ABD3D5 /* BabyBluetoothOSDemoTests */,
-			);
-			path = BabyBluetoothOSDemo;
-			sourceTree = "<group>";
-		};
-		41ED56B91F1F342800ABD3D5 /* BabyBluetoothOSDemo */ = {
-			isa = PBXGroup;
-			children = (
-				41ED56BA1F1F342800ABD3D5 /* AppDelegate.h */,
-				41ED56BB1F1F342800ABD3D5 /* AppDelegate.m */,
-				41ED56BC1F1F342800ABD3D5 /* Main.storyboard */,
-				41ED56BE1F1F342800ABD3D5 /* Images.xcassets */,
-				41ED56BF1F1F342800ABD3D5 /* Info.plist */,
-				41ED56C01F1F342800ABD3D5 /* main.m */,
-				41ED56C11F1F342800ABD3D5 /* ViewController.h */,
-				41ED56C21F1F342800ABD3D5 /* ViewController.m */,
-			);
-			path = BabyBluetoothOSDemo;
-			sourceTree = "<group>";
-		};
-		41ED56C41F1F342800ABD3D5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				41ED56EB1F1F342900ABD3D5 /* BabyBluetoothOSDemo.app */,
-				41ED56ED1F1F342900ABD3D5 /* BabyBluetoothOSDemoTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		41ED56C61F1F342800ABD3D5 /* BabyBluetoothOSDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				41ED56C71F1F342800ABD3D5 /* BabyBluetoothOSDemoTests.m */,
-				41ED56C81F1F342800ABD3D5 /* Info.plist */,
-			);
-			path = BabyBluetoothOSDemoTests;
-			sourceTree = "<group>";
-		};
-		41ED56C91F1F342800ABD3D5 /* BluetoothStubOnIOS */ = {
-			isa = PBXGroup;
-			children = (
-				41ED56CA1F1F342800ABD3D5 /* BluetoothStubOnIOS */,
-				41ED56D71F1F342800ABD3D5 /* BluetoothStubOnIOS.xcodeproj */,
-			);
-			path = BluetoothStubOnIOS;
-			sourceTree = "<group>";
-		};
-		41ED56CA1F1F342800ABD3D5 /* BluetoothStubOnIOS */ = {
-			isa = PBXGroup;
-			children = (
-				41ED56CB1F1F342800ABD3D5 /* AppDelegate.h */,
-				41ED56CC1F1F342800ABD3D5 /* AppDelegate.m */,
-				41ED56CD1F1F342800ABD3D5 /* Assets.xcassets */,
-				41ED56CE1F1F342800ABD3D5 /* LaunchScreen.storyboard */,
-				41ED56D01F1F342800ABD3D5 /* Main.storyboard */,
-				41ED56D21F1F342800ABD3D5 /* Info.plist */,
-				41ED56D31F1F342800ABD3D5 /* main.m */,
-				41ED56D41F1F342800ABD3D5 /* peripheral_servers.json */,
-				41ED56D51F1F342800ABD3D5 /* ViewController.h */,
-				41ED56D61F1F342800ABD3D5 /* ViewController.m */,
-			);
-			path = BluetoothStubOnIOS;
-			sourceTree = "<group>";
-		};
-		41ED56D81F1F342800ABD3D5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				41ED56F01F1F342900ABD3D5 /* BluetoothStubOnIOS.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		41ED56DA1F1F342800ABD3D5 /* BluetoothStubOnOSX */ = {
-			isa = PBXGroup;
-			children = (
-				41ED56DB1F1F342800ABD3D5 /* BluetoothStubOnOSX */,
-				41ED56E21F1F342800ABD3D5 /* BluetoothStubOnOSX.xcodeproj */,
-			);
-			path = BluetoothStubOnOSX;
-			sourceTree = "<group>";
-		};
-		41ED56DB1F1F342800ABD3D5 /* BluetoothStubOnOSX */ = {
-			isa = PBXGroup;
-			children = (
-				41ED56DC1F1F342800ABD3D5 /* AppDelegate.swift */,
-				41ED56DD1F1F342800ABD3D5 /* Assets.xcassets */,
-				41ED56DE1F1F342800ABD3D5 /* Main.storyboard */,
-				41ED56E01F1F342800ABD3D5 /* Info.plist */,
-				41ED56E11F1F342800ABD3D5 /* ViewController.swift */,
-			);
-			path = BluetoothStubOnOSX;
-			sourceTree = "<group>";
-		};
-		41ED56E31F1F342800ABD3D5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				41ED56F31F1F342900ABD3D5 /* BluetoothStubOnOSX.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		41F760251F1CB4E800AB66AE /* test_peripheral */ = {
 			isa = PBXGroup;
 			children = (
@@ -1093,7 +794,6 @@
 		DC0504301EBDC45800718AAD = {
 			isa = PBXGroup;
 			children = (
-				41ED569A1F1F341500ABD3D5 /* demos */,
 				DC05043B1EBDC45800718AAD /* test */,
 				DCCED70F1EF98816001D2474 /* test_effective */,
 				DC42B6211F02BB040065F49E /* test_AR */,
@@ -1944,24 +1644,6 @@
 			mainGroup = DC0504301EBDC45800718AAD;
 			productRefGroup = DC05043A1EBDC45800718AAD /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 41ED56B01F1F342800ABD3D5 /* Products */;
-					ProjectRef = 41ED56AF1F1F342800ABD3D5 /* BabyBluetoothAppDemo.xcodeproj */;
-				},
-				{
-					ProductGroup = 41ED56C41F1F342800ABD3D5 /* Products */;
-					ProjectRef = 41ED56C31F1F342800ABD3D5 /* BabyBluetoothOSDemo.xcodeproj */;
-				},
-				{
-					ProductGroup = 41ED56D81F1F342800ABD3D5 /* Products */;
-					ProjectRef = 41ED56D71F1F342800ABD3D5 /* BluetoothStubOnIOS.xcodeproj */;
-				},
-				{
-					ProductGroup = 41ED56E31F1F342800ABD3D5 /* Products */;
-					ProjectRef = 41ED56E21F1F342800ABD3D5 /* BluetoothStubOnOSX.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				DC0504381EBDC45800718AAD /* test */,
@@ -1975,69 +1657,14 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		41ED56E71F1F342900ABD3D5 /* BabyBluetoothAppDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = BabyBluetoothAppDemo.app;
-			remoteRef = 41ED56E61F1F342900ABD3D5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41ED56EB1F1F342900ABD3D5 /* BabyBluetoothOSDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = BabyBluetoothOSDemo.app;
-			remoteRef = 41ED56EA1F1F342900ABD3D5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41ED56ED1F1F342900ABD3D5 /* BabyBluetoothOSDemoTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = BabyBluetoothOSDemoTests.xctest;
-			remoteRef = 41ED56EC1F1F342900ABD3D5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41ED56F01F1F342900ABD3D5 /* BluetoothStubOnIOS.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = BluetoothStubOnIOS.app;
-			remoteRef = 41ED56EF1F1F342900ABD3D5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41ED56F31F1F342900ABD3D5 /* BluetoothStubOnOSX.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = BluetoothStubOnOSX.app;
-			remoteRef = 41ED56F21F1F342900ABD3D5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		418D2FF61F1DA36000894079 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41ED570D1F1F342900ABD3D5 /* Info.plist in Resources */,
-				41ED56F51F1F342900ABD3D5 /* LaunchScreen.xib in Resources */,
-				41ED57031F1F342900ABD3D5 /* Images.xcassets in Resources */,
-				41ED56F61F1F342900ABD3D5 /* Main.storyboard in Resources */,
 				418D300D1F1DA36000894079 /* LaunchScreen.storyboard in Resources */,
-				41ED56FF1F1F342900ABD3D5 /* SVProgressHUD.bundle in Resources */,
-				41ED56F81F1F342900ABD3D5 /* Images.xcassets in Resources */,
-				41ED570C1F1F342900ABD3D5 /* Main.storyboard in Resources */,
-				41ED57141F1F342900ABD3D5 /* Info.plist in Resources */,
-				41ED570A1F1F342900ABD3D5 /* Assets.xcassets in Resources */,
-				41ED570F1F1F342900ABD3D5 /* peripheral_servers.json in Resources */,
 				418D300A1F1DA36000894079 /* Assets.xcassets in Resources */,
-				41ED57021F1F342900ABD3D5 /* Main.storyboard in Resources */,
-				41ED57081F1F342900ABD3D5 /* Info.plist in Resources */,
-				41ED57041F1F342900ABD3D5 /* Info.plist in Resources */,
-				41ED570B1F1F342900ABD3D5 /* LaunchScreen.storyboard in Resources */,
 				418D30051F1DA36000894079 /* Main.storyboard in Resources */,
-				41ED57121F1F342900ABD3D5 /* Assets.xcassets in Resources */,
-				41ED57131F1F342900ABD3D5 /* Main.storyboard in Resources */,
-				41ED56F91F1F342900ABD3D5 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2256,31 +1883,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41ED57151F1F342900ABD3D5 /* ViewController.swift in Sources */,
-				41ED57111F1F342900ABD3D5 /* AppDelegate.swift in Sources */,
-				41ED56FD1F1F342900ABD3D5 /* ViewController.m in Sources */,
 				418D30021F1DA36000894079 /* ViewController.m in Sources */,
 				418D2FFF1F1DA36000894079 /* AppDelegate.m in Sources */,
-				41ED56FC1F1F342900ABD3D5 /* PeripheralViewController.m in Sources */,
-				41ED56F41F1F342900ABD3D5 /* AppDelegate.m in Sources */,
-				41ED56FE1F1F342900ABD3D5 /* SVIndefiniteAnimatedView.m in Sources */,
 				418D30341F1DC2ED00894079 /* UIView+Layout.m in Sources */,
 				418D303B1F1E170F00894079 /* PeripheralInfo.m in Sources */,
-				41ED57061F1F342900ABD3D5 /* ViewController.m in Sources */,
 				418D30381F1E080C00894079 /* DisplayserviceViewController.m in Sources */,
-				41ED57001F1F342900ABD3D5 /* SVProgressHUD.m in Sources */,
-				41ED57071F1F342900ABD3D5 /* BabyBluetoothOSDemoTests.m in Sources */,
 				418D30311F1DAEB900894079 /* YDBlueToothMgr.m in Sources */,
-				41ED56FB1F1F342900ABD3D5 /* PeripheralInfo.m in Sources */,
-				41ED56F71F1F342900ABD3D5 /* CharacteristicViewController.m in Sources */,
 				418D2FFC1F1DA36000894079 /* main.m in Sources */,
-				41ED57011F1F342900ABD3D5 /* AppDelegate.m in Sources */,
-				41ED56FA1F1F342900ABD3D5 /* main.m in Sources */,
-				41ED57051F1F342900ABD3D5 /* main.m in Sources */,
 				418D30081F1DA36000894079 /* YDBlueTooth.xcdatamodeld in Sources */,
-				41ED57101F1F342900ABD3D5 /* ViewController.m in Sources */,
-				41ED570E1F1F342900ABD3D5 /* main.m in Sources */,
-				41ED57091F1F342900ABD3D5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2480,54 +2090,6 @@
 				41E0D8FB1F0CF72900E16E9E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		41ED56A01F1F342800ABD3D5 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				41ED56A11F1F342800ABD3D5 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		41ED56A21F1F342800ABD3D5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				41ED56A31F1F342800ABD3D5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		41ED56BC1F1F342800ABD3D5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				41ED56BD1F1F342800ABD3D5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		41ED56CE1F1F342800ABD3D5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				41ED56CF1F1F342800ABD3D5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		41ED56D01F1F342800ABD3D5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				41ED56D11F1F342800ABD3D5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		41ED56DE1F1F342800ABD3D5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				41ED56DF1F1F342800ABD3D5 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		41F7602F1F1CB4E800AB66AE /* Main.storyboard */ = {

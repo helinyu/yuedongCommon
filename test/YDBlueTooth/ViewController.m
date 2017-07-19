@@ -243,6 +243,8 @@ static NSString *const reuseIdentifierId = @"reuser.identifier.id";
 //    [self.navigationController pushViewController:vc animated:YES];
 //    why is not the same mgr
     
+    [baby cancelScan];
+    
     DisplayserviceViewController *vc = [[DisplayserviceViewController alloc]init];
     NSDictionary *item = [peripheralDataArray objectAtIndex:indexPath.row];
     CBPeripheral *peripheral = [item objectForKey:@"peripheral"];
