@@ -22,11 +22,9 @@
 
 @property (nonatomic, strong) NSMutableArray<CBService *> *connectedPeripheralServices;
 
-
 @end
 
 static NSString *const connectionChannel = @"connection.channel";
-
 
 @implementation YDBlueToothMgr
 
@@ -45,7 +43,6 @@ static NSString *const connectionChannel = @"connection.channel";
             break;
         case YDBlueToothFilterTypeContain:
             break;
-            
         default:
             break;
     }
@@ -98,80 +95,80 @@ static NSString *const connectionChannel = @"connection.channel";
     }];
     
    [_bluetooth setFilterOnDiscoverPeripherals:^BOOL(NSString *peripheralName, NSDictionary *advertisementData, NSNumber *RSSI) {
-//       if (peripheralName.length >0) {
-//           return YES;
-//       }
-//       return NO;
-        switch (wSelf.filterType) {
-            case YDBlueToothFilterTypeMatch:
-            {
-                if ([peripheralName isEqualToString:wSelf.matchField]) {
-                    return YES;
-                }
-                return NO;
-            }
-                break;
-            case YDBlueToothFilterTypeContain:
-            {
-                if ([peripheralName containsString:wSelf.containField]) {
-                    return YES;
-                }
-                return NO;
-            }
-                break;
-            case YDBlueToothFilterTypePrefix:
-            {
-                if ([peripheralName hasPrefix:wSelf.prefixField]) {
-                    return YES;
-                }
-                return NO;
-            }
-                break;
-            case YDBlueToothFilterTypeSuffix:
-            {
-                if ([peripheralName hasSuffix:wSelf.suffixField]) {
-                    return YES;
-                }
-                return NO;
-            }
-                break;
-            case YDBlueToothFilterTypePrefixAndContain:
-            {
-                if ([peripheralName hasPrefix:wSelf.prefixField] && [peripheralName containsString:wSelf.containField]) {
-                    return YES;
-                }
-                return NO;
-            }
-                break;
-            case YDBlueToothFilterTypePrefixAndSuffix:
-            {
-                if ([peripheralName hasPrefix:wSelf.prefixField] && [peripheralName hasSuffix:wSelf.suffixField]) {
-                    return YES;
-                }
-                return NO;
-            }
-                break;
-            case YDBlueToothFilterTypeSuffixAndContrain:
-            {
-                if ([peripheralName hasSuffix:wSelf.suffixField] && [peripheralName containsString:wSelf.containField]) {
-                    return YES;
-                }
-                return NO;
-            }
-                break;
-            case YDBlueToothFilterTypePrefixAndContrainAndSuffix:
-            {
-                if ([peripheralName hasPrefix:wSelf.prefixField] && [peripheralName containsString:wSelf.containField] && [peripheralName hasSuffix:wSelf.suffixField]) {
-                    return YES;
-                }
-                return NO;
-            }
-                break;
-            default:
-                return NO;
-                break;
-        }
-        return NO;
+       if (peripheralName.length >0) {
+           return YES;
+       }
+       return NO;
+//        switch (wSelf.filterType) {
+//            case YDBlueToothFilterTypeMatch:
+//            {
+//                if ([peripheralName isEqualToString:wSelf.matchField]) {
+//                    return YES;
+//                }
+//                return NO;
+//            }
+//                break;
+//            case YDBlueToothFilterTypeContain:
+//            {
+//                if ([peripheralName containsString:wSelf.containField]) {
+//                    return YES;
+//                }
+//                return NO;
+//            }
+//                break;
+//            case YDBlueToothFilterTypePrefix:
+//            {
+//                if ([peripheralName hasPrefix:wSelf.prefixField]) {
+//                    return YES;
+//                }
+//                return NO;
+//            }
+//                break;
+//            case YDBlueToothFilterTypeSuffix:
+//            {
+//                if ([peripheralName hasSuffix:wSelf.suffixField]) {
+//                    return YES;
+//                }
+//                return NO;
+//            }
+//                break;
+//            case YDBlueToothFilterTypePrefixAndContain:
+//            {
+//                if ([peripheralName hasPrefix:wSelf.prefixField] && [peripheralName containsString:wSelf.containField]) {
+//                    return YES;
+//                }
+//                return NO;
+//            }
+//                break;
+//            case YDBlueToothFilterTypePrefixAndSuffix:
+//            {
+//                if ([peripheralName hasPrefix:wSelf.prefixField] && [peripheralName hasSuffix:wSelf.suffixField]) {
+//                    return YES;
+//                }
+//                return NO;
+//            }
+//                break;
+//            case YDBlueToothFilterTypeSuffixAndContrain:
+//            {
+//                if ([peripheralName hasSuffix:wSelf.suffixField] && [peripheralName containsString:wSelf.containField]) {
+//                    return YES;
+//                }
+//                return NO;
+//            }
+//                break;
+//            case YDBlueToothFilterTypePrefixAndContrainAndSuffix:
+//            {
+//                if ([peripheralName hasPrefix:wSelf.prefixField] && [peripheralName containsString:wSelf.containField] && [peripheralName hasSuffix:wSelf.suffixField]) {
+//                    return YES;
+//                }
+//                return NO;
+//            }
+//                break;
+//            default:
+//                return NO;
+//                break;
+//        }
+//        return NO;
     }];
     
 #pragma mark -- connect
@@ -211,12 +208,6 @@ static NSString *const connectionChannel = @"connection.channel";
     
     [_bluetooth setBlockOnDiscoverServicesAtChannel:connectionChannel block:^(CBPeripheral *peripheral, NSError *error) {
         NSLog(@"setBlockOnDiscoverServicesAtChannel");
-        
-//        for (CBService *s in peripheral.services) {
-//            ///插入section到tableview
-//            [wSelf insertSectionToTableView:s];
-//        }
-        
         [wSelf addConnectedServicesWithServices:peripheral.services];
         !wSelf.servicesCallBack?:wSelf.servicesCallBack(wSelf.connectedPeripheralServices);
         [rhythm beats];
@@ -245,20 +236,12 @@ static NSString *const connectionChannel = @"connection.channel";
         NSLog(@"setBlockOnDiscoverToPeripheralsAtChannel");
     }];
     
-    //扫描选项->CBCentralManagerScanOptionAllowDuplicatesKey:忽略同一个Peripheral端的多个发现事件被聚合成一个发现事件
     NSDictionary *scanForPeripheralsWithOptions = @{CBCentralManagerScanOptionAllowDuplicatesKey:@YES};
-    /*连接选项->
-     CBConnectPeripheralOptionNotifyOnConnectionKey :当应用挂起时，如果有一个连接成功时，如果我们想要系统为指定的peripheral显示一个提示时，就使用这个key值。
-     CBConnectPeripheralOptionNotifyOnDisconnectionKey :当应用挂起时，如果连接断开时，如果我们想要系统为指定的peripheral显示一个断开连接的提示时，就使用这个key值。
-     CBConnectPeripheralOptionNotifyOnNotificationKey:
-     当应用挂起时，使用该key值表示只要接收到给定peripheral端的通知就显示一个提
-     */
     NSDictionary *connectOptions = @{CBConnectPeripheralOptionNotifyOnConnectionKey:@YES,
                                      CBConnectPeripheralOptionNotifyOnDisconnectionKey:@YES,
                                      CBConnectPeripheralOptionNotifyOnNotificationKey:@YES};
     
     [_bluetooth setBabyOptionsAtChannel:connectionChannel scanForPeripheralsWithOptions:scanForPeripheralsWithOptions connectPeripheralWithOptions:connectOptions scanForPeripheralsWithServices:nil discoverWithServices:nil discoverWithCharacteristics:nil];
-
 
 }
 

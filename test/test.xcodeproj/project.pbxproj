@@ -21,8 +21,6 @@
 		418D300D1F1DA36000894079 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418D300B1F1DA36000894079 /* LaunchScreen.storyboard */; };
 		418D30311F1DAEB900894079 /* YDBlueToothMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D30301F1DAEB900894079 /* YDBlueToothMgr.m */; };
 		418D30341F1DC2ED00894079 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D30331F1DC2ED00894079 /* UIView+Layout.m */; };
-		418D30381F1E080C00894079 /* DisplayserviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D30371F1E080C00894079 /* DisplayserviceViewController.m */; };
-		418D303B1F1E170F00894079 /* PeripheralInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D303A1F1E170F00894079 /* PeripheralInfo.m */; };
 		41ABCEF81F0BC51200927CCC /* HLYAnimationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */; };
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
@@ -203,10 +201,6 @@
 		418D30301F1DAEB900894079 /* YDBlueToothMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBlueToothMgr.m; sourceTree = "<group>"; };
 		418D30321F1DC2ED00894079 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
 		418D30331F1DC2ED00894079 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
-		418D30361F1E080C00894079 /* DisplayserviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayserviceViewController.h; sourceTree = "<group>"; };
-		418D30371F1E080C00894079 /* DisplayserviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayserviceViewController.m; sourceTree = "<group>"; };
-		418D30391F1E170F00894079 /* PeripheralInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralInfo.h; sourceTree = "<group>"; };
-		418D303A1F1E170F00894079 /* PeripheralInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralInfo.m; sourceTree = "<group>"; };
 		41ABCEF61F0BC51200927CCC /* HLYAnimationCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAnimationCollectionViewController.h; sourceTree = "<group>"; };
 		41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAnimationCollectionViewController.m; sourceTree = "<group>"; };
 		41ABCEF91F0BC57700927CCC /* AnimationCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationCollectionViewCell.h; path = "数据解析/AnimationCollectionViewCell.h"; sourceTree = "<group>"; };
@@ -573,10 +567,6 @@
 				418D2FFE1F1DA36000894079 /* AppDelegate.m */,
 				418D30001F1DA36000894079 /* ViewController.h */,
 				418D30011F1DA36000894079 /* ViewController.m */,
-				418D30361F1E080C00894079 /* DisplayserviceViewController.h */,
-				418D30371F1E080C00894079 /* DisplayserviceViewController.m */,
-				418D30391F1E170F00894079 /* PeripheralInfo.h */,
-				418D303A1F1E170F00894079 /* PeripheralInfo.m */,
 				418D30031F1DA36000894079 /* Main.storyboard */,
 				418D30091F1DA36000894079 /* Assets.xcassets */,
 				418D300B1F1DA36000894079 /* LaunchScreen.storyboard */,
@@ -1886,8 +1876,6 @@
 				418D30021F1DA36000894079 /* ViewController.m in Sources */,
 				418D2FFF1F1DA36000894079 /* AppDelegate.m in Sources */,
 				418D30341F1DC2ED00894079 /* UIView+Layout.m in Sources */,
-				418D303B1F1E170F00894079 /* PeripheralInfo.m in Sources */,
-				418D30381F1E080C00894079 /* DisplayserviceViewController.m in Sources */,
 				418D30311F1DAEB900894079 /* YDBlueToothMgr.m in Sources */,
 				418D2FFC1F1DA36000894079 /* main.m in Sources */,
 				418D30081F1DA36000894079 /* YDBlueTooth.xcdatamodeld in Sources */,
