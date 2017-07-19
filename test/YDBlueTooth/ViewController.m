@@ -13,6 +13,8 @@
 #import "BabyBluetooth.h"
 #import "SVProgressHUD.h"
 
+#import "ServicesViewController.h"
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;

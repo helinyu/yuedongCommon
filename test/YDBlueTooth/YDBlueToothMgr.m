@@ -279,7 +279,6 @@
 
 }
 
-
 #pragma mark -- some block methods
 - (YDBlueToothMgr * (^)(CBPeripheral *peripheral))connectedPeripheral {
     __weak typeof (self) wSelf = self;
