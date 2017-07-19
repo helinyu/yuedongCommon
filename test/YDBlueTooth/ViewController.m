@@ -96,13 +96,17 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
 #pragma mark --table delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [_mgr onConnectBluetoothWithIndex:indexPath.row];
-    __weak typeof (self) wSelf = self;
+//    __weak typeof (self) wSelf = self;
 //    _mgr.currentPeripheral = _peripherals[indexPath.row];
-    _mgr.connectedPeripheral(_peripherals[indexPath.row]).servicesCallBack = ^(NSArray<CBService *> *services) {
-        _services = services;
-        [wSelf logServicesInfoWithSerivces:services];
-    };
+//    _mgr.connectedPeripheral(_peripherals[indexPath.row]).servicesCallBack = ^(NSArray<CBService *> *services) {
+//        _services = services;
+//        [wSelf logServicesInfoWithSerivces:services];
+//    };
+    ServicesViewController *vc = [ServicesViewController new];
+//    vc.mgr = _mgr;
+    NSLog(@"mgr: %@",_mgr);
+    [self.navigationController pushViewController:vc.vcMgr(_mgr) animated:YES];
+    [_mgr onConnectBluetoothWithIndex:indexPath.row];
 }
 
 - (void)logServicesInfoWithSerivces:(NSArray <CBService *> *)services {

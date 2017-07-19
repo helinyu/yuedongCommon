@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class YDBlueToothMgr;
 
 @interface ServicesViewController : UIViewController
+
+- (ServicesViewController *(^)(YDBlueToothMgr *paramMgr))vcMgr;
 
 @end
