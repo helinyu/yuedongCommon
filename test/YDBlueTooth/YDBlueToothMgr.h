@@ -28,6 +28,12 @@ typedef NS_ENUM(NSInteger, YDBlueToothFilterType) {
 - (void)startScan;
 
 /*
+ *@metod quit the connection abount the central with the peripheral
+ *@discussion may be like that ,the VC dealloc, we may be need to quit the connected
+ */
+- (void)quitConnected;
+
+/*
  * @param :blue tooth search & filter key word and  pattern, required
  * @discussion: this filed must field one and configure with the filterType
  */
@@ -42,6 +48,13 @@ typedef NS_ENUM(NSInteger, YDBlueToothFilterType) {
  */
 @property (nonatomic, assign) YDBlueToothFilterType filterType;
 
+@property (nonatomic, strong) CBPeripheral *currentPeripheral;
+
+/*
+ * @parmam : connectedPeripheral (recommended)
+ * discussion : 传入参数有两种方式，一种方式是同步block的方式，实现链式调用传入，另外一个种是直接传入
+ */
+- (YDBlueToothMgr * (^)(CBPeripheral *peripheral))connectedPeripheral;
 
 #pragma mark -- action method
 //scan

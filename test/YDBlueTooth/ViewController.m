@@ -39,6 +39,9 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
+    UIBarButtonItem *barBtn = [[UIBarButtonItem alloc] initWithTitle:@"断开" style:UIBarButtonItemStylePlain target:self action:@selector(onQuitConnected)];
+    self.navigationController.navigationBar.topItem.rightBarButtonItem = barBtn;
+    
     [SVProgressHUD showInfoWithStatus:@"准备打开设备"];
     NSLog(@"view did load");
 
@@ -53,7 +56,17 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
             [wSelf.tableView reloadData];
         });
     };
-    
+}
+
+- (void)onQuitConnected {
+    [_mgr quitConnected];
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+}
+
+- (void)dealloc {
 }
 
 
@@ -83,7 +96,8 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [_mgr onConnectBluetoothWithIndex:indexPath.row];
     __weak typeof (self) wSelf = self;
-    _mgr.servicesCallBack = ^(NSArray<CBService *> *services) {
+//    _mgr.currentPeripheral = _peripherals[indexPath.row];
+    _mgr.connectedPeripheral(_peripherals[indexPath.row]).servicesCallBack = ^(NSArray<CBService *> *services) {
         _services = services;
         [wSelf logServicesInfoWithSerivces:services];
     };

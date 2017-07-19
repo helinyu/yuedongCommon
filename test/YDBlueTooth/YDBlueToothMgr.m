@@ -24,39 +24,15 @@
 
 @end
 
-static NSString *const connectionChannel = @"connection.channel";
+//static NSString *const connectionChannel = @"connection.channel";
 
 @implementation YDBlueToothMgr
 
-+ (instancetype)shared {
-    static id singleton = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        singleton = [[self alloc] init];
-    });
-    return singleton;
+#pragma mark -- system function
+- (void)dealloc {
+    [self quitConnected];
 }
 
-- (void)initWithFilterField:(NSString *)filterField withFilterType:(YDBlueToothFilterType) type {
-    switch (type) {
-        case YDBlueToothFilterTypeMatch:
-            break;
-        case YDBlueToothFilterTypeContain:
-            break;
-        default:
-            break;
-    }
-}
-
-- (void)startScan {
-    
-    _peripherals = [NSMutableArray<CBPeripheral *> new];
-    [_bluetooth cancelAllPeripheralsConnection];
-    _bluetooth = [BabyBluetooth shareBabyBluetooth];
-
-    [self babyDelegate];
-    _bluetooth.scanForPeripherals().begin();
-}
 
 #pragma mark -- all delegate block
 
@@ -72,12 +48,12 @@ static NSString *const connectionChannel = @"connection.channel";
         }
     }];
     
-    [_bluetooth setBlockOnCentralManagerDidUpdateStateAtChannel:connectionChannel block:^(CBCentralManager *central) {
-        if (central.state == CBManagerStatePoweredOn) {
-            [SVProgressHUD showInfoWithStatus:@"指定channel设备打开成功，开始扫描设备"];
-            NSLog(@"设备打开成功，开始扫描蓝牙设备");
-        }
-    }];
+//    [_bluetooth setBlockOnCentralManagerDidUpdateStateAtChannel:connectionChannel block:^(CBCentralManager *central) {
+//        if (central.state == CBManagerStatePoweredOn) {
+//            [SVProgressHUD showInfoWithStatus:@"指定channel设备打开成功，开始扫描设备"];
+//            NSLog(@"设备打开成功，开始扫描蓝牙设备");
+//        }
+//    }];
     
     [_bluetooth setBlockOnDiscoverToPeripherals:^(CBCentralManager *central, CBPeripheral *peripheral, NSDictionary *advertisementData, NSNumber *RSSI) {
         BOOL hasStored = NO;
@@ -171,56 +147,53 @@ static NSString *const connectionChannel = @"connection.channel";
 //        return NO;
     }];
     
-#pragma mark -- connect
+#pragma mark - connect
     [_bluetooth setBlockOnConnected:^(CBCentralManager *central, CBPeripheral *peripheral) {
         NSLog(@"setBlockOnConnected");
     }];
     
-    [_bluetooth setBlockOnConnectedAtChannel:connectionChannel block:^(CBCentralManager *central, CBPeripheral *peripheral) {
-        NSLog(@"setBlockOnConnectedAtChannel");
-        [SVProgressHUD showInfoWithStatus:[NSString stringWithFormat:@"设备：%@--连接成功",peripheral.name]];
-    }];
+//    [_bluetooth setBlockOnConnectedAtChannel:connectionChannel block:^(CBCentralManager *central, CBPeripheral *peripheral) {
+//        NSLog(@"setBlockOnConnectedAtChannel");
+//        [SVProgressHUD showInfoWithStatus:[NSString stringWithFormat:@"设备：%@--连接成功",peripheral.name]];
+//    }];
 
-    [_bluetooth setBlockOnConnectedAtChannel:connectionChannel block:^(CBCentralManager *central, CBPeripheral *peripheral) {
-        NSLog(@"setBlockOnConnectedAtChannel");
-    }];
+//    [_bluetooth setBlockOnConnectedAtChannel:connectionChannel block:^(CBCentralManager *central, CBPeripheral *peripheral) {
+//        NSLog(@"setBlockOnConnectedAtChannel");
+//    }];
     
     [_bluetooth setBlockOnFailToConnect:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
         NSLog(@"setBlockOnFailToConnect");
     }];
     
-    [_bluetooth setBlockOnFailToConnectAtChannel:connectionChannel block:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
-        NSLog(@"setBlockOnFailToConnectAtChannel");
-    }];
+//    [_bluetooth setBlockOnFailToConnectAtChannel:connectionChannel block:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
+//        NSLog(@"setBlockOnFailToConnectAtChannel");
+//    }];
     
     [_bluetooth setBlockOnDisconnect:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
         NSLog(@"setBlockOnDisconnect");
     }];
     
-    [_bluetooth setBlockOnDisconnectAtChannel:connectionChannel block:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
-        NSLog(@"setBlockOnDisconnectAtChannel");
-    }];
+//    [_bluetooth setBlockOnDisconnectAtChannel:connectionChannel block:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
+//        NSLog(@"setBlockOnDisconnectAtChannel");
+//    }];
     
 //    discover
     [_bluetooth setBlockOnDiscoverServices:^(CBPeripheral *peripheral, NSError *error) {
         NSLog(@"setBlockOnDiscoverServices");
-    }];
-    
-    [_bluetooth setBlockOnDiscoverServicesAtChannel:connectionChannel block:^(CBPeripheral *peripheral, NSError *error) {
-        NSLog(@"setBlockOnDiscoverServicesAtChannel");
         [wSelf addConnectedServicesWithServices:peripheral.services];
         !wSelf.servicesCallBack?:wSelf.servicesCallBack(wSelf.connectedPeripheralServices);
         [rhythm beats];
     }];
     
+//    [_bluetooth setBlockOnDiscoverServicesAtChannel:connectionChannel block:^(CBPeripheral *peripheral, NSError *error) {
+//        NSLog(@"setBlockOnDiscoverServicesAtChannel");
+//        [wSelf addConnectedServicesWithServices:peripheral.services];
+//        !wSelf.servicesCallBack?:wSelf.servicesCallBack(wSelf.connectedPeripheralServices);
+//        [rhythm beats];
+//    }];
+//
     [rhythm setBlockOnBeatsBreak:^(BabyRhythm *bry) {
         NSLog(@"setBlockOnBeatsBreak call");
-        
-        //如果完成任务，即可停止beat,返回bry可以省去使用weak rhythm的麻烦
-        //        if (<#condition#>) {
-        //            [bry beatsOver];
-        //        }
-        
     }];
     
     //设置beats over委托
@@ -232,20 +205,58 @@ static NSString *const connectionChannel = @"connection.channel";
         NSLog(@"setBlockOnDiscoverCharacteristics");
     }];
     
-    [_bluetooth setBlockOnDiscoverToPeripheralsAtChannel:connectionChannel block:^(CBCentralManager *central, CBPeripheral *peripheral, NSDictionary *advertisementData, NSNumber *RSSI) {
-        NSLog(@"setBlockOnDiscoverToPeripheralsAtChannel");
-    }];
+//    [_bluetooth setBlockOnDiscoverToPeripheralsAtChannel:connectionChannel block:^(CBCentralManager *central, CBPeripheral *peripheral, NSDictionary *advertisementData, NSNumber *RSSI) {
+//        NSLog(@"setBlockOnDiscoverToPeripheralsAtChannel");
+//    }];
     
     NSDictionary *scanForPeripheralsWithOptions = @{CBCentralManagerScanOptionAllowDuplicatesKey:@YES};
     NSDictionary *connectOptions = @{CBConnectPeripheralOptionNotifyOnConnectionKey:@YES,
                                      CBConnectPeripheralOptionNotifyOnDisconnectionKey:@YES,
                                      CBConnectPeripheralOptionNotifyOnNotificationKey:@YES};
     
-    [_bluetooth setBabyOptionsAtChannel:connectionChannel scanForPeripheralsWithOptions:scanForPeripheralsWithOptions connectPeripheralWithOptions:connectOptions scanForPeripheralsWithServices:nil discoverWithServices:nil discoverWithCharacteristics:nil];
+//    [_bluetooth setBabyOptionsAtChannel:connectionChannel scanForPeripheralsWithOptions:scanForPeripheralsWithOptions connectPeripheralWithOptions:connectOptions scanForPeripheralsWithServices:nil discoverWithServices:nil discoverWithCharacteristics:nil];
+    [_bluetooth setBabyOptionsWithScanForPeripheralsWithOptions:scanForPeripheralsWithOptions connectPeripheralWithOptions:connectOptions scanForPeripheralsWithServices:nil discoverWithServices:nil discoverWithCharacteristics:nil];
 
 }
 
-#pragma mark -- custom methods 
+#pragma mark -- custom methods
+
++ (instancetype)shared {
+    static id singleton = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        singleton = [[self alloc] init];
+    });
+    return singleton;
+}
+
+- (void)initWithFilterField:(NSString *)filterField withFilterType:(YDBlueToothFilterType) type {
+    switch (type) {
+        case YDBlueToothFilterTypeMatch:
+            break;
+        case YDBlueToothFilterTypeContain:
+            break;
+        default:
+            break;
+    }
+}
+
+- (void)startScan {
+    
+    _peripherals = [NSMutableArray<CBPeripheral *> new];
+    [_bluetooth cancelAllPeripheralsConnection];
+    _bluetooth = [BabyBluetooth shareBabyBluetooth];
+    
+    [self babyDelegate];
+    _bluetooth.scanForPeripherals().begin();
+}
+
+- (void)quitConnected {
+    if (_currentPeripheral) {
+        [_bluetooth cancelPeripheralConnection:_currentPeripheral];
+        _currentPeripheral = nil;
+    }
+}
 
 - (void)addConnectedServicesWithServices:(NSArray<CBService *> *)services {
     for (CBService *service in services) {
@@ -263,10 +274,21 @@ static NSString *const connectionChannel = @"connection.channel";
     CBPeripheral *peripheral = _peripherals[index];
     [SVProgressHUD showInfoWithStatus:@"开始连接设备"];
     _connectedPeripheralServices = [NSMutableArray<CBService *> new];
-    _bluetooth.having(peripheral).and.channel(connectionChannel).then.connectToPeripherals().discoverServices().discoverCharacteristics().readValueForCharacteristic().discoverDescriptorsForCharacteristic().readValueForDescriptors().begin();
+    _bluetooth.having(peripheral).connectToPeripherals().discoverServices().discoverCharacteristics().readValueForCharacteristic().discoverDescriptorsForCharacteristic().readValueForDescriptors().begin();
 //    _bluetooth.having(peripheral).and.channel(connectionChannel).then.connectToPeripherals().discoverServices().discoverCharacteristics().begin();
 
 }
+
+
+#pragma mark -- some block methods
+- (YDBlueToothMgr * (^)(CBPeripheral *peripheral))connectedPeripheral {
+    __weak typeof (self) wSelf = self;
+    return ^(CBPeripheral *peripheral){
+        wSelf.currentPeripheral = peripheral;
+        return self;
+    };
+}
+
 
 
 @end
