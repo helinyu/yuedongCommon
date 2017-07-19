@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4117D7681F1F385600237986 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4117D7671F1F385600237986 /* UIView+Layout.m */; };
+		412277EE1F1F3F2B000877C0 /* DisplayPeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 412277ED1F1F3F2B000877C0 /* DisplayPeripheralViewController.m */; };
+		4156BEA41F1F50E500F8849D /* PeripheralInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4156BEA31F1F50E500F8849D /* PeripheralInfo.m */; };
+		418BA7B41F1F5C8B007269DC /* DisplayCharacteristicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418BA7B31F1F5C8B007269DC /* DisplayCharacteristicViewController.m */; };
 		41C307051F1F375A00D4D87C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C307041F1F375A00D4D87C /* AppDelegate.m */; };
 		41C307081F1F375A00D4D87C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C307071F1F375A00D4D87C /* ViewController.m */; };
 		41C3070B1F1F375A00D4D87C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C307091F1F375A00D4D87C /* Main.storyboard */; };
@@ -25,9 +28,6 @@
 		E1807E811B6CA29100E99C63 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1807E7F1B6CA29100E99C63 /* LaunchScreen.xib */; };
 		F05F7BA21B70AB0F0051C68A /* PeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F05F7BA11B70AB0F0051C68A /* PeripheralViewController.m */; };
 		F05F7BA61B733A240051C68A /* PeripheralInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F05F7BA51B733A240051C68A /* PeripheralInfo.m */; };
-		F05F7BAD1B7372300051C68A /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F05F7BA91B7372300051C68A /* SVIndefiniteAnimatedView.m */; };
-		F05F7BAE1B7372300051C68A /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F05F7BAA1B7372300051C68A /* SVProgressHUD.bundle */; };
-		F05F7BAF1B7372300051C68A /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F05F7BAC1B7372300051C68A /* SVProgressHUD.m */; };
 		F05F7BB21B7442B50051C68A /* CharacteristicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F05F7BB11B7442B50051C68A /* CharacteristicViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +35,12 @@
 		40CB7DA590ADD5B479D78823 /* Pods-MyselfDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyselfDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyselfDemo/Pods-MyselfDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4117D7661F1F385600237986 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Layout.h"; path = "../../../../yuedong/code/sports/GlobalLayer/ThirdPart/PreSupport/UIView+Layout.h"; sourceTree = "<group>"; };
 		4117D7671F1F385600237986 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Layout.m"; path = "../../../../yuedong/code/sports/GlobalLayer/ThirdPart/PreSupport/UIView+Layout.m"; sourceTree = "<group>"; };
+		412277EC1F1F3F2B000877C0 /* DisplayPeripheralViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayPeripheralViewController.h; sourceTree = "<group>"; };
+		412277ED1F1F3F2B000877C0 /* DisplayPeripheralViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayPeripheralViewController.m; sourceTree = "<group>"; };
+		4156BEA21F1F50E400F8849D /* PeripheralInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PeripheralInfo.h; path = ../../../../../BabyBluetooth/BabyBluetoothExamples/BabyBluetoothAppDemo/BabyBluetoothAppDemo/PeripheralInfo.h; sourceTree = "<group>"; };
+		4156BEA31F1F50E500F8849D /* PeripheralInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PeripheralInfo.m; path = ../../../../../BabyBluetooth/BabyBluetoothExamples/BabyBluetoothAppDemo/BabyBluetoothAppDemo/PeripheralInfo.m; sourceTree = "<group>"; };
+		418BA7B21F1F5C8B007269DC /* DisplayCharacteristicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayCharacteristicViewController.h; sourceTree = "<group>"; };
+		418BA7B31F1F5C8B007269DC /* DisplayCharacteristicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayCharacteristicViewController.m; sourceTree = "<group>"; };
 		41C307011F1F375A00D4D87C /* MyselfDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyselfDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C307031F1F375A00D4D87C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41C307041F1F375A00D4D87C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,11 +70,6 @@
 		F05F7BA11B70AB0F0051C68A /* PeripheralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralViewController.m; sourceTree = "<group>"; };
 		F05F7BA41B733A240051C68A /* PeripheralInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralInfo.h; sourceTree = "<group>"; };
 		F05F7BA51B733A240051C68A /* PeripheralInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralInfo.m; sourceTree = "<group>"; };
-		F05F7BA81B7372300051C68A /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		F05F7BA91B7372300051C68A /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		F05F7BAA1B7372300051C68A /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		F05F7BAB1B7372300051C68A /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		F05F7BAC1B7372300051C68A /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SVProgressHUD.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		F05F7BB01B7442B50051C68A /* CharacteristicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacteristicViewController.h; sourceTree = "<group>"; };
 		F05F7BB11B7442B50051C68A /* CharacteristicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CharacteristicViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		F55B412EB5A196EA23FFA747 /* libPods-MyselfDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyselfDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,10 +107,16 @@
 		41C307021F1F375A00D4D87C /* MyselfDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4156BEA21F1F50E400F8849D /* PeripheralInfo.h */,
+				4156BEA31F1F50E500F8849D /* PeripheralInfo.m */,
 				41C307031F1F375A00D4D87C /* AppDelegate.h */,
 				41C307041F1F375A00D4D87C /* AppDelegate.m */,
 				41C307061F1F375A00D4D87C /* ViewController.h */,
 				41C307071F1F375A00D4D87C /* ViewController.m */,
+				412277EC1F1F3F2B000877C0 /* DisplayPeripheralViewController.h */,
+				412277ED1F1F3F2B000877C0 /* DisplayPeripheralViewController.m */,
+				418BA7B21F1F5C8B007269DC /* DisplayCharacteristicViewController.h */,
+				418BA7B31F1F5C8B007269DC /* DisplayCharacteristicViewController.m */,
 				41C307091F1F375A00D4D87C /* Main.storyboard */,
 				41C3070F1F1F375A00D4D87C /* Assets.xcassets */,
 				41C307111F1F375A00D4D87C /* LaunchScreen.storyboard */,
@@ -185,7 +192,6 @@
 		E1807EA91B6CA53A00E99C63 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				F05F7BA71B7372300051C68A /* SVProgressHUD */,
 				4117D7661F1F385600237986 /* UIView+Layout.h */,
 				4117D7671F1F385600237986 /* UIView+Layout.m */,
 			);
@@ -199,18 +205,6 @@
 				F05F7BA51B733A240051C68A /* PeripheralInfo.m */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		F05F7BA71B7372300051C68A /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				F05F7BA81B7372300051C68A /* SVIndefiniteAnimatedView.h */,
-				F05F7BA91B7372300051C68A /* SVIndefiniteAnimatedView.m */,
-				F05F7BAA1B7372300051C68A /* SVProgressHUD.bundle */,
-				F05F7BAB1B7372300051C68A /* SVProgressHUD.h */,
-				F05F7BAC1B7372300051C68A /* SVProgressHUD.m */,
-			);
-			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +263,11 @@
 						CreatedOnToolsVersion = 9.0;
 						DevelopmentTeam = 2ERYNAFK87;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					E1807E6C1B6CA29100E99C63 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -319,7 +318,6 @@
 				E1807E7C1B6CA29100E99C63 /* Main.storyboard in Resources */,
 				E1807E811B6CA29100E99C63 /* LaunchScreen.xib in Resources */,
 				E1807E7E1B6CA29100E99C63 /* Images.xcassets in Resources */,
-				F05F7BAE1B7372300051C68A /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,8 +422,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				41C307081F1F375A00D4D87C /* ViewController.m in Sources */,
+				4156BEA41F1F50E500F8849D /* PeripheralInfo.m in Sources */,
 				41C307051F1F375A00D4D87C /* AppDelegate.m in Sources */,
 				41C307161F1F375A00D4D87C /* main.m in Sources */,
+				418BA7B41F1F5C8B007269DC /* DisplayCharacteristicViewController.m in Sources */,
+				412277EE1F1F3F2B000877C0 /* DisplayPeripheralViewController.m in Sources */,
 				41C3070E1F1F375A00D4D87C /* MyselfDemo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,12 +438,10 @@
 				F05F7BA21B70AB0F0051C68A /* PeripheralViewController.m in Sources */,
 				E1807E791B6CA29100E99C63 /* ViewController.m in Sources */,
 				F05F7BA61B733A240051C68A /* PeripheralInfo.m in Sources */,
-				F05F7BAF1B7372300051C68A /* SVProgressHUD.m in Sources */,
 				E1807E761B6CA29100E99C63 /* AppDelegate.m in Sources */,
 				4117D7681F1F385600237986 /* UIView+Layout.m in Sources */,
 				E1807E731B6CA29100E99C63 /* main.m in Sources */,
 				F05F7BB21B7442B50051C68A /* CharacteristicViewController.m in Sources */,
-				F05F7BAD1B7372300051C68A /* SVIndefiniteAnimatedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
