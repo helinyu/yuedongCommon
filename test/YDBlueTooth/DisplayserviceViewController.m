@@ -207,10 +207,7 @@ static NSString *const displayCellIdentifierId = @"display.cell.identifier.id";
         [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
         
     }
-    
-    
 }
-
 
 #pragma mark -Table view data source
 
