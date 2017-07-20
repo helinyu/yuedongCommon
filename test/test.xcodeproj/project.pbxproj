@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		142840C8DB28E959922BD2DD /* libPods-testVision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D62E9FE9F32D139489C44082 /* libPods-testVision.a */; };
 		23DB3CFDC2576908130A9CBC /* libPods-test_babyBlueTooth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F26FB17AF2BC0D6B5EA7B0 /* libPods-test_babyBlueTooth.a */; };
 		4113B2F31F1EF8A600EC6D21 /* LYBlockLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F21F1EF8A600EC6D21 /* LYBlockLinkViewController.m */; };
 		4113B2F61F1EF92600EC6D21 /* LYBlockPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F51F1EF92600EC6D21 /* LYBlockPerson.m */; };
@@ -42,6 +43,20 @@
 		41D33F9C1F209E9500CF2908 /* YDS3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D33F9B1F209E9500CF2908 /* YDS3ViewController.m */; };
 		41D33F9F1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D33F9E1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m */; };
 		41D33FA21F20A06F00CF2908 /* YDS3MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D33FA11F20A06F00CF2908 /* YDS3MainView.m */; };
+		41D864E11F210A81004D748B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D864E01F210A81004D748B /* AppDelegate.m */; };
+		41D864E41F210A81004D748B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D864E31F210A81004D748B /* ViewController.m */; };
+		41D864E71F210A81004D748B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D864E51F210A81004D748B /* Main.storyboard */; };
+		41D864EA1F210A81004D748B /* testVision.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41D864E81F210A81004D748B /* testVision.xcdatamodeld */; };
+		41D864EC1F210A81004D748B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D864EB1F210A81004D748B /* Assets.xcassets */; };
+		41D864EF1F210A81004D748B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D864ED1F210A81004D748B /* LaunchScreen.storyboard */; };
+		41D864F21F210A81004D748B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D864F11F210A81004D748B /* main.m */; };
+		41D8651A1F210BC8004D748B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D865191F210BC8004D748B /* AppDelegate.m */; };
+		41D8651D1F210BC8004D748B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D8651C1F210BC8004D748B /* ViewController.m */; };
+		41D865201F210BC8004D748B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D8651E1F210BC8004D748B /* Main.storyboard */; };
+		41D865231F210BC8004D748B /* testCoreML.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41D865211F210BC8004D748B /* testCoreML.xcdatamodeld */; };
+		41D865251F210BC8004D748B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D865241F210BC8004D748B /* Assets.xcassets */; };
+		41D865281F210BC8004D748B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D865261F210BC8004D748B /* LaunchScreen.storyboard */; };
+		41D8652B1F210BC8004D748B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D8652A1F210BC8004D748B /* main.m */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
 		41E0D8E21F0CDBA500E16E9E /* HLYShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8E11F0CDBA500E16E9E /* HLYShapeLayerViewController.m */; };
 		41E0D8EB1F0CF72900E16E9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8EA1F0CF72900E16E9E /* main.m */; };
@@ -205,6 +220,7 @@
 /* Begin PBXFileReference section */
 		065563C11B960CC4E9129709 /* Pods-YDBlueTooth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDBlueTooth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YDBlueTooth/Pods-YDBlueTooth.debug.xcconfig"; sourceTree = "<group>"; };
 		10B663388472CC30E40AA8F5 /* libPods-YDBlueTooth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YDBlueTooth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA08CC4F327F48BB95B4887 /* Pods-testVision.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testVision.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testVision/Pods-testVision.debug.xcconfig"; sourceTree = "<group>"; };
 		2FEF8E7DFCEAAF0863C38B8A /* Pods-test_babyBlueTooth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_babyBlueTooth.release.xcconfig"; path = "Pods/Target Support Files/Pods-test_babyBlueTooth/Pods-test_babyBlueTooth.release.xcconfig"; sourceTree = "<group>"; };
 		31ADDEDE9375D935C58B3213 /* Pods-test_babyBlueTooth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_babyBlueTooth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test_babyBlueTooth/Pods-test_babyBlueTooth.debug.xcconfig"; sourceTree = "<group>"; };
 		4113B2F11F1EF8A600EC6D21 /* LYBlockLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockLinkViewController.h; sourceTree = "<group>"; };
@@ -243,6 +259,28 @@
 		41D33F9E1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDS3PeriipheralsViewController.m; sourceTree = "<group>"; };
 		41D33FA01F20A06F00CF2908 /* YDS3MainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDS3MainView.h; sourceTree = "<group>"; };
 		41D33FA11F20A06F00CF2908 /* YDS3MainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDS3MainView.m; sourceTree = "<group>"; };
+		41D864DD1F210A81004D748B /* testVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D864DF1F210A81004D748B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		41D864E01F210A81004D748B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		41D864E21F210A81004D748B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		41D864E31F210A81004D748B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		41D864E61F210A81004D748B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41D864E91F210A81004D748B /* testVision.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testVision.xcdatamodel; sourceTree = "<group>"; };
+		41D864EB1F210A81004D748B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41D864EE1F210A81004D748B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41D864F01F210A81004D748B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41D864F11F210A81004D748B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		41D865161F210BC8004D748B /* testCoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testCoreML.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D865181F210BC8004D748B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		41D865191F210BC8004D748B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		41D8651B1F210BC8004D748B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		41D8651C1F210BC8004D748B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		41D8651F1F210BC8004D748B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41D865221F210BC8004D748B /* testCoreML.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testCoreML.xcdatamodel; sourceTree = "<group>"; };
+		41D865241F210BC8004D748B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41D865271F210BC8004D748B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41D865291F210BC8004D748B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41D8652A1F210BC8004D748B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		41E0D8D81F0C785D00E16E9E /* YDBgImageStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBgImageStatusView.h; sourceTree = "<group>"; };
 		41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBgImageStatusView.m; sourceTree = "<group>"; };
 		41E0D8E01F0CDBA500E16E9E /* HLYShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYShapeLayerViewController.h; sourceTree = "<group>"; };
@@ -316,6 +354,7 @@
 		52F26FB17AF2BC0D6B5EA7B0 /* libPods-test_babyBlueTooth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test_babyBlueTooth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89914FF9277B52F087EA3821 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D62E9FE9F32D139489C44082 /* libPods-testVision.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testVision.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC04101D1EF80E07000B69A3 /* HLYAudioPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAudioPlayerManager.h; sourceTree = "<group>"; };
 		DC04101E1EF80E07000B69A3 /* HLYAudioPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAudioPlayerManager.m; sourceTree = "<group>"; };
 		DC0410201EF80E1E000B69A3 /* HLYAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAudioViewController.h; sourceTree = "<group>"; };
@@ -555,6 +594,7 @@
 		DCEE85C81F035DD700CAC9CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E08FB385B85BCD602F1865BF /* Pods-YDBlueTooth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDBlueTooth.release.xcconfig"; path = "Pods/Target Support Files/Pods-YDBlueTooth/Pods-YDBlueTooth.release.xcconfig"; sourceTree = "<group>"; };
 		F8A481B59EF84D29E58DAF85 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
+		FDC8658AE4429AA16B1647DD /* Pods-testVision.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testVision.release.xcconfig"; path = "Pods/Target Support Files/Pods-testVision/Pods-testVision.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -563,6 +603,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				48D729F3BF99F4A4F2FF1048 /* libPods-YDBlueTooth.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41D864DA1F210A81004D748B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				142840C8DB28E959922BD2DD /* libPods-testVision.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41D865131F210BC8004D748B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,6 +775,40 @@
 				41D33FA11F20A06F00CF2908 /* YDS3MainView.m */,
 			);
 			path = somic_babyBluetooth;
+			sourceTree = "<group>";
+		};
+		41D864DE1F210A81004D748B /* testVision */ = {
+			isa = PBXGroup;
+			children = (
+				41D864DF1F210A81004D748B /* AppDelegate.h */,
+				41D864E01F210A81004D748B /* AppDelegate.m */,
+				41D864E21F210A81004D748B /* ViewController.h */,
+				41D864E31F210A81004D748B /* ViewController.m */,
+				41D864E51F210A81004D748B /* Main.storyboard */,
+				41D864EB1F210A81004D748B /* Assets.xcassets */,
+				41D864ED1F210A81004D748B /* LaunchScreen.storyboard */,
+				41D864F01F210A81004D748B /* Info.plist */,
+				41D864F11F210A81004D748B /* main.m */,
+				41D864E81F210A81004D748B /* testVision.xcdatamodeld */,
+			);
+			path = testVision;
+			sourceTree = "<group>";
+		};
+		41D865171F210BC8004D748B /* testCoreML */ = {
+			isa = PBXGroup;
+			children = (
+				41D865181F210BC8004D748B /* AppDelegate.h */,
+				41D865191F210BC8004D748B /* AppDelegate.m */,
+				41D8651B1F210BC8004D748B /* ViewController.h */,
+				41D8651C1F210BC8004D748B /* ViewController.m */,
+				41D8651E1F210BC8004D748B /* Main.storyboard */,
+				41D865241F210BC8004D748B /* Assets.xcassets */,
+				41D865261F210BC8004D748B /* LaunchScreen.storyboard */,
+				41D865291F210BC8004D748B /* Info.plist */,
+				41D8652A1F210BC8004D748B /* main.m */,
+				41D865211F210BC8004D748B /* testCoreML.xcdatamodeld */,
+			);
+			path = testCoreML;
 			sourceTree = "<group>";
 		};
 		41E0D8DF1F0CDB8800E16E9E /* CAShapeLayer */ = {
@@ -887,6 +976,7 @@
 				CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */,
 				52F26FB17AF2BC0D6B5EA7B0 /* libPods-test_babyBlueTooth.a */,
 				10B663388472CC30E40AA8F5 /* libPods-YDBlueTooth.a */,
+				D62E9FE9F32D139489C44082 /* libPods-testVision.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -900,6 +990,8 @@
 				2FEF8E7DFCEAAF0863C38B8A /* Pods-test_babyBlueTooth.release.xcconfig */,
 				065563C11B960CC4E9129709 /* Pods-YDBlueTooth.debug.xcconfig */,
 				E08FB385B85BCD602F1865BF /* Pods-YDBlueTooth.release.xcconfig */,
+				2EA08CC4F327F48BB95B4887 /* Pods-testVision.debug.xcconfig */,
+				FDC8658AE4429AA16B1647DD /* Pods-testVision.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -987,6 +1079,8 @@
 				41E0D8E81F0CF72900E16E9E /* test_bluetooth_origin */,
 				41F760251F1CB4E800AB66AE /* test_peripheral */,
 				418D2FF91F1DA36000894079 /* YDBlueTooth */,
+				41D864DE1F210A81004D748B /* testVision */,
+				41D865171F210BC8004D748B /* testCoreML */,
 				DC05043A1EBDC45800718AAD /* Products */,
 				7CC4BA5CB8A72D74B687B773 /* Pods */,
 				74B13597549662E119950E0D /* Frameworks */,
@@ -1003,6 +1097,8 @@
 				41E0D8E71F0CF72800E16E9E /* test_babyBlueTooth.app */,
 				41F760241F1CB4E700AB66AE /* test_peripheral.app */,
 				418D2FF81F1DA36000894079 /* YDBlueTooth.app */,
+				41D864DD1F210A81004D748B /* testVision.app */,
+				41D865161F210BC8004D748B /* testCoreML.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1656,6 +1752,43 @@
 			productReference = 418D2FF81F1DA36000894079 /* YDBlueTooth.app */;
 			productType = "com.apple.product-type.application";
 		};
+		41D864DC1F210A81004D748B /* testVision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41D865091F210A81004D748B /* Build configuration list for PBXNativeTarget "testVision" */;
+			buildPhases = (
+				43C312DDF0693A315CF077F3 /* [CP] Check Pods Manifest.lock */,
+				41D864D91F210A81004D748B /* Sources */,
+				41D864DA1F210A81004D748B /* Frameworks */,
+				41D864DB1F210A81004D748B /* Resources */,
+				3B4A2B43DF303CE23596C15F /* [CP] Embed Pods Frameworks */,
+				C38AAACF0E0218058CF76287 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testVision;
+			productName = testVision;
+			productReference = 41D864DD1F210A81004D748B /* testVision.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41D865151F210BC8004D748B /* testCoreML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41D865421F210BC9004D748B /* Build configuration list for PBXNativeTarget "testCoreML" */;
+			buildPhases = (
+				41D865121F210BC8004D748B /* Sources */,
+				41D865131F210BC8004D748B /* Frameworks */,
+				41D865141F210BC8004D748B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testCoreML;
+			productName = testCoreML;
+			productReference = 41D865161F210BC8004D748B /* testCoreML.app */;
+			productType = "com.apple.product-type.application";
+		};
 		41E0D8E61F0CF72800E16E9E /* test_babyBlueTooth */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41E0D9141F0CF72A00E16E9E /* Build configuration list for PBXNativeTarget "test_babyBlueTooth" */;
@@ -1783,6 +1916,15 @@
 							};
 						};
 					};
+					41D864DC1F210A81004D748B = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Manual;
+					};
+					41D865151F210BC8004D748B = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = D2XBEJ6876;
+					};
 					41E0D8E61F0CF72800E16E9E = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2ERYNAFK87;
@@ -1839,6 +1981,8 @@
 				41E0D8E61F0CF72800E16E9E /* test_babyBlueTooth */,
 				41F760231F1CB4E700AB66AE /* test_peripheral */,
 				418D2FF71F1DA36000894079 /* YDBlueTooth */,
+				41D864DC1F210A81004D748B /* testVision */,
+				41D865151F210BC8004D748B /* testCoreML */,
 			);
 		};
 /* End PBXProject section */
@@ -1853,6 +1997,26 @@
 				418D300A1F1DA36000894079 /* Assets.xcassets in Resources */,
 				41D33F981F208C4A00CF2908 /* SOMICS3ICON.bundle in Resources */,
 				418D30051F1DA36000894079 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41D864DB1F210A81004D748B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D864EF1F210A81004D748B /* LaunchScreen.storyboard in Resources */,
+				41D864EC1F210A81004D748B /* Assets.xcassets in Resources */,
+				41D864E71F210A81004D748B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41D865141F210BC8004D748B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D865281F210BC8004D748B /* LaunchScreen.storyboard in Resources */,
+				41D865251F210BC8004D748B /* Assets.xcassets in Resources */,
+				41D865201F210BC8004D748B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1959,7 +2123,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3B4A2B43DF303CE23596C15F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testVision/Pods-testVision-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4217F367B2B19763D0918D61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		43C312DDF0693A315CF077F3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2034,6 +2228,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test_babyBlueTooth/Pods-test_babyBlueTooth-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C38AAACF0E0218058CF76287 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testVision/Pods-testVision-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D9A8A0EB56756AD174E19A7A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2104,6 +2313,28 @@
 				41ED39451F208165002E70B7 /* YDOpenHardwareSleep.m in Sources */,
 				418D2FFC1F1DA36000894079 /* main.m in Sources */,
 				418D30081F1DA36000894079 /* YDBlueTooth.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41D864D91F210A81004D748B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D864E41F210A81004D748B /* ViewController.m in Sources */,
+				41D864E11F210A81004D748B /* AppDelegate.m in Sources */,
+				41D864F21F210A81004D748B /* main.m in Sources */,
+				41D864EA1F210A81004D748B /* testVision.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41D865121F210BC8004D748B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D8651D1F210BC8004D748B /* ViewController.m in Sources */,
+				41D8651A1F210BC8004D748B /* AppDelegate.m in Sources */,
+				41D8652B1F210BC8004D748B /* main.m in Sources */,
+				41D865231F210BC8004D748B /* testCoreML.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2289,6 +2520,38 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		41D864E51F210A81004D748B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41D864E61F210A81004D748B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41D864ED1F210A81004D748B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41D864EE1F210A81004D748B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		41D8651E1F210BC8004D748B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41D8651F1F210BC8004D748B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41D865261F210BC8004D748B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41D865271F210BC8004D748B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		41E0D8F21F0CF72900E16E9E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -2419,6 +2682,109 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
 				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
+			};
+			name = Release;
+		};
+		41D8650A1F210A81004D748B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EA08CC4F327F48BB95B4887 /* Pods-testVision.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = testVision/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41D8650B1F210A81004D748B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDC8658AE4429AA16B1647DD /* Pods-testVision.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = testVision/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41D865431F210BC9004D748B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = testCoreML/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.testCoreML;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41D865441F210BC9004D748B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = testCoreML/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.testCoreML;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -2729,6 +3095,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		41D865091F210A81004D748B /* Build configuration list for PBXNativeTarget "testVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41D8650A1F210A81004D748B /* Debug */,
+				41D8650B1F210A81004D748B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41D865421F210BC9004D748B /* Build configuration list for PBXNativeTarget "testCoreML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41D865431F210BC9004D748B /* Debug */,
+				41D865441F210BC9004D748B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		41E0D9141F0CF72A00E16E9E /* Build configuration list for PBXNativeTarget "test_babyBlueTooth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2802,6 +3186,26 @@
 			);
 			currentVersion = 418D30071F1DA36000894079 /* YDBlueTooth.xcdatamodel */;
 			path = YDBlueTooth.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		41D864E81F210A81004D748B /* testVision.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				41D864E91F210A81004D748B /* testVision.xcdatamodel */,
+			);
+			currentVersion = 41D864E91F210A81004D748B /* testVision.xcdatamodel */;
+			path = testVision.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		41D865211F210BC8004D748B /* testCoreML.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				41D865221F210BC8004D748B /* testCoreML.xcdatamodel */,
+			);
+			currentVersion = 41D865221F210BC8004D748B /* testCoreML.xcdatamodel */;
+			path = testCoreML.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

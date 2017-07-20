@@ -19,6 +19,7 @@ end
 
 target 'test_babyBlueTooth' do
 	pod 'LEBluetooth', '~> 0.1.0'
+    pod 'Masonry', '~> 1.0.2'
     
 end
 
@@ -27,3 +28,9 @@ target 'YDBlueTooth' do
     pod 'SVProgressHUD', '~> 2.1.2'
     pod 'Masonry', '~> 1.0.2'
 end
+
+target 'testVision' do
+    pod 'Masonry', '~> 1.0.2'
+end
+
+
