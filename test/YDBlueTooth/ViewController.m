@@ -102,10 +102,10 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
 //        _services = services;
 //        [wSelf logServicesInfoWithSerivces:services];
 //    };
-    ServicesViewController *vc = [ServicesViewController new];
+    ServicesViewController *vc = [ServicesViewController new].vcMgr(_mgr);
 //    vc.mgr = _mgr;
     NSLog(@"mgr: %@",_mgr);
-    [self.navigationController pushViewController:vc.vcMgr(_mgr) animated:YES];
+    [self.navigationController pushViewController:vc animated:YES];
     [_mgr onConnectBluetoothWithIndex:indexPath.row];
 }
 

@@ -48,7 +48,12 @@ typedef NS_ENUM(NSInteger, YDBlueToothFilterType) {
  */
 @property (nonatomic, assign) YDBlueToothFilterType filterType;
 
-@property (nonatomic, strong) CBPeripheral *currentPeripheral;
+
+/*
+ *@param : this param for the peripheral which we are choosing now
+ * see :
+ */
+@property (nonatomic, strong, readonly) CBPeripheral *currentPeripheral;
 
 /*
  * @parmam : connectedPeripheral (recommended)
@@ -56,15 +61,45 @@ typedef NS_ENUM(NSInteger, YDBlueToothFilterType) {
  */
 - (YDBlueToothMgr * (^)(CBPeripheral *peripheral))connectedPeripheral;
 
+/*
+ * @param  currentIndex depend on the outside logic ,which help to choose the current peripheral
+ * @block connectingPeripheralIndex which help to Chain programming by deliver the currentIndex
+ */
+@property (nonatomic, assign, readonly) NSInteger currentIndex;
+- (YDBlueToothMgr * (^)(NSInteger index))connectingPeripheralIndex;
+
+
 #pragma mark -- action method
-//scan
+
+// scan
+/*
+ *@param : peripherals which the bluetooth are scaning now
+ *@discussion : you can  use this block to get tehe peripherals which we the bluetooth has scan
+ *& we must use the mothod of startScan
+ */
 @property (nonatomic, copy) void(^scanCallBack)(NSArray<CBPeripheral *> *peripherals);
 
-@property (nonatomic, copy) void(^servicesCallBack)(NSArray<CBService *> *services);
-
 //connect
+/*
+ *@param : index was deliver by the outside which help to choose the peripheral
+ *@discussion : this method was rely on the logic of business (no recommended)
+ *@discussion ; onConnectCurrentPeripheralOfBluetooth this method must deliver the current peripheral before which will connect
+ */
 - (void)onConnectBluetoothWithIndex:(NSInteger)index;
+- (void)onConnectBluetoothWithPeripheral:(CBPeripheral *)peripheral;// (recommended)
+- (void)onConnectCurrentPeripheralOfBluetooth;
 
+/*
+ *@param : which callback by the success to diagnosis is connecting success or not
+ @disucssion : connect response status
+ */
 @property (nonatomic, copy) void (^connectionCallBack)(BOOL success);
 
+/*
+ *@param : services which bluetooth now get
+ *@discussion : this block for getting the service we now get
+ * it was trigger by the onConnectBluetoothWith*** method
+ * connect repones with services
+ */
+@property (nonatomic, copy) void(^servicesCallBack)(NSArray<CBService *> *services);
 @end

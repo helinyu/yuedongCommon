@@ -22,6 +22,10 @@
 
 @property (nonatomic, strong) NSMutableArray<CBService *> *connectedPeripheralServices;
 
+@property (nonatomic, assign, readwrite) NSInteger currentIndex;
+@property (nonatomic, strong, readwrite) CBPeripheral *currentPeripheral;
+
+
 @end
 
 //static NSString *const connectionChannel = @"connection.channel";
@@ -147,37 +151,19 @@
 //        return NO;
     }];
     
-#pragma mark - connect
+#pragma mark - connect & services
     [_bluetooth setBlockOnConnected:^(CBCentralManager *central, CBPeripheral *peripheral) {
         NSLog(@"setBlockOnConnected");
     }];
-    
-//    [_bluetooth setBlockOnConnectedAtChannel:connectionChannel block:^(CBCentralManager *central, CBPeripheral *peripheral) {
-//        NSLog(@"setBlockOnConnectedAtChannel");
-//        [SVProgressHUD showInfoWithStatus:[NSString stringWithFormat:@"设备：%@--连接成功",peripheral.name]];
-//    }];
-
-//    [_bluetooth setBlockOnConnectedAtChannel:connectionChannel block:^(CBCentralManager *central, CBPeripheral *peripheral) {
-//        NSLog(@"setBlockOnConnectedAtChannel");
-//    }];
     
     [_bluetooth setBlockOnFailToConnect:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
         NSLog(@"setBlockOnFailToConnect");
     }];
     
-//    [_bluetooth setBlockOnFailToConnectAtChannel:connectionChannel block:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
-//        NSLog(@"setBlockOnFailToConnectAtChannel");
-//    }];
-    
     [_bluetooth setBlockOnDisconnect:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
         NSLog(@"setBlockOnDisconnect");
     }];
     
-//    [_bluetooth setBlockOnDisconnectAtChannel:connectionChannel block:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
-//        NSLog(@"setBlockOnDisconnectAtChannel");
-//    }];
-    
-//    discover
     [_bluetooth setBlockOnDiscoverServices:^(CBPeripheral *peripheral, NSError *error) {
         NSLog(@"setBlockOnDiscoverServices");
         [wSelf addConnectedServicesWithServices:peripheral.services];
@@ -185,13 +171,6 @@
         [rhythm beats];
     }];
     
-//    [_bluetooth setBlockOnDiscoverServicesAtChannel:connectionChannel block:^(CBPeripheral *peripheral, NSError *error) {
-//        NSLog(@"setBlockOnDiscoverServicesAtChannel");
-//        [wSelf addConnectedServicesWithServices:peripheral.services];
-//        !wSelf.servicesCallBack?:wSelf.servicesCallBack(wSelf.connectedPeripheralServices);
-//        [rhythm beats];
-//    }];
-//
     [rhythm setBlockOnBeatsBreak:^(BabyRhythm *bry) {
         NSLog(@"setBlockOnBeatsBreak call");
     }];
@@ -201,13 +180,24 @@
         NSLog(@"setBlockOnBeatsOver call");
     }];
 
+#pragma mark - services & characteristic
+    
     [_bluetooth setBlockOnDiscoverCharacteristics:^(CBPeripheral *peripheral, CBService *service, NSError *error) {
         NSLog(@"setBlockOnDiscoverCharacteristics");
     }];
     
-//    [_bluetooth setBlockOnDiscoverToPeripheralsAtChannel:connectionChannel block:^(CBCentralManager *central, CBPeripheral *peripheral, NSDictionary *advertisementData, NSNumber *RSSI) {
-//        NSLog(@"setBlockOnDiscoverToPeripheralsAtChannel");
-//    }];
+    [_bluetooth setBlockOnReadValueForCharacteristic:^(CBPeripheral *peripheral, CBCharacteristic *characteristic, NSError *error) {
+        NSLog(@"setBlockOnReadValueForCharacteristic");
+    }];
+    
+// characteristic & discriptors
+    [_bluetooth setBlockOnDiscoverDescriptorsForCharacteristic:^(CBPeripheral *peripheral, CBCharacteristic *characteristic, NSError *error) {
+        NSLog(@"setBlockOnDiscoverDescriptorsForCharacteristic");
+    }];
+    
+    [_bluetooth setBlockOnReadValueForDescriptors:^(CBPeripheral *peripheral, CBDescriptor *descriptor, NSError *error) {
+        NSLog(@"setBlockOnReadValueForDescriptors");
+    }];
     
     NSDictionary *scanForPeripheralsWithOptions = @{CBCentralManagerScanOptionAllowDuplicatesKey:@YES};
     NSDictionary *connectOptions = @{CBConnectPeripheralOptionNotifyOnConnectionKey:@YES,
@@ -270,16 +260,36 @@
 
 // custom action method
 - (void)onConnectBluetoothWithIndex:(NSInteger)index {
+    [self onConnectBluetoothWithPeripheral:_peripherals[index]];
+}
+
+- (void)onConnectBluetoothWithPeripheral:(CBPeripheral *)peripheral {
+    [self _onConnectPrepareWithWillConnectingPeripheral:peripheral];
+    _bluetooth.having(peripheral).connectToPeripherals().discoverServices().discoverCharacteristics().readValueForCharacteristic().discoverDescriptorsForCharacteristic().readValueForDescriptors().begin();
+}
+
+- (void)_onConnectPrepareWithWillConnectingPeripheral:(CBPeripheral *)peripheral {
+    _currentPeripheral = peripheral;
     [_bluetooth cancelScan];
-    CBPeripheral *peripheral = _peripherals[index];
     [SVProgressHUD showInfoWithStatus:@"开始连接设备"];
     _connectedPeripheralServices = [NSMutableArray<CBService *> new];
-    _bluetooth.having(peripheral).connectToPeripherals().discoverServices().discoverCharacteristics().readValueForCharacteristic().discoverDescriptorsForCharacteristic().readValueForDescriptors().begin();
-//    _bluetooth.having(peripheral).and.channel(connectionChannel).then.connectToPeripherals().discoverServices().discoverCharacteristics().begin();
+}
 
+- (void)onConnectCurrentPeripheralOfBluetooth {
+    [self onConnectBluetoothWithPeripheral:_currentPeripheral];
 }
 
 #pragma mark -- some block methods
+
+- (YDBlueToothMgr * (^)(NSInteger index))connectingPeripheralIndex {
+    __weak typeof (self) wSelf = self;
+    return ^(NSInteger index) {
+        wSelf.currentIndex = index;
+        wSelf.currentPeripheral = wSelf.peripherals[index];
+        return self;
+    };
+}
+
 - (YDBlueToothMgr * (^)(CBPeripheral *peripheral))connectedPeripheral {
     __weak typeof (self) wSelf = self;
     return ^(CBPeripheral *peripheral){
@@ -287,7 +297,6 @@
         return self;
     };
 }
-
 
 
 @end

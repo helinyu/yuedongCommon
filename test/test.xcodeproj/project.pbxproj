@@ -33,6 +33,7 @@
 		41E0D8F71F0CF72900E16E9E /* test_babyBlueTooth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8F51F0CF72900E16E9E /* test_babyBlueTooth.xcdatamodeld */; };
 		41E0D8F91F0CF72900E16E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E0D8F81F0CF72900E16E9E /* Assets.xcassets */; };
 		41E0D8FC1F0CF72900E16E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E0D8FA1F0CF72900E16E9E /* LaunchScreen.storyboard */; };
+		41ED38091F204C97002E70B7 /* CharacteristicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38081F204C97002E70B7 /* CharacteristicViewController.m */; };
 		41F760011F1C9F2100AB66AE /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F760001F1C9F2100AB66AE /* HealthKit.framework */; };
 		41F760281F1CB4E800AB66AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F760271F1CB4E800AB66AE /* main.m */; };
 		41F7602B1F1CB4E800AB66AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F7602A1F1CB4E800AB66AE /* AppDelegate.m */; };
@@ -223,6 +224,8 @@
 		41E0D8F81F0CF72900E16E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41E0D8FB1F0CF72900E16E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41E0D8FD1F0CF72900E16E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41ED38071F204C97002E70B7 /* CharacteristicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacteristicViewController.h; sourceTree = "<group>"; };
+		41ED38081F204C97002E70B7 /* CharacteristicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacteristicViewController.m; sourceTree = "<group>"; };
 		41F75FFF1F1C9F2100AB66AE /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
 		41F760001F1C9F2100AB66AE /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		41F760241F1CB4E700AB66AE /* test_peripheral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_peripheral.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -572,6 +575,8 @@
 				418D30011F1DA36000894079 /* ViewController.m */,
 				418BA7B51F1F71BF007269DC /* ServicesViewController.h */,
 				418BA7B61F1F71BF007269DC /* ServicesViewController.m */,
+				41ED38071F204C97002E70B7 /* CharacteristicViewController.h */,
+				41ED38081F204C97002E70B7 /* CharacteristicViewController.m */,
 				418D30031F1DA36000894079 /* Main.storyboard */,
 				418D30091F1DA36000894079 /* Assets.xcassets */,
 				418D300B1F1DA36000894079 /* LaunchScreen.storyboard */,
@@ -1879,6 +1884,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				418BA7B71F1F71BF007269DC /* ServicesViewController.m in Sources */,
+				41ED38091F204C97002E70B7 /* CharacteristicViewController.m in Sources */,
 				418D30021F1DA36000894079 /* ViewController.m in Sources */,
 				418D2FFF1F1DA36000894079 /* AppDelegate.m in Sources */,
 				418D30341F1DC2ED00894079 /* UIView+Layout.m in Sources */,
