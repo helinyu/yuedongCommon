@@ -200,11 +200,15 @@
             _writeCharacteristic = c;
         }
         if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF2"]]) {
+            NSLog(@"ff2 didDiscoverCharacteristicsForService :readValueForCharacteristic");
             [self.peripheral readValueForCharacteristic:c];//读取
+            NSLog(@"ff2 didDiscoverCharacteristicsForService :setNotifyValue");
             [self.peripheral setNotifyValue:YES forCharacteristic:c];//订阅
         }
         if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF3"]]) {
+            NSLog(@" ff3 didDiscoverCharacteristicsForService :readValueForCharacteristic");
             [self.peripheral readValueForCharacteristic:c];
+            NSLog(@" ff3 didDiscoverCharacteristicsForService :setNotifyValue");
             [self.peripheral setNotifyValue:YES forCharacteristic:c];
         }
     }
@@ -226,6 +230,7 @@
  */
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
 {
+    NSLog(@"didUpdateValueForCharacteristic: error: %@",error);
     [[NSNotificationCenter defaultCenter] postNotificationName:@"S3ManagerDidUpdataValueForCharacteristic" object:characteristic];
     
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
@@ -316,6 +321,7 @@
     }
     if (characteristic.isNotifying) {
         [peripheral readValueForCharacteristic:characteristic];
+        NSLog(@"didUpdateNotificationStateForCharacteristic :readValueForCharacteristic");
     } else {
         [self.manager cancelPeripheralConnection:self.peripheral];
     }
@@ -332,6 +338,7 @@
     }
     
     [peripheral readValueForCharacteristic:characteristic];
+    NSLog(@"didWriteValueForCharacteristic:readValueForCharacteristic");
 }
 
 /**

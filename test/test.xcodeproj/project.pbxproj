@@ -24,6 +24,21 @@
 		418D30341F1DC2ED00894079 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D30331F1DC2ED00894079 /* UIView+Layout.m */; };
 		41ABCEF81F0BC51200927CCC /* HLYAnimationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */; };
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
+		41D33F891F208B3F00CF2908 /* BluetoothS3ViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39131F208155002E70B7 /* BluetoothS3ViewController.h */; };
+		41D33F8A1F208B3F00CF2908 /* BluetoothS3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39141F208155002E70B7 /* BluetoothS3ViewController.m */; };
+		41D33F8B1F208B3F00CF2908 /* S3ActivityIndicatorView.h in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39151F208155002E70B7 /* S3ActivityIndicatorView.h */; };
+		41D33F8C1F208B3F00CF2908 /* S3ActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39161F208155002E70B7 /* S3ActivityIndicatorView.m */; };
+		41D33F8D1F208B3F00CF2908 /* S3MainView.h in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39171F208155002E70B7 /* S3MainView.h */; };
+		41D33F8E1F208B3F00CF2908 /* S3MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39181F208155002E70B7 /* S3MainView.m */; };
+		41D33F8F1F208B3F00CF2908 /* S3Manager.h in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39191F208155002E70B7 /* S3Manager.h */; };
+		41D33F901F208B3F00CF2908 /* S3Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED391A1F208155002E70B7 /* S3Manager.m */; };
+		41D33F911F208B3F00CF2908 /* S3MianViewModel.h in Sources */ = {isa = PBXBuildFile; fileRef = 41ED391B1F208155002E70B7 /* S3MianViewModel.h */; };
+		41D33F921F208B3F00CF2908 /* S3MianViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED391C1F208155002E70B7 /* S3MianViewModel.m */; };
+		41D33F931F208BCD00CF2908 /* BluetoothDaterView.h in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39111F208155002E70B7 /* BluetoothDaterView.h */; };
+		41D33F941F208BCD00CF2908 /* BluetoothDaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39121F208155002E70B7 /* BluetoothDaterView.m */; };
+		41D33F951F208BEF00CF2908 /* BluetoothConnectViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 41ED390F1F208155002E70B7 /* BluetoothConnectViewController.h */; };
+		41D33F961F208BEF00CF2908 /* BluetoothConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39101F208155002E70B7 /* BluetoothConnectViewController.m */; };
+		41D33F981F208C4A00CF2908 /* SOMICS3ICON.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 41D33F971F208C4900CF2908 /* SOMICS3ICON.bundle */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
 		41E0D8E21F0CDBA500E16E9E /* HLYShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8E11F0CDBA500E16E9E /* HLYShapeLayerViewController.m */; };
 		41E0D8EB1F0CF72900E16E9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8EA1F0CF72900E16E9E /* main.m */; };
@@ -218,6 +233,7 @@
 		41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAnimationCollectionViewController.m; sourceTree = "<group>"; };
 		41ABCEF91F0BC57700927CCC /* AnimationCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationCollectionViewCell.h; path = "数据解析/AnimationCollectionViewCell.h"; sourceTree = "<group>"; };
 		41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimationCollectionViewCell.m; path = "数据解析/AnimationCollectionViewCell.m"; sourceTree = "<group>"; };
+		41D33F971F208C4900CF2908 /* SOMICS3ICON.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SOMICS3ICON.bundle; path = ../../../yuedong/code/sports/GlobalLayer/ThirdPart/Hardware/ThirdPart/Somic/SOMICS3ICON.bundle; sourceTree = "<group>"; };
 		41E0D8D81F0C785D00E16E9E /* YDBgImageStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBgImageStatusView.h; sourceTree = "<group>"; };
 		41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBgImageStatusView.m; sourceTree = "<group>"; };
 		41E0D8E01F0CDBA500E16E9E /* HLYShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYShapeLayerViewController.h; sourceTree = "<group>"; };
@@ -748,6 +764,7 @@
 		41ED39231F208165002E70B7 /* sdk */ = {
 			isa = PBXGroup;
 			children = (
+				41D33F971F208C4900CF2908 /* SOMICS3ICON.bundle */,
 				41ED39241F208165002E70B7 /* Const */,
 				41ED39271F208165002E70B7 /* Interface */,
 				41ED392C1F208165002E70B7 /* Model */,
@@ -1811,6 +1828,7 @@
 				418D300D1F1DA36000894079 /* LaunchScreen.storyboard in Resources */,
 				41ED39471F208165002E70B7 /* ThirdParts.plist in Resources */,
 				418D300A1F1DA36000894079 /* Assets.xcassets in Resources */,
+				41D33F981F208C4A00CF2908 /* SOMICS3ICON.bundle in Resources */,
 				418D30051F1DA36000894079 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2030,6 +2048,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41D33F951F208BEF00CF2908 /* BluetoothConnectViewController.h in Sources */,
+				41D33F961F208BEF00CF2908 /* BluetoothConnectViewController.m in Sources */,
+				41D33F931F208BCD00CF2908 /* BluetoothDaterView.h in Sources */,
+				41D33F941F208BCD00CF2908 /* BluetoothDaterView.m in Sources */,
+				41D33F891F208B3F00CF2908 /* BluetoothS3ViewController.h in Sources */,
+				41D33F8A1F208B3F00CF2908 /* BluetoothS3ViewController.m in Sources */,
+				41D33F8B1F208B3F00CF2908 /* S3ActivityIndicatorView.h in Sources */,
+				41D33F8C1F208B3F00CF2908 /* S3ActivityIndicatorView.m in Sources */,
+				41D33F8D1F208B3F00CF2908 /* S3MainView.h in Sources */,
+				41D33F8E1F208B3F00CF2908 /* S3MainView.m in Sources */,
+				41D33F8F1F208B3F00CF2908 /* S3Manager.h in Sources */,
+				41D33F901F208B3F00CF2908 /* S3Manager.m in Sources */,
+				41D33F911F208B3F00CF2908 /* S3MianViewModel.h in Sources */,
+				41D33F921F208B3F00CF2908 /* S3MianViewModel.m in Sources */,
 				41ED39441F208165002E70B7 /* YDOpenHardwarePedometer.m in Sources */,
 				418BA7B71F1F71BF007269DC /* ServicesViewController.m in Sources */,
 				41ED38091F204C97002E70B7 /* CharacteristicViewController.m in Sources */,
