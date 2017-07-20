@@ -51,14 +51,7 @@
             NSLog(@"设备打开成功，开始扫描蓝牙设备");
         }
     }];
-    
-//    [_bluetooth setBlockOnCentralManagerDidUpdateStateAtChannel:connectionChannel block:^(CBCentralManager *central) {
-//        if (central.state == CBManagerStatePoweredOn) {
-//            [SVProgressHUD showInfoWithStatus:@"指定channel设备打开成功，开始扫描设备"];
-//            NSLog(@"设备打开成功，开始扫描蓝牙设备");
-//        }
-//    }];
-    
+
     [_bluetooth setBlockOnDiscoverToPeripherals:^(CBCentralManager *central, CBPeripheral *peripheral, NSDictionary *advertisementData, NSNumber *RSSI) {
         BOOL hasStored = NO;
         for (CBPeripheral *item in wSelf.peripherals) {
@@ -239,6 +232,10 @@
     
     [self babyDelegate];
     _bluetooth.scanForPeripherals().begin();
+}
+
+- (void)stopScan {
+    _bluetooth.stop(0);
 }
 
 - (void)quitConnected {

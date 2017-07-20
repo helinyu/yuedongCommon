@@ -26,6 +26,7 @@ typedef NS_ENUM(NSInteger, YDBlueToothFilterType) {
 + (instancetype)shared;
 
 - (void)startScan;
+- (void)stopScan;
 
 /*
  *@metod quit the connection abount the central with the peripheral

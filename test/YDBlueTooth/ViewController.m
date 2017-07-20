@@ -13,6 +13,7 @@
 #import "BabyBluetooth.h"
 #import "SVProgressHUD.h"
 
+#import "BluetoothS3ViewController.h"
 #import "ServicesViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -42,7 +43,9 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
     self.tableView.delegate = self;
     
     UIBarButtonItem *barBtn = [[UIBarButtonItem alloc] initWithTitle:@"断开" style:UIBarButtonItemStylePlain target:self action:@selector(onQuitConnected)];
+    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithTitle:@"左边S3耳机" style:UIBarButtonItemStylePlain target:self action:@selector(onS3connect)];
     self.navigationController.navigationBar.topItem.rightBarButtonItem = barBtn;
+    self.navigationController.navigationBar.topItem.leftBarButtonItem = leftBtn;
     
     [SVProgressHUD showInfoWithStatus:@"准备打开设备"];
     NSLog(@"view did load");
@@ -60,6 +63,15 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
     };
 }
 
+- (void)onS3connect {
+    
+    [_mgr quitConnected];
+    [_mgr stopScan];
+
+    BluetoothS3ViewController *vc = [BluetoothS3ViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 - (void)onQuitConnected {
     [_mgr quitConnected];
 }
@@ -67,10 +79,6 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
 }
-
-- (void)dealloc {
-}
-
 
 #pragma mark -- tableView datasource
 
@@ -96,14 +104,7 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
 #pragma mark --table delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    __weak typeof (self) wSelf = self;
-//    _mgr.currentPeripheral = _peripherals[indexPath.row];
-//    _mgr.connectedPeripheral(_peripherals[indexPath.row]).servicesCallBack = ^(NSArray<CBService *> *services) {
-//        _services = services;
-//        [wSelf logServicesInfoWithSerivces:services];
-//    };
     ServicesViewController *vc = [ServicesViewController new].vcMgr(_mgr);
-//    vc.mgr = _mgr;
     NSLog(@"mgr: %@",_mgr);
     [self.navigationController pushViewController:vc animated:YES];
     [_mgr onConnectBluetoothWithIndex:indexPath.row];
