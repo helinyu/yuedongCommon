@@ -83,7 +83,6 @@ static NSString *const serviceCellIdentifierId = @"service.cell.identifier.id";
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-
 #pragma mark -- custom methods
 
 - (ServicesViewController *(^)(YDBlueToothMgr *paramMgr))vcMgr {

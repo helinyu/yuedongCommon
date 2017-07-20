@@ -12,7 +12,7 @@
 
 @interface CharacteristicViewController : UIViewController
 
-- (CharacteristicViewController *(^)(YDBlueToothMgr *mgr))deliverMgr;
-- (CharacteristicViewController *(^)(CBService *service))deliverService;
+- (CharacteristicViewController *(^)(YDBlueToothMgr *mgr))deliverMgr;  //mgr deliver
+- (CharacteristicViewController *(^)(CBService *service))deliverService; // choise service deliver 
 
 @end
