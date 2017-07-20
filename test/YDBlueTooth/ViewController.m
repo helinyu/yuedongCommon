@@ -16,6 +16,9 @@
 #import "BluetoothS3ViewController.h"
 #import "ServicesViewController.h"
 
+//s3 by babybluetooth
+#import "YDS3ViewController.h"
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -43,10 +46,12 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
     self.tableView.delegate = self;
     
     UIBarButtonItem *barBtn = [[UIBarButtonItem alloc] initWithTitle:@"断开" style:UIBarButtonItemStylePlain target:self action:@selector(onQuitConnected)];
-    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithTitle:@"左边S3耳机" style:UIBarButtonItemStylePlain target:self action:@selector(onS3connect)];
-    self.navigationController.navigationBar.topItem.rightBarButtonItem = barBtn;
-    self.navigationController.navigationBar.topItem.leftBarButtonItem = leftBtn;
+    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithTitle:@"S3原" style:UIBarButtonItemStylePlain target:self action:@selector(onS3connect)];
+    UIBarButtonItem *left2Btn = [[UIBarButtonItem alloc] initWithTitle:@"S3baby" style:UIBarButtonItemStylePlain target:self action:@selector(onS3BabyClilcked)];
     
+    self.navigationController.navigationBar.topItem.rightBarButtonItem = barBtn;
+//    self.navigationController.navigationBar.topItem.leftBarButtonItem = leftBtn;
+    self.navigationController.navigationBar.topItem.leftBarButtonItems = @[leftBtn,left2Btn];
     [SVProgressHUD showInfoWithStatus:@"准备打开设备"];
     NSLog(@"view did load");
 
@@ -64,12 +69,15 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
 }
 
 - (void)onS3connect {
-    
-    [_mgr quitConnected];
-    [_mgr stopScan];
-
+    _mgr.quitConnected().stopScan();
     BluetoothS3ViewController *vc = [BluetoothS3ViewController new];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)onS3BabyClilcked {
+    _mgr.quitConnected().stopScan();
+    YDS3ViewController *s3vc = [YDS3ViewController new];
+    [self.navigationController pushViewController:s3vc animated:YES];
 }
 
 - (void)onQuitConnected {

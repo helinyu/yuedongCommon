@@ -25,14 +25,15 @@ typedef NS_ENUM(NSInteger, YDBlueToothFilterType) {
 
 + (instancetype)shared;
 
-- (void)startScan;
-- (void)stopScan;
+//- (void)startScan;
+- (YDBlueToothMgr *(^)(void))startScan;
+- (YDBlueToothMgr *(^)(void))stopScan;
 
 /*
  *@metod quit the connection abount the central with the peripheral
  *@discussion may be like that ,the VC dealloc, we may be need to quit the connected
  */
-- (void)quitConnected;
+- (YDBlueToothMgr *(^)(void))quitConnected;
 
 /*
  * @param :blue tooth search & filter key word and  pattern, required

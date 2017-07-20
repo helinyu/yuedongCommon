@@ -97,7 +97,7 @@
  */
 -(void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI
 {
-    
+
     if (![peripheral.name isEqualToString:@"S3"]) {
         return;
     }

@@ -12,6 +12,9 @@
 
 @interface YDBlueToothMgr ()
 
+//test
+@property (nonatomic, assign) NSInteger step;
+
 @property (nonatomic, strong) BabyBluetooth *bluetooth;
 
 /*
@@ -30,11 +33,14 @@
 
 //static NSString *const connectionChannel = @"connection.channel";
 
+static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetooth.DidUpdataValueForCharacteristic";
+
 @implementation YDBlueToothMgr
 
 #pragma mark -- system function
 - (void)dealloc {
-    [self quitConnected];
+//    [self quitConnected];
+    self.quitConnected();
 }
 
 
@@ -147,14 +153,17 @@
 #pragma mark - connect & services
     [_bluetooth setBlockOnConnected:^(CBCentralManager *central, CBPeripheral *peripheral) {
         NSLog(@"setBlockOnConnected");
+        !wSelf.connectionCallBack?:wSelf.connectionCallBack(YES);
     }];
     
     [_bluetooth setBlockOnFailToConnect:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
         NSLog(@"setBlockOnFailToConnect");
+        !wSelf.connectionCallBack?:wSelf.connectionCallBack(NO);
     }];
     
     [_bluetooth setBlockOnDisconnect:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
         NSLog(@"setBlockOnDisconnect");
+        !wSelf.connectionCallBack?:wSelf.connectionCallBack(NO);
     }];
     
     [_bluetooth setBlockOnDiscoverServices:^(CBPeripheral *peripheral, NSError *error) {
@@ -164,14 +173,14 @@
         [rhythm beats];
     }];
     
-    [rhythm setBlockOnBeatsBreak:^(BabyRhythm *bry) {
-        NSLog(@"setBlockOnBeatsBreak call");
-    }];
-    
-    //设置beats over委托
-    [rhythm setBlockOnBeatsOver:^(BabyRhythm *bry) {
-        NSLog(@"setBlockOnBeatsOver call");
-    }];
+//    [rhythm setBlockOnBeatsBreak:^(BabyRhythm *bry) {
+//        NSLog(@"setBlockOnBeatsBreak call");
+//    }];
+//
+//    //设置beats over委托
+//    [rhythm setBlockOnBeatsOver:^(BabyRhythm *bry) {
+//        NSLog(@"setBlockOnBeatsOver call");
+//    }];
 
 #pragma mark - services & characteristic
     
@@ -181,6 +190,18 @@
     
     [_bluetooth setBlockOnReadValueForCharacteristic:^(CBPeripheral *peripheral, CBCharacteristic *characteristic, NSError *error) {
         NSLog(@"setBlockOnReadValueForCharacteristic");
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:ydNtfMangerDidUpdataValueForCharacteristic object:characteristic];
+        if (!error) {
+            NSError *error1 = nil;
+            id dict = [NSJSONSerialization JSONObjectWithData:characteristic.value options:NSJSONReadingMutableContainers error:&error1];
+            NSLog(@"dict is : %@",dict);
+        }
+        
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            [self insertDataToYDOpen:characteristic];
+        });
+
     }];
     
 // characteristic & discriptors
@@ -224,25 +245,36 @@
     }
 }
 
-- (void)startScan {
-    
+
+- (YDBlueToothMgr *(^)(void))startScan {
     _peripherals = [NSMutableArray<CBPeripheral *> new];
     [_bluetooth cancelAllPeripheralsConnection];
     _bluetooth = [BabyBluetooth shareBabyBluetooth];
-    
     [self babyDelegate];
     _bluetooth.scanForPeripherals().begin();
+    
+    return ^(void){
+        return self;
+    };
 }
 
-- (void)stopScan {
-    _bluetooth.stop(0);
+- (YDBlueToothMgr *(^)(void))stopScan {
+    __weak typeof (self) wSelf = self;
+    return ^(void) {
+        wSelf.bluetooth.stop(0);
+        return self;
+    };
 }
 
-- (void)quitConnected {
-    if (_currentPeripheral) {
-        [_bluetooth cancelPeripheralConnection:_currentPeripheral];
-        _currentPeripheral = nil;
-    }
+- (YDBlueToothMgr *(^)(void))quitConnected {
+    __weak typeof (self) wSelf = self;
+    return ^(void) {
+        if (wSelf.currentPeripheral) {
+            [wSelf.bluetooth cancelPeripheralConnection:wSelf.currentPeripheral];
+            wSelf.currentPeripheral = nil;
+        }
+        return self;
+    };
 }
 
 - (void)addConnectedServicesWithServices:(NSArray<CBService *> *)services {
@@ -256,6 +288,8 @@
 }
 
 // custom action method
+
+
 - (void)onConnectBluetoothWithIndex:(NSInteger)index {
     [self onConnectBluetoothWithPeripheral:_peripherals[index]];
 }
@@ -263,7 +297,12 @@
 - (void)onConnectBluetoothWithPeripheral:(CBPeripheral *)peripheral {
     [self _onConnectPrepareWithWillConnectingPeripheral:peripheral];
     _bluetooth.having(peripheral).connectToPeripherals().discoverServices().discoverCharacteristics().readValueForCharacteristic().discoverDescriptorsForCharacteristic().readValueForDescriptors().begin();
+//    _bluetooth.having(peripheral).connectToPeripherals().begin();
 }
+
+//- (void)onOnlyconnecedWithPeripheral:(CBPeripheral *)peripheral {
+//    _bluetooth.having(peripheral).connectToPeripherals().begin();
+//}
 
 - (void)_onConnectPrepareWithWillConnectingPeripheral:(CBPeripheral *)peripheral {
     _currentPeripheral = peripheral;
@@ -274,6 +313,47 @@
 
 - (void)onConnectCurrentPeripheralOfBluetooth {
     [self onConnectBluetoothWithPeripheral:_currentPeripheral];
+}
+
+- (void)insertDataToYDOpen:(CBCharacteristic *)characteristic{
+    NSLog(@"current charactieristic uuid is ： %@",characteristic.UUID);
+    if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"FFF2"]]) {
+        NSData * data = characteristic.value;
+        Byte * resultByte = (Byte *)[data bytes];
+        
+        for(int i=0;i<[data length];i++){
+            if (i == 2) {
+                
+                int heartNUM = resultByte[i];
+                NSString *heatString = [NSString stringWithFormat:@"%d",heartNUM];
+                NSLog(@"heart reate string : %@",heatString);
+//               获取数据
+            }
+        }
+    }else if([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"FFF3"]]) {
+        //步数
+        NSData * data = characteristic.value;
+        Byte * resultByte = (Byte *)[data bytes];
+        
+        for(int i=0;i<[data length];i++){
+            int a = resultByte[3];
+            _step = resultByte[2];
+            if (a !=0) {
+                _step = resultByte[2] + 256*a;
+            }
+            if (i == 2) {
+               
+                //                //卡路里
+                CGFloat calorieValue = (_step * 0.5 / 14);
+                NSLog(@"calorieVaule is : %f",calorieValue);
+                //                //距离
+                CGFloat disMValue = (_step * 0.5 / 1000);
+                NSLog(@"disMValue : %f",disMValue);
+                
+            }
+        }
+    }else if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"FFF1"]]){
+    }
 }
 
 #pragma mark -- some block methods
@@ -294,6 +374,5 @@
         return self;
     };
 }
-
 
 @end

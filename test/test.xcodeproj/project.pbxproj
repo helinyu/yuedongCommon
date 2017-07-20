@@ -39,6 +39,9 @@
 		41D33F951F208BEF00CF2908 /* BluetoothConnectViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 41ED390F1F208155002E70B7 /* BluetoothConnectViewController.h */; };
 		41D33F961F208BEF00CF2908 /* BluetoothConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39101F208155002E70B7 /* BluetoothConnectViewController.m */; };
 		41D33F981F208C4A00CF2908 /* SOMICS3ICON.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 41D33F971F208C4900CF2908 /* SOMICS3ICON.bundle */; };
+		41D33F9C1F209E9500CF2908 /* YDS3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D33F9B1F209E9500CF2908 /* YDS3ViewController.m */; };
+		41D33F9F1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D33F9E1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m */; };
+		41D33FA21F20A06F00CF2908 /* YDS3MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D33FA11F20A06F00CF2908 /* YDS3MainView.m */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
 		41E0D8E21F0CDBA500E16E9E /* HLYShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8E11F0CDBA500E16E9E /* HLYShapeLayerViewController.m */; };
 		41E0D8EB1F0CF72900E16E9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8EA1F0CF72900E16E9E /* main.m */; };
@@ -234,6 +237,12 @@
 		41ABCEF91F0BC57700927CCC /* AnimationCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationCollectionViewCell.h; path = "数据解析/AnimationCollectionViewCell.h"; sourceTree = "<group>"; };
 		41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimationCollectionViewCell.m; path = "数据解析/AnimationCollectionViewCell.m"; sourceTree = "<group>"; };
 		41D33F971F208C4900CF2908 /* SOMICS3ICON.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SOMICS3ICON.bundle; path = ../../../yuedong/code/sports/GlobalLayer/ThirdPart/Hardware/ThirdPart/Somic/SOMICS3ICON.bundle; sourceTree = "<group>"; };
+		41D33F9A1F209E9500CF2908 /* YDS3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDS3ViewController.h; sourceTree = "<group>"; };
+		41D33F9B1F209E9500CF2908 /* YDS3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDS3ViewController.m; sourceTree = "<group>"; };
+		41D33F9D1F20A00D00CF2908 /* YDS3PeriipheralsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDS3PeriipheralsViewController.h; sourceTree = "<group>"; };
+		41D33F9E1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDS3PeriipheralsViewController.m; sourceTree = "<group>"; };
+		41D33FA01F20A06F00CF2908 /* YDS3MainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDS3MainView.h; sourceTree = "<group>"; };
+		41D33FA11F20A06F00CF2908 /* YDS3MainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDS3MainView.m; sourceTree = "<group>"; };
 		41E0D8D81F0C785D00E16E9E /* YDBgImageStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBgImageStatusView.h; sourceTree = "<group>"; };
 		41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBgImageStatusView.m; sourceTree = "<group>"; };
 		41E0D8E01F0CDBA500E16E9E /* HLYShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYShapeLayerViewController.h; sourceTree = "<group>"; };
@@ -632,6 +641,7 @@
 		418D2FF91F1DA36000894079 /* YDBlueTooth */ = {
 			isa = PBXGroup;
 			children = (
+				41D33F991F209E5E00CF2908 /* somic_babyBluetooth */,
 				41ED390E1F208155002E70B7 /* somicFilder */,
 				418D30351F1DC2F100894079 /* category */,
 				418D302E1F1DAE8F00894079 /* mgr */,
@@ -697,6 +707,19 @@
 				41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */,
 			);
 			name = "collectionview cell 上的动画";
+			sourceTree = "<group>";
+		};
+		41D33F991F209E5E00CF2908 /* somic_babyBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				41D33F9A1F209E9500CF2908 /* YDS3ViewController.h */,
+				41D33F9B1F209E9500CF2908 /* YDS3ViewController.m */,
+				41D33F9D1F20A00D00CF2908 /* YDS3PeriipheralsViewController.h */,
+				41D33F9E1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m */,
+				41D33FA01F20A06F00CF2908 /* YDS3MainView.h */,
+				41D33FA11F20A06F00CF2908 /* YDS3MainView.m */,
+			);
+			path = somic_babyBluetooth;
 			sourceTree = "<group>";
 		};
 		41E0D8DF1F0CDB8800E16E9E /* CAShapeLayer */ = {
@@ -2058,6 +2081,8 @@
 				41D33F8C1F208B3F00CF2908 /* S3ActivityIndicatorView.m in Sources */,
 				41D33F8D1F208B3F00CF2908 /* S3MainView.h in Sources */,
 				41D33F8E1F208B3F00CF2908 /* S3MainView.m in Sources */,
+				41D33F9F1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m in Sources */,
+				41D33F9C1F209E9500CF2908 /* YDS3ViewController.m in Sources */,
 				41D33F8F1F208B3F00CF2908 /* S3Manager.h in Sources */,
 				41D33F901F208B3F00CF2908 /* S3Manager.m in Sources */,
 				41D33F911F208B3F00CF2908 /* S3MianViewModel.h in Sources */,
@@ -2073,6 +2098,7 @@
 				418D30341F1DC2ED00894079 /* UIView+Layout.m in Sources */,
 				41ED39401F208165002E70B7 /* YDOpenHardwareManager.m in Sources */,
 				418D30311F1DAEB900894079 /* YDBlueToothMgr.m in Sources */,
+				41D33FA21F20A06F00CF2908 /* YDS3MainView.m in Sources */,
 				41ED39461F208165002E70B7 /* YDOpenHardwareUser.m in Sources */,
 				41ED39421F208165002E70B7 /* YDOpenHardwareHeartRate.m in Sources */,
 				41ED39451F208165002E70B7 /* YDOpenHardwareSleep.m in Sources */,
