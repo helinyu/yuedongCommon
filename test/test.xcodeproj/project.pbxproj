@@ -34,7 +34,6 @@
 		41E0D8F91F0CF72900E16E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E0D8F81F0CF72900E16E9E /* Assets.xcassets */; };
 		41E0D8FC1F0CF72900E16E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E0D8FA1F0CF72900E16E9E /* LaunchScreen.storyboard */; };
 		41ED38091F204C97002E70B7 /* CharacteristicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38081F204C97002E70B7 /* CharacteristicViewController.m */; };
-		41ED393E1F208165002E70B7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41ED39261F208165002E70B7 /* Info.plist */; };
 		41ED393F1F208165002E70B7 /* YDOpenHardwareDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39291F208165002E70B7 /* YDOpenHardwareDataProvider.m */; };
 		41ED39401F208165002E70B7 /* YDOpenHardwareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED392B1F208165002E70B7 /* YDOpenHardwareManager.m */; };
 		41ED39411F208165002E70B7 /* YDOpenHardwareDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED392E1F208165002E70B7 /* YDOpenHardwareDevice.m */; };
@@ -257,7 +256,6 @@
 		41ED39211F208155002E70B7 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		41ED39221F208155002E70B7 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		41ED39251F208165002E70B7 /* YDOpenHardwareSDKDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareSDKDefine.h; sourceTree = "<group>"; };
-		41ED39261F208165002E70B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41ED39281F208165002E70B7 /* YDOpenHardwareDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareDataProvider.h; sourceTree = "<group>"; };
 		41ED39291F208165002E70B7 /* YDOpenHardwareDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareDataProvider.m; sourceTree = "<group>"; };
 		41ED392A1F208165002E70B7 /* YDOpenHardwareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareManager.h; sourceTree = "<group>"; };
@@ -751,7 +749,6 @@
 			isa = PBXGroup;
 			children = (
 				41ED39241F208165002E70B7 /* Const */,
-				41ED39261F208165002E70B7 /* Info.plist */,
 				41ED39271F208165002E70B7 /* Interface */,
 				41ED392C1F208165002E70B7 /* Model */,
 				41ED39391F208165002E70B7 /* Resource */,
@@ -1811,7 +1808,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41ED393E1F208165002E70B7 /* Info.plist in Resources */,
 				418D300D1F1DA36000894079 /* LaunchScreen.storyboard in Resources */,
 				41ED39471F208165002E70B7 /* ThirdParts.plist in Resources */,
 				418D300A1F1DA36000894079 /* Assets.xcassets in Resources */,
@@ -2357,13 +2353,14 @@
 			baseConfigurationReference = E08FB385B85BCD602F1865BF /* Pods-YDBlueTooth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				INFOPLIST_FILE = YDBlueTooth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 			};
 			name = Release;
 		};
