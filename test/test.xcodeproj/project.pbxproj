@@ -34,26 +34,16 @@
 		41E0D8F91F0CF72900E16E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E0D8F81F0CF72900E16E9E /* Assets.xcassets */; };
 		41E0D8FC1F0CF72900E16E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E0D8FA1F0CF72900E16E9E /* LaunchScreen.storyboard */; };
 		41ED38091F204C97002E70B7 /* CharacteristicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38081F204C97002E70B7 /* CharacteristicViewController.m */; };
-		41ED38281F206111002E70B7 /* BluetoothConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38151F206110002E70B7 /* BluetoothConnectViewController.m */; };
-		41ED38291F206111002E70B7 /* BluetoothDaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38171F206110002E70B7 /* BluetoothDaterView.m */; };
-		41ED382A1F206111002E70B7 /* BluetoothS3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38191F206110002E70B7 /* BluetoothS3ViewController.m */; };
-		41ED382B1F206111002E70B7 /* S3ActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED381B1F206110002E70B7 /* S3ActivityIndicatorView.m */; };
-		41ED382C1F206111002E70B7 /* S3MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED381D1F206110002E70B7 /* S3MainView.m */; };
-		41ED382D1F206111002E70B7 /* S3Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED381F1F206110002E70B7 /* S3Manager.m */; };
-		41ED382E1F206111002E70B7 /* S3MianViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38211F206110002E70B7 /* S3MianViewModel.m */; };
-		41ED382F1F206111002E70B7 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38231F206110002E70B7 /* SVIndefiniteAnimatedView.m */; };
-		41ED38301F206111002E70B7 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38251F206110002E70B7 /* SVProgressHUD.m */; };
-		41ED38311F206111002E70B7 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38271F206110002E70B7 /* UIView+Frame.m */; };
-		41ED38C41F20674D002E70B7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41ED38AE1F20674C002E70B7 /* Info.plist */; };
-		41ED38C51F20674D002E70B7 /* ThirdParts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41ED38B11F20674C002E70B7 /* ThirdParts.plist */; };
-		41ED38C61F20674D002E70B7 /* YDOpenHardwareDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38B41F20674C002E70B7 /* YDOpenHardwareDevice.m */; };
-		41ED38C71F20674D002E70B7 /* YDOpenHardwareHeartRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38B61F20674C002E70B7 /* YDOpenHardwareHeartRate.m */; };
-		41ED38C81F20674D002E70B7 /* YDOpenHardwareIntelligentScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38B81F20674C002E70B7 /* YDOpenHardwareIntelligentScale.m */; };
-		41ED38C91F20674D002E70B7 /* YDOpenHardwarePedometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38BA1F20674C002E70B7 /* YDOpenHardwarePedometer.m */; };
-		41ED38CA1F20674D002E70B7 /* YDOpenHardwareSleep.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38BC1F20674C002E70B7 /* YDOpenHardwareSleep.m */; };
-		41ED38CB1F20674D002E70B7 /* YDOpenHardwareUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38BE1F20674C002E70B7 /* YDOpenHardwareUser.m */; };
-		41ED38CC1F20674D002E70B7 /* YDOpenHardwareDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38C11F20674C002E70B7 /* YDOpenHardwareDataProvider.m */; };
-		41ED38CD1F20674D002E70B7 /* YDOpenHardwareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED38C31F20674C002E70B7 /* YDOpenHardwareManager.m */; };
+		41ED393E1F208165002E70B7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41ED39261F208165002E70B7 /* Info.plist */; };
+		41ED393F1F208165002E70B7 /* YDOpenHardwareDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39291F208165002E70B7 /* YDOpenHardwareDataProvider.m */; };
+		41ED39401F208165002E70B7 /* YDOpenHardwareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED392B1F208165002E70B7 /* YDOpenHardwareManager.m */; };
+		41ED39411F208165002E70B7 /* YDOpenHardwareDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED392E1F208165002E70B7 /* YDOpenHardwareDevice.m */; };
+		41ED39421F208165002E70B7 /* YDOpenHardwareHeartRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39301F208165002E70B7 /* YDOpenHardwareHeartRate.m */; };
+		41ED39431F208165002E70B7 /* YDOpenHardwareIntelligentScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39321F208165002E70B7 /* YDOpenHardwareIntelligentScale.m */; };
+		41ED39441F208165002E70B7 /* YDOpenHardwarePedometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39341F208165002E70B7 /* YDOpenHardwarePedometer.m */; };
+		41ED39451F208165002E70B7 /* YDOpenHardwareSleep.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39361F208165002E70B7 /* YDOpenHardwareSleep.m */; };
+		41ED39461F208165002E70B7 /* YDOpenHardwareUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39381F208165002E70B7 /* YDOpenHardwareUser.m */; };
+		41ED39471F208165002E70B7 /* ThirdParts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41ED393B1F208165002E70B7 /* ThirdParts.plist */; };
 		41F760011F1C9F2100AB66AE /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F760001F1C9F2100AB66AE /* HealthKit.framework */; };
 		41F760281F1CB4E800AB66AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F760271F1CB4E800AB66AE /* main.m */; };
 		41F7602B1F1CB4E800AB66AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F7602A1F1CB4E800AB66AE /* AppDelegate.m */; };
@@ -246,46 +236,47 @@
 		41E0D8FD1F0CF72900E16E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41ED38071F204C97002E70B7 /* CharacteristicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacteristicViewController.h; sourceTree = "<group>"; };
 		41ED38081F204C97002E70B7 /* CharacteristicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacteristicViewController.m; sourceTree = "<group>"; };
-		41ED38141F206110002E70B7 /* BluetoothConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothConnectViewController.h; sourceTree = "<group>"; };
-		41ED38151F206110002E70B7 /* BluetoothConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothConnectViewController.m; sourceTree = "<group>"; };
-		41ED38161F206110002E70B7 /* BluetoothDaterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothDaterView.h; sourceTree = "<group>"; };
-		41ED38171F206110002E70B7 /* BluetoothDaterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothDaterView.m; sourceTree = "<group>"; };
-		41ED38181F206110002E70B7 /* BluetoothS3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothS3ViewController.h; sourceTree = "<group>"; };
-		41ED38191F206110002E70B7 /* BluetoothS3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothS3ViewController.m; sourceTree = "<group>"; };
-		41ED381A1F206110002E70B7 /* S3ActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S3ActivityIndicatorView.h; sourceTree = "<group>"; };
-		41ED381B1F206110002E70B7 /* S3ActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S3ActivityIndicatorView.m; sourceTree = "<group>"; };
-		41ED381C1F206110002E70B7 /* S3MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S3MainView.h; sourceTree = "<group>"; };
-		41ED381D1F206110002E70B7 /* S3MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S3MainView.m; sourceTree = "<group>"; };
-		41ED381E1F206110002E70B7 /* S3Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S3Manager.h; sourceTree = "<group>"; };
-		41ED381F1F206110002E70B7 /* S3Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S3Manager.m; sourceTree = "<group>"; };
-		41ED38201F206110002E70B7 /* S3MianViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S3MianViewModel.h; sourceTree = "<group>"; };
-		41ED38211F206110002E70B7 /* S3MianViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S3MianViewModel.m; sourceTree = "<group>"; };
-		41ED38221F206110002E70B7 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		41ED38231F206110002E70B7 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		41ED38241F206110002E70B7 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		41ED38251F206110002E70B7 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
-		41ED38261F206110002E70B7 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		41ED38271F206110002E70B7 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		41ED38AB1F20674C002E70B7 /* YDOpenHardwareSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YDOpenHardwareSDK.h; path = ../../../openHardware/YDOpenHardwareSDK/YDOpenHardwareSDK/YDOpenHardwareSDK.h; sourceTree = "<group>"; };
-		41ED38AD1F20674C002E70B7 /* YDOpenHardwareSDKDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareSDKDefine.h; sourceTree = "<group>"; };
-		41ED38AE1F20674C002E70B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../../openHardware/YDOpenHardwareSDK/YDOpenHardwareSDK/Info.plist; sourceTree = "<group>"; };
-		41ED38B11F20674C002E70B7 /* ThirdParts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ThirdParts.plist; sourceTree = "<group>"; };
-		41ED38B31F20674C002E70B7 /* YDOpenHardwareDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareDevice.h; sourceTree = "<group>"; };
-		41ED38B41F20674C002E70B7 /* YDOpenHardwareDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareDevice.m; sourceTree = "<group>"; };
-		41ED38B51F20674C002E70B7 /* YDOpenHardwareHeartRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareHeartRate.h; sourceTree = "<group>"; };
-		41ED38B61F20674C002E70B7 /* YDOpenHardwareHeartRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareHeartRate.m; sourceTree = "<group>"; };
-		41ED38B71F20674C002E70B7 /* YDOpenHardwareIntelligentScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareIntelligentScale.h; sourceTree = "<group>"; };
-		41ED38B81F20674C002E70B7 /* YDOpenHardwareIntelligentScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareIntelligentScale.m; sourceTree = "<group>"; };
-		41ED38B91F20674C002E70B7 /* YDOpenHardwarePedometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwarePedometer.h; sourceTree = "<group>"; };
-		41ED38BA1F20674C002E70B7 /* YDOpenHardwarePedometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwarePedometer.m; sourceTree = "<group>"; };
-		41ED38BB1F20674C002E70B7 /* YDOpenHardwareSleep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareSleep.h; sourceTree = "<group>"; };
-		41ED38BC1F20674C002E70B7 /* YDOpenHardwareSleep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareSleep.m; sourceTree = "<group>"; };
-		41ED38BD1F20674C002E70B7 /* YDOpenHardwareUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareUser.h; sourceTree = "<group>"; };
-		41ED38BE1F20674C002E70B7 /* YDOpenHardwareUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareUser.m; sourceTree = "<group>"; };
-		41ED38C01F20674C002E70B7 /* YDOpenHardwareDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareDataProvider.h; sourceTree = "<group>"; };
-		41ED38C11F20674C002E70B7 /* YDOpenHardwareDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareDataProvider.m; sourceTree = "<group>"; };
-		41ED38C21F20674C002E70B7 /* YDOpenHardwareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareManager.h; sourceTree = "<group>"; };
-		41ED38C31F20674C002E70B7 /* YDOpenHardwareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareManager.m; sourceTree = "<group>"; };
+		41ED390F1F208155002E70B7 /* BluetoothConnectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluetoothConnectViewController.h; sourceTree = "<group>"; };
+		41ED39101F208155002E70B7 /* BluetoothConnectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothConnectViewController.m; sourceTree = "<group>"; };
+		41ED39111F208155002E70B7 /* BluetoothDaterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluetoothDaterView.h; sourceTree = "<group>"; };
+		41ED39121F208155002E70B7 /* BluetoothDaterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothDaterView.m; sourceTree = "<group>"; };
+		41ED39131F208155002E70B7 /* BluetoothS3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluetoothS3ViewController.h; sourceTree = "<group>"; };
+		41ED39141F208155002E70B7 /* BluetoothS3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothS3ViewController.m; sourceTree = "<group>"; };
+		41ED39151F208155002E70B7 /* S3ActivityIndicatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S3ActivityIndicatorView.h; sourceTree = "<group>"; };
+		41ED39161F208155002E70B7 /* S3ActivityIndicatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S3ActivityIndicatorView.m; sourceTree = "<group>"; };
+		41ED39171F208155002E70B7 /* S3MainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S3MainView.h; sourceTree = "<group>"; };
+		41ED39181F208155002E70B7 /* S3MainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S3MainView.m; sourceTree = "<group>"; };
+		41ED39191F208155002E70B7 /* S3Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S3Manager.h; sourceTree = "<group>"; };
+		41ED391A1F208155002E70B7 /* S3Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S3Manager.m; sourceTree = "<group>"; };
+		41ED391B1F208155002E70B7 /* S3MianViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S3MianViewModel.h; sourceTree = "<group>"; };
+		41ED391C1F208155002E70B7 /* S3MianViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S3MianViewModel.m; sourceTree = "<group>"; };
+		41ED391D1F208155002E70B7 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		41ED391E1F208155002E70B7 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		41ED391F1F208155002E70B7 /* SVProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		41ED39201F208155002E70B7 /* SVProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		41ED39211F208155002E70B7 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		41ED39221F208155002E70B7 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		41ED39251F208165002E70B7 /* YDOpenHardwareSDKDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareSDKDefine.h; sourceTree = "<group>"; };
+		41ED39261F208165002E70B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41ED39281F208165002E70B7 /* YDOpenHardwareDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareDataProvider.h; sourceTree = "<group>"; };
+		41ED39291F208165002E70B7 /* YDOpenHardwareDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareDataProvider.m; sourceTree = "<group>"; };
+		41ED392A1F208165002E70B7 /* YDOpenHardwareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareManager.h; sourceTree = "<group>"; };
+		41ED392B1F208165002E70B7 /* YDOpenHardwareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareManager.m; sourceTree = "<group>"; };
+		41ED392D1F208165002E70B7 /* YDOpenHardwareDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareDevice.h; sourceTree = "<group>"; };
+		41ED392E1F208165002E70B7 /* YDOpenHardwareDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareDevice.m; sourceTree = "<group>"; };
+		41ED392F1F208165002E70B7 /* YDOpenHardwareHeartRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareHeartRate.h; sourceTree = "<group>"; };
+		41ED39301F208165002E70B7 /* YDOpenHardwareHeartRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareHeartRate.m; sourceTree = "<group>"; };
+		41ED39311F208165002E70B7 /* YDOpenHardwareIntelligentScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareIntelligentScale.h; sourceTree = "<group>"; };
+		41ED39321F208165002E70B7 /* YDOpenHardwareIntelligentScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareIntelligentScale.m; sourceTree = "<group>"; };
+		41ED39331F208165002E70B7 /* YDOpenHardwarePedometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwarePedometer.h; sourceTree = "<group>"; };
+		41ED39341F208165002E70B7 /* YDOpenHardwarePedometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwarePedometer.m; sourceTree = "<group>"; };
+		41ED39351F208165002E70B7 /* YDOpenHardwareSleep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareSleep.h; sourceTree = "<group>"; };
+		41ED39361F208165002E70B7 /* YDOpenHardwareSleep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareSleep.m; sourceTree = "<group>"; };
+		41ED39371F208165002E70B7 /* YDOpenHardwareUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareUser.h; sourceTree = "<group>"; };
+		41ED39381F208165002E70B7 /* YDOpenHardwareUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareUser.m; sourceTree = "<group>"; };
+		41ED393B1F208165002E70B7 /* ThirdParts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ThirdParts.plist; sourceTree = "<group>"; };
+		41ED393C1F208165002E70B7 /* YDOpenHardwareSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareSDK.h; sourceTree = "<group>"; };
+		41ED393D1F208165002E70B7 /* YDOpenHardwareSDKDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareSDKDefine.h; sourceTree = "<group>"; };
 		41F75FFF1F1C9F2100AB66AE /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
 		41F760001F1C9F2100AB66AE /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		41F760241F1CB4E700AB66AE /* test_peripheral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_peripheral.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -627,7 +618,7 @@
 		418D2FF91F1DA36000894079 /* YDBlueTooth */ = {
 			isa = PBXGroup;
 			children = (
-				41ED38131F206110002E70B7 /* somicFilder */,
+				41ED390E1F208155002E70B7 /* somicFilder */,
 				418D30351F1DC2F100894079 /* category */,
 				418D302E1F1DAE8F00894079 /* mgr */,
 				418D2FFD1F1DA36000894079 /* AppDelegate.h */,
@@ -728,104 +719,101 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		41ED38131F206110002E70B7 /* somicFilder */ = {
+		41ED390E1F208155002E70B7 /* somicFilder */ = {
 			isa = PBXGroup;
 			children = (
-				41ED387C1F2066C9002E70B7 /* sdk */,
-				41ED38141F206110002E70B7 /* BluetoothConnectViewController.h */,
-				41ED38151F206110002E70B7 /* BluetoothConnectViewController.m */,
-				41ED38161F206110002E70B7 /* BluetoothDaterView.h */,
-				41ED38171F206110002E70B7 /* BluetoothDaterView.m */,
-				41ED38181F206110002E70B7 /* BluetoothS3ViewController.h */,
-				41ED38191F206110002E70B7 /* BluetoothS3ViewController.m */,
-				41ED381A1F206110002E70B7 /* S3ActivityIndicatorView.h */,
-				41ED381B1F206110002E70B7 /* S3ActivityIndicatorView.m */,
-				41ED381C1F206110002E70B7 /* S3MainView.h */,
-				41ED381D1F206110002E70B7 /* S3MainView.m */,
-				41ED381E1F206110002E70B7 /* S3Manager.h */,
-				41ED381F1F206110002E70B7 /* S3Manager.m */,
-				41ED38201F206110002E70B7 /* S3MianViewModel.h */,
-				41ED38211F206110002E70B7 /* S3MianViewModel.m */,
-				41ED38221F206110002E70B7 /* SVIndefiniteAnimatedView.h */,
-				41ED38231F206110002E70B7 /* SVIndefiniteAnimatedView.m */,
-				41ED38241F206110002E70B7 /* SVProgressHUD.h */,
-				41ED38251F206110002E70B7 /* SVProgressHUD.m */,
-				41ED38261F206110002E70B7 /* UIView+Frame.h */,
-				41ED38271F206110002E70B7 /* UIView+Frame.m */,
+				41ED39231F208165002E70B7 /* sdk */,
+				41ED390F1F208155002E70B7 /* BluetoothConnectViewController.h */,
+				41ED39101F208155002E70B7 /* BluetoothConnectViewController.m */,
+				41ED39111F208155002E70B7 /* BluetoothDaterView.h */,
+				41ED39121F208155002E70B7 /* BluetoothDaterView.m */,
+				41ED39131F208155002E70B7 /* BluetoothS3ViewController.h */,
+				41ED39141F208155002E70B7 /* BluetoothS3ViewController.m */,
+				41ED39151F208155002E70B7 /* S3ActivityIndicatorView.h */,
+				41ED39161F208155002E70B7 /* S3ActivityIndicatorView.m */,
+				41ED39171F208155002E70B7 /* S3MainView.h */,
+				41ED39181F208155002E70B7 /* S3MainView.m */,
+				41ED39191F208155002E70B7 /* S3Manager.h */,
+				41ED391A1F208155002E70B7 /* S3Manager.m */,
+				41ED391B1F208155002E70B7 /* S3MianViewModel.h */,
+				41ED391C1F208155002E70B7 /* S3MianViewModel.m */,
+				41ED391D1F208155002E70B7 /* SVIndefiniteAnimatedView.h */,
+				41ED391E1F208155002E70B7 /* SVIndefiniteAnimatedView.m */,
+				41ED391F1F208155002E70B7 /* SVProgressHUD.h */,
+				41ED39201F208155002E70B7 /* SVProgressHUD.m */,
+				41ED39211F208155002E70B7 /* UIView+Frame.h */,
+				41ED39221F208155002E70B7 /* UIView+Frame.m */,
 			);
-			name = somicFilder;
-			path = ../../../Desktop/apple/somicFilder;
+			path = somicFilder;
 			sourceTree = "<group>";
 		};
-		41ED387C1F2066C9002E70B7 /* sdk */ = {
+		41ED39231F208165002E70B7 /* sdk */ = {
 			isa = PBXGroup;
 			children = (
-				41ED38AC1F20674C002E70B7 /* Const */,
-				41ED38AE1F20674C002E70B7 /* Info.plist */,
-				41ED38BF1F20674C002E70B7 /* Interface */,
-				41ED38B21F20674C002E70B7 /* Model */,
-				41ED38AF1F20674C002E70B7 /* Resource */,
-				41ED38AB1F20674C002E70B7 /* YDOpenHardwareSDK.h */,
+				41ED39241F208165002E70B7 /* Const */,
+				41ED39261F208165002E70B7 /* Info.plist */,
+				41ED39271F208165002E70B7 /* Interface */,
+				41ED392C1F208165002E70B7 /* Model */,
+				41ED39391F208165002E70B7 /* Resource */,
+				41ED393C1F208165002E70B7 /* YDOpenHardwareSDK.h */,
+				41ED393D1F208165002E70B7 /* YDOpenHardwareSDKDefine.h */,
 			);
-			path = sdk;
+			name = sdk;
+			path = ../../../../Desktop/apple/sdk;
 			sourceTree = "<group>";
 		};
-		41ED38AC1F20674C002E70B7 /* Const */ = {
+		41ED39241F208165002E70B7 /* Const */ = {
 			isa = PBXGroup;
 			children = (
-				41ED38AD1F20674C002E70B7 /* YDOpenHardwareSDKDefine.h */,
+				41ED39251F208165002E70B7 /* YDOpenHardwareSDKDefine.h */,
 			);
-			name = Const;
-			path = ../../../openHardware/YDOpenHardwareSDK/YDOpenHardwareSDK/Const;
+			path = Const;
 			sourceTree = "<group>";
 		};
-		41ED38AF1F20674C002E70B7 /* Resource */ = {
+		41ED39271F208165002E70B7 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				41ED38B01F20674C002E70B7 /* Plist */,
+				41ED39281F208165002E70B7 /* YDOpenHardwareDataProvider.h */,
+				41ED39291F208165002E70B7 /* YDOpenHardwareDataProvider.m */,
+				41ED392A1F208165002E70B7 /* YDOpenHardwareManager.h */,
+				41ED392B1F208165002E70B7 /* YDOpenHardwareManager.m */,
 			);
-			name = Resource;
-			path = ../../../openHardware/YDOpenHardwareSDK/YDOpenHardwareSDK/Resource;
+			path = Interface;
 			sourceTree = "<group>";
 		};
-		41ED38B01F20674C002E70B7 /* Plist */ = {
+		41ED392C1F208165002E70B7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				41ED38B11F20674C002E70B7 /* ThirdParts.plist */,
+				41ED392D1F208165002E70B7 /* YDOpenHardwareDevice.h */,
+				41ED392E1F208165002E70B7 /* YDOpenHardwareDevice.m */,
+				41ED392F1F208165002E70B7 /* YDOpenHardwareHeartRate.h */,
+				41ED39301F208165002E70B7 /* YDOpenHardwareHeartRate.m */,
+				41ED39311F208165002E70B7 /* YDOpenHardwareIntelligentScale.h */,
+				41ED39321F208165002E70B7 /* YDOpenHardwareIntelligentScale.m */,
+				41ED39331F208165002E70B7 /* YDOpenHardwarePedometer.h */,
+				41ED39341F208165002E70B7 /* YDOpenHardwarePedometer.m */,
+				41ED39351F208165002E70B7 /* YDOpenHardwareSleep.h */,
+				41ED39361F208165002E70B7 /* YDOpenHardwareSleep.m */,
+				41ED39371F208165002E70B7 /* YDOpenHardwareUser.h */,
+				41ED39381F208165002E70B7 /* YDOpenHardwareUser.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41ED39391F208165002E70B7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				41ED393A1F208165002E70B7 /* Plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		41ED393A1F208165002E70B7 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				41ED393B1F208165002E70B7 /* ThirdParts.plist */,
 			);
 			path = Plist;
-			sourceTree = "<group>";
-		};
-		41ED38B21F20674C002E70B7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				41ED38B31F20674C002E70B7 /* YDOpenHardwareDevice.h */,
-				41ED38B41F20674C002E70B7 /* YDOpenHardwareDevice.m */,
-				41ED38B51F20674C002E70B7 /* YDOpenHardwareHeartRate.h */,
-				41ED38B61F20674C002E70B7 /* YDOpenHardwareHeartRate.m */,
-				41ED38B71F20674C002E70B7 /* YDOpenHardwareIntelligentScale.h */,
-				41ED38B81F20674C002E70B7 /* YDOpenHardwareIntelligentScale.m */,
-				41ED38B91F20674C002E70B7 /* YDOpenHardwarePedometer.h */,
-				41ED38BA1F20674C002E70B7 /* YDOpenHardwarePedometer.m */,
-				41ED38BB1F20674C002E70B7 /* YDOpenHardwareSleep.h */,
-				41ED38BC1F20674C002E70B7 /* YDOpenHardwareSleep.m */,
-				41ED38BD1F20674C002E70B7 /* YDOpenHardwareUser.h */,
-				41ED38BE1F20674C002E70B7 /* YDOpenHardwareUser.m */,
-			);
-			name = Model;
-			path = ../../../openHardware/YDOpenHardwareSDK/YDOpenHardwareSDK/Model;
-			sourceTree = "<group>";
-		};
-		41ED38BF1F20674C002E70B7 /* Interface */ = {
-			isa = PBXGroup;
-			children = (
-				41ED38C01F20674C002E70B7 /* YDOpenHardwareDataProvider.h */,
-				41ED38C11F20674C002E70B7 /* YDOpenHardwareDataProvider.m */,
-				41ED38C21F20674C002E70B7 /* YDOpenHardwareManager.h */,
-				41ED38C31F20674C002E70B7 /* YDOpenHardwareManager.m */,
-			);
-			name = Interface;
-			path = ../../../openHardware/YDOpenHardwareSDK/YDOpenHardwareSDK/Interface;
 			sourceTree = "<group>";
 		};
 		41F760251F1CB4E800AB66AE /* test_peripheral */ = {
@@ -1823,9 +1811,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41ED38C41F20674D002E70B7 /* Info.plist in Resources */,
+				41ED393E1F208165002E70B7 /* Info.plist in Resources */,
 				418D300D1F1DA36000894079 /* LaunchScreen.storyboard in Resources */,
-				41ED38C51F20674D002E70B7 /* ThirdParts.plist in Resources */,
+				41ED39471F208165002E70B7 /* ThirdParts.plist in Resources */,
 				418D300A1F1DA36000894079 /* Assets.xcassets in Resources */,
 				418D30051F1DA36000894079 /* Main.storyboard in Resources */,
 			);
@@ -2046,32 +2034,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41ED39441F208165002E70B7 /* YDOpenHardwarePedometer.m in Sources */,
 				418BA7B71F1F71BF007269DC /* ServicesViewController.m in Sources */,
 				41ED38091F204C97002E70B7 /* CharacteristicViewController.m in Sources */,
 				418D30021F1DA36000894079 /* ViewController.m in Sources */,
 				418D2FFF1F1DA36000894079 /* AppDelegate.m in Sources */,
-				41ED38291F206111002E70B7 /* BluetoothDaterView.m in Sources */,
-				41ED38301F206111002E70B7 /* SVProgressHUD.m in Sources */,
-				41ED38CD1F20674D002E70B7 /* YDOpenHardwareManager.m in Sources */,
-				41ED38C81F20674D002E70B7 /* YDOpenHardwareIntelligentScale.m in Sources */,
+				41ED39431F208165002E70B7 /* YDOpenHardwareIntelligentScale.m in Sources */,
+				41ED39411F208165002E70B7 /* YDOpenHardwareDevice.m in Sources */,
+				41ED393F1F208165002E70B7 /* YDOpenHardwareDataProvider.m in Sources */,
 				418D30341F1DC2ED00894079 /* UIView+Layout.m in Sources */,
-				41ED38C91F20674D002E70B7 /* YDOpenHardwarePedometer.m in Sources */,
-				41ED38281F206111002E70B7 /* BluetoothConnectViewController.m in Sources */,
+				41ED39401F208165002E70B7 /* YDOpenHardwareManager.m in Sources */,
 				418D30311F1DAEB900894079 /* YDBlueToothMgr.m in Sources */,
-				41ED38CB1F20674D002E70B7 /* YDOpenHardwareUser.m in Sources */,
+				41ED39461F208165002E70B7 /* YDOpenHardwareUser.m in Sources */,
+				41ED39421F208165002E70B7 /* YDOpenHardwareHeartRate.m in Sources */,
+				41ED39451F208165002E70B7 /* YDOpenHardwareSleep.m in Sources */,
 				418D2FFC1F1DA36000894079 /* main.m in Sources */,
-				41ED38C61F20674D002E70B7 /* YDOpenHardwareDevice.m in Sources */,
-				41ED382D1F206111002E70B7 /* S3Manager.m in Sources */,
-				41ED382A1F206111002E70B7 /* BluetoothS3ViewController.m in Sources */,
-				41ED38C71F20674D002E70B7 /* YDOpenHardwareHeartRate.m in Sources */,
-				41ED38311F206111002E70B7 /* UIView+Frame.m in Sources */,
-				41ED382F1F206111002E70B7 /* SVIndefiniteAnimatedView.m in Sources */,
 				418D30081F1DA36000894079 /* YDBlueTooth.xcdatamodeld in Sources */,
-				41ED38CC1F20674D002E70B7 /* YDOpenHardwareDataProvider.m in Sources */,
-				41ED382B1F206111002E70B7 /* S3ActivityIndicatorView.m in Sources */,
-				41ED38CA1F20674D002E70B7 /* YDOpenHardwareSleep.m in Sources */,
-				41ED382C1F206111002E70B7 /* S3MainView.m in Sources */,
-				41ED382E1F206111002E70B7 /* S3MianViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
