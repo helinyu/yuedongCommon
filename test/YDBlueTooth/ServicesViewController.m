@@ -79,7 +79,7 @@ static NSString *const serviceCellIdentifierId = @"service.cell.identifier.id";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"choise index");
-    CharacteristicViewController *vc = [CharacteristicViewController new].deliverMgr(_mgr);
+    CharacteristicViewController *vc = [CharacteristicViewController new].deliverMgr(_mgr).deliverService(_services[indexPath.row]);
     [self.navigationController pushViewController:vc animated:YES];
 }
 

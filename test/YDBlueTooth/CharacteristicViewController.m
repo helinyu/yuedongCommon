@@ -8,10 +8,14 @@
 
 #import "CharacteristicViewController.h"
 #import "YDBlueToothMgr.h"
+#import <CoreBluetooth/CoreBluetooth.h>
+
 
 @interface CharacteristicViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) YDBlueToothMgr *mgr;
+
+@property (nonatomic, strong) CBService *currentService;
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -41,12 +45,13 @@ static NSString *const characteristicCellidentifierId = @"characteristic.cell.id
 #pragma mark -- tableView datasource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSInteger cellNum = 5;
-    return cellNum;
+    return _currentService.characteristics.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:characteristicCellidentifierId forIndexPath:indexPath];
+    CBCharacteristic *chara = _currentService.characteristics[indexPath.row];
+    cell.textLabel.text = chara.UUID.UUIDString;
     return cell;
 }
 
@@ -60,6 +65,14 @@ static NSString *const characteristicCellidentifierId = @"characteristic.cell.id
     __weak typeof (self) wSelf = self;
     return ^(YDBlueToothMgr *mgr){
         wSelf.mgr = mgr;
+        return self;
+    };
+}
+
+- (CharacteristicViewController *(^)(CBService *service))deliverService {
+    __weak typeof (self) wSelf = self;
+    return ^(CBService *service){
+        wSelf.currentService = service;
         return self;
     };
 }

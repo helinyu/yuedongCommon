@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 @class YDBlueToothMgr;
+@class CBService;
 
 @interface CharacteristicViewController : UIViewController
 
 - (CharacteristicViewController *(^)(YDBlueToothMgr *mgr))deliverMgr;
-
+- (CharacteristicViewController *(^)(CBService *service))deliverService;
 
 @end
