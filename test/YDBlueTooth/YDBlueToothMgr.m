@@ -48,6 +48,8 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
 
 - (void)babyDelegate {
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ontest:) name:BabyNotificationAtDidWriteValueForCharacteristic object:nil];
+    
     __weak typeof  (self) wSelf = self;
     BabyRhythm *rhythm = [BabyRhythm new];
     
@@ -170,7 +172,7 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
         NSLog(@"setBlockOnDiscoverServices");
         [wSelf addConnectedServicesWithServices:peripheral.services];
         !wSelf.servicesCallBack?:wSelf.servicesCallBack(wSelf.connectedPeripheralServices);
-        [rhythm beats];
+//        [rhythm beats];
     }];
     
 //    [rhythm setBlockOnBeatsBreak:^(BabyRhythm *bry) {
@@ -186,6 +188,31 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
     
     [_bluetooth setBlockOnDiscoverCharacteristics:^(CBPeripheral *peripheral, CBService *service, NSError *error) {
         NSLog(@"setBlockOnDiscoverCharacteristics");
+//        - (void)notify:(CBPeripheral *)peripheral
+//    characteristic:(CBCharacteristic *)characteristic
+//    block:(void(^)(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error))block;
+        for (CBCharacteristic *c in service.characteristics) {
+            if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF1"]]) {
+//                _writeCharacteristic = c;
+            }
+            if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF2"]]) {
+//                [self.peripheral readValueForCharacteristic:c];//读取
+//                [self.peripheral setNotifyValue:YES forCharacteristic:c];//订阅
+                [wSelf.bluetooth notify:peripheral characteristic:c block:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
+                    NSLog(@"notify : fff2");
+                    [self insertDataToYDOpen:characteristics];
+                }];
+
+            }
+            if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF3"]]) {
+//                [self.peripheral readValueForCharacteristic:c];
+//                [self.peripheral setNotifyValue:YES forCharacteristic:c];
+                [wSelf.bluetooth notify:peripheral characteristic:c block:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
+                    NSLog(@"notify : fff3");
+                    [self insertDataToYDOpen:characteristics];
+                }];
+            }
+        }
     }];
     
     [_bluetooth setBlockOnReadValueForCharacteristic:^(CBPeripheral *peripheral, CBCharacteristic *characteristic, NSError *error) {
@@ -199,9 +226,17 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
         }
         
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            [self insertDataToYDOpen:characteristic];
+            [wSelf insertDataToYDOpen:characteristic];
         });
 
+    }];
+    
+    [_bluetooth setBlockOnDidUpdateNotificationStateForCharacteristic:^(CBCharacteristic *characteristic, NSError *error) {
+        NSLog(@"setBlockOnDidUpdateNotificationStateForCharacteristic");
+        if (characteristic.isNotifying) {
+//            [peripheral readValueForCharacteristic:characteristic];
+//            wSelf.bluetooth.readValueForCharacteristic().begin();
+        }
     }];
     
 // characteristic & discriptors
@@ -251,11 +286,21 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
     [_bluetooth cancelAllPeripheralsConnection];
     _bluetooth = [BabyBluetooth shareBabyBluetooth];
     [self babyDelegate];
+    
     _bluetooth.scanForPeripherals().begin();
+    
+//    [[NSNotificationCenter defaultCenter]postNotificationName:BabyNotificationAtDidWriteValueForCharacteristic object:@{@"characteristic":characteristic,@"error":error?error:@""}];
     
     return ^(void){
         return self;
     };
+}
+
+- (void)ontest:(NSNotification *)notification {
+    CBCharacteristic *c = [notification.object objectForKey:@"characteristic"];
+    NSLog(@"did update dats ");
+//    [    CBCharacteristic *characteristic = notification.object;
+//]
 }
 
 - (YDBlueToothMgr *(^)(void))stopScan {
@@ -327,6 +372,7 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
                 int heartNUM = resultByte[i];
                 NSString *heatString = [NSString stringWithFormat:@"%d",heartNUM];
                 NSLog(@"heart reate string : %@",heatString);
+                !_heartRateCallBack?:_heartRateCallBack(heatString);
 //               获取数据
             }
         }
@@ -346,9 +392,12 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
                 //                //卡路里
                 CGFloat calorieValue = (_step * 0.5 / 14);
                 NSLog(@"calorieVaule is : %f",calorieValue);
+                
                 //                //距离
                 CGFloat disMValue = (_step * 0.5 / 1000);
                 NSLog(@"disMValue : %f",disMValue);
+                
+                !self.tripCallBack?:self.tripCallBack(calorieValue,disMValue);
                 
             }
         }

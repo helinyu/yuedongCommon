@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 @class CBPeripheral;
 @class CBService;
 
@@ -104,4 +105,11 @@ typedef NS_ENUM(NSInteger, YDBlueToothFilterType) {
  * connect repones with services
  */
 @property (nonatomic, copy) void(^servicesCallBack)(NSArray<CBService *> *services);
+
+
+#pragma mark -- datas for callback
+
+@property (nonatomic, copy) void(^heartRateCallBack)(NSString *heartString);
+@property (nonatomic, copy) void(^tripCallBack)(CGFloat calories, CGFloat distance);
+
 @end

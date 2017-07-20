@@ -36,6 +36,7 @@ static NSString *const peripheralsListCellIdentifierId = @"peripheral.lsit.cell.
     
     _mgr = [YDBlueToothMgr shared];
     __weak typeof (self) wSelf = self;
+    
     _mgr.startScan().scanCallBack = ^(NSArray<CBPeripheral *> *peripherals) {
         wSelf.peripherals = peripherals;
         dispatch_async(dispatch_get_main_queue(), ^{

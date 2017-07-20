@@ -26,8 +26,29 @@
     
     _infoView = [[YDS3MainView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.view addSubview:_infoView];
-    
+
+    _mgr = [YDBlueToothMgr shared];
     [self onStartClicked];
+    [self datasFeed];
+}
+
+- (void)datasFeed {
+    __weak typeof (self) wSelf = self;
+    _mgr.tripCallBack = ^(CGFloat calories, CGFloat distance) {
+        NSLog(@"calories : %f",calories);
+        NSLog(@"distance : %f",calories);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            wSelf.infoView.calorieNumLabel.text = [NSString stringWithFormat:@"%f",calories];
+            wSelf.infoView.distanceNumLabel.text = [NSString stringWithFormat:@"%f",distance];
+        });
+    };
+    
+    _mgr.heartRateCallBack = ^(NSString *heartString) {
+        NSLog(@"heateRateing : %@",heartString);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            wSelf.infoView.heartRateNumLabel.text = [NSString stringWithFormat:@"%@",heartString];
+        });
+    };
 }
 
 - (void)onStartClicked {

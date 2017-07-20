@@ -86,6 +86,7 @@
 
 - (void)scanForPeripherals{
     [self.manager scanForPeripheralsWithServices:nil  options:nil];
+    NSLog(@"scanForPeripherals");
 }
 
 - (void)connectS3Bluetooth{
@@ -327,19 +328,19 @@
     }
 }
 
-/**
- //用于检测中心向外设写数据是否成功
- */
--(void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
-{
-    if (error) {
-    }else{
-        
-    }
-    
-    [peripheral readValueForCharacteristic:characteristic];
-    NSLog(@"didWriteValueForCharacteristic:readValueForCharacteristic");
-}
+///**
+// //用于检测中心向外设写数据是否成功
+// */
+//-(void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
+//{
+//    if (error) {
+//    }else{
+//
+//    }
+//
+//    [peripheral readValueForCharacteristic:characteristic];
+//    NSLog(@"didWriteValueForCharacteristic:readValueForCharacteristic");
+//}
 
 /**
  获取当前时区的当前时间
