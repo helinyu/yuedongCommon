@@ -41,7 +41,6 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
     self.quitConnected();
 }
 
-
 #pragma mark -- all delegate block
 
 - (void)babyDelegate {

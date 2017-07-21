@@ -12,6 +12,8 @@
 		4113B2F31F1EF8A600EC6D21 /* LYBlockLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F21F1EF8A600EC6D21 /* LYBlockLinkViewController.m */; };
 		4113B2F61F1EF92600EC6D21 /* LYBlockPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F51F1EF92600EC6D21 /* LYBlockPerson.m */; };
 		4113B2F91F1EFA5800EC6D21 /* LYBlockPerson2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F81F1EFA5800EC6D21 /* LYBlockPerson2.m */; };
+		414BF1181F21B45E00058DBE /* YDBlueBluetooth.plist in Resources */ = {isa = PBXBuildFile; fileRef = 414BF1171F21B45E00058DBE /* YDBlueBluetooth.plist */; };
+		414BF11B1F21B78E00058DBE /* PeripheralsModelMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 414BF11A1F21B78E00058DBE /* PeripheralsModelMgr.m */; };
 		418BA7B71F1F71BF007269DC /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418BA7B61F1F71BF007269DC /* ServicesViewController.m */; };
 		418D2FF21F1D115300894079 /* LYAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D2FF11F1D115300894079 /* LYAlgorithmViewController.m */; };
 		418D2FFC1F1DA36000894079 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D2FFB1F1DA36000894079 /* main.m */; };
@@ -232,6 +234,9 @@
 		4113B2F51F1EF92600EC6D21 /* LYBlockPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBlockPerson.m; sourceTree = "<group>"; };
 		4113B2F71F1EFA5800EC6D21 /* LYBlockPerson2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockPerson2.h; sourceTree = "<group>"; };
 		4113B2F81F1EFA5800EC6D21 /* LYBlockPerson2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBlockPerson2.m; sourceTree = "<group>"; };
+		414BF1171F21B45E00058DBE /* YDBlueBluetooth.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = YDBlueBluetooth.plist; sourceTree = "<group>"; };
+		414BF1191F21B78E00058DBE /* PeripheralsModelMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeripheralsModelMgr.h; sourceTree = "<group>"; };
+		414BF11A1F21B78E00058DBE /* PeripheralsModelMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeripheralsModelMgr.m; sourceTree = "<group>"; };
 		418BA7B51F1F71BF007269DC /* ServicesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServicesViewController.h; sourceTree = "<group>"; };
 		418BA7B61F1F71BF007269DC /* ServicesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServicesViewController.m; sourceTree = "<group>"; };
 		418D2FF01F1D115300894079 /* LYAlgorithmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYAlgorithmViewController.h; sourceTree = "<group>"; };
@@ -693,6 +698,16 @@
 			path = block_for_link;
 			sourceTree = "<group>";
 		};
+		414BF11C1F21B79400058DBE /* modelmgr */ = {
+			isa = PBXGroup;
+			children = (
+				414BF1171F21B45E00058DBE /* YDBlueBluetooth.plist */,
+				414BF1191F21B78E00058DBE /* PeripheralsModelMgr.h */,
+				414BF11A1F21B78E00058DBE /* PeripheralsModelMgr.m */,
+			);
+			path = modelmgr;
+			sourceTree = "<group>";
+		};
 		418D2FF31F1D115F00894079 /* algorithm */ = {
 			isa = PBXGroup;
 			children = (
@@ -705,6 +720,7 @@
 		418D2FF91F1DA36000894079 /* YDBlueTooth */ = {
 			isa = PBXGroup;
 			children = (
+				414BF11C1F21B79400058DBE /* modelmgr */,
 				41C3FAF91F219214008F57B5 /* catefories */,
 				41D33F991F209E5E00CF2908 /* somic_babyBluetooth */,
 				41ED390E1F208155002E70B7 /* somicFilder */,
@@ -2015,6 +2031,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414BF1181F21B45E00058DBE /* YDBlueBluetooth.plist in Resources */,
 				418D300D1F1DA36000894079 /* LaunchScreen.storyboard in Resources */,
 				41ED39471F208165002E70B7 /* ThirdParts.plist in Resources */,
 				418D300A1F1DA36000894079 /* Assets.xcassets in Resources */,
@@ -2316,6 +2333,7 @@
 				41D33F8D1F208B3F00CF2908 /* S3MainView.h in Sources */,
 				41D33F8E1F208B3F00CF2908 /* S3MainView.m in Sources */,
 				41D33F9F1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m in Sources */,
+				414BF11B1F21B78E00058DBE /* PeripheralsModelMgr.m in Sources */,
 				41D33F9C1F209E9500CF2908 /* YDS3ViewController.m in Sources */,
 				41D33F8F1F208B3F00CF2908 /* S3Manager.h in Sources */,
 				41D33F901F208B3F00CF2908 /* S3Manager.m in Sources */,
