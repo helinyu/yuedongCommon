@@ -9,6 +9,7 @@
 #import "YDBlueToothMgr.h"
 #import "BabyBluetooth.h"
 #import "SVProgressHUD.h"
+#import "NSString+Extension.h"
 
 @interface YDBlueToothMgr ()
 
@@ -76,80 +77,81 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
     }];
     
    [_bluetooth setFilterOnDiscoverPeripherals:^BOOL(NSString *peripheralName, NSDictionary *advertisementData, NSNumber *RSSI) {
-       if (peripheralName.length >0) {
-           return YES;
-       }
-       return NO;
-//        switch (wSelf.filterType) {
-//            case YDBlueToothFilterTypeMatch:
-//            {
-//                if ([peripheralName isEqualToString:wSelf.matchField]) {
-//                    return YES;
-//                }
-//                return NO;
-//            }
-//                break;
-//            case YDBlueToothFilterTypeContain:
-//            {
-//                if ([peripheralName containsString:wSelf.containField]) {
-//                    return YES;
-//                }
-//                return NO;
-//            }
-//                break;
-//            case YDBlueToothFilterTypePrefix:
-//            {
-//                if ([peripheralName hasPrefix:wSelf.prefixField]) {
-//                    return YES;
-//                }
-//                return NO;
-//            }
-//                break;
-//            case YDBlueToothFilterTypeSuffix:
-//            {
-//                if ([peripheralName hasSuffix:wSelf.suffixField]) {
-//                    return YES;
-//                }
-//                return NO;
-//            }
-//                break;
-//            case YDBlueToothFilterTypePrefixAndContain:
-//            {
-//                if ([peripheralName hasPrefix:wSelf.prefixField] && [peripheralName containsString:wSelf.containField]) {
-//                    return YES;
-//                }
-//                return NO;
-//            }
-//                break;
-//            case YDBlueToothFilterTypePrefixAndSuffix:
-//            {
-//                if ([peripheralName hasPrefix:wSelf.prefixField] && [peripheralName hasSuffix:wSelf.suffixField]) {
-//                    return YES;
-//                }
-//                return NO;
-//            }
-//                break;
-//            case YDBlueToothFilterTypeSuffixAndContrain:
-//            {
-//                if ([peripheralName hasSuffix:wSelf.suffixField] && [peripheralName containsString:wSelf.containField]) {
-//                    return YES;
-//                }
-//                return NO;
-//            }
-//                break;
-//            case YDBlueToothFilterTypePrefixAndContrainAndSuffix:
-//            {
-//                if ([peripheralName hasPrefix:wSelf.prefixField] && [peripheralName containsString:wSelf.containField] && [peripheralName hasSuffix:wSelf.suffixField]) {
-//                    return YES;
-//                }
-//                return NO;
-//            }
-//                break;
-//            default:
-//                return NO;
-//                break;
-//        }
-//        return NO;
+//       if (peripheralName.length >0) {
+//           return YES;
+//       }
+//       return NO;
+       NSLog(@"peripheral name : %@",peripheralName);
+        switch (wSelf.filterType) {
+            case YDBlueToothFilterTypeMatch:
+            {
+                if ([peripheralName isEqualToString:wSelf.matchField]) {
+                    return YES;
+                }
+                return NO;
+            }
+                break;
+            case YDBlueToothFilterTypeContain:
+            {
+                if ([peripheralName containsString:wSelf.containField]) {
+                    return YES;
+                }
+                return NO;
+            }
+                break;
+            case YDBlueToothFilterTypePrefix:
+            {
+                if ([peripheralName hasPrefix:wSelf.prefixField]) {
+                    return YES;
+                }
+                return NO;
+            }
+                break;
+            case YDBlueToothFilterTypeSuffix:
+            {
+                if ([peripheralName hasSuffix:wSelf.suffixField]) {
+                    return YES;
+                }
+                return NO;
+            }
+                break;
+            case YDBlueToothFilterTypePrefixAndContain:
+            {
+                if ([peripheralName hasPrefix:wSelf.prefixField] && [peripheralName containsString:wSelf.containField]) {
+                    return YES;
+                }
+                return NO;
+            }
+                break;
+            case YDBlueToothFilterTypePrefixAndSuffix:
+            {
+                if ([peripheralName hasPrefix:wSelf.prefixField] && [peripheralName hasSuffix:wSelf.suffixField]) {
+                    return YES;
+                }
+                return NO;
+            }
+                break;
+            case YDBlueToothFilterTypeSuffixAndContrain:
+            {
+                if ([peripheralName hasSuffix:wSelf.suffixField] && [peripheralName containsString:wSelf.containField]) {
+                    return YES;
+                }
+                return NO;
+            }
+                break;
+            case YDBlueToothFilterTypePrefixAndContrainAndSuffix:
+            {
+                if ([peripheralName hasPrefix:wSelf.prefixField] && [peripheralName containsString:wSelf.containField] && [peripheralName hasSuffix:wSelf.suffixField]) {
+                    return YES;
+                }
+                return NO;
+            }
+                break;
+            default:
+                return NO;
+                break;
+        }
+        return NO;
     }];
     
 #pragma mark - connect & services

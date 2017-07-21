@@ -50,13 +50,11 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
     UIBarButtonItem *left2Btn = [[UIBarButtonItem alloc] initWithTitle:@"S3baby" style:UIBarButtonItemStylePlain target:self action:@selector(onS3BabyClilcked)];
     
     self.navigationController.navigationBar.topItem.rightBarButtonItem = barBtn;
-//    self.navigationController.navigationBar.topItem.leftBarButtonItem = leftBtn;
     self.navigationController.navigationBar.topItem.leftBarButtonItems = @[leftBtn,left2Btn];
     [SVProgressHUD showInfoWithStatus:@"准备打开设备"];
-    NSLog(@"view did load");
 
     _mgr = [YDBlueToothMgr shared];
-    _mgr.prefixField = @"s3";
+    _mgr.prefixField = @"S3";
     _mgr.filterType = YDBlueToothFilterTypePrefix;
     [_mgr startScan];
     __weak typeof (self) wSelf = self;
