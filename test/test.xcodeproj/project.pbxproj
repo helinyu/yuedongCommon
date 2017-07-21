@@ -27,6 +27,7 @@
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
 		41C3FB031F2193C9008F57B5 /* YDSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C3FB021F2193C9008F57B5 /* YDSystem.m */; };
 		41C3FB091F219682008F57B5 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C3FB081F219682008F57B5 /* NSString+Extension.m */; };
+		41C3FB0C1F219E7D008F57B5 /* YDS3Mgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C3FB0B1F219E7D008F57B5 /* YDS3Mgr.m */; };
 		41D33F891F208B3F00CF2908 /* BluetoothS3ViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39131F208155002E70B7 /* BluetoothS3ViewController.h */; };
 		41D33F8A1F208B3F00CF2908 /* BluetoothS3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39141F208155002E70B7 /* BluetoothS3ViewController.m */; };
 		41D33F8B1F208B3F00CF2908 /* S3ActivityIndicatorView.h in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39151F208155002E70B7 /* S3ActivityIndicatorView.h */; };
@@ -258,6 +259,8 @@
 		41C3FB021F2193C9008F57B5 /* YDSystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDSystem.m; sourceTree = "<group>"; };
 		41C3FB071F219682008F57B5 /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		41C3FB081F219682008F57B5 /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		41C3FB0A1F219E7D008F57B5 /* YDS3Mgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDS3Mgr.h; sourceTree = "<group>"; };
+		41C3FB0B1F219E7D008F57B5 /* YDS3Mgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDS3Mgr.m; sourceTree = "<group>"; };
 		41D33F971F208C4900CF2908 /* SOMICS3ICON.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SOMICS3ICON.bundle; path = ../../../yuedong/code/sports/GlobalLayer/ThirdPart/Hardware/ThirdPart/Somic/SOMICS3ICON.bundle; sourceTree = "<group>"; };
 		41D33F9A1F209E9500CF2908 /* YDS3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDS3ViewController.h; sourceTree = "<group>"; };
 		41D33F9B1F209E9500CF2908 /* YDS3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDS3ViewController.m; sourceTree = "<group>"; };
@@ -785,6 +788,8 @@
 		41D33F991F209E5E00CF2908 /* somic_babyBluetooth */ = {
 			isa = PBXGroup;
 			children = (
+				41C3FB0A1F219E7D008F57B5 /* YDS3Mgr.h */,
+				41C3FB0B1F219E7D008F57B5 /* YDS3Mgr.m */,
 				41D33F9A1F209E9500CF2908 /* YDS3ViewController.h */,
 				41D33F9B1F209E9500CF2908 /* YDS3ViewController.m */,
 				41D33F9D1F20A00D00CF2908 /* YDS3PeriipheralsViewController.h */,
@@ -2303,6 +2308,7 @@
 				41D33F931F208BCD00CF2908 /* BluetoothDaterView.h in Sources */,
 				41D33F941F208BCD00CF2908 /* BluetoothDaterView.m in Sources */,
 				41D33F891F208B3F00CF2908 /* BluetoothS3ViewController.h in Sources */,
+				41C3FB0C1F219E7D008F57B5 /* YDS3Mgr.m in Sources */,
 				41D33F8A1F208B3F00CF2908 /* BluetoothS3ViewController.m in Sources */,
 				41D33F8B1F208B3F00CF2908 /* S3ActivityIndicatorView.h in Sources */,
 				41C3FB091F219682008F57B5 /* NSString+Extension.m in Sources */,

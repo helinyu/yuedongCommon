@@ -10,10 +10,12 @@
 #import "YDBlueToothMgr.h"
 #import "YDS3PeriipheralsViewController.h"
 #import "YDS3MainView.h"
+#import "YDS3Mgr.h"
 
 @interface YDS3ViewController ()
 
 @property (nonatomic, strong) YDBlueToothMgr *mgr;
+@property (nonatomic, strong) YDS3Mgr *s3Mgr;
 
 @property (nonatomic, strong) YDS3MainView * infoView;
 
@@ -28,15 +30,37 @@
     [self.view addSubview:_infoView];
 
     _mgr = [YDBlueToothMgr shared];
+    _s3Mgr = [YDS3Mgr shared];
+    
     [self onStartClicked];
-    [self datasFeed];
+//    [self datasFeed];
+    [self dataS3Feed];
+}
+
+- (void)dataS3Feed {
+    __weak typeof (self) wSelf = self;
+    _mgr.characteristicCallBack = ^(CBCharacteristic *c) {
+        [wSelf.s3Mgr insertDataToYDOpen:c];
+        wSelf.s3Mgr.tripCallBack = ^(CGFloat calories, CGFloat distance) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                wSelf.infoView.calorieNumLabel.text = [NSString stringWithFormat:@"%f",calories];
+                wSelf.infoView.distanceNumLabel.text = [NSString stringWithFormat:@"%f",distance];
+            });
+        };
+        wSelf.s3Mgr.heartRateCallBack = ^(NSString *heartString) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                wSelf.infoView.heartRateNumLabel.text = [NSString stringWithFormat:@"%@",heartString];
+            });
+        };
+    };
+
 }
 
 - (void)datasFeed {
     __weak typeof (self) wSelf = self;
     _mgr.tripCallBack = ^(CGFloat calories, CGFloat distance) {
         NSLog(@"calories : %f",calories);
-        NSLog(@"distance : %f",calories);
+        NSLog(@"distance : %f",distance);
         dispatch_async(dispatch_get_main_queue(), ^{
             wSelf.infoView.calorieNumLabel.text = [NSString stringWithFormat:@"%f",calories];
             wSelf.infoView.distanceNumLabel.text = [NSString stringWithFormat:@"%f",distance];

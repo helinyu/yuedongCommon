@@ -175,40 +175,48 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
     [_bluetooth setBlockOnDiscoverCharacteristics:^(CBPeripheral *peripheral, CBService *service, NSError *error) {
         NSLog(@"setBlockOnDiscoverCharacteristics");
         for (CBCharacteristic *c in service.characteristics) {
-            NSLog(@"perpheral uuid : %@",peripheral.name);
-            
-            if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF1"]]) {
-
-            }
-            if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF2"]]) {
-                [wSelf.bluetooth notify:peripheral characteristic:c block:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
-                    NSLog(@"notify : fff2");
-                    [wSelf insertDataToYDOpen:characteristics];
-                }];
-
-            }
-            if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF3"]]) {
-               [wSelf.bluetooth notify:peripheral characteristic:c block:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
-                    NSLog(@"notify : fff3");
-                    [wSelf insertDataToYDOpen:characteristics];
-                }];
-            }
+           [wSelf.bluetooth notify:peripheral characteristic:c block:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
+               !wSelf.characteristicCallBack?:wSelf.characteristicCallBack(c);
+            }];
         }
+//        for (CBCharacteristic *c in service.characteristics) {
+//            NSLog(@"perpheral uuid : %@",peripheral.name);
+//
+//            if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF1"]]) {
+//
+//            }
+//            if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF2"]]) {
+//                [wSelf.bluetooth notify:peripheral characteristic:c block:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
+//                    NSLog(@"notify : fff2");
+//                    [wSelf insertDataToYDOpen:characteristics];
+//                }];
+//
+//            }
+//            if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF3"]]) {
+//               [wSelf.bluetooth notify:peripheral characteristic:c block:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
+//                    NSLog(@"notify : fff3");
+//                    [wSelf insertDataToYDOpen:characteristics];
+//                }];
+//            }
+//        }
     }];
     
     [_bluetooth setBlockOnReadValueForCharacteristic:^(CBPeripheral *peripheral, CBCharacteristic *characteristic, NSError *error) {
         NSLog(@"setBlockOnReadValueForCharacteristic");
         
         [[NSNotificationCenter defaultCenter] postNotificationName:ydNtfMangerDidUpdataValueForCharacteristic object:characteristic];
+        
         if (!error) {
             NSError *error1 = nil;
             id dict = [NSJSONSerialization JSONObjectWithData:characteristic.value options:NSJSONReadingMutableContainers error:&error1];
             NSLog(@"dict is : %@",dict);
         }
         
-        dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            [wSelf insertDataToYDOpen:characteristic];
-        });
+        !wSelf.characteristicCallBack?:wSelf.characteristicCallBack(characteristic);
+        
+//        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//            [wSelf insertDataToYDOpen:characteristic];
+//        });
 
     }];
     
