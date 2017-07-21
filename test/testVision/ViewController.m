@@ -11,7 +11,7 @@
 
 #import <Vision/Vision.h>
 
-@interface ViewController ()<UIImagePickerControllerDelegate>
+@interface ViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (nonatomic, strong) UIButton *startBtn;
 
@@ -29,7 +29,6 @@ static const NSInteger navBarH = 64.f;
     
 //    let vowels: [Character] = ["a", "e", "i", "o", "u"]
 
-    
     _startBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_startBtn setTitle:@"获取图片" forState:UIControlStateNormal];
     [_startBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
@@ -71,6 +70,7 @@ static const NSInteger navBarH = 64.f;
     NSLog(@"pick picture");
     UIImagePickerController *pvc = [UIImagePickerController new];
     pvc.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    pvc.delegate = self;
     [self presentViewController:pvc animated:YES completion:nil];
 }
 
