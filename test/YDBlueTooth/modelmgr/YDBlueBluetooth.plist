@@ -7,27 +7,27 @@
 		<dict>
 			<key>peripheralName</key>
 			<string>S3</string>
-			<key>New item</key>
+			<key>services</key>
 			<array>
 				<dict>
-					<key>serviceUUID</key>
+					<key>serviceUUIDString</key>
 					<string>0xFFF0</string>
-					<key>New item</key>
+					<key>characteristics</key>
 					<array>
 						<dict>
-							<key>characteristic</key>
+							<key>characteristicUUID</key>
 							<string>0xFFF1</string>
 							<key>properties</key>
 							<string>RW</string>
 						</dict>
 						<dict>
-							<key>characteristic</key>
+							<key>characteristicUUID</key>
 							<string>0xFFF2</string>
 							<key>properties</key>
 							<string>Notify</string>
 						</dict>
 						<dict>
-							<key>characteristic</key>
+							<key>characteristicUUID</key>
 							<string>0xFFF3</string>
 							<key>properties</key>
 							<string>Notify</string>

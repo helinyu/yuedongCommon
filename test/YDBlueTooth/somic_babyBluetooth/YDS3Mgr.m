@@ -31,6 +31,8 @@
     NSLog(@"current charactieristic uuid is ： %@",characteristic.UUID);
     if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"FFF2"]]) {
         NSData * data = characteristic.value;
+//        或者我这里直接放回一个value给外面；
+        
         Byte * resultByte = (Byte *)[data bytes];
         
         for(int i=0;i<[data length];i++){
