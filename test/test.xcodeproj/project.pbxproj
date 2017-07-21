@@ -15,6 +15,11 @@
 		414BF1181F21B45E00058DBE /* YDBlueBluetooth.plist in Resources */ = {isa = PBXBuildFile; fileRef = 414BF1171F21B45E00058DBE /* YDBlueBluetooth.plist */; };
 		414BF11B1F21B78E00058DBE /* PeripheralsModelMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 414BF11A1F21B78E00058DBE /* PeripheralsModelMgr.m */; };
 		414BF11F1F21B84400058DBE /* YDPeripheralModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 414BF11E1F21B84400058DBE /* YDPeripheralModel.m */; };
+		414BF1231F21EBE500058DBE /* YDBlueToothWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414BF1221F21EBE500058DBE /* YDBlueToothWebViewController.m */; };
+		414BF12B1F21FC6C00058DBE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414BF12A1F21FC6500058DBE /* WebKit.framework */; };
+		414BF12C1F21FCD700058DBE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414BF12A1F21FC6500058DBE /* WebKit.framework */; };
+		414BF1321F21FDBF00058DBE /* YDBluetoothWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 414BF1311F21FD5700058DBE /* YDBluetoothWebView.m */; };
+		414BF1331F21FDBF00058DBE /* YDBluetoothWebView.h in Sources */ = {isa = PBXBuildFile; fileRef = 414BF1301F21FD5700058DBE /* YDBluetoothWebView.h */; };
 		418BA7B71F1F71BF007269DC /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418BA7B61F1F71BF007269DC /* ServicesViewController.m */; };
 		418D2FF21F1D115300894079 /* LYAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D2FF11F1D115300894079 /* LYAlgorithmViewController.m */; };
 		418D2FFC1F1DA36000894079 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D2FFB1F1DA36000894079 /* main.m */; };
@@ -240,6 +245,11 @@
 		414BF11A1F21B78E00058DBE /* PeripheralsModelMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeripheralsModelMgr.m; sourceTree = "<group>"; };
 		414BF11D1F21B84400058DBE /* YDPeripheralModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDPeripheralModel.h; sourceTree = "<group>"; };
 		414BF11E1F21B84400058DBE /* YDPeripheralModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDPeripheralModel.m; sourceTree = "<group>"; };
+		414BF1211F21EBE500058DBE /* YDBlueToothWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBlueToothWebViewController.h; sourceTree = "<group>"; };
+		414BF1221F21EBE500058DBE /* YDBlueToothWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBlueToothWebViewController.m; sourceTree = "<group>"; };
+		414BF12A1F21FC6500058DBE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		414BF1301F21FD5700058DBE /* YDBluetoothWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBluetoothWebView.h; sourceTree = "<group>"; };
+		414BF1311F21FD5700058DBE /* YDBluetoothWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBluetoothWebView.m; sourceTree = "<group>"; };
 		418BA7B51F1F71BF007269DC /* ServicesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServicesViewController.h; sourceTree = "<group>"; };
 		418BA7B61F1F71BF007269DC /* ServicesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServicesViewController.m; sourceTree = "<group>"; };
 		418D2FF01F1D115300894079 /* LYAlgorithmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYAlgorithmViewController.h; sourceTree = "<group>"; };
@@ -619,6 +629,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414BF12C1F21FCD700058DBE /* WebKit.framework in Frameworks */,
 				48D729F3BF99F4A4F2FF1048 /* libPods-YDBlueTooth.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,6 +638,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414BF12B1F21FC6C00058DBE /* WebKit.framework in Frameworks */,
 				142840C8DB28E959922BD2DD /* libPods-testVision.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -713,6 +725,17 @@
 			path = modelmgr;
 			sourceTree = "<group>";
 		};
+		414BF1201F21EBCA00058DBE /* webView */ = {
+			isa = PBXGroup;
+			children = (
+				414BF1211F21EBE500058DBE /* YDBlueToothWebViewController.h */,
+				414BF1221F21EBE500058DBE /* YDBlueToothWebViewController.m */,
+				414BF1311F21FD5700058DBE /* YDBluetoothWebView.m */,
+				414BF1301F21FD5700058DBE /* YDBluetoothWebView.h */,
+			);
+			path = webView;
+			sourceTree = "<group>";
+		};
 		418D2FF31F1D115F00894079 /* algorithm */ = {
 			isa = PBXGroup;
 			children = (
@@ -725,6 +748,7 @@
 		418D2FF91F1DA36000894079 /* YDBlueTooth */ = {
 			isa = PBXGroup;
 			children = (
+				414BF1201F21EBCA00058DBE /* webView */,
 				414BF11C1F21B79400058DBE /* modelmgr */,
 				41C3FAF91F219214008F57B5 /* catefories */,
 				41D33F991F209E5E00CF2908 /* somic_babyBluetooth */,
@@ -1014,6 +1038,7 @@
 		74B13597549662E119950E0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				414BF12A1F21FC6500058DBE /* WebKit.framework */,
 				41F760001F1C9F2100AB66AE /* HealthKit.framework */,
 				DCC3FC141ED83D5C00C88BF6 /* libz.tbd */,
 				DCC3FC121ED83D0A00C88BF6 /* libz.1.1.3.tbd */,
@@ -2325,6 +2350,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414BF1321F21FDBF00058DBE /* YDBluetoothWebView.m in Sources */,
+				414BF1331F21FDBF00058DBE /* YDBluetoothWebView.h in Sources */,
 				41D33F951F208BEF00CF2908 /* BluetoothConnectViewController.h in Sources */,
 				41D33F961F208BEF00CF2908 /* BluetoothConnectViewController.m in Sources */,
 				41D33F931F208BCD00CF2908 /* BluetoothDaterView.h in Sources */,
@@ -2358,6 +2385,7 @@
 				41ED39401F208165002E70B7 /* YDOpenHardwareManager.m in Sources */,
 				418D30311F1DAEB900894079 /* YDBlueToothMgr.m in Sources */,
 				41D33FA21F20A06F00CF2908 /* YDS3MainView.m in Sources */,
+				414BF1231F21EBE500058DBE /* YDBlueToothWebViewController.m in Sources */,
 				41ED39461F208165002E70B7 /* YDOpenHardwareUser.m in Sources */,
 				41ED39421F208165002E70B7 /* YDOpenHardwareHeartRate.m in Sources */,
 				41ED39451F208165002E70B7 /* YDOpenHardwareSleep.m in Sources */,

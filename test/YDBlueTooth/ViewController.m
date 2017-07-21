@@ -18,6 +18,7 @@
 
 //s3 by babybluetooth
 #import "YDS3ViewController.h"
+#import "YDBlueToothWebViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -44,12 +45,13 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:reuseCellIdentifierId];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    
+ 
     UIBarButtonItem *barBtn = [[UIBarButtonItem alloc] initWithTitle:@"断开" style:UIBarButtonItemStylePlain target:self action:@selector(onQuitConnected)];
+    UIBarButtonItem *webBarBtn = [[UIBarButtonItem alloc] initWithTitle:@"web interactive" style:UIBarButtonItemStylePlain target:self action:@selector(onWebInteractiveClicked:)];
     UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithTitle:@"S3原" style:UIBarButtonItemStylePlain target:self action:@selector(onS3connect)];
     UIBarButtonItem *left2Btn = [[UIBarButtonItem alloc] initWithTitle:@"S3baby" style:UIBarButtonItemStylePlain target:self action:@selector(onS3BabyClilcked)];
     
-    self.navigationController.navigationBar.topItem.rightBarButtonItem = barBtn;
+    self.navigationController.navigationBar.topItem.rightBarButtonItems = @[barBtn,webBarBtn];
     self.navigationController.navigationBar.topItem.leftBarButtonItems = @[leftBtn,left2Btn];
     [SVProgressHUD showInfoWithStatus:@"准备打开设备"];
 
@@ -105,6 +107,15 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+#pragma mark -- custom methods
+
+- (void)onWebInteractiveClicked:(UIButton *)sender {
+//    _mgr.quitConnected().stopScan();
+    _mgr.stopScan();
+    YDBlueToothWebViewController *vc = [YDBlueToothWebViewController new];
+    [self.navigationController pushViewController:vc.webUrl(@"https://m.baidu.com") animated:YES];
 }
 
 #pragma mark --table delegate
