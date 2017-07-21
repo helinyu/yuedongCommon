@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 @class CBPeripheral;
 @class CBService;
+@class CBCharacteristic;
 
 typedef NS_ENUM(NSInteger, YDBlueToothFilterType) {
     YDBlueToothFilterTypeMatch = 0,  // match to filter and find the specify device
@@ -107,9 +108,13 @@ typedef NS_ENUM(NSInteger, YDBlueToothFilterType) {
 @property (nonatomic, copy) void(^servicesCallBack)(NSArray<CBService *> *services);
 
 
-#pragma mark -- datas for callback
+#pragma mark -- datas for callback & chacteristic data
 
 @property (nonatomic, copy) void(^heartRateCallBack)(NSString *heartString);
 @property (nonatomic, copy) void(^tripCallBack)(CGFloat calories, CGFloat distance);
+
+@property (nonatomic, copy) void(^characteristicCallBack)(CBCharacteristic *c);
+
+
 
 @end

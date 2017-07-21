@@ -175,21 +175,22 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
     [_bluetooth setBlockOnDiscoverCharacteristics:^(CBPeripheral *peripheral, CBService *service, NSError *error) {
         NSLog(@"setBlockOnDiscoverCharacteristics");
         for (CBCharacteristic *c in service.characteristics) {
+            NSLog(@"perpheral uuid : %@",peripheral.name);
+            
             if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF1"]]) {
 
             }
             if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF2"]]) {
-               [self.peripheral setNotifyValue:YES forCharacteristic:c];//订阅
                 [wSelf.bluetooth notify:peripheral characteristic:c block:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
                     NSLog(@"notify : fff2");
-                    [self insertDataToYDOpen:characteristics];
+                    [wSelf insertDataToYDOpen:characteristics];
                 }];
 
             }
             if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF3"]]) {
                [wSelf.bluetooth notify:peripheral characteristic:c block:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
                     NSLog(@"notify : fff3");
-                    [self insertDataToYDOpen:characteristics];
+                    [wSelf insertDataToYDOpen:characteristics];
                 }];
             }
         }
@@ -213,7 +214,6 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
     
     [_bluetooth setBlockOnDidUpdateNotificationStateForCharacteristic:^(CBCharacteristic *characteristic, NSError *error) {
         NSLog(@"setBlockOnDidUpdateNotificationStateForCharacteristic");
-
     }];
     
 // characteristic & discriptors
@@ -355,16 +355,14 @@ _bluetooth.having(peripheral).connectToPeripherals().discoverServices().discover
             }
             if (i == 2) {
                
-                //                //卡路里
+                //卡路里
                 CGFloat calorieValue = (_step * 0.5 / 14);
                 NSLog(@"calorieVaule is : %f",calorieValue);
                 
-                //                //距离
+                //距离
                 CGFloat disMValue = (_step * 0.5 / 1000);
                 NSLog(@"disMValue : %f",disMValue);
-                
                 !self.tripCallBack?:self.tripCallBack(calorieValue,disMValue);
-                
             }
         }
     }else if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"FFF1"]]){
