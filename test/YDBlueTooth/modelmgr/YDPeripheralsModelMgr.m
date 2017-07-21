@@ -6,17 +6,17 @@
 //  Copyright © 2017年 forest. All rights reserved.
 //
 
-#import "PeripheralsModelMgr.h"
+#import "YDPeripheralsModelMgr.h"
 #import "YDPeripheralModel.h"
 #import "YYModel.h"
 
-@interface PeripheralsModelMgr ()
+@interface YDPeripheralsModelMgr ()
 
 @property (nonatomic, strong, readwrite) YDPeripheralsModel *modelItems;
 
 @end
 
-@implementation PeripheralsModelMgr
+@implementation YDPeripheralsModelMgr
 
 + (instancetype)shared {
     static id singleton = nil;
@@ -27,13 +27,13 @@
     return singleton;
 }
 
-+ (PeripheralsModelMgr* (^)(void))shareAndChain {
++ (YDPeripheralsModelMgr* (^)(void))shareAndChain {
     return ^(void) {
-        return [PeripheralsModelMgr shared];
+        return [YDPeripheralsModelMgr shared];
     };
 }
 
-- (PeripheralsModelMgr *(^)(NSString *fileName))loadPeripheralModel{
+- (YDPeripheralsModelMgr *(^)(NSString *fileName))loadPeripheralModel{
     return ^(NSString *fileName){
         NSString *path;
         if (fileName.length <= 0) {
@@ -47,7 +47,7 @@
     };
 }
 
-- (PeripheralsModelMgr *(^)(NSString *peripheralName))specifyPeripheralCallback:(void(^)(YDPeripheralModel *perpheralModel))then {
+- (YDPeripheralsModelMgr *(^)(NSString *peripheralName))specifyPeripheralCallback:(void(^)(YDPeripheralModel *perpheralModel))then {
     __weak typeof (self) wSelf = self;
     return ^(NSString *peripheralName) {
         if (!wSelf.modelItems || wSelf.modelItems.peripherals.count <=0) {

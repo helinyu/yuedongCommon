@@ -13,7 +13,7 @@
 		4113B2F61F1EF92600EC6D21 /* LYBlockPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F51F1EF92600EC6D21 /* LYBlockPerson.m */; };
 		4113B2F91F1EFA5800EC6D21 /* LYBlockPerson2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F81F1EFA5800EC6D21 /* LYBlockPerson2.m */; };
 		414BF1181F21B45E00058DBE /* YDBlueBluetooth.plist in Resources */ = {isa = PBXBuildFile; fileRef = 414BF1171F21B45E00058DBE /* YDBlueBluetooth.plist */; };
-		414BF11B1F21B78E00058DBE /* PeripheralsModelMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 414BF11A1F21B78E00058DBE /* PeripheralsModelMgr.m */; };
+		414BF11B1F21B78E00058DBE /* YDPeripheralsModelMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 414BF11A1F21B78E00058DBE /* YDPeripheralsModelMgr.m */; };
 		414BF11F1F21B84400058DBE /* YDPeripheralModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 414BF11E1F21B84400058DBE /* YDPeripheralModel.m */; };
 		414BF1231F21EBE500058DBE /* YDBlueToothWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414BF1221F21EBE500058DBE /* YDBlueToothWebViewController.m */; };
 		414BF12B1F21FC6C00058DBE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414BF12A1F21FC6500058DBE /* WebKit.framework */; };
@@ -241,8 +241,8 @@
 		4113B2F71F1EFA5800EC6D21 /* LYBlockPerson2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockPerson2.h; sourceTree = "<group>"; };
 		4113B2F81F1EFA5800EC6D21 /* LYBlockPerson2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBlockPerson2.m; sourceTree = "<group>"; };
 		414BF1171F21B45E00058DBE /* YDBlueBluetooth.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = YDBlueBluetooth.plist; sourceTree = "<group>"; };
-		414BF1191F21B78E00058DBE /* PeripheralsModelMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeripheralsModelMgr.h; sourceTree = "<group>"; };
-		414BF11A1F21B78E00058DBE /* PeripheralsModelMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeripheralsModelMgr.m; sourceTree = "<group>"; };
+		414BF1191F21B78E00058DBE /* YDPeripheralsModelMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDPeripheralsModelMgr.h; sourceTree = "<group>"; };
+		414BF11A1F21B78E00058DBE /* YDPeripheralsModelMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDPeripheralsModelMgr.m; sourceTree = "<group>"; };
 		414BF11D1F21B84400058DBE /* YDPeripheralModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDPeripheralModel.h; sourceTree = "<group>"; };
 		414BF11E1F21B84400058DBE /* YDPeripheralModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDPeripheralModel.m; sourceTree = "<group>"; };
 		414BF1211F21EBE500058DBE /* YDBlueToothWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBlueToothWebViewController.h; sourceTree = "<group>"; };
@@ -717,8 +717,8 @@
 			isa = PBXGroup;
 			children = (
 				414BF1171F21B45E00058DBE /* YDBlueBluetooth.plist */,
-				414BF1191F21B78E00058DBE /* PeripheralsModelMgr.h */,
-				414BF11A1F21B78E00058DBE /* PeripheralsModelMgr.m */,
+				414BF1191F21B78E00058DBE /* YDPeripheralsModelMgr.h */,
+				414BF11A1F21B78E00058DBE /* YDPeripheralsModelMgr.m */,
 				414BF11D1F21B84400058DBE /* YDPeripheralModel.h */,
 				414BF11E1F21B84400058DBE /* YDPeripheralModel.m */,
 			);
@@ -2365,7 +2365,7 @@
 				41D33F8D1F208B3F00CF2908 /* S3MainView.h in Sources */,
 				41D33F8E1F208B3F00CF2908 /* S3MainView.m in Sources */,
 				41D33F9F1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m in Sources */,
-				414BF11B1F21B78E00058DBE /* PeripheralsModelMgr.m in Sources */,
+				414BF11B1F21B78E00058DBE /* YDPeripheralsModelMgr.m in Sources */,
 				41D33F9C1F209E9500CF2908 /* YDS3ViewController.m in Sources */,
 				41D33F8F1F208B3F00CF2908 /* S3Manager.h in Sources */,
 				41D33F901F208B3F00CF2908 /* S3Manager.m in Sources */,

@@ -10,7 +10,7 @@
 @class YDPeripheralsModel;
 @class YDPeripheralModel;
 
-@interface PeripheralsModelMgr : NSObject
+@interface YDPeripheralsModelMgr : NSObject
 
 + (instancetype)shared;
 
@@ -18,13 +18,13 @@
  * @method : shareAndChain
  * @discussion : this method create the obj of self and program for chain
  */
-+ (PeripheralsModelMgr* (^)(void))shareAndChain;
++ (YDPeripheralsModelMgr* (^)(void))shareAndChain;
 
 /*
  * @method : loadPeripheralModel
  * @discussion : this method for load the model from the local plist file or another
  */
-- (PeripheralsModelMgr *(^)(NSString *fileName))loadPeripheralModel;
+- (YDPeripheralsModelMgr *(^)(NSString *fileName))loadPeripheralModel;
 
 @property (nonatomic, strong, readonly) YDPeripheralsModel *modelItems;
 
@@ -35,7 +35,7 @@
  * @blcok specifyPeripheralCallback
  * @discussion : with the peripheral name to filter the specify peripheral model 
  */
-- (PeripheralsModelMgr *(^)(NSString *peripheralName))specifyPeripheralCallback:(void(^)(YDPeripheralModel *perpheralModel))then;
+- (YDPeripheralsModelMgr *(^)(NSString *peripheralName))specifyPeripheralCallback:(void(^)(YDPeripheralModel *perpheralModel))then;
 
 /*
  * @method: specifyPeripheralWithName

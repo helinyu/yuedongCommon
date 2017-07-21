@@ -12,7 +12,7 @@
 #import "YDS3MainView.h"
 #import "YDS3Mgr.h"
 #import "YDPeripheralModel.h"
-#import "PeripheralsModelMgr.h"
+#import "YDPeripheralsModelMgr.h"
 
 
 @interface YDS3ViewController ()
@@ -23,7 +23,7 @@
 @property (nonatomic, strong) YDS3MainView * infoView;
 
 //mark -- test for model
-@property (nonatomic, strong) PeripheralsModelMgr *modelMgr;
+@property (nonatomic, strong) YDPeripheralsModelMgr *modelMgr;
 @property (nonatomic, strong) YDPeripheralsModel *modelItems;
 @property (nonatomic, strong) YDPeripheralModel *currentPeripheralModelItem;
 
@@ -45,7 +45,7 @@
 }
 
 - (void)peripheralModelInit {
-    _modelMgr = PeripheralsModelMgr.shareAndChain().loadPeripheralModel(nil);
+    _modelMgr = YDPeripheralsModelMgr.shareAndChain().loadPeripheralModel(nil);
     YDPeripheralModel *peripheralModeltem = [_modelMgr specifyPeripheralWithName:@"S3"];
     _currentPeripheralModelItem = peripheralModeltem;
     NSLog(@"");
