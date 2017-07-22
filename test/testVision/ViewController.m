@@ -10,6 +10,8 @@
 #import "Masonry.h"
 
 #import <Vision/Vision.h>
+#import <CoreML/CoreML.h>
+#import "GoogLeNetPlaces.h"
 
 @interface ViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
@@ -62,10 +64,48 @@ static const NSInteger navBarH = 64.f;
 //    }];
     
 //    VNFaceLandmarks *faceLandMark = [VNFaceLandmarks alloc] ;
+}
+
+
+
+#pragma mark -- custom function
+
+//model deal with
+- (void)detectScene:(CIImage *)Image {
+    _answerLabel.text = @"detect image ...";
+    
+//    (1) 模型的创建
+    NSError *erro  = nil;
+    VNCoreMLModel *model = [VNCoreMLModel modelForMLModel:[GoogLeNetPlaces new].model error:&erro];
+    if (erro) {
+        NSLog(@"error of the model ceation");
+    }
+
+//    （2）创建一个version请求
+    VNCoreMLRequest *request = [[VNCoreMLRequest alloc] initWithModel:model completionHandler:^(VNRequest * _Nonnull request, NSError * _Nullable error) {
+        NSArray *results = request.results;
+        VNClassificationObservation *topResult = results.firstObject;
+        //    () 主线程更新UI
+
+//        id article = [topResult.identifier]
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.answerLabel.text = [NSString stringWithFormat:@"%f%% it's a  %@",(topResult.confidence *100),topResult.identifier];
+        });
+    }];
+    
+//    做第三步：创建并运行请求处理程序。
+    VNImageRequestHandler *handler = [[VNImageRequestHandler alloc] initWithCIImage:Image options:nil];
+    NSError *eroor = nil;
+    [handler performRequests:@[request] error:&eroor];
+    if (erro) {
+        NSLog(@"失败");
+    }else{
+        NSLog(@"成功");
+    }
 
 }
 
-#pragma mark -- custom function
 - (void)onStartClicked:(UIButton *)sender {
     NSLog(@"pick picture");
     UIImagePickerController *pvc = [UIImagePickerController new];
@@ -86,6 +126,8 @@ static const NSInteger navBarH = 64.f;
         NSLog(@"could not load the photos");
     }
     
+    CIImage *iimage = [[CIImage alloc] initWithImage:img];
+    [self detectScene:iimage];
 }
 
 - (void)didReceiveMemoryWarning {

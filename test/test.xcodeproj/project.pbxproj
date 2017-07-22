@@ -20,6 +20,7 @@
 		414BF12C1F21FCD700058DBE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414BF12A1F21FC6500058DBE /* WebKit.framework */; };
 		414BF1321F21FDBF00058DBE /* YDBluetoothWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 414BF1311F21FD5700058DBE /* YDBluetoothWebView.m */; };
 		414BF1331F21FDBF00058DBE /* YDBluetoothWebView.h in Sources */ = {isa = PBXBuildFile; fileRef = 414BF1301F21FD5700058DBE /* YDBluetoothWebView.h */; };
+		4164CEB61F235E6800E23D77 /* GoogLeNetPlaces.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4164CEB51F235E6800E23D77 /* GoogLeNetPlaces.mlmodel */; };
 		418BA7B71F1F71BF007269DC /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418BA7B61F1F71BF007269DC /* ServicesViewController.m */; };
 		418D2FF21F1D115300894079 /* LYAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D2FF11F1D115300894079 /* LYAlgorithmViewController.m */; };
 		418D2FFC1F1DA36000894079 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D2FFB1F1DA36000894079 /* main.m */; };
@@ -250,6 +251,7 @@
 		414BF12A1F21FC6500058DBE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		414BF1301F21FD5700058DBE /* YDBluetoothWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBluetoothWebView.h; sourceTree = "<group>"; };
 		414BF1311F21FD5700058DBE /* YDBluetoothWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBluetoothWebView.m; sourceTree = "<group>"; };
+		4164CEB51F235E6800E23D77 /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = GoogLeNetPlaces.mlmodel; path = ../../../../Desktop/GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
 		418BA7B51F1F71BF007269DC /* ServicesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServicesViewController.h; sourceTree = "<group>"; };
 		418BA7B61F1F71BF007269DC /* ServicesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServicesViewController.m; sourceTree = "<group>"; };
 		418D2FF01F1D115300894079 /* LYAlgorithmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYAlgorithmViewController.h; sourceTree = "<group>"; };
@@ -736,6 +738,14 @@
 			path = webView;
 			sourceTree = "<group>";
 		};
+		4164CEB41F235E5600E23D77 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				4164CEB51F235E6800E23D77 /* GoogLeNetPlaces.mlmodel */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		418D2FF31F1D115F00894079 /* algorithm */ = {
 			isa = PBXGroup;
 			children = (
@@ -848,6 +858,7 @@
 		41D864DE1F210A81004D748B /* testVision */ = {
 			isa = PBXGroup;
 			children = (
+				4164CEB41F235E5600E23D77 /* resources */,
 				41D864DF1F210A81004D748B /* AppDelegate.h */,
 				41D864E01F210A81004D748B /* AppDelegate.m */,
 				41D864E21F210A81004D748B /* ViewController.h */,
@@ -2399,6 +2410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41D864E41F210A81004D748B /* ViewController.m in Sources */,
+				4164CEB61F235E6800E23D77 /* GoogLeNetPlaces.mlmodel in Sources */,
 				41D864E11F210A81004D748B /* AppDelegate.m in Sources */,
 				41D864F21F210A81004D748B /* main.m in Sources */,
 				41D864EA1F210A81004D748B /* testVision.xcdatamodeld in Sources */,
