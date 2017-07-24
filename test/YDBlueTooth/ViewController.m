@@ -23,6 +23,9 @@
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
+
+@property (nonatomic, strong) NSArray *demosSources;
+
 @property (nonatomic, strong) NSArray<CBPeripheral *> *peripherals;
 @property (nonatomic, strong) YDBlueToothMgr *mgr;
 @property (nonatomic, strong) NSArray<CBService *> *services;
@@ -45,14 +48,9 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:reuseCellIdentifierId];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
- 
-    UIBarButtonItem *barBtn = [[UIBarButtonItem alloc] initWithTitle:@"断开" style:UIBarButtonItemStylePlain target:self action:@selector(onQuitConnected)];
-    UIBarButtonItem *webBarBtn = [[UIBarButtonItem alloc] initWithTitle:@"web interactive" style:UIBarButtonItemStylePlain target:self action:@selector(onWebInteractiveClicked:)];
-    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithTitle:@"S3原" style:UIBarButtonItemStylePlain target:self action:@selector(onS3connect)];
-    UIBarButtonItem *left2Btn = [[UIBarButtonItem alloc] initWithTitle:@"S3baby" style:UIBarButtonItemStylePlain target:self action:@selector(onS3BabyClilcked)];
     
-    self.navigationController.navigationBar.topItem.rightBarButtonItems = @[barBtn,webBarBtn];
-    self.navigationController.navigationBar.topItem.leftBarButtonItems = @[leftBtn,left2Btn];
+    _demosSources = @[@"断开连接",@"web interactive",@"S3原",@"S3baby",@"开始扫描",@"停止扫描"];
+
     [SVProgressHUD showInfoWithStatus:@"准备打开设备"];
 
     _mgr = [YDBlueToothMgr shared];
@@ -80,6 +78,14 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
     [self.navigationController pushViewController:s3vc animated:YES];
 }
 
+- (void)onReScanClicked {
+    _mgr.startScan();
+}
+
+- (void)onStopScanClicked {
+    _mgr.stopScan();
+}
+
 - (void)onQuitConnected {
     [_mgr quitConnected];
 }
@@ -90,19 +96,49 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
 
 #pragma mark -- tableView datasource
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    NSInteger cellN = 2;
+    return cellN;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _peripherals.count;
+    if (section == 0) {
+        return _demosSources.count;
+    }else if(section == 1){
+        return _peripherals.count;
+    }else{
+        return 0;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseCellIdentifierId forIndexPath:indexPath];
-    cell.textLabel.text = _peripherals[indexPath.row].name;
+
+    if (indexPath.section == 0) {
+        cell.textLabel.text = _demosSources[indexPath.row];
+    }
+    else{
+        cell.textLabel.text = _peripherals[indexPath.row].name;
+    }
     return cell;
+
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     CGFloat cellH = 60.f;
     return cellH;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    if (section ==0) {
+        return @"demo";
+    }
+    else if(section == 0) {
+        return @"bluetooth devices";
+    }
+    else{
+        return @"need developing";
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -111,20 +147,60 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
 
 #pragma mark -- custom methods
 
-- (void)onWebInteractiveClicked:(UIButton *)sender {
-//    _mgr.quitConnected().stopScan();
+- (void)onWebInteractiveClicked {
     _mgr.stopScan();
-    YDBlueToothWebViewController *vc = [YDBlueToothWebViewController new];
-    [self.navigationController pushViewController:vc.webUrl(@"https://m.baidu.com") animated:YES];
+    YDBlueToothWebViewController *vc = [YDBlueToothWebViewController new].webUrl(@"https://m.baidu.com").webTittle(@"百度");
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark --table delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    ServicesViewController *vc = [ServicesViewController new].vcMgr(_mgr);
-    NSLog(@"mgr: %@",_mgr);
-    [self.navigationController pushViewController:vc animated:YES];
-    [_mgr onConnectBluetoothWithIndex:indexPath.row];
+    if (indexPath.section == 0) {
+        switch (indexPath.row) {
+            case 0:
+            {
+                [self onQuitConnected];
+            }
+                
+                break;
+            case 1:
+            {
+                [self onWebInteractiveClicked];
+            }
+                break;
+            case 2:
+            {
+                [self onS3connect];
+            }
+                break;
+            case 3:
+            {
+                [self onS3BabyClilcked];
+            }
+                break;
+            case 4:
+            {
+                [self onReScanClicked];
+            }
+                break;
+            case 5:
+            {
+                [self onStopScanClicked];
+            }
+                break;
+            default:
+                break;
+        }
+    }
+    
+    if (indexPath.section == 1) {
+        ServicesViewController *vc = [ServicesViewController new].vcMgr(_mgr);
+        NSLog(@"mgr: %@",_mgr);
+        [self.navigationController pushViewController:vc animated:YES];
+        [_mgr onConnectBluetoothWithIndex:indexPath.row];
+    }
+    
 }
 
 - (void)logServicesInfoWithSerivces:(NSArray <CBService *> *)services {

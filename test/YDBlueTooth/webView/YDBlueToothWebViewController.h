@@ -11,5 +11,6 @@
 @interface YDBlueToothWebViewController : UIViewController
 
 - (YDBlueToothWebViewController *(^)(NSString *urlString))webUrl;
+- (YDBlueToothWebViewController *(^)(NSString *titleString))webTittle;
 
 @end
