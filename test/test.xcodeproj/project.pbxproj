@@ -51,7 +51,6 @@
 		41D33F941F208BCD00CF2908 /* BluetoothDaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39121F208155002E70B7 /* BluetoothDaterView.m */; };
 		41D33F951F208BEF00CF2908 /* BluetoothConnectViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 41ED390F1F208155002E70B7 /* BluetoothConnectViewController.h */; };
 		41D33F961F208BEF00CF2908 /* BluetoothConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39101F208155002E70B7 /* BluetoothConnectViewController.m */; };
-		41D33F981F208C4A00CF2908 /* SOMICS3ICON.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 41D33F971F208C4900CF2908 /* SOMICS3ICON.bundle */; };
 		41D33F9C1F209E9500CF2908 /* YDS3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D33F9B1F209E9500CF2908 /* YDS3ViewController.m */; };
 		41D33F9F1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D33F9E1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m */; };
 		41D33FA21F20A06F00CF2908 /* YDS3MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D33FA11F20A06F00CF2908 /* YDS3MainView.m */; };
@@ -251,6 +250,7 @@
 		414BF12A1F21FC6500058DBE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		414BF1301F21FD5700058DBE /* YDBluetoothWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBluetoothWebView.h; sourceTree = "<group>"; };
 		414BF1311F21FD5700058DBE /* YDBluetoothWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBluetoothWebView.m; sourceTree = "<group>"; };
+		414FCFDD1F25A73900FEEB68 /* SOMICS3ICON.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SOMICS3ICON.bundle; path = YDBlueTooth/somicFilder/sdk/SOMICS3ICON.bundle; sourceTree = SOURCE_ROOT; };
 		4164CEB51F235E6800E23D77 /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = GoogLeNetPlaces.mlmodel; path = ../../../../Desktop/GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
 		418BA7B51F1F71BF007269DC /* ServicesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServicesViewController.h; sourceTree = "<group>"; };
 		418BA7B61F1F71BF007269DC /* ServicesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServicesViewController.m; sourceTree = "<group>"; };
@@ -281,7 +281,6 @@
 		41C3FB081F219682008F57B5 /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		41C3FB0A1F219E7D008F57B5 /* YDS3Mgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDS3Mgr.h; sourceTree = "<group>"; };
 		41C3FB0B1F219E7D008F57B5 /* YDS3Mgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDS3Mgr.m; sourceTree = "<group>"; };
-		41D33F971F208C4900CF2908 /* SOMICS3ICON.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SOMICS3ICON.bundle; path = ../../../yuedong/code/sports/GlobalLayer/ThirdPart/Hardware/ThirdPart/Somic/SOMICS3ICON.bundle; sourceTree = "<group>"; };
 		41D33F9A1F209E9500CF2908 /* YDS3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDS3ViewController.h; sourceTree = "<group>"; };
 		41D33F9B1F209E9500CF2908 /* YDS3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDS3ViewController.m; sourceTree = "<group>"; };
 		41D33F9D1F20A00D00CF2908 /* YDS3PeriipheralsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDS3PeriipheralsViewController.h; sourceTree = "<group>"; };
@@ -955,7 +954,7 @@
 		41ED39231F208165002E70B7 /* sdk */ = {
 			isa = PBXGroup;
 			children = (
-				41D33F971F208C4900CF2908 /* SOMICS3ICON.bundle */,
+				414FCFDD1F25A73900FEEB68 /* SOMICS3ICON.bundle */,
 				41ED39241F208165002E70B7 /* Const */,
 				41ED39271F208165002E70B7 /* Interface */,
 				41ED392C1F208165002E70B7 /* Model */,
@@ -2076,7 +2075,6 @@
 				418D300D1F1DA36000894079 /* LaunchScreen.storyboard in Resources */,
 				41ED39471F208165002E70B7 /* ThirdParts.plist in Resources */,
 				418D300A1F1DA36000894079 /* Assets.xcassets in Resources */,
-				41D33F981F208C4A00CF2908 /* SOMICS3ICON.bundle in Resources */,
 				418D30051F1DA36000894079 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
