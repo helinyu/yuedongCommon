@@ -174,6 +174,7 @@ static const CGFloat webViewH = 200.f;
 
 - (void)showTwoParams:(NSString *)name sex:(NSString *)sex {
     [SVProgressHUD showWithStatus:@"两个参数"];
+    
 }
 
 @end
