@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SVProgressHUD.h"
+#import <JavaScriptCore/JavaScriptCore.h>
 
 @interface ViewController ()<UIWebViewDelegate>
 
@@ -54,7 +55,6 @@ static const CGFloat webViewH = 200.f;
     _twoParamsBtn.frame = CGRectMake(0,webViewH +100, 100, 30);
     [_twoParamsBtn addTarget:self action:@selector(onTwoParamClicked) forControlEvents:UIControlEventTouchUpInside];
     _twoParamsBtn.backgroundColor = [UIColor redColor];
-
 
 }
 
@@ -164,7 +164,6 @@ static const CGFloat webViewH = 200.f;
 
 //js 调用oc的方法
 - (void)showNoneParam {
-    
     [SVProgressHUD showWithStatus:@"没有参数"];
 }
 
