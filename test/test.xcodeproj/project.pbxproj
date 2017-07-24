@@ -12,6 +12,15 @@
 		4113B2F31F1EF8A600EC6D21 /* LYBlockLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F21F1EF8A600EC6D21 /* LYBlockLinkViewController.m */; };
 		4113B2F61F1EF92600EC6D21 /* LYBlockPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F51F1EF92600EC6D21 /* LYBlockPerson.m */; };
 		4113B2F91F1EFA5800EC6D21 /* LYBlockPerson2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F81F1EFA5800EC6D21 /* LYBlockPerson2.m */; };
+		413157F61F25D7610044FC58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 413157F51F25D7610044FC58 /* AppDelegate.m */; };
+		413157F91F25D7610044FC58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413157F81F25D7610044FC58 /* ViewController.m */; };
+		413157FC1F25D7610044FC58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413157FA1F25D7610044FC58 /* Main.storyboard */; };
+		413157FF1F25D7610044FC58 /* testUIWebView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 413157FD1F25D7610044FC58 /* testUIWebView.xcdatamodeld */; };
+		413158011F25D7610044FC58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413158001F25D7610044FC58 /* Assets.xcassets */; };
+		413158041F25D7610044FC58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413158021F25D7610044FC58 /* LaunchScreen.storyboard */; };
+		413158071F25D7610044FC58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 413158061F25D7610044FC58 /* main.m */; };
+		4131580C1F25DE7D0044FC58 /* webInteractive.html in Resources */ = {isa = PBXBuildFile; fileRef = 4131580B1F25DE7C0044FC58 /* webInteractive.html */; };
+		4131580E1F25EAF90044FC58 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 4131580D1F25EAF80044FC58 /* index.html */; };
 		414BF1181F21B45E00058DBE /* YDBlueBluetooth.plist in Resources */ = {isa = PBXBuildFile; fileRef = 414BF1171F21B45E00058DBE /* YDBlueBluetooth.plist */; };
 		414BF11B1F21B78E00058DBE /* YDPeripheralsModelMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 414BF11A1F21B78E00058DBE /* YDPeripheralsModelMgr.m */; };
 		414BF11F1F21B84400058DBE /* YDPeripheralModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 414BF11E1F21B84400058DBE /* YDPeripheralModel.m */; };
@@ -96,6 +105,7 @@
 		41F760361F1CB4E800AB66AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F760351F1CB4E800AB66AE /* Assets.xcassets */; };
 		41F760391F1CB4E800AB66AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F760371F1CB4E800AB66AE /* LaunchScreen.storyboard */; };
 		48D729F3BF99F4A4F2FF1048 /* libPods-YDBlueTooth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B663388472CC30E40AA8F5 /* libPods-YDBlueTooth.a */; };
+		57FFCF02ECEA7C0E17CC0C0C /* libPods-testUIWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98B5E46B0C8D5679EDB4FD60 /* libPods-testUIWebView.a */; };
 		B79C5E7C731D80DF88CB4722 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */; };
 		DC04101F1EF80E07000B69A3 /* HLYAudioPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC04101E1EF80E07000B69A3 /* HLYAudioPlayerManager.m */; };
 		DC0410221EF80E1E000B69A3 /* HLYAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0410211EF80E1E000B69A3 /* HLYAudioViewController.m */; };
@@ -229,6 +239,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		035F375DF305B4800331E7CB /* Pods-testUIWebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUIWebView.release.xcconfig"; path = "Pods/Target Support Files/Pods-testUIWebView/Pods-testUIWebView.release.xcconfig"; sourceTree = "<group>"; };
 		065563C11B960CC4E9129709 /* Pods-YDBlueTooth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDBlueTooth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YDBlueTooth/Pods-YDBlueTooth.debug.xcconfig"; sourceTree = "<group>"; };
 		10B663388472CC30E40AA8F5 /* libPods-YDBlueTooth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YDBlueTooth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA08CC4F327F48BB95B4887 /* Pods-testVision.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testVision.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testVision/Pods-testVision.debug.xcconfig"; sourceTree = "<group>"; };
@@ -240,6 +251,19 @@
 		4113B2F51F1EF92600EC6D21 /* LYBlockPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBlockPerson.m; sourceTree = "<group>"; };
 		4113B2F71F1EFA5800EC6D21 /* LYBlockPerson2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockPerson2.h; sourceTree = "<group>"; };
 		4113B2F81F1EFA5800EC6D21 /* LYBlockPerson2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBlockPerson2.m; sourceTree = "<group>"; };
+		413157F21F25D7610044FC58 /* testUIWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testUIWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		413157F41F25D7610044FC58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		413157F51F25D7610044FC58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		413157F71F25D7610044FC58 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		413157F81F25D7610044FC58 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		413157FB1F25D7610044FC58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		413157FE1F25D7610044FC58 /* testUIWebView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testUIWebView.xcdatamodel; sourceTree = "<group>"; };
+		413158001F25D7610044FC58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		413158031F25D7610044FC58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		413158051F25D7610044FC58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		413158061F25D7610044FC58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4131580B1F25DE7C0044FC58 /* webInteractive.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = webInteractive.html; path = ../../../Desktop/webInteractive.html; sourceTree = "<group>"; };
+		4131580D1F25EAF80044FC58 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = "../../../OC-JS-UIWebView/OC与JS交互之UIWebView/index.html"; sourceTree = "<group>"; };
 		414BF1171F21B45E00058DBE /* YDBlueBluetooth.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = YDBlueBluetooth.plist; sourceTree = "<group>"; };
 		414BF1191F21B78E00058DBE /* YDPeripheralsModelMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDPeripheralsModelMgr.h; sourceTree = "<group>"; };
 		414BF11A1F21B78E00058DBE /* YDPeripheralsModelMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDPeripheralsModelMgr.m; sourceTree = "<group>"; };
@@ -381,7 +405,9 @@
 		41F7603A1F1CB4E800AB66AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52F26FB17AF2BC0D6B5EA7B0 /* libPods-test_babyBlueTooth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test_babyBlueTooth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89914FF9277B52F087EA3821 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
+		98B5E46B0C8D5679EDB4FD60 /* libPods-testUIWebView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testUIWebView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE97A0B6F1D13E872C40F8A8 /* Pods-testUIWebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUIWebView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testUIWebView/Pods-testUIWebView.debug.xcconfig"; sourceTree = "<group>"; };
 		D62E9FE9F32D139489C44082 /* libPods-testVision.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testVision.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC04101D1EF80E07000B69A3 /* HLYAudioPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAudioPlayerManager.h; sourceTree = "<group>"; };
 		DC04101E1EF80E07000B69A3 /* HLYAudioPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAudioPlayerManager.m; sourceTree = "<group>"; };
@@ -626,6 +652,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		413157EF1F25D7610044FC58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57FFCF02ECEA7C0E17CC0C0C /* libPods-testUIWebView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		418D2FF51F1DA36000894079 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -712,6 +746,25 @@
 				4113B2F81F1EFA5800EC6D21 /* LYBlockPerson2.m */,
 			);
 			path = block_for_link;
+			sourceTree = "<group>";
+		};
+		413157F31F25D7610044FC58 /* testUIWebView */ = {
+			isa = PBXGroup;
+			children = (
+				413157F41F25D7610044FC58 /* AppDelegate.h */,
+				413157F51F25D7610044FC58 /* AppDelegate.m */,
+				413157F71F25D7610044FC58 /* ViewController.h */,
+				413157F81F25D7610044FC58 /* ViewController.m */,
+				413157FA1F25D7610044FC58 /* Main.storyboard */,
+				4131580D1F25EAF80044FC58 /* index.html */,
+				4131580B1F25DE7C0044FC58 /* webInteractive.html */,
+				413158001F25D7610044FC58 /* Assets.xcassets */,
+				413158021F25D7610044FC58 /* LaunchScreen.storyboard */,
+				413158051F25D7610044FC58 /* Info.plist */,
+				413158061F25D7610044FC58 /* main.m */,
+				413157FD1F25D7610044FC58 /* testUIWebView.xcdatamodeld */,
+			);
+			path = testUIWebView;
 			sourceTree = "<group>";
 		};
 		414BF11C1F21B79400058DBE /* modelmgr */ = {
@@ -1056,6 +1109,7 @@
 				52F26FB17AF2BC0D6B5EA7B0 /* libPods-test_babyBlueTooth.a */,
 				10B663388472CC30E40AA8F5 /* libPods-YDBlueTooth.a */,
 				D62E9FE9F32D139489C44082 /* libPods-testVision.a */,
+				98B5E46B0C8D5679EDB4FD60 /* libPods-testUIWebView.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1071,6 +1125,8 @@
 				E08FB385B85BCD602F1865BF /* Pods-YDBlueTooth.release.xcconfig */,
 				2EA08CC4F327F48BB95B4887 /* Pods-testVision.debug.xcconfig */,
 				FDC8658AE4429AA16B1647DD /* Pods-testVision.release.xcconfig */,
+				CE97A0B6F1D13E872C40F8A8 /* Pods-testUIWebView.debug.xcconfig */,
+				035F375DF305B4800331E7CB /* Pods-testUIWebView.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1160,6 +1216,7 @@
 				418D2FF91F1DA36000894079 /* YDBlueTooth */,
 				41D864DE1F210A81004D748B /* testVision */,
 				41D865171F210BC8004D748B /* testCoreML */,
+				413157F31F25D7610044FC58 /* testUIWebView */,
 				DC05043A1EBDC45800718AAD /* Products */,
 				7CC4BA5CB8A72D74B687B773 /* Pods */,
 				74B13597549662E119950E0D /* Frameworks */,
@@ -1178,6 +1235,7 @@
 				418D2FF81F1DA36000894079 /* YDBlueTooth.app */,
 				41D864DD1F210A81004D748B /* testVision.app */,
 				41D865161F210BC8004D748B /* testCoreML.app */,
+				413157F21F25D7610044FC58 /* testUIWebView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1811,6 +1869,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		413157F11F25D7610044FC58 /* testUIWebView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4131580A1F25D7610044FC58 /* Build configuration list for PBXNativeTarget "testUIWebView" */;
+			buildPhases = (
+				97546C61B728D571C21A37C3 /* [CP] Check Pods Manifest.lock */,
+				413157EE1F25D7610044FC58 /* Sources */,
+				413157EF1F25D7610044FC58 /* Frameworks */,
+				413157F01F25D7610044FC58 /* Resources */,
+				5274C116EAF3521E8F7F68D7 /* [CP] Embed Pods Frameworks */,
+				1D22CE165C67AA93297B1117 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testUIWebView;
+			productName = testUIWebView;
+			productReference = 413157F21F25D7610044FC58 /* testUIWebView.app */;
+			productType = "com.apple.product-type.application";
+		};
 		418D2FF71F1DA36000894079 /* YDBlueTooth */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 418D302B1F1DA36100894079 /* Build configuration list for PBXNativeTarget "YDBlueTooth" */;
@@ -1985,6 +2063,10 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = forest;
 				TargetAttributes = {
+					413157F11F25D7610044FC58 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = D2XBEJ6876;
+					};
 					418D2FF71F1DA36000894079 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2ERYNAFK87;
@@ -2062,11 +2144,24 @@
 				418D2FF71F1DA36000894079 /* YDBlueTooth */,
 				41D864DC1F210A81004D748B /* testVision */,
 				41D865151F210BC8004D748B /* testCoreML */,
+				413157F11F25D7610044FC58 /* testUIWebView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		413157F01F25D7610044FC58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4131580E1F25EAF90044FC58 /* index.html in Resources */,
+				413158041F25D7610044FC58 /* LaunchScreen.storyboard in Resources */,
+				413158011F25D7610044FC58 /* Assets.xcassets in Resources */,
+				4131580C1F25DE7D0044FC58 /* webInteractive.html in Resources */,
+				413157FC1F25D7610044FC58 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		418D2FF61F1DA36000894079 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2202,6 +2297,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1D22CE165C67AA93297B1117 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testUIWebView/Pods-testUIWebView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3B4A2B43DF303CE23596C15F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2247,6 +2357,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		5274C116EAF3521E8F7F68D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testUIWebView/Pods-testUIWebView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		841AC95AF2BA5235F7FF7A18 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2275,6 +2400,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YDBlueTooth/Pods-YDBlueTooth-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97546C61B728D571C21A37C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B2D864664C85B357FE66DCE6 /* [CP] Embed Pods Frameworks */ = {
@@ -2355,6 +2495,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		413157EE1F25D7610044FC58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413157F91F25D7610044FC58 /* ViewController.m in Sources */,
+				413157F61F25D7610044FC58 /* AppDelegate.m in Sources */,
+				413158071F25D7610044FC58 /* main.m in Sources */,
+				413157FF1F25D7610044FC58 /* testUIWebView.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		418D2FF41F1DA36000894079 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2592,6 +2743,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		413157FA1F25D7610044FC58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				413157FB1F25D7610044FC58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		413158021F25D7610044FC58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				413158031F25D7610044FC58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		418D30031F1DA36000894079 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -2741,6 +2908,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		413158081F25D7610044FC58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE97A0B6F1D13E872C40F8A8 /* Pods-testUIWebView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = testUIWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.testUIWebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		413158091F25D7610044FC58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 035F375DF305B4800331E7CB /* Pods-testUIWebView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = testUIWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.testUIWebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		418D30251F1DA36100894079 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 065563C11B960CC4E9129709 /* Pods-YDBlueTooth.debug.xcconfig */;
@@ -3174,6 +3391,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4131580A1F25D7610044FC58 /* Build configuration list for PBXNativeTarget "testUIWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413158081F25D7610044FC58 /* Debug */,
+				413158091F25D7610044FC58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		418D302B1F1DA36100894079 /* Build configuration list for PBXNativeTarget "YDBlueTooth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3267,6 +3492,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		413157FD1F25D7610044FC58 /* testUIWebView.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				413157FE1F25D7610044FC58 /* testUIWebView.xcdatamodel */,
+			);
+			currentVersion = 413157FE1F25D7610044FC58 /* testUIWebView.xcdatamodel */;
+			path = testUIWebView.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		418D30061F1DA36000894079 /* YDBlueTooth.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
