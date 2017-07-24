@@ -19,7 +19,7 @@
 
 @end
 
-static const CGFloat webViewH = 300.f;
+static const CGFloat webViewH = 200.f;
 
 @implementation ViewController
 
@@ -61,18 +61,17 @@ static const CGFloat webViewH = 300.f;
 - (void)onNoneParamClicked {
     NSLog(@"none param");
 //    当html页面注入了之后，这个webView对象执行这个方法就是执行嵌入的html的 onNoneParamClicked 这个方法
-    [self.webView stringByEvaluatingJavaScriptFromString:@"alertMobile()"];
+    [_webView stringByEvaluatingJavaScriptFromString:@"onNoneParamClicked()"];
 }
 
 - (void)onOneParamClicked {
     NSLog(@"one param");
-    [self.webView stringByEvaluatingJavaScriptFromString:@"alertName('aka')"];
-
+    [_webView stringByEvaluatingJavaScriptFromString:@"onOneParamClicked('姓名：aka')"];
 }
 
 - (void)onTwoParamClicked {
     NSLog(@"two params");
-    [self.webView stringByEvaluatingJavaScriptFromString:@"alertSendMsg('18870707070','周末爬山真是件愉快的事情')"];
+    [_webView stringByEvaluatingJavaScriptFromString:@"onTwoParamsClicked('姓名：aka','性别:man')"];
 }
 
 - (void)loadWebView {
@@ -83,7 +82,7 @@ static const CGFloat webViewH = 300.f;
     self.view.backgroundColor = [UIColor  grayColor];
     _webView.delegate = self;
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"webInteractive.html" ofType:nil];
     NSURL *baseUrl = [[NSBundle mainBundle] bundleURL];
     [_webView loadHTMLString:[NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil] baseURL:baseUrl];
 }
@@ -97,10 +96,10 @@ static const CGFloat webViewH = 300.f;
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     NSLog(@"%@",NSStringFromSelector(_cmd));
     NSLog(@"navigationType: %ld",navigationType);
-  
-    NSString *scheme = @"rrcc://";
-
+    
     NSString *absolutePath = request.URL.absoluteString;
+    NSString *scheme = @"ydq://";
+    
     if ([absolutePath hasPrefix:scheme]) {
         NSString *subPath = [absolutePath substringFromIndex:scheme.length];
         if ([subPath containsString:@"?"]) {//1个或多个参数
@@ -147,6 +146,7 @@ static const CGFloat webViewH = 300.f;
             }
         }
     }
+    
     return YES;
 }
 
@@ -163,20 +163,17 @@ static const CGFloat webViewH = 300.f;
 }
 
 //js 调用oc的方法
-
-- (void)showMobile {
-    NSLog(@"js 调用oc没有参数的方法");
-    [SVProgressHUD showSuccessWithStatus:@"没有参数"];
+- (void)showNoneParam {
+    
+    [SVProgressHUD showWithStatus:@"没有参数"];
 }
 
-- (void)showName:(NSString *)name {
-    NSLog(@"js 调用oc只有一个参数的方法");
-    [SVProgressHUD showSuccessWithStatus:@"一个参数"];
+- (void)showOneParam:(NSString *)name {
+    [SVProgressHUD showWithStatus:@"一个参数"];
 }
 
-- (void)showSendNumber:(NSString *)name msg:(NSInteger)man {
-    NSLog(@"js 调用oc 有两个方法");
-    [SVProgressHUD showSuccessWithStatus:@"两个参数"];
+- (void)showTwoParams:(NSString *)name sex:(NSString *)sex {
+    [SVProgressHUD showWithStatus:@"两个参数"];
 }
 
 @end
