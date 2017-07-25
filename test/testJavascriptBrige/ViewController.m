@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MyCustomViewController.h"
 
 #import "WebViewJavascriptBridge.h"
 
@@ -16,20 +17,30 @@
 
 @property (nonatomic, strong) UIWebView *webView;
 
+@property (nonatomic, strong) UIButton *myCustomBtn;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _myCustomBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [_myCustomBtn setTitle:@"自己定义使用" forState:UIControlStateNormal];
+    [self.view addSubview:_myCustomBtn];
+    _myCustomBtn.frame = CGRectMake(0,CGRectGetHeight([UIScreen mainScreen].bounds)/2+150, 100, 30);
+    [_myCustomBtn addTarget:self action:@selector(onToCustomVCClicked) forControlEvents:UIControlEventTouchUpInside];
 
     [self loadBase];
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+}
 
+- (void)onToCustomVCClicked {
+    [self.navigationController pushViewController:[MyCustomViewController new] animated:YES];
 }
 
 - (void)loadBase {
@@ -47,7 +58,7 @@
         responseCallback(data);
     }];
 
-    [_bridge callHandler:@"testJavascriptHandler" data:@{@"foo":@"before ready"}];
+//    [_bridge callHandler:@"testJavascriptHandler" data:@{@"foo":@"before ready"}];
 
     [self renderButtons:_webView];
     [self loadExamplePage:_webView];
