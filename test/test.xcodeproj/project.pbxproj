@@ -28,6 +28,7 @@
 		413158221F25F2320044FC58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413158211F25F2320044FC58 /* Assets.xcassets */; };
 		413158251F25F2320044FC58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413158231F25F2320044FC58 /* LaunchScreen.storyboard */; };
 		413158281F25F2320044FC58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 413158271F25F2320044FC58 /* main.m */; };
+		413A0D3F1F26D9E3000A8F9D /* webInteractive.html in Resources */ = {isa = PBXBuildFile; fileRef = 413A0D3E1F26D9E2000A8F9D /* webInteractive.html */; };
 		414BF1181F21B45E00058DBE /* YDBlueBluetooth.plist in Resources */ = {isa = PBXBuildFile; fileRef = 414BF1171F21B45E00058DBE /* YDBlueBluetooth.plist */; };
 		414BF11B1F21B78E00058DBE /* YDPeripheralsModelMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 414BF11A1F21B78E00058DBE /* YDPeripheralsModelMgr.m */; };
 		414BF11F1F21B84400058DBE /* YDPeripheralModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 414BF11E1F21B84400058DBE /* YDPeripheralModel.m */; };
@@ -282,6 +283,7 @@
 		413158241F25F2320044FC58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		413158261F25F2320044FC58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		413158271F25F2320044FC58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		413A0D3E1F26D9E2000A8F9D /* webInteractive.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = webInteractive.html; path = ../../../Desktop/webInteractive.html; sourceTree = "<group>"; };
 		414BF1171F21B45E00058DBE /* YDBlueBluetooth.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = YDBlueBluetooth.plist; sourceTree = "<group>"; };
 		414BF1191F21B78E00058DBE /* YDPeripheralsModelMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDPeripheralsModelMgr.h; sourceTree = "<group>"; };
 		414BF11A1F21B78E00058DBE /* YDPeripheralsModelMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDPeripheralsModelMgr.m; sourceTree = "<group>"; };
@@ -797,6 +799,7 @@
 			children = (
 				413158151F25F2320044FC58 /* AppDelegate.h */,
 				413158161F25F2320044FC58 /* AppDelegate.m */,
+				413A0D3E1F26D9E2000A8F9D /* webInteractive.html */,
 				413158181F25F2320044FC58 /* ViewController.h */,
 				413158191F25F2320044FC58 /* ViewController.m */,
 				4131581B1F25F2320044FC58 /* Main.storyboard */,
@@ -2130,7 +2133,8 @@
 					};
 					413158121F25F2320044FC58 = {
 						CreatedOnToolsVersion = 9.0;
-						DevelopmentTeam = D2XBEJ6876;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Manual;
 					};
 					418D2FF71F1DA36000894079 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -2234,6 +2238,7 @@
 			files = (
 				413158251F25F2320044FC58 /* LaunchScreen.storyboard in Resources */,
 				413158221F25F2320044FC58 /* Assets.xcassets in Resources */,
+				413A0D3F1F26D9E3000A8F9D /* webInteractive.html in Resources */,
 				4131581D1F25F2320044FC58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3074,13 +3079,16 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = testWKWebView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.testWKWebView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -3098,13 +3106,15 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = testWKWebView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.testWKWebView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -3558,6 +3568,7 @@
 				4131582A1F25F2320044FC58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		418D302B1F1DA36100894079 /* Build configuration list for PBXNativeTarget "YDBlueTooth" */ = {
 			isa = XCConfigurationList;
