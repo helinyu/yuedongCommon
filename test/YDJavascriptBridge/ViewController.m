@@ -29,15 +29,28 @@
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"bridge.html" ofType:nil];
     NSURL *baseURL = [[NSBundle mainBundle] bundleURL];
     [_webView loadHTMLString:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil] baseURL:baseURL];
-    
-    _bridge = [YDJavascriptBridge bridgeWithUIWebview:_webView];
-    
+  
     _webViewBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.view addSubview:_webViewBtn];
     [_webViewBtn setTitle:@"web btn" forState:UIControlStateNormal];
     _webViewBtn.frame = CGRectMake(0, CGRectGetHeight([UIScreen mainScreen].bounds)/2, 100, 30);
     [_webViewBtn addTarget:self action:@selector(onWebviewClicked) forControlEvents:UIControlEventTouchUpInside];
 
+    [self responseBlock];
+}
+
+- (void)responseBlock {
+    
+    _bridge = [YDJavascriptBridge bridgeWithUIWebview:_webView];
+   
+    [_bridge registerMethod:@"showMoreParam" complete:^(NSDictionary *responseDic) {
+        NSLog(@"dic : %@",responseDic);
+    }];
+   
+    [_bridge registerMethodNoDatasCallback:@"showNOParam" complete:^{
+        NSLog(@"no data callback");
+    }];
+    
 }
 
 - (void)onWebviewClicked {

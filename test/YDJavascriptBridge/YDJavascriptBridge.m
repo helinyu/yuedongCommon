@@ -21,6 +21,9 @@
 //mark uiwebview
 @property (nonatomic, strong) JSContext *jsContext;
 
+//datas
+@property (nonatomic, strong) NSDictionary *responseDic;
+
 @end
 
 @implementation YDJavascriptBridge
@@ -47,10 +50,24 @@
 
 - (void)baseConfigureUIWebView {
     _jsContext = [_lWebView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
-    _jsContext[@"showNOParam"] = ^(void) {
-        NSLog(@"on show");
+}
+
+- (void)registerMethod:(NSString *)methodString complete:(ResponseComplete)complete {
+    _jsContext[methodString] = ^(NSDictionary *backDic) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            !complete?:complete(backDic);
+        });
     };
 }
+
+- (void)registerMethodNoDatasCallback:(NSString *)methodString complete:(void(^)(void))complete {
+    _jsContext[methodString] = ^(void) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            !complete?:complete();
+        });
+    };
+}
+
 
 - (void)evaluateScript:(NSString *)script {
     if (_lWebView) {

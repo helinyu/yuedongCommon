@@ -15,4 +15,12 @@
 
 - (void)evaluateScript:(NSString *)script;
 
+typedef void (^ResponseComplete)(NSDictionary *responseDic);
+
+//recommeded
+- (void)registerMethod:(NSString *)methodString complete:(ResponseComplete)complete;
+
+// not recommed
+- (void)registerMethodNoDatasCallback:(NSString *)methodString complete:(void(^)(void))complete;
+
 @end

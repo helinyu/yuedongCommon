@@ -39,8 +39,7 @@
     [self.webView loadHTMLString:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil] baseURL:baseURL];
     
     _jsContext = [_webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
-
-
+    
     __block typeof(self) weakSelf = self;
     //JS调用OC方法列表
     _jsContext[@"showNOParam"] = ^ {
