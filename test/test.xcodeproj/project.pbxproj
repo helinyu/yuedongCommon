@@ -21,6 +21,7 @@
 		410CE99D1F284EE80048E794 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 410CE99C1F284EE80048E794 /* main.m */; };
 		410CE9A31F284F3B0048E794 /* YDJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 410CE9A21F284F3B0048E794 /* YDJavascriptBridge.m */; };
 		410CE9AA1F286AB40048E794 /* bridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 410CE9A91F286AB40048E794 /* bridge.html */; };
+		410CE9AD1F2887C00048E794 /* wkBridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 410CE9AC1F2887C00048E794 /* wkBridge.html */; };
 		4113B2F31F1EF8A600EC6D21 /* LYBlockLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F21F1EF8A600EC6D21 /* LYBlockLinkViewController.m */; };
 		4113B2F61F1EF92600EC6D21 /* LYBlockPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F51F1EF92600EC6D21 /* LYBlockPerson.m */; };
 		4113B2F91F1EFA5800EC6D21 /* LYBlockPerson2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F81F1EFA5800EC6D21 /* LYBlockPerson2.m */; };
@@ -306,6 +307,7 @@
 		410CE9A21F284F3B0048E794 /* YDJavascriptBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDJavascriptBridge.m; sourceTree = "<group>"; };
 		410CE9A91F286AB40048E794 /* bridge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = bridge.html; path = ../../../Desktop/bridge.html; sourceTree = "<group>"; };
 		410CE9AB1F2885FD0048E794 /* webInteractive.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = webInteractive.html; sourceTree = "<group>"; };
+		410CE9AC1F2887C00048E794 /* wkBridge.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = wkBridge.html; sourceTree = "<group>"; };
 		4113B2F11F1EF8A600EC6D21 /* LYBlockLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockLinkViewController.h; sourceTree = "<group>"; };
 		4113B2F21F1EF8A600EC6D21 /* LYBlockLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBlockLinkViewController.m; sourceTree = "<group>"; };
 		4113B2F41F1EF92600EC6D21 /* LYBlockPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockPerson.h; sourceTree = "<group>"; };
@@ -875,6 +877,7 @@
 				410CE98D1F284EE80048E794 /* ViewController.h */,
 				410CE98E1F284EE80048E794 /* ViewController.m */,
 				410CE9A91F286AB40048E794 /* bridge.html */,
+				410CE9AC1F2887C00048E794 /* wkBridge.html */,
 				410CE9A11F284F3B0048E794 /* YDJavascriptBridge.h */,
 				410CE9A21F284F3B0048E794 /* YDJavascriptBridge.m */,
 				410CE9901F284EE80048E794 /* Main.storyboard */,
@@ -2479,6 +2482,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				410CE9AD1F2887C00048E794 /* wkBridge.html in Resources */,
 				410CE99A1F284EE80048E794 /* LaunchScreen.storyboard in Resources */,
 				410CE9971F284EE80048E794 /* Assets.xcassets in Resources */,
 				410CE9921F284EE80048E794 /* Main.storyboard in Resources */,
@@ -4186,6 +4190,7 @@
 				410CE9A01F284EE80048E794 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4131580A1F25D7610044FC58 /* Build configuration list for PBXNativeTarget "testUIWebView" */ = {
 			isa = XCConfigurationList;

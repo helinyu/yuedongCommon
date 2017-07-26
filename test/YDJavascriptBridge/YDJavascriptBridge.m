@@ -50,9 +50,9 @@
 
 - (void)baseConfigureUIWebView {
     _jsContext = [_lWebView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
-    _lWebView.delegate = self;
-    _hwebView.UIDelegate = self;
-    _hwebView.navigationDelegate = self;
+//    _lWebView.delegate = self;
+//    _hwebView.UIDelegate = self;
+//    _hwebView.navigationDelegate = self;
 }
 
 - (void)registerMethod:(NSString *)methodString complete:(ResponseComplete)complete {
