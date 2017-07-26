@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SVProgressHUD.h"
 #import <JavaScriptCore/JavaScriptCore.h>
+#import "MyCustomCoreViewController.h"
 
 @interface ViewController ()<UIWebViewDelegate>
 
@@ -17,6 +18,8 @@
 @property (nonatomic, strong) UIButton *noneParamBtn;
 @property (nonatomic, strong) UIButton *oneParamBtn;
 @property (nonatomic, strong) UIButton *twoParamsBtn;
+
+@property (nonatomic, strong) UIButton *customBtn;
 
 @property (nonatomic, strong) JSContext *jsContext;
 
@@ -105,6 +108,17 @@ static const CGFloat webViewH = 250.f;
     [_twoParamsBtn addTarget:self action:@selector(onTwoParamClicked) forControlEvents:UIControlEventTouchUpInside];
     _twoParamsBtn.backgroundColor = [UIColor redColor];
     
+    _customBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [self.view addSubview:_customBtn];
+    _customBtn.frame = CGRectMake(0,webViewH +140, 100, 30);
+    [_customBtn addTarget:self action:@selector(onToCustomClicked) forControlEvents:UIControlEventTouchUpInside];
+    [_customBtn setTitle:@"to custom" forState:UIControlStateNormal];
+    
+}
+
+- (void)onToCustomClicked {
+    MyCustomCoreViewController *vc = [MyCustomCoreViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)onNoneParamClicked {

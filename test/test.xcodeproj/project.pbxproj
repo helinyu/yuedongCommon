@@ -10,6 +10,8 @@
 		142840C8DB28E959922BD2DD /* libPods-testVision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D62E9FE9F32D139489C44082 /* libPods-testVision.a */; };
 		23DB3CFDC2576908130A9CBC /* libPods-test_babyBlueTooth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F26FB17AF2BC0D6B5EA7B0 /* libPods-test_babyBlueTooth.a */; };
 		410CE97E1F283F8A0048E794 /* webInteractive.html in Resources */ = {isa = PBXBuildFile; fileRef = 410CE97D1F283F8A0048E794 /* webInteractive.html */; };
+		410CE9811F2843B30048E794 /* MyCustomCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410CE9801F2843B30048E794 /* MyCustomCoreViewController.m */; };
+		410CE9831F2846B80048E794 /* custom.html in Resources */ = {isa = PBXBuildFile; fileRef = 410CE9821F2846B80048E794 /* custom.html */; };
 		4113B2F31F1EF8A600EC6D21 /* LYBlockLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F21F1EF8A600EC6D21 /* LYBlockLinkViewController.m */; };
 		4113B2F61F1EF92600EC6D21 /* LYBlockPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F51F1EF92600EC6D21 /* LYBlockPerson.m */; };
 		4113B2F91F1EFA5800EC6D21 /* LYBlockPerson2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F81F1EFA5800EC6D21 /* LYBlockPerson2.m */; };
@@ -278,6 +280,9 @@
 		2FEF8E7DFCEAAF0863C38B8A /* Pods-test_babyBlueTooth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_babyBlueTooth.release.xcconfig"; path = "Pods/Target Support Files/Pods-test_babyBlueTooth/Pods-test_babyBlueTooth.release.xcconfig"; sourceTree = "<group>"; };
 		31ADDEDE9375D935C58B3213 /* Pods-test_babyBlueTooth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_babyBlueTooth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test_babyBlueTooth/Pods-test_babyBlueTooth.debug.xcconfig"; sourceTree = "<group>"; };
 		410CE97D1F283F8A0048E794 /* webInteractive.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = webInteractive.html; path = ../../../Desktop/webInteractive.html; sourceTree = "<group>"; };
+		410CE97F1F2843B30048E794 /* MyCustomCoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCustomCoreViewController.h; sourceTree = "<group>"; };
+		410CE9801F2843B30048E794 /* MyCustomCoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCustomCoreViewController.m; sourceTree = "<group>"; };
+		410CE9821F2846B80048E794 /* custom.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = custom.html; sourceTree = "<group>"; };
 		4113B2F11F1EF8A600EC6D21 /* LYBlockLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockLinkViewController.h; sourceTree = "<group>"; };
 		4113B2F21F1EF8A600EC6D21 /* LYBlockLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBlockLinkViewController.m; sourceTree = "<group>"; };
 		4113B2F41F1EF92600EC6D21 /* LYBlockPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockPerson.h; sourceTree = "<group>"; };
@@ -1014,6 +1019,9 @@
 				41A136081F275CF40086D1B8 /* AppDelegate.m */,
 				41A1360A1F275CF40086D1B8 /* ViewController.h */,
 				41A1360B1F275CF40086D1B8 /* ViewController.m */,
+				410CE97F1F2843B30048E794 /* MyCustomCoreViewController.h */,
+				410CE9801F2843B30048E794 /* MyCustomCoreViewController.m */,
+				410CE9821F2846B80048E794 /* custom.html */,
 				41A1360D1F275CF50086D1B8 /* Main.storyboard */,
 				41A136131F275CF50086D1B8 /* Assets.xcassets */,
 				41A136151F275CF50086D1B8 /* LaunchScreen.storyboard */,
@@ -2445,6 +2453,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				410CE9831F2846B80048E794 /* custom.html in Resources */,
 				41A136171F275CF50086D1B8 /* LaunchScreen.storyboard in Resources */,
 				41A136141F275CF50086D1B8 /* Assets.xcassets in Resources */,
 				410CE97E1F283F8A0048E794 /* webInteractive.html in Resources */,
@@ -2949,6 +2958,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				410CE9811F2843B30048E794 /* MyCustomCoreViewController.m in Sources */,
 				41A136121F275CF50086D1B8 /* testJavascriptCore.xcdatamodeld in Sources */,
 				41A1360C1F275CF50086D1B8 /* ViewController.m in Sources */,
 				41A1361A1F275CF50086D1B8 /* main.m in Sources */,
