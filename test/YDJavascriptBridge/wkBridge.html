@@ -9,22 +9,28 @@
                 
     <script type="text/javascript">
         
-        function onshow() {
-            alert("哈哈 oc 调用html");
-        }
+    function onshow() {
+        alert("哈哈 oc 调用html");
+    }
     
     function alertSendMsg(num,msg) {
         document.getElementById('msg').innerHTML = '这是我的手机号:' + num + ',' + msg + '!!'
     }
     
-    function btnClick() {
-        window.webkit.messageHandlers.showName.postMessage('xiao黄')
+    function func(label, param) {
+        document.getElementById('msg').innerHTML = label;
+        var aa = window.webkit.messageHandlers[label];
+        aa.postMessage(param);
     }
     
+    function btnClick() {
+        func('showName', 'xaio huang');
+    }
+    
+     
     </script>
     </head>
     <body>
-        
         <div id="msg"></div>
         <div>
             <button class="btn" type="button" onclick="btnClick()">js 调用oc</button>
