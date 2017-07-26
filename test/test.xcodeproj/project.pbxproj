@@ -40,7 +40,6 @@
 		413158221F25F2320044FC58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413158211F25F2320044FC58 /* Assets.xcassets */; };
 		413158251F25F2320044FC58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413158231F25F2320044FC58 /* LaunchScreen.storyboard */; };
 		413158281F25F2320044FC58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 413158271F25F2320044FC58 /* main.m */; };
-		413A0D3F1F26D9E3000A8F9D /* webInteractive.html in Resources */ = {isa = PBXBuildFile; fileRef = 413A0D3E1F26D9E2000A8F9D /* webInteractive.html */; };
 		413A0D481F26E845000A8F9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 413A0D471F26E845000A8F9D /* AppDelegate.m */; };
 		413A0D4B1F26E845000A8F9D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413A0D4A1F26E845000A8F9D /* ViewController.m */; };
 		413A0D4E1F26E845000A8F9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413A0D4C1F26E845000A8F9D /* Main.storyboard */; };
@@ -306,6 +305,7 @@
 		410CE9A11F284F3B0048E794 /* YDJavascriptBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDJavascriptBridge.h; sourceTree = "<group>"; };
 		410CE9A21F284F3B0048E794 /* YDJavascriptBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDJavascriptBridge.m; sourceTree = "<group>"; };
 		410CE9A91F286AB40048E794 /* bridge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = bridge.html; path = ../../../Desktop/bridge.html; sourceTree = "<group>"; };
+		410CE9AB1F2885FD0048E794 /* webInteractive.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = webInteractive.html; sourceTree = "<group>"; };
 		4113B2F11F1EF8A600EC6D21 /* LYBlockLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockLinkViewController.h; sourceTree = "<group>"; };
 		4113B2F21F1EF8A600EC6D21 /* LYBlockLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBlockLinkViewController.m; sourceTree = "<group>"; };
 		4113B2F41F1EF92600EC6D21 /* LYBlockPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockPerson.h; sourceTree = "<group>"; };
@@ -336,7 +336,6 @@
 		413158241F25F2320044FC58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		413158261F25F2320044FC58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		413158271F25F2320044FC58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		413A0D3E1F26D9E2000A8F9D /* webInteractive.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = webInteractive.html; path = ../../../Desktop/webInteractive.html; sourceTree = "<group>"; };
 		413A0D441F26E845000A8F9D /* testJavascriptBrige.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testJavascriptBrige.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		413A0D461F26E845000A8F9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		413A0D471F26E845000A8F9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -924,8 +923,8 @@
 			isa = PBXGroup;
 			children = (
 				413158151F25F2320044FC58 /* AppDelegate.h */,
+				410CE9AB1F2885FD0048E794 /* webInteractive.html */,
 				413158161F25F2320044FC58 /* AppDelegate.m */,
-				413A0D3E1F26D9E2000A8F9D /* webInteractive.html */,
 				413158181F25F2320044FC58 /* ViewController.h */,
 				413158191F25F2320044FC58 /* ViewController.m */,
 				4131581B1F25F2320044FC58 /* Main.storyboard */,
@@ -2505,7 +2504,6 @@
 			files = (
 				413158251F25F2320044FC58 /* LaunchScreen.storyboard in Resources */,
 				413158221F25F2320044FC58 /* Assets.xcassets in Resources */,
-				413A0D3F1F26D9E3000A8F9D /* webInteractive.html in Resources */,
 				4131581D1F25F2320044FC58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

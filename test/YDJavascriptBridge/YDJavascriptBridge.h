@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 @class UIWebView;
+@class WKWebView;
 
 @interface YDJavascriptBridge : NSObject
 
 + (instancetype)bridgeWithUIWebview:(UIWebView *)webView;
-
++ (instancetype)bridgeWithWKWebView:(WKWebView *)webView;
 - (void)evaluateScript:(NSString *)script;
 
 typedef void (^ResponseComplete)(NSDictionary *responseDic);

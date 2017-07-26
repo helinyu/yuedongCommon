@@ -8,10 +8,13 @@
 
 #import "ViewController.h"
 #import "YDJavascriptBridge.h"
+#import <WebKit/WebKit.h>
 
 @interface ViewController ()
 
-@property (nonatomic, strong) UIWebView *webView;
+//@property (nonatomic, strong) UIWebView *webView;
+
+@property (nonatomic, strong) WKWebView *webView;
 
 @property (nonatomic, strong) YDJavascriptBridge *bridge;
 
@@ -24,7 +27,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)/2.f)];
+    WKWebViewConfiguration *configuration = [WKWebViewConfiguration new];
+    configuration.preferences.minimumFontSize = 18.f;
+    _webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)/2.f) configuration:configuration];
+//    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)/2.f)];
     [self.view addSubview:_webView];
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"bridge.html" ofType:nil];
     NSURL *baseURL = [[NSBundle mainBundle] bundleURL];
@@ -41,7 +47,7 @@
 
 - (void)responseBlock {
     
-    _bridge = [YDJavascriptBridge bridgeWithUIWebview:_webView];
+    _bridge = [YDJavascriptBridge bridgeWithWKWebView:_webView];
    
     [_bridge registerMethod:@"showMoreParam" complete:^(NSDictionary *responseDic) {
         NSLog(@"dic : %@",responseDic);

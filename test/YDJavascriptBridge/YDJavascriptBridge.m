@@ -12,7 +12,7 @@
 #import <Foundation/Foundation.h>
 #import <WebKit/WebKit.h>
 
-@interface YDJavascriptBridge ()
+@interface YDJavascriptBridge ()<UIWebViewDelegate,WKUIDelegate,WKNavigationDelegate,WKScriptMessageHandler>
 
 @property (nonatomic, strong) UIWebView *lWebView;
 @property (nonatomic, strong) WKWebView *hwebView;
@@ -50,31 +50,46 @@
 
 - (void)baseConfigureUIWebView {
     _jsContext = [_lWebView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+    _lWebView.delegate = self;
+    _hwebView.UIDelegate = self;
+    _hwebView.navigationDelegate = self;
 }
 
 - (void)registerMethod:(NSString *)methodString complete:(ResponseComplete)complete {
-    _jsContext[methodString] = ^(NSDictionary *backDic) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            !complete?:complete(backDic);
-        });
-    };
+    if (_lWebView) {
+        _jsContext[methodString] = ^(NSDictionary *backDic) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                !complete?:complete(backDic);
+            });
+        };
+    }
 }
 
 - (void)registerMethodNoDatasCallback:(NSString *)methodString complete:(void(^)(void))complete {
-    _jsContext[methodString] = ^(void) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            !complete?:complete();
-        });
-    };
+    if (_lWebView) {
+        _jsContext[methodString] = ^(void) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                !complete?:complete();
+            });
+        };
+    }
 }
-
 
 - (void)evaluateScript:(NSString *)script {
     if (_lWebView) {
         [_jsContext evaluateScript:script];
     }else{
-//        wk webview
+        [_hwebView evaluateJavaScript:@"onshow()" completionHandler:^(id _Nullable response, NSError * _Nullable error) {
+            NSLog(@"onshow complete:%@",response);
+        }];
     }
+}
+
+#pragma mark wk protocol
+- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+    NSLog(@"%@",message.body);
+    
 }
 
 @end
