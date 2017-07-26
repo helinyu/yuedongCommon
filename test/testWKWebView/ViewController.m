@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import <WebKit/WebKit.h>
 
-
 @interface ViewController ()<WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler>
 
 @property (nonatomic, strong) WKWebView *webView;
@@ -152,7 +151,6 @@
     
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"webInteractive" ofType:@"html"];
     NSURL *baseUrl = [[NSBundle mainBundle] bundleURL];
-//    [_webView loadHTMLString:filePath baseURL:baseUrl];
     [_webView loadHTMLString:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil] baseURL:baseUrl];
     
     WKUserContentController *userCC = configuration.userContentController;

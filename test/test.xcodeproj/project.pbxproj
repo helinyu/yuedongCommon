@@ -12,6 +12,15 @@
 		410CE97E1F283F8A0048E794 /* webInteractive.html in Resources */ = {isa = PBXBuildFile; fileRef = 410CE97D1F283F8A0048E794 /* webInteractive.html */; };
 		410CE9811F2843B30048E794 /* MyCustomCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410CE9801F2843B30048E794 /* MyCustomCoreViewController.m */; };
 		410CE9831F2846B80048E794 /* custom.html in Resources */ = {isa = PBXBuildFile; fileRef = 410CE9821F2846B80048E794 /* custom.html */; };
+		410CE98C1F284EE80048E794 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 410CE98B1F284EE80048E794 /* AppDelegate.m */; };
+		410CE98F1F284EE80048E794 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410CE98E1F284EE80048E794 /* ViewController.m */; };
+		410CE9921F284EE80048E794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410CE9901F284EE80048E794 /* Main.storyboard */; };
+		410CE9951F284EE80048E794 /* YDJavascriptBridge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 410CE9931F284EE80048E794 /* YDJavascriptBridge.xcdatamodeld */; };
+		410CE9971F284EE80048E794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410CE9961F284EE80048E794 /* Assets.xcassets */; };
+		410CE99A1F284EE80048E794 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410CE9981F284EE80048E794 /* LaunchScreen.storyboard */; };
+		410CE99D1F284EE80048E794 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 410CE99C1F284EE80048E794 /* main.m */; };
+		410CE9A31F284F3B0048E794 /* YDJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 410CE9A21F284F3B0048E794 /* YDJavascriptBridge.m */; };
+		410CE9AA1F286AB40048E794 /* bridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 410CE9A91F286AB40048E794 /* bridge.html */; };
 		4113B2F31F1EF8A600EC6D21 /* LYBlockLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F21F1EF8A600EC6D21 /* LYBlockLinkViewController.m */; };
 		4113B2F61F1EF92600EC6D21 /* LYBlockPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F51F1EF92600EC6D21 /* LYBlockPerson.m */; };
 		4113B2F91F1EFA5800EC6D21 /* LYBlockPerson2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F81F1EFA5800EC6D21 /* LYBlockPerson2.m */; };
@@ -283,6 +292,20 @@
 		410CE97F1F2843B30048E794 /* MyCustomCoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCustomCoreViewController.h; sourceTree = "<group>"; };
 		410CE9801F2843B30048E794 /* MyCustomCoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCustomCoreViewController.m; sourceTree = "<group>"; };
 		410CE9821F2846B80048E794 /* custom.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = custom.html; sourceTree = "<group>"; };
+		410CE9881F284EE70048E794 /* YDJavascriptBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDJavascriptBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		410CE98A1F284EE80048E794 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		410CE98B1F284EE80048E794 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		410CE98D1F284EE80048E794 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		410CE98E1F284EE80048E794 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		410CE9911F284EE80048E794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		410CE9941F284EE80048E794 /* YDJavascriptBridge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YDJavascriptBridge.xcdatamodel; sourceTree = "<group>"; };
+		410CE9961F284EE80048E794 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		410CE9991F284EE80048E794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		410CE99B1F284EE80048E794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		410CE99C1F284EE80048E794 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		410CE9A11F284F3B0048E794 /* YDJavascriptBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDJavascriptBridge.h; sourceTree = "<group>"; };
+		410CE9A21F284F3B0048E794 /* YDJavascriptBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDJavascriptBridge.m; sourceTree = "<group>"; };
+		410CE9A91F286AB40048E794 /* bridge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = bridge.html; path = ../../../Desktop/bridge.html; sourceTree = "<group>"; };
 		4113B2F11F1EF8A600EC6D21 /* LYBlockLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockLinkViewController.h; sourceTree = "<group>"; };
 		4113B2F21F1EF8A600EC6D21 /* LYBlockLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBlockLinkViewController.m; sourceTree = "<group>"; };
 		4113B2F41F1EF92600EC6D21 /* LYBlockPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockPerson.h; sourceTree = "<group>"; };
@@ -732,6 +755,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		410CE9851F284EE70048E794 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		413157EF1F25D7610044FC58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -838,6 +868,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		410CE9891F284EE80048E794 /* YDJavascriptBridge */ = {
+			isa = PBXGroup;
+			children = (
+				410CE98A1F284EE80048E794 /* AppDelegate.h */,
+				410CE98B1F284EE80048E794 /* AppDelegate.m */,
+				410CE98D1F284EE80048E794 /* ViewController.h */,
+				410CE98E1F284EE80048E794 /* ViewController.m */,
+				410CE9A91F286AB40048E794 /* bridge.html */,
+				410CE9A11F284F3B0048E794 /* YDJavascriptBridge.h */,
+				410CE9A21F284F3B0048E794 /* YDJavascriptBridge.m */,
+				410CE9901F284EE80048E794 /* Main.storyboard */,
+				410CE9961F284EE80048E794 /* Assets.xcassets */,
+				410CE9981F284EE80048E794 /* LaunchScreen.storyboard */,
+				410CE99B1F284EE80048E794 /* Info.plist */,
+				410CE99C1F284EE80048E794 /* main.m */,
+				410CE9931F284EE80048E794 /* YDJavascriptBridge.xcdatamodeld */,
+			);
+			path = YDJavascriptBridge;
+			sourceTree = "<group>";
+		};
 		4113B2F01F1EF89100EC6D21 /* block_for_link */ = {
 			isa = PBXGroup;
 			children = (
@@ -1021,8 +1071,8 @@
 				41A1360B1F275CF40086D1B8 /* ViewController.m */,
 				410CE97F1F2843B30048E794 /* MyCustomCoreViewController.h */,
 				410CE9801F2843B30048E794 /* MyCustomCoreViewController.m */,
-				410CE9821F2846B80048E794 /* custom.html */,
 				41A1360D1F275CF50086D1B8 /* Main.storyboard */,
+				410CE9821F2846B80048E794 /* custom.html */,
 				41A136131F275CF50086D1B8 /* Assets.xcassets */,
 				41A136151F275CF50086D1B8 /* LaunchScreen.storyboard */,
 				41A136181F275CF50086D1B8 /* Info.plist */,
@@ -1390,6 +1440,7 @@
 				413158141F25F2320044FC58 /* testWKWebView */,
 				413A0D451F26E845000A8F9D /* testJavascriptBrige */,
 				41A136061F275CF40086D1B8 /* testJavascriptCore */,
+				410CE9891F284EE80048E794 /* YDJavascriptBridge */,
 				DC05043A1EBDC45800718AAD /* Products */,
 				7CC4BA5CB8A72D74B687B773 /* Pods */,
 				74B13597549662E119950E0D /* Frameworks */,
@@ -1412,6 +1463,7 @@
 				413158131F25F2320044FC58 /* testWKWebView.app */,
 				413A0D441F26E845000A8F9D /* testJavascriptBrige.app */,
 				41A136051F275CF40086D1B8 /* testJavascriptCore.app */,
+				410CE9881F284EE70048E794 /* YDJavascriptBridge.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2045,6 +2097,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		410CE9871F284EE70048E794 /* YDJavascriptBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 410CE99E1F284EE80048E794 /* Build configuration list for PBXNativeTarget "YDJavascriptBridge" */;
+			buildPhases = (
+				410CE9841F284EE70048E794 /* Sources */,
+				410CE9851F284EE70048E794 /* Frameworks */,
+				410CE9861F284EE70048E794 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YDJavascriptBridge;
+			productName = YDJavascriptBridge;
+			productReference = 410CE9881F284EE70048E794 /* YDJavascriptBridge.app */;
+			productType = "com.apple.product-type.application";
+		};
 		413157F11F25D7610044FC58 /* testUIWebView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4131580A1F25D7610044FC58 /* Build configuration list for PBXNativeTarget "testUIWebView" */;
@@ -2296,6 +2365,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = forest;
 				TargetAttributes = {
+					410CE9871F284EE70048E794 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Manual;
+					};
 					413157F11F25D7610044FC58 = {
 						CreatedOnToolsVersion = 9.0;
 						DevelopmentTeam = D2XBEJ6876;
@@ -2396,11 +2470,23 @@
 				413158121F25F2320044FC58 /* testWKWebView */,
 				413A0D431F26E845000A8F9D /* testJavascriptBrige */,
 				41A136041F275CF40086D1B8 /* testJavascriptCore */,
+				410CE9871F284EE70048E794 /* YDJavascriptBridge */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		410CE9861F284EE70048E794 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				410CE99A1F284EE80048E794 /* LaunchScreen.storyboard in Resources */,
+				410CE9971F284EE80048E794 /* Assets.xcassets in Resources */,
+				410CE9921F284EE80048E794 /* Main.storyboard in Resources */,
+				410CE9AA1F286AB40048E794 /* bridge.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		413157F01F25D7610044FC58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2872,6 +2958,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		410CE9841F284EE70048E794 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				410CE98F1F284EE80048E794 /* ViewController.m in Sources */,
+				410CE9A31F284F3B0048E794 /* YDJavascriptBridge.m in Sources */,
+				410CE98C1F284EE80048E794 /* AppDelegate.m in Sources */,
+				410CE99D1F284EE80048E794 /* main.m in Sources */,
+				410CE9951F284EE80048E794 /* YDJavascriptBridge.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		413157EE1F25D7610044FC58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3155,6 +3253,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		410CE9901F284EE80048E794 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				410CE9911F284EE80048E794 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		410CE9981F284EE80048E794 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				410CE9991F284EE80048E794 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		413157FA1F25D7610044FC58 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -3368,6 +3482,59 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		410CE99F1F284EE80048E794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = YDJavascriptBridge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		410CE9A01F284EE80048E794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = YDJavascriptBridge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		413158081F25D7610044FC58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE97A0B6F1D13E872C40F8A8 /* Pods-testUIWebView.debug.xcconfig */;
@@ -4014,6 +4181,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		410CE99E1F284EE80048E794 /* Build configuration list for PBXNativeTarget "YDJavascriptBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				410CE99F1F284EE80048E794 /* Debug */,
+				410CE9A01F284EE80048E794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		4131580A1F25D7610044FC58 /* Build configuration list for PBXNativeTarget "testUIWebView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -4143,6 +4318,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		410CE9931F284EE80048E794 /* YDJavascriptBridge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				410CE9941F284EE80048E794 /* YDJavascriptBridge.xcdatamodel */,
+			);
+			currentVersion = 410CE9941F284EE80048E794 /* YDJavascriptBridge.xcdatamodel */;
+			path = YDJavascriptBridge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		413157FD1F25D7610044FC58 /* testUIWebView.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
