@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 @class WebViewJavascriptBridge;
+@class YDBluetoothWebView;
 
 @interface YDBluetoothWebViewMgr : NSObject
 
@@ -17,10 +18,11 @@
 
 @property (nonatomic, strong, readonly) NSString *urlString;
 
-@property (nonatomic, strong) WebViewJavascriptBridge *bridge;
-
 
 - (void)loadSerachBlueDatas;
 
+- (void)registerHandler;
+
+- (void)configureWithWebView:(YDBluetoothWebView *)view;
 
 @end

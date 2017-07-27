@@ -22,8 +22,6 @@
 
 @property (nonatomic, strong) YDBluetoothWebView *superWebView;
 
-@property (nonatomic, strong) WebViewJavascriptBridge *bridge;
-
 @property (nonatomic, strong) YDBluetoothWebViewMgr *webViewMgr;
 
 @end
@@ -42,11 +40,11 @@
     _superWebView = [[YDBluetoothWebView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:_superWebView];
     
-    _bridge = [WebViewJavascriptBridge bridgeForWebView:_superWebView.webView];
-    
-//    注册的方法要在加载web之前
+    [_webViewMgr configureWithWebView:_superWebView];
+    [_webViewMgr registerHandler];
+
     _superWebView.requestWithUrl(_webViewMgr.urlString);
-    _webViewMgr.bridge = _bridge;
+    
     [_webViewMgr loadSerachBlueDatas];
 }
 
