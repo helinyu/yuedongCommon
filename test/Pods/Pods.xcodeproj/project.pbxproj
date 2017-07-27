@@ -14,14 +14,16 @@
 		0D5CF00AA1226E3E0E7DD1DD925F76BF /* BabyPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBA5E6A8DDAFEBA5E7DE62501A47599 /* BabyPeripheralManager.m */; };
 		0E200FE98FF1F431E31E2A10801175E8 /* WebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 00C8298A6BAD2A44DE49A41C0C1CF169 /* WebViewJavascriptBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13635B78121B99E5C03C92506A161607 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = F124A2F82075B9CD52555BA1B289955F /* MASViewAttribute.m */; };
+		179F9E3D9CCEF043BF0C18FEE39A4D01 /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 80B2974132FFB442A5C8CE135D1125F3 /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		189089D2CF429C83EA04607BA6D8764B /* BabySpeaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D7D6F5628EF91F4DA1B5028199F5415 /* BabySpeaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B872D1CB88B36B4FBFE0E6E53E19181 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A134C55FC692DCF4EFD446BDF2D23B3 /* NSObject+YYModel.m */; };
 		1D22B873E6F3B2AF8763E9B22DA0780C /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7858E334927E947561EC97B276C11E /* SVProgressHUD.m */; };
 		1ED147695AF859C8C6F425AC2DB4ED3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6E59537F0E8D65558CDF76E1A2C6B6 /* Foundation.framework */; };
 		1F3BD3BC28432BB5E2F73501E06E4579 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F1E8F18CD5144072E925715772EF903 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21A2124B4E1B659FDA078CE149F8E5D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6E59537F0E8D65558CDF76E1A2C6B6 /* Foundation.framework */; };
 		21F329E651E0B72A6E4AC9559C92A1E2 /* BabyRhythm.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF29E9C01A238988D02302C2C7305FD /* BabyRhythm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2297ACEDA23D585B87321C81FF24BD9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6E59537F0E8D65558CDF76E1A2C6B6 /* Foundation.framework */; };
 		24EF7168E0DB3E8F25C4365B8E71BF05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6E59537F0E8D65558CDF76E1A2C6B6 /* Foundation.framework */; };
+		2793C60B5EFB937D3C2A4AE076B7802A /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E8AA26CE266F2703B8CCB5AEBF1C87EC /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BC770C6704FAA5DFF64ACA46690E80C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555482198E9A2F6663759FFA7FD93569 /* WebKit.framework */; };
 		2C6069B9F7A16B143A75C1427229BC57 /* LEBluetooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 707807BB5337CE37E33B5F06E42A2BFC /* LEBluetooth-dummy.m */; };
 		2DBB74B8B5DDB1F621433DD12BF35102 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A9A78E37D3E605985F7AF4E1E8A1EE /* MASViewConstraint.m */; };
@@ -30,10 +32,9 @@
 		3390CB1F052945924F2B8AA5F9ED64C1 /* WebViewJavascriptBridgeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B2F6E29167EB79671772C0F9ED75F49 /* WebViewJavascriptBridgeBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35A207E0F739232EB41D31929662754E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6E59537F0E8D65558CDF76E1A2C6B6 /* Foundation.framework */; };
 		365ECF51859730BDB90C7D3E52D0D825 /* TYTabPagerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE91EEF0B2B099F4F81165C23E10F50 /* TYTabPagerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37200D6120FBB5244BA37F08B14ACD0C /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C9331EA3F7E03A85DD4AAAD64475D3 /* YYModel-dummy.m */; };
 		387BBA10A8F37D7317BD0F10F6BC0B8D /* TYPagerController.h in Headers */ = {isa = PBXBuildFile; fileRef = F0EBBC7C383DD6CD355AFE3C111F2EF7 /* TYPagerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A00AEBE598076363685BD05CA10671A /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 60160AB399B281E5F049502931254AE9 /* YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3AB2909997784C1C476EF6D2A46A437C /* LEBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCAB6484BA37254A6E64664571A12B0 /* LEBluetooth.m */; };
+		3D66412E20F13C2E3FEF838D761CA84F /* Pods-YDBlueTooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9F7FEB9B263D5461F67757B3CDBFB7 /* Pods-YDBlueTooth-dummy.m */; };
 		3E8E6916C563B9CB12AA417275FC6EB3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B50FA264634B667B4043F2BB2B1AC64 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		409D8BD3DEA66BAE858364015D35E9A1 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB002ACDE2ED65F4500F4C9AAE764B3 /* WebViewJavascriptBridgeBase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		450EB0C4EE5E9B3B7C87959341B4DD51 /* Pods-testJavascriptBrige-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C021E98192B02DF3FE879FB4740CEF8 /* Pods-testJavascriptBrige-dummy.m */; };
@@ -50,11 +51,11 @@
 		61CCEA01CBE8EFFA5515E7A0D8635AAE /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0E153F6D742B3E328EFDEB8AC91A44 /* MASCompositeConstraint.m */; };
 		6209E20926D79222E59F58B962BFAA1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E63CC6AE6BB5CB315C817F63ED5B92D /* UIKit.framework */; };
 		6249770A7D163B0F3001D5A76C5FA01C /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 73B758F417B690C9002EA643083F04BC /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6770397EA6E0EC58D63DAF651BB9D3B7 /* Pods-YDBlueTooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9F7FEB9B263D5461F67757B3CDBFB7 /* Pods-YDBlueTooth-dummy.m */; };
+		6726E7A846D6F223CF32DBFB06D82603 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B0C8CAE42158985F41394683C42FD6 /* YYClassInfo.m */; };
 		68216322A1397D13C4672F5BFB6BAE2A /* BabyBluetooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06351F95BCD24C89775566B2B096E2C9 /* BabyBluetooth-dummy.m */; };
+		68522117C7CE6F1ACEE5D6E639AF9981 /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 60160AB399B281E5F049502931254AE9 /* YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		68F98758BA84B8EC3472A8C6FD646D16 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A5664D3A4D3B0EA7073CCE1AF1722D /* Masonry-dummy.m */; };
 		6A54B60AA6D249BCECD3C595B3EE15AE /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = AECC4093A9FEEE44AD316B673B54B10B /* SVIndefiniteAnimatedView.m */; };
-		6ACB26686293FA3913D13D56B5FB830D /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 80B2974132FFB442A5C8CE135D1125F3 /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B0E62C8C4D29EA55A2BE6BA40BCB893 /* TYTabButtonPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1202186CA53168FC6D90B8C49CD672 /* TYTabButtonPagerController.m */; };
 		6CE4FD056B766279243F1A505FF63760 /* Pods-testUIWebView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E17A4FC3DCB9AACA9E036DB05C327D /* Pods-testUIWebView-dummy.m */; };
 		6E30295EEDAB51C6E626A80446C92C18 /* BabyBluetooth.h in Headers */ = {isa = PBXBuildFile; fileRef = D711E64204178F9743C14680C967AD7E /* BabyBluetooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -62,7 +63,9 @@
 		7681427B4B48831724D10EF4B8174927 /* BabyDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C30DD450C2C222452025AFC88F91463 /* BabyDefine.m */; };
 		77C5D44074B103227B0849026A7EE414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6E59537F0E8D65558CDF76E1A2C6B6 /* Foundation.framework */; };
 		78B3B735F7459684CA85D44D31153FA1 /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = 02078E1A4EB52730AA92E18DCBB70944 /* BabyRhythm.m */; };
+		7A2B04AD802998A56F18D974DB9DD94F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD8C0369E9D990432104CFD5B4F84A2 /* CoreFoundation.framework */; };
 		7BDDE51AF16FA53A09506EDB91E1C3C2 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 475554BA6C66C1E8F74A9578F2D23EFC /* NSArray+MASAdditions.m */; };
+		8020F70ED00472CCF4F3716FE02E0794 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6E59537F0E8D65558CDF76E1A2C6B6 /* Foundation.framework */; };
 		823DA3ACD9F2AA61FEB41205C435E016 /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D39EEC5A09BC8D5E226EEA90F492D41 /* BabyCallback.m */; };
 		86EE1CB5473A4A07081D8DE3A2C45924 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 357DDDC6155E99C60C2984DDB2128AE0 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89450A58FD91E5B227171FC75160E4EA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7FE4A0FBC626BF4D559F53A1853396 /* MASConstraint.m */; };
@@ -72,22 +75,19 @@
 		963CB571CEA83FA7955D9B59B1CA9EBA /* TYTabTitleCellProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FCD7F108A4CAA30931502FEFCBBF15A2 /* TYTabTitleCellProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		983CB852CBBFBC04C2A6BA407E34F59B /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4236E723AE33F8DD81C7D243C824A095 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9934AEA2C891C201D8ED5746FF42FE1B /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 48F01830847389ED1A26705400769B0D /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A07EED3B4601C5A0B9D35EC45F298B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6E59537F0E8D65558CDF76E1A2C6B6 /* Foundation.framework */; };
 		9E04FE905B073BFF2B039ACFBC2126B1 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE007D74D65C65DCD9F9F9E21D300A7 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1FA046FDFC42676D17FEC387B10D24A /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E70B0890B01410867214806670354 /* View+MASAdditions.m */; };
 		A2A2384846F2B0339E6C7E4ACCACDC0E /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7A7C5A0F8E136F8CFBEACBF5187C5 /* BabyBluetooth.m */; };
 		A357C49D39B2682FC57B9B4407BF605D /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = A504A342F221920E5B8671534F444A92 /* BabyToy.m */; };
 		A4DBD75BED7EEBD60C79F0A3402398B8 /* WebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ACEDD148DB6D0B140FED2C6166CDCD /* WebViewJavascriptBridge_JS.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A6436E3CFFCBFE591E2D2A68ED90CAC6 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 511855B4E0369A949654A5AD8C22ED02 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6A60ECE50DD30FF35660850BADE2DF4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD8C0369E9D990432104CFD5B4F84A2 /* CoreFoundation.framework */; };
 		A7882DD407DB691429D09654F4AAF4BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6E59537F0E8D65558CDF76E1A2C6B6 /* Foundation.framework */; };
 		A83991D7C1373DF66020C2FDFC5D7564 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C4EDF76AB56104ABF3495915E882E4A /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A85DB5A84B4C8174A8228B1C1B7DF002 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6E59537F0E8D65558CDF76E1A2C6B6 /* Foundation.framework */; };
 		AE2282F85234AA26C55B139971B7FA3E /* WebViewJavascriptBridge_JS.h in Headers */ = {isa = PBXBuildFile; fileRef = 43CFBC4F8B0F9F3350B02D5581EEAB48 /* WebViewJavascriptBridge_JS.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		AEE6480FBDBDE7142B2D8C29CC55644B /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E8AA26CE266F2703B8CCB5AEBF1C87EC /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B196CCFB24A881C713887514003132F1 /* TYTabTitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8444FAA9E1ED2EC0C55FCB9EBA166F /* TYTabTitleViewCell.m */; };
 		B523AAF00911DDD05B53DA8E66F64CC0 /* Pods-test_babyBlueTooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B3B534F25B682876DEC5332F590A5 /* Pods-test_babyBlueTooth-dummy.m */; };
-		C3725EFD5D6C499E2ADCFB1805FE4B32 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B0C8CAE42158985F41394683C42FD6 /* YYClassInfo.m */; };
+		C1C79A253AA1ACC3DBE7FD2121C6FAB9 /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C9331EA3F7E03A85DD4AAAD64475D3 /* YYModel-dummy.m */; };
 		C39EB7AB2744FF9826F3CBD1D85AD649 /* BabyCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B92871D544423510A32C1D30E6F6BD7 /* BabyCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C88F85D3200060BD98FC13EA58121706 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 80A73B8E64E02DC06DBAB44A7A1FE70A /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB46BDD2F505FD4C0BC3A3D212238A55 /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC691932C59462E75C45B9AF30C17B5 /* BabySpeaker.m */; };
@@ -111,13 +111,20 @@
 		EDA91C481F2FF4F04515485E42931320 /* TYTabPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B607C27910B8A1D1AE1A2660F70D6F3 /* TYTabPagerController.m */; };
 		F0B56A7D38A399A2F67F9920C9526A66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6E59537F0E8D65558CDF76E1A2C6B6 /* Foundation.framework */; };
 		F1F5EC682076627134D77BC79AC7B8D5 /* BabyOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 504CCC364EAA9D686A41A883BAFF43EB /* BabyOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5007DDA7C59D510CE417EFFCF131BD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6E59537F0E8D65558CDF76E1A2C6B6 /* Foundation.framework */; };
+		F40A4729285A5B3AB6696CFAFC212E30 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A134C55FC692DCF4EFD446BDF2D23B3 /* NSObject+YYModel.m */; };
 		F56E16C7EDCA64F2E8A5F360DA5CC87F /* Pods-testVision-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A609CA85A6958F78D6A0BB0B812A8CB1 /* Pods-testVision-dummy.m */; };
 		FA63BB649D48A7DABAA6E292FC2EB53B /* LEBluetooth.h in Headers */ = {isa = PBXBuildFile; fileRef = D8245F8424088D408A0BE9483345B427 /* LEBluetooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF594D4FD2E49C9BBE06AE9906A39C6F /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 874AF1AF8A1E2FAE1DBC674FCBBDF240 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		216A36E8F8CC8C9CA866C638EC3928B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D720ADB05002B2219C5CAFB2262CCAA9;
+			remoteInfo = WebViewJavascriptBridge;
+		};
 		2300D9C9746C6E132FDD8F1A3B6080DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -131,6 +138,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = B35CB295C1DF6B318D4EC0A99AD1982D;
 			remoteInfo = BabyBluetooth;
+		};
+		4CD8EB88E92D8E01150771499AE0BD49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B35CB295C1DF6B318D4EC0A99AD1982D;
+			remoteInfo = BabyBluetooth;
+		};
+		50DC1ECDD5D14D96A222D223A04D14A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D82D18115CB1211322FE7BF0C3B60CE;
+			remoteInfo = YYModel;
 		};
 		5E3207DF344B1D58ACC5D4B2D8380014 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -146,6 +167,13 @@
 			remoteGlobalIDString = F85B103DBDDD7D8BE954A21A58D7A7D2;
 			remoteInfo = TYPagerController;
 		};
+		868BDEB9ECBE9D1D38E88408E02A9789 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DC8D9E02903E93BD0B2FEC9D846EA20;
+			remoteInfo = Masonry;
+		};
 		9230E0E9FD3C2E6ECD960AA2568BEB06 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -160,21 +188,14 @@
 			remoteGlobalIDString = 1ECA97D5684FE1B3573F6BAB87758692;
 			remoteInfo = SVProgressHUD;
 		};
-		9CE6227C2EFA17C5DB3E70E918B8B992 /* PBXContainerItemProxy */ = {
+		967CC9E7B8B6BDBA4BCF8EC008288BA1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9DC8D9E02903E93BD0B2FEC9D846EA20;
-			remoteInfo = Masonry;
+			remoteGlobalIDString = 1ECA97D5684FE1B3573F6BAB87758692;
+			remoteInfo = SVProgressHUD;
 		};
 		AD0841F35B377D6E251603CD955EF66D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B35CB295C1DF6B318D4EC0A99AD1982D;
-			remoteInfo = BabyBluetooth;
-		};
-		B66B4210D048C03609A6AD5286689C2F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -187,13 +208,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = B35CB295C1DF6B318D4EC0A99AD1982D;
 			remoteInfo = BabyBluetooth;
-		};
-		D269DFDA2CA17E8ABFFDA11024F3CE0E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1ECA97D5684FE1B3573F6BAB87758692;
-			remoteInfo = SVProgressHUD;
 		};
 		DD77E95788F70369E561A922A49D2A1A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -208,13 +222,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1ECA97D5684FE1B3573F6BAB87758692;
 			remoteInfo = SVProgressHUD;
-		};
-		F53F08CD8B33544EBFB33433C88FFBEF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EBCE7966A85C4F5B500CC3BA0675BFDC;
-			remoteInfo = YYModel;
 		};
 		FCE36B0B4A499ED50DE27DF9F09F3062 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -469,6 +476,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		06EFB6C1BFB88DF57B6010EBF961E8FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8020F70ED00472CCF4F3716FE02E0794 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0E42C4E388217EE84479BC4F8C5B8237 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -484,14 +499,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A85DB5A84B4C8174A8228B1C1B7DF002 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		577D139285C0965C43ED85DC84C77BC8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F5007DDA7C59D510CE417EFFCF131BD5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,20 +559,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A58EB79ABADFE43DA1DA8D8991649734 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A6A60ECE50DD30FF35660850BADE2DF4 /* CoreFoundation.framework in Frameworks */,
-				9A07EED3B4601C5A0B9D35EC45F298B0 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D6F6328F05AF5AF1C186DE23DD65E29F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EC1206D32518125B60D3DC2DA29107D0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC63752582C06A808DF03383A74C50E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A2B04AD802998A56F18D974DB9DD94F /* CoreFoundation.framework in Frameworks */,
+				21A2124B4E1B659FDA078CE149F8E5D1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1182,16 +1189,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4EE627DC35ACC595555404DEAAD289E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AEE6480FBDBDE7142B2D8C29CC55644B /* NSObject+YYModel.h in Headers */,
-				6ACB26686293FA3913D13D56B5FB830D /* YYClassInfo.h in Headers */,
-				3A00AEBE598076363685BD05CA10671A /* YYModel.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B27DAB9B549685D8B6DDF5C08EC0390E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1241,6 +1238,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB59CE8005177C3869F2BCE788C74593 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2793C60B5EFB937D3C2A4AE076B7802A /* NSObject+YYModel.h in Headers */,
+				179F9E3D9CCEF043BF0C18FEE39A4D01 /* YYClassInfo.h in Headers */,
+				68522117C7CE6F1ACEE5D6E639AF9981 /* YYModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -1279,20 +1286,21 @@
 			productReference = C33D03CEBAC494EBE322F8CE5CA05ACF /* libSVProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		6F1308321E22EE9658B09A8C0D237B20 /* Pods-YDBlueTooth */ = {
+		44FC3990F74030A8C749740DC1A53A21 /* Pods-YDBlueTooth */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AE0E3EAB0CB5E1E1BB5D3B1D6AFD7B5 /* Build configuration list for PBXNativeTarget "Pods-YDBlueTooth" */;
+			buildConfigurationList = 2EFC105A1A7B74E4520F5431F5DAA545 /* Build configuration list for PBXNativeTarget "Pods-YDBlueTooth" */;
 			buildPhases = (
-				99D8EDCC659CDA4CA2615A4ED3BF7361 /* Sources */,
-				577D139285C0965C43ED85DC84C77BC8 /* Frameworks */,
+				67B5F8834CA903BFF43E25B56A1B41E6 /* Sources */,
+				06EFB6C1BFB88DF57B6010EBF961E8FE /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				12690629280A65D219FFF8F60949AFD9 /* PBXTargetDependency */,
-				C62550E1E99D0C83986FF98783F3C117 /* PBXTargetDependency */,
-				D16F54FDA0FB0F642140B5623ACEABDE /* PBXTargetDependency */,
-				52B539BBEFA07AAB6171FCABD13C05C3 /* PBXTargetDependency */,
+				3D59C19D7C12B50CFF24AA9653B02046 /* PBXTargetDependency */,
+				0BB968EE46DFC51DE0F4B2512C7E8D14 /* PBXTargetDependency */,
+				5AFB68A5EA84683F7DA0A66BCF365F5F /* PBXTargetDependency */,
+				16C7EBED6F85D82E2D965BBD6132525B /* PBXTargetDependency */,
+				60A121CEF01995CFD5406FBA27169010 /* PBXTargetDependency */,
 			);
 			name = "Pods-YDBlueTooth";
 			productName = "Pods-YDBlueTooth";
@@ -1350,6 +1358,23 @@
 			name = "Pods-testJavascriptBrige";
 			productName = "Pods-testJavascriptBrige";
 			productReference = 8C607D72958BBB10017F77DD125CB614 /* libPods-testJavascriptBrige.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9D82D18115CB1211322FE7BF0C3B60CE /* YYModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 550A41C0EDDA0A917470EC723F76774C /* Build configuration list for PBXNativeTarget "YYModel" */;
+			buildPhases = (
+				5BA2F4E0C30BED0B9B367B0AF96440BC /* Sources */,
+				DAC63752582C06A808DF03383A74C50E /* Frameworks */,
+				DB59CE8005177C3869F2BCE788C74593 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYModel;
+			productName = YYModel;
+			productReference = CA80BE6C4942E28F07618BA72CFD75AC /* libYYModel.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */ = {
@@ -1437,23 +1462,6 @@
 			productReference = 715BDEC3DA8A4F1BD058D3822BD32637 /* libPods-testJavascriptCore.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		EBCE7966A85C4F5B500CC3BA0675BFDC /* YYModel */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0C7396A503E418C0D3182E46B65C9C99 /* Build configuration list for PBXNativeTarget "YYModel" */;
-			buildPhases = (
-				3E2D8611C212D7F40EAFCBB885E39A40 /* Sources */,
-				A58EB79ABADFE43DA1DA8D8991649734 /* Frameworks */,
-				A4EE627DC35ACC595555404DEAAD289E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = YYModel;
-			productName = YYModel;
-			productReference = CA80BE6C4942E28F07618BA72CFD75AC /* libYYModel.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		F85B103DBDDD7D8BE954A21A58D7A7D2 /* TYPagerController */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B21731196FE6EE70955582C2DB08E7B /* Build configuration list for PBXNativeTarget "TYPagerController" */;
@@ -1520,11 +1528,11 @@
 				E3859AE1F3DA125C9EFA18452294CDA8 /* Pods-testJavascriptCore */,
 				7A9C8B7749F87F724159AAFE51B73402 /* Pods-testUIWebView */,
 				D759AC436C31E7E1B603469FA295FC03 /* Pods-testVision */,
-				6F1308321E22EE9658B09A8C0D237B20 /* Pods-YDBlueTooth */,
+				44FC3990F74030A8C749740DC1A53A21 /* Pods-YDBlueTooth */,
 				1ECA97D5684FE1B3573F6BAB87758692 /* SVProgressHUD */,
 				F85B103DBDDD7D8BE954A21A58D7A7D2 /* TYPagerController */,
 				D720ADB05002B2219C5CAFB2262CCAA9 /* WebViewJavascriptBridge */,
-				EBCE7966A85C4F5B500CC3BA0675BFDC /* YYModel */,
+				9D82D18115CB1211322FE7BF0C3B60CE /* YYModel */,
 			);
 		};
 /* End PBXProject section */
@@ -1547,16 +1555,6 @@
 				A4DBD75BED7EEBD60C79F0A3402398B8 /* WebViewJavascriptBridge_JS.m in Sources */,
 				409D8BD3DEA66BAE858364015D35E9A1 /* WebViewJavascriptBridgeBase.m in Sources */,
 				5807CB86FBB3004CC32C3B71C92DE0DD /* WKWebViewJavascriptBridge.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E2D8611C212D7F40EAFCBB885E39A40 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1B872D1CB88B36B4FBFE0E6E53E19181 /* NSObject+YYModel.m in Sources */,
-				C3725EFD5D6C499E2ADCFB1805FE4B32 /* YYClassInfo.m in Sources */,
-				37200D6120FBB5244BA37F08B14ACD0C /* YYModel-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1588,6 +1586,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5BA2F4E0C30BED0B9B367B0AF96440BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40A4729285A5B3AB6696CFAFC212E30 /* NSObject+YYModel.m in Sources */,
+				6726E7A846D6F223CF32DBFB06D82603 /* YYClassInfo.m in Sources */,
+				C1C79A253AA1ACC3DBE7FD2121C6FAB9 /* YYModel-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B5F8834CA903BFF43E25B56A1B41E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D66412E20F13C2E3FEF838D761CA84F /* Pods-YDBlueTooth-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		757E76A623CA8DDAA8CB74BC5C400EDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1601,14 +1617,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CE4FD056B766279243F1A505FF63760 /* Pods-testUIWebView-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99D8EDCC659CDA4CA2615A4ED3BF7361 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6770397EA6E0EC58D63DAF651BB9D3B7 /* Pods-YDBlueTooth-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1679,11 +1687,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		12690629280A65D219FFF8F60949AFD9 /* PBXTargetDependency */ = {
+		0BB968EE46DFC51DE0F4B2512C7E8D14 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = BabyBluetooth;
-			target = B35CB295C1DF6B318D4EC0A99AD1982D /* BabyBluetooth */;
-			targetProxy = B66B4210D048C03609A6AD5286689C2F /* PBXContainerItemProxy */;
+			name = Masonry;
+			target = 9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */;
+			targetProxy = 868BDEB9ECBE9D1D38E88408E02A9789 /* PBXContainerItemProxy */;
+		};
+		16C7EBED6F85D82E2D965BBD6132525B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WebViewJavascriptBridge;
+			target = D720ADB05002B2219C5CAFB2262CCAA9 /* WebViewJavascriptBridge */;
+			targetProxy = 216A36E8F8CC8C9CA866C638EC3928B7 /* PBXContainerItemProxy */;
 		};
 		38B7D1ED61EBD031604BAE26A1425187 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1691,17 +1705,29 @@
 			target = B35CB295C1DF6B318D4EC0A99AD1982D /* BabyBluetooth */;
 			targetProxy = 4BE17CF60EDA3DA249DB61E76C4545A6 /* PBXContainerItemProxy */;
 		};
+		3D59C19D7C12B50CFF24AA9653B02046 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BabyBluetooth;
+			target = B35CB295C1DF6B318D4EC0A99AD1982D /* BabyBluetooth */;
+			targetProxy = 4CD8EB88E92D8E01150771499AE0BD49 /* PBXContainerItemProxy */;
+		};
 		40650B5E05B0C2E33B94D6223C0D6C01 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
 			target = 9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */;
 			targetProxy = FCE36B0B4A499ED50DE27DF9F09F3062 /* PBXContainerItemProxy */;
 		};
-		52B539BBEFA07AAB6171FCABD13C05C3 /* PBXTargetDependency */ = {
+		5AFB68A5EA84683F7DA0A66BCF365F5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 1ECA97D5684FE1B3573F6BAB87758692 /* SVProgressHUD */;
+			targetProxy = 967CC9E7B8B6BDBA4BCF8EC008288BA1 /* PBXContainerItemProxy */;
+		};
+		60A121CEF01995CFD5406FBA27169010 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = YYModel;
-			target = EBCE7966A85C4F5B500CC3BA0675BFDC /* YYModel */;
-			targetProxy = F53F08CD8B33544EBFB33433C88FFBEF /* PBXContainerItemProxy */;
+			target = 9D82D18115CB1211322FE7BF0C3B60CE /* YYModel */;
+			targetProxy = 50DC1ECDD5D14D96A222D223A04D14A7 /* PBXContainerItemProxy */;
 		};
 		8495F90ED3A76F26B49634F62481257C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1733,23 +1759,11 @@
 			target = 1ECA97D5684FE1B3573F6BAB87758692 /* SVProgressHUD */;
 			targetProxy = 95A7DA42EF4EC5952775C035FBC2B12B /* PBXContainerItemProxy */;
 		};
-		C62550E1E99D0C83986FF98783F3C117 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Masonry;
-			target = 9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */;
-			targetProxy = 9CE6227C2EFA17C5DB3E70E918B8B992 /* PBXContainerItemProxy */;
-		};
 		C793964CB4CBB03D37E23863A8129681 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
 			target = 9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */;
 			targetProxy = 5E3207DF344B1D58ACC5D4B2D8380014 /* PBXContainerItemProxy */;
-		};
-		D16F54FDA0FB0F642140B5623ACEABDE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SVProgressHUD;
-			target = 1ECA97D5684FE1B3573F6BAB87758692 /* SVProgressHUD */;
-			targetProxy = D269DFDA2CA17E8ABFFDA11024F3CE0E /* PBXContainerItemProxy */;
 		};
 		E013EDAFD7AE8BE4F6D3CC74F7551A47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1794,29 +1808,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
-		};
-		21F25B0A0A300515CAAB22BEA707BBC7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3F6FA5F0CA8BFFDC1F7556B7A718641 /* Pods-YDBlueTooth.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
 		};
 		2DDD0C8CBC86992104DB384D6F922440 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2000,29 +1991,6 @@
 			};
 			name = Release;
 		};
-		5507186385BCFF8C31D59DD0C7144666 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C829E02331D9AB4B3376AF0A1BF61A43 /* YYModel.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		587B8ECC28E3A9FF4796C121925DC113 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2116,52 +2084,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
-		};
-		613833B0D8B078A43035461F96AA2902 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 815CE65CB8374D611740B80656E3A794 /* Pods-YDBlueTooth.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		6183E7D5073C235FF15E1FFDF29F81A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C829E02331D9AB4B3376AF0A1BF61A43 /* YYModel.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
 		};
 		6CA42F62CE0652819ED46936FE31E065 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2278,6 +2200,29 @@
 			};
 			name = Debug;
 		};
+		8DD2164AE992CA83CAAD42A9E16DB4FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3F6FA5F0CA8BFFDC1F7556B7A718641 /* Pods-YDBlueTooth.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		9ADB615E118D5BE6F3DBCA4E6382B410 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E2435F14519DD011E552911ED233FD89 /* Pods-testJavascriptBrige.debug.xcconfig */;
@@ -2393,6 +2338,52 @@
 			};
 			name = Debug;
 		};
+		C7388E311F4E87EBEB74918CF8820553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C829E02331D9AB4B3376AF0A1BF61A43 /* YYModel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C792CE87B961C9FE1F00DA2FC6204C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 815CE65CB8374D611740B80656E3A794 /* Pods-YDBlueTooth.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		D6F3BE1BE9CB652584D41547DBF67D48 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B529EB7FCF5ECA856A17216DCD8804CF /* Pods-test_babyBlueTooth.release.xcconfig */;
@@ -2485,6 +2476,29 @@
 			};
 			name = Release;
 		};
+		F32FADA20669E9792DE6B6854524CEF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C829E02331D9AB4B3376AF0A1BF61A43 /* YYModel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		FB5494A6CFA45F64E85F1BC227143F07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 112F612A36B70DD48DB0FD436F17A0F8 /* Pods-test_babyBlueTooth.debug.xcconfig */;
@@ -2511,15 +2525,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C7396A503E418C0D3182E46B65C9C99 /* Build configuration list for PBXNativeTarget "YYModel" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6183E7D5073C235FF15E1FFDF29F81A3 /* Debug */,
-				5507186385BCFF8C31D59DD0C7144666 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		1B21731196FE6EE70955582C2DB08E7B /* Build configuration list for PBXNativeTarget "TYPagerController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2543,6 +2548,15 @@
 			buildConfigurations = (
 				587B8ECC28E3A9FF4796C121925DC113 /* Debug */,
 				3890D7C92DE120C2BA762135796CFA80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EFC105A1A7B74E4520F5431F5DAA545 /* Build configuration list for PBXNativeTarget "Pods-YDBlueTooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C792CE87B961C9FE1F00DA2FC6204C2C /* Debug */,
+				8DD2164AE992CA83CAAD42A9E16DB4FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2574,20 +2588,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		550A41C0EDDA0A917470EC723F76774C /* Build configuration list for PBXNativeTarget "YYModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32FADA20669E9792DE6B6854524CEF0 /* Debug */,
+				C7388E311F4E87EBEB74918CF8820553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		554EC5BDAE1EAB3D76E623235E915009 /* Build configuration list for PBXNativeTarget "Pods-test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				81BC20C3C037497FB1C9BA7F0D5BB26B /* Debug */,
 				482ED0604BD9B7F11A10D0640AD6EC7D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6AE0E3EAB0CB5E1E1BB5D3B1D6AFD7B5 /* Build configuration list for PBXNativeTarget "Pods-YDBlueTooth" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				613833B0D8B078A43035461F96AA2902 /* Debug */,
-				21F25B0A0A300515CAAB22BEA707BBC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
