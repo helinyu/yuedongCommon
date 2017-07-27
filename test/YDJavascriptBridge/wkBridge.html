@@ -18,19 +18,29 @@
     }
     
     function func(label, param) {
-        document.getElementById('msg').innerHTML = label;
-        var aa = window.webkit.messageHandlers[label];
-        aa.postMessage(param);
+        var str= navigator.userAgent.toLowerCase();
+        var ver=str.match(/cpu iphone os (.*?) like mac os/);
+        var verNum = ver[1].replace(/_/g,".");
+        
+        if (verNum >= 8.0) {
+            document.getElementById('version').innerHTML = verNum;
+            document.getElementById('msg').innerHTML = label;
+            var aa = window.webkit.messageHandlers[label];
+            aa.postMessage(param);
+        }else{
+            document.getElementById('version').innerHTML = verNum;
+            label();
+        }
     }
     
     function btnClick() {
         func('showName', 'xaio huang');
     }
     
-     
     </script>
     </head>
     <body>
+        <div id="version"></div>
         <div id="msg"></div>
         <div>
             <button class="btn" type="button" onclick="btnClick()">js 调用oc</button>
