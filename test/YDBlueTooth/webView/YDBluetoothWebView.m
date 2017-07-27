@@ -17,6 +17,8 @@
 @property (nonatomic, strong) WKWebView *hwebView; // high version webview which use in ios 8 and greater
 @property (nonatomic, strong, readwrite) id webView;
 
+@property (nonatomic, strong, readwrite) NSString *urlString;
+
 @end
 
 @implementation YDBluetoothWebView
@@ -33,7 +35,7 @@
 - (void)comInit {
     if ([YDSystem isGreaterOrEqualThen8]) {
         _hwebView = [[WKWebView alloc] initWithFrame:self.bounds];
-        _hwebView = _hwebView;
+        _webView = _hwebView;
         _hwebView.backgroundColor = [UIColor redColor];
         _hwebView.navigationDelegate = self;
         _hwebView.UIDelegate = self;

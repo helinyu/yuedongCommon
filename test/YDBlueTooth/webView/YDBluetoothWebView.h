@@ -10,6 +10,11 @@
 @class UIWebView;
 @class WKWebView;
 
+typedef NS_ENUM(NSInteger, YDUrlStringType) {
+    YDUrlStringTypelocal = 0,                         // no button type
+    YDUrlStringTypeServer = 0,                         // no button type
+};
+
 @interface YDBluetoothWebView : UIView
 
 @property (nonatomic, strong, readonly) id webView;

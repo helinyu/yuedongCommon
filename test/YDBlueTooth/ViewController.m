@@ -19,6 +19,7 @@
 //s3 by babybluetooth
 #import "YDS3ViewController.h"
 #import "YDBlueToothWebViewController.h"
+#import "YDBluetoothWebViewMgr.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -149,7 +150,10 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
 
 - (void)onWebInteractiveClicked {
     _mgr.stopScan();
-    YDBlueToothWebViewController *vc = [YDBlueToothWebViewController new].webUrl(@"https://m.baidu.com").webTittle(@"百度");
+    YDBluetoothWebViewMgr *webViewMgr = [YDBluetoothWebViewMgr shared];
+    webViewMgr.webUrl(@"index.html");
+    YDBlueToothWebViewController *vc = [YDBlueToothWebViewController new];
+    vc.webViewMgr = webViewMgr;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

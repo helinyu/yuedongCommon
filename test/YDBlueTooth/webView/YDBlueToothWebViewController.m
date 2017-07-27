@@ -14,7 +14,6 @@
 #import "YDSystem.h"
 #import "YDBluetoothWebViewMgr.h"
 
-
 @interface YDBlueToothWebViewController ()
 
 //mark -- nomal attribute
@@ -47,10 +46,14 @@
         _bridge = [WebViewJavascriptBridge bridgeForWebView:_superWebView.lwebView];
     }
     
+    [_bridge registerHandler:@"register matheth" handler:^(id data, WVJBResponseCallback responseCallback) {
+        NSLog(@"register handler datas");
+    }];
+    
 //    注册的方法要在加载web之前
-    
-    _superWebView.requestWithUrl(@"index.html");
-    
+    _superWebView.requestWithUrl(_webViewMgr.urlString);
+    _webViewMgr.bridge = _bridge;
+    [_webViewMgr loadSerachBlueDatas];
 }
 
 - (BOOL)prefersStatusBarHidden {
@@ -68,17 +71,7 @@
 #pragma mark -- custom methods
 
 #pragma mark - convert the attribute for vc by block
-- (YDBlueToothWebViewController *(^)(NSString *urlString))webUrl {
-    __weak typeof (self) wSelf = self;
-    return ^(NSString *urlString){
-        if (urlString.length > 0) {
-            NSString *linkUrlString = urlString; 
-            // configure the whole by the host url
-            wSelf.url = [NSURL URLWithString:linkUrlString];
-        }
-        return self;
-    };
-}
+
 
 - (YDBlueToothWebViewController *(^)(NSString *titleString))webTittle {
     __weak typeof (self) wSelf = self;

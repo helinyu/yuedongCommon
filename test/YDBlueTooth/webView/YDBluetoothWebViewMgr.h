@@ -7,7 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+@class WebViewJavascriptBridge;
 
 @interface YDBluetoothWebViewMgr : NSObject
+
++ (instancetype)shared;
+
+- (YDBluetoothWebViewMgr *(^)(NSString *urlString))webUrl;
+
+@property (nonatomic, strong, readonly) NSString *urlString;
+
+@property (nonatomic, strong) WebViewJavascriptBridge *bridge;
+
+
+- (void)loadSerachBlueDatas;
+
 
 @end

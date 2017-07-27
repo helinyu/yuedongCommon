@@ -67,8 +67,8 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
         if (!hasStored) {
             [wSelf.peripherals addObject:peripheral];
             NSLog(@"find peripheral name is : %@",peripheral.name);
+            !wSelf.scanCallBack?:wSelf.scanCallBack(wSelf.peripherals);
         }
-        !wSelf.scanCallBack?:wSelf.scanCallBack(wSelf.peripherals);
     }];
     
    [_bluetooth setFilterOnDiscoverPeripherals:^BOOL(NSString *peripheralName, NSDictionary *advertisementData, NSNumber *RSSI) {

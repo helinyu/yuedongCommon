@@ -14,6 +14,7 @@
             log('window.onerror: ' + err)
         }
     
+// 固定的模块
     function setupWebViewJavascriptBridge(callback) {
         if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
         if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
@@ -24,7 +25,9 @@
         document.documentElement.appendChild(WVJBIframe);
         setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
     }
-    
+
+
+// 这里调用
     setupWebViewJavascriptBridge(function(bridge) {
                                  var uniqueId = 1
                                  function log(message, data) {
@@ -36,15 +39,16 @@
                                  else { log.appendChild(el) }
                                  }
                                  
-                                 bridge.registerHandler('testJavascriptHandler', function(data, responseCallback) {
+                                 // 注册方法名给调用
+                                 bridge.registerHandler('onperipheral', function(data, responseCallback) {
                                                         log('ObjC called testJavascriptHandler with', data)
-                                                        var responseData = { 'Javascript Says':'Right back atcha!' }
+                                                        var responseData = { 'name':'revue '+data }
                                                         log('JS responding with', responseData)
                                                         responseCallback(responseData)
                                                         })
-                                 
+                               
+                                 // 这里是自定义逻辑，也就是html的页面展示
                                  document.body.appendChild(document.createElement('br'))
-                                 
                                  var callbackButton = document.getElementById('buttons').appendChild(document.createElement('button'))
                                  callbackButton.innerHTML = 'Fire testObjcCallback'
                                  callbackButton.onclick = function(e) {
@@ -54,8 +58,13 @@
                                                     log('JS got response', response)
                                                     })
                                  }
-                                 })
+          })
+          
+          function onperipheral(name) {
+          }
         </script>
-    <div id='buttons'></div> <div id='log'></div>
+    <div id='buttons'></div>
+    <div id='log'></div>
+
 </body></html>
 

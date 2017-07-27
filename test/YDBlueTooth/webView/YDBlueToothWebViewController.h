@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class YDBluetoothWebViewMgr;
 
 @interface YDBlueToothWebViewController : UIViewController
 
-- (YDBlueToothWebViewController *(^)(NSString *urlString))webUrl;
+@property (nonatomic, strong) YDBluetoothWebViewMgr *webViewMgr;
+
 - (YDBlueToothWebViewController *(^)(NSString *titleString))webTittle;
 
 @end
