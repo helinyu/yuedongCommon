@@ -1,5 +1,5 @@
 //
-//  YDBluetoothWebView.m
+//  YDBluetoothwebView.m
 //  YDBlueTooth
 //
 //  Created by Aka on 2017/7/21.
@@ -14,8 +14,8 @@
 
 //mark -- UI
 @property (nonatomic, strong) UIWebView *lwebView;
-@property (nonatomic, strong) WKWebView *hWebView; // high version webview which use in ios 8 and greater
-@property (nonatomic, strong) id webView;
+@property (nonatomic, strong) WKWebView *hwebView; // high version webview which use in ios 8 and greater
+@property (nonatomic, strong, readwrite) id webView;
 
 @end
 
@@ -32,12 +32,12 @@
 
 - (void)comInit {
     if ([YDSystem isGreaterOrEqualThen8]) {
-        _hWebView = [[WKWebView alloc] initWithFrame:self.bounds];
-        _webView = _hWebView;
-        _hWebView.backgroundColor = [UIColor redColor];
-        _hWebView.navigationDelegate = self;
-        _hWebView.UIDelegate = self;
-        [self addSubview:_hWebView];
+        _hwebView = [[WKWebView alloc] initWithFrame:self.bounds];
+        _hwebView = _hwebView;
+        _hwebView.backgroundColor = [UIColor redColor];
+        _hwebView.navigationDelegate = self;
+        _hwebView.UIDelegate = self;
+        [self addSubview:_hwebView];
     }else{
         _lwebView = [[UIWebView alloc] initWithFrame:self.bounds];
         _webView = _lwebView;
@@ -60,12 +60,17 @@
     }
 }
 
-- (YDBluetoothWebView *(^)(NSURL *url))requestWithUrl {
+- (YDBluetoothWebView *(^)(NSString *urlString))requestWithUrl {
     __weak typeof (self) wSelf = self;
-    return ^(NSURL *url) {
+    return ^(NSString *urlString) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            [wSelf.webView performSelectorOnMainThread:@selector(loadRequest:) withObject:[NSURLRequest requestWithURL:url] waitUntilDone:YES];
-//                [wSelf.webView loadRequest:[NSURLRequest requestWithURL:url]];
+            NSString *filePath = [[NSBundle mainBundle] pathForResource:urlString ofType:nil];
+            NSURL *baseURL = [[NSBundle mainBundle] bundleURL];
+            if ([YDSystem isGreaterOrEqualThen8]) {
+                [wSelf.hwebView loadHTMLString:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil] baseURL:baseURL];
+            }else{
+                [wSelf.lwebView loadHTMLString:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil] baseURL:baseURL];
+            }
         });
         return self;
     };
@@ -90,83 +95,6 @@
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
     NSLog(@"didFailLoadWithError");
 }
-
-#pragma mark -- WKUIDelegate
-
-//- (nullable WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures {
-//
-//}
-
-- (void)webViewDidClose:(WKWebView *)webView API_AVAILABLE(macosx(10.11), ios(9.0)) {
-    
-}
-
-- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
-    
-}
-
-- (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler {
-    
-}
-
-- (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(nullable NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * _Nullable result))completionHandler {
-    
-}
-
-//- (BOOL)webView:(WKWebView *)webView shouldPreviewElement:(WKPreviewElementInfo *)elementInfo API_AVAILABLE(ios(10.0)) {
-//
-//}
-
-//- (nullable UIViewController *)webView:(WKWebView *)webView previewingViewControllerForElement:(WKPreviewElementInfo *)elementInfo defaultActions:(NSArray<id <WKPreviewActionItem>> *)previewActions API_AVAILABLE(ios(10.0)) {
-//
-//}
-
-- (void)webView:(WKWebView *)webView commitPreviewingViewController:(UIViewController *)previewingViewController API_AVAILABLE(ios(10.0)) {
-    
-}
-
-
-- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
-    
-}
-
-- (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler {
-    
-}
-
-- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(null_unspecified WKNavigation *)navigation {
-    
-}
-
-- (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(null_unspecified WKNavigation *)navigation {
-    
-}
-
-
-- (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error {
-    
-}
-
-- (void)webView:(WKWebView *)webView didCommitNavigation:(null_unspecified WKNavigation *)navigation {
-    
-}
-
-- (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation {
-    
-}
-
-- (void)webView:(WKWebView *)webView didFailNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error {
-    
-}
-
-- (void)webView:(WKWebView *)webView didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition disposition, NSURLCredential * _Nullable credential))completionHandler {
-    
-}
-
-- (void)webViewWebContentProcessDidTerminate:(WKWebView *)webView API_AVAILABLE(macosx(10.11), ios(9.0)) {
-    
-}
-
 
 
 @end

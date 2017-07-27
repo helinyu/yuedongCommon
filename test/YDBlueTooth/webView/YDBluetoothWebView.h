@@ -7,15 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+@class UIWebView;
+@class WKWebView;
 
 @interface YDBluetoothWebView : UIView
 
+@property (nonatomic, strong, readonly) id webView;
+@property (nonatomic, strong, readonly) UIWebView *lwebView;
+@property (nonatomic, strong, readonly) WKWebView *hwebView;
 
 #pragma mark -- action & block
 /*
  * @method : requestWithUrl
  * @param  : url the webVC's link request 
  */
-- (YDBluetoothWebView *(^)(NSURL *url))requestWithUrl;
+- (YDBluetoothWebView *(^)(NSString *urlString))requestWithUrl;
 
 @end

@@ -10,6 +10,10 @@
 #import "YDBluetoothWebView.h"
 #import <WebKit/WebKit.h>
 #import "Masonry.h"
+#import "WebViewJavascriptBridge.h"
+#import "YDSystem.h"
+#import "YDBluetoothWebViewMgr.h"
+
 
 @interface YDBlueToothWebViewController ()
 
@@ -17,7 +21,9 @@
 @property (nonatomic, strong) NSURL *url;
 @property (nonatomic, copy) NSString *titleString;
 
-@property (nonatomic, strong) YDBluetoothWebView *webView;
+@property (nonatomic, strong) YDBluetoothWebView *superWebView;
+
+@property (nonatomic, strong) WebViewJavascriptBridge *bridge;
 
 @end
 
@@ -31,10 +37,20 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.navigationController.navigationBar.hidden = YES;
+
+    _superWebView = [[YDBluetoothWebView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:_superWebView];
     
-//    self.title = _titleString;
+    if ([YDSystem isGreaterOrEqualThen8]) {
+        _bridge = [WebViewJavascriptBridge bridgeForWebView:_superWebView.hwebView];
+    }else{
+        _bridge = [WebViewJavascriptBridge bridgeForWebView:_superWebView.lwebView];
+    }
     
-    [self webViewInit];
+//    注册的方法要在加载web之前
+    
+    _superWebView.requestWithUrl(@"index.html");
+    
 }
 
 - (BOOL)prefersStatusBarHidden {
@@ -43,7 +59,6 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.webView.requestWithUrl(_url);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,10 +66,6 @@
 }
 
 #pragma mark -- custom methods
-- (void)webViewInit {
-    _webView = [[YDBluetoothWebView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:_webView];
-}
 
 #pragma mark - convert the attribute for vc by block
 - (YDBlueToothWebViewController *(^)(NSString *urlString))webUrl {
