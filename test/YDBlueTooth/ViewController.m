@@ -153,8 +153,7 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
     YDBluetoothWebViewMgr *webViewMgr = [YDBluetoothWebViewMgr shared];
     webViewMgr.webUrl(@"index.html");
     YDBlueToothWebViewController *vc = [YDBlueToothWebViewController new];
-    vc.webViewMgr = webViewMgr;
-    [self.navigationController pushViewController:vc animated:YES];
+    [self.navigationController pushViewController:vc.deliverWebViewMgr(webViewMgr) animated:YES];
 }
 
 #pragma mark --table delegate

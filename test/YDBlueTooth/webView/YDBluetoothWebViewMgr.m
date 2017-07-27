@@ -34,9 +34,6 @@
         
         CBPeripheral *peri = peripherals[0];
         NSString *name = peri.name;
-//        [wSelf.bridge callHandler:@"onperipheral" data:name];
-//        [wSelf.bluetoothMgr stopScan];
-        wSelf.bluetoothMgr.stopScan();
         if ([name isEqualToString:@"S3"]) {
             [wSelf.bridge callHandler:@"onperipheral" data:name responseCallback:^(id responseData) {
                 _bluetoothMgr.stopScan();

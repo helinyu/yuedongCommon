@@ -11,8 +11,8 @@
 
 @interface YDBlueToothWebViewController : UIViewController
 
-@property (nonatomic, strong) YDBluetoothWebViewMgr *webViewMgr;
 
 - (YDBlueToothWebViewController *(^)(NSString *titleString))webTittle;
+- (YDBlueToothWebViewController *(^)(YDBluetoothWebViewMgr *mgr))deliverWebViewMgr;
 
 @end

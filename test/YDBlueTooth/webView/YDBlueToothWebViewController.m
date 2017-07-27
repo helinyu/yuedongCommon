@@ -24,6 +24,8 @@
 
 @property (nonatomic, strong) WebViewJavascriptBridge *bridge;
 
+@property (nonatomic, strong) YDBluetoothWebViewMgr *webViewMgr;
+
 @end
 
 @implementation YDBlueToothWebViewController
@@ -40,15 +42,7 @@
     _superWebView = [[YDBluetoothWebView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:_superWebView];
     
-    if ([YDSystem isGreaterOrEqualThen8]) {
-        _bridge = [WebViewJavascriptBridge bridgeForWebView:_superWebView.hwebView];
-    }else{
-        _bridge = [WebViewJavascriptBridge bridgeForWebView:_superWebView.lwebView];
-    }
-    
-    [_bridge registerHandler:@"register matheth" handler:^(id data, WVJBResponseCallback responseCallback) {
-        NSLog(@"register handler datas");
-    }];
+    _bridge = [WebViewJavascriptBridge bridgeForWebView:_superWebView.webView];
     
 //    注册的方法要在加载web之前
     _superWebView.requestWithUrl(_webViewMgr.urlString);
@@ -71,6 +65,16 @@
 #pragma mark -- custom methods
 
 #pragma mark - convert the attribute for vc by block
+
+- (YDBlueToothWebViewController *(^)(YDBluetoothWebViewMgr *mgr))deliverWebViewMgr {
+    __weak typeof (self) wSelf = self;
+    return ^(YDBluetoothWebViewMgr *mgr) {
+        if (mgr) {
+            wSelf.webViewMgr = mgr;
+        }
+        return self;
+    };
+}
 
 
 - (YDBlueToothWebViewController *(^)(NSString *titleString))webTittle {
