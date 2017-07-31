@@ -136,6 +136,7 @@
 		41ED39451F208165002E70B7 /* YDOpenHardwareSleep.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39361F208165002E70B7 /* YDOpenHardwareSleep.m */; };
 		41ED39461F208165002E70B7 /* YDOpenHardwareUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39381F208165002E70B7 /* YDOpenHardwareUser.m */; };
 		41ED39471F208165002E70B7 /* ThirdParts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41ED393B1F208165002E70B7 /* ThirdParts.plist */; };
+		41F4B62A1F2B4DA40067D263 /* YDTrancenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F4B6291F2B4DA40067D263 /* YDTrancenceViewController.m */; };
 		41F760011F1C9F2100AB66AE /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F760001F1C9F2100AB66AE /* HealthKit.framework */; };
 		41F760281F1CB4E800AB66AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F760271F1CB4E800AB66AE /* main.m */; };
 		41F7602B1F1CB4E800AB66AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F7602A1F1CB4E800AB66AE /* AppDelegate.m */; };
@@ -496,6 +497,8 @@
 		41ED393B1F208165002E70B7 /* ThirdParts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ThirdParts.plist; sourceTree = "<group>"; };
 		41ED393C1F208165002E70B7 /* YDOpenHardwareSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareSDK.h; sourceTree = "<group>"; };
 		41ED393D1F208165002E70B7 /* YDOpenHardwareSDKDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareSDKDefine.h; sourceTree = "<group>"; };
+		41F4B6281F2B4DA40067D263 /* YDTrancenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDTrancenceViewController.h; sourceTree = "<group>"; };
+		41F4B6291F2B4DA40067D263 /* YDTrancenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDTrancenceViewController.m; sourceTree = "<group>"; };
 		41F75FFF1F1C9F2100AB66AE /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
 		41F760001F1C9F2100AB66AE /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		41F760241F1CB4E700AB66AE /* test_peripheral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_peripheral.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1013,6 +1016,7 @@
 		418D2FF91F1DA36000894079 /* YDBlueTooth */ = {
 			isa = PBXGroup;
 			children = (
+				41F4B6271F2B4D6A0067D263 /* trancence */,
 				414BF1201F21EBCA00058DBE /* webView */,
 				414BF11C1F21B79400058DBE /* modelmgr */,
 				41C3FAF91F219214008F57B5 /* catefories */,
@@ -1295,6 +1299,15 @@
 				41ED393B1F208165002E70B7 /* ThirdParts.plist */,
 			);
 			path = Plist;
+			sourceTree = "<group>";
+		};
+		41F4B6271F2B4D6A0067D263 /* trancence */ = {
+			isa = PBXGroup;
+			children = (
+				41F4B6281F2B4DA40067D263 /* YDTrancenceViewController.h */,
+				41F4B6291F2B4DA40067D263 /* YDTrancenceViewController.m */,
+			);
+			name = trancence;
 			sourceTree = "<group>";
 		};
 		41F760251F1CB4E800AB66AE /* test_peripheral */ = {
@@ -3047,6 +3060,7 @@
 				418BA7B71F1F71BF007269DC /* ServicesViewController.m in Sources */,
 				41ED38091F204C97002E70B7 /* CharacteristicViewController.m in Sources */,
 				418D30021F1DA36000894079 /* ViewController.m in Sources */,
+				41F4B62A1F2B4DA40067D263 /* YDTrancenceViewController.m in Sources */,
 				418D2FFF1F1DA36000894079 /* AppDelegate.m in Sources */,
 				41ED39431F208165002E70B7 /* YDOpenHardwareIntelligentScale.m in Sources */,
 				41ED39411F208165002E70B7 /* YDOpenHardwareDevice.m in Sources */,

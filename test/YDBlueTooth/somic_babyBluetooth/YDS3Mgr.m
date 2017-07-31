@@ -37,7 +37,6 @@
         
         for(int i=0;i<[data length];i++){
             if (i == 2) {
-                
                 int heartNUM = resultByte[i];
                 NSString *heatString = [NSString stringWithFormat:@"%d",heartNUM];
                 NSLog(@"heart reate string : %@",heatString);
@@ -48,6 +47,9 @@
         //步数
         NSData * data = characteristic.value;
         Byte * resultByte = (Byte *)[data bytes];
+        NSLog(@"result byte: %2s",resultByte);
+        NSString *value =[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSData *source = [value dataUsingEncoding:NSUTF8StringEncoding];
         
         for(int i=0;i<[data length];i++){
             int a = resultByte[3];

@@ -177,6 +177,7 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
         for (CBCharacteristic *c in service.characteristics) {
            [wSelf.bluetooth notify:peripheral characteristic:c block:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
                !wSelf.characteristicCallBack?:wSelf.characteristicCallBack(c);
+               NSLog(@"datas c: %@",c.UUID.UUIDString);
             }];
         }
 //        for (CBCharacteristic *c in service.characteristics) {
@@ -213,7 +214,7 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
         }
         
         !wSelf.characteristicCallBack?:wSelf.characteristicCallBack(characteristic);
-        
+        NSLog(@"c; %@",characteristic.UUID.UUIDString);
 //        dispatch_async(dispatch_get_global_queue(0, 0), ^{
 //            [wSelf insertDataToYDOpen:characteristic];
 //        });
@@ -346,7 +347,7 @@ _bluetooth.having(peripheral).connectToPeripherals().discoverServices().discover
                 
                 int heartNUM = resultByte[i];
                 NSString *heatString = [NSString stringWithFormat:@"%d",heartNUM];
-                NSLog(@"heart reate string : %@",heatString);
+//                NSLog(@"heart reate string : %@",heatString);
                 !_heartRateCallBack?:_heartRateCallBack(heatString);
             }
         }
@@ -365,11 +366,11 @@ _bluetooth.having(peripheral).connectToPeripherals().discoverServices().discover
                
                 //卡路里
                 CGFloat calorieValue = (_step * 0.5 / 14);
-                NSLog(@"calorieVaule is : %f",calorieValue);
+//                NSLog(@"calorieVaule is : %f",calorieValue);
                 
                 //距离
                 CGFloat disMValue = (_step * 0.5 / 1000);
-                NSLog(@"disMValue : %f",disMValue);
+//                NSLog(@"disMValue : %f",disMValue);
                 !self.tripCallBack?:self.tripCallBack(calorieValue,disMValue);
             }
         }
@@ -378,6 +379,46 @@ _bluetooth.having(peripheral).connectToPeripherals().discoverServices().discover
 }
 
 #pragma mark -- some block methods
+
+- (YDBlueToothMgr *(^)(NSString *filterField))deliverMatchField {
+    __weak typeof (self) wSelf = self;
+    return ^(NSString *filterField){
+        wSelf.matchField = filterField;
+        return self;
+    };
+}
+
+- (YDBlueToothMgr *(^)(NSString *filterField))deliverPrefixField {
+    __weak typeof (self) wSelf = self;
+    return ^(NSString *filterField){
+        wSelf.prefixField = filterField;
+        return self;
+    };
+}
+
+- (YDBlueToothMgr *(^)(NSString *filterField))deliverSuffixField {
+    __weak typeof (self) wSelf = self;
+    return ^(NSString *filterField){
+        wSelf.suffixField = filterField;
+        return self;
+    };
+}
+
+- (YDBlueToothMgr *(^)(NSString *filterField))deliverContainField {
+    __weak typeof (self) wSelf = self;
+    return ^(NSString *filterField){
+        wSelf.containField = filterField;
+        return self;
+    };
+}
+
+- (YDBlueToothMgr *(^)(YDBlueToothFilterType filterType))deliverFilterType {
+    __weak typeof (self) wSelf = self;
+    return ^(YDBlueToothFilterType filterType) {
+        wSelf.filterType = filterType;
+        return self;
+    };
+}
 
 - (YDBlueToothMgr * (^)(NSInteger index))connectingPeripheralIndex {
     __weak typeof (self) wSelf = self;

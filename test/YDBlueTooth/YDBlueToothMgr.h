@@ -46,12 +46,18 @@ typedef NS_ENUM(NSInteger, YDBlueToothFilterType) {
 @property (nonatomic, copy) NSString *suffixField;
 @property (nonatomic, copy) NSString *containField;
 
+- (YDBlueToothMgr *(^)(NSString *filterField))deliverMatchField;
+- (YDBlueToothMgr *(^)(NSString *filterField))deliverPrefixField;
+- (YDBlueToothMgr *(^)(NSString *filterField))deliverSuffixField;
+- (YDBlueToothMgr *(^)(NSString *filterField))deliverContainField;
+
+
 /*
  * param : filterType required
  * discussion : filter determine which type we will use to filter and find the specify bluetooth
  */
 @property (nonatomic, assign) YDBlueToothFilterType filterType;
-
+- (YDBlueToothMgr *(^)(YDBlueToothFilterType filterType))deliverFilterType;
 
 /*
  *@param : this param for the peripheral which we are choosing now

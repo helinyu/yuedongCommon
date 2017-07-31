@@ -61,9 +61,10 @@ static NSString *const peripheralsListCellIdentifierId = @"peripheral.lsit.cell.
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [_mgr onConnectBluetoothWithIndex:indexPath.row];
+    __weak typeof (self) wSelf = self;
     _mgr.connectionCallBack = ^(BOOL success) {
         if (success) {
-            [self.navigationController popViewControllerAnimated:YES];
+            [wSelf.navigationController popViewControllerAnimated:YES];
         }else{
             [SVProgressHUD showWithStatus:@"链接失败或者断开连接"];
         }

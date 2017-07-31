@@ -21,6 +21,8 @@
 #import "YDBlueToothWebViewController.h"
 #import "YDBluetoothWebViewMgr.h"
 
+#import "YDTrancenceViewController.h"
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -50,7 +52,7 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
-    _demosSources = @[@"断开连接",@"web interactive",@"S3原",@"S3baby",@"开始扫描",@"停止扫描"];
+    _demosSources = @[@"断开连接",@"web interactive",@"S3原",@"S3baby",@"开始扫描",@"停止扫描",@"trancence 手表"];
 
     [SVProgressHUD showInfoWithStatus:@"准备打开设备"];
 
@@ -192,6 +194,11 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
                 [self onStopScanClicked];
             }
                 break;
+            case 6:
+            {
+                [self onToTrancenceClicked];
+            }
+                break;
             default:
                 break;
         }
@@ -204,6 +211,12 @@ static NSString *const reuseCellIdentifierId = @"reuser.cell.identifier.id";
         [_mgr onConnectBluetoothWithIndex:indexPath.row];
     }
     
+}
+
+- (void)onToTrancenceClicked {
+    _mgr.stopScan();
+    YDTrancenceViewController *vc = [YDTrancenceViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)logServicesInfoWithSerivces:(NSArray <CBService *> *)services {

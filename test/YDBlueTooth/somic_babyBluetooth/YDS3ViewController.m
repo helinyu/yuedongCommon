@@ -33,6 +33,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     _infoView = [[YDS3MainView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.view addSubview:_infoView];
