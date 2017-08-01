@@ -233,7 +233,7 @@
 {
     NSLog(@"didUpdateValueForCharacteristic: error: %@",error);
     [[NSNotificationCenter defaultCenter] postNotificationName:@"S3ManagerDidUpdataValueForCharacteristic" object:characteristic];
-    
+
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         [self insertDataToYDOpen:characteristic];
     });
@@ -249,12 +249,11 @@
                 
                 int heartNUM = resultByte[i];
                 NSString *heatString = [NSString stringWithFormat:@"%d",heartNUM];
-                
+
                 if (heartNUM == 0) {
                     return;
                 }
-                
-                
+
                 NSDate * now = [self currentTime:[NSDate date]];
                 YDOpenHardwareHeartRate *hr = [[YDOpenHardwareHeartRate alloc] init];
                 [hr constructByOhhId: nil DeviceId: _device_identify HeartRate: @([heatString integerValue]) StartTime: now EndTime: now UserId: @([_user_id integerValue]) Extra: @"" ServerId:nil Status:nil];
@@ -283,7 +282,7 @@
                 
                 //插入计步数据
                 [[YDOpenHardwareManager dataProvider] insertPedometer:pedomenter completion:^(BOOL success) {
-                    
+
                     NSUserDefaults *defalut = [NSUserDefaults standardUserDefaults];
                     [defalut setObject:[NSString stringWithFormat:@"%d",_step] forKey:@"lastInsertStepsS3"];
                     _isFirstReload = NO;

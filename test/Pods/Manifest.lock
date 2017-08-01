@@ -13,6 +13,7 @@ PODS:
   - SVProgressHUD (2.1.2)
   - TYPagerController (1.0.2)
   - WebViewJavascriptBridge (6.0.2)
+  - YDOpenHardware (0.0.6)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -25,6 +26,7 @@ DEPENDENCIES:
   - SVProgressHUD (~> 2.1.2)
   - TYPagerController
   - WebViewJavascriptBridge (~> 6.0.2)
+  - YDOpenHardware (~> 0.0.6)
   - YYModel (~> 1.0.4)
 
 SPEC CHECKSUMS:
@@ -38,8 +40,9 @@ SPEC CHECKSUMS:
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   TYPagerController: 0b3e3e589a217ff537d5f78e1e76594beaa4cfc6
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
+  YDOpenHardware: 843bc91c5895f1c93146665c48922d7dacb0c351
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 19f5bafc7fac7a02abd3b3dfecc8b7b7bf8615cf
+PODFILE CHECKSUM: 9f5290633ef0a4dd3fcf51b26348d22104cfd5cb
 
 COCOAPODS: 1.2.1

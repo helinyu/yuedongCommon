@@ -38,6 +38,26 @@
     return singleton;
 }
 
+- (NSString *)someString {
+    __block NSString *localSomeString;
+    dispatch_block_t accessorBlock = ^{
+        localSomeString = _someString;
+    }
+    if (dispatch_get_current_queue() == _syscQueue) {
+        accessorBlock();
+    }else{
+        dispatch_async(_syscQueue, accessorBlock);
+    }
+    return localSomeString;
+}
+
+- (void)setSomeString:(NSString *)someString {
+    dispatch_async(_syscQueue, ^{
+        _someString = someString;
+    });
+}
+
+
 - (void)loadSerachBlueDatas {
     
     __weak typeof (self) wSelf = self;

@@ -100,9 +100,10 @@
 		41D33F941F208BCD00CF2908 /* BluetoothDaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39121F208155002E70B7 /* BluetoothDaterView.m */; };
 		41D33F951F208BEF00CF2908 /* BluetoothConnectViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 41ED390F1F208155002E70B7 /* BluetoothConnectViewController.h */; };
 		41D33F961F208BEF00CF2908 /* BluetoothConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39101F208155002E70B7 /* BluetoothConnectViewController.m */; };
-		41D33F9C1F209E9500CF2908 /* YDS3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D33F9B1F209E9500CF2908 /* YDS3ViewController.m */; };
+		41D33F9C1F209E9500CF2908 /* YDS3WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D33F9B1F209E9500CF2908 /* YDS3WebViewController.m */; };
 		41D33F9F1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D33F9E1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m */; };
 		41D33FA21F20A06F00CF2908 /* YDS3MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D33FA11F20A06F00CF2908 /* YDS3MainView.m */; };
+		41D4228F1F2EDBD1005C85EA /* YDS3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D4228E1F2EDBD1005C85EA /* YDS3ViewController.m */; };
 		41D864E11F210A81004D748B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D864E01F210A81004D748B /* AppDelegate.m */; };
 		41D864E41F210A81004D748B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D864E31F210A81004D748B /* ViewController.m */; };
 		41D864E71F210A81004D748B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D864E51F210A81004D748B /* Main.storyboard */; };
@@ -391,6 +392,7 @@
 		418D30301F1DAEB900894079 /* YDBlueToothMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBlueToothMgr.m; sourceTree = "<group>"; };
 		418D30321F1DC2ED00894079 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
 		418D30331F1DC2ED00894079 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		419F6F071F2F80DB00075930 /* YDS3WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDS3WebViewController.h; sourceTree = "<group>"; };
 		41A136051F275CF40086D1B8 /* testJavascriptCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testJavascriptCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A136071F275CF40086D1B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41A136081F275CF40086D1B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -412,12 +414,13 @@
 		41C3FB081F219682008F57B5 /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		41C3FB0A1F219E7D008F57B5 /* YDS3Mgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDS3Mgr.h; sourceTree = "<group>"; };
 		41C3FB0B1F219E7D008F57B5 /* YDS3Mgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDS3Mgr.m; sourceTree = "<group>"; };
-		41D33F9A1F209E9500CF2908 /* YDS3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDS3ViewController.h; sourceTree = "<group>"; };
-		41D33F9B1F209E9500CF2908 /* YDS3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDS3ViewController.m; sourceTree = "<group>"; };
+		41D33F9B1F209E9500CF2908 /* YDS3WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDS3WebViewController.m; sourceTree = "<group>"; };
 		41D33F9D1F20A00D00CF2908 /* YDS3PeriipheralsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDS3PeriipheralsViewController.h; sourceTree = "<group>"; };
 		41D33F9E1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDS3PeriipheralsViewController.m; sourceTree = "<group>"; };
 		41D33FA01F20A06F00CF2908 /* YDS3MainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDS3MainView.h; sourceTree = "<group>"; };
 		41D33FA11F20A06F00CF2908 /* YDS3MainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDS3MainView.m; sourceTree = "<group>"; };
+		41D4228D1F2EDBD1005C85EA /* YDS3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDS3ViewController.h; sourceTree = "<group>"; };
+		41D4228E1F2EDBD1005C85EA /* YDS3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDS3ViewController.m; sourceTree = "<group>"; };
 		41D864DD1F210A81004D748B /* testVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D864DF1F210A81004D748B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41D864E01F210A81004D748B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1016,6 +1019,7 @@
 		418D2FF91F1DA36000894079 /* YDBlueTooth */ = {
 			isa = PBXGroup;
 			children = (
+				41D4228C1F2EDBAB005C85EA /* S3Web */,
 				41F4B6271F2B4D6A0067D263 /* trancence */,
 				414BF1201F21EBCA00058DBE /* webView */,
 				414BF11C1F21B79400058DBE /* modelmgr */,
@@ -1125,14 +1129,23 @@
 			children = (
 				41C3FB0A1F219E7D008F57B5 /* YDS3Mgr.h */,
 				41C3FB0B1F219E7D008F57B5 /* YDS3Mgr.m */,
-				41D33F9A1F209E9500CF2908 /* YDS3ViewController.h */,
-				41D33F9B1F209E9500CF2908 /* YDS3ViewController.m */,
+				419F6F071F2F80DB00075930 /* YDS3WebViewController.h */,
+				41D33F9B1F209E9500CF2908 /* YDS3WebViewController.m */,
 				41D33F9D1F20A00D00CF2908 /* YDS3PeriipheralsViewController.h */,
 				41D33F9E1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m */,
 				41D33FA01F20A06F00CF2908 /* YDS3MainView.h */,
 				41D33FA11F20A06F00CF2908 /* YDS3MainView.m */,
 			);
 			path = somic_babyBluetooth;
+			sourceTree = "<group>";
+		};
+		41D4228C1F2EDBAB005C85EA /* S3Web */ = {
+			isa = PBXGroup;
+			children = (
+				41D4228D1F2EDBD1005C85EA /* YDS3ViewController.h */,
+				41D4228E1F2EDBD1005C85EA /* YDS3ViewController.m */,
+			);
+			name = S3Web;
 			sourceTree = "<group>";
 		};
 		41D864DE1F210A81004D748B /* testVision */ = {
@@ -3049,7 +3062,7 @@
 				41D33F8E1F208B3F00CF2908 /* S3MainView.m in Sources */,
 				41D33F9F1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m in Sources */,
 				414BF11B1F21B78E00058DBE /* YDPeripheralsModelMgr.m in Sources */,
-				41D33F9C1F209E9500CF2908 /* YDS3ViewController.m in Sources */,
+				41D33F9C1F209E9500CF2908 /* YDS3WebViewController.m in Sources */,
 				41D33F8F1F208B3F00CF2908 /* S3Manager.h in Sources */,
 				41D33F901F208B3F00CF2908 /* S3Manager.m in Sources */,
 				41C3FB031F2193C9008F57B5 /* YDSystem.m in Sources */,
@@ -3073,6 +3086,7 @@
 				41ED39461F208165002E70B7 /* YDOpenHardwareUser.m in Sources */,
 				41ED39421F208165002E70B7 /* YDOpenHardwareHeartRate.m in Sources */,
 				41ED39451F208165002E70B7 /* YDOpenHardwareSleep.m in Sources */,
+				41D4228F1F2EDBD1005C85EA /* YDS3ViewController.m in Sources */,
 				418D2FFC1F1DA36000894079 /* main.m in Sources */,
 				418D30081F1DA36000894079 /* YDBlueTooth.xcdatamodeld in Sources */,
 			);
@@ -3726,6 +3740,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2ERYNAFK87;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YDBlueTooth/Somic",
+				);
 				INFOPLIST_FILE = YDBlueTooth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -3742,6 +3760,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2ERYNAFK87;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YDBlueTooth/Somic",
+				);
 				INFOPLIST_FILE = YDBlueTooth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

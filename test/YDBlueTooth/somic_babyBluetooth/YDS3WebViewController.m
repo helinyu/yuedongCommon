@@ -6,7 +6,7 @@
 //  Copyright © 2017年 forest. All rights reserved.
 //
 
-#import "YDS3ViewController.h"
+#import "YDS3WebViewController.h"
 #import "YDBlueToothMgr.h"
 #import "YDS3PeriipheralsViewController.h"
 #import "YDS3MainView.h"
@@ -14,8 +14,7 @@
 #import "YDPeripheralModel.h"
 #import "YDPeripheralsModelMgr.h"
 
-
-@interface YDS3ViewController ()
+@interface YDS3WebViewController ()
 
 @property (nonatomic, strong) YDBlueToothMgr *mgr;
 @property (nonatomic, strong) YDS3Mgr *s3Mgr;
@@ -29,7 +28,7 @@
 
 @end
 
-@implementation YDS3ViewController
+@implementation YDS3WebViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
