@@ -1,6 +1,0 @@
-framework module SOMICS3SDK {
-  umbrella header "SOMICS3SDK.h"
-
-  export *
-  module * { export * }
-}
