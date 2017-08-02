@@ -30,7 +30,7 @@ target 'YDBlueTooth' do
 #    pod 'YYKit', '~> 1.0.9'
     pod 'YYModel', '~> 1.0.4'
     pod 'WebViewJavascriptBridge', '~> 6.0.2'
-    pod 'YDOpenHardware'
+    pod 'YDOpenHardware', '~> 0.2.7'
 
 end
 
