@@ -25,6 +25,7 @@
 		4113B2F31F1EF8A600EC6D21 /* LYBlockLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F21F1EF8A600EC6D21 /* LYBlockLinkViewController.m */; };
 		4113B2F61F1EF92600EC6D21 /* LYBlockPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F51F1EF92600EC6D21 /* LYBlockPerson.m */; };
 		4113B2F91F1EFA5800EC6D21 /* LYBlockPerson2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F81F1EFA5800EC6D21 /* LYBlockPerson2.m */; };
+		412EB2D11F31B639000C5E95 /* YDHardWareWeb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 412EB2D01F31B639000C5E95 /* YDHardWareWeb.framework */; };
 		413157F61F25D7610044FC58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 413157F51F25D7610044FC58 /* AppDelegate.m */; };
 		413157F91F25D7610044FC58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413157F81F25D7610044FC58 /* ViewController.m */; };
 		413157FC1F25D7610044FC58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413157FA1F25D7610044FC58 /* Main.storyboard */; };
@@ -320,6 +321,7 @@
 		4113B2F51F1EF92600EC6D21 /* LYBlockPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBlockPerson.m; sourceTree = "<group>"; };
 		4113B2F71F1EFA5800EC6D21 /* LYBlockPerson2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockPerson2.h; sourceTree = "<group>"; };
 		4113B2F81F1EFA5800EC6D21 /* LYBlockPerson2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBlockPerson2.m; sourceTree = "<group>"; };
+		412EB2D01F31B639000C5E95 /* YDHardWareWeb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YDHardWareWeb.framework; sourceTree = "<group>"; };
 		413157F21F25D7610044FC58 /* testUIWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testUIWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		413157F41F25D7610044FC58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		413157F51F25D7610044FC58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -872,6 +874,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412EB2D11F31B639000C5E95 /* YDHardWareWeb.framework in Frameworks */,
 				41A6D25D1F31A7320053C259 /* TestAKA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2062,6 +2065,7 @@
 				DCCED7161EF98816001D2474 /* ViewController.h */,
 				DCCED7171EF98816001D2474 /* ViewController.m */,
 				DCCED7191EF98816001D2474 /* Main.storyboard */,
+				412EB2D01F31B639000C5E95 /* YDHardWareWeb.framework */,
 				41A6D25C1F31A7310053C259 /* TestAKA.framework */,
 				DCCED71F1EF98816001D2474 /* Assets.xcassets */,
 				DCCED7211EF98816001D2474 /* LaunchScreen.storyboard */,

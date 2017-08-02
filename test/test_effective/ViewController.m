@@ -13,6 +13,7 @@
 #import "HLY8ViewController.h"
 #import "TestAKA/AKAFrameworkTest.h"
 #import "HLYTestFrameworkViewController.h"
+//#import <YDHardWareWeb/YDBlueToothMgr.h>
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 

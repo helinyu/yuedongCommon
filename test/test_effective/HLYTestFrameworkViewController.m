@@ -8,6 +8,7 @@
 
 #import "HLYTestFrameworkViewController.h"
 #import <TestAKA/TestAKA.h>
+#import <YDHardWareWeb/YDHardWareWeb.h>
 
 @interface HLYTestFrameworkViewController ()
 
@@ -20,6 +21,9 @@
     
     NSInteger result = [AKAFrameworkTest addWithFirstNumber:10 number2:2];
     NSLog(@"reulst %ld",(long)result);
+    
+    CGFloat sperarateW = YDSP_WIDTH;
+    NSLog(@"screen Width : %f",sperarateW);
     
 }
 
