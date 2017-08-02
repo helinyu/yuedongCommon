@@ -1,0 +1,1 @@
+../../../../YDHardWareWeb/YDHardWareWeb.framework/Headers/YDMBaseViewController.h

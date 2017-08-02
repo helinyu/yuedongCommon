@@ -1,0 +1,1 @@
+../../../../HardwareDatasStorage/YDOpenHardwareSDK.framework/Headers/YDOpenHardwareIntelligentScale.h

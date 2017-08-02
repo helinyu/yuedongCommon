@@ -24,8 +24,6 @@
 		412EB31B1F31B96E000C5E95 /* YDBridgeWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 412EB3151F31B96E000C5E95 /* YDBridgeWebView.m */; };
 		412EB31C1F31B96E000C5E95 /* YDBridgeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 412EB3171F31B96E000C5E95 /* YDBridgeWebViewController.m */; };
 		412EB31D1F31B96E000C5E95 /* YDS3WebViewMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 412EB3191F31B96E000C5E95 /* YDS3WebViewMgr.m */; };
-		412EB33C1F31C123000C5E95 /* YDOpenHardwareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 412EB33B1F31C123000C5E95 /* YDOpenHardwareSDK.framework */; };
-		412EB3501F31C7FE000C5E95 /* YDHardWareWeb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 412EB34F1F31C7FE000C5E95 /* YDHardWareWeb.framework */; };
 		5ED7A0C97836D69630B00C6E /* libPods-testYDHardwareWeb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BA187920E6DE342EB7B7E2 /* libPods-testYDHardwareWeb.a */; };
 /* End PBXBuildFile section */
 
@@ -69,8 +67,6 @@
 		412EB3171F31B96E000C5E95 /* YDBridgeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBridgeWebViewController.m; sourceTree = "<group>"; };
 		412EB3181F31B96E000C5E95 /* YDS3WebViewMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDS3WebViewMgr.h; sourceTree = "<group>"; };
 		412EB3191F31B96E000C5E95 /* YDS3WebViewMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDS3WebViewMgr.m; sourceTree = "<group>"; };
-		412EB33B1F31C123000C5E95 /* YDOpenHardwareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YDOpenHardwareSDK.framework; sourceTree = "<group>"; };
-		412EB34F1F31C7FE000C5E95 /* YDHardWareWeb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YDHardWareWeb.framework; sourceTree = "<group>"; };
 		A899336A98D6EC2413249FD9 /* libPods-testYDHardwareWebTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testYDHardwareWebTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7195B77D5B3196237B9C03A /* Pods-testYDHardwareWebTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testYDHardwareWebTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testYDHardwareWebTests/Pods-testYDHardwareWebTests.release.xcconfig"; sourceTree = "<group>"; };
 		D62C3EB4C2DBC62D39304FE1 /* Pods-testYDHardwareWeb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testYDHardwareWeb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testYDHardwareWeb/Pods-testYDHardwareWeb.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,8 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				412EB33C1F31C123000C5E95 /* YDOpenHardwareSDK.framework in Frameworks */,
-				412EB3501F31C7FE000C5E95 /* YDHardWareWeb.framework in Frameworks */,
 				5ED7A0C97836D69630B00C6E /* libPods-testYDHardwareWeb.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,8 +137,6 @@
 				412EB2EF1F31B8DF000C5E95 /* LaunchScreen.storyboard */,
 				412EB2F21F31B8DF000C5E95 /* Info.plist */,
 				412EB2EA1F31B8DF000C5E95 /* testYDHardwareWeb.xcdatamodeld */,
-				412EB34F1F31C7FE000C5E95 /* YDHardWareWeb.framework */,
-				412EB33B1F31C123000C5E95 /* YDOpenHardwareSDK.framework */,
 				412EB2DE1F31B8DF000C5E95 /* Supporting Files */,
 			);
 			path = testYDHardwareWeb;
