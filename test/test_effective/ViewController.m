@@ -11,6 +11,8 @@
 #import "ViewController.h"
 #import "HLy7ViewController.h"
 #import "HLY8ViewController.h"
+#import "TestAKA/AKAFrameworkTest.h"
+#import "HLYTestFrameworkViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -38,7 +40,8 @@
     self.dataSource = @[
                         @[@"第八条特性的理解",[HLY8ViewController new]],
                         @[@"setter 或者getter 使用",[HLy7ViewController new]],
-                        @[@"属性测试",[HLYPropertyViewController new]]
+                        @[@"属性测试",[HLYPropertyViewController new]],
+                        @[@"测试 frame work ",[HLYTestFrameworkViewController new]],
                         ];
 }
 

@@ -81,6 +81,8 @@
 		41A136141F275CF50086D1B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A136131F275CF50086D1B8 /* Assets.xcassets */; };
 		41A136171F275CF50086D1B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A136151F275CF50086D1B8 /* LaunchScreen.storyboard */; };
 		41A1361A1F275CF50086D1B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A136191F275CF50086D1B8 /* main.m */; };
+		41A6D25D1F31A7320053C259 /* TestAKA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A6D25C1F31A7310053C259 /* TestAKA.framework */; };
+		41A6D2611F31A7F70053C259 /* HLYTestFrameworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A6D2601F31A7F70053C259 /* HLYTestFrameworkViewController.m */; };
 		41ABCEF81F0BC51200927CCC /* HLYAnimationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */; };
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
 		41C3FB031F2193C9008F57B5 /* YDSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C3FB021F2193C9008F57B5 /* YDSystem.m */; };
@@ -404,6 +406,9 @@
 		41A136161F275CF50086D1B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41A136181F275CF50086D1B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41A136191F275CF50086D1B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		41A6D25C1F31A7310053C259 /* TestAKA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestAKA.framework; sourceTree = "<group>"; };
+		41A6D25F1F31A7F70053C259 /* HLYTestFrameworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYTestFrameworkViewController.h; sourceTree = "<group>"; };
+		41A6D2601F31A7F70053C259 /* HLYTestFrameworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYTestFrameworkViewController.m; sourceTree = "<group>"; };
 		41ABCEF61F0BC51200927CCC /* HLYAnimationCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAnimationCollectionViewController.h; sourceTree = "<group>"; };
 		41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAnimationCollectionViewController.m; sourceTree = "<group>"; };
 		41ABCEF91F0BC57700927CCC /* AnimationCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationCollectionViewCell.h; path = "数据解析/AnimationCollectionViewCell.h"; sourceTree = "<group>"; };
@@ -867,6 +872,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A6D25D1F31A7320053C259 /* TestAKA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1098,6 +1104,15 @@
 				41A136101F275CF50086D1B8 /* testJavascriptCore.xcdatamodeld */,
 			);
 			path = testJavascriptCore;
+			sourceTree = "<group>";
+		};
+		41A6D25E1F31A7E00053C259 /* 9 */ = {
+			isa = PBXGroup;
+			children = (
+				41A6D25F1F31A7F70053C259 /* HLYTestFrameworkViewController.h */,
+				41A6D2601F31A7F70053C259 /* HLYTestFrameworkViewController.m */,
+			);
+			name = 9;
 			sourceTree = "<group>";
 		};
 		41ABCEF51F0BC4F800927CCC /* collectionview cell 上的动画 */ = {
@@ -2038,6 +2053,7 @@
 		DCCED70F1EF98816001D2474 /* test_effective */ = {
 			isa = PBXGroup;
 			children = (
+				41A6D25E1F31A7E00053C259 /* 9 */,
 				DC38AE621EFFE5D600FB44FE /* 8 */,
 				DCCB56111EFADDD400A5A44C /* 7 */,
 				DCCED7441EF9884E001D2474 /* 6 */,
@@ -2046,6 +2062,7 @@
 				DCCED7161EF98816001D2474 /* ViewController.h */,
 				DCCED7171EF98816001D2474 /* ViewController.m */,
 				DCCED7191EF98816001D2474 /* Main.storyboard */,
+				41A6D25C1F31A7310053C259 /* TestAKA.framework */,
 				DCCED71F1EF98816001D2474 /* Assets.xcassets */,
 				DCCED7211EF98816001D2474 /* LaunchScreen.storyboard */,
 				DCCED7241EF98816001D2474 /* Info.plist */,
@@ -3268,6 +3285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A6D2611F31A7F70053C259 /* HLYTestFrameworkViewController.m in Sources */,
 				DCCED7181EF98816001D2474 /* ViewController.m in Sources */,
 				DC38AE681EFFE6A200FB44FE /* EOCPerson.m in Sources */,
 				DCCB56141EFADDEE00A5A44C /* HLy7ViewController.m in Sources */,
@@ -4162,6 +4180,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D2XBEJ6876;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test_effective",
+				);
 				INFOPLIST_FILE = test_effective/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4175,6 +4197,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D2XBEJ6876;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test_effective",
+				);
 				INFOPLIST_FILE = test_effective/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
