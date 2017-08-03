@@ -24,6 +24,7 @@
 		410CE9AD1F2887C00048E794 /* wkBridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 410CE9AC1F2887C00048E794 /* wkBridge.html */; };
 		4111CD871F32FB1A003F7347 /* YDANCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4111CD861F32FB1A003F7347 /* YDANCSViewController.m */; };
 		4111CD891F33204F003F7347 /* S3Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4111CD881F33204F003F7347 /* S3Manager.m */; };
+		4111CD8D1F33218F003F7347 /* ANCSBleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4111CD8C1F33218F003F7347 /* ANCSBleManager.m */; };
 		4113B2F31F1EF8A600EC6D21 /* LYBlockLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F21F1EF8A600EC6D21 /* LYBlockLinkViewController.m */; };
 		4113B2F61F1EF92600EC6D21 /* LYBlockPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F51F1EF92600EC6D21 /* LYBlockPerson.m */; };
 		4113B2F91F1EFA5800EC6D21 /* LYBlockPerson2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F81F1EFA5800EC6D21 /* LYBlockPerson2.m */; };
@@ -319,6 +320,8 @@
 		4111CD861F32FB1A003F7347 /* YDANCSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDANCSViewController.m; sourceTree = "<group>"; };
 		4111CD881F33204F003F7347 /* S3Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S3Manager.m; sourceTree = "<group>"; };
 		4111CD8A1F332067003F7347 /* S3Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S3Manager.h; sourceTree = "<group>"; };
+		4111CD8B1F33218F003F7347 /* ANCSBleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCSBleManager.h; sourceTree = "<group>"; };
+		4111CD8C1F33218F003F7347 /* ANCSBleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANCSBleManager.m; sourceTree = "<group>"; };
 		4113B2F11F1EF8A600EC6D21 /* LYBlockLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockLinkViewController.h; sourceTree = "<group>"; };
 		4113B2F21F1EF8A600EC6D21 /* LYBlockLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBlockLinkViewController.m; sourceTree = "<group>"; };
 		4113B2F41F1EF92600EC6D21 /* LYBlockPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockPerson.h; sourceTree = "<group>"; };
@@ -917,6 +920,8 @@
 			children = (
 				4111CD851F32FB1A003F7347 /* YDANCSViewController.h */,
 				4111CD861F32FB1A003F7347 /* YDANCSViewController.m */,
+				4111CD8B1F33218F003F7347 /* ANCSBleManager.h */,
+				4111CD8C1F33218F003F7347 /* ANCSBleManager.m */,
 			);
 			name = ANCS;
 			sourceTree = "<group>";
@@ -3118,6 +3123,7 @@
 				4111CD891F33204F003F7347 /* S3Manager.m in Sources */,
 				41ED39461F208165002E70B7 /* YDOpenHardwareUser.m in Sources */,
 				41ED39421F208165002E70B7 /* YDOpenHardwareHeartRate.m in Sources */,
+				4111CD8D1F33218F003F7347 /* ANCSBleManager.m in Sources */,
 				41ED39451F208165002E70B7 /* YDOpenHardwareSleep.m in Sources */,
 				41D4228F1F2EDBD1005C85EA /* YDS3ViewController.m in Sources */,
 				418D2FFC1F1DA36000894079 /* main.m in Sources */,
