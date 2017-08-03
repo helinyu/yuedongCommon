@@ -15,6 +15,7 @@ HardwareDatasStorage mainly for cache or store datas with sqlite
 define the mathod to call the oc in html file
 
 1、this module it not be modified
+
 ```
 function setupWebViewJavascriptBridge(callback) {
 if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
@@ -82,12 +83,11 @@ like the data of oc that :
 @"value3":value3
 }
 };
-```
-
+`````
 html file to write format about more detail you can see the project file , it is [S3.html](./testYDHardwareWeb/testYDHardwareWeb/Html/S3.html)
 
 
-#work flow 
+# work flow 
 
 declare : two part 
 First party : this is the partner of the yuedong , in change of developing the oc native part of the hardware
