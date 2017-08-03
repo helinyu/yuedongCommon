@@ -97,7 +97,7 @@ Second party    : this is the partner of the yuedong partner, in change of devel
 1、second party must give the first party about the info of the hardware ，like that, S3
 you must tell me about the datas hao to deliver & how to store in the hardwre which help me to know how to get the datas about the hardware
 
-2、second parth must provide the method name which to invoke the oc method ,so we can write the method with oc languge to reponse to the html method which will be work
+2、second parth must provide the method name which to invoke the oc method ,so we can write the method with oc languge to reponse to the html method which will be work. define the method name which must follow the hump style
 
 
 
