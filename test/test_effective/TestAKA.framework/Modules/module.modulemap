@@ -1,0 +1,6 @@
+framework module TestAKA {
+  umbrella header "TestAKA.h"
+
+  export *
+  module * { export * }
+}

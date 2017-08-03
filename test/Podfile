@@ -1,0 +1,54 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+#source 'http://repo.baichuan-ios.taobao.com/baichuanSDK/AliBCSpecs.git'
+#source 'http://repo.baichuan-ios.taobao.com/baichuanSDK/AliBCSpecsMirror.git'
+platform :ios, '7.0'
+
+target 'test' do
+# platform :ios, '7.0'
+    pod 'TYPagerController'
+    pod 'Masonry', '~> 1.0.2'
+    pod 'AMap3DMap', '~> 4.6.1'
+    pod 'AMapSearch', '~> 4.5.0'
+    pod 'AMapLocation', '~> 2.3.0'
+	pod 'BabyBluetooth', '~> 0.7.0'
+	# pod 'LEBluetooth', '~> 0.1.0'
+end
+
+target 'test_babyBlueTooth' do
+	pod 'LEBluetooth', '~> 0.1.0'
+    pod 'Masonry', '~> 1.0.2'
+    
+end
+
+target 'YDBlueTooth' do 
+#	pod 'BabyBluetooth', '~> 0.7.0'
+#    pod 'SVProgressHUD', '~> 2.1.2'
+#    pod 'Masonry', '~> 1.0.2'
+#    pod 'YYKit', '~> 1.0.9'
+#    pod 'YYModel', '~> 1.0.4'
+#    pod 'WebViewJavascriptBridge', '~> 6.0.2'
+    pod 'YDOpenHardware', '~> 0.2.8'
+
+end
+
+target 'testVision' do
+    pod 'Masonry', '~> 1.0.2'
+end
+
+target 'testUIWebView' do
+    pod 'SVProgressHUD', '~> 2.1.2'
+end
+
+target 'testJavascriptBrige' do
+    pod 'WebViewJavascriptBridge', '~> 6.0.2'
+end
+
+target 'testJavascriptCore' do
+    pod 'SVProgressHUD', '~> 2.1.2'
+end
+
+
+

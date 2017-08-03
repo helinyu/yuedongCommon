@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">、
+                
+    <script type="text/javascript">
+        
+    function onshow() {
+        alert("哈哈 oc 调用html");
+    }
+    
+    function alertSendMsg(num,msg) {
+        document.getElementById('msg').innerHTML = '这是我的手机号:' + num + ',' + msg + '!!'
+    }
+    
+    function func(label, param) {
+        var str= navigator.userAgent.toLowerCase();
+        var ver=str.match(/cpu iphone os (.*?) like mac os/);
+        var verNum = ver[1].replace(/_/g,".");
+        
+        if (verNum >= 8.0) {
+            document.getElementById('version').innerHTML = verNum;
+            document.getElementById('msg').innerHTML = label;
+            var aa = window.webkit.messageHandlers[label];
+            aa.postMessage(param);
+        }else{
+            document.getElementById('version').innerHTML = verNum;
+            label();
+        }
+    }
+    
+    function btnClick() {
+        func('showName', 'xaio huang');
+    }
+    
+    </script>
+    </head>
+    <body>
+        <div id="version"></div>
+        <div id="msg"></div>
+        <div>
+            <button class="btn" type="button" onclick="btnClick()">js 调用oc</button>
+        </div>
+        
+        
+    </body>
+</html>

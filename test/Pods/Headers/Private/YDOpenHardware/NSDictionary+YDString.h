@@ -1,0 +1,1 @@
+../../../YDOpenHardware/ydOpenHardware/extension/NSDictionary+YDString.h
