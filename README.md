@@ -1,6 +1,8 @@
 # YDHardwareWeb
 YDHardwareWeb library for hardware to cache or store datas from bluetooth and display the datas by the html file 
 
+contact: qq 2319979647  email:helinyu@51yund.com
+
 # HardwareDatasStorage
 HardwareDatasStorage mainly for cache or store datas with sqlite 
 
