@@ -1,1 +1,0 @@
-../../../YDOpenHardware/ydOpenHardware/Bluetooth/YDBlueToothMgr.h
