@@ -84,7 +84,7 @@ like the data of oc that :
 };
 ```
 
-html file to write format about more detail you can see the project file , it is [S3.html](https://github.com/helinyu/YDOpenHardwarePod/blob/master/ydOpenHardware/Html/S3.html)
+html file to write format about more detail you can see the project file , it is [S3.html](./ydOpenHardware/Html/S3.html)
 
 
 
