@@ -57,25 +57,34 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
     }];
 
     [_bluetooth setBlockOnDiscoverToPeripherals:^(CBCentralManager *central, CBPeripheral *peripheral, NSDictionary *advertisementData, NSNumber *RSSI) {
-        BOOL hasStored = NO;
-        for (CBPeripheral *item in wSelf.peripherals) {
-            if ([item.name isEqualToString:peripheral.name]) {
-                hasStored = YES;
-                break;
-            }
-        }
-        if (!hasStored) {
+//        BOOL hasStored = NO;
+//        for (CBPeripheral *item in wSelf.peripherals) {
+//            if ([item.name isEqualToString:peripheral.name] && [item.identifier isEqual:peripheral.identifier]) {
+//                hasStored = YES;
+//                break;
+//            }
+//        }
+//        if (!hasStored) {
             [wSelf.peripherals addObject:peripheral];
             !wSelf.scanCallBack?:wSelf.scanCallBack(wSelf.peripherals);
-            NSLog(@"find peripheral name is : %@",peripheral.name);
-        }
+            NSLog(@"find peripheral name is : %@, identifier : %@, rssi:%@",peripheral.name,peripheral.identifier,peripheral.RSSI);
+//        }
 
     }];
     
    [_bluetooth setFilterOnDiscoverPeripherals:^BOOL(NSString *peripheralName, NSDictionary *advertisementData, NSNumber *RSSI) {
 
-       NSLog(@"peripheral name : %@",peripheralName);
+//       NSLog(@" scan peripheral name : %@",peripheralName);
+       
         switch (wSelf.filterType) {
+            case YDBlueToothFilterTypeNone:
+            {
+                if (peripheralName.length > 0) {
+                    return YES;
+                }
+                return NO;
+            }
+                break;
             case YDBlueToothFilterTypeMatch:
             {
                 if ([peripheralName isEqualToString:wSelf.matchField]) {

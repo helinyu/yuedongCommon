@@ -24,13 +24,13 @@ target 'test_babyBlueTooth' do
 end
 
 target 'YDBlueTooth' do 
-#	pod 'BabyBluetooth', '~> 0.7.0'
-#    pod 'SVProgressHUD', '~> 2.1.2'
-#    pod 'Masonry', '~> 1.0.2'
+	pod 'BabyBluetooth', '~> 0.7.0'
+    pod 'SVProgressHUD', '~> 2.1.2'
+    pod 'Masonry', '~> 1.0.2'
 #    pod 'YYKit', '~> 1.0.9'
-#    pod 'YYModel', '~> 1.0.4'
-#    pod 'WebViewJavascriptBridge', '~> 6.0.2'
-    pod 'YDOpenHardware', '~> 0.2.8'
+    pod 'YYModel', '~> 1.0.4'
+    pod 'WebViewJavascriptBridge', '~> 6.0.2'
+#    pod 'YDOpenHardware', '~> 0.2.8'
 
 end
 

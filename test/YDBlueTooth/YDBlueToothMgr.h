@@ -13,7 +13,8 @@
 @class CBCharacteristic;
 
 typedef NS_ENUM(NSInteger, YDBlueToothFilterType) {
-    YDBlueToothFilterTypeMatch = 0,  // match to filter and find the specify device
+    YDBlueToothFilterTypeNone = 0,  // no filter key word
+    YDBlueToothFilterTypeMatch ,  // match to filter and find the specify device
     YDBlueToothFilterTypeContain,    // contain the keyword to filter and find the specify device
     YDBlueToothFilterTypePrefix,     // key word by the prefix
     YDBlueToothFilterTypeSuffix,     // key word by the suffix

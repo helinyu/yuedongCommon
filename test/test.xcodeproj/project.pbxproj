@@ -22,6 +22,8 @@
 		410CE9A31F284F3B0048E794 /* YDJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 410CE9A21F284F3B0048E794 /* YDJavascriptBridge.m */; };
 		410CE9AA1F286AB40048E794 /* bridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 410CE9A91F286AB40048E794 /* bridge.html */; };
 		410CE9AD1F2887C00048E794 /* wkBridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 410CE9AC1F2887C00048E794 /* wkBridge.html */; };
+		4111CD871F32FB1A003F7347 /* YDANCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4111CD861F32FB1A003F7347 /* YDANCSViewController.m */; };
+		4111CD891F33204F003F7347 /* S3Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4111CD881F33204F003F7347 /* S3Manager.m */; };
 		4113B2F31F1EF8A600EC6D21 /* LYBlockLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F21F1EF8A600EC6D21 /* LYBlockLinkViewController.m */; };
 		4113B2F61F1EF92600EC6D21 /* LYBlockPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F51F1EF92600EC6D21 /* LYBlockPerson.m */; };
 		4113B2F91F1EFA5800EC6D21 /* LYBlockPerson2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4113B2F81F1EFA5800EC6D21 /* LYBlockPerson2.m */; };
@@ -95,8 +97,6 @@
 		41D33F8C1F208B3F00CF2908 /* S3ActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39161F208155002E70B7 /* S3ActivityIndicatorView.m */; };
 		41D33F8D1F208B3F00CF2908 /* S3MainView.h in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39171F208155002E70B7 /* S3MainView.h */; };
 		41D33F8E1F208B3F00CF2908 /* S3MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39181F208155002E70B7 /* S3MainView.m */; };
-		41D33F8F1F208B3F00CF2908 /* S3Manager.h in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39191F208155002E70B7 /* S3Manager.h */; };
-		41D33F901F208B3F00CF2908 /* S3Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED391A1F208155002E70B7 /* S3Manager.m */; };
 		41D33F911F208B3F00CF2908 /* S3MianViewModel.h in Sources */ = {isa = PBXBuildFile; fileRef = 41ED391B1F208155002E70B7 /* S3MianViewModel.h */; };
 		41D33F921F208B3F00CF2908 /* S3MianViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ED391C1F208155002E70B7 /* S3MianViewModel.m */; };
 		41D33F931F208BCD00CF2908 /* BluetoothDaterView.h in Sources */ = {isa = PBXBuildFile; fileRef = 41ED39111F208155002E70B7 /* BluetoothDaterView.h */; };
@@ -315,6 +315,10 @@
 		410CE9A91F286AB40048E794 /* bridge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = bridge.html; path = ../../../Desktop/bridge.html; sourceTree = "<group>"; };
 		410CE9AB1F2885FD0048E794 /* webInteractive.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = webInteractive.html; sourceTree = "<group>"; };
 		410CE9AC1F2887C00048E794 /* wkBridge.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = wkBridge.html; sourceTree = "<group>"; };
+		4111CD851F32FB1A003F7347 /* YDANCSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDANCSViewController.h; sourceTree = "<group>"; };
+		4111CD861F32FB1A003F7347 /* YDANCSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDANCSViewController.m; sourceTree = "<group>"; };
+		4111CD881F33204F003F7347 /* S3Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S3Manager.m; sourceTree = "<group>"; };
+		4111CD8A1F332067003F7347 /* S3Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S3Manager.h; sourceTree = "<group>"; };
 		4113B2F11F1EF8A600EC6D21 /* LYBlockLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockLinkViewController.h; sourceTree = "<group>"; };
 		4113B2F21F1EF8A600EC6D21 /* LYBlockLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBlockLinkViewController.m; sourceTree = "<group>"; };
 		4113B2F41F1EF92600EC6D21 /* LYBlockPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockPerson.h; sourceTree = "<group>"; };
@@ -477,8 +481,6 @@
 		41ED39161F208155002E70B7 /* S3ActivityIndicatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S3ActivityIndicatorView.m; sourceTree = "<group>"; };
 		41ED39171F208155002E70B7 /* S3MainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S3MainView.h; sourceTree = "<group>"; };
 		41ED39181F208155002E70B7 /* S3MainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S3MainView.m; sourceTree = "<group>"; };
-		41ED39191F208155002E70B7 /* S3Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S3Manager.h; sourceTree = "<group>"; };
-		41ED391A1F208155002E70B7 /* S3Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S3Manager.m; sourceTree = "<group>"; };
 		41ED391B1F208155002E70B7 /* S3MianViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S3MianViewModel.h; sourceTree = "<group>"; };
 		41ED391C1F208155002E70B7 /* S3MianViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S3MianViewModel.m; sourceTree = "<group>"; };
 		41ED391D1F208155002E70B7 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
@@ -910,6 +912,15 @@
 			path = YDJavascriptBridge;
 			sourceTree = "<group>";
 		};
+		4111CD841F32FB07003F7347 /* ANCS */ = {
+			isa = PBXGroup;
+			children = (
+				4111CD851F32FB1A003F7347 /* YDANCSViewController.h */,
+				4111CD861F32FB1A003F7347 /* YDANCSViewController.m */,
+			);
+			name = ANCS;
+			sourceTree = "<group>";
+		};
 		4113B2F01F1EF89100EC6D21 /* block_for_link */ = {
 			isa = PBXGroup;
 			children = (
@@ -1028,6 +1039,7 @@
 		418D2FF91F1DA36000894079 /* YDBlueTooth */ = {
 			isa = PBXGroup;
 			children = (
+				4111CD841F32FB07003F7347 /* ANCS */,
 				41D4228C1F2EDBAB005C85EA /* S3Web */,
 				41F4B6271F2B4D6A0067D263 /* trancence */,
 				414BF1201F21EBCA00058DBE /* webView */,
@@ -1249,8 +1261,8 @@
 				41ED39161F208155002E70B7 /* S3ActivityIndicatorView.m */,
 				41ED39171F208155002E70B7 /* S3MainView.h */,
 				41ED39181F208155002E70B7 /* S3MainView.m */,
-				41ED39191F208155002E70B7 /* S3Manager.h */,
-				41ED391A1F208155002E70B7 /* S3Manager.m */,
+				4111CD8A1F332067003F7347 /* S3Manager.h */,
+				4111CD881F33204F003F7347 /* S3Manager.m */,
 				41ED391B1F208155002E70B7 /* S3MianViewModel.h */,
 				41ED391C1F208155002E70B7 /* S3MianViewModel.m */,
 				41ED391D1F208155002E70B7 /* SVIndefiniteAnimatedView.h */,
@@ -3084,13 +3096,12 @@
 				41D33F9F1F20A00D00CF2908 /* YDS3PeriipheralsViewController.m in Sources */,
 				414BF11B1F21B78E00058DBE /* YDPeripheralsModelMgr.m in Sources */,
 				41D33F9C1F209E9500CF2908 /* YDS3WebViewController.m in Sources */,
-				41D33F8F1F208B3F00CF2908 /* S3Manager.h in Sources */,
-				41D33F901F208B3F00CF2908 /* S3Manager.m in Sources */,
 				41C3FB031F2193C9008F57B5 /* YDSystem.m in Sources */,
 				41D33F911F208B3F00CF2908 /* S3MianViewModel.h in Sources */,
 				414BF11F1F21B84400058DBE /* YDPeripheralModel.m in Sources */,
 				41D33F921F208B3F00CF2908 /* S3MianViewModel.m in Sources */,
 				41ED39441F208165002E70B7 /* YDOpenHardwarePedometer.m in Sources */,
+				4111CD871F32FB1A003F7347 /* YDANCSViewController.m in Sources */,
 				418BA7B71F1F71BF007269DC /* ServicesViewController.m in Sources */,
 				41ED38091F204C97002E70B7 /* CharacteristicViewController.m in Sources */,
 				418D30021F1DA36000894079 /* ViewController.m in Sources */,
@@ -3104,6 +3115,7 @@
 				418D30311F1DAEB900894079 /* YDBlueToothMgr.m in Sources */,
 				41D33FA21F20A06F00CF2908 /* YDS3MainView.m in Sources */,
 				414BF1231F21EBE500058DBE /* YDBlueToothWebViewController.m in Sources */,
+				4111CD891F33204F003F7347 /* S3Manager.m in Sources */,
 				41ED39461F208165002E70B7 /* YDOpenHardwareUser.m in Sources */,
 				41ED39421F208165002E70B7 /* YDOpenHardwareHeartRate.m in Sources */,
 				41ED39451F208165002E70B7 /* YDOpenHardwareSleep.m in Sources */,
