@@ -86,7 +86,9 @@ like the data of oc that :
 
 html file to write format about more detail you can see the project file , it is [S3.html](./testYDHardwareWeb/testYDHardwareWeb/Html/S3.html)
 
-work flow 
+
+#work flow 
+
 declare : two part 
 First party : this is the partner of the yuedong , in change of developing the oc native part of the hardware
 Second party: this is the partner of the yuedong partner, in change of developing the html web part of the hardwre
