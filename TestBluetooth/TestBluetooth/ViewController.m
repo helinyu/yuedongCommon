@@ -11,7 +11,7 @@
 
 @interface ViewController ()<CBCentralManagerDelegate,CBPeripheralDelegate>
 
-@property (nonatomic)
+@property (nonatomic, strong) CBCentralManager *cMgr;
 
 @end
 
@@ -19,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _cMgr = [ [CBCentralManager alloc] initWithDelegate:self queue:dispatch_get_main_queue()];
 
 
 }
