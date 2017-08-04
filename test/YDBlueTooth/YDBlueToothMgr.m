@@ -189,26 +189,6 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
                NSLog(@"datas c: %@",c.UUID.UUIDString);
             }];
         }
-//        for (CBCharacteristic *c in service.characteristics) {
-//            NSLog(@"perpheral uuid : %@",peripheral.name);
-//
-//            if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF1"]]) {
-//
-//            }
-//            if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF2"]]) {
-//                [wSelf.bluetooth notify:peripheral characteristic:c block:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
-//                    NSLog(@"notify : fff2");
-//                    [wSelf insertDataToYDOpen:characteristics];
-//                }];
-//
-//            }
-//            if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF3"]]) {
-//               [wSelf.bluetooth notify:peripheral characteristic:c block:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
-//                    NSLog(@"notify : fff3");
-//                    [wSelf insertDataToYDOpen:characteristics];
-//                }];
-//            }
-//        }
     }];
     
     [_bluetooth setBlockOnReadValueForCharacteristic:^(CBPeripheral *peripheral, CBCharacteristic *characteristic, NSError *error) {
@@ -224,10 +204,6 @@ static NSString *const ydNtfMangerDidUpdataValueForCharacteristic = @"yd.bluetoo
         
         !wSelf.characteristicCallBack?:wSelf.characteristicCallBack(characteristic);
         NSLog(@"c; %@",characteristic.UUID.UUIDString);
-//        dispatch_async(dispatch_get_global_queue(0, 0), ^{
-//            [wSelf insertDataToYDOpen:characteristic];
-//        });
-
     }];
     
     [_bluetooth setBlockOnDidUpdateNotificationStateForCharacteristic:^(CBCharacteristic *characteristic, NSError *error) {
@@ -343,48 +319,6 @@ _bluetooth.having(peripheral).connectToPeripherals().discoverServices().discover
 
 - (void)onConnectCurrentPeripheralOfBluetooth {
     [self onConnectBluetoothWithPeripheral:_currentPeripheral];
-}
-
-- (void)insertDataToYDOpen:(CBCharacteristic *)characteristic{
-    NSLog(@"current charactieristic uuid is ： %@",characteristic.UUID);
-    if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"FFF2"]]) {
-        NSData * data = characteristic.value;
-        Byte * resultByte = (Byte *)[data bytes];
-        
-        for(int i=0;i<[data length];i++){
-            if (i == 2) {
-                
-                int heartNUM = resultByte[i];
-                NSString *heatString = [NSString stringWithFormat:@"%d",heartNUM];
-//                NSLog(@"heart reate string : %@",heatString);
-                !_heartRateCallBack?:_heartRateCallBack(heatString);
-            }
-        }
-    }else if([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"FFF3"]]) {
-        //步数
-        NSData * data = characteristic.value;
-        Byte * resultByte = (Byte *)[data bytes];
-        
-        for(int i=0;i<[data length];i++){
-            int a = resultByte[3];
-            _step = resultByte[2];
-            if (a !=0) {
-                _step = resultByte[2] + 256*a;
-            }
-            if (i == 2) {
-               
-                //卡路里
-                CGFloat calorieValue = (_step * 0.5 / 14);
-//                NSLog(@"calorieVaule is : %f",calorieValue);
-                
-                //距离
-                CGFloat disMValue = (_step * 0.5 / 1000);
-//                NSLog(@"disMValue : %f",disMValue);
-                !self.tripCallBack?:self.tripCallBack(calorieValue,disMValue);
-            }
-        }
-    }else if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"FFF1"]]){
-    }
 }
 
 #pragma mark -- some block methods

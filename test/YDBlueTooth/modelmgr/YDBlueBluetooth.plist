@@ -15,6 +15,15 @@
 					<key>characteristics</key>
 					<array>
 						<dict>
+							<key>dataFormater</key>
+							<dict>
+								<key>indexSpan</key>
+								<string>0-1</string>
+								<key>New item</key>
+								<string></string>
+							</dict>
+							<key>New item</key>
+							<string></string>
 							<key>characteristicUUID</key>
 							<string>0xFFF1</string>
 							<key>properties</key>
