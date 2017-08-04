@@ -322,6 +322,7 @@
 		4111CD8A1F332067003F7347 /* S3Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S3Manager.h; sourceTree = "<group>"; };
 		4111CD8B1F33218F003F7347 /* ANCSBleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCSBleManager.h; sourceTree = "<group>"; };
 		4111CD8C1F33218F003F7347 /* ANCSBleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANCSBleManager.m; sourceTree = "<group>"; };
+		4111CD921F341751003F7347 /* TestBLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4113B2F11F1EF8A600EC6D21 /* LYBlockLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockLinkViewController.h; sourceTree = "<group>"; };
 		4113B2F21F1EF8A600EC6D21 /* LYBlockLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBlockLinkViewController.m; sourceTree = "<group>"; };
 		4113B2F41F1EF92600EC6D21 /* LYBlockPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBlockPerson.h; sourceTree = "<group>"; };
@@ -780,6 +781,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		410CE9851F284EE70048E794 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4111CD8F1F341751003F7347 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1535,6 +1543,7 @@
 				413A0D441F26E845000A8F9D /* testJavascriptBrige.app */,
 				41A136051F275CF40086D1B8 /* testJavascriptCore.app */,
 				410CE9881F284EE70048E794 /* YDJavascriptBridge.app */,
+				4111CD921F341751003F7347 /* TestBLE.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2188,6 +2197,23 @@
 			productReference = 410CE9881F284EE70048E794 /* YDJavascriptBridge.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4111CD911F341751003F7347 /* TestBLE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4111CDA61F341752003F7347 /* Build configuration list for PBXNativeTarget "TestBLE" */;
+			buildPhases = (
+				4111CD8E1F341751003F7347 /* Sources */,
+				4111CD8F1F341751003F7347 /* Frameworks */,
+				4111CD901F341751003F7347 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestBLE;
+			productName = TestBLE;
+			productReference = 4111CD921F341751003F7347 /* TestBLE.app */;
+			productType = "com.apple.product-type.application";
+		};
 		413157F11F25D7610044FC58 /* testUIWebView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4131580A1F25D7610044FC58 /* Build configuration list for PBXNativeTarget "testUIWebView" */;
@@ -2444,6 +2470,11 @@
 						DevelopmentTeam = 2ERYNAFK87;
 						ProvisioningStyle = Manual;
 					};
+					4111CD911F341751003F7347 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Manual;
+					};
 					413157F11F25D7610044FC58 = {
 						CreatedOnToolsVersion = 9.0;
 						DevelopmentTeam = D2XBEJ6876;
@@ -2545,6 +2576,7 @@
 				413A0D431F26E845000A8F9D /* testJavascriptBrige */,
 				41A136041F275CF40086D1B8 /* testJavascriptCore */,
 				410CE9871F284EE70048E794 /* YDJavascriptBridge */,
+				4111CD911F341751003F7347 /* TestBLE */,
 			);
 		};
 /* End PBXProject section */
@@ -2559,6 +2591,13 @@
 				410CE9971F284EE80048E794 /* Assets.xcassets in Resources */,
 				410CE9921F284EE80048E794 /* Main.storyboard in Resources */,
 				410CE9AA1F286AB40048E794 /* bridge.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4111CD901F341751003F7347 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3042,6 +3081,13 @@
 				410CE98C1F284EE80048E794 /* AppDelegate.m in Sources */,
 				410CE99D1F284EE80048E794 /* main.m in Sources */,
 				410CE9951F284EE80048E794 /* YDJavascriptBridge.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4111CD8E1F341751003F7347 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3613,6 +3659,35 @@
 				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
 				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4111CDA71F341752003F7347 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
+				INFOPLIST_FILE = TestBLE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
+			};
+			name = Debug;
+		};
+		4111CDA81F341752003F7347 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TestBLE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -4286,6 +4361,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		4111CDA61F341752003F7347 /* Build configuration list for PBXNativeTarget "TestBLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4111CDA71F341752003F7347 /* Debug */,
+				4111CDA81F341752003F7347 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		4131580A1F25D7610044FC58 /* Build configuration list for PBXNativeTarget "testUIWebView" */ = {
 			isa = XCConfigurationList;

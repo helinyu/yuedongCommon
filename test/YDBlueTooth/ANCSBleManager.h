@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreBluetooth/CoreBluetooth.h>
+@class CBPeripheral;
+@class CBCentralManager;
+@class CBCharacteristic;
 
-
-@interface ANCSBleManager : NSObject<CBCentralManagerDelegate,CBPeripheralDelegate>
+@interface ANCSBleManager : NSObject
 
 + (instancetype)shareManager;
 
@@ -29,7 +30,6 @@
 @property (strong, nonatomic ) NSString *device_identify;
 
 @property (strong, nonatomic) CBCharacteristic *writeCharacteristic;
-
 
 - (void)scanForPeripherals;
 

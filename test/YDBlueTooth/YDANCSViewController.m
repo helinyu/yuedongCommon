@@ -7,12 +7,13 @@
 //
 
 #import "YDANCSViewController.h"
-#import "YDBlueToothMgr.h"
+//#import "YDBlueToothMgr.h"
 #import <CoreBluetooth/CoreBluetooth.h>
+#import "ANCSBleManager.h"
 
 @interface YDANCSViewController ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic, strong) YDBlueToothMgr *btMgr;
+//@property (nonatomic, strong) YDBlueToothMgr *btMgr;
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -28,7 +29,7 @@ static NSString *const reuseCellId = @"tableview.cell.id";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _btMgr = [YDBlueToothMgr shared];
+//    _btMgr = [YDBlueToothMgr shared];
     
     UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc] initWithTitle:@"开始扫描" style:UIBarButtonItemStylePlain target:self action:@selector(toAction:)];
     self.navigationItem.rightBarButtonItem = rightBtn;
@@ -40,18 +41,17 @@ static NSString *const reuseCellId = @"tableview.cell.id";
     _tableView.dataSource = self;
     _tableView.delegate = self;
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onAddPeripheralsNotify) name:@"yd.add.new.peripheral" object:nil];
+    
+}
+
+- (void)onAddPeripheralsNotify {
+    _peripherals = [ANCSBleManager shareManager].nDevices;
+    [_tableView reloadData];
 }
 
 - (void)toAction:(UIButton *)sender {
-    NSLog(@"开始扫描");
-    __weak typeof (self) wSelf = self;
-//    SH09U
-    _btMgr.deliverFilterType(YDBlueToothFilterTypeContain).deliverContainField(@"SH").startScan().scanCallBack = ^(NSArray<CBPeripheral *> *peripherals) {
-        _peripherals = peripherals;
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [wSelf.tableView reloadData];
-        });
-    };
+    [[ANCSBleManager shareManager] scanForPeripherals];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -78,14 +78,10 @@ static NSString *const reuseCellId = @"tableview.cell.id";
 #pragma mark --table delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    __weak typeof (self) wSelf = self;
-    _btMgr.connectingPeripheralIndex(indexPath.row).connectionCallBack = ^(BOOL success) {
-        if (success) {
-            wSelf.btMgr.characteristicCallBack = ^(CBCharacteristic *c) {
-                NSLog(@"characteristic : %@",c.UUID.UUIDString);
-            };
-        }
-    };
+    CBPeripheral *selectedPeripheral = [ANCSBleManager shareManager].nDevices[indexPath.row];
+    [ANCSBleManager shareManager].peripheral = selectedPeripheral;
+    [[ANCSBleManager shareManager] connectS3Bluetooth];
+
 }
 
 @end
