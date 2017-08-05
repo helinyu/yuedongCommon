@@ -4205,7 +4205,6 @@
 			baseConfigurationReference = 89914FF9277B52F087EA3821 /* Pods-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
 				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -4228,9 +4227,8 @@
 			baseConfigurationReference = F8A481B59EF84D29E58DAF85 /* Pods-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
-				DEVELOPMENT_TEAM = 5992BVN2L6;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/test",
@@ -4241,8 +4239,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "76070d7b-a4e6-41c2-b9bc-8fb897b6dffb";
-				PROVISIONING_PROFILE_SPECIFIER = "guimiquan-dev";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 			};
 			name = Release;
 		};
@@ -4369,6 +4367,7 @@
 				4111CDA81F341752003F7347 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4131580A1F25D7610044FC58 /* Build configuration list for PBXNativeTarget "testUIWebView" */ = {
 			isa = XCConfigurationList;
