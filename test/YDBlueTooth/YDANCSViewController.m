@@ -68,6 +68,7 @@ static NSString *const reuseCellId = @"tableview.cell.id";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseCellId forIndexPath:indexPath];
     CBPeripheral *peripheral = _peripherals[indexPath.row];
     cell.textLabel.text = peripheral.name;
+    cell.detailTextLabel.text = peripheral.identifier.UUIDString;
     return cell;
 }
 

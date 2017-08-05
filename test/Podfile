@@ -50,5 +50,12 @@ target 'testJavascriptCore' do
     pod 'SVProgressHUD', '~> 2.1.2'
 end
 
-
-
+target 'testFMDB' do
+    pod 'FMDB'
+end
+target 'YDBluetoothZMJ' do
+    pod 'SDWebImage', '~> 3.7.4'
+    pod 'DateTools', '~> 1.7.0'
+    pod 'Reachability', '~> 3.2'
+    pod 'FMDB'
+end

@@ -30,7 +30,6 @@
 @implementation ANCSBleManager
 
 + (instancetype)shareManager{
-    
     static ANCSBleManager *_S3Maneger = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -54,7 +53,6 @@
 }
 
 - (void)addNotify{
-    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(YDNtfOpenHardwareUserChange:) name:YDNtfOpenHardwareUserChange object:nil];
 }
 
@@ -267,20 +265,23 @@
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(nullable NSError *)error {
     NSLog(@"didDiscoverCharacteristicsForService uuid : %@",service.UUID);
     for (CBCharacteristic *c in service.characteristics) {
-//        if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF1"]]) {
-//            _writeCharacteristic = c;
-//        }
-//        if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF2"]]) {
-        NSLog(@"charateristic uudi : %@",c.UUID);
+        NSLog(@"CBCharacteristic uudi : %@",c.UUID.UUIDString);
+        if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF1"]]) {
+            _writeCharacteristic = c;
+//            NSData *datas =
+//            [self.peripheral writeValue:datas forCharacteristic:c type:CBCharacteristicWriteWithResponse];
+        }
+        if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF2"]]) {
+            NSLog(@"charateristic uudi : %@",c.UUID);
             [self.peripheral readValueForCharacteristic:c];//读取
             [self.peripheral setNotifyValue:YES forCharacteristic:c];//订阅
-//        }
-//        if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF3"]]) {
-//            NSLog(@" ff3 didDiscoverCharacteristicsForService :readValueForCharacteristic");
-//            [self.peripheral readValueForCharacteristic:c];
-//            NSLog(@" ff3 didDiscoverCharacteristicsForService :setNotifyValue");
-//            [self.peripheral setNotifyValue:YES forCharacteristic:c];
-//        }
+        }
+        if ([c.UUID isEqual:[CBUUID UUIDWithString:@"FFF3"]]) {
+            NSLog(@" ff3 didDiscoverCharacteristicsForService :readValueForCharacteristic");
+            [self.peripheral readValueForCharacteristic:c];
+            NSLog(@" ff3 didDiscoverCharacteristicsForService :setNotifyValue");
+            [self.peripheral setNotifyValue:YES forCharacteristic:c];
+        }
     }
 
 //    for (CBCharacteristic *c in service.characteristics) {
@@ -332,12 +333,6 @@
  */
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(nullable NSError *)error {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"S3ManagerDidUpdataValueForCharacteristic" object:characteristic];
-
-//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-//        [self insertDataToYDOpen:characteristic];
-//    });
-
-//    NSLog(@"characteristic 内容开始读取： %@",characteristic.service.UUID.UUIDString);
     NSData * data = characteristic.value;
     Byte * resultByte = (Byte *)[data bytes];
     NSLog(@"charateristic uuid : %@",characteristic.UUID);
@@ -527,6 +522,7 @@
  *
  */
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
+    NSLog(@"已经链接");
     [self.peripheral setDelegate:self];
     [self.peripheral discoverServices:nil];
 }
