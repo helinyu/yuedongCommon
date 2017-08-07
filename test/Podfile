@@ -53,7 +53,7 @@ end
 target 'testFMDB' do
     pod 'FMDB'
 end
-target 'YDBluetoothZMJ' do
+target 'TestSport' do
     pod 'SDWebImage', '~> 3.7.4'
     pod 'DateTools', '~> 1.7.0'
     pod 'Reachability', '~> 3.2'
