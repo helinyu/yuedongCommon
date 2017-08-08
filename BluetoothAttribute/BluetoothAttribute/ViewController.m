@@ -100,8 +100,8 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central {
     if (central.state == CBManagerStatePoweredOn) {
 //        options 的设置
-//        NSDictionary *options = @{CBCentralManagerScanOptionAllowDuplicatesKey:@(YES)};
-        [_centralManger scanForPeripheralsWithServices:nil options:nil];
+        NSDictionary *options = @{CBCentralManagerScanOptionAllowDuplicatesKey:@(YES)};
+        [_centralManger scanForPeripheralsWithServices:nil options:options];
     }else{
         NSLog(@"请打开蓝牙设备");
     }
