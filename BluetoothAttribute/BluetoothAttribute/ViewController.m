@@ -26,7 +26,8 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 100, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds) - 100) style:UITableViewStylePlain];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:_tableView];
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:resuserIdentifier];
     _tableView.dataSource = self;
@@ -35,8 +36,9 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
 //    cbperipheral
     _peripherals = @[].mutableCopy;
     
-//     这个方法是否可以去掉
-    _centralManger = [[CBCentralManager alloc] initWithDelegate:self queue:nil options:centralInitOptions];
+//     这个方法是否可以去掉 设置这个属性，也是没有问题的，还是运行顺畅
+    NSDictionary *centralInitOptions = @{CBCentralManagerOptionShowPowerAlertKey:@(YES),CBCentralManagerOptionRestoreIdentifierKey:@"restoreidentifier"};
+    _centralManger = [[CBCentralManager alloc] initWithDelegate:self queue:dispatch_get_global_queue(0, 0) options:centralInitOptions];
  
     [self UICreation];
 }
@@ -44,13 +46,25 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
 #pragma mark -- ui components 
 
 - (void)UICreation {
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:@"扫描" forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(stopScan) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+    UIButton *stopScanBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [stopScanBtn setTitle:@"扫描" forState:UIControlStateNormal];
+    stopScanBtn.frame = CGRectMake(20, 66, 50, 30);
+    [stopScanBtn addTarget:self action:@selector(onStopScanClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:stopScanBtn];
+    
+    UIButton *connectBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [connectBtn setTitle:@"转场" forState:UIControlStateNormal];
+    connectBtn.frame = CGRectMake(80, 66, 50, 30);
+    [connectBtn addTarget:self action:@selector(onConnectClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:connectBtn];
+
 }
 
-- (void)stopScan {
+- (void)onConnectClicked {
+    
+}
+
+- (void)onStopScanClicked {
     [_centralManger stopScan];
 }
 
@@ -77,8 +91,8 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"indexPath: %@",indexPath);
     CBPeripheral *choicePeripheral = _peripherals[indexPath.row];
-    NSDictionary *connectOptions = @{};
-    [_centralManger connectPeripheral:choicePeripheral options:connectOptions];
+//    NSDictionary *connectOptions = @{CBConnectPeripheralOptionNotifyOnConnectionKey:@(YES),CBConnectPeripheralOptionNotifyOnDisconnectionKey:@(YES),CBConnectPeripheralOptionNotifyOnNotificationKey:@(YES)};
+    [_centralManger connectPeripheral:choicePeripheral options:nil];
 }
 
 //central manager delegate
@@ -86,8 +100,8 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central {
     if (central.state == CBManagerStatePoweredOn) {
 //        options 的设置
-        NSDictionary *options = @{CBCentralManagerScanOptionAllowDuplicatesKey:@(YES)};
-        [_centralManger scanForPeripheralsWithServices:nil options:options];
+//        NSDictionary *options = @{CBCentralManagerScanOptionAllowDuplicatesKey:@(YES)};
+        [_centralManger scanForPeripheralsWithServices:nil options:nil];
     }else{
         NSLog(@"请打开蓝牙设备");
     }
@@ -100,7 +114,10 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
 //    NSLog(@"rssI : %@",RSSI);
     NSLog(@"peripherals : %@",_peripherals);
     [_peripherals addObject:peripheral];
-    [_tableView reloadData];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [_tableView reloadData];
+    });
+    
 }
 
 - (void)centralManager:(CBCentralManager *)central willRestoreState:(NSDictionary<NSString *, id> *)dict {
