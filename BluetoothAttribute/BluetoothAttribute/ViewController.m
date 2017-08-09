@@ -324,7 +324,6 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
 
 //—————————— characteristic上面的内容处理 （发现）
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(nullable NSError *)error {
-    NSLog(@"didDiscoverCharacteristicsForService");
     if (error) {
         NSLog(@"error : %@",error);
         return;
@@ -332,19 +331,28 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
     
 //    这一段进行过滤一下
     [service.characteristics enumerateObjectsUsingBlock:^(CBCharacteristic * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSLog(@"didDiscoverCharacteristicsForService ,characteristic : %@ , idx :%ld ,stop:%d",obj,idx,*stop);
+
         if ([obj.UUID isEqual:[CBUUID UUIDWithString:@"FFF1"]]) {
-//            0x72
             Byte bytes[] ={0x72};
             NSData *datas = [[NSData alloc] initWithBytes:bytes length:1];
             [peripheral writeValue:datas forCharacteristic:obj type:CBCharacteristicWriteWithResponse];
-        }else if([obj.UUID isEqual:[CBUUID UUIDWithString:@"FFF2"]]) {
-            [peripheral setNotifyValue:YES forCharacteristic:obj];
-        }else if([obj.UUID isEqual:[CBUUID UUIDWithString:@"FFF3"]]) {
-            [peripheral setNotifyValue:YES forCharacteristic:obj];
         }else{
-            
+            [peripheral setNotifyValue:YES forCharacteristic:obj];
         }
-        NSLog(@"characteristic : %@ , idx :%ld ,stop:%d",obj,idx,*stop);
+//        if ([obj.UUID isEqual:[CBUUID UUIDWithString:@"FFF1"]]) {
+////            0x72
+//            Byte bytes[] ={0x72};
+//            NSData *datas = [[NSData alloc] initWithBytes:bytes length:1];
+//            [peripheral writeValue:datas forCharacteristic:obj type:CBCharacteristicWriteWithResponse];
+//        }else if([obj.UUID isEqual:[CBUUID UUIDWithString:@"FFF2"]]) {
+//            [peripheral setNotifyValue:YES forCharacteristic:obj];
+//        }else if([obj.UUID isEqual:[CBUUID UUIDWithString:@"FFF3"]]) {
+//            [peripheral setNotifyValue:YES forCharacteristic:obj];
+//        }else{
+//
+//        }
+    
     }];
 }
 
@@ -352,11 +360,11 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(nullable NSError *)error {
     NSLog(@"读取数据吧： 还是更新？ didUpdateValueForCharacteristic: %@",characteristic);
 //    读取的数据
-    if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"0xFFF2"]]) {
-        NSLog(@"读取FFF2数据");
-    }else if([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"0xFFF3"]]) {
-        NSLog(@"读取fff3的数据");
-    }else{}
+//    if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"0xFFF2"]]) {
+//        NSLog(@"读取FFF2数据");
+//    }else if([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"0xFFF3"]]) {
+//        NSLog(@"读取fff3的数据");
+//    }else{}
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(nullable NSError *)error {
