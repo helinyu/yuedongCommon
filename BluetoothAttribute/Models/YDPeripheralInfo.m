@@ -19,4 +19,12 @@
     return self;
 }
 
++ (YDPeripheralInfo *)peripheral:(CBPeripheral *)peripheral RSSI:(NSNumber *)rssi advertisementData:(NSDictionary<NSString *, id> *)advertisementData {
+    YDPeripheralInfo *info = [YDPeripheralInfo new];
+    info.peripheral = peripheral;
+    info.RSSI = rssi;
+    info.advertisementData = advertisementData;
+    return info;
+}
+
 @end

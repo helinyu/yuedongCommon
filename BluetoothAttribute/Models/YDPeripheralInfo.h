@@ -13,6 +13,9 @@
 @interface YDPeripheralInfo : NSObject
 @property (nonatomic, strong) CBPeripheral *peripheral;
 @property (nonatomic, strong) NSNumber *RSSI;
-@property (nonatomic, strong) NSUUID *uuid;
+//@property (nonatomic, strong) NSUUID *uuid;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *advertisementData;
+
++ (YDPeripheralInfo *)peripheral:(CBPeripheral *)peripheral RSSI:(NSNumber *)rssi advertisementData:(NSDictionary<NSString *, id> *)advertisementData;
 
 @end

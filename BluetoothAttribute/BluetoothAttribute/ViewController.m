@@ -16,14 +16,14 @@
 @property (nonatomic, strong) UITableView *tableView;
 
 @property (nonatomic, strong) CBCentralManager *centralManger;
-@property (nonatomic, strong) NSMutableArray *peripherals;
+//@property (nonatomic, strong) NSMutableArray *peripherals;
 @property (nonatomic, strong) CBPeripheral *selectedPeripheral;
 @property (nonatomic, strong) NSArray *selectedPeripheralServices;
 @property (nonatomic, strong) NSMutableArray<NSUUID *> *connectedPeripheralsdentifiers;
 @property (nonatomic, strong) NSMutableArray<CBUUID *> *connectedservicesUUIDs;
 @property (nonatomic, strong) CBUUID *discoverServiceUUID;
 
-@property (nonatomic, strong) YDPeripheralInfo *peripheralInfo;
+@property (nonatomic, strong) NSMutableArray<YDPeripheralInfo *> *peripheralInfos;
 
 @end
 
@@ -42,10 +42,11 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
     _tableView.delegate = self;
     
 //    cbperipheral
-    _peripherals = @[].mutableCopy;
+//    _peripherals = @[].mutableCopy;
     _connectedPeripheralsdentifiers = @[].mutableCopy;
     _connectedservicesUUIDs = @[].mutableCopy;
     _discoverServiceUUID = [CBUUID UUIDWithString:@"0xFFF0"];
+    _peripheralInfos = @[].mutableCopy;
 
 //     这个方法是否可以去掉 设置这个属性，也是没有问题的，还是运行顺畅
     NSDictionary *centralInitOptions = @{CBCentralManagerOptionShowPowerAlertKey:@(YES),CBCentralManagerOptionRestoreIdentifierKey:@"restoreidentifier"};
@@ -116,14 +117,16 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
 #pragma mark -- tableView datasource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _peripherals.count;
+//    return _peripherals.count;
+    return _peripheralInfos.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:resuserIdentifier forIndexPath:indexPath];
-    CBPeripheral *peripheral = _peripherals[indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@,%@",peripheral.name,peripheral.RSSI];
-    cell.detailTextLabel.text = peripheral.identifier.UUIDString;
+//    CBPeripheral *peripheral = _peripherals[indexPath.row];
+    YDPeripheralInfo *infoItem = _peripheralInfos[indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@,%@",infoItem.peripheral.name,infoItem.RSSI];
+//    cell.detailTextLabel.text = peripheral.identifier.UUIDString;
     return cell;
 }
 
@@ -136,7 +139,8 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"indexPath: %@",indexPath);
     [_centralManger stopScan];
-    _selectedPeripheral = _peripherals[indexPath.row];
+    
+    _selectedPeripheral = ((YDPeripheralInfo *)_peripheralInfos[indexPath.row]).peripheral;;
     NSDictionary *connectOptions = @{CBConnectPeripheralOptionNotifyOnConnectionKey:@(YES),CBConnectPeripheralOptionNotifyOnDisconnectionKey:@(YES),CBConnectPeripheralOptionNotifyOnNotificationKey:@(YES)};
     [_centralManger connectPeripheral:_selectedPeripheral options:connectOptions];
     
@@ -165,21 +169,41 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
         return ;
     }
     
-    if (_peripherals.count <= 0) {
-        [_peripherals addObject:peripheral];
+//    if (_peripherals.count <= 0) {
+//        [_peripherals addObject:peripheral];
+//    }else{
+//        BOOL hasStore = NO;
+//        for (NSInteger index =0; index <_peripherals.count; index++) {
+//            CBPeripheral *storePeripheral = _peripherals[index];
+//            if ([storePeripheral.name isEqualToString:peripheral.name] && [storePeripheral.identifier isEqual:peripheral.identifier]) {
+//                [_peripherals removeObject:storePeripheral];
+//                [_peripherals insertObject:peripheral atIndex:index];
+//                hasStore = YES;
+//                break;
+//            }
+//        }
+//        if (!hasStore) {
+//            [_peripherals addObject:peripheral];
+//        }
+//    }
+    
+    if (_peripheralInfos.count <= 0) {
+        YDPeripheralInfo *infoItem = [YDPeripheralInfo peripheral:peripheral RSSI:RSSI advertisementData:advertisementData];
+        [_peripheralInfos addObject:infoItem];
     }else{
         BOOL hasStore = NO;
-        for (NSInteger index =0; index <_peripherals.count; index++) {
-            CBPeripheral *storePeripheral = _peripherals[index];
-            if ([storePeripheral.name isEqualToString:peripheral.name] && [storePeripheral.identifier isEqual:peripheral.identifier]) {
-                [_peripherals removeObject:storePeripheral];
-                [_peripherals insertObject:peripheral atIndex:index];
+        for (NSInteger index =0; index <_peripheralInfos.count; index++) {
+            YDPeripheralInfo *storePeripheralInfo = _peripheralInfos[index];
+            if ([storePeripheralInfo.peripheral.name isEqualToString:peripheral.name] && [storePeripheralInfo.peripheral.identifier isEqual:peripheral.identifier]) {
+//                [_peripheralInfos removeObject:storePeripheral];
+//                [_peripheralInfos insertObject:peripheral atIndex:index];
                 hasStore = YES;
                 break;
             }
         }
         if (!hasStore) {
-            [_peripherals addObject:peripheral];
+            YDPeripheralInfo *infoItem = [YDPeripheralInfo peripheral:peripheral RSSI:RSSI advertisementData:advertisementData];
+            [_peripheralInfos addObject:infoItem];
         }
     }
     
@@ -260,14 +284,11 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
 }
 
 /////___ rssi 的内容处理
-//RSSI的大小发生了改变，也就是信号的强弱发生了改变  (ios 8 之后才有的获取的属性方法也是ios 8 之后才有的)
 - (void)peripheralDidUpdateRSSI:(CBPeripheral *)peripheral error:(nullable NSError *)error NS_DEPRECATED(10_7, 10_13, 5_0, 8_0) {
     NSLog(@"peripheralDidUpdateRSSI: %@",peripheral.RSSI);
     [peripheral readRSSI];
-//    在什么时候进行处理的RSSI的内容
 }
 
-//上面的readRSSI的这个方法调用的时候，这方法应该-会被调用
 - (void)peripheral:(CBPeripheral *)peripheral didReadRSSI:(NSNumber *)RSSI error:(nullable NSError *)error NS_AVAILABLE(10_13, 8_0) {
     NSLog(@"did read rssi : %@",RSSI);
 }
@@ -313,7 +334,7 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
     [service.characteristics enumerateObjectsUsingBlock:^(CBCharacteristic * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if ([obj.UUID isEqual:[CBUUID UUIDWithString:@"FFF1"]]) {
 //            0x72
-            Byte bytes[] ={0x01};
+            Byte bytes[] ={0x72};
             NSData *datas = [[NSData alloc] initWithBytes:bytes length:1];
             [peripheral writeValue:datas forCharacteristic:obj type:CBCharacteristicWriteWithResponse];
         }else if([obj.UUID isEqual:[CBUUID UUIDWithString:@"FFF2"]]) {
