@@ -15,3 +15,9 @@
 #ifndef YDSystemIsGreaterThanOrEqualTo11
     #define YDSystemIsGreaterThanOrEqualTo11 ([UIDevice currentDevice].systemVersion.floatValue >= 11.f)
 #endif
+
+typedef NS_ENUM(NSInteger, ConnectionState) {
+    ConnectionStateDisconnect = 0,
+    ConnectionStateSuccess = 1,
+    ConnectionStateFailure = 2,
+};

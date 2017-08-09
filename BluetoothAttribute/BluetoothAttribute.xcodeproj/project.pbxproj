@@ -14,6 +14,11 @@
 		41D8AC401F3896200047D4BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D8AC3E1F3896200047D4BD /* Main.storyboard */; };
 		41D8AC421F3896200047D4BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D8AC411F3896200047D4BD /* Assets.xcassets */; };
 		41D8AC451F3896200047D4BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D8AC431F3896200047D4BD /* LaunchScreen.storyboard */; };
+		41F1CCE51F3ADB67009154BB /* readCharacteristic.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41F1CCE41F3ADB67009154BB /* readCharacteristic.plist */; };
+		41F1CCE81F3AF45A009154BB /* YDBandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F1CCE71F3AF45A009154BB /* YDBandViewController.m */; };
+		41F1CCEB1F3AF4BD009154BB /* YDBluetoothMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F1CCEA1F3AF4BD009154BB /* YDBluetoothMgr.m */; };
+		41F1CCEF1F3AF701009154BB /* YDConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F1CCEE1F3AF701009154BB /* YDConstant.m */; };
+		41F1CCF51F3B0C0D009154BB /* YDDatasMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F1CCF41F3B0C0D009154BB /* YDDatasMgr.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,15 @@
 		41D8AC411F3896200047D4BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41D8AC441F3896200047D4BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41D8AC461F3896200047D4BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F1CCE41F3ADB67009154BB /* readCharacteristic.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = readCharacteristic.plist; sourceTree = "<group>"; };
+		41F1CCE61F3AF45A009154BB /* YDBandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBandViewController.h; sourceTree = "<group>"; };
+		41F1CCE71F3AF45A009154BB /* YDBandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBandViewController.m; sourceTree = "<group>"; };
+		41F1CCE91F3AF4BD009154BB /* YDBluetoothMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBluetoothMgr.h; sourceTree = "<group>"; };
+		41F1CCEA1F3AF4BD009154BB /* YDBluetoothMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBluetoothMgr.m; sourceTree = "<group>"; };
+		41F1CCED1F3AF701009154BB /* YDConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDConstant.h; sourceTree = "<group>"; };
+		41F1CCEE1F3AF701009154BB /* YDConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDConstant.m; sourceTree = "<group>"; };
+		41F1CCF31F3B0C0D009154BB /* YDDatasMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDDatasMgr.h; sourceTree = "<group>"; };
+		41F1CCF41F3B0C0D009154BB /* YDDatasMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDDatasMgr.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +85,23 @@
 		41D8AC341F3896200047D4BD /* BluetoothAttribute */ = {
 			isa = PBXGroup;
 			children = (
+				41F1CCEC1F3AF6A8009154BB /* base */,
 				4123BDA21F39B9FA0031252F /* Models */,
 				41D8AC381F3896200047D4BD /* AppDelegate.h */,
 				41D8AC391F3896200047D4BD /* AppDelegate.m */,
 				41D8AC3B1F3896200047D4BD /* ViewController.h */,
 				41D8AC3C1F3896200047D4BD /* ViewController.m */,
+				41F1CCE61F3AF45A009154BB /* YDBandViewController.h */,
+				41F1CCE71F3AF45A009154BB /* YDBandViewController.m */,
+				41F1CCE91F3AF4BD009154BB /* YDBluetoothMgr.h */,
+				41F1CCEA1F3AF4BD009154BB /* YDBluetoothMgr.m */,
+				41F1CCF31F3B0C0D009154BB /* YDDatasMgr.h */,
+				41F1CCF41F3B0C0D009154BB /* YDDatasMgr.m */,
 				41D8AC3E1F3896200047D4BD /* Main.storyboard */,
 				41D8AC411F3896200047D4BD /* Assets.xcassets */,
 				41D8AC431F3896200047D4BD /* LaunchScreen.storyboard */,
 				41D8AC461F3896200047D4BD /* Info.plist */,
+				41F1CCE41F3ADB67009154BB /* readCharacteristic.plist */,
 				41670E3E1F39B0350058C895 /* YDDefine.h */,
 				41D8AC351F3896200047D4BD /* Supporting Files */,
 			);
@@ -92,6 +114,15 @@
 				41D8AC361F3896200047D4BD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41F1CCEC1F3AF6A8009154BB /* base */ = {
+			isa = PBXGroup;
+			children = (
+				41F1CCED1F3AF701009154BB /* YDConstant.h */,
+				41F1CCEE1F3AF701009154BB /* YDConstant.m */,
+			);
+			path = base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +192,7 @@
 				41D8AC451F3896200047D4BD /* LaunchScreen.storyboard in Resources */,
 				41D8AC421F3896200047D4BD /* Assets.xcassets in Resources */,
 				41D8AC401F3896200047D4BD /* Main.storyboard in Resources */,
+				41F1CCE51F3ADB67009154BB /* readCharacteristic.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,8 +204,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				41D8AC3D1F3896200047D4BD /* ViewController.m in Sources */,
+				41F1CCEF1F3AF701009154BB /* YDConstant.m in Sources */,
 				41D8AC3A1F3896200047D4BD /* AppDelegate.m in Sources */,
 				4123BDA51F39BA170031252F /* YDPeripheralInfo.m in Sources */,
+				41F1CCE81F3AF45A009154BB /* YDBandViewController.m in Sources */,
+				41F1CCF51F3B0C0D009154BB /* YDDatasMgr.m in Sources */,
+				41F1CCEB1F3AF4BD009154BB /* YDBluetoothMgr.m in Sources */,
 				41D8AC371F3896200047D4BD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
