@@ -340,18 +340,6 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
         }else{
             [peripheral setNotifyValue:YES forCharacteristic:obj];
         }
-//        if ([obj.UUID isEqual:[CBUUID UUIDWithString:@"FFF1"]]) {
-////            0x72
-//            Byte bytes[] ={0x72};
-//            NSData *datas = [[NSData alloc] initWithBytes:bytes length:1];
-//            [peripheral writeValue:datas forCharacteristic:obj type:CBCharacteristicWriteWithResponse];
-//        }else if([obj.UUID isEqual:[CBUUID UUIDWithString:@"FFF2"]]) {
-//            [peripheral setNotifyValue:YES forCharacteristic:obj];
-//        }else if([obj.UUID isEqual:[CBUUID UUIDWithString:@"FFF3"]]) {
-//            [peripheral setNotifyValue:YES forCharacteristic:obj];
-//        }else{
-//
-//        }
     
     }];
 }
