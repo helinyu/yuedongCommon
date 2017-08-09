@@ -8,14 +8,22 @@
 
 #import "ViewController.h"
 #import <CoreBluetooth/CoreBluetooth.h>
+#import "YDDefine.h"
+#import "YDPeripheralInfo.h"
 
 @interface ViewController ()<CBCentralManagerDelegate,CBPeripheralDelegate,UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 
-@property (nonatomic, strong) NSMutableArray *peripherals;
-
 @property (nonatomic, strong) CBCentralManager *centralManger;
+@property (nonatomic, strong) NSMutableArray *peripherals;
+@property (nonatomic, strong) CBPeripheral *selectedPeripheral;
+@property (nonatomic, strong) NSArray *selectedPeripheralServices;
+@property (nonatomic, strong) NSMutableArray<NSUUID *> *connectedPeripheralsdentifiers;
+@property (nonatomic, strong) NSMutableArray<CBUUID *> *connectedservicesUUIDs;
+@property (nonatomic, strong) CBUUID *discoverServiceUUID;
+
+@property (nonatomic, strong) YDPeripheralInfo *peripheralInfo;
 
 @end
 
@@ -35,7 +43,10 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
     
 //    cbperipheral
     _peripherals = @[].mutableCopy;
-    
+    _connectedPeripheralsdentifiers = @[].mutableCopy;
+    _connectedservicesUUIDs = @[].mutableCopy;
+    _discoverServiceUUID = [CBUUID UUIDWithString:@"0xFFF0"];
+
 //     这个方法是否可以去掉 设置这个属性，也是没有问题的，还是运行顺畅
     NSDictionary *centralInitOptions = @{CBCentralManagerOptionShowPowerAlertKey:@(YES),CBCentralManagerOptionRestoreIdentifierKey:@"restoreidentifier"};
     _centralManger = [[CBCentralManager alloc] initWithDelegate:self queue:dispatch_get_global_queue(0, 0) options:centralInitOptions];
@@ -47,21 +58,55 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
 
 - (void)UICreation {
     UIButton *stopScanBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [stopScanBtn setTitle:@"扫描" forState:UIControlStateNormal];
-    stopScanBtn.frame = CGRectMake(20, 66, 50, 30);
+    [stopScanBtn setTitle:@"停止扫描" forState:UIControlStateNormal];
+    stopScanBtn.frame = CGRectMake(10, 66, 80, 30);
     [stopScanBtn addTarget:self action:@selector(onStopScanClicked) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:stopScanBtn];
     
-    UIButton *connectBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [connectBtn setTitle:@"转场" forState:UIControlStateNormal];
-    connectBtn.frame = CGRectMake(80, 66, 50, 30);
-    [connectBtn addTarget:self action:@selector(onConnectClicked) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:connectBtn];
+    UIButton *cancelConnectBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [cancelConnectBtn setTitle:@"取消链接" forState:UIControlStateNormal];
+    cancelConnectBtn.frame = CGRectMake(100, 66, 50, 30);
+    [cancelConnectBtn addTarget:self action:@selector(onCancelConnectedClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:cancelConnectBtn];
+    
+    UIButton *retrieveBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [retrieveBtn setTitle:@"retrive peri" forState:UIControlStateNormal];
+    [retrieveBtn addTarget:self action:@selector(onRetriveIdentifierClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:retrieveBtn];
+    retrieveBtn.frame = CGRectMake(160, 66, 100, 30);
+    
+    UIButton *serviceRetriveBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [serviceRetriveBtn setTitle:@"retrive suuids" forState:UIControlStateNormal];
+    [serviceRetriveBtn addTarget:self action:@selector(onRetriveServicesClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:serviceRetriveBtn];
+    serviceRetriveBtn.frame = CGRectMake(260, 66, 100, 30);
 
 }
 
-- (void)onConnectClicked {
-    
+- (void)onRetriveIdentifierClicked {
+    if (_connectedPeripheralsdentifiers.count >0) {
+        NSArray<CBPeripheral *> *connectedPeripherals =[_centralManger retrievePeripheralsWithIdentifiers:_connectedPeripheralsdentifiers];
+        [connectedPeripherals enumerateObjectsUsingBlock:^(CBPeripheral * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            CBPeripheral *peripheral = (CBPeripheral *)obj;
+            NSLog(@"peripheral name : %@",peripheral.name);
+        }];
+    }
+}
+
+- (void)onRetriveServicesClicked {
+    if (_connectedservicesUUIDs.count >0) {
+        NSArray<CBPeripheral *> *connectedPeripherals = [_centralManger retrieveConnectedPeripheralsWithServices:_connectedservicesUUIDs];
+        [connectedPeripherals enumerateObjectsUsingBlock:^(CBPeripheral * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            CBPeripheral *peripheral = (CBPeripheral *)obj;
+            NSLog(@"peripheral name : %@",peripheral.name);
+        }];
+    }
+}
+
+- (void)onCancelConnectedClicked {
+    if (_selectedPeripheral) {
+        [_centralManger cancelPeripheralConnection:_selectedPeripheral];
+    }
 }
 
 - (void)onStopScanClicked {
@@ -77,7 +122,7 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:resuserIdentifier forIndexPath:indexPath];
     CBPeripheral *peripheral = _peripherals[indexPath.row];
-    cell.textLabel.text = peripheral.name;
+    cell.textLabel.text = [NSString stringWithFormat:@"%@,%@",peripheral.name,peripheral.RSSI];
     cell.detailTextLabel.text = peripheral.identifier.UUIDString;
     return cell;
 }
@@ -90,43 +135,67 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"indexPath: %@",indexPath);
-    CBPeripheral *choicePeripheral = _peripherals[indexPath.row];
-//    NSDictionary *connectOptions = @{CBConnectPeripheralOptionNotifyOnConnectionKey:@(YES),CBConnectPeripheralOptionNotifyOnDisconnectionKey:@(YES),CBConnectPeripheralOptionNotifyOnNotificationKey:@(YES)};
-    [_centralManger connectPeripheral:choicePeripheral options:nil];
+    [_centralManger stopScan];
+    _selectedPeripheral = _peripherals[indexPath.row];
+    NSDictionary *connectOptions = @{CBConnectPeripheralOptionNotifyOnConnectionKey:@(YES),CBConnectPeripheralOptionNotifyOnDisconnectionKey:@(YES),CBConnectPeripheralOptionNotifyOnNotificationKey:@(YES)};
+    [_centralManger connectPeripheral:_selectedPeripheral options:connectOptions];
+    
+//    本地存储已经连接的uuid
+    [[NSUserDefaults standardUserDefaults] setObject:_selectedPeripheral.identifier.UUIDString forKey:@"selectedPeripheralUUIDString"];
 }
 
 //central manager delegate
+#pragma mark -- central manager 大体的
+#pragma mark -- CBCentralManagerDelegate
 
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central {
     if (central.state == CBManagerStatePoweredOn) {
 //        options 的设置
-        NSDictionary *options = @{CBCentralManagerScanOptionAllowDuplicatesKey:@(YES)};
-        [_centralManger scanForPeripheralsWithServices:nil options:options];
+//        NSDictionary *options = @{CBCentralManagerScanOptionAllowDuplicatesKey:@(YES)};
+        [_centralManger scanForPeripheralsWithServices:nil options:nil];
     }else{
         NSLog(@"请打开蓝牙设备");
     }
 }
 
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *, id> *)advertisementData RSSI:(NSNumber *)RSSI {
-//    NSLog(@"central : %@",central);
-//    NSLog(@"peripheral : %@",peripheral);
-//    NSLog(@"advertisementdata is : %@",advertisementData);
-//    NSLog(@"rssI : %@",RSSI);
-    NSLog(@"peripherals : %@",_peripherals);
-    [_peripherals addObject:peripheral];
+
+    NSLog(@"peripheral name is ; %@",peripheral.name);
+    if (peripheral.name.length <=0) {
+        return ;
+    }
+    
+    if (_peripherals.count <= 0) {
+        [_peripherals addObject:peripheral];
+    }else{
+        BOOL hasStore = NO;
+        for (NSInteger index =0; index <_peripherals.count; index++) {
+            CBPeripheral *storePeripheral = _peripherals[index];
+            if ([storePeripheral.name isEqualToString:peripheral.name] && [storePeripheral.identifier isEqual:peripheral.identifier]) {
+                [_peripherals removeObject:storePeripheral];
+                [_peripherals insertObject:peripheral atIndex:index];
+                hasStore = YES;
+                break;
+            }
+        }
+        if (!hasStore) {
+            [_peripherals addObject:peripheral];
+        }
+    }
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         [_tableView reloadData];
     });
-    
 }
 
+//存储了上一次已经连接的内容,存储了之后需要怎么进行处理？
 - (void)centralManager:(CBCentralManager *)central willRestoreState:(NSDictionary<NSString *, id> *)dict {
-    NSLog(@"central : %@",central);
+//    NSLog(@"central : %@",central);
     NSLog(@"dict : %@",dict);
     
-//    这个是一种可能，重新扫描外设
+//    这个是一种可能，重新扫描外
     NSDictionary *scanOptions = dict[CBCentralManagerRestoredStateScanOptionsKey];
-    if (!_centralManger) {
+    if (_centralManger.state != CBManagerStatePoweredOn) {
         _centralManger = [[CBCentralManager alloc] initWithDelegate:self queue:dispatch_get_global_queue(0, 0) options:scanOptions];
     }
 
@@ -140,22 +209,155 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
     NSArray *storePeripherals = dict[CBCentralManagerRestoredStatePeripheralsKey];
     [storePeripherals enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         CBPeripheral *peripheral = (CBPeripheral *)obj;
-        [_centralManger connectPeripheral:peripheral options:nil];
+//        这里不应该是链接（因为现在已经连接了）
+//        [_connectedPeripheralsdentifiers addObject:peripheral.identifier];
+        [_centralManger cancelPeripheralConnection:peripheral];
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"selectedPeripheralUUIDString"];
     }];
 }
 
-#pragma mark -- central manager delegate
-
+//一切读取数据的开始（） 【 输入 ---> 输出 】
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
     NSLog(@"did connect peripheral name : %@ , identifier : %@",peripheral.name,peripheral.identifier);
+    //    store the peripehral identifier which has connencted
+    [_connectedPeripheralsdentifiers addObject:peripheral.identifier];
+    
+//这里肯定是单一的内容
+    peripheral.delegate = self;
+    [peripheral discoverServices:nil];
+    
 }
 
 - (void)centralManager:(CBCentralManager *)central didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(nullable NSError *)error {
     NSLog(@"fail to connnect");
 }
 
+- (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(nullable NSError *)error {
+    NSLog(@"did disconnect peripheral : %@",error);
+    [_connectedPeripheralsdentifiers removeObject:peripheral.identifier];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+#pragma mark -- 外设的信息的读取，完全是CBPeripheral类对应的内容（具体）
+#pragma mark -- peripheral delegate
+
+//——————————peripheral内容上面的处理
+// 外设连接的时候法发生了改变 （应该是新的外设链接上了，和didconnect应该是同样等级的delegate）
+- (void)peripheralDidUpdateName:(CBPeripheral *)peripheral NS_AVAILABLE(10_9, 6_0) {
+    NSLog(@"peripheralDidUpdateName change: %@",peripheral.name);
+//    连接改变了之后发生了什么改变？ 选择另外一个蓝牙外设的时候，就会被调用
+}
+//—————————————— 服务发生改变（也就是这个内容已经没有了作用）
+//service 内容发生了改变 (应该是service变为不可以使用的的时候会被调用)
+- (void)peripheral:(CBPeripheral *)peripheral didModifyServices:(NSArray<CBService *> *)invalidatedServices NS_AVAILABLE(10_9, 7_0); {
+    NSLog(@"didModifyServices");
+    [invalidatedServices enumerateObjectsUsingBlock:^(CBService * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSLog(@"didModifyServices : %@",obj);
+    }];
+}
+
+/////___ rssi 的内容处理
+//RSSI的大小发生了改变，也就是信号的强弱发生了改变  (ios 8 之后才有的获取的属性方法也是ios 8 之后才有的)
+- (void)peripheralDidUpdateRSSI:(CBPeripheral *)peripheral error:(nullable NSError *)error NS_DEPRECATED(10_7, 10_13, 5_0, 8_0) {
+    NSLog(@"peripheralDidUpdateRSSI: %@",peripheral.RSSI);
+    [peripheral readRSSI];
+//    在什么时候进行处理的RSSI的内容
+}
+
+//上面的readRSSI的这个方法调用的时候，这方法应该-会被调用
+- (void)peripheral:(CBPeripheral *)peripheral didReadRSSI:(NSNumber *)RSSI error:(nullable NSError *)error NS_AVAILABLE(10_13, 8_0) {
+    NSLog(@"did read rssi : %@",RSSI);
+}
+
+//-------—— service上面的处理
+- (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(nullable NSError *)error {
+    if (error) {
+        NSLog(@"dicover peripheral services error : %@",error);
+        return;
+    }
+    NSLog(@"diddiscover peripheral  name:%@, services : %@",peripheral.name,peripheral.services);
+    [peripheral.services enumerateObjectsUsingBlock:^(CBService * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        CBService *service = ((CBService *)obj);
+        if ([service.UUID isEqual:_discoverServiceUUID]) {
+            [_connectedservicesUUIDs addObject:service.UUID];
+            //        discover characteristic
+            [peripheral discoverCharacteristics:nil forService:service];
+        }
+        
+//没有discover之前都是为nil的
+//        NSArray *characteristics = service.characteristics;
+//        [characteristics enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//            CBCharacteristic *c = (CBCharacteristic *)obj;
+//            NSLog(@"characteristic : %@",c);
+//        }];
+    }];
+}
+
+//发现包含在内的service的内容
+- (void)peripheral:(CBPeripheral *)peripheral didDiscoverIncludedServicesForService:(CBService *)service error:(nullable NSError *)error {
+    NSLog(@"didDiscoverIncludedServicesForService : %@",service);
+}
+
+//—————————— characteristic上面的内容处理 （发现）
+- (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(nullable NSError *)error {
+    NSLog(@"didDiscoverCharacteristicsForService");
+    if (error) {
+        NSLog(@"error : %@",error);
+        return;
+    }
+    [service.characteristics enumerateObjectsUsingBlock:^(CBCharacteristic * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj.UUID isEqual:[CBUUID UUIDWithString:@"FFF1"]]) {
+//            0x72
+            Byte bytes[] ={0x01};
+            NSData *datas = [[NSData alloc] initWithBytes:bytes length:1];
+            [peripheral writeValue:datas forCharacteristic:obj type:CBCharacteristicWriteWithResponse];
+        }else if([obj.UUID isEqual:[CBUUID UUIDWithString:@"FFF2"]]) {
+            [peripheral setNotifyValue:YES forCharacteristic:obj];
+        }else if([obj.UUID isEqual:[CBUUID UUIDWithString:@"FFF3"]]) {
+            [peripheral setNotifyValue:YES forCharacteristic:obj];
+        }else{
+            
+        }
+        NSLog(@"characteristic : %@ , idx :%ld ,stop:%d",obj,idx,*stop);
+    }];
+}
+
+//———————————— 读写 通知 characteristic
+- (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(nullable NSError *)error {
+    NSLog(@"读取数据吧： 还是更新？ didUpdateValueForCharacteristic: %@",characteristic);
+}
+
+- (void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(nullable NSError *)error {
+    NSLog(@"写入的数据：didWriteValueForCharacteristic %@",characteristic);
+}
+
+- (void)peripheral:(CBPeripheral *)peripheral didUpdateNotificationStateForCharacteristic:(CBCharacteristic *)characteristic error:(nullable NSError *)error {
+    NSLog(@"didUpdateNotificationStateForCharacteristic: %@",characteristic);
+//
+}
+
+//———————————— characteristic里面的descriptor上面的内容
+- (void)peripheral:(CBPeripheral *)peripheral didDiscoverDescriptorsForCharacteristic:(CBCharacteristic *)characteristic error:(nullable NSError *)error {
+    NSLog(@"didDiscoverDescriptorsForCharacteristic: %@",characteristic);
+}
+
+- (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForDescriptor:(CBDescriptor *)descriptor error:(nullable NSError *)error {
+    NSLog(@"didUpdateValueForDescriptor: %@",descriptor);
+}
+
+- (void)peripheral:(CBPeripheral *)peripheral didWriteValueForDescriptor:(CBDescriptor *)descriptor error:(nullable NSError *)error {
+    NSLog(@"didWriteValueForDescriptor: %@",descriptor);
+}
+
+//canSendWriteWithoutResponse 从NO变成YES的时候
+- (void)peripheralIsReadyToSendWriteWithoutResponse:(CBPeripheral *)peripheral {
+}
+
+//L2CAP这个的作用
+//- (void)peripheral:(CBPeripheral *)peripheral didOpenL2CAPChannel:(nullable CBL2CAPChannel *)channel error:(nullable NSError *)error {
+//}
 
 @end
