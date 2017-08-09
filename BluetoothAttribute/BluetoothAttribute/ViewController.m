@@ -308,6 +308,8 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
         NSLog(@"error : %@",error);
         return;
     }
+    
+//    这一段进行过滤一下
     [service.characteristics enumerateObjectsUsingBlock:^(CBCharacteristic * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if ([obj.UUID isEqual:[CBUUID UUIDWithString:@"FFF1"]]) {
 //            0x72
@@ -328,15 +330,36 @@ static NSString *const resuserIdentifier = @"reuseIdentifier";
 //———————————— 读写 通知 characteristic
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(nullable NSError *)error {
     NSLog(@"读取数据吧： 还是更新？ didUpdateValueForCharacteristic: %@",characteristic);
+//    读取的数据
+    if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"0xFFF2"]]) {
+        NSLog(@"读取FFF2数据");
+    }else if([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"0xFFF3"]]) {
+        NSLog(@"读取fff3的数据");
+    }else{}
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(nullable NSError *)error {
+    if (error) {
+        NSLog(@"write error");
+        return;
+    }
     NSLog(@"写入的数据：didWriteValueForCharacteristic %@",characteristic);
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateNotificationStateForCharacteristic:(CBCharacteristic *)characteristic error:(nullable NSError *)error {
-    NSLog(@"didUpdateNotificationStateForCharacteristic: %@",characteristic);
-//
+    if (error) {
+        NSLog(@"error : %@",error);
+        return;
+    }
+
+    if (characteristic.isNotifying) {
+        NSLog(@"didUpdateNotificationStateForCharacteristic: %@",characteristic);
+        [peripheral readValueForCharacteristic:characteristic];
+    }else{
+        NSLog(@"notification stoped  ");
+        [_centralManger cancelPeripheralConnection:peripheral];
+    }
+    
 }
 
 //———————————— characteristic里面的descriptor上面的内容
