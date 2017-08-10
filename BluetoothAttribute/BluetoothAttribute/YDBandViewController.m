@@ -35,7 +35,6 @@
 //        这里处理services
         [services enumerateObjectsUsingBlock:^(CBService * _Nonnull service, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([service.UUID isEqual:[CBUUID UUIDWithString:@"0xFFF0"]]) {
-//
 //                read : app write to the peripheral
                 wSelf.btMgr.discoverCharacteristic(nil,service).characteristicCallback = ^(CBCharacteristic *characteristic) {
 //                    deal with characteristic

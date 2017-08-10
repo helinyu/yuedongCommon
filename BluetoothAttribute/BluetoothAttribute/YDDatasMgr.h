@@ -10,6 +10,9 @@
 
 @interface YDDatasMgr : NSObject
 
++ (instancetype)shared;
+
 + (NSData *)convertToDatsWithStepState:(BOOL)state;
+- (NSData *)ConvertwriteByteToDataWithHeader:(Byte)header andData:(NSData *)data;
 
 @end
