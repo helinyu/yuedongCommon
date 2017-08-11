@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4121725C1F3D81B300A47AD9 /* HLYTestModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121725B1F3D81B300A47AD9 /* HLYTestModelViewController.m */; };
+		4121725F1F3D820800A47AD9 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121725E1F3D820800A47AD9 /* Father.m */; };
+		412172621F3D821B00A47AD9 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 412172611F3D821B00A47AD9 /* Son.m */; };
 		41ABCEF81F0BC51200927CCC /* HLYAnimationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */; };
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
@@ -141,9 +144,16 @@
 		DCEE85C31F035DD700CAC9CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCEE85C21F035DD700CAC9CA /* Assets.xcassets */; };
 		DCEE85C61F035DD700CAC9CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEE85C41F035DD700CAC9CA /* LaunchScreen.storyboard */; };
 		DCEE85C91F035DD700CAC9CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEE85C81F035DD700CAC9CA /* main.m */; };
+		DD87C451EAE6CD7C97017D7B /* libPods-test_effective.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6D6503E1747DC0113BDCF9 /* libPods-test_effective.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4121725A1F3D81B300A47AD9 /* HLYTestModelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLYTestModelViewController.h; sourceTree = "<group>"; };
+		4121725B1F3D81B300A47AD9 /* HLYTestModelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLYTestModelViewController.m; sourceTree = "<group>"; };
+		4121725D1F3D820800A47AD9 /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
+		4121725E1F3D820800A47AD9 /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
+		412172601F3D821B00A47AD9 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		412172611F3D821B00A47AD9 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
 		41ABCEF61F0BC51200927CCC /* HLYAnimationCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAnimationCollectionViewController.h; sourceTree = "<group>"; };
 		41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAnimationCollectionViewController.m; sourceTree = "<group>"; };
 		41ABCEF91F0BC57700927CCC /* AnimationCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationCollectionViewCell.h; path = "数据解析/AnimationCollectionViewCell.h"; sourceTree = "<group>"; };
@@ -153,7 +163,10 @@
 		41E0D8E01F0CDBA500E16E9E /* HLYShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYShapeLayerViewController.h; sourceTree = "<group>"; };
 		41E0D8E11F0CDBA500E16E9E /* HLYShapeLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYShapeLayerViewController.m; sourceTree = "<group>"; };
 		89914FF9277B52F087EA3821 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
+		A3D8D6271AADA2B1C96C1516 /* Pods-test_effective.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_effective.release.xcconfig"; path = "Pods/Target Support Files/Pods-test_effective/Pods-test_effective.release.xcconfig"; sourceTree = "<group>"; };
+		BF6D6503E1747DC0113BDCF9 /* libPods-test_effective.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test_effective.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB411E6BEDAFB83945250F32 /* Pods-test_effective.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_effective.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test_effective/Pods-test_effective.debug.xcconfig"; sourceTree = "<group>"; };
 		DC04101D1EF80E07000B69A3 /* HLYAudioPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAudioPlayerManager.h; sourceTree = "<group>"; };
 		DC04101E1EF80E07000B69A3 /* HLYAudioPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAudioPlayerManager.m; sourceTree = "<group>"; };
 		DC0410201EF80E1E000B69A3 /* HLYAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAudioViewController.h; sourceTree = "<group>"; };
@@ -416,6 +429,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD87C451EAE6CD7C97017D7B /* libPods-test_effective.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +443,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		412172591F3D812400A47AD9 /* 9 */ = {
+			isa = PBXGroup;
+			children = (
+				4121725A1F3D81B300A47AD9 /* HLYTestModelViewController.h */,
+				4121725B1F3D81B300A47AD9 /* HLYTestModelViewController.m */,
+				4121725D1F3D820800A47AD9 /* Father.h */,
+				4121725E1F3D820800A47AD9 /* Father.m */,
+				412172601F3D821B00A47AD9 /* Son.h */,
+				412172611F3D821B00A47AD9 /* Son.m */,
+			);
+			name = 9;
+			sourceTree = "<group>";
+		};
 		41ABCEF51F0BC4F800927CCC /* collectionview cell 上的动画 */ = {
 			isa = PBXGroup;
 			children = (
@@ -457,6 +484,7 @@
 				DCC3FC141ED83D5C00C88BF6 /* libz.tbd */,
 				DCC3FC121ED83D0A00C88BF6 /* libz.1.1.3.tbd */,
 				CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */,
+				BF6D6503E1747DC0113BDCF9 /* libPods-test_effective.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -466,6 +494,8 @@
 			children = (
 				89914FF9277B52F087EA3821 /* Pods-test.debug.xcconfig */,
 				F8A481B59EF84D29E58DAF85 /* Pods-test.release.xcconfig */,
+				DB411E6BEDAFB83945250F32 /* Pods-test_effective.debug.xcconfig */,
+				A3D8D6271AADA2B1C96C1516 /* Pods-test_effective.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1097,6 +1127,7 @@
 		DCCED70F1EF98816001D2474 /* test_effective */ = {
 			isa = PBXGroup;
 			children = (
+				412172591F3D812400A47AD9 /* 9 */,
 				DC38AE621EFFE5D600FB44FE /* 8 */,
 				DCCB56111EFADDD400A5A44C /* 7 */,
 				DCCED7441EF9884E001D2474 /* 6 */,
@@ -1233,9 +1264,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCCED7411EF98816001D2474 /* Build configuration list for PBXNativeTarget "test_effective" */;
 			buildPhases = (
+				9DEAC77C73CABE6861CC047C /* [CP] Check Pods Manifest.lock */,
 				DCCED70A1EF98816001D2474 /* Sources */,
 				DCCED70B1EF98816001D2474 /* Frameworks */,
 				DCCED70C1EF98816001D2474 /* Resources */,
+				FDFB9039947B05C8DC489741 /* [CP] Embed Pods Frameworks */,
+				23D9E4BA5E283547975D5904 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1380,7 +1414,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		0FD93607C097AB1AF1C567D9 /* [CP] Embed Pods Frameworks */ = {
@@ -1398,6 +1432,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		23D9E4BA5E283547975D5904 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test_effective/Pods-test_effective-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DEAC77C73CABE6861CC047C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		DAC3619E634DF58223ECABC9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1411,6 +1475,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDFB9039947B05C8DC489741 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test_effective/Pods-test_effective-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1531,14 +1610,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412172621F3D821B00A47AD9 /* Son.m in Sources */,
 				DCCED7181EF98816001D2474 /* ViewController.m in Sources */,
 				DC38AE681EFFE6A200FB44FE /* EOCPerson.m in Sources */,
 				DCCB56141EFADDEE00A5A44C /* HLy7ViewController.m in Sources */,
 				DCCED7151EF98816001D2474 /* AppDelegate.m in Sources */,
+				4121725C1F3D81B300A47AD9 /* HLYTestModelViewController.m in Sources */,
 				DC38AE651EFFE5EF00FB44FE /* HLY8ViewController.m in Sources */,
 				DCCED7471EF98867001D2474 /* HLYPropertyViewController.m in Sources */,
 				DCCED7121EF98816001D2474 /* main.m in Sources */,
 				DCCED74A1EF98E62001D2474 /* CustomObj.m in Sources */,
+				4121725F1F3D820800A47AD9 /* Father.m in Sources */,
 				DCCED71E1EF98816001D2474 /* test_effective.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1789,6 +1871,7 @@
 		};
 		DCCED73B1EF98816001D2474 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB411E6BEDAFB83945250F32 /* Pods-test_effective.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D2XBEJ6876;
@@ -1802,6 +1885,7 @@
 		};
 		DCCED73C1EF98816001D2474 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3D8D6271AADA2B1C96C1516 /* Pods-test_effective.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D2XBEJ6876;

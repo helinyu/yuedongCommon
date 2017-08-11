@@ -10,4 +10,6 @@
 
 @interface Son : Father
 
+@property (nonatomic, strong) NSNumber *age;
+
 @end

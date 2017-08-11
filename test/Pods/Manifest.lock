@@ -9,6 +9,7 @@ PODS:
   - DateTools (2.0.0)
   - Masonry (1.0.2)
   - TYPagerController (1.0.2)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AMap3DMap (~> 4.6.1)
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - DateTools (~> 2.0.0)
   - Masonry (~> 1.0.2)
   - TYPagerController
+  - YYModel (~> 1.0.4)
 
 SPEC CHECKSUMS:
   AMap3DMap: eb6656fb441ed7eb310b3c121032e947d4d649e5
@@ -26,7 +28,8 @@ SPEC CHECKSUMS:
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   TYPagerController: 0b3e3e589a217ff537d5f78e1e76594beaa4cfc6
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 02a365a3ac21b126f33a693dc63edfcce12680db
+PODFILE CHECKSUM: c6aa4eeae08d4eee3cf173f2e306068db9075570
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1

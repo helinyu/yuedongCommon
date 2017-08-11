@@ -7,6 +7,9 @@
 //
 
 #import "HLYTestModelViewController.h"
+#import "Son.h"
+#import "YYModel.h"
+#import <CoreBluetooth/CoreBluetooth.h>
 
 @interface HLYTestModelViewController ()
 
@@ -16,22 +19,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    Son *son = [Son new];
+    son.name = @"kask";
+    son.age = @(19);
+    son.UUID = [CBUUID UUIDWithString:@"F000FFC0-0451-4000-B000-000000000000"];
+    NSDictionary *datas = [son yy_modelToJSONObject];
+    NSLog(@"son dictionay : %@",datas);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
