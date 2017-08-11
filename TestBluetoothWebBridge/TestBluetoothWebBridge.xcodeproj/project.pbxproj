@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00F25F79C7754C054D3F0917 /* libPods-TestBluetoothWebBridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21927F961C36501604B70996 /* libPods-TestBluetoothWebBridge.a */; };
 		4110A6D91F3DDEB800EBA5F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110A6D81F3DDEB800EBA5F1 /* main.m */; };
 		4110A6DC1F3DDEB800EBA5F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110A6DB1F3DDEB800EBA5F1 /* AppDelegate.m */; };
 		4110A6DF1F3DDEB800EBA5F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110A6DE1F3DDEB800EBA5F1 /* ViewController.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21927F961C36501604B70996 /* libPods-TestBluetoothWebBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestBluetoothWebBridge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4110A6D41F3DDEB800EBA5F1 /* TestBluetoothWebBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBluetoothWebBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4110A6D81F3DDEB800EBA5F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4110A6DA1F3DDEB800EBA5F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,10 @@
 		4110A6E31F3DDEB800EBA5F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4110A6E61F3DDEB800EBA5F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4110A6E81F3DDEB800EBA5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		413D1C1D1F3DDFD0000C4C87 /* peripheralList.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = peripheralList.html; sourceTree = "<group>"; };
+		413D1C1E1F3DDFD0000C4C87 /* S3.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = S3.html; sourceTree = "<group>"; };
+		BB6E0BB1DEE12C32A0440EEC /* Pods-TestBluetoothWebBridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestBluetoothWebBridge.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestBluetoothWebBridge/Pods-TestBluetoothWebBridge.release.xcconfig"; sourceTree = "<group>"; };
+		F583991E7ED529354DC0BD42 /* Pods-TestBluetoothWebBridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestBluetoothWebBridge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestBluetoothWebBridge/Pods-TestBluetoothWebBridge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F25F79C7754C054D3F0917 /* libPods-TestBluetoothWebBridge.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C257A681DAFFE0B914639B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F583991E7ED529354DC0BD42 /* Pods-TestBluetoothWebBridge.debug.xcconfig */,
+				BB6E0BB1DEE12C32A0440EEC /* Pods-TestBluetoothWebBridge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4110A6CB1F3DDEB800EBA5F1 = {
 			isa = PBXGroup;
 			children = (
 				4110A6D61F3DDEB800EBA5F1 /* TestBluetoothWebBridge */,
 				4110A6D51F3DDEB800EBA5F1 /* Products */,
+				3C257A681DAFFE0B914639B1 /* Pods */,
+				99C860DE8C20587A4C9017AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +76,8 @@
 		4110A6D61F3DDEB800EBA5F1 /* TestBluetoothWebBridge */ = {
 			isa = PBXGroup;
 			children = (
+				413D1C1D1F3DDFD0000C4C87 /* peripheralList.html */,
+				413D1C1E1F3DDFD0000C4C87 /* S3.html */,
 				4110A6DA1F3DDEB800EBA5F1 /* AppDelegate.h */,
 				4110A6DB1F3DDEB800EBA5F1 /* AppDelegate.m */,
 				4110A6DD1F3DDEB800EBA5F1 /* ViewController.h */,
@@ -79,6 +99,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		99C860DE8C20587A4C9017AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21927F961C36501604B70996 /* libPods-TestBluetoothWebBridge.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4110A6EB1F3DDEB800EBA5F1 /* Build configuration list for PBXNativeTarget "TestBluetoothWebBridge" */;
 			buildPhases = (
+				F76C0AB4B9121F3C8CA13096 /* [CP] Check Pods Manifest.lock */,
 				4110A6D01F3DDEB800EBA5F1 /* Sources */,
 				4110A6D11F3DDEB800EBA5F1 /* Frameworks */,
 				4110A6D21F3DDEB800EBA5F1 /* Resources */,
+				BDEAB69935C5FEE34B155094 /* [CP] Embed Pods Frameworks */,
+				4DD375E362FA359FC9E062A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,8 +141,8 @@
 				TargetAttributes = {
 					4110A6D31F3DDEB800EBA5F1 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = D2XBEJ6876;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -145,6 +176,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DD375E362FA359FC9E062A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestBluetoothWebBridge/Pods-TestBluetoothWebBridge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDEAB69935C5FEE34B155094 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestBluetoothWebBridge/Pods-TestBluetoothWebBridge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F76C0AB4B9121F3C8CA13096 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4110A6D01F3DDEB800EBA5F1 /* Sources */ = {
@@ -273,25 +352,32 @@
 		};
 		4110A6EC1F3DDEB800EBA5F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F583991E7ED529354DC0BD42 /* Pods-TestBluetoothWebBridge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				INFOPLIST_FILE = TestBluetoothWebBridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.TestBluetoothWebBridge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 			};
 			name = Debug;
 		};
 		4110A6ED1F3DDEB800EBA5F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB6E0BB1DEE12C32A0440EEC /* Pods-TestBluetoothWebBridge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestBluetoothWebBridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.TestBluetoothWebBridge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -314,6 +400,7 @@
 				4110A6ED1F3DDEB800EBA5F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

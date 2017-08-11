@@ -1,0 +1,164 @@
+<!doctype html>
+<html><head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <style type='text/css'>
+            html { font-family:Helvetica; color:#222; }
+            h1 { color:steelblue; font-size:24px; margin-top:24px; }
+            button { margin:0 3px 10px; font-size:12px; }
+            .logLine { border-bottom:1px solid #ccc; padding:4px 2px; font-family:courier; font-size:11px; }
+            </style>
+</head>
+<body>
+    <script>
+        window.onerror = function(err) {
+            log('window.onerror: ' + err)
+        }
+    
+// 固定的模块
+    function setupWebViewJavascriptBridge(callback) {
+        if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+        if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+        window.WVJBCallbacks = [callback];
+        var WVJBIframe = document.createElement('iframe');
+        WVJBIframe.style.display = 'none';
+        WVJBIframe.src = 'https://__bridge_loaded__';
+        document.documentElement.appendChild(WVJBIframe);
+        setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+    }
+
+// 这里调用
+    setupWebViewJavascriptBridge(function(bridge) {
+        var uniqueId = 1
+        function log(message, data) {
+        var log = document.getElementById('log')
+        var el = document.createElement('div')
+        el.className = 'logLine'
+        el.innerHTML = uniqueId++ + '. ' + message + ':<br/>' + JSON.stringify(data)
+        if (log.children.length) { log.insertBefore(el, log.children[0]) }
+        else { log.appendChild(el) }
+        }
+
+        document.body.appendChild(document.createElement('br'))
+	
+		// 开始扫描
+         var callbackButton = document.getElementById('scanBtn')
+         callbackButton.innerHTML = 'scanBtn'
+         callbackButton.onclick = function(e) {
+	         e.preventDefault();
+	         log('JS calling handler "scan peripheral"')
+	         // window.location.href='./peripheralList.html';H
+             var scanParams = {'YDBlueToothFilterType':0,'prefixField':'S3','toLink':'peripheralList.html'};
+	         bridge.callHandler('onScanClick', scanParams, function(response) {
+                log('JS got response', response)
+            });
+         };
+
+         bridge.registerHandler('onServicesResultBack',function(data,responseCallback) {
+            log('services count : '+data.length);
+            responseCallback({'count':data.length});
+         });
+
+         bridge.registerHandler('onCharacteristicResultBack', function(data, responseCallback) {
+         	log('data'+data+':'+data.uuid+data.value.value0 +':'+data.value.value1+':'+data.value.value2+':'+data.value.value3+'.');
+            
+            if (data.uuid == 'FFF1') {
+//              write
+            }
+
+            if (data.uuid == 'FFF2') {
+                // heart rate
+                log("heart rate"+data.value.value);
+                var heartRateL = document.getElementById('heartRateLabel');
+                heartRateL.innerHTML = data.value.value2;                
+            }
+
+            if (data.uuid == 'FFF3') {
+                log('step distance calorie');
+                var stepLabel = document.getElementById('stepLabel');
+                stepLabel.innerHTML = data.value.value2;
+                var calorieLabel = document.getElementById('calorieLabel');
+                calorieLabel.innerHTML = data.value.value2;
+                var distanceLabel = document.getElementById('distanceLabel');
+                distanceLabel.innerHTML = data.value.value2;
+            }
+            responseCallback(responseData);
+        });
+
+
+        //参数以key/value的方式 插入数据库
+        var datas = {"numberOfStep":12};
+        var pedometer = document.getElementById('testInsertPedemter');
+        pedometer.onclick = function(e) {
+            e.preventDefault();
+            bridge.callHandler('insertPedometer',datas,function(response) {
+                log('respone +',response);
+            });
+        };
+
+        // 写入到peripheral
+        var writeDatas = document.getElementById('writeDatas');
+        writeDatas.onclick = function(e) {
+            e.preventDefault();
+            // test value
+            var datas = {"hexString":"0x06","length":1};
+            bridge.callHandler('writeDatas',datas,function(response) {
+                log('respone +',response);
+            });
+        };      
+
+    });
+    
+    </script>
+    <div>
+        <a href="./source.html">跳转链接</a>
+    </div>
+    <div id='buttons'></div>
+    <div id='btns'></div>
+    <div>
+	    <button type="button" id='scanBtn' style="text-decoration none;" >
+		    scanBtn S3
+	    </button>
+	</div>
+    <div>
+        <button type="button" id='testInsertPedemter' style="text-decoration none;" >
+            测试插入步数
+        </button>
+    </div>
+    <div>
+        <button type="button" id='NotificationSource' style="text-decoration none;" >
+            测试设置通知
+        </button>
+    </div>
+
+	<div>
+
+		<label>心率</label>
+		<label id="heartRateLabel"></label>		
+		<br/>
+
+		<label>步数</label>
+		<label id="stepLabel">
+
+		</label>
+		<br/>
+
+		<label>卡路里</label>
+		<label id="calorieLabel"></label>
+
+		<br/>
+		<label>距离</label>
+		<label id="distanceLabel">
+
+		</label>
+	</div>
+        
+    </div>
+    <div>
+        <label>写数据</label>
+        <button id="writeDatas">写数据</button>        
+    </div>
+
+    <div id='log'></div>
+
+</body>
+</html>
