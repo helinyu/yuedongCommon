@@ -29,13 +29,13 @@
 }
 
 - (void)onTestClicked {
-    YDBridgeWebViewController *vc = [[YDBridgeWebViewController alloc] initWithUrl:@"https://m.baidu.com/" andType:YDWebViewTypeInner];
-//    [YDBridgeWebViewController new];
+//        YDBridgeWebViewController *vc = [[YDBridgeWebViewController alloc] initWithUrl:@"https://www.baidu.com/" andType:YDWebViewTypeInner];
+        YDBridgeWebViewController *vc = [[YDBridgeWebViewController alloc] initWithUrl:@"http://192.168.11.127:8000/S3.html" andType:YDWebViewTypeS3];
+//    YDBridgeWebViewController *vc = [YDBridgeWebViewController new];
+//    vc.urlString = @"S3.html";
 //    vc.type = YDWebViewTypeS3;
-    vc.urlString = @"http://baidu.com";
     [self.navigationController pushViewController:vc animated:YES];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
