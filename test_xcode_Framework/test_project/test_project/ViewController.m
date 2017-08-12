@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Test1ViewController.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+	Test1ViewController *vc = [Test1ViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
 
 @end
