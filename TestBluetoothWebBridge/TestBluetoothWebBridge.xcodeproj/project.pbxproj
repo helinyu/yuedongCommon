@@ -14,6 +14,8 @@
 		4110A6E21F3DDEB800EBA5F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4110A6E01F3DDEB800EBA5F1 /* Main.storyboard */; };
 		4110A6E41F3DDEB800EBA5F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4110A6E31F3DDEB800EBA5F1 /* Assets.xcassets */; };
 		4110A6E71F3DDEB800EBA5F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4110A6E51F3DDEB800EBA5F1 /* LaunchScreen.storyboard */; };
+		41CDF5821F3EDE6A00600AEB /* S3.html in Resources */ = {isa = PBXBuildFile; fileRef = 416F5EEE1F3EDCD40079AF0A /* S3.html */; };
+		41CDF5831F3EDE6E00600AEB /* peripheralList.html in Resources */ = {isa = PBXBuildFile; fileRef = 416F5EED1F3EDCD40079AF0A /* peripheralList.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +30,9 @@
 		4110A6E31F3DDEB800EBA5F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4110A6E61F3DDEB800EBA5F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4110A6E81F3DDEB800EBA5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		413D1C1D1F3DDFD0000C4C87 /* peripheralList.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = peripheralList.html; sourceTree = "<group>"; };
-		413D1C1E1F3DDFD0000C4C87 /* S3.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = S3.html; sourceTree = "<group>"; };
+		416F5EED1F3EDCD40079AF0A /* peripheralList.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = peripheralList.html; sourceTree = "<group>"; };
+		416F5EEE1F3EDCD40079AF0A /* S3.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = S3.html; sourceTree = "<group>"; };
+		41CDF57F1F3EDE0500600AEB /* TestBluetoothWebBridge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestBluetoothWebBridge.entitlements; sourceTree = "<group>"; };
 		BB6E0BB1DEE12C32A0440EEC /* Pods-TestBluetoothWebBridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestBluetoothWebBridge.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestBluetoothWebBridge/Pods-TestBluetoothWebBridge.release.xcconfig"; sourceTree = "<group>"; };
 		F583991E7ED529354DC0BD42 /* Pods-TestBluetoothWebBridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestBluetoothWebBridge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestBluetoothWebBridge/Pods-TestBluetoothWebBridge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,8 +79,9 @@
 		4110A6D61F3DDEB800EBA5F1 /* TestBluetoothWebBridge */ = {
 			isa = PBXGroup;
 			children = (
-				413D1C1D1F3DDFD0000C4C87 /* peripheralList.html */,
-				413D1C1E1F3DDFD0000C4C87 /* S3.html */,
+				41CDF57F1F3EDE0500600AEB /* TestBluetoothWebBridge.entitlements */,
+				416F5EED1F3EDCD40079AF0A /* peripheralList.html */,
+				416F5EEE1F3EDCD40079AF0A /* S3.html */,
 				4110A6DA1F3DDEB800EBA5F1 /* AppDelegate.h */,
 				4110A6DB1F3DDEB800EBA5F1 /* AppDelegate.m */,
 				4110A6DD1F3DDEB800EBA5F1 /* ViewController.h */,
@@ -143,6 +147,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2ERYNAFK87;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -169,6 +178,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41CDF5831F3EDE6E00600AEB /* peripheralList.html in Resources */,
+				41CDF5821F3EDE6A00600AEB /* S3.html in Resources */,
 				4110A6E71F3DDEB800EBA5F1 /* LaunchScreen.storyboard in Resources */,
 				4110A6E41F3DDEB800EBA5F1 /* Assets.xcassets in Resources */,
 				4110A6E21F3DDEB800EBA5F1 /* Main.storyboard in Resources */,
@@ -358,6 +369,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				INFOPLIST_FILE = TestBluetoothWebBridge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,6 +386,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestBluetoothWebBridge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
