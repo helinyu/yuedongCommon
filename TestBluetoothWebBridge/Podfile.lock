@@ -28,7 +28,7 @@ PODS:
   - YYModel (1.0.4)
 
 DEPENDENCIES:
-  - YDBluetoothWebBridge (~> 0.2.4)
+  - YDBluetoothWebBridge (~> 0.2.3)
 
 SPEC CHECKSUMS:
   BabyBluetooth: d50758aecf24d4a0ab9271d69f0f116d6bee51c9
@@ -43,6 +43,6 @@ SPEC CHECKSUMS:
   YDBluetoothWebBridge: c42305daeaec980f1408041daf7b9c42bee3f861
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: bcb7c786f5fb5f35930b09215ebe722a4bb1bfbc
+PODFILE CHECKSUM: 52d3d4999e1b835db5dd8ab0a9e69a101b16c8ab
 
 COCOAPODS: 1.2.1
