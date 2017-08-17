@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FMDB.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btn setTitle:@"create database" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(onCreateDBClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    btn.frame = CGRectMake(100, 100, 100, 30);
+
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+- (void)onCreateDBClicked {
+
+    NSFileManager *fileManager = [[NSFileManager alloc]init];
+    NSString *pathDocuments = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
+    NSString *createPath = [NSString stringWithFormat:@"%@/data",pathDocuments];
+//    if (![[NSFileManager defaultManager]fileExistsAtPath:createPath]) {
+//        [fileManager createDirectoryAtPath:createPath withIntermediateDirectories:YES attributes:nil error:nil];
+//
+//    }else{
+//        NSLog(@"有这个文件了");
+//    }
+
+    [FMDatabase databaseWithPath:createPath];
+    
+    
+}
 
 @end
