@@ -12,17 +12,17 @@
 @class CBService;
 @class CBCharacteristic;
 
-typedef NS_ENUM(NSInteger, YDBlueToothFilterType) {
-    YDBlueToothFilterTypeNone = 0,  // no filter key word
-    YDBlueToothFilterTypeMatch ,  // match to filter and find the specify device
-    YDBlueToothFilterTypeContain,    // contain the keyword to filter and find the specify device
-    YDBlueToothFilterTypePrefix,     // key word by the prefix
-    YDBlueToothFilterTypeSuffix,     // key word by the suffix
-    YDBlueToothFilterTypePrefixAndSuffix, // key word by the prefix & suffix
-    YDBlueToothFilterTypePrefixAndContain, // key word by the prefix & contain
-    YDBlueToothFilterTypeSuffixAndContrain, // key word by the suffix & contain
-    YDBlueToothFilterTypePrefixAndContrainAndSuffix, //key word by the prefix & contrain * suffix
-};
+//typedef NS_ENUM(NSInteger, YDBlueToothFilterType) {
+//    YDBlueToothFilterTypeNone = 0,  // no filter key word
+//    YDBlueToothFilterTypeMatch ,  // match to filter and find the specify device
+//    YDBlueToothFilterTypeContain,    // contain the keyword to filter and find the specify device
+//    YDBlueToothFilterTypePrefix,     // key word by the prefix
+//    YDBlueToothFilterTypeSuffix,     // key word by the suffix
+//    YDBlueToothFilterTypePrefixAndSuffix, // key word by the prefix & suffix
+//    YDBlueToothFilterTypePrefixAndContain, // key word by the prefix & contain
+//    YDBlueToothFilterTypeSuffixAndContrain, // key word by the suffix & contain
+//    YDBlueToothFilterTypePrefixAndContrainAndSuffix, //key word by the prefix & contrain * suffix
+//};
 
 @interface YDBlueToothMgr : NSObject
 

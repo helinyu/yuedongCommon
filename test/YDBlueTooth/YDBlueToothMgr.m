@@ -10,6 +10,7 @@
 #import "BabyBluetooth.h"
 #import "SVProgressHUD.h"
 #import "NSString+Extension.h"
+#import "YDDefine.h"
 
 @interface YDBlueToothMgr ()
 
