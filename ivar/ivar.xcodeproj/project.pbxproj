@@ -15,6 +15,7 @@
 		4187039B1F4835AC00625B60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4187039A1F4835AC00625B60 /* main.m */; };
 		418703A51F4835AC00625B60 /* ivarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 418703A41F4835AC00625B60 /* ivarTests.m */; };
 		418703B01F4835AC00625B60 /* ivarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 418703AF1F4835AC00625B60 /* ivarUITests.m */; };
+		418703BF1F48363300625B60 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 418703BE1F48363300625B60 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		418703AB1F4835AC00625B60 /* ivarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ivarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		418703AF1F4835AC00625B60 /* ivarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ivarUITests.m; sourceTree = "<group>"; };
 		418703B11F4835AC00625B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		418703BD1F48363300625B60 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		418703BE1F48363300625B60 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				4187038C1F4835AC00625B60 /* AppDelegate.m */,
 				4187038E1F4835AC00625B60 /* ViewController.h */,
 				4187038F1F4835AC00625B60 /* ViewController.m */,
+				418703BD1F48363300625B60 /* Person.h */,
+				418703BE1F48363300625B60 /* Person.m */,
 				418703911F4835AC00625B60 /* Main.storyboard */,
 				418703941F4835AC00625B60 /* Assets.xcassets */,
 				418703961F4835AC00625B60 /* LaunchScreen.storyboard */,
@@ -264,6 +269,7 @@
 			files = (
 				418703901F4835AC00625B60 /* ViewController.m in Sources */,
 				4187039B1F4835AC00625B60 /* main.m in Sources */,
+				418703BF1F48363300625B60 /* Person.m in Sources */,
 				4187038D1F4835AC00625B60 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

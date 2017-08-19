@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Person.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    Person *p = [Person new];
+    p.name1 = @"name1";// 说明有关的内容是name1 （name0 是不能够访问的）
+//    【setter 方法】
+//    我们推断出，@property其实也带有接口属性，也就是能够被外部对象访问
+    NSLog(@"name1: %@",p.name1);
+//    [getter 方法];
+//    @property中声明的属性是会自动生成setter和getter的方法
+    
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
-
 
 @end
