@@ -16,6 +16,9 @@
 		418703A51F4835AC00625B60 /* ivarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 418703A41F4835AC00625B60 /* ivarTests.m */; };
 		418703B01F4835AC00625B60 /* ivarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 418703AF1F4835AC00625B60 /* ivarUITests.m */; };
 		418703BF1F48363300625B60 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 418703BE1F48363300625B60 /* Person.m */; };
+		41FE1E621F4ADBED00567FB8 /* Person+IvarExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE1E611F4ADBED00567FB8 /* Person+IvarExtension.m */; };
+		41FE1E681F4ADDCC00567FB8 /* NSObject+YDClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE1E671F4ADDCC00567FB8 /* NSObject+YDClass.m */; };
+		41FE1E6B1F4ADE6700567FB8 /* YDClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE1E6A1F4ADE6700567FB8 /* YDClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		418703B11F4835AC00625B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		418703BD1F48363300625B60 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		418703BE1F48363300625B60 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		41FE1E601F4ADBED00567FB8 /* Person+IvarExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+IvarExtension.h"; sourceTree = "<group>"; };
+		41FE1E611F4ADBED00567FB8 /* Person+IvarExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+IvarExtension.m"; sourceTree = "<group>"; };
+		41FE1E661F4ADDCC00567FB8 /* NSObject+YDClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YDClass.h"; sourceTree = "<group>"; };
+		41FE1E671F4ADDCC00567FB8 /* NSObject+YDClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YDClass.m"; sourceTree = "<group>"; };
+		41FE1E691F4ADE6700567FB8 /* YDClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDClass.h; sourceTree = "<group>"; };
+		41FE1E6A1F4ADE6700567FB8 /* YDClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,12 @@
 				4187038F1F4835AC00625B60 /* ViewController.m */,
 				418703BD1F48363300625B60 /* Person.h */,
 				418703BE1F48363300625B60 /* Person.m */,
+				41FE1E661F4ADDCC00567FB8 /* NSObject+YDClass.h */,
+				41FE1E671F4ADDCC00567FB8 /* NSObject+YDClass.m */,
+				41FE1E691F4ADE6700567FB8 /* YDClass.h */,
+				41FE1E6A1F4ADE6700567FB8 /* YDClass.m */,
+				41FE1E601F4ADBED00567FB8 /* Person+IvarExtension.h */,
+				41FE1E611F4ADBED00567FB8 /* Person+IvarExtension.m */,
 				418703911F4835AC00625B60 /* Main.storyboard */,
 				418703941F4835AC00625B60 /* Assets.xcassets */,
 				418703961F4835AC00625B60 /* LaunchScreen.storyboard */,
@@ -268,6 +283,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				418703901F4835AC00625B60 /* ViewController.m in Sources */,
+				41FE1E6B1F4ADE6700567FB8 /* YDClass.m in Sources */,
+				41FE1E681F4ADDCC00567FB8 /* NSObject+YDClass.m in Sources */,
+				41FE1E621F4ADBED00567FB8 /* Person+IvarExtension.m in Sources */,
 				4187039B1F4835AC00625B60 /* main.m in Sources */,
 				418703BF1F48363300625B60 /* Person.m in Sources */,
 				4187038D1F4835AC00625B60 /* AppDelegate.m in Sources */,

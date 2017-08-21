@@ -23,4 +23,16 @@
     return self;
 }
 
+- (void)test0 {
+    NSLog(@"test0");
+}
+
+- (void)hah {
+    NSLog(@"hah");
+}
+
+- (void)test1 {
+    NSLog(@"test1");
+}
+
 @end

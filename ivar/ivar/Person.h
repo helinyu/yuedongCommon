@@ -22,4 +22,7 @@
 //test the readonly & variable
 @property (nonatomic, copy, readonly) NSString *name3;
 
+- (void)test0;
+- (void)test1;
+
 @end
