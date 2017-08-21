@@ -15,6 +15,14 @@
 		41FE1E8C1F4B1BF300567FB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE1E8B1F4B1BF300567FB8 /* main.m */; };
 		41FE1E961F4B1BF400567FB8 /* YYTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE1E951F4B1BF400567FB8 /* YYTests.m */; };
 		41FE1EA11F4B1BF400567FB8 /* YYUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE1EA01F4B1BF400567FB8 /* YYUITests.m */; };
+		41FE1EBC1F4B250000567FB8 /* test0.gif in Resources */ = {isa = PBXBuildFile; fileRef = 41FE1EB91F4B24F100567FB8 /* test0.gif */; };
+		41FE1EBF1F4B251900567FB8 /* TestWebPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE1EBE1F4B251900567FB8 /* TestWebPViewController.m */; };
+		41FE1EC01F4B255E00567FB8 /* TestYYImageViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 41FE1EBA1F4B24F100567FB8 /* TestYYImageViewController.h */; };
+		41FE1EC11F4B255E00567FB8 /* TestYYImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE1EBB1F4B24F100567FB8 /* TestYYImageViewController.m */; };
+		41FE1EC21F4B256400567FB8 /* TestWebPViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 41FE1EBD1F4B251900567FB8 /* TestWebPViewController.h */; };
+		41FE1EC61F4B26D200567FB8 /* TestAPNGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE1EC51F4B26D200567FB8 /* TestAPNGViewController.m */; };
+		41FE1ECA1F4B27DF00567FB8 /* YYImageFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE1EC91F4B27DF00567FB8 /* YYImageFrameViewController.m */; };
+		41FE1ECE1F4B286E00567FB8 /* TestSpriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE1ECD1F4B286E00567FB8 /* TestSpriteViewController.m */; };
 		51F629C535F9CA5576274078 /* libPods-YYUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD358BE29D6EE9F37EE8C54 /* libPods-YYUITests.a */; };
 		7D79743827E02E59124B9ACC /* libPods-YY.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81153EAC7E628CA7C703666A /* libPods-YY.a */; };
 		CDAADC5044662BB1E64734D2 /* libPods-YYTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C7C5D323EC52D28B0FF0DE /* libPods-YYTests.a */; };
@@ -54,6 +62,17 @@
 		41FE1E9C1F4B1BF400567FB8 /* YYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FE1EA01F4B1BF400567FB8 /* YYUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYUITests.m; sourceTree = "<group>"; };
 		41FE1EA21F4B1BF400567FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41FE1EB91F4B24F100567FB8 /* test0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test0.gif; sourceTree = "<group>"; };
+		41FE1EBA1F4B24F100567FB8 /* TestYYImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestYYImageViewController.h; sourceTree = "<group>"; };
+		41FE1EBB1F4B24F100567FB8 /* TestYYImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestYYImageViewController.m; sourceTree = "<group>"; };
+		41FE1EBD1F4B251900567FB8 /* TestWebPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestWebPViewController.h; sourceTree = "<group>"; };
+		41FE1EBE1F4B251900567FB8 /* TestWebPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestWebPViewController.m; sourceTree = "<group>"; };
+		41FE1EC41F4B26D200567FB8 /* TestAPNGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAPNGViewController.h; sourceTree = "<group>"; };
+		41FE1EC51F4B26D200567FB8 /* TestAPNGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAPNGViewController.m; sourceTree = "<group>"; };
+		41FE1EC81F4B27DF00567FB8 /* YYImageFrameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYImageFrameViewController.h; sourceTree = "<group>"; };
+		41FE1EC91F4B27DF00567FB8 /* YYImageFrameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYImageFrameViewController.m; sourceTree = "<group>"; };
+		41FE1ECC1F4B286E00567FB8 /* TestSpriteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSpriteViewController.h; sourceTree = "<group>"; };
+		41FE1ECD1F4B286E00567FB8 /* TestSpriteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSpriteViewController.m; sourceTree = "<group>"; };
 		4C8F69D8BF16D9541951E788 /* Pods-YYUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYUITests/Pods-YYUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F9052E670EBE41160E3FDC4 /* Pods-YY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YY.release.xcconfig"; path = "Pods/Target Support Files/Pods-YY/Pods-YY.release.xcconfig"; sourceTree = "<group>"; };
 		5584344E8B61717301EC9F48 /* Pods-YYUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYUITests/Pods-YYUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +137,11 @@
 		41FE1E7B1F4B1BF300567FB8 /* YY */ = {
 			isa = PBXGroup;
 			children = (
+				41FE1ECB1F4B286400567FB8 /* YYimage_Sprite */,
+				41FE1EC71F4B27D100567FB8 /* YYImage_Frame */,
+				41FE1EC31F4B26C700567FB8 /* YYimage_Apng */,
+				41FE1EB81F4B24F100567FB8 /* YYimage_Gif */,
+				41FE1EB71F4B24E400567FB8 /* YYImage_WebP */,
 				41FE1E7C1F4B1BF300567FB8 /* AppDelegate.h */,
 				41FE1E7D1F4B1BF300567FB8 /* AppDelegate.m */,
 				41FE1E7F1F4B1BF300567FB8 /* ViewController.h */,
@@ -147,6 +171,52 @@
 				41FE1EA21F4B1BF400567FB8 /* Info.plist */,
 			);
 			path = YYUITests;
+			sourceTree = "<group>";
+		};
+		41FE1EB71F4B24E400567FB8 /* YYImage_WebP */ = {
+			isa = PBXGroup;
+			children = (
+				41FE1EBD1F4B251900567FB8 /* TestWebPViewController.h */,
+				41FE1EBE1F4B251900567FB8 /* TestWebPViewController.m */,
+			);
+			path = YYImage_WebP;
+			sourceTree = "<group>";
+		};
+		41FE1EB81F4B24F100567FB8 /* YYimage_Gif */ = {
+			isa = PBXGroup;
+			children = (
+				41FE1EB91F4B24F100567FB8 /* test0.gif */,
+				41FE1EBA1F4B24F100567FB8 /* TestYYImageViewController.h */,
+				41FE1EBB1F4B24F100567FB8 /* TestYYImageViewController.m */,
+			);
+			path = YYimage_Gif;
+			sourceTree = "<group>";
+		};
+		41FE1EC31F4B26C700567FB8 /* YYimage_Apng */ = {
+			isa = PBXGroup;
+			children = (
+				41FE1EC41F4B26D200567FB8 /* TestAPNGViewController.h */,
+				41FE1EC51F4B26D200567FB8 /* TestAPNGViewController.m */,
+			);
+			path = YYimage_Apng;
+			sourceTree = "<group>";
+		};
+		41FE1EC71F4B27D100567FB8 /* YYImage_Frame */ = {
+			isa = PBXGroup;
+			children = (
+				41FE1EC81F4B27DF00567FB8 /* YYImageFrameViewController.h */,
+				41FE1EC91F4B27DF00567FB8 /* YYImageFrameViewController.m */,
+			);
+			path = YYImage_Frame;
+			sourceTree = "<group>";
+		};
+		41FE1ECB1F4B286400567FB8 /* YYimage_Sprite */ = {
+			isa = PBXGroup;
+			children = (
+				41FE1ECC1F4B286E00567FB8 /* TestSpriteViewController.h */,
+				41FE1ECD1F4B286E00567FB8 /* TestSpriteViewController.m */,
+			);
+			path = YYimage_Sprite;
 			sourceTree = "<group>";
 		};
 		60FE6A39DAAA55EE67E30D3E /* Frameworks */ = {
@@ -248,6 +318,7 @@
 				TargetAttributes = {
 					41FE1E781F4B1BF300567FB8 = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
 					};
 					41FE1E901F4B1BF400567FB8 = {
 						CreatedOnToolsVersion = 9.0;
@@ -284,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FE1EBC1F4B250000567FB8 /* test0.gif in Resources */,
 				41FE1E891F4B1BF300567FB8 /* LaunchScreen.storyboard in Resources */,
 				41FE1E861F4B1BF300567FB8 /* Assets.xcassets in Resources */,
 				41FE1E841F4B1BF300567FB8 /* Main.storyboard in Resources */,
@@ -449,6 +521,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FE1EC61F4B26D200567FB8 /* TestAPNGViewController.m in Sources */,
+				41FE1ECE1F4B286E00567FB8 /* TestSpriteViewController.m in Sources */,
+				41FE1EC21F4B256400567FB8 /* TestWebPViewController.h in Sources */,
+				41FE1EC01F4B255E00567FB8 /* TestYYImageViewController.h in Sources */,
+				41FE1ECA1F4B27DF00567FB8 /* YYImageFrameViewController.m in Sources */,
+				41FE1EC11F4B255E00567FB8 /* TestYYImageViewController.m in Sources */,
+				41FE1EBF1F4B251900567FB8 /* TestWebPViewController.m in Sources */,
 				41FE1E811F4B1BF300567FB8 /* ViewController.m in Sources */,
 				41FE1E8C1F4B1BF300567FB8 /* main.m in Sources */,
 				41FE1E7E1F4B1BF300567FB8 /* AppDelegate.m in Sources */,
@@ -615,11 +694,14 @@
 			baseConfigurationReference = 7F64FEFF93011A74C3CF841E /* Pods-YY.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				INFOPLIST_FILE = YY/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.YY;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -629,11 +711,13 @@
 			baseConfigurationReference = 4F9052E670EBE41160E3FDC4 /* Pods-YY.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = YY/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.YY;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
