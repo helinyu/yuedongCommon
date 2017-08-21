@@ -26,6 +26,12 @@
 //    [getter 方法];
 //    @property中声明的属性是会自动生成setter和getter的方法
     
+//    获取成员列表
+    NSLog(@"p 's name 3 ; %@",p.name3);
+    
+    p.i
+
+    
 }
 
 - (void)didReceiveMemoryWarning {

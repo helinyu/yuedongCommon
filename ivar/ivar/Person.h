@@ -19,4 +19,7 @@
 @property (nonatomic, copy) NSString *name1;
 // _name0 是变量，name1 是属性
 
+//test the readonly & variable
+@property (nonatomic, copy, readonly) NSString *name3;
+
 @end

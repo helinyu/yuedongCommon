@@ -18,7 +18,7 @@
 {
     self = [super init];
     if (self) {
-        
+        _name3 = @"name 3 de zhi";
     }
     return self;
 }
