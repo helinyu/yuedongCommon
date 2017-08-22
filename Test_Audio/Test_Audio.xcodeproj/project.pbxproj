@@ -15,6 +15,9 @@
 		4107CB721F4C252D00E2DA98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4107CB701F4C252D00E2DA98 /* LaunchScreen.storyboard */; };
 		4107CB7D1F4C252D00E2DA98 /* Test_AudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107CB7C1F4C252D00E2DA98 /* Test_AudioTests.m */; };
 		4107CB881F4C252D00E2DA98 /* Test_AudioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107CB871F4C252D00E2DA98 /* Test_AudioUITests.m */; };
+		411EDD7E1F4C2DED00D4B088 /* YDAudioMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 411EDD7D1F4C2DED00D4B088 /* YDAudioMgr.m */; };
+		411EDD881F4C30DB00D4B088 /* wslAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 411EDD871F4C30DB00D4B088 /* wslAnalyzer.m */; };
+		411EDD8B1F4C311900D4B088 /* YDOneLyricUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 411EDD8A1F4C311900D4B088 /* YDOneLyricUnit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,18 @@
 		4107CB831F4C252D00E2DA98 /* Test_AudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_AudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4107CB871F4C252D00E2DA98 /* Test_AudioUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test_AudioUITests.m; sourceTree = "<group>"; };
 		4107CB891F4C252D00E2DA98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		411EDD7C1F4C2DED00D4B088 /* YDAudioMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAudioMgr.h; sourceTree = "<group>"; };
+		411EDD7D1F4C2DED00D4B088 /* YDAudioMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAudioMgr.m; sourceTree = "<group>"; };
+		411EDD801F4C2F2100D4B088 /* backgroundImage5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundImage5.jpg; sourceTree = "<group>"; };
+		411EDD811F4C2F2100D4B088 /* screen.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screen.jpeg; sourceTree = "<group>"; };
+		411EDD821F4C2F2100D4B088 /* 多幸运.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "多幸运.mp3"; sourceTree = "<group>"; };
+		411EDD831F4C2F2100D4B088 /* 多幸运.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "多幸运.txt"; sourceTree = "<group>"; };
+		411EDD841F4C2F2100D4B088 /* 父亲.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "父亲.mp3"; sourceTree = "<group>"; };
+		411EDD851F4C2F2100D4B088 /* 父亲.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "父亲.txt"; sourceTree = "<group>"; };
+		411EDD861F4C30DB00D4B088 /* wslAnalyzer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wslAnalyzer.h; sourceTree = "<group>"; };
+		411EDD871F4C30DB00D4B088 /* wslAnalyzer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wslAnalyzer.m; sourceTree = "<group>"; };
+		411EDD891F4C311900D4B088 /* YDOneLyricUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDOneLyricUnit.h; sourceTree = "<group>"; };
+		411EDD8A1F4C311900D4B088 /* YDOneLyricUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDOneLyricUnit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +116,18 @@
 		4107CB611F4C252D00E2DA98 /* Test_Audio */ = {
 			isa = PBXGroup;
 			children = (
+				411EDD861F4C30DB00D4B088 /* wslAnalyzer.h */,
+				411EDD871F4C30DB00D4B088 /* wslAnalyzer.m */,
+				411EDD7C1F4C2DED00D4B088 /* YDAudioMgr.h */,
+				411EDD7D1F4C2DED00D4B088 /* YDAudioMgr.m */,
+				411EDD7F1F4C2EFB00D4B088 /* Sources */,
 				4107CB651F4C252D00E2DA98 /* AppDelegate.h */,
 				4107CB661F4C252D00E2DA98 /* AppDelegate.m */,
 				4107CB681F4C252D00E2DA98 /* ViewController.h */,
 				4107CB691F4C252D00E2DA98 /* ViewController.m */,
 				4107CB6B1F4C252D00E2DA98 /* Main.storyboard */,
+				411EDD891F4C311900D4B088 /* YDOneLyricUnit.h */,
+				411EDD8A1F4C311900D4B088 /* YDOneLyricUnit.m */,
 				4107CB6E1F4C252D00E2DA98 /* Assets.xcassets */,
 				4107CB701F4C252D00E2DA98 /* LaunchScreen.storyboard */,
 				4107CB731F4C252D00E2DA98 /* Info.plist */,
@@ -138,6 +160,19 @@
 				4107CB891F4C252D00E2DA98 /* Info.plist */,
 			);
 			path = Test_AudioUITests;
+			sourceTree = "<group>";
+		};
+		411EDD7F1F4C2EFB00D4B088 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				411EDD821F4C2F2100D4B088 /* 多幸运.mp3 */,
+				411EDD831F4C2F2100D4B088 /* 多幸运.txt */,
+				411EDD841F4C2F2100D4B088 /* 父亲.mp3 */,
+				411EDD851F4C2F2100D4B088 /* 父亲.txt */,
+				411EDD801F4C2F2100D4B088 /* backgroundImage5.jpg */,
+				411EDD811F4C2F2100D4B088 /* screen.jpeg */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +311,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411EDD7E1F4C2DED00D4B088 /* YDAudioMgr.m in Sources */,
+				411EDD8B1F4C311900D4B088 /* YDOneLyricUnit.m in Sources */,
 				4107CB6A1F4C252D00E2DA98 /* ViewController.m in Sources */,
+				411EDD881F4C30DB00D4B088 /* wslAnalyzer.m in Sources */,
 				4107CB671F4C252D00E2DA98 /* AppDelegate.m in Sources */,
 				4107CB641F4C252D00E2DA98 /* main.m in Sources */,
 			);

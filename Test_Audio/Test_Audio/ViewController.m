@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "YDAudioMgr.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+    
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
@@ -17,7 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+      [self.view addSubview:_tableView];
     
 }
 
