@@ -15,6 +15,8 @@
 		414E21081F4BE52200E1FB8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 414E21061F4BE52200E1FB8A /* LaunchScreen.storyboard */; };
 		414E21131F4BE52200E1FB8A /* TestPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 414E21121F4BE52200E1FB8A /* TestPlayerTests.m */; };
 		414E211E1F4BE52200E1FB8A /* TestPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 414E211D1F4BE52200E1FB8A /* TestPlayerUITests.m */; };
+		414E212D1F4BE66600E1FB8A /* NSObject+YDClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 414E212C1F4BE66600E1FB8A /* NSObject+YDClass.m */; };
+		414E21301F4BE67800E1FB8A /* YDClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 414E212F1F4BE67800E1FB8A /* YDClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		414E21191F4BE52200E1FB8A /* TestPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		414E211D1F4BE52200E1FB8A /* TestPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPlayerUITests.m; sourceTree = "<group>"; };
 		414E211F1F4BE52200E1FB8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		414E212B1F4BE66600E1FB8A /* NSObject+YDClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YDClass.h"; sourceTree = "<group>"; };
+		414E212C1F4BE66600E1FB8A /* NSObject+YDClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YDClass.m"; sourceTree = "<group>"; };
+		414E212E1F4BE67800E1FB8A /* YDClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDClass.h; sourceTree = "<group>"; };
+		414E212F1F4BE67800E1FB8A /* YDClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				414E20FC1F4BE52200E1FB8A /* AppDelegate.m */,
 				414E20FE1F4BE52200E1FB8A /* ViewController.h */,
 				414E20FF1F4BE52200E1FB8A /* ViewController.m */,
+				414E212E1F4BE67800E1FB8A /* YDClass.h */,
+				414E212F1F4BE67800E1FB8A /* YDClass.m */,
+				414E212B1F4BE66600E1FB8A /* NSObject+YDClass.h */,
+				414E212C1F4BE66600E1FB8A /* NSObject+YDClass.m */,
 				414E21011F4BE52200E1FB8A /* Main.storyboard */,
 				414E21041F4BE52200E1FB8A /* Assets.xcassets */,
 				414E21061F4BE52200E1FB8A /* LaunchScreen.storyboard */,
@@ -276,9 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414E21301F4BE67800E1FB8A /* YDClass.m in Sources */,
 				414E21001F4BE52200E1FB8A /* ViewController.m in Sources */,
 				414E20FD1F4BE52200E1FB8A /* AppDelegate.m in Sources */,
 				414E20FA1F4BE52200E1FB8A /* main.m in Sources */,
+				414E212D1F4BE66600E1FB8A /* NSObject+YDClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +530,7 @@
 				414E21241F4BE52200E1FB8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		414E21251F4BE52200E1FB8A /* Build configuration list for PBXNativeTarget "TestPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +539,7 @@
 				414E21271F4BE52200E1FB8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		414E21281F4BE52200E1FB8A /* Build configuration list for PBXNativeTarget "TestPlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +548,7 @@
 				414E212A1F4BE52200E1FB8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

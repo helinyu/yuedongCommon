@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "NSObject+YDClass.h"
+#import <MediaPlayer/MediaPlayer.h>
+#import "YDClass.h"
 
 @interface ViewController ()
 
@@ -16,13 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSArray *methods = MethodsOfClass([MPNowPlayingInfoCenter class]);
+    for (NSInteger index = 0; index < methods.count; index++) {
+        YDClass *method = methods[index];
+        NSLog(@"method: %@ , name:%@ , sel:%d",method,method.name,method.sel);
+    }
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 
