@@ -24,4 +24,7 @@
 - (YDObject *)linkOneParam:(NSString *)lastName;
 - (NSString *(^)(NSString *name))block1;
 
+@property (nonatomic, copy) NSString *content;
+
+
 @end

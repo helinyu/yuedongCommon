@@ -11,7 +11,6 @@
 
 @interface YDObject ()
 
-@property (nonatomic, copy) NSString *content;
 
 @end
 
@@ -73,11 +72,7 @@
 }
 
 - (void)setContent:(NSString *)content {
-    
-}
-
-- (NSString *)content {
-    
+    _content = @"jasjsj";
 }
 
 //// 错误写法

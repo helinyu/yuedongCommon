@@ -21,8 +21,6 @@
     
     [self test0];
     
-    
-    
 }
 
 - (void)test0 {
@@ -45,6 +43,9 @@
     NSLog(@"link none : %@",obj.linkNoneR.linkNone);
 //    NSLog(@"onne param : %@",obj.linkOneParam(@"hah")); // 出现错误，和参数有差别
     NSLog(@" one param s : %@",[obj linkOneParam:@"one param"]);
+    
+    obj.content = @"haha";
+    NSLog(@"cotnent : %@",obj.content);
     
 }
 
