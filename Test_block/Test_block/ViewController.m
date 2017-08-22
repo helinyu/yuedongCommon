@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "YDObject.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self test0];
+    
+}
+
+- (void)test0 {
+    YDObject *obj= [YDObject new];
+    
+//    这样的一个函数，传递进去之后，经过了规则进行处理之后，将得到的结果在进行处理，
+    NSString *name = [obj wholeNameWithName:@"linyu" requestHandler:^NSString *{
+        return @"he";
+    }];
+    NSLog(@"name : %@",name);
 }
 
 

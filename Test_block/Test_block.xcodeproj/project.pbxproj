@@ -15,6 +15,7 @@
 		4107CB301F4C04DF00E2DA98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4107CB2E1F4C04DF00E2DA98 /* LaunchScreen.storyboard */; };
 		4107CB3B1F4C04DF00E2DA98 /* Test_blockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107CB3A1F4C04DF00E2DA98 /* Test_blockTests.m */; };
 		4107CB461F4C04DF00E2DA98 /* Test_blockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107CB451F4C04DF00E2DA98 /* Test_blockUITests.m */; };
+		4107CB551F4C055B00E2DA98 /* YDObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107CB541F4C055B00E2DA98 /* YDObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		4107CB411F4C04DF00E2DA98 /* Test_blockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_blockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4107CB451F4C04DF00E2DA98 /* Test_blockUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test_blockUITests.m; sourceTree = "<group>"; };
 		4107CB471F4C04DF00E2DA98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4107CB531F4C055B00E2DA98 /* YDObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDObject.h; sourceTree = "<group>"; };
+		4107CB541F4C055B00E2DA98 /* YDObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				4107CB241F4C04DF00E2DA98 /* AppDelegate.m */,
 				4107CB261F4C04DF00E2DA98 /* ViewController.h */,
 				4107CB271F4C04DF00E2DA98 /* ViewController.m */,
+				4107CB531F4C055B00E2DA98 /* YDObject.h */,
+				4107CB541F4C055B00E2DA98 /* YDObject.m */,
 				4107CB291F4C04DF00E2DA98 /* Main.storyboard */,
 				4107CB2C1F4C04DF00E2DA98 /* Assets.xcassets */,
 				4107CB2E1F4C04DF00E2DA98 /* LaunchScreen.storyboard */,
@@ -207,8 +212,8 @@
 				TargetAttributes = {
 					4107CB1C1F4C04DF00E2DA98 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = D2XBEJ6876;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Manual;
 					};
 					4107CB351F4C04DF00E2DA98 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -277,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4107CB281F4C04DF00E2DA98 /* ViewController.m in Sources */,
+				4107CB551F4C055B00E2DA98 /* YDObject.m in Sources */,
 				4107CB251F4C04DF00E2DA98 /* AppDelegate.m in Sources */,
 				4107CB221F4C04DF00E2DA98 /* main.m in Sources */,
 			);
@@ -429,11 +435,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				INFOPLIST_FILE = Test_block/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dtspread.apps.Test-block";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 			};
 			name = Debug;
 		};
@@ -441,11 +450,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Test_block/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dtspread.apps.Test-block";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -518,6 +529,7 @@
 				4107CB4C1F4C04DF00E2DA98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4107CB4D1F4C04DF00E2DA98 /* Build configuration list for PBXNativeTarget "Test_blockTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +538,7 @@
 				4107CB4F1F4C04DF00E2DA98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4107CB501F4C04DF00E2DA98 /* Build configuration list for PBXNativeTarget "Test_blockUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +547,7 @@
 				4107CB521F4C04DF00E2DA98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
