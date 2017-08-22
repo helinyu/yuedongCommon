@@ -72,6 +72,14 @@
     };
 }
 
+- (void)setContent:(NSString *)content {
+    
+}
+
+- (NSString *)content {
+    
+}
+
 //// 错误写法
 //- (YDObject *(^blockName)(NSString *name))linkToName {
 //    return ^blockName(NSString *name) {
@@ -82,6 +90,7 @@
 
 @end
 
+// 记得又一次，前后都有block类型的，【参数有block类型、返回值有block类型】,这个就是为什么不能够使用 '.'的符号来进行调用了；
 
 /*
  PS: 总结
