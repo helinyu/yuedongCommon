@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 
+
 @end
 
 @implementation ViewController
@@ -30,6 +31,19 @@
         return @"he";
     }];
     NSLog(@"name : %@",name);
+    
+    obj.blockName = [obj wholeNameWithLastName:@"yu" requestHandler:^NSString *{
+        return @"he";
+    }];
+    NSLog(@"name : %@",obj.blockName(@"lin"));
+    
+    NSString *noneName = obj.linkNone;
+    NSLog(@"none Name: %@",noneName);
+    
+    NSLog(@"link none : %@",obj.linkNoneR.linkNone);
+//    NSLog(@"onne param : %@",obj.linkOneParam(@"hah")); // 出现错误，和参数有差别
+    NSLog(@" one param s : %@",[obj linkOneParam:@"one param"]);
+    
 }
 
 
