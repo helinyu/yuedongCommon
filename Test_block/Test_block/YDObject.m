@@ -40,6 +40,13 @@
     return name;
 }
 
+/*
+ * 能够链式响应的原因： 
+ * （1）没有参数的方法可以用 . 来进行访问
+ *  (2)之所以可以link2Name(@"name") 是因为这个是调用染回里面的block，并且block是没有方法名的作为参数，直接就调用了，这个时候就可以执行block，
+ * （3）通过2上的block的执行，就反悔了block中的对象
+ */
+
 - (YDObject *(^)(NSString *name))link2Name:(NSString *)familyName{
    return ^(NSString *name) {
         return self;
@@ -64,5 +71,13 @@
         return name;
     };
 }
+
+//// 错误写法
+//- (YDObject *(^blockName)(NSString *name))linkToName {
+//    return ^blockName(NSString *name) {
+//        NSLog(@"name : %@",name);
+//        return self;
+//    };
+//}
 
 @end
