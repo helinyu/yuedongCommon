@@ -15,7 +15,6 @@
 		419C169C1F4D35AB00629579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419C169A1F4D35AB00629579 /* LaunchScreen.storyboard */; };
 		419C16A71F4D35AB00629579 /* TestAudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C16A61F4D35AB00629579 /* TestAudioTests.m */; };
 		419C16B21F4D35AB00629579 /* TestAudioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C16B11F4D35AB00629579 /* TestAudioUITests.m */; };
-		419C17161F4D36A300629579 /* wslAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C17081F4D36A300629579 /* wslAnalyzer.m */; };
 		419C17171F4D36A300629579 /* YDAudioMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C170A1F4D36A300629579 /* YDAudioMgr.m */; };
 		419C17181F4D36A300629579 /* YDOneLyricUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C170C1F4D36A300629579 /* YDOneLyricUnit.m */; };
 		419C17191F4D36A300629579 /* YDScreenStateMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C170E1F4D36A300629579 /* YDScreenStateMgr.m */; };
@@ -25,6 +24,7 @@
 		419C171D1F4D36A300629579 /* 多幸运.txt in Resources */ = {isa = PBXBuildFile; fileRef = 419C17131F4D36A300629579 /* 多幸运.txt */; };
 		419C171E1F4D36A300629579 /* 父亲.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 419C17141F4D36A300629579 /* 父亲.mp3 */; };
 		419C171F1F4D36A300629579 /* 父亲.txt in Resources */ = {isa = PBXBuildFile; fileRef = 419C17151F4D36A300629579 /* 父亲.txt */; };
+		419C17221F4D6C2B00629579 /* YDLyricAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C17211F4D6C2B00629579 /* YDLyricAnalyzer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +61,6 @@
 		419C16AD1F4D35AB00629579 /* TestAudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		419C16B11F4D35AB00629579 /* TestAudioUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAudioUITests.m; sourceTree = "<group>"; };
 		419C16B31F4D35AB00629579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		419C17071F4D36A300629579 /* wslAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wslAnalyzer.h; sourceTree = "<group>"; };
-		419C17081F4D36A300629579 /* wslAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wslAnalyzer.m; sourceTree = "<group>"; };
 		419C17091F4D36A300629579 /* YDAudioMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAudioMgr.h; sourceTree = "<group>"; };
 		419C170A1F4D36A300629579 /* YDAudioMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAudioMgr.m; sourceTree = "<group>"; };
 		419C170B1F4D36A300629579 /* YDOneLyricUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOneLyricUnit.h; sourceTree = "<group>"; };
@@ -75,6 +73,8 @@
 		419C17131F4D36A300629579 /* 多幸运.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "多幸运.txt"; sourceTree = "<group>"; };
 		419C17141F4D36A300629579 /* 父亲.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "父亲.mp3"; sourceTree = "<group>"; };
 		419C17151F4D36A300629579 /* 父亲.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "父亲.txt"; sourceTree = "<group>"; };
+		419C17201F4D6C2B00629579 /* YDLyricAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDLyricAnalyzer.h; sourceTree = "<group>"; };
+		419C17211F4D6C2B00629579 /* YDLyricAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDLyricAnalyzer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +169,8 @@
 		419C17061F4D36A300629579 /* mgr */ = {
 			isa = PBXGroup;
 			children = (
-				419C17071F4D36A300629579 /* wslAnalyzer.h */,
-				419C17081F4D36A300629579 /* wslAnalyzer.m */,
+				419C17201F4D6C2B00629579 /* YDLyricAnalyzer.h */,
+				419C17211F4D6C2B00629579 /* YDLyricAnalyzer.m */,
 				419C17091F4D36A300629579 /* YDAudioMgr.h */,
 				419C170A1F4D36A300629579 /* YDAudioMgr.m */,
 				419C170B1F4D36A300629579 /* YDOneLyricUnit.h */,
@@ -343,7 +343,7 @@
 			files = (
 				419C17171F4D36A300629579 /* YDAudioMgr.m in Sources */,
 				419C17181F4D36A300629579 /* YDOneLyricUnit.m in Sources */,
-				419C17161F4D36A300629579 /* wslAnalyzer.m in Sources */,
+				419C17221F4D6C2B00629579 /* YDLyricAnalyzer.m in Sources */,
 				419C17191F4D36A300629579 /* YDScreenStateMgr.m in Sources */,
 				419C16941F4D35AB00629579 /* ViewController.m in Sources */,
 				419C16911F4D35AB00629579 /* AppDelegate.m in Sources */,
@@ -593,6 +593,7 @@
 				419C16B81F4D35AB00629579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		419C16B91F4D35AB00629579 /* Build configuration list for PBXNativeTarget "TestAudioTests" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +602,7 @@
 				419C16BB1F4D35AB00629579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		419C16BC1F4D35AB00629579 /* Build configuration list for PBXNativeTarget "TestAudioUITests" */ = {
 			isa = XCConfigurationList;
@@ -609,6 +611,7 @@
 				419C16BE1F4D35AB00629579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

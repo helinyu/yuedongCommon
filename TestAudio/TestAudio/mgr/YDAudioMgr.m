@@ -7,7 +7,7 @@
 //
 
 #import "YDAudioMgr.h"
-#import "wslAnalyzer.h"
+#import "YDLyricAnalyzer.h"
 #import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import "YDOneLyricUnit.h"
@@ -53,7 +53,7 @@
     
 //获得歌词数组
 - (NSArray *)_getLrcArray{
-    wslAnalyzer *  analyzer = [wslAnalyzer new];
+    YDLyricAnalyzer *analyzer = [YDLyricAnalyzer new];
     NSString * path = [[NSBundle mainBundle] pathForResource:@"多幸运" ofType:@"txt"];
     self.lrcs =  [analyzer analyzerLrcBylrcString:[NSString  stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil]];
     NSLog(@"self.lrcs count; %lu",(unsigned long)self.lrcs.count);
@@ -103,15 +103,15 @@
     //播放控制和监测
 - (void)playControl{
     
-    //后台播放音频设置,需要在Capabilities->Background Modes中勾选Audio,Airplay,and Picture in Picture
     AVAudioSession *session = [AVAudioSession sharedInstance];
     [session setActive:YES error:nil];
     [session setCategory:AVAudioSessionCategoryPlayback error:nil];
     
     __weak typeof (self) wSelf = self;
-    _playerTimeObserver = [wSelf.player addPeriodicTimeObserverForInterval:CMTimeMake(0.1*30, 30) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
+    _playerTimeObserver = [wSelf.player addPeriodicTimeObserverForInterval:CMTimeMake(1, 10) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
 
         //监听锁屏状态 lock=1则为锁屏状态
+        NSLog(@"time value : %lld, timescale : %d, time flag :%d, second :%lld",time.value,time.timescale,time.flags,time.value/time.timescale);
         uint64_t locked;
         __block int token = 0;
         notify_register_dispatch("com.apple.springboard.lockstate",&token,dispatch_get_main_queue(),^(int t){
@@ -131,16 +131,14 @@
         if (screenLight == 0 && locked == 1) {
             //点亮且锁屏时
             isShowLyricsPoster = YES;
-//            [[NSNotificationCenter defaultCenter] postNotificationName:@"screenLockANdLight" object:@(YES)];
         }else if(screenLight){
-//            [[NSNotificationCenter defaultCenter] postNotificationName:@"light" object:nil];
             return;
         }
         
         CGFloat currentTime = CMTimeGetSeconds(time);
         CMTime total = self.player.currentItem.duration;
         CGFloat totalTime = CMTimeGetSeconds(total);
-        
+        NSLog(@"currrent Time : %f , totalTime :%f",currentTime,totalTime);
         
         for ( int i = (int)(self.lrcs.count - 1); i >= 0 ;i--) {
             YDOneLyricUnit * lrc = self.lrcs[i];
@@ -154,13 +152,12 @@
             }
         }
   
-        //        展示锁屏歌曲信息，上面监听屏幕锁屏和点亮状态的目的是为了提高效率
+        //展示锁屏歌曲信息，上面监听屏幕锁屏和点亮状态的目的是为了提高效率
         [self showLockScreenTotaltime:totalTime andCurrentTime:currentTime isShow:isShowLyricsPoster];
     
     }];
 }
     
-    //展示锁屏歌曲信息：图片、歌词、进度、演唱者
 - (void)showLockScreenTotaltime:(float)totalTime andCurrentTime:(float)currentTime isShow:(BOOL)isShow {
     
     NSMutableDictionary * songDict = [[NSMutableDictionary alloc] init];

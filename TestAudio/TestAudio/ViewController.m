@@ -51,7 +51,6 @@ static NSString *const reuseIdentifierId = @"reuse.identifier.id";
 - (void)onScroll:(NSNotification *)noti {
     if ([noti.object isKindOfClass:[NSDictionary class]]) {
         NSInteger row = [[noti.object objectForKey:@"row"] integerValue];
-        NSLog(@"row : %d",row);
         _tableView.hidden = NO;
         [_tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:row inSection:0] atScrollPosition:UITableViewScrollPositionNone animated:YES];
         [_tableView reloadData];

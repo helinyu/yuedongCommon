@@ -1,14 +1,23 @@
 //
-//  wslAnalyzer.m
-//  歌词解析1
+//  YDLyricAnalyzer.m
+//  TestAudio
 //
-//  Created by 王双龙 on 2017/6/5.
-//  Copyright © 2017年 https://github.com/wslcmk All rights reserved.//
+//  Created by Aka on 2017/8/23.
+//  Copyright © 2017年 Aka. All rights reserved.
+//
 
-#import "wslAnalyzer.h"
+#import "YDLyricAnalyzer.h"
 #import "YDOneLyricUnit.h"
 
-@implementation wslAnalyzer
+@interface YDLyricAnalyzer ()
+
+@property (nonatomic, strong) NSMutableArray *times;
+@property (nonatomic, strong) NSMutableArray *lyrics;
+
+@end
+
+@implementation YDLyricAnalyzer
+
 
 -(NSMutableArray *)lrcArray
 {
@@ -17,40 +26,39 @@
     }return _lrcArray;
 }
 
+- (NSArray *)times {
+    return _times;
+}
+
 -(NSMutableArray *)analyzerLrcByPath:(NSString *)path
 {
-    
-    [self  analyzerLrc:[NSString   stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil]];
-    
+    _times = @[].mutableCopy;
+    _lyrics = @[].mutableCopy;
+    [self  analyzerLrc:[NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil]];
     return self.lrcArray;
 }
 
 -(NSMutableArray *)analyzerLrcBylrcString:(NSString *)string{
-    
+    _times = @[].mutableCopy;
+    _lyrics = @[].mutableCopy;
     [self  analyzerLrc:string];
-    
     return self.lrcArray;
 }
 
 //根据换行符\n分割字符串，获得包含每一句歌词的数组
 -(void)analyzerLrc:(NSString *)lrcConnect
 {
-    
-    NSArray *  lrcConnectArray = [lrcConnect   componentsSeparatedByString:@"\n"];
-    
-    NSMutableArray    *  lrcConnectArray1 =[[NSMutableArray  alloc] initWithArray: lrcConnectArray ];
-    
+    NSArray *lrcConnectArray = [lrcConnect componentsSeparatedByString:@"\n"];
+    NSMutableArray *lrcConnectArray1 =[[NSMutableArray  alloc] initWithArray: lrcConnectArray ];
     for (NSUInteger i = 0;  i < [lrcConnectArray1  count]  ;i++ ) {
         if ([lrcConnectArray1[i]   length] == 0 ) {
             [lrcConnectArray1  removeObjectAtIndex:i];
             i--;
         }
     }
-    
-    //    NSMutableArray * realLrcArray = [self  deleteNoUseInfo:lrcConnectArray1];
-    [self    analyzerEachLrc:lrcConnectArray1];
-    
+    [self analyzerEachLrc:lrcConnectArray1];
 }
+
 //删除没有用的字符
 -(NSMutableArray *)deleteNoUseInfo:(NSMutableArray *)lrcmArray
 {
@@ -68,15 +76,11 @@
 //解析每一行歌词字符，获得时间点和对应的歌词
 -(void)analyzerEachLrc:(NSMutableArray *)lrcConnectArray
 {
-    for (NSUInteger i = 0;  i < [lrcConnectArray  count] ;  i++) {
-        
-        NSArray * eachLrcArray = [lrcConnectArray[i]   componentsSeparatedByString:@"]"];
-        
+    for (NSUInteger i = 0;  i < [lrcConnectArray  count]; i++) {
+        NSArray * eachLrcArray = [lrcConnectArray[i] componentsSeparatedByString:@"]"];
         NSString * lrc = [eachLrcArray  lastObject];
-        
         NSDateFormatter *df = [[NSDateFormatter alloc] init];
         [df  setDateFormat:@"[mm:ss.SS"];
-        
         NSDate * date1 = [df  dateFromString:eachLrcArray[0] ];
         NSDate *date2 = [df dateFromString:@"[00:00.00"];
         NSTimeInterval  interval1 = [date1  timeIntervalSince1970];
@@ -89,10 +93,13 @@
         YDOneLyricUnit *unitLyric = [YDOneLyricUnit new];
         unitLyric.lyric = lrc;
         unitLyric.time = interval1;
+        [_times addObject:@(interval1)];
+        [_lyrics addObject:lrc];
         [self.lrcArray addObject:unitLyric];
     }
+    !_timesBlock?:_timesBlock(_times);
+    !_lyricsBlock?:_lyricsBlock(_lyrics);
+    
 }
-
-
 
 @end
