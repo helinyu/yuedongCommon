@@ -13,12 +13,17 @@
 #import "YDOneLyricUnit.h"
 #import <notify.h>
 
-@interface YDAudioMgr ()
+@interface YDAudioMgr ()<UITableViewDataSource,UITableViewDelegate>
 {
     id _playerTimeObserver;
     BOOL _isDragging;
     UIImage * _lastImage;//最后一次锁屏之后的歌词海报
 }
+
+//用来显示锁屏歌词
+@property (nonatomic, strong) UITableView * lockScreenTableView;
+//锁屏图片视图,用来绘制带歌词的image
+@property (nonatomic, strong) UIImageView * lrcImageView;;
 
 
 @end
@@ -57,64 +62,10 @@
     
 - (void)createRemoteCommandCenter {
     MPRemoteCommandCenter *cmdCenter = [MPRemoteCommandCenter sharedCommandCenter];
-    
-    MPRemoteCommand *pauseCmd = cmdCenter.pauseCommand;
-    pauseCmd.enabled = YES;
-//    pauseCmd.localizedTitle = @"暂停";
-//    pauseCmd.localizedSubtitle = @"S";
-    
-    MPFeedbackCommand *likeCommand = cmdCenter.likeCommand;
-    likeCommand.enabled = YES;
-    likeCommand.localizedTitle = @"喜欢";
-    [likeCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
-        NSLog(@"喜欢");
-        return MPRemoteCommandHandlerStatusSuccess;
-    }];
-    
-    //添加不喜欢按钮，假装是“上一首”
-    MPFeedbackCommand *dislikeCommand = cmdCenter.dislikeCommand;
-    dislikeCommand.enabled = YES;
-    dislikeCommand.localizedTitle = @"上一首";
-    [dislikeCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
-        NSLog(@"上一首");
-        return MPRemoteCommandHandlerStatusSuccess;
-    }];
-    
-    //标记
-    MPFeedbackCommand *bookmarkCommand = cmdCenter.bookmarkCommand;
-    bookmarkCommand.enabled = YES;
-    bookmarkCommand.localizedTitle = @"标记";
-    [bookmarkCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
-        NSLog(@"标记");
-        return MPRemoteCommandHandlerStatusSuccess;
-    }];
-    
-    //    commandCenter.togglePlayPauseCommand 耳机线控的暂停/播放
-    
-    [cmdCenter.pauseCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
-        [self.player pause];
-        return MPRemoteCommandHandlerStatusSuccess;
-    }];
-    [cmdCenter.playCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
-        [self.player play];
-        return MPRemoteCommandHandlerStatusSuccess;
-    }];
-    //    [commandCenter.previousTrackCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
-    //        NSLog(@"上一首");
-    //        return MPRemoteCommandHandlerStatusSuccess;
-    //    }];
-    
     [cmdCenter.nextTrackCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
         NSLog(@"下一首");
         return MPRemoteCommandHandlerStatusSuccess;
     }];
-    
-    //快进
-    //    MPSkipIntervalCommand *skipBackwardIntervalCommand = commandCenter.skipForwardCommand;
-    //    skipBackwardIntervalCommand.preferredIntervals = @[@(54)];
-    //    skipBackwardIntervalCommand.enabled = YES;
-    //    [skipBackwardIntervalCommand addTarget:self action:@selector(skipBackwardEvent:)];
-    
     //在控制台拖动进度条调节进度（仿QQ音乐的效果）
     [cmdCenter.changePlaybackPositionCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
         CMTime totlaTime = self.player.currentItem.duration;
@@ -158,29 +109,7 @@
     [session setCategory:AVAudioSessionCategoryPlayback error:nil];
     
     __weak typeof (self) wSelf = self;
-    _playerTimeObserver = [self.player addPeriodicTimeObserverForInterval:CMTimeMake(0.1*30, 30) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
-
-        CGFloat currentTime = CMTimeGetSeconds(time);
-    
-        CMTime total = self.player.currentItem.duration;
-        CGFloat totalTime = CMTimeGetSeconds(total);
-        
-        if (!_isDragging) {
-
-            //歌词滚动显示
-            for ( int i = (int)(self.lrcs.count - 1); i >= 0 ;i--) {
-                YDOneLyricUnit * lrc = self.lrcs[i];
-//                if (lrc.time < currentTime) {
-//                    self.currentRow = i;
-//                    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow: self.currentRow inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
-//                    [self.tableView reloadData];
-//                    [self.lockScreenTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow: self. currentRow inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
-//                    [self.lockScreenTableView reloadData];
-//                    break;
-//                }
-            }
-
-        }
+    _playerTimeObserver = [wSelf.player addPeriodicTimeObserverForInterval:CMTimeMake(0.1*30, 30) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
 
         //监听锁屏状态 lock=1则为锁屏状态
         uint64_t locked;
@@ -199,22 +128,40 @@
         notify_get_state(lightToken, &screenLight);
 
         BOOL isShowLyricsPoster = NO;
-        // NSLog(@"screenLight=%llu locked=%llu",screenLight,locked);
         if (screenLight == 0 && locked == 1) {
             //点亮且锁屏时
             isShowLyricsPoster = YES;
+//            [[NSNotificationCenter defaultCenter] postNotificationName:@"screenLockANdLight" object:@(YES)];
         }else if(screenLight){
+//            [[NSNotificationCenter defaultCenter] postNotificationName:@"light" object:nil];
             return;
         }
         
-//        展示锁屏歌曲信息，上面监听屏幕锁屏和点亮状态的目的是为了提高效率
-        [self showLockScreenTotaltime:totalTime andCurrentTime:currentTime andLyricsPoster:isShowLyricsPoster];
+        CGFloat currentTime = CMTimeGetSeconds(time);
+        CMTime total = self.player.currentItem.duration;
+        CGFloat totalTime = CMTimeGetSeconds(total);
+        
+        
+        for ( int i = (int)(self.lrcs.count - 1); i >= 0 ;i--) {
+            YDOneLyricUnit * lrc = self.lrcs[i];
+            if (lrc.time < currentTime) {
+                if (isShowLyricsPoster) {
+                    [self.lockScreenTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:i inSection:0] atScrollPosition:UITableViewScrollPositionNone animated:YES];
+                }else{
+                    [[NSNotificationCenter defaultCenter] postNotificationName:@"lyrcScroll" object:@{@"backgroundLight":@(NO),@"row":@(i)}];
+                }
+                break;
+            }
+        }
+  
+        //        展示锁屏歌曲信息，上面监听屏幕锁屏和点亮状态的目的是为了提高效率
+        [self showLockScreenTotaltime:totalTime andCurrentTime:currentTime isShow:isShowLyricsPoster];
     
     }];
 }
     
     //展示锁屏歌曲信息：图片、歌词、进度、演唱者
-- (void)showLockScreenTotaltime:(float)totalTime andCurrentTime:(float)currentTime andLyricsPoster:(BOOL)isShow{
+- (void)showLockScreenTotaltime:(float)totalTime andCurrentTime:(float)currentTime isShow:(BOOL)isShow {
     
     NSMutableDictionary * songDict = [[NSMutableDictionary alloc] init];
     //设置歌曲题目
@@ -229,11 +176,67 @@
     [songDict setObject:[NSNumber numberWithDouble:currentTime] forKey:MPNowPlayingInfoPropertyElapsedPlaybackTime];
 
     UIImage *lrcImage = [UIImage imageNamed:@"backgroundImage5.jpg"];
+    if (isShow) {
+        
+        //制作带歌词的海报
+        if (!_lrcImageView) {
+            _lrcImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 480,800)];
+        }
+        
+        //主要为了把歌词绘制到图片上，已达到更新歌词的目的
+        [_lrcImageView addSubview:self.lockScreenTableView];
+        _lrcImageView.image = lrcImage;
+        _lrcImageView.backgroundColor = [UIColor blackColor];
+        
+        //获取添加了歌词数据的海报图片
+        UIGraphicsBeginImageContextWithOptions(_lrcImageView.frame.size, NO, 0.0);
+        CGContextRef context = UIGraphicsGetCurrentContext();
+        [_lrcImageView.layer renderInContext:context];
+        lrcImage = UIGraphicsGetImageFromCurrentImageContext();
+        _lastImage = lrcImage;
+        UIGraphicsEndImageContext();
+        
+    }else{
+        if (_lastImage) {
+            lrcImage = _lastImage;
+        }
+    }
+    
     //设置显示的海报图片
     [songDict setObject:[[MPMediaItemArtwork alloc] initWithImage:lrcImage]
                  forKey:MPMediaItemPropertyArtwork];
     [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:songDict];
     
 }
+
+- (UITableView *)lockScreenTableView {
+    if (!_lockScreenTableView) {
+        _lockScreenTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 800 - 44 * 7 + 20, 480, 44 * 3) style:UITableViewStyleGrouped];
+        _lockScreenTableView.dataSource = self;
+        _lockScreenTableView.delegate = self;
+        _lockScreenTableView.separatorStyle = NO;
+        _lockScreenTableView.backgroundColor = [UIColor clearColor];
+        [_lockScreenTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
+    }
+    return _lockScreenTableView;
+}
+
+#pragma mark -- tableView datasource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _lrcs.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];
+    YDOneLyricUnit *unit = _lrcs[indexPath.row];
+    cell.textLabel.text = unit.lyric;
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 30.f;
+}
+
 
 @end
