@@ -187,6 +187,7 @@
             }
             float totalTime = CMTimeGetSeconds(wSelf.player.currentItem.duration);
             [wSelf showLockScreenTotaltime:totalTime andCurrentTime:[wSelf.times[index] integerValue] isShow:lockAndLightScreen];
+            NSLog(@"times : %ld",(long)[wSelf.times[index] integerValue]);
             index++;
         }];
      }];
@@ -261,7 +262,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];
     YDOneLyricUnit *unit = _lrcs[indexPath.row];
-    cell.textLabel.text = unit.lyric;
+    cell.textLabel.text = unit.oneLyric;
     return cell;
 }
 

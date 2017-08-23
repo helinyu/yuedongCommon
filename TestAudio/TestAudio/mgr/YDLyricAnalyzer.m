@@ -91,7 +91,7 @@
         }
         
         YDOneLyricUnit *unitLyric = [YDOneLyricUnit new];
-        unitLyric.lyric = lrc;
+        unitLyric.oneLyric = lrc;
         unitLyric.time = interval1;
         [_times addObject:@(interval1)];
         [_lyrics addObject:lrc];

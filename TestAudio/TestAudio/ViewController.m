@@ -28,10 +28,10 @@ static NSString *const reuseIdentifierId = @"reuse.identifier.id";
     [super viewDidLoad];
     
     _mgr = [YDAudioMgr shared];
+    [self createMainTableView];
     [self __addNotify];
     [self loadBase];
     [self loadLyrcs];
-    [self createMainTableView];
     
 }
 
@@ -51,9 +51,10 @@ static NSString *const reuseIdentifierId = @"reuse.identifier.id";
 - (void)onScroll:(NSNotification *)noti {
     if ([noti.object isKindOfClass:[NSDictionary class]]) {
         NSInteger row = [[noti.object objectForKey:@"row"] integerValue];
-        _tableView.hidden = NO;
-        [_tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:row inSection:0] atScrollPosition:UITableViewScrollPositionNone animated:YES];
-        [_tableView reloadData];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [_tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:row inSection:0] atScrollPosition:UITableViewScrollPositionNone animated:YES];
+            [_tableView reloadData];
+        });
     }
 }
 
@@ -90,7 +91,7 @@ static NSString *const reuseIdentifierId = @"reuse.identifier.id";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifierId forIndexPath:indexPath];
     YDOneLyricUnit *unit= _lyrcs[indexPath.row];
-    cell.textLabel.text = unit.lyric;
+    cell.textLabel.text = unit.oneLyric;
     return cell;
 }
 

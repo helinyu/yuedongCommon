@@ -10,7 +10,7 @@
 
 @interface YDOneLyricUnit : NSObject
     
-@property (nonatomic, copy) NSString *lyric;
+@property (nonatomic, copy) NSString *oneLyric;
 @property (nonatomic, assign) NSTimeInterval time;
 
 @end
