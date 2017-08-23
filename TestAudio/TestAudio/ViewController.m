@@ -32,7 +32,18 @@ static NSString *const reuseIdentifierId = @"reuse.identifier.id";
     [self __addNotify];
     [self loadBase];
     [self loadLyrcs];
-    
+//    [self test];
+}
+
+- (void)test {
+    NSString *urlString = @"http://localhost:8000/movie/多幸运.txt";
+    NSString *url64String = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@"url 64 string :%@",url64String);
+    NSLog(@"url string : %@",urlString);
+    NSString *originString = [url64String stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSError *error = nil;
+    NSString *content = [NSString stringWithContentsOfURL:[NSURL URLWithString:url64String] encoding:NSUTF8StringEncoding error:&error];
+    NSLog(@"content : %@",content);
 }
 
 - (void)loadBase{
