@@ -75,7 +75,8 @@ static NSString *const reuseIdentifierId = @"reuse.identifier.id";
 - (void)onPlay:(UIButton *)sender {
     NSLog(@"开始播放音乐");
     [_mgr.player play];
-    [_mgr playControl];
+//    [_mgr playControl];
+    [_mgr playByTheLyricsTimes];
     [_mgr createRemoteCommandCenter];
 
 }

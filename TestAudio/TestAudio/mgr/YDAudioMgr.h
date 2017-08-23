@@ -17,7 +17,10 @@
 @property (nonatomic, strong) AVPlayer *player;
 @property (nonatomic, strong) NSArray *lrcs;
 
+//two methods to deal with
 - (void)playControl;
+- (void)playByTheLyricsTimes;
+
 - (void)createRemoteCommandCenter;
     
 @end

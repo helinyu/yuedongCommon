@@ -12,6 +12,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "YDOneLyricUnit.h"
 #import <notify.h>
+#import "YDLockScreenMgr.h"
 
 @interface YDAudioMgr ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -24,6 +25,9 @@
 @property (nonatomic, strong) UITableView * lockScreenTableView;
 //锁屏图片视图,用来绘制带歌词的image
 @property (nonatomic, strong) UIImageView * lrcImageView;;
+
+@property (nonatomic, strong) NSArray *times;
+@property (nonatomic, strong) NSArray *pureLyrics;
 
 
 @end
@@ -57,6 +61,8 @@
     NSString * path = [[NSBundle mainBundle] pathForResource:@"多幸运" ofType:@"txt"];
     self.lrcs =  [analyzer analyzerLrcBylrcString:[NSString  stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil]];
     NSLog(@"self.lrcs count; %lu",(unsigned long)self.lrcs.count);
+    _times = analyzer.times;
+    _pureLyrics = analyzer.pureLyrics;
     return self.lrcs;
 }
     
@@ -103,11 +109,10 @@
     //播放控制和监测
 - (void)playControl{
     
-    AVAudioSession *session = [AVAudioSession sharedInstance];
-    [session setActive:YES error:nil];
-    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [self enableBackground];
     
     __weak typeof (self) wSelf = self;
+    
     _playerTimeObserver = [wSelf.player addPeriodicTimeObserverForInterval:CMTimeMake(1, 10) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
 
         //监听锁屏状态 lock=1则为锁屏状态
@@ -154,8 +159,37 @@
   
         //展示锁屏歌曲信息，上面监听屏幕锁屏和点亮状态的目的是为了提高效率
         [self showLockScreenTotaltime:totalTime andCurrentTime:currentTime isShow:isShowLyricsPoster];
-    
     }];
+    
+}
+
+- (void)enableBackground {
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setActive:YES error:nil];
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+}
+
+- (void)playByTheLyricsTimes {
+    [self enableBackground];
+    
+    __weak typeof (self) wSelf = self;
+    __block NSInteger index = 0;
+    if (!(self.times.count >0)) {
+        return;
+    }
+    
+    _playerTimeObserver = [self.player addBoundaryTimeObserverForTimes:self.times queue:dispatch_get_main_queue() usingBlock:^{
+        [YDLockScreenMgr addObserverLockAndLightScreenBlock:^(BOOL lockAndLightScreen) {
+            if (lockAndLightScreen) {
+                [wSelf.lockScreenTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0] atScrollPosition:UITableViewScrollPositionNone animated:YES];
+            }else{
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"lyrcScroll" object:@{@"backgroundLight":@(NO),@"row":@(index)}];
+            }
+            float totalTime = CMTimeGetSeconds(wSelf.player.currentItem.duration);
+            [wSelf showLockScreenTotaltime:totalTime andCurrentTime:[wSelf.times[index] integerValue] isShow:lockAndLightScreen];
+            index++;
+        }];
+     }];
 }
     
 - (void)showLockScreenTotaltime:(float)totalTime andCurrentTime:(float)currentTime isShow:(BOOL)isShow {

@@ -26,7 +26,7 @@
 
 
 @property (nonatomic, strong, readonly) NSArray *times;
-@property (nonatomic, strong, readonly) NSArray *lyrics;
+@property (nonatomic, strong, readonly) NSArray *pureLyrics;
 
 typedef void (^NSArrayBlock)(NSArray *arrs);
 @property (nonatomic, copy) NSArrayBlock timesBlock;
