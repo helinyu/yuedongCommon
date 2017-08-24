@@ -68,6 +68,30 @@
     
 - (void)createRemoteCommandCenter {
     MPRemoteCommandCenter *cmdCenter = [MPRemoteCommandCenter sharedCommandCenter];
+    [cmdCenter.playCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+        NSLog(@"播放");
+        [self.player play];
+        return MPRemoteCommandHandlerStatusSuccess;
+    }];
+    
+    [cmdCenter.stopCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+        NSLog(@"停止");
+        [self.player pause];
+        self.player = nil;
+        return MPRemoteCommandHandlerStatusSuccess;
+    }];
+    
+    [cmdCenter.pauseCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+        NSLog(@"暂停");
+        [self.player pause];
+        return MPRemoteCommandHandlerStatusSuccess;
+    }];
+    
+    [cmdCenter.previousTrackCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+        NSLog(@"上一首");
+        return MPRemoteCommandHandlerStatusSuccess;
+    }];
+    
     [cmdCenter.nextTrackCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
         NSLog(@"下一首");
         return MPRemoteCommandHandlerStatusSuccess;

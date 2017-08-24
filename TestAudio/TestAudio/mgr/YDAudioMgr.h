@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
+#import <UIKit/UIKit.h>
 
-@interface YDAudioMgr : NSObject
+@interface YDAudioMgr : UIResponder
     
 + (instancetype)shared;
 - (void)loadBase;
