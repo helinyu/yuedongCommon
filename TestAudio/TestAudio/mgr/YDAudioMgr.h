@@ -10,7 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
 
-@interface YDAudioMgr : UIResponder
+@interface YDAudioMgr : NSObject
     
 + (instancetype)shared;
 - (void)loadBase;
