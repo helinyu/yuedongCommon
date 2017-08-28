@@ -35,13 +35,54 @@ static NSString *const reuseIdentifierId = @"reuse.identifier.id";
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    [self loadBase];
-    [self createComponent];
+//    [self createComponentForTestWeb];
     [self onSetAudioPlayControl];
     [self registerReceivingEvents];
     [self createRemoteCommandCenter];
+    
+    [self createActviceComponent];
 }
 
-- (void)createComponent {
+- (void)createActviceComponent  {
+    
+    UIButton *guimiBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [guimiBtn setTitle:@"鬼迷心窍" forState:UIControlStateNormal];
+    [guimiBtn addTarget:self action:@selector(onPlayGuimi) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:guimiBtn];
+    guimiBtn.frame = CGRectMake(10, 180, 100, 40);
+    
+    UIButton *activeNoBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [activeNoBtn setTitle:@"active NO" forState:UIControlStateNormal];
+    [activeNoBtn addTarget:self action:@selector(onActiveNO) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:activeNoBtn];
+    activeNoBtn.frame = CGRectMake(10, 40, 100, 30);
+    
+    UIButton *activeBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [activeBtn setTitle:@"active " forState:UIControlStateNormal];
+    [activeBtn addTarget:self action:@selector(onActiveClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:activeBtn];
+    activeBtn.frame = CGRectMake(40, 80, 100, 30);
+
+}
+
+- (void)onActiveNO {
+    AudioSessionSetActiveWithFlags(FALSE, kAudioSessionSetActiveFlag_NotifyOthersOnDeactivation);
+    NSError *error;
+    BOOL result = [[AVAudioSession sharedInstance] setActive:NO error:&error];
+    NSLog(@"result : %d",result);
+    NSLog(@"error : %@", error);
+}
+
+- (void)onActiveClick {
+//    AudioSessionSetActive(TRUE);
+    NSError *error;
+    BOOL result = [[AVAudioSession sharedInstance] setActive:NO error:&error];
+    NSLog(@"result : %d",result);
+    NSLog(@"error : %@", error);
+    
+}
+
+- (void)createComponentForTestWeb {
 //    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
 //    [btn setTitle:@"播放" forState:UIControlStateNormal];
 //    [btn addTarget:self action:@selector(onAudioNodePlay:) forControlEvents:UIControlEventTouchUpInside];
