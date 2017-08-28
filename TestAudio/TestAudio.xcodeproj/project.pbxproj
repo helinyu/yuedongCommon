@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4110B9AB1F4EDE6400CE0347 /* YDAudioNodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110B9AA1F4EDE6400CE0347 /* YDAudioNodeViewController.m */; };
+		414114BE1F4EE14400CF7B9A /* YDAudioNodeMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 414114BD1F4EE14400CF7B9A /* YDAudioNodeMgr.m */; };
+		4143DE771F515209004785A7 /* 李克勤 - 风继续吹.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4143DE761F515209004785A7 /* 李克勤 - 风继续吹.mp3 */; };
+		4143DE791F515213004785A7 /* 李宗盛 - 鬼迷心窍 - live.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4143DE781F515213004785A7 /* 李宗盛 - 鬼迷心窍 - live.mp3 */; };
+		4143DE7B1F515224004785A7 /* 卢冠廷 - 一生所爱.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4143DE7A1F515224004785A7 /* 卢冠廷 - 一生所爱.mp3 */; };
+		4143DE7D1F515262004785A7 /* 叶启田 - 爱拼才会赢.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4143DE7C1F515262004785A7 /* 叶启田 - 爱拼才会赢.mp3 */; };
 		419C168E1F4D35AB00629579 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C168D1F4D35AB00629579 /* main.m */; };
 		419C16911F4D35AB00629579 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C16901F4D35AB00629579 /* AppDelegate.m */; };
 		419C16941F4D35AB00629579 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C16931F4D35AB00629579 /* ViewController.m */; };
@@ -46,6 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4110B9A91F4EDE6400CE0347 /* YDAudioNodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAudioNodeViewController.h; sourceTree = "<group>"; };
+		4110B9AA1F4EDE6400CE0347 /* YDAudioNodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAudioNodeViewController.m; sourceTree = "<group>"; };
+		414114BC1F4EE14400CF7B9A /* YDAudioNodeMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAudioNodeMgr.h; sourceTree = "<group>"; };
+		414114BD1F4EE14400CF7B9A /* YDAudioNodeMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAudioNodeMgr.m; sourceTree = "<group>"; };
+		4143DE761F515209004785A7 /* 李克勤 - 风继续吹.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "李克勤 - 风继续吹.mp3"; sourceTree = "<group>"; };
+		4143DE781F515213004785A7 /* 李宗盛 - 鬼迷心窍 - live.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "李宗盛 - 鬼迷心窍 - live.mp3"; sourceTree = "<group>"; };
+		4143DE7A1F515224004785A7 /* 卢冠廷 - 一生所爱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "卢冠廷 - 一生所爱.mp3"; sourceTree = "<group>"; };
+		4143DE7C1F515262004785A7 /* 叶启田 - 爱拼才会赢.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "叶启田 - 爱拼才会赢.mp3"; sourceTree = "<group>"; };
 		419C16891F4D35AB00629579 /* TestAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		419C168D1F4D35AB00629579 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		419C168F1F4D35AB00629579 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +119,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4110B9A81F4EDE5300CE0347 /* AudioNode */ = {
+			isa = PBXGroup;
+			children = (
+				4110B9A91F4EDE6400CE0347 /* YDAudioNodeViewController.h */,
+				4110B9AA1F4EDE6400CE0347 /* YDAudioNodeViewController.m */,
+				414114BC1F4EE14400CF7B9A /* YDAudioNodeMgr.h */,
+				414114BD1F4EE14400CF7B9A /* YDAudioNodeMgr.m */,
+			);
+			path = AudioNode;
+			sourceTree = "<group>";
+		};
 		419C16801F4D35AB00629579 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +153,7 @@
 		419C168B1F4D35AB00629579 /* TestAudio */ = {
 			isa = PBXGroup;
 			children = (
+				4110B9A81F4EDE5300CE0347 /* AudioNode */,
 				419C17061F4D36A300629579 /* mgr */,
 				419C170F1F4D36A300629579 /* Sources */,
 				419C168F1F4D35AB00629579 /* AppDelegate.h */,
@@ -189,6 +215,10 @@
 		419C170F1F4D36A300629579 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				4143DE7C1F515262004785A7 /* 叶启田 - 爱拼才会赢.mp3 */,
+				4143DE781F515213004785A7 /* 李宗盛 - 鬼迷心窍 - live.mp3 */,
+				4143DE761F515209004785A7 /* 李克勤 - 风继续吹.mp3 */,
+				4143DE7A1F515224004785A7 /* 卢冠廷 - 一生所爱.mp3 */,
 				419C17101F4D36A300629579 /* backgroundImage5.jpg */,
 				419C17111F4D36A300629579 /* screen.jpeg */,
 				419C17121F4D36A300629579 /* 多幸运.mp3 */,
@@ -319,8 +349,12 @@
 				419C171D1F4D36A300629579 /* 多幸运.txt in Resources */,
 				419C16971F4D35AB00629579 /* Main.storyboard in Resources */,
 				419C171E1F4D36A300629579 /* 父亲.mp3 in Resources */,
+				4143DE7D1F515262004785A7 /* 叶启田 - 爱拼才会赢.mp3 in Resources */,
+				4143DE791F515213004785A7 /* 李宗盛 - 鬼迷心窍 - live.mp3 in Resources */,
 				419C171C1F4D36A300629579 /* 多幸运.mp3 in Resources */,
+				4143DE771F515209004785A7 /* 李克勤 - 风继续吹.mp3 in Resources */,
 				419C171A1F4D36A300629579 /* backgroundImage5.jpg in Resources */,
+				4143DE7B1F515224004785A7 /* 卢冠廷 - 一生所爱.mp3 in Resources */,
 				419C171B1F4D36A300629579 /* screen.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,12 +380,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414114BE1F4EE14400CF7B9A /* YDAudioNodeMgr.m in Sources */,
 				419C17251F4D744200629579 /* YDLockScreenMgr.m in Sources */,
 				419C17171F4D36A300629579 /* YDAudioMgr.m in Sources */,
 				419C17181F4D36A300629579 /* YDOneLyricUnit.m in Sources */,
 				419C17221F4D6C2B00629579 /* YDLyricAnalyzer.m in Sources */,
 				419C17191F4D36A300629579 /* YDScreenStateMgr.m in Sources */,
 				419C16941F4D35AB00629579 /* ViewController.m in Sources */,
+				4110B9AB1F4EDE6400CE0347 /* YDAudioNodeViewController.m in Sources */,
 				419C16911F4D35AB00629579 /* AppDelegate.m in Sources */,
 				419C168E1F4D35AB00629579 /* main.m in Sources */,
 			);
