@@ -20,9 +20,9 @@
 
 @property (nonatomic, strong) YDAudioMgr *mgr;
 
-@property (nonatomic, strong) AVPlayer *player;
-@property (nonatomic, strong) AVPlayer *player0;
-@property (nonatomic, strong) AVPlayer *player1;
+@property (nonatomic, strong) AVAudioPlayer *player;
+@property (nonatomic, strong) AVAudioPlayer *player0;
+@property (nonatomic, strong) AVAudioPlayer *player1;
 
 @property (nonatomic, strong) AVAudioSession *audioSession;
 
@@ -35,12 +35,12 @@ static NSString *const reuseIdentifierId = @"reuse.identifier.id";
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    [self loadBase];
-//    [self createComponentForTestWeb];
+    [self createComponentForTestWeb];
     [self onSetAudioPlayControl];
     [self registerReceivingEvents];
     [self createRemoteCommandCenter];
     
-    [self createActviceComponent];
+//    [self createActviceComponent];
 }
 
 - (void)createActviceComponent  {
@@ -278,15 +278,17 @@ static NSString *const reuseIdentifierId = @"reuse.identifier.id";
 }
 
 - (void)onActiveYes {
+    AudioSessionSetActive(TRUE);
     NSError *error;
     BOOL result =[[AVAudioSession sharedInstance] setActive:YES error:&error];
-    NSLog(@"active yes result : %d",result);
+    NSLog(@"active yes result : %d, error : %@",result, error);
 }
 
 - (void)onActiveNo {
+    AudioSessionSetActiveWithFlags(FALSE, kAudioSessionSetActiveFlag_NotifyOthersOnDeactivation);
     NSError *error;
     BOOL result =[[AVAudioSession sharedInstance] setActive:NO error:&error];
-    NSLog(@"active yes result : %d",result);
+    NSLog(@"active yes result : %d ,error ; %@",result, error);
 }
 
 - (void)getPropertyClick {
@@ -686,7 +688,7 @@ static NSString *const reuseIdentifierId = @"reuse.identifier.id";
 
 - (void)onPlayAiPing {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"叶启田 - 爱拼才会赢" ofType:@"mp3"];
-    _player = [AVPlayer playerWithURL:[NSURL fileURLWithPath:path]];
+    _player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:nil];
     [_player play];
 }
 
@@ -704,13 +706,13 @@ static NSString *const reuseIdentifierId = @"reuse.identifier.id";
 
 - (void)onPlayGuimi {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"李宗盛 - 鬼迷心窍 - live" ofType:@"mp3"];
-    _player0 = [AVPlayer playerWithURL:[NSURL fileURLWithPath:path]];
+    _player0 = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:nil];
     [_player0 play];
 }
 
 - (void)onPlayFengjixu {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"李克勤 - 风继续吹" ofType:@"mp3"];
-    _player1 = [AVPlayer playerWithURL:[NSURL fileURLWithPath:path]];
+    _player1 = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:nil];
     [_player1 play];
 }
 

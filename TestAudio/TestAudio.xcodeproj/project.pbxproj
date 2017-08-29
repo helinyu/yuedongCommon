@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410D4B231F550642006E51DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 410D4B221F550642006E51DE /* main.m */; };
+		410D4B261F550642006E51DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 410D4B251F550642006E51DE /* AppDelegate.m */; };
+		410D4B291F550642006E51DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410D4B281F550642006E51DE /* ViewController.m */; };
+		410D4B2C1F550642006E51DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410D4B2A1F550642006E51DE /* Main.storyboard */; };
+		410D4B2E1F550642006E51DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410D4B2D1F550642006E51DE /* Assets.xcassets */; };
+		410D4B311F550642006E51DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410D4B2F1F550642006E51DE /* LaunchScreen.storyboard */; };
+		410D4B531F550AAB006E51DE /* 李宗盛 - 鬼迷心窍 - live.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 410D4B521F550AAB006E51DE /* 李宗盛 - 鬼迷心窍 - live.mp3 */; };
 		4110B9AB1F4EDE6400CE0347 /* YDAudioNodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110B9AA1F4EDE6400CE0347 /* YDAudioNodeViewController.m */; };
 		414114BE1F4EE14400CF7B9A /* YDAudioNodeMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 414114BD1F4EE14400CF7B9A /* YDAudioNodeMgr.m */; };
 		4143DE771F515209004785A7 /* 李克勤 - 风继续吹.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4143DE761F515209004785A7 /* 李克勤 - 风继续吹.mp3 */; };
@@ -19,8 +26,6 @@
 		419C16971F4D35AB00629579 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419C16951F4D35AB00629579 /* Main.storyboard */; };
 		419C16991F4D35AB00629579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419C16981F4D35AB00629579 /* Assets.xcassets */; };
 		419C169C1F4D35AB00629579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419C169A1F4D35AB00629579 /* LaunchScreen.storyboard */; };
-		419C16A71F4D35AB00629579 /* TestAudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C16A61F4D35AB00629579 /* TestAudioTests.m */; };
-		419C16B21F4D35AB00629579 /* TestAudioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C16B11F4D35AB00629579 /* TestAudioUITests.m */; };
 		419C17171F4D36A300629579 /* YDAudioMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C170A1F4D36A300629579 /* YDAudioMgr.m */; };
 		419C17181F4D36A300629579 /* YDOneLyricUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C170C1F4D36A300629579 /* YDOneLyricUnit.m */; };
 		419C17191F4D36A300629579 /* YDScreenStateMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C170E1F4D36A300629579 /* YDScreenStateMgr.m */; };
@@ -34,24 +39,18 @@
 		419C17251F4D744200629579 /* YDLockScreenMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C17241F4D744200629579 /* YDLockScreenMgr.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		419C16A31F4D35AB00629579 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 419C16811F4D35AB00629579 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 419C16881F4D35AB00629579;
-			remoteInfo = TestAudio;
-		};
-		419C16AE1F4D35AB00629579 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 419C16811F4D35AB00629579 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 419C16881F4D35AB00629579;
-			remoteInfo = TestAudio;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		410D4B1F1F550642006E51DE /* TestAudio1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAudio1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		410D4B221F550642006E51DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		410D4B241F550642006E51DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		410D4B251F550642006E51DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		410D4B271F550642006E51DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		410D4B281F550642006E51DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		410D4B2B1F550642006E51DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		410D4B2D1F550642006E51DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		410D4B301F550642006E51DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		410D4B321F550642006E51DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		410D4B521F550AAB006E51DE /* 李宗盛 - 鬼迷心窍 - live.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "李宗盛 - 鬼迷心窍 - live.mp3"; sourceTree = "<group>"; };
 		4110B9A91F4EDE6400CE0347 /* YDAudioNodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAudioNodeViewController.h; sourceTree = "<group>"; };
 		4110B9AA1F4EDE6400CE0347 /* YDAudioNodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAudioNodeViewController.m; sourceTree = "<group>"; };
 		414114BC1F4EE14400CF7B9A /* YDAudioNodeMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAudioNodeMgr.h; sourceTree = "<group>"; };
@@ -70,12 +69,6 @@
 		419C16981F4D35AB00629579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		419C169B1F4D35AB00629579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		419C169D1F4D35AB00629579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		419C16A21F4D35AB00629579 /* TestAudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		419C16A61F4D35AB00629579 /* TestAudioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAudioTests.m; sourceTree = "<group>"; };
-		419C16A81F4D35AB00629579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		419C16AD1F4D35AB00629579 /* TestAudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		419C16B11F4D35AB00629579 /* TestAudioUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAudioUITests.m; sourceTree = "<group>"; };
-		419C16B31F4D35AB00629579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		419C17091F4D36A300629579 /* YDAudioMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAudioMgr.h; sourceTree = "<group>"; };
 		419C170A1F4D36A300629579 /* YDAudioMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAudioMgr.m; sourceTree = "<group>"; };
 		419C170B1F4D36A300629579 /* YDOneLyricUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOneLyricUnit.h; sourceTree = "<group>"; };
@@ -95,21 +88,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		410D4B1C1F550642006E51DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		419C16861F4D35AB00629579 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		419C169F1F4D35AB00629579 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		419C16AA1F4D35AB00629579 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,6 +105,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		410D4B201F550642006E51DE /* TestAudio1 */ = {
+			isa = PBXGroup;
+			children = (
+				410D4B521F550AAB006E51DE /* 李宗盛 - 鬼迷心窍 - live.mp3 */,
+				410D4B241F550642006E51DE /* AppDelegate.h */,
+				410D4B251F550642006E51DE /* AppDelegate.m */,
+				410D4B271F550642006E51DE /* ViewController.h */,
+				410D4B281F550642006E51DE /* ViewController.m */,
+				410D4B2A1F550642006E51DE /* Main.storyboard */,
+				410D4B2D1F550642006E51DE /* Assets.xcassets */,
+				410D4B2F1F550642006E51DE /* LaunchScreen.storyboard */,
+				410D4B321F550642006E51DE /* Info.plist */,
+				410D4B211F550642006E51DE /* Supporting Files */,
+			);
+			path = TestAudio1;
+			sourceTree = "<group>";
+		};
+		410D4B211F550642006E51DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				410D4B221F550642006E51DE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		4110B9A81F4EDE5300CE0347 /* AudioNode */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,8 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				419C168B1F4D35AB00629579 /* TestAudio */,
-				419C16A51F4D35AB00629579 /* TestAudioTests */,
-				419C16B01F4D35AB00629579 /* TestAudioUITests */,
+				410D4B201F550642006E51DE /* TestAudio1 */,
 				419C168A1F4D35AB00629579 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -144,8 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				419C16891F4D35AB00629579 /* TestAudio.app */,
-				419C16A21F4D35AB00629579 /* TestAudioTests.xctest */,
-				419C16AD1F4D35AB00629579 /* TestAudioUITests.xctest */,
+				410D4B1F1F550642006E51DE /* TestAudio1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,24 +184,6 @@
 				419C168D1F4D35AB00629579 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		419C16A51F4D35AB00629579 /* TestAudioTests */ = {
-			isa = PBXGroup;
-			children = (
-				419C16A61F4D35AB00629579 /* TestAudioTests.m */,
-				419C16A81F4D35AB00629579 /* Info.plist */,
-			);
-			path = TestAudioTests;
-			sourceTree = "<group>";
-		};
-		419C16B01F4D35AB00629579 /* TestAudioUITests */ = {
-			isa = PBXGroup;
-			children = (
-				419C16B11F4D35AB00629579 /* TestAudioUITests.m */,
-				419C16B31F4D35AB00629579 /* Info.plist */,
-			);
-			path = TestAudioUITests;
 			sourceTree = "<group>";
 		};
 		419C17061F4D36A300629579 /* mgr */ = {
@@ -232,6 +223,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		410D4B1E1F550642006E51DE /* TestAudio1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 410D4B491F550643006E51DE /* Build configuration list for PBXNativeTarget "TestAudio1" */;
+			buildPhases = (
+				410D4B1B1F550642006E51DE /* Sources */,
+				410D4B1C1F550642006E51DE /* Frameworks */,
+				410D4B1D1F550642006E51DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestAudio1;
+			productName = TestAudio1;
+			productReference = 410D4B1F1F550642006E51DE /* TestAudio1.app */;
+			productType = "com.apple.product-type.application";
+		};
 		419C16881F4D35AB00629579 /* TestAudio */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 419C16B61F4D35AB00629579 /* Build configuration list for PBXNativeTarget "TestAudio" */;
@@ -249,42 +257,6 @@
 			productReference = 419C16891F4D35AB00629579 /* TestAudio.app */;
 			productType = "com.apple.product-type.application";
 		};
-		419C16A11F4D35AB00629579 /* TestAudioTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 419C16B91F4D35AB00629579 /* Build configuration list for PBXNativeTarget "TestAudioTests" */;
-			buildPhases = (
-				419C169E1F4D35AB00629579 /* Sources */,
-				419C169F1F4D35AB00629579 /* Frameworks */,
-				419C16A01F4D35AB00629579 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				419C16A41F4D35AB00629579 /* PBXTargetDependency */,
-			);
-			name = TestAudioTests;
-			productName = TestAudioTests;
-			productReference = 419C16A21F4D35AB00629579 /* TestAudioTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		419C16AC1F4D35AB00629579 /* TestAudioUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 419C16BC1F4D35AB00629579 /* Build configuration list for PBXNativeTarget "TestAudioUITests" */;
-			buildPhases = (
-				419C16A91F4D35AB00629579 /* Sources */,
-				419C16AA1F4D35AB00629579 /* Frameworks */,
-				419C16AB1F4D35AB00629579 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				419C16AF1F4D35AB00629579 /* PBXTargetDependency */,
-			);
-			name = TestAudioUITests;
-			productName = TestAudioUITests;
-			productReference = 419C16AD1F4D35AB00629579 /* TestAudioUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -294,7 +266,7 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Aka;
 				TargetAttributes = {
-					419C16881F4D35AB00629579 = {
+					410D4B1E1F550642006E51DE = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2ERYNAFK87;
 						ProvisioningStyle = Manual;
@@ -304,17 +276,15 @@
 							};
 						};
 					};
-					419C16A11F4D35AB00629579 = {
+					419C16881F4D35AB00629579 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = D2XBEJ6876;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 419C16881F4D35AB00629579;
-					};
-					419C16AC1F4D35AB00629579 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = D2XBEJ6876;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 419C16881F4D35AB00629579;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -332,13 +302,23 @@
 			projectRoot = "";
 			targets = (
 				419C16881F4D35AB00629579 /* TestAudio */,
-				419C16A11F4D35AB00629579 /* TestAudioTests */,
-				419C16AC1F4D35AB00629579 /* TestAudioUITests */,
+				410D4B1E1F550642006E51DE /* TestAudio1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		410D4B1D1F550642006E51DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				410D4B531F550AAB006E51DE /* 李宗盛 - 鬼迷心窍 - live.mp3 in Resources */,
+				410D4B311F550642006E51DE /* LaunchScreen.storyboard in Resources */,
+				410D4B2E1F550642006E51DE /* Assets.xcassets in Resources */,
+				410D4B2C1F550642006E51DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		419C16871F4D35AB00629579 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -359,23 +339,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		419C16A01F4D35AB00629579 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		419C16AB1F4D35AB00629579 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		410D4B1B1F550642006E51DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				410D4B291F550642006E51DE /* ViewController.m in Sources */,
+				410D4B261F550642006E51DE /* AppDelegate.m in Sources */,
+				410D4B231F550642006E51DE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		419C16851F4D35AB00629579 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -393,38 +369,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		419C169E1F4D35AB00629579 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				419C16A71F4D35AB00629579 /* TestAudioTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		419C16A91F4D35AB00629579 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				419C16B21F4D35AB00629579 /* TestAudioUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		419C16A41F4D35AB00629579 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 419C16881F4D35AB00629579 /* TestAudio */;
-			targetProxy = 419C16A31F4D35AB00629579 /* PBXContainerItemProxy */;
-		};
-		419C16AF1F4D35AB00629579 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 419C16881F4D35AB00629579 /* TestAudio */;
-			targetProxy = 419C16AE1F4D35AB00629579 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
+		410D4B2A1F550642006E51DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				410D4B2B1F550642006E51DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		410D4B2F1F550642006E51DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				410D4B301F550642006E51DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		419C16951F4D35AB00629579 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,6 +407,35 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		410D4B4A1F550643006E51DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
+				INFOPLIST_FILE = TestAudio1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
+			};
+			name = Debug;
+		};
+		410D4B4B1F550643006E51DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TestAudio1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
 		419C16B41F4D35AB00629579 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -566,59 +558,18 @@
 			};
 			name = Release;
 		};
-		419C16BA1F4D35AB00629579 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = D2XBEJ6876;
-				INFOPLIST_FILE = TestAudioTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.TestAudioTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestAudio.app/TestAudio";
-			};
-			name = Debug;
-		};
-		419C16BB1F4D35AB00629579 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = D2XBEJ6876;
-				INFOPLIST_FILE = TestAudioTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.TestAudioTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestAudio.app/TestAudio";
-			};
-			name = Release;
-		};
-		419C16BD1F4D35AB00629579 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = D2XBEJ6876;
-				INFOPLIST_FILE = TestAudioUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.TestAudioUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = TestAudio;
-			};
-			name = Debug;
-		};
-		419C16BE1F4D35AB00629579 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = D2XBEJ6876;
-				INFOPLIST_FILE = TestAudioUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.TestAudioUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = TestAudio;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		410D4B491F550643006E51DE /* Build configuration list for PBXNativeTarget "TestAudio1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				410D4B4A1F550643006E51DE /* Debug */,
+				410D4B4B1F550643006E51DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		419C16841F4D35AB00629579 /* Build configuration list for PBXProject "TestAudio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -633,24 +584,6 @@
 			buildConfigurations = (
 				419C16B71F4D35AB00629579 /* Debug */,
 				419C16B81F4D35AB00629579 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		419C16B91F4D35AB00629579 /* Build configuration list for PBXNativeTarget "TestAudioTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				419C16BA1F4D35AB00629579 /* Debug */,
-				419C16BB1F4D35AB00629579 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		419C16BC1F4D35AB00629579 /* Build configuration list for PBXNativeTarget "TestAudioUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				419C16BD1F4D35AB00629579 /* Debug */,
-				419C16BE1F4D35AB00629579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
