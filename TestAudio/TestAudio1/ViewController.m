@@ -69,6 +69,7 @@ typedef NS_ENUM(NSInteger, YDTestType) {
         _lastInterruptTime = _player.currentTime;
         NSLog(@"device interrupt play time : %f",_player.deviceCurrentTime);
     }else{
+        
 //        interrupt End
         AVAudioSessionInterruptionOptions interruptionOptions = (AVAudioSessionInterruptionOptions)[contentDic objectForKey:AVAudioSessionInterruptionOptionKey];
         if (AVAudioSessionInterruptionOptionShouldResume == interruptionOptions) {
