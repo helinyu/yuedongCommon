@@ -15,12 +15,11 @@ typedef NS_ENUM(NSInteger, YDTestType) {
     YDTestTypeOne = 1,
 };
 
-
 @interface ViewController ()
-//@property (nonatomic, strong) AVPlayer *player;
-@property (nonatomic, strong) AVAudioPlayer *player;
 
+@property (nonatomic, strong) AVAudioPlayer *player;
 @property (nonatomic, assign) YDTestType *type;
+@property (nonatomic, assign) NSTimeInterval lastInterruptTime;
 
 @end
 
@@ -30,32 +29,9 @@ typedef NS_ENUM(NSInteger, YDTestType) {
     [super viewDidLoad];
     [self commonAudioConfigure];
     [self createComponent];
-//    [self testEnum:4];
-    
-}
-
-- (void)testEnum:(YDTestType)type {
-    switch (type) {
-        case YDTestTypeOne:
-            NSLog(@"1");
-            break;
-        case YDTestTypeNone:
-            NSLog(@"0");
-            break;
-        case 2:
-            NSLog(@"2");
-            break;
-        case 3:
-            NSLog(@"3");
-            break;
-        default:
-            NSLog(@"type : %d",type);
-            break;
-    }
 }
 
 - (void)createComponent {
-    
     UIButton *nobtn = [UIButton buttonWithType:UIButtonTypeSystem];
     [nobtn setTitle:@"actice no" forState:UIControlStateNormal];
     [nobtn addTarget:self action:@selector(onActiveNO) forControlEvents:UIControlEventTouchUpInside];
@@ -76,28 +52,50 @@ typedef NS_ENUM(NSInteger, YDTestType) {
 }
 
 - (void)commonAudioConfigure {
-//    [AVAudioSession sharedInstance].delegate = self;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onInterrect:) name:AVAudioSessionInterruptionNotification object:nil];
 }
 
-
-
 - (void)onInterrect:(NSNotification *)noti {
     NSLog(@"被打断 : noti %@",noti);
+    NSDictionary *contentDic = noti.userInfo;
+    
+//    AVAudioSessionInterruptionTypeKey = 1; 表示被打断
+//    AVAudioSessionInterruptionOptionKey = 0;
+//    AVAudioSessionInterruptionTypeKey = 0; //结束打断
+//    表示打断终止,
+
+    BOOL interruptBegin =[[contentDic objectForKey:AVAudioSessionInterruptionTypeKey] boolValue];
+    if (interruptBegin == YES) {
+        _lastInterruptTime = _player.currentTime;
+        NSLog(@"device interrupt play time : %f",_player.deviceCurrentTime);
+    }else{
+//        interrupt End
+        AVAudioSessionInterruptionOptions interruptionOptions = (AVAudioSessionInterruptionOptions)[contentDic objectForKey:AVAudioSessionInterruptionOptionKey];
+        if (AVAudioSessionInterruptionOptionShouldResume == interruptionOptions) {
+//            处理外面暂停的音频
+        }else{
+            [[AVAudioSession sharedInstance] setActive:YES error:nil];
+            NSTimeInterval time = _lastInterruptTime + _player.deviceCurrentTime;
+            [_player playAtTime:time];
+        }
+    }
 }
 
 - (void)onPlayClick {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"李宗盛 - 鬼迷心窍 - live" ofType:@"mp3"];
     _player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:nil];
-    _player.delegate = self;
+//    _player.delegate = self;
+    NSLog(@"device play time : %f",_player.deviceCurrentTime);
     [_player play];
 }
 
 - (void)onActiveYES {
     NSError *error = nil;
-    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionMixWithOthers error:nil];
+//    要实现打断，必定是不能够混合语音了
+//    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionMixWithOthers error:nil];
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     OSStatus status = AudioSessionSetActiveWithFlags(TRUE, kAudioSessionSetActiveFlag_NotifyOthersOnDeactivation);
-    NSLog(@"status : %@",status);
+    NSLog(@"status : %d",(int)status);
     BOOL result = [[AVAudioSession sharedInstance] setActive:YES withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:&error];
     NSLog(@"result : %d -- error : %@",result,error);
 }
@@ -109,18 +107,25 @@ typedef NS_ENUM(NSInteger, YDTestType) {
     NSLog(@"result :%d, error : %@",result, error);
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
 #pragma mark -- delegate
 
-- (void)audioPlayerBeginInterruption:(AVAudioPlayer *)player NS_DEPRECATED_IOS(2_2, 8_0) {
+- (void)audioPlayerBeginInterruption:(AVAudioPlayer *)player {
+//    记录播放的时间等等信息 （主要是时间）
+    NSLog(@"audioPlayerBeginInterruption");
+}
+
+- (void)audioPlayerEndInterruption:(AVAudioPlayer *)player withOptions:(NSUInteger)flags {
+    NSLog(@"audioPlayerEndInterruption:withOptions: flags : %lu",(unsigned long)flags);
+    if (flags) {
+//         外面的应用要重启
+    }else{
+//        [_player playAtTime:_lastInterruptTime];
+    }
     
 }
 
-- (void)audioPlayerEndInterruption:(AVAudioPlayer *)player withOptions:(NSUInteger)flags NS_DEPRECATED_IOS(6_0, 8_0) {
-    
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
 }
 
 @end
