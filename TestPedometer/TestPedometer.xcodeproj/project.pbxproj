@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		410D4B621F553961006E51DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 410D4B611F553961006E51DE /* main.m */; };
+		410D4B651F553961006E51DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 410D4B641F553961006E51DE /* AppDelegate.m */; };
+		410D4B681F553961006E51DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410D4B671F553961006E51DE /* ViewController.m */; };
+		410D4B6B1F553961006E51DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410D4B691F553961006E51DE /* Main.storyboard */; };
+		410D4B6D1F553961006E51DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410D4B6C1F553961006E51DE /* Assets.xcassets */; };
+		410D4B701F553961006E51DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410D4B6E1F553961006E51DE /* LaunchScreen.storyboard */; };
+		410D4B7B1F553961006E51DE /* TestPedometerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 410D4B7A1F553961006E51DE /* TestPedometerTests.m */; };
+		410D4B861F553962006E51DE /* TestPedometerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 410D4B851F553962006E51DE /* TestPedometerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		410D4B771F553961006E51DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 410D4B551F553961006E51DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 410D4B5C1F553961006E51DE;
+			remoteInfo = TestPedometer;
+		};
+		410D4B821F553962006E51DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 410D4B551F553961006E51DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 410D4B5C1F553961006E51DE;
+			remoteInfo = TestPedometer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		410D4B5D1F553961006E51DE /* TestPedometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPedometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		410D4B611F553961006E51DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		410D4B631F553961006E51DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		410D4B641F553961006E51DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		410D4B661F553961006E51DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		410D4B671F553961006E51DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		410D4B6A1F553961006E51DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		410D4B6C1F553961006E51DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		410D4B6F1F553961006E51DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		410D4B711F553961006E51DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		410D4B761F553961006E51DE /* TestPedometerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestPedometerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		410D4B7A1F553961006E51DE /* TestPedometerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPedometerTests.m; sourceTree = "<group>"; };
+		410D4B7C1F553961006E51DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		410D4B811F553962006E51DE /* TestPedometerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestPedometerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		410D4B851F553962006E51DE /* TestPedometerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPedometerUITests.m; sourceTree = "<group>"; };
+		410D4B871F553962006E51DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		410D4B5A1F553961006E51DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		410D4B731F553961006E51DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		410D4B7E1F553962006E51DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		410D4B541F553961006E51DE = {
+			isa = PBXGroup;
+			children = (
+				410D4B5F1F553961006E51DE /* TestPedometer */,
+				410D4B791F553961006E51DE /* TestPedometerTests */,
+				410D4B841F553962006E51DE /* TestPedometerUITests */,
+				410D4B5E1F553961006E51DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		410D4B5E1F553961006E51DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				410D4B5D1F553961006E51DE /* TestPedometer.app */,
+				410D4B761F553961006E51DE /* TestPedometerTests.xctest */,
+				410D4B811F553962006E51DE /* TestPedometerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		410D4B5F1F553961006E51DE /* TestPedometer */ = {
+			isa = PBXGroup;
+			children = (
+				410D4B631F553961006E51DE /* AppDelegate.h */,
+				410D4B641F553961006E51DE /* AppDelegate.m */,
+				410D4B661F553961006E51DE /* ViewController.h */,
+				410D4B671F553961006E51DE /* ViewController.m */,
+				410D4B691F553961006E51DE /* Main.storyboard */,
+				410D4B6C1F553961006E51DE /* Assets.xcassets */,
+				410D4B6E1F553961006E51DE /* LaunchScreen.storyboard */,
+				410D4B711F553961006E51DE /* Info.plist */,
+				410D4B601F553961006E51DE /* Supporting Files */,
+			);
+			path = TestPedometer;
+			sourceTree = "<group>";
+		};
+		410D4B601F553961006E51DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				410D4B611F553961006E51DE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		410D4B791F553961006E51DE /* TestPedometerTests */ = {
+			isa = PBXGroup;
+			children = (
+				410D4B7A1F553961006E51DE /* TestPedometerTests.m */,
+				410D4B7C1F553961006E51DE /* Info.plist */,
+			);
+			path = TestPedometerTests;
+			sourceTree = "<group>";
+		};
+		410D4B841F553962006E51DE /* TestPedometerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				410D4B851F553962006E51DE /* TestPedometerUITests.m */,
+				410D4B871F553962006E51DE /* Info.plist */,
+			);
+			path = TestPedometerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		410D4B5C1F553961006E51DE /* TestPedometer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 410D4B8A1F553962006E51DE /* Build configuration list for PBXNativeTarget "TestPedometer" */;
+			buildPhases = (
+				410D4B591F553961006E51DE /* Sources */,
+				410D4B5A1F553961006E51DE /* Frameworks */,
+				410D4B5B1F553961006E51DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestPedometer;
+			productName = TestPedometer;
+			productReference = 410D4B5D1F553961006E51DE /* TestPedometer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		410D4B751F553961006E51DE /* TestPedometerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 410D4B8D1F553962006E51DE /* Build configuration list for PBXNativeTarget "TestPedometerTests" */;
+			buildPhases = (
+				410D4B721F553961006E51DE /* Sources */,
+				410D4B731F553961006E51DE /* Frameworks */,
+				410D4B741F553961006E51DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				410D4B781F553961006E51DE /* PBXTargetDependency */,
+			);
+			name = TestPedometerTests;
+			productName = TestPedometerTests;
+			productReference = 410D4B761F553961006E51DE /* TestPedometerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		410D4B801F553962006E51DE /* TestPedometerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 410D4B901F553962006E51DE /* Build configuration list for PBXNativeTarget "TestPedometerUITests" */;
+			buildPhases = (
+				410D4B7D1F553962006E51DE /* Sources */,
+				410D4B7E1F553962006E51DE /* Frameworks */,
+				410D4B7F1F553962006E51DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				410D4B831F553962006E51DE /* PBXTargetDependency */,
+			);
+			name = TestPedometerUITests;
+			productName = TestPedometerUITests;
+			productReference = 410D4B811F553962006E51DE /* TestPedometerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		410D4B551F553961006E51DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Aka;
+				TargetAttributes = {
+					410D4B5C1F553961006E51DE = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = D2XBEJ6876;
+						ProvisioningStyle = Automatic;
+					};
+					410D4B751F553961006E51DE = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = D2XBEJ6876;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 410D4B5C1F553961006E51DE;
+					};
+					410D4B801F553962006E51DE = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = D2XBEJ6876;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 410D4B5C1F553961006E51DE;
+					};
+				};
+			};
+			buildConfigurationList = 410D4B581F553961006E51DE /* Build configuration list for PBXProject "TestPedometer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 410D4B541F553961006E51DE;
+			productRefGroup = 410D4B5E1F553961006E51DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				410D4B5C1F553961006E51DE /* TestPedometer */,
+				410D4B751F553961006E51DE /* TestPedometerTests */,
+				410D4B801F553962006E51DE /* TestPedometerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		410D4B5B1F553961006E51DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				410D4B701F553961006E51DE /* LaunchScreen.storyboard in Resources */,
+				410D4B6D1F553961006E51DE /* Assets.xcassets in Resources */,
+				410D4B6B1F553961006E51DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		410D4B741F553961006E51DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		410D4B7F1F553962006E51DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		410D4B591F553961006E51DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				410D4B681F553961006E51DE /* ViewController.m in Sources */,
+				410D4B651F553961006E51DE /* AppDelegate.m in Sources */,
+				410D4B621F553961006E51DE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		410D4B721F553961006E51DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				410D4B7B1F553961006E51DE /* TestPedometerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		410D4B7D1F553962006E51DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				410D4B861F553962006E51DE /* TestPedometerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		410D4B781F553961006E51DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 410D4B5C1F553961006E51DE /* TestPedometer */;
+			targetProxy = 410D4B771F553961006E51DE /* PBXContainerItemProxy */;
+		};
+		410D4B831F553962006E51DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 410D4B5C1F553961006E51DE /* TestPedometer */;
+			targetProxy = 410D4B821F553962006E51DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		410D4B691F553961006E51DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				410D4B6A1F553961006E51DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		410D4B6E1F553961006E51DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				410D4B6F1F553961006E51DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		410D4B881F553962006E51DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		410D4B891F553962006E51DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		410D4B8B1F553962006E51DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = TestPedometer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.TestPedometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		410D4B8C1F553962006E51DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = TestPedometer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.TestPedometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		410D4B8E1F553962006E51DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = TestPedometerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.TestPedometerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestPedometer.app/TestPedometer";
+			};
+			name = Debug;
+		};
+		410D4B8F1F553962006E51DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = TestPedometerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.TestPedometerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestPedometer.app/TestPedometer";
+			};
+			name = Release;
+		};
+		410D4B911F553962006E51DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = TestPedometerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.TestPedometerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestPedometer;
+			};
+			name = Debug;
+		};
+		410D4B921F553962006E51DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = TestPedometerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.TestPedometerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestPedometer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		410D4B581F553961006E51DE /* Build configuration list for PBXProject "TestPedometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				410D4B881F553962006E51DE /* Debug */,
+				410D4B891F553962006E51DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		410D4B8A1F553962006E51DE /* Build configuration list for PBXNativeTarget "TestPedometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				410D4B8B1F553962006E51DE /* Debug */,
+				410D4B8C1F553962006E51DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		410D4B8D1F553962006E51DE /* Build configuration list for PBXNativeTarget "TestPedometerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				410D4B8E1F553962006E51DE /* Debug */,
+				410D4B8F1F553962006E51DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		410D4B901F553962006E51DE /* Build configuration list for PBXNativeTarget "TestPedometerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				410D4B911F553962006E51DE /* Debug */,
+				410D4B921F553962006E51DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 410D4B551F553961006E51DE /* Project object */;
+}
