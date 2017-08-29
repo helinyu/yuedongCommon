@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4108242B1F555A4300AAC69D /* QYPedometerData.h in Sources */ = {isa = PBXBuildFile; fileRef = 410824291F5559DE00AAC69D /* QYPedometerData.h */; };
+		4108242C1F555A4300AAC69D /* QYPedometerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4108242A1F5559DE00AAC69D /* QYPedometerData.m */; };
+		4108242D1F555A4300AAC69D /* QYPedometerManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 410824271F5559DD00AAC69D /* QYPedometerManager.h */; };
+		4108242E1F555A4300AAC69D /* QYPedometerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 410824281F5559DE00AAC69D /* QYPedometerManager.m */; };
 		410D4B621F553961006E51DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 410D4B611F553961006E51DE /* main.m */; };
 		410D4B651F553961006E51DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 410D4B641F553961006E51DE /* AppDelegate.m */; };
 		410D4B681F553961006E51DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410D4B671F553961006E51DE /* ViewController.m */; };
@@ -15,6 +19,7 @@
 		410D4B701F553961006E51DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410D4B6E1F553961006E51DE /* LaunchScreen.storyboard */; };
 		410D4B7B1F553961006E51DE /* TestPedometerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 410D4B7A1F553961006E51DE /* TestPedometerTests.m */; };
 		410D4B861F553962006E51DE /* TestPedometerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 410D4B851F553962006E51DE /* TestPedometerUITests.m */; };
+		410D4B951F553E2B006E51DE /* YDPedometerMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 410D4B941F553E2B006E51DE /* YDPedometerMgr.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		410824221F554F0600AAC69D /* TestPedometer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestPedometer.entitlements; sourceTree = "<group>"; };
+		410824271F5559DD00AAC69D /* QYPedometerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYPedometerManager.h; sourceTree = "<group>"; };
+		410824281F5559DE00AAC69D /* QYPedometerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYPedometerManager.m; sourceTree = "<group>"; };
+		410824291F5559DE00AAC69D /* QYPedometerData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYPedometerData.h; sourceTree = "<group>"; };
+		4108242A1F5559DE00AAC69D /* QYPedometerData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYPedometerData.m; sourceTree = "<group>"; };
 		410D4B5D1F553961006E51DE /* TestPedometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPedometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		410D4B611F553961006E51DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		410D4B631F553961006E51DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +61,8 @@
 		410D4B811F553962006E51DE /* TestPedometerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestPedometerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		410D4B851F553962006E51DE /* TestPedometerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPedometerUITests.m; sourceTree = "<group>"; };
 		410D4B871F553962006E51DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		410D4B931F553E2B006E51DE /* YDPedometerMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDPedometerMgr.h; sourceTree = "<group>"; };
+		410D4B941F553E2B006E51DE /* YDPedometerMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDPedometerMgr.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4108241F1F554EEE00AAC69D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		410824261F5559D000AAC69D /* test */ = {
+			isa = PBXGroup;
+			children = (
+				410824291F5559DE00AAC69D /* QYPedometerData.h */,
+				4108242A1F5559DE00AAC69D /* QYPedometerData.m */,
+				410824271F5559DD00AAC69D /* QYPedometerManager.h */,
+				410824281F5559DE00AAC69D /* QYPedometerManager.m */,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
 		410D4B541F553961006E51DE = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +115,7 @@
 				410D4B791F553961006E51DE /* TestPedometerTests */,
 				410D4B841F553962006E51DE /* TestPedometerUITests */,
 				410D4B5E1F553961006E51DE /* Products */,
+				4108241F1F554EEE00AAC69D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +132,14 @@
 		410D4B5F1F553961006E51DE /* TestPedometer */ = {
 			isa = PBXGroup;
 			children = (
+				410824261F5559D000AAC69D /* test */,
+				410824221F554F0600AAC69D /* TestPedometer.entitlements */,
 				410D4B631F553961006E51DE /* AppDelegate.h */,
 				410D4B641F553961006E51DE /* AppDelegate.m */,
 				410D4B661F553961006E51DE /* ViewController.h */,
 				410D4B671F553961006E51DE /* ViewController.m */,
+				410D4B931F553E2B006E51DE /* YDPedometerMgr.h */,
+				410D4B941F553E2B006E51DE /* YDPedometerMgr.m */,
 				410D4B691F553961006E51DE /* Main.storyboard */,
 				410D4B6C1F553961006E51DE /* Assets.xcassets */,
 				410D4B6E1F553961006E51DE /* LaunchScreen.storyboard */,
@@ -207,8 +242,19 @@
 				TargetAttributes = {
 					410D4B5C1F553961006E51DE = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = D2XBEJ6876;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					410D4B751F553961006E51DE = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -276,9 +322,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4108242B1F555A4300AAC69D /* QYPedometerData.h in Sources */,
+				4108242C1F555A4300AAC69D /* QYPedometerData.m in Sources */,
+				4108242D1F555A4300AAC69D /* QYPedometerManager.h in Sources */,
+				4108242E1F555A4300AAC69D /* QYPedometerManager.m in Sources */,
 				410D4B681F553961006E51DE /* ViewController.m in Sources */,
 				410D4B651F553961006E51DE /* AppDelegate.m in Sources */,
 				410D4B621F553961006E51DE /* main.m in Sources */,
+				410D4B951F553E2B006E51DE /* YDPedometerMgr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,11 +480,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				INFOPLIST_FILE = TestPedometer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.TestPedometer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 			};
 			name = Debug;
 		};
@@ -441,11 +495,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestPedometer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.TestPedometer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -518,6 +574,7 @@
 				410D4B8C1F553962006E51DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		410D4B8D1F553962006E51DE /* Build configuration list for PBXNativeTarget "TestPedometerTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +583,7 @@
 				410D4B8F1F553962006E51DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		410D4B901F553962006E51DE /* Build configuration list for PBXNativeTarget "TestPedometerUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +592,7 @@
 				410D4B921F553962006E51DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
