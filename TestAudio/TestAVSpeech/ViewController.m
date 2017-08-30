@@ -36,12 +36,24 @@
     [btn addTarget:self action:@selector(onSpeechText:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     btn.frame = CGRectMake(100, 200, 100, 40);
+    
+    UIButton *langueBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [langueBtn setTitle:@"获取语言列表" forState:UIControlStateNormal];
+    [langueBtn addTarget:self action:@selector(printVoices) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:langueBtn];
+    langueBtn.frame = CGRectMake(100, 250, 100, 40);
+
 }
 
 - (void)onSpeechText:(UIButton *)sender {
     [[YDSpeechMgr shared] speachWithText:_inputTextfield.text];
 }
 
+- (void)printVoices {
+//    - (NSArray *)speachLanguageVoice {
+    [[YDSpeechMgr shared] speachLanguageVoice];
+
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

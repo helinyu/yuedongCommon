@@ -41,16 +41,25 @@
     return singleton;
 }
 
+- (NSArray *)speachLanguageVoice {
+    NSArray *voices = [AVSpeechSynthesisVoice speechVoices];
+    for (AVSpeechSynthesisVoice *voice  in voices) {
+        NSLog(@"voice is : %@",voice);
+    }
+    return voices;
+}
+
 - (void)speachWithText:(NSString *)text {
     BOOL isSpeeking = _speechSysthesizer.isSpeaking;
     BOOL isPause = _speechSysthesizer.isPaused;
     AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:text];
-    AVSpeechSynthesisVoice *voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"zh-CN"];
+    AVSpeechSynthesisVoice *voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"zh-HK"];
     utterance.voice = voice;
     utterance.rate = 0.f;
     utterance.pitchMultiplier = 0.8f;
     utterance.postUtteranceDelay = 0.1f;
     [_speechSysthesizer speakUtterance:utterance];
+    
 }
 
 #pragma mark -- speech synthesizer delegate

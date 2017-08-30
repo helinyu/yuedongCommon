@@ -12,6 +12,8 @@
 
 + (instancetype)shared;
 
+- (NSArray *)speachLanguageVoice;
+
 - (void)speachWithText:(NSString *)text;
 
 @end
