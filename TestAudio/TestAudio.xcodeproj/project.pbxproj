@@ -15,6 +15,7 @@
 		410D4B311F550642006E51DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410D4B2F1F550642006E51DE /* LaunchScreen.storyboard */; };
 		410D4B531F550AAB006E51DE /* 李宗盛 - 鬼迷心窍 - live.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 410D4B521F550AAB006E51DE /* 李宗盛 - 鬼迷心窍 - live.mp3 */; };
 		4110B9AB1F4EDE6400CE0347 /* YDAudioNodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110B9AA1F4EDE6400CE0347 /* YDAudioNodeViewController.m */; };
+		41146B4A1F56AA2C005D1645 /* AKSpeechModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41146B491F56AA2C005D1645 /* AKSpeechModel.m */; };
 		414114BE1F4EE14400CF7B9A /* YDAudioNodeMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 414114BD1F4EE14400CF7B9A /* YDAudioNodeMgr.m */; };
 		4143DE771F515209004785A7 /* 李克勤 - 风继续吹.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4143DE761F515209004785A7 /* 李克勤 - 风继续吹.mp3 */; };
 		4143DE791F515213004785A7 /* 李宗盛 - 鬼迷心窍 - live.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4143DE781F515213004785A7 /* 李宗盛 - 鬼迷心窍 - live.mp3 */; };
@@ -51,6 +52,7 @@
 		41D49C111F56A2A0000E7A2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D49C0F1F56A2A0000E7A2E /* LaunchScreen.storyboard */; };
 		41D49C141F56A2A0000E7A2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D49C131F56A2A0000E7A2E /* main.m */; };
 		41D49C371F56A2CB000E7A2E /* AKSpeechMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D49C361F56A2CB000E7A2E /* AKSpeechMgr.m */; };
+		41D49C381F56A67A000E7A2E /* AKASpeechDefine.h in Sources */ = {isa = PBXBuildFile; fileRef = 41CF8A8F1F56A49B009D3350 /* AKASpeechDefine.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,8 @@
 		410D4B521F550AAB006E51DE /* 李宗盛 - 鬼迷心窍 - live.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "李宗盛 - 鬼迷心窍 - live.mp3"; sourceTree = "<group>"; };
 		4110B9A91F4EDE6400CE0347 /* YDAudioNodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAudioNodeViewController.h; sourceTree = "<group>"; };
 		4110B9AA1F4EDE6400CE0347 /* YDAudioNodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAudioNodeViewController.m; sourceTree = "<group>"; };
+		41146B481F56AA2C005D1645 /* AKSpeechModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKSpeechModel.h; sourceTree = "<group>"; };
+		41146B491F56AA2C005D1645 /* AKSpeechModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKSpeechModel.m; sourceTree = "<group>"; };
 		414114BC1F4EE14400CF7B9A /* YDAudioNodeMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAudioNodeMgr.h; sourceTree = "<group>"; };
 		414114BD1F4EE14400CF7B9A /* YDAudioNodeMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAudioNodeMgr.m; sourceTree = "<group>"; };
 		4143DE761F515209004785A7 /* 李克勤 - 风继续吹.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "李克勤 - 风继续吹.mp3"; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 		419C17211F4D6C2B00629579 /* YDLyricAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDLyricAnalyzer.m; sourceTree = "<group>"; };
 		419C17231F4D744200629579 /* YDLockScreenMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDLockScreenMgr.h; sourceTree = "<group>"; };
 		419C17241F4D744200629579 /* YDLockScreenMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDLockScreenMgr.m; sourceTree = "<group>"; };
+		41CF8A8F1F56A49B009D3350 /* AKASpeechDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKASpeechDefine.h; sourceTree = "<group>"; };
 		41D49BC51F56737F000E7A2E /* TestAVSpeech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAVSpeech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D49BC71F56737F000E7A2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41D49BC81F56737F000E7A2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -322,8 +327,11 @@
 		41D49C341F56A2C0000E7A2E /* Mgr */ = {
 			isa = PBXGroup;
 			children = (
+				41CF8A8F1F56A49B009D3350 /* AKASpeechDefine.h */,
 				41D49C351F56A2CB000E7A2E /* AKSpeechMgr.h */,
 				41D49C361F56A2CB000E7A2E /* AKSpeechMgr.m */,
+				41146B481F56AA2C005D1645 /* AKSpeechModel.h */,
+				41146B491F56AA2C005D1645 /* AKSpeechModel.m */,
 			);
 			path = Mgr;
 			sourceTree = "<group>";
@@ -430,13 +438,13 @@
 					};
 					41D49BC41F56737F000E7A2E = {
 						CreatedOnToolsVersion = 9.0;
-						DevelopmentTeam = D2XBEJ6876;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Manual;
 					};
 					41D49C011F56A2A0000E7A2E = {
 						CreatedOnToolsVersion = 9.0;
-						DevelopmentTeam = D2XBEJ6876;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -558,6 +566,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41D49C381F56A67A000E7A2E /* AKASpeechDefine.h in Sources */,
+				41146B4A1F56AA2C005D1645 /* AKSpeechModel.m in Sources */,
 				41D49C091F56A2A0000E7A2E /* ViewController.m in Sources */,
 				41D49C141F56A2A0000E7A2E /* main.m in Sources */,
 				41D49C371F56A2CB000E7A2E /* AKSpeechMgr.m in Sources */,
@@ -799,14 +809,16 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = TestAVSpeech/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.TestAVSpeech;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -824,14 +836,15 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = TestAVSpeech/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.TestAVSpeech;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -849,14 +862,16 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = AKSpeech/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.AKSpeech;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -874,14 +889,15 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = AKSpeech/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.AKSpeech;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

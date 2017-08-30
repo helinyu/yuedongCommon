@@ -53,14 +53,13 @@
 //    BOOL isSpeeking = _speechSysthesizer.isSpeaking;
 //    BOOL isPause = _speechSysthesizer.isPaused;
     AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:text];
-    AVSpeechSynthesisVoice *voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"zh-HK"];
-    NSLog(@"voice is ; %@",voice.identifier);//com.apple.ttsbundle.Sin-Ji-compact
+    AVSpeechSynthesisVoice *voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"zh-CN"];
+    NSLog(@"voice identifier; %@ ,language :%@, name :%@ quality :%ld,current code :%@",voice.identifier,voice.language,voice.name,(long)voice.quality, [AVSpeechSynthesisVoice currentLanguageCode]);//com.apple.ttsbundle.Sin-Ji-compact
     utterance.voice = voice;
     utterance.rate = 0.f;
     utterance.pitchMultiplier = 0.8f;
     utterance.postUtteranceDelay = 0.1f;
 
-    [self testConstants];
     [_speechSysthesizer speakUtterance:utterance];
     
 }
