@@ -47,12 +47,9 @@
 		41D49BFD1F5674CC000E7A2E /* YDSpeechMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D49BFC1F5674CC000E7A2E /* YDSpeechMgr.m */; };
 		41D49C061F56A2A0000E7A2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D49C051F56A2A0000E7A2E /* AppDelegate.m */; };
 		41D49C091F56A2A0000E7A2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D49C081F56A2A0000E7A2E /* ViewController.m */; };
-		41D49C0C1F56A2A0000E7A2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D49C0A1F56A2A0000E7A2E /* Main.storyboard */; };
 		41D49C0E1F56A2A0000E7A2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D49C0D1F56A2A0000E7A2E /* Assets.xcassets */; };
-		41D49C111F56A2A0000E7A2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D49C0F1F56A2A0000E7A2E /* LaunchScreen.storyboard */; };
 		41D49C141F56A2A0000E7A2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D49C131F56A2A0000E7A2E /* main.m */; };
 		41D49C371F56A2CB000E7A2E /* AKSpeechMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D49C361F56A2CB000E7A2E /* AKSpeechMgr.m */; };
-		41D49C381F56A67A000E7A2E /* AKASpeechDefine.h in Sources */ = {isa = PBXBuildFile; fileRef = 41CF8A8F1F56A49B009D3350 /* AKASpeechDefine.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,7 +100,7 @@
 		419C17211F4D6C2B00629579 /* YDLyricAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDLyricAnalyzer.m; sourceTree = "<group>"; };
 		419C17231F4D744200629579 /* YDLockScreenMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDLockScreenMgr.h; sourceTree = "<group>"; };
 		419C17241F4D744200629579 /* YDLockScreenMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDLockScreenMgr.m; sourceTree = "<group>"; };
-		41CF8A8F1F56A49B009D3350 /* AKASpeechDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKASpeechDefine.h; sourceTree = "<group>"; };
+		41CF8A901F56C939009D3350 /* AKASpeechDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKASpeechDefine.h; sourceTree = "<group>"; };
 		41D49BC51F56737F000E7A2E /* TestAVSpeech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAVSpeech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D49BC71F56737F000E7A2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41D49BC81F56737F000E7A2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,9 +118,7 @@
 		41D49C051F56A2A0000E7A2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		41D49C071F56A2A0000E7A2E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		41D49C081F56A2A0000E7A2E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		41D49C0B1F56A2A0000E7A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41D49C0D1F56A2A0000E7A2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		41D49C101F56A2A0000E7A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41D49C121F56A2A0000E7A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41D49C131F56A2A0000E7A2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		41D49C351F56A2CB000E7A2E /* AKSpeechMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKSpeechMgr.h; sourceTree = "<group>"; };
@@ -315,9 +310,7 @@
 				41D49C051F56A2A0000E7A2E /* AppDelegate.m */,
 				41D49C071F56A2A0000E7A2E /* ViewController.h */,
 				41D49C081F56A2A0000E7A2E /* ViewController.m */,
-				41D49C0A1F56A2A0000E7A2E /* Main.storyboard */,
 				41D49C0D1F56A2A0000E7A2E /* Assets.xcassets */,
-				41D49C0F1F56A2A0000E7A2E /* LaunchScreen.storyboard */,
 				41D49C121F56A2A0000E7A2E /* Info.plist */,
 				41D49C131F56A2A0000E7A2E /* main.m */,
 			);
@@ -327,11 +320,11 @@
 		41D49C341F56A2C0000E7A2E /* Mgr */ = {
 			isa = PBXGroup;
 			children = (
-				41CF8A8F1F56A49B009D3350 /* AKASpeechDefine.h */,
 				41D49C351F56A2CB000E7A2E /* AKSpeechMgr.h */,
 				41D49C361F56A2CB000E7A2E /* AKSpeechMgr.m */,
 				41146B481F56AA2C005D1645 /* AKSpeechModel.h */,
 				41146B491F56AA2C005D1645 /* AKSpeechModel.m */,
+				41CF8A901F56C939009D3350 /* AKASpeechDefine.h */,
 			);
 			path = Mgr;
 			sourceTree = "<group>";
@@ -515,9 +508,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41D49C111F56A2A0000E7A2E /* LaunchScreen.storyboard in Resources */,
 				41D49C0E1F56A2A0000E7A2E /* Assets.xcassets in Resources */,
-				41D49C0C1F56A2A0000E7A2E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,7 +557,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41D49C381F56A67A000E7A2E /* AKASpeechDefine.h in Sources */,
 				41146B4A1F56AA2C005D1645 /* AKSpeechModel.m in Sources */,
 				41D49C091F56A2A0000E7A2E /* ViewController.m in Sources */,
 				41D49C141F56A2A0000E7A2E /* main.m in Sources */,
@@ -622,22 +612,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				41D49BD31F56737F000E7A2E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		41D49C0A1F56A2A0000E7A2E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				41D49C0B1F56A2A0000E7A2E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		41D49C0F1F56A2A0000E7A2E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				41D49C101F56A2A0000E7A2E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -866,7 +840,7 @@
 				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = AKSpeech/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -893,7 +867,7 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = AKSpeech/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";

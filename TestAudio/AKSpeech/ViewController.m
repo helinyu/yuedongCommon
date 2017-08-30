@@ -20,7 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
     [btn setTitle:@"播放语音" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(onPlayUtterance) forControlEvents:UIControlEventTouchUpInside];
