@@ -50,16 +50,25 @@
 }
 
 - (void)speachWithText:(NSString *)text {
-    BOOL isSpeeking = _speechSysthesizer.isSpeaking;
-    BOOL isPause = _speechSysthesizer.isPaused;
+//    BOOL isSpeeking = _speechSysthesizer.isSpeaking;
+//    BOOL isPause = _speechSysthesizer.isPaused;
     AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:text];
     AVSpeechSynthesisVoice *voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"zh-HK"];
+    NSLog(@"voice is ; %@",voice.identifier);//com.apple.ttsbundle.Sin-Ji-compact
     utterance.voice = voice;
     utterance.rate = 0.f;
     utterance.pitchMultiplier = 0.8f;
     utterance.postUtteranceDelay = 0.1f;
+
+    [self testConstants];
     [_speechSysthesizer speakUtterance:utterance];
     
+}
+
+- (void)testConstants {
+    NSLog(@"const min:%f",AVSpeechUtteranceMinimumSpeechRate);
+    NSLog(@"const max:%f",AVSpeechUtteranceMaximumSpeechRate);
+    NSLog(@"const defualt :%f",AVSpeechUtteranceDefaultSpeechRate);
 }
 
 #pragma mark -- speech synthesizer delegate
