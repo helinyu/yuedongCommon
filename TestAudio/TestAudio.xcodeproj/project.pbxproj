@@ -21,6 +21,13 @@
 		4143DE791F515213004785A7 /* 李宗盛 - 鬼迷心窍 - live.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4143DE781F515213004785A7 /* 李宗盛 - 鬼迷心窍 - live.mp3 */; };
 		4143DE7B1F515224004785A7 /* 卢冠廷 - 一生所爱.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4143DE7A1F515224004785A7 /* 卢冠廷 - 一生所爱.mp3 */; };
 		4143DE7D1F515262004785A7 /* 叶启田 - 爱拼才会赢.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4143DE7C1F515262004785A7 /* 叶启田 - 爱拼才会赢.mp3 */; };
+		415A1AC91F57A31B00FBDB5C /* YDObjectRetain.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A1AC81F57A31B00FBDB5C /* YDObjectRetain.m */; };
+		415A1ADA1F57C6C500FBDB5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A1AD91F57C6C500FBDB5C /* main.m */; };
+		415A1ADD1F57C6C600FBDB5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A1ADC1F57C6C600FBDB5C /* AppDelegate.m */; };
+		415A1AE01F57C6C600FBDB5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A1ADF1F57C6C600FBDB5C /* ViewController.m */; };
+		415A1AE31F57C6C600FBDB5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415A1AE11F57C6C600FBDB5C /* Main.storyboard */; };
+		415A1AE51F57C6C600FBDB5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415A1AE41F57C6C600FBDB5C /* Assets.xcassets */; };
+		415A1AE81F57C6C600FBDB5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415A1AE61F57C6C600FBDB5C /* LaunchScreen.storyboard */; };
 		419C168E1F4D35AB00629579 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C168D1F4D35AB00629579 /* main.m */; };
 		419C16911F4D35AB00629579 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C16901F4D35AB00629579 /* AppDelegate.m */; };
 		419C16941F4D35AB00629579 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C16931F4D35AB00629579 /* ViewController.m */; };
@@ -74,6 +81,18 @@
 		4143DE781F515213004785A7 /* 李宗盛 - 鬼迷心窍 - live.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "李宗盛 - 鬼迷心窍 - live.mp3"; sourceTree = "<group>"; };
 		4143DE7A1F515224004785A7 /* 卢冠廷 - 一生所爱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "卢冠廷 - 一生所爱.mp3"; sourceTree = "<group>"; };
 		4143DE7C1F515262004785A7 /* 叶启田 - 爱拼才会赢.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "叶启田 - 爱拼才会赢.mp3"; sourceTree = "<group>"; };
+		415A1AC71F57A31B00FBDB5C /* YDObjectRetain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDObjectRetain.h; sourceTree = "<group>"; };
+		415A1AC81F57A31B00FBDB5C /* YDObjectRetain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDObjectRetain.m; sourceTree = "<group>"; };
+		415A1AD61F57C6C500FBDB5C /* TestAlertWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAlertWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		415A1AD91F57C6C500FBDB5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		415A1ADB1F57C6C500FBDB5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		415A1ADC1F57C6C600FBDB5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		415A1ADE1F57C6C600FBDB5C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		415A1ADF1F57C6C600FBDB5C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		415A1AE21F57C6C600FBDB5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		415A1AE41F57C6C600FBDB5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		415A1AE71F57C6C600FBDB5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		415A1AE91F57C6C600FBDB5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		419C16891F4D35AB00629579 /* TestAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		419C168D1F4D35AB00629579 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		419C168F1F4D35AB00629579 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -127,6 +146,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		410D4B1C1F550642006E51DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415A1AD31F57C6C500FBDB5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -193,6 +219,30 @@
 			path = AudioNode;
 			sourceTree = "<group>";
 		};
+		415A1AD71F57C6C500FBDB5C /* TestAlertWindow */ = {
+			isa = PBXGroup;
+			children = (
+				415A1ADB1F57C6C500FBDB5C /* AppDelegate.h */,
+				415A1ADC1F57C6C600FBDB5C /* AppDelegate.m */,
+				415A1ADE1F57C6C600FBDB5C /* ViewController.h */,
+				415A1ADF1F57C6C600FBDB5C /* ViewController.m */,
+				415A1AE11F57C6C600FBDB5C /* Main.storyboard */,
+				415A1AE41F57C6C600FBDB5C /* Assets.xcassets */,
+				415A1AE61F57C6C600FBDB5C /* LaunchScreen.storyboard */,
+				415A1AE91F57C6C600FBDB5C /* Info.plist */,
+				415A1AD81F57C6C500FBDB5C /* Supporting Files */,
+			);
+			path = TestAlertWindow;
+			sourceTree = "<group>";
+		};
+		415A1AD81F57C6C500FBDB5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				415A1AD91F57C6C500FBDB5C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		419C16801F4D35AB00629579 = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +250,7 @@
 				410D4B201F550642006E51DE /* TestAudio1 */,
 				41D49BC61F56737F000E7A2E /* TestAVSpeech */,
 				41D49C031F56A2A0000E7A2E /* AKSpeech */,
+				415A1AD71F57C6C500FBDB5C /* TestAlertWindow */,
 				419C168A1F4D35AB00629579 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -211,6 +262,7 @@
 				410D4B1F1F550642006E51DE /* TestAudio1.app */,
 				41D49BC51F56737F000E7A2E /* TestAVSpeech.app */,
 				41D49C021F56A2A0000E7A2E /* AKSpeech.app */,
+				415A1AD61F57C6C500FBDB5C /* TestAlertWindow.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -284,6 +336,8 @@
 				41D49BC81F56737F000E7A2E /* AppDelegate.m */,
 				41D49BCA1F56737F000E7A2E /* ViewController.h */,
 				41D49BCB1F56737F000E7A2E /* ViewController.m */,
+				415A1AC71F57A31B00FBDB5C /* YDObjectRetain.h */,
+				415A1AC81F57A31B00FBDB5C /* YDObjectRetain.m */,
 				41D49BCD1F56737F000E7A2E /* Main.storyboard */,
 				41D49BD01F56737F000E7A2E /* Assets.xcassets */,
 				41D49BD21F56737F000E7A2E /* LaunchScreen.storyboard */,
@@ -347,6 +401,23 @@
 			name = TestAudio1;
 			productName = TestAudio1;
 			productReference = 410D4B1F1F550642006E51DE /* TestAudio1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		415A1AD51F57C6C500FBDB5C /* TestAlertWindow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415A1B001F57C6C600FBDB5C /* Build configuration list for PBXNativeTarget "TestAlertWindow" */;
+			buildPhases = (
+				415A1AD21F57C6C500FBDB5C /* Sources */,
+				415A1AD31F57C6C500FBDB5C /* Frameworks */,
+				415A1AD41F57C6C500FBDB5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestAlertWindow;
+			productName = TestAlertWindow;
+			productReference = 415A1AD61F57C6C500FBDB5C /* TestAlertWindow.app */;
 			productType = "com.apple.product-type.application";
 		};
 		419C16881F4D35AB00629579 /* TestAudio */ = {
@@ -419,6 +490,11 @@
 							};
 						};
 					};
+					415A1AD51F57C6C500FBDB5C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Manual;
+					};
 					419C16881F4D35AB00629579 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2ERYNAFK87;
@@ -458,6 +534,7 @@
 				410D4B1E1F550642006E51DE /* TestAudio1 */,
 				41D49BC41F56737F000E7A2E /* TestAVSpeech */,
 				41D49C011F56A2A0000E7A2E /* AKSpeech */,
+				415A1AD51F57C6C500FBDB5C /* TestAlertWindow */,
 			);
 		};
 /* End PBXProject section */
@@ -471,6 +548,16 @@
 				410D4B311F550642006E51DE /* LaunchScreen.storyboard in Resources */,
 				410D4B2E1F550642006E51DE /* Assets.xcassets in Resources */,
 				410D4B2C1F550642006E51DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415A1AD41F57C6C500FBDB5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415A1AE81F57C6C600FBDB5C /* LaunchScreen.storyboard in Resources */,
+				415A1AE51F57C6C600FBDB5C /* Assets.xcassets in Resources */,
+				415A1AE31F57C6C600FBDB5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +612,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		415A1AD21F57C6C500FBDB5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415A1AE01F57C6C600FBDB5C /* ViewController.m in Sources */,
+				415A1ADD1F57C6C600FBDB5C /* AppDelegate.m in Sources */,
+				415A1ADA1F57C6C500FBDB5C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		419C16851F4D35AB00629579 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -549,6 +646,7 @@
 				41D49BCC1F56737F000E7A2E /* ViewController.m in Sources */,
 				41D49BD71F56737F000E7A2E /* main.m in Sources */,
 				41D49BC91F56737F000E7A2E /* AppDelegate.m in Sources */,
+				415A1AC91F57A31B00FBDB5C /* YDObjectRetain.m in Sources */,
 				41D49BFD1F5674CC000E7A2E /* YDSpeechMgr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +678,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				410D4B301F550642006E51DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		415A1AE11F57C6C600FBDB5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				415A1AE21F57C6C600FBDB5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		415A1AE61F57C6C600FBDB5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				415A1AE71F57C6C600FBDB5C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -640,6 +754,35 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestAudio1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		415A1B011F57C6C600FBDB5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
+				INFOPLIST_FILE = TestAlertWindow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
+			};
+			name = Debug;
+		};
+		415A1B021F57C6C600FBDB5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TestAlertWindow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
@@ -887,6 +1030,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		415A1B001F57C6C600FBDB5C /* Build configuration list for PBXNativeTarget "TestAlertWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415A1B011F57C6C600FBDB5C /* Debug */,
+				415A1B021F57C6C600FBDB5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		419C16841F4D35AB00629579 /* Build configuration list for PBXProject "TestAudio" */ = {
 			isa = XCConfigurationList;
