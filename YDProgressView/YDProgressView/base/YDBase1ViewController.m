@@ -33,15 +33,19 @@
     [styleBtn addTarget:self action:@selector(onStyleMethod) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:styleBtn];
     styleBtn.frame = CGRectMake(110, 100, 100, 30);
+    
+    UIButton *progressBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [progressBtn setTitle:@"style 初始化" forState:UIControlStateNormal];
+    [progressBtn addTarget:self action:@selector(onPlayProgress) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:progressBtn];
+    progressBtn.frame = CGRectMake(110, 100, 100, 30);
 
-    
-//    @property(nonatomic, strong, nullable) UIImage* progressImage      NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
-//    @property(nonatomic, strong, nullable) UIImage* trackImage         NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
-//    //
+
 //    @property(nonatomic, strong, nullable) NSProgress *observedProgress NS_AVAILABLE_IOS(9_0);
-//    
-//    @end
-    
+}
+
+- (void)onPlayProgress {
+    NSLog(@"progres ;%@",_progressView.observedProgress);
 }
 
 - (void)onFrameMethod {
@@ -53,7 +57,7 @@
 }
 
 - (void)test0 {
-    UIProgressView *progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, 200, 300, 2)];
+    UIProgressView *progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, 200, 300, 20)];
     [self.view addSubview:progressView];
     progressView.progressViewStyle = UIProgressViewStyleDefault;
     [progressView setProgress:0.4 animated:YES];
@@ -61,18 +65,21 @@
     progressView.trackImage = [UIImage imageNamed:@"Snip20170901_5.png"];
 }
 
-
 //样式初始化
 - (void)test1 {
-    UIProgressView *progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleBar];
+//    UIProgressViewStyleBar
+    UIProgressView *progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
     [self.view addSubview:progressView];
 //    progressView.trackTintColor = [UIColor purpleColor];
 //    progressView.progressTintColor = [UIColor greenColor];
     progressView.tintColor = [UIColor darkGrayColor];
     progressView.backgroundColor = [UIColor yellowColor];
 //    其实这两个属性和上面两个是一样的
-    progressView.progress = 0.5;
-    progressView.frame = CGRectMake(0, 210, 300, 2);
+//    progressView.progress = 0.5;
+    [progressView setProgress:0.5 animated:YES];
+    progressView.frame = CGRectMake(0, 210, 300, 20);
+    _progressView = progressView;
+//   这个大小设置不了了
     
     
 }
