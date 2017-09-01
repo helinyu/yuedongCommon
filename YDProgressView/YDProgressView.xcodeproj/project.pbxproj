@@ -15,6 +15,9 @@
 		413DF3111F590BB0000BA784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413DF30F1F590BB0000BA784 /* LaunchScreen.storyboard */; };
 		413DF31C1F590BB0000BA784 /* YDProgressViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DF31B1F590BB0000BA784 /* YDProgressViewTests.m */; };
 		413DF3271F590BB0000BA784 /* YDProgressViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DF3261F590BB0000BA784 /* YDProgressViewUITests.m */; };
+		413DF3381F590E82000BA784 /* YDBase1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DF3371F590E82000BA784 /* YDBase1ViewController.m */; };
+		413DF33B1F5911E2000BA784 /* Snip20170901_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 413DF3391F5911E2000BA784 /* Snip20170901_1.png */; };
+		413DF33E1F59128D000BA784 /* Snip20170901_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 413DF33D1F59128D000BA784 /* Snip20170901_5.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		413DF3221F590BB0000BA784 /* YDProgressViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YDProgressViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		413DF3261F590BB0000BA784 /* YDProgressViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDProgressViewUITests.m; sourceTree = "<group>"; };
 		413DF3281F590BB0000BA784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		413DF3361F590E82000BA784 /* YDBase1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBase1ViewController.h; sourceTree = "<group>"; };
+		413DF3371F590E82000BA784 /* YDBase1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBase1ViewController.m; sourceTree = "<group>"; };
+		413DF3391F5911E2000BA784 /* Snip20170901_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20170901_1.png; sourceTree = "<group>"; };
+		413DF33D1F59128D000BA784 /* Snip20170901_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Snip20170901_5.png; path = ../Snip20170901_5.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,7 @@
 		413DF3001F590BB0000BA784 /* YDProgressView */ = {
 			isa = PBXGroup;
 			children = (
+				413DF3351F590E78000BA784 /* base */,
 				413DF3041F590BB0000BA784 /* AppDelegate.h */,
 				413DF3051F590BB0000BA784 /* AppDelegate.m */,
 				413DF3071F590BB0000BA784 /* ViewController.h */,
@@ -138,6 +146,17 @@
 				413DF3281F590BB0000BA784 /* Info.plist */,
 			);
 			path = YDProgressViewUITests;
+			sourceTree = "<group>";
+		};
+		413DF3351F590E78000BA784 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				413DF3361F590E82000BA784 /* YDBase1ViewController.h */,
+				413DF3371F590E82000BA784 /* YDBase1ViewController.m */,
+				413DF3391F5911E2000BA784 /* Snip20170901_1.png */,
+				413DF33D1F59128D000BA784 /* Snip20170901_5.png */,
+			);
+			path = base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +271,8 @@
 				413DF3111F590BB0000BA784 /* LaunchScreen.storyboard in Resources */,
 				413DF30E1F590BB0000BA784 /* Assets.xcassets in Resources */,
 				413DF30C1F590BB0000BA784 /* Main.storyboard in Resources */,
+				413DF33E1F59128D000BA784 /* Snip20170901_5.png in Resources */,
+				413DF33B1F5911E2000BA784 /* Snip20170901_1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +299,7 @@
 			files = (
 				413DF3091F590BB0000BA784 /* ViewController.m in Sources */,
 				413DF3061F590BB0000BA784 /* AppDelegate.m in Sources */,
+				413DF3381F590E82000BA784 /* YDBase1ViewController.m in Sources */,
 				413DF3031F590BB0000BA784 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +540,7 @@
 				413DF32D1F590BB0000BA784 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		413DF32E1F590BB0000BA784 /* Build configuration list for PBXNativeTarget "YDProgressViewTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +549,7 @@
 				413DF3301F590BB0000BA784 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		413DF3311F590BB0000BA784 /* Build configuration list for PBXNativeTarget "YDProgressViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +558,7 @@
 				413DF3331F590BB0000BA784 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
