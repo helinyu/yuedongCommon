@@ -66,12 +66,14 @@
 - (void)test1 {
     UIProgressView *progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleBar];
     [self.view addSubview:progressView];
-    progressView.trackTintColor = [UIColor purpleColor];
-    progressView.progressTintColor = [UIColor greenColor];
-    progressView.progress = 0.5;
-    progressView.backgroundColor = [UIColor yellowColor];
+//    progressView.trackTintColor = [UIColor purpleColor];
+//    progressView.progressTintColor = [UIColor greenColor];
     progressView.tintColor = [UIColor darkGrayColor];
+    progressView.backgroundColor = [UIColor yellowColor];
+//    其实这两个属性和上面两个是一样的
+    progressView.progress = 0.5;
     progressView.frame = CGRectMake(0, 210, 300, 2);
+    
     
 }
 
