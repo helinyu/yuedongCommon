@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "YDBase1ViewController.h"
+#import "YDBaseSliderController.h"
+#import "YDSliderViewController.h"
 
 @interface ViewController () <UITableViewDelegate,UITableViewDataSource>
 
@@ -35,7 +37,7 @@ static NSString *const reuseCellIdentifier = @"reuse.cell.identifier";
     _tableView.dataSource = self;
     _tableView.delegate = self;
     
-    _dataSources = @[@"基础属性设置"];
+    _dataSources = @[@"基础属性设置,progress",@"slider 的设置",@"重写slider"];
 }
 
 #pragma mark -- tableView datasource
@@ -59,6 +61,12 @@ static NSString *const reuseCellIdentifier = @"reuse.cell.identifier";
             NSLog(@"test");
             [self.navigationController pushViewController:[YDBase1ViewController new] animated:YES];
         }
+            break;
+        case 1:
+            [self.navigationController pushViewController:[YDBaseSliderController new] animated:YES];
+            break;
+        case 2:
+            [self.navigationController pushViewController:[YDSliderViewController new] animated:YES];
             break;
             
         default:
