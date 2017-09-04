@@ -8,13 +8,13 @@
 //
 
 #import "YDControlPannelController.h"
-#import "YDSlider.h"
+#import "YDAudioSlider.h"
 #import "Masonry.h"
 #import "YYImage.h"
 
 @interface YDControlPannelController ()
 
-@property (nonatomic, strong) YDSlider *progressSlider;
+@property (nonatomic, strong) YDAudioSlider *progressSlider;
 
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UILabel *leftPreviousLabel;
@@ -25,6 +25,10 @@
 @property (nonatomic, strong) UIButton *playOrPauseBtn;
 @property (nonatomic, strong) UIButton *closeBtn;
 
+
+@property (nonatomic, assign) NSTimeInterval totalTime;
+@property (nonatomic, assign) NSTimeInterval currentTime;
+
 @end
 
 @implementation YDControlPannelController
@@ -32,18 +36,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    _progressSlider = [YDSlider new];
-    _progressSlider.ydSupperView(self.view).ydMinimumTrackTintColor([UIColor whiteColor]).ydMaximumTrackTintColor([UIColor grayColor]).ydThumbTintColor([UIColor whiteColor]);
+    _progressSlider = [YDAudioSlider new];
+    _progressSlider.ydSupperView(self.view).ydFrame(CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 20)).ydMinimumTrackTintColor([UIColor greenColor]).ydMaximumTrackTintColor([UIColor grayColor]).customThumbImageWithName(@"icon_audio_hover_btn",CGSizeMake(15, 15));
+    [_progressSlider addTarget:self action:@selector(onChangeProgressClick:) forControlEvents:UIControlEventValueChanged];
     [_progressSlider mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view).offset(62.f);
         make.centerY.equalTo(self.view).offset(-9);
         make.height.mas_equalTo(10.f);
         make.right.equalTo(self.view).offset(-62);
     }];
-     
-     
-     _titleLabel = [UILabel new];
-     [self.view addSubview:_titleLabel];
+    
+    _titleLabel = [UILabel new];
+    [self.view addSubview:_titleLabel];
     _titleLabel.text = @"3o天训练跑";
     _titleLabel.textColor = [UIColor darkGrayColor]; // need to change the text color 333333
     [_titleLabel setFont:[UIFont fontWithName:@"SFNSText-Regular" size:16]];
@@ -106,31 +110,47 @@
     
     _closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_closeBtn setTitle:@"结束播放" forState:UIControlStateNormal];
-    _closeBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:12.f];
+    [_closeBtn sizeToFit];
+    [_closeBtn setTitleColor:[UIColor colorWithRed:33.0/255.0 green:33.0/255.0 blue:33.0/255.0 alpha:1.0] forState:UIControlStateNormal];
+    _closeBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:12.f]; // 字体颜色333333
+    [_closeBtn addTarget:self action:@selector(onCloseClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_closeBtn];
     [_closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.height.mas_equalTo(18.f);
+        make.height.mas_equalTo(18.f);
         make.centerY.equalTo(_playOrPauseBtn);
         make.right.equalTo(self.view).offset(-14.f);
     }];
     
 }
 
+- (void)onCloseClick {
+    NSLog(@"close ");
+    !_closeBlock?:_closeBlock();
+}
+
 - (void)onPreviousClick {
-    NSLog(@"上一首");
+    !_previousBlock?:_previousBlock();
 }
 
 - (void)onNextClick {
-    NSLog(@"下一首");
+    !_nextBlock?:_nextBlock();
 }
 
 - (void)onPlayOrPause {
-    NSLog(@"播放/暂停");
+    !_playOrPauseBlock?:_playOrPauseBlock();
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+- (void)onChangeProgressClick:(UISlider *)slider {
+    NSLog(@"slider value : %f",slider.value);
+    !_changeValueBlock?:_changeValueBlock(slider.value);
+}
+
+#pragma mark --- nomal custom methods
+
 
 
 #pragma mark -- block of the property 
@@ -142,43 +162,53 @@
     };
 }
 
-- (YDControlPannelController *(^)(NSInteger currentTime))controlPanelCurrentTime {
-    return ^(NSInteger currentTime) {
-        return self;
-//        将时间转化规定的格式
+- (YDControlPannelController *(^)(NSTimeInterval currentTime))controlPanelCurrentTime {
+    __weak typeof (self) wSelf = self;
+    return ^(NSTimeInterval currentTime) {
+//        wSelf.leftPreviousLabel.text = [NSString stringWithFormat:@"%d",(NSInteger)currentTime];
+        wSelf.currentTime = currentTime;
+           return self;
     };
 }
 
-- (YDControlPannelController *(^)(NSInteger leaveTime))controlPanelLeaveTime {
-    return ^(NSInteger leaveTime) {
-        return self;
-    };
-}
-
-- (YDControlPannelController *(^)(NSInteger totalTime))controlPanelTotalTime {
-    return ^(NSInteger totalTime) {
+- (YDControlPannelController *(^)(NSTimeInterval totalTime))controlPanelTotalTime {
+    __weak typeof (self) wSelf = self;
+    return ^(NSTimeInterval totalTime) {
+        wSelf.totalTime = totalTime;
         return self;
     };
 }
 
+- (YDControlPannelController *(^)(BOOL isPlaying))updatePlayOrPause {
+    __weak typeof (self) wSelf = self;
+    return ^(BOOL isPlaying) {
+        if (isPlaying) {
+            [wSelf.playOrPauseBtn setImage:[UIImage imageNamed:@"icon_audio_stop"] forState:UIControlStateNormal];
+            //            启动计时器
+        }else{
+            [wSelf.playOrPauseBtn setImage:[UIImage imageNamed:@"icon_audio_play"] forState:UIControlStateNormal];
+        }
+        return self;
+    };
+}
 
-- (YDControlPannelController *(^)(void))controlPanelNext {
+- (YDControlPannelController *(^)(void))updateView {
+    __weak typeof (self) wSelf = self;
     return ^(void) {
-//        to the next track
+        if (wSelf.totalTime <= 0.0) {
+            NSLog(@"请先传入总的时间");
+            return self;
+        }
+        
+        wSelf.leftPreviousLabel.text = [NSString stringWithFormat:@"%d",(NSInteger)wSelf.currentTime];
+        NSInteger leaveTime = wSelf.totalTime - _currentTime;
+        wSelf.rightNextLabel.text = [NSString stringWithFormat:@"%d",leaveTime];
+        float progress = wSelf.currentTime/wSelf.totalTime;
+        [wSelf.progressSlider setValue:progress animated:YES];
+        wSelf.updatePlayOrPause(YES);
         return self;
     };
-}
 
-- (YDControlPannelController *(^)(void))controlPanelPrevious {
-    return ^(void) {
-        return self;
-    };
-}
-
-- (YDControlPannelController *(^)(CGFloat progress))controlPanelProgress {
-    return ^(CGFloat progress) {
-        return self;
-    };
 }
 
 

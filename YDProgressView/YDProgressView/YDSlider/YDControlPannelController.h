@@ -7,15 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YDAudioDefine.h"
 
 @interface YDControlPannelController : UIViewController
 
+@property (nonatomic, copy) VoidBlcok closeBlock;
+@property (nonatomic, copy) FloatBlock changeValueBlock;
+@property (nonatomic, copy) VoidBlcok nextBlock;
+@property (nonatomic, copy) VoidBlcok previousBlock;
+@property (nonatomic, copy) VoidBlcok playOrPauseBlock;
+
 - (YDControlPannelController *(^)(NSString *title))controlPanelTitle;
-- (YDControlPannelController *(^)(NSInteger currentTime))controlPanelCurrentTime;
-- (YDControlPannelController *(^)(NSInteger leaveTime))controlPanelLeaveTime;
-- (YDControlPannelController *(^)(NSInteger totalTime))controlPanelTotalTime;
-- (YDControlPannelController *(^)(void))controlPanelNext;
-- (YDControlPannelController *(^)(void))controlPanelPrevious;
-- (YDControlPannelController *(^)(CGFloat progress))controlPanelProgress;
+- (YDControlPannelController *(^)(NSTimeInterval currentTime))controlPanelCurrentTime;
+- (YDControlPannelController *(^)(NSTimeInterval totalTime))controlPanelTotalTime;
+
+- (YDControlPannelController *(^)(BOOL isPlaying))updatePlayOrPause;
+
+- (YDControlPannelController *(^)(void))updateView;
+
 
 @end

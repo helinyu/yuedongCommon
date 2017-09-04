@@ -19,11 +19,18 @@
 		413DF33B1F5911E2000BA784 /* Snip20170901_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 413DF3391F5911E2000BA784 /* Snip20170901_1.png */; };
 		413DF33E1F59128D000BA784 /* Snip20170901_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 413DF33D1F59128D000BA784 /* Snip20170901_5.png */; };
 		413DF3421F5930AA000BA784 /* YDBaseSliderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DF3411F5930AA000BA784 /* YDBaseSliderController.m */; };
-		413DF3481F593A3E000BA784 /* YDSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DF3471F593A3E000BA784 /* YDSlider.m */; };
+		413DF3481F593A3E000BA784 /* YDAudioSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DF3471F593A3E000BA784 /* YDAudioSlider.m */; };
 		413DF34D1F593A48000BA784 /* YDAudioControlPannelMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DF34A1F593A48000BA784 /* YDAudioControlPannelMgr.m */; };
 		413DF34E1F593A48000BA784 /* YDControlPannelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DF34C1F593A48000BA784 /* YDControlPannelController.m */; };
 		413DF3511F593A78000BA784 /* YDSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DF3501F593A78000BA784 /* YDSliderViewController.m */; };
 		413DF3541F59674A000BA784 /* bgAudio.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413DF3531F59674A000BA784 /* bgAudio.xcassets */; };
+		418A17731F5D20E700474E1A /* YDMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 418A17701F5D20E700474E1A /* YDMedia.m */; };
+		418A17741F5D20E700474E1A /* YDBgMediaMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 418A17721F5D20E700474E1A /* YDBgMediaMgr.m */; };
+		418A17761F5D263800474E1A /* 李玉刚 - 刚好遇见你.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 418A17751F5D263800474E1A /* 李玉刚 - 刚好遇见你.mp3 */; };
+		418A17781F5D264900474E1A /* 陈奕迅 - 富士山下.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 418A17771F5D264900474E1A /* 陈奕迅 - 富士山下.mp3 */; };
+		418A177A1F5D267000474E1A /* 陈慧娴 - 与泪抱拥.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 418A17791F5D267000474E1A /* 陈慧娴 - 与泪抱拥.mp3 */; };
+		418A177C1F5D269000474E1A /* 陈慧娴 - 与泪抱拥.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 418A177B1F5D269000474E1A /* 陈慧娴 - 与泪抱拥.mp3 */; };
+		418A177F1F5D395F00474E1A /* YDPannelINfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 418A177E1F5D395F00474E1A /* YDPannelINfo.m */; };
 		41FBDEE11F5CE828006AE863 /* XHDraggableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBDEDA1F5CE828006AE863 /* XHDraggableButton.m */; };
 		41FBDEE21F5CE828006AE863 /* XHFloatWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBDEDC1F5CE828006AE863 /* XHFloatWindowController.m */; };
 		41FBDEE31F5CE828006AE863 /* XHFloatWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBDEDE1F5CE828006AE863 /* XHFloatWindow.m */; };
@@ -75,15 +82,26 @@
 		413DF33D1F59128D000BA784 /* Snip20170901_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Snip20170901_5.png; path = ../Snip20170901_5.png; sourceTree = "<group>"; };
 		413DF3401F5930AA000BA784 /* YDBaseSliderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBaseSliderController.h; sourceTree = "<group>"; };
 		413DF3411F5930AA000BA784 /* YDBaseSliderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBaseSliderController.m; sourceTree = "<group>"; };
-		413DF3461F593A3E000BA784 /* YDSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSlider.h; sourceTree = "<group>"; };
-		413DF3471F593A3E000BA784 /* YDSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSlider.m; sourceTree = "<group>"; };
-		413DF3491F593A48000BA784 /* YDAudioControlPannelMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAudioControlPannelMgr.h; sourceTree = "<group>"; };
-		413DF34A1F593A48000BA784 /* YDAudioControlPannelMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAudioControlPannelMgr.m; sourceTree = "<group>"; };
-		413DF34B1F593A48000BA784 /* YDControlPannelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDControlPannelController.h; sourceTree = "<group>"; };
-		413DF34C1F593A48000BA784 /* YDControlPannelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDControlPannelController.m; sourceTree = "<group>"; };
+		413DF3461F593A3E000BA784 /* YDAudioSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YDAudioSlider.h; path = ../YDAudioSlider.h; sourceTree = "<group>"; };
+		413DF3471F593A3E000BA784 /* YDAudioSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YDAudioSlider.m; path = ../YDAudioSlider.m; sourceTree = "<group>"; };
+		413DF3491F593A48000BA784 /* YDAudioControlPannelMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YDAudioControlPannelMgr.h; path = ../YDAudioControlPannelMgr.h; sourceTree = "<group>"; };
+		413DF34A1F593A48000BA784 /* YDAudioControlPannelMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YDAudioControlPannelMgr.m; path = ../YDAudioControlPannelMgr.m; sourceTree = "<group>"; };
+		413DF34B1F593A48000BA784 /* YDControlPannelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YDControlPannelController.h; path = ../YDControlPannelController.h; sourceTree = "<group>"; };
+		413DF34C1F593A48000BA784 /* YDControlPannelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YDControlPannelController.m; path = ../YDControlPannelController.m; sourceTree = "<group>"; };
 		413DF34F1F593A78000BA784 /* YDSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSliderViewController.h; sourceTree = "<group>"; };
 		413DF3501F593A78000BA784 /* YDSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSliderViewController.m; sourceTree = "<group>"; };
 		413DF3531F59674A000BA784 /* bgAudio.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = bgAudio.xcassets; sourceTree = "<group>"; };
+		418A176D1F5D0C1000474E1A /* YDAudioDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAudioDefine.h; sourceTree = "<group>"; };
+		418A176F1F5D20E700474E1A /* YDMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMedia.h; sourceTree = "<group>"; };
+		418A17701F5D20E700474E1A /* YDMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMedia.m; sourceTree = "<group>"; };
+		418A17711F5D20E700474E1A /* YDBgMediaMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBgMediaMgr.h; sourceTree = "<group>"; };
+		418A17721F5D20E700474E1A /* YDBgMediaMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBgMediaMgr.m; sourceTree = "<group>"; };
+		418A17751F5D263800474E1A /* 李玉刚 - 刚好遇见你.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "李玉刚 - 刚好遇见你.mp3"; sourceTree = "<group>"; };
+		418A17771F5D264900474E1A /* 陈奕迅 - 富士山下.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陈奕迅 - 富士山下.mp3"; sourceTree = "<group>"; };
+		418A17791F5D267000474E1A /* 陈慧娴 - 与泪抱拥.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陈慧娴 - 与泪抱拥.mp3"; sourceTree = "<group>"; };
+		418A177B1F5D269000474E1A /* 陈慧娴 - 与泪抱拥.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陈慧娴 - 与泪抱拥.mp3"; sourceTree = "<group>"; };
+		418A177D1F5D395F00474E1A /* YDPannelINfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDPannelINfo.h; sourceTree = "<group>"; };
+		418A177E1F5D395F00474E1A /* YDPannelINfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDPannelINfo.m; sourceTree = "<group>"; };
 		41FBDED91F5CE828006AE863 /* XHDraggableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDraggableButton.h; sourceTree = "<group>"; };
 		41FBDEDA1F5CE828006AE863 /* XHDraggableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDraggableButton.m; sourceTree = "<group>"; };
 		41FBDEDB1F5CE828006AE863 /* XHFloatWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHFloatWindowController.h; sourceTree = "<group>"; };
@@ -220,14 +238,10 @@
 		413DF3451F593A22000BA784 /* YDSlider */ = {
 			isa = PBXGroup;
 			children = (
+				418A176E1F5D20DF00474E1A /* Audio */,
+				413E5E481F5CEA5100B06852 /* Pannel */,
 				41FBDED81F5CE810006AE863 /* Hover */,
 				413DF3521F593A84000BA784 /* test_vc */,
-				413DF3491F593A48000BA784 /* YDAudioControlPannelMgr.h */,
-				413DF34A1F593A48000BA784 /* YDAudioControlPannelMgr.m */,
-				413DF34B1F593A48000BA784 /* YDControlPannelController.h */,
-				413DF34C1F593A48000BA784 /* YDControlPannelController.m */,
-				413DF3461F593A3E000BA784 /* YDSlider.h */,
-				413DF3471F593A3E000BA784 /* YDSlider.m */,
 			);
 			path = YDSlider;
 			sourceTree = "<group>";
@@ -235,15 +249,46 @@
 		413DF3521F593A84000BA784 /* test_vc */ = {
 			isa = PBXGroup;
 			children = (
+				418A177B1F5D269000474E1A /* 陈慧娴 - 与泪抱拥.mp3 */,
+				418A17771F5D264900474E1A /* 陈奕迅 - 富士山下.mp3 */,
+				418A17751F5D263800474E1A /* 李玉刚 - 刚好遇见你.mp3 */,
 				413DF34F1F593A78000BA784 /* YDSliderViewController.h */,
 				413DF3501F593A78000BA784 /* YDSliderViewController.m */,
 			);
 			name = test_vc;
 			sourceTree = "<group>";
 		};
+		413E5E481F5CEA5100B06852 /* Pannel */ = {
+			isa = PBXGroup;
+			children = (
+				413DF3491F593A48000BA784 /* YDAudioControlPannelMgr.h */,
+				413DF34A1F593A48000BA784 /* YDAudioControlPannelMgr.m */,
+				413DF34B1F593A48000BA784 /* YDControlPannelController.h */,
+				413DF34C1F593A48000BA784 /* YDControlPannelController.m */,
+				418A177D1F5D395F00474E1A /* YDPannelINfo.h */,
+				418A177E1F5D395F00474E1A /* YDPannelINfo.m */,
+				413DF3461F593A3E000BA784 /* YDAudioSlider.h */,
+				413DF3471F593A3E000BA784 /* YDAudioSlider.m */,
+				418A176D1F5D0C1000474E1A /* YDAudioDefine.h */,
+			);
+			path = Pannel;
+			sourceTree = "<group>";
+		};
+		418A176E1F5D20DF00474E1A /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				418A176F1F5D20E700474E1A /* YDMedia.h */,
+				418A17701F5D20E700474E1A /* YDMedia.m */,
+				418A17711F5D20E700474E1A /* YDBgMediaMgr.h */,
+				418A17721F5D20E700474E1A /* YDBgMediaMgr.m */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		41FBDED81F5CE810006AE863 /* Hover */ = {
 			isa = PBXGroup;
 			children = (
+				418A17791F5D267000474E1A /* 陈慧娴 - 与泪抱拥.mp3 */,
 				41FBDED91F5CE828006AE863 /* XHDraggableButton.h */,
 				41FBDEDA1F5CE828006AE863 /* XHDraggableButton.m */,
 				41FBDEDB1F5CE828006AE863 /* XHFloatWindowController.h */,
@@ -355,8 +400,8 @@
 				TargetAttributes = {
 					413DF2FD1F590BB0000BA784 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = D2XBEJ6876;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Manual;
 					};
 					413DF3161F590BB0000BA784 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -398,10 +443,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				413DF3111F590BB0000BA784 /* LaunchScreen.storyboard in Resources */,
+				418A177A1F5D267000474E1A /* 陈慧娴 - 与泪抱拥.mp3 in Resources */,
 				413DF30E1F590BB0000BA784 /* Assets.xcassets in Resources */,
 				413DF30C1F590BB0000BA784 /* Main.storyboard in Resources */,
 				413DF3541F59674A000BA784 /* bgAudio.xcassets in Resources */,
 				413DF33E1F59128D000BA784 /* Snip20170901_5.png in Resources */,
+				418A17761F5D263800474E1A /* 李玉刚 - 刚好遇见你.mp3 in Resources */,
+				418A17781F5D264900474E1A /* 陈奕迅 - 富士山下.mp3 in Resources */,
+				418A177C1F5D269000474E1A /* 陈慧娴 - 与泪抱拥.mp3 in Resources */,
 				413DF33B1F5911E2000BA784 /* Snip20170901_1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,19 +614,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418A177F1F5D395F00474E1A /* YDPannelINfo.m in Sources */,
 				413DF3511F593A78000BA784 /* YDSliderViewController.m in Sources */,
 				413DF3091F590BB0000BA784 /* ViewController.m in Sources */,
 				413DF3421F5930AA000BA784 /* YDBaseSliderController.m in Sources */,
 				413DF3061F590BB0000BA784 /* AppDelegate.m in Sources */,
 				413DF34D1F593A48000BA784 /* YDAudioControlPannelMgr.m in Sources */,
+				418A17741F5D20E700474E1A /* YDBgMediaMgr.m in Sources */,
 				41FBDEE21F5CE828006AE863 /* XHFloatWindowController.m in Sources */,
 				41FBDEE41F5CE828006AE863 /* XHFloatWindowSingleton.m in Sources */,
 				413DF3381F590E82000BA784 /* YDBase1ViewController.m in Sources */,
 				413DF3031F590BB0000BA784 /* main.m in Sources */,
+				418A17731F5D20E700474E1A /* YDMedia.m in Sources */,
 				41FBDEE31F5CE828006AE863 /* XHFloatWindow.m in Sources */,
 				41FBDEE11F5CE828006AE863 /* XHDraggableButton.m in Sources */,
 				413DF34E1F593A48000BA784 /* YDControlPannelController.m in Sources */,
-				413DF3481F593A3E000BA784 /* YDSlider.m in Sources */,
+				413DF3481F593A3E000BA784 /* YDAudioSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,11 +781,14 @@
 			baseConfigurationReference = 472CB204ED895081CB4744EE /* Pods-YDProgressView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				INFOPLIST_FILE = YDProgressView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.YDProgressView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a931646-0f99-495f-b9dc-f7f4d7b9bb34";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 			};
 			name = Debug;
 		};
@@ -742,11 +797,13 @@
 			baseConfigurationReference = B9909C7B5EF03F471D7B0225 /* Pods-YDProgressView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = YDProgressView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.YDProgressView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

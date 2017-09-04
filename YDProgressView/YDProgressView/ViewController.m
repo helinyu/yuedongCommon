@@ -29,15 +29,9 @@ static NSString *const reuseCellIdentifier = @"reuse.cell.identifier";
     
     [self baseInit];
     
-    
-    [self testHover];
 }
 
-- (void)testHover {
-    [XHFloatWindow xh_addWindowOnTarget:self onClick:^{
-        NSLog(@"Floating button clicked!!!");
-    }];
-}
+
 
 - (void)baseInit {
     _tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
