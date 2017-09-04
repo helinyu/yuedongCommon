@@ -10,6 +10,7 @@
 #import "YDBase1ViewController.h"
 #import "YDBaseSliderController.h"
 #import "YDSliderViewController.h"
+#import "XHFloatWindow.h"
 
 @interface ViewController () <UITableViewDelegate,UITableViewDataSource>
 
@@ -27,7 +28,15 @@ static NSString *const reuseCellIdentifier = @"reuse.cell.identifier";
     [super viewDidLoad];
     
     [self baseInit];
+    
+    
+    [self testHover];
+}
 
+- (void)testHover {
+    [XHFloatWindow xh_addWindowOnTarget:self onClick:^{
+        NSLog(@"Floating button clicked!!!");
+    }];
 }
 
 - (void)baseInit {

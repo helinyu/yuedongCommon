@@ -24,6 +24,10 @@
 		413DF34E1F593A48000BA784 /* YDControlPannelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DF34C1F593A48000BA784 /* YDControlPannelController.m */; };
 		413DF3511F593A78000BA784 /* YDSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DF3501F593A78000BA784 /* YDSliderViewController.m */; };
 		413DF3541F59674A000BA784 /* bgAudio.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413DF3531F59674A000BA784 /* bgAudio.xcassets */; };
+		41FBDEE11F5CE828006AE863 /* XHDraggableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBDEDA1F5CE828006AE863 /* XHDraggableButton.m */; };
+		41FBDEE21F5CE828006AE863 /* XHFloatWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBDEDC1F5CE828006AE863 /* XHFloatWindowController.m */; };
+		41FBDEE31F5CE828006AE863 /* XHFloatWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBDEDE1F5CE828006AE863 /* XHFloatWindow.m */; };
+		41FBDEE41F5CE828006AE863 /* XHFloatWindowSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBDEE01F5CE828006AE863 /* XHFloatWindowSingleton.m */; };
 		5E016C09B46ABB77DA272710 /* libPods-YDProgressViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B19BFA4DE4D4A5E31690725 /* libPods-YDProgressViewUITests.a */; };
 		A33A0A9765270AE74E673CBC /* libPods-YDProgressView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF60E62657CAF252CBBCA2BB /* libPods-YDProgressView.a */; };
 		B7D48BC691B28FE365F003FA /* libPods-YDProgressViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA04E959917746F01800B2FA /* libPods-YDProgressViewTests.a */; };
@@ -80,6 +84,14 @@
 		413DF34F1F593A78000BA784 /* YDSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSliderViewController.h; sourceTree = "<group>"; };
 		413DF3501F593A78000BA784 /* YDSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSliderViewController.m; sourceTree = "<group>"; };
 		413DF3531F59674A000BA784 /* bgAudio.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = bgAudio.xcassets; sourceTree = "<group>"; };
+		41FBDED91F5CE828006AE863 /* XHDraggableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDraggableButton.h; sourceTree = "<group>"; };
+		41FBDEDA1F5CE828006AE863 /* XHDraggableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDraggableButton.m; sourceTree = "<group>"; };
+		41FBDEDB1F5CE828006AE863 /* XHFloatWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHFloatWindowController.h; sourceTree = "<group>"; };
+		41FBDEDC1F5CE828006AE863 /* XHFloatWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHFloatWindowController.m; sourceTree = "<group>"; };
+		41FBDEDD1F5CE828006AE863 /* XHFloatWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHFloatWindow.h; sourceTree = "<group>"; };
+		41FBDEDE1F5CE828006AE863 /* XHFloatWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHFloatWindow.m; sourceTree = "<group>"; };
+		41FBDEDF1F5CE828006AE863 /* XHFloatWindowSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHFloatWindowSingleton.h; sourceTree = "<group>"; };
+		41FBDEE01F5CE828006AE863 /* XHFloatWindowSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHFloatWindowSingleton.m; sourceTree = "<group>"; };
 		472CB204ED895081CB4744EE /* Pods-YDProgressView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDProgressView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YDProgressView/Pods-YDProgressView.debug.xcconfig"; sourceTree = "<group>"; };
 		4B19BFA4DE4D4A5E31690725 /* libPods-YDProgressViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YDProgressViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B10CC99DB9BFD6780A545D /* Pods-YDProgressViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDProgressViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YDProgressViewUITests/Pods-YDProgressViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +220,7 @@
 		413DF3451F593A22000BA784 /* YDSlider */ = {
 			isa = PBXGroup;
 			children = (
+				41FBDED81F5CE810006AE863 /* Hover */,
 				413DF3521F593A84000BA784 /* test_vc */,
 				413DF3491F593A48000BA784 /* YDAudioControlPannelMgr.h */,
 				413DF34A1F593A48000BA784 /* YDAudioControlPannelMgr.m */,
@@ -226,6 +239,21 @@
 				413DF3501F593A78000BA784 /* YDSliderViewController.m */,
 			);
 			name = test_vc;
+			sourceTree = "<group>";
+		};
+		41FBDED81F5CE810006AE863 /* Hover */ = {
+			isa = PBXGroup;
+			children = (
+				41FBDED91F5CE828006AE863 /* XHDraggableButton.h */,
+				41FBDEDA1F5CE828006AE863 /* XHDraggableButton.m */,
+				41FBDEDB1F5CE828006AE863 /* XHFloatWindowController.h */,
+				41FBDEDC1F5CE828006AE863 /* XHFloatWindowController.m */,
+				41FBDEDD1F5CE828006AE863 /* XHFloatWindow.h */,
+				41FBDEDE1F5CE828006AE863 /* XHFloatWindow.m */,
+				41FBDEDF1F5CE828006AE863 /* XHFloatWindowSingleton.h */,
+				41FBDEE01F5CE828006AE863 /* XHFloatWindowSingleton.m */,
+			);
+			path = Hover;
 			sourceTree = "<group>";
 		};
 		4B0774A692EB2ADEA235972F /* Pods */ = {
@@ -542,8 +570,12 @@
 				413DF3421F5930AA000BA784 /* YDBaseSliderController.m in Sources */,
 				413DF3061F590BB0000BA784 /* AppDelegate.m in Sources */,
 				413DF34D1F593A48000BA784 /* YDAudioControlPannelMgr.m in Sources */,
+				41FBDEE21F5CE828006AE863 /* XHFloatWindowController.m in Sources */,
+				41FBDEE41F5CE828006AE863 /* XHFloatWindowSingleton.m in Sources */,
 				413DF3381F590E82000BA784 /* YDBase1ViewController.m in Sources */,
 				413DF3031F590BB0000BA784 /* main.m in Sources */,
+				41FBDEE31F5CE828006AE863 /* XHFloatWindow.m in Sources */,
+				41FBDEE11F5CE828006AE863 /* XHDraggableButton.m in Sources */,
 				413DF34E1F593A48000BA784 /* YDControlPannelController.m in Sources */,
 				413DF3481F593A3E000BA784 /* YDSlider.m in Sources */,
 			);

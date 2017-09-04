@@ -33,7 +33,7 @@
     [super viewDidLoad];
 
     _progressSlider = [YDSlider new];
-    _progressSlider.ydSupperView(self.view).ydMinimumTrackTintColor([UIColor greenColor]).ydMaximumTrackTintColor([UIColor grayColor]).ydThumbTintColor([UIColor greenColor]);
+    _progressSlider.ydSupperView(self.view).ydMinimumTrackTintColor([UIColor whiteColor]).ydMaximumTrackTintColor([UIColor grayColor]).ydThumbTintColor([UIColor whiteColor]);
     [_progressSlider mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view).offset(62.f);
         make.centerY.equalTo(self.view).offset(-9);
@@ -45,7 +45,7 @@
      _titleLabel = [UILabel new];
      [self.view addSubview:_titleLabel];
     _titleLabel.text = @"3o天训练跑";
-    _titleLabel.textColor = [UIColor darkGrayColor]; // need to change the text color
+    _titleLabel.textColor = [UIColor darkGrayColor]; // need to change the text color 333333
     [_titleLabel setFont:[UIFont fontWithName:@"SFNSText-Regular" size:16]];
     [_titleLabel sizeToFit];
     [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -105,12 +105,13 @@
     }];
     
     _closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_closeBtn setImage:[UIImage imageNamed:@"icon_audio_close"] forState:UIControlStateNormal];
+    [_closeBtn setTitle:@"结束播放" forState:UIControlStateNormal];
+    _closeBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:12.f];
     [self.view addSubview:_closeBtn];
     [_closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.height.mas_equalTo(18.f);
         make.centerY.equalTo(_playOrPauseBtn);
-        make.right.equalTo(self.view).offset(-30);
+        make.right.equalTo(self.view).offset(-14.f);
     }];
     
 }
@@ -143,7 +144,6 @@
 
 - (YDControlPannelController *(^)(NSInteger currentTime))controlPanelCurrentTime {
     return ^(NSInteger currentTime) {
-        
         return self;
 //        将时间转化规定的格式
     };
