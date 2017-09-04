@@ -24,19 +24,11 @@
     return self;
 }
 
-
 - (CGRect)trackRectForBounds:(CGRect)bounds {
     return CGRectMake(0,bounds.size.height/2 -2.5, bounds.size.width, 5);
 }
 
-//- (CGRect)thumbRectForBounds:(CGRect)bounds trackRect:(CGRect)rect value:(float)value {
-//    CGFloat valueRatio = ( value - self.minimumValue ) / self.maximumValue;
-//    return CGRectMake(valueRatio *(bounds.size.width) - self.yd_thumbSize.width / 2, rect.origin.y - self.yd_thumbSize.height / 2 + rect.size.height / 2, 3, 3);
-//}
-
-
--(UIImage *)_originImage:(UIImage *)image scaleToSize:(CGSize)size
-{
+-(UIImage *)_originImage:(UIImage *)image scaleToSize:(CGSize)size {
     UIGraphicsBeginImageContext(size);
     [image drawInRect:CGRectMake(0,0, size.width, size.height)];
     UIImage *scaleImage=UIGraphicsGetImageFromCurrentImageContext();
@@ -44,8 +36,7 @@
     return scaleImage;
 }
 
-- (YDAudioSlider *(^)(UIImage *img, CGSize size))customThumbImage {
-    __weak typeof (self) wSelf = self;
+- (YDAudioSlider *(^)(UIImage *img, CGSize size))customThumbImage {     __weak typeof (self) wSelf = self;
     return ^(UIImage *img, CGSize size) {
         UIImage *customImage = [wSelf _originImage:img scaleToSize:size];
         [wSelf setThumbImage:customImage forState:UIControlStateNormal];
@@ -97,7 +88,5 @@
         return self;
     };
 }
-
-
 
 @end

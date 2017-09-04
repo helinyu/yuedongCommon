@@ -126,6 +126,7 @@
         
         self.rootVc.changeValueBlock = ^(float value) {
             NSLog(@"value : %f",value);
+            [[YDBgMediaMgr shared] playAtTime:value];
         };
         
         self.rootVc.nextBlock = ^{

@@ -26,6 +26,8 @@ typedef void(^CurrentPlayInfo)(YDPannelINfo *info);
 - (void)stop;
 - (void)continousPlay;
 
+- (void)playAtTime:(NSTimeInterval)progress; /* 0.f ~1.f */
+
 - (void)nextTrack:(CurrentPlayInfo)currentPlayInfo;
 - (void)previousTrack:(CurrentPlayInfo)currentPlayInfo;
 - (void)playOrPause:(CurrentPlayInfo)currentPlayInfo;

@@ -90,6 +90,14 @@ dispatch_async(dispatch_get_main_queue(), block);\
     }
 }
 
+#warning -- 需要修改
+- (void)playAtTime:(NSTimeInterval)progress {
+    if (_audioPlayer) {
+        NSTimeInterval addTime = progress * _audioPlayer.duration;
+        [_audioPlayer playAtTime:addTime];
+    }
+}
+
 - (void)nextTrack:(CurrentPlayInfo)currentPlayInfo {
     if (_audioPlayer) {
         if (_media.mediaUrlStrings.count <=0) {
@@ -189,7 +197,6 @@ dispatch_async(dispatch_get_main_queue(), block);\
     AudioSessionSetActive(YES);
     [session setActive:YES error:nil];
     [session setCategory:AVAudioSessionCategoryPlayback error:nil];
-
 }
 
 - (void)_configureLockLightScreenWithMedia:(YDMedia *)media {
