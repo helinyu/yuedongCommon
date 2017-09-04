@@ -45,16 +45,15 @@ dispatch_async(dispatch_get_main_queue(), block);\
 
 - (void)playWithMedia:(YDMedia *)media {
     _media = media;
+    [self playWithUrlString:media.mediaUrlString];
     [self _configureLockLightScreenWithMedia:media];
     [self _createRemoteCommandCenter];
-    [self playWithUrlString:media.mediaUrlString];
 }
 
 - (void)playWithUrlString:(NSString *)mediaUrlString {
     
     NSURL *mediaUrl;
     if (![mediaUrlString hasPrefix:@"http"]) {
-//        local media file
         NSString *path = [[NSBundle mainBundle] pathForResource:mediaUrlString ofType:nil];
         mediaUrl = [NSURL fileURLWithPath:path];
     }else{
@@ -71,10 +70,6 @@ dispatch_async(dispatch_get_main_queue(), block);\
     if (!playState) {
         NSLog(@"播放失败");
     }
-    
-//    YDPannelINfo *pannelInfo = [YDPannelINfo new];
-//    pannelInfo.evaluateTitle(_media.title).evaluateCurrentTime(_audioPlayer.currentTime).evaluateTotalTime(_audioPlayer.duration).evaluatePlayingState(YES);
-//    !_currentPlayInfo?:_currentPlayInfo(pannelInfo);
 }
 
 - (void)pause {
@@ -189,35 +184,42 @@ dispatch_async(dispatch_get_main_queue(), block);\
     [commandCenter.changePlaybackPositionCommand removeTarget:self];
 }
 
-- (void)_configureLockLightScreenWithMedia:(YDMedia *)media {
-    _media = media;
-    _nowSecondTime = [NSDate date].timeIntervalSince1970;
-    NSLog(@"设置后台播放信息");
-    
+- (void)_enablePlayBack {
     AVAudioSession *session = [AVAudioSession sharedInstance];
     AudioSessionSetActive(YES);
     [session setActive:YES error:nil];
     [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+
+}
+
+- (void)_configureLockLightScreenWithMedia:(YDMedia *)media {
+    [self _enablePlayBack];
+    _media = media;
+    _nowSecondTime = [NSDate date].timeIntervalSince1970;
+    NSLog(@"设置后台播放信息");
     
     NSMutableDictionary * songDict = @{}.mutableCopy;
     [songDict setObject:media.title forKey:MPMediaItemPropertyTitle];
     [songDict setObject:media.artist forKey:MPMediaItemPropertyArtist];
-    [songDict setObject:@(media.currentTime) forKey:MPNowPlayingInfoPropertyElapsedPlaybackTime];
-    [songDict setObject:@(media.totalTime) forKey:MPMediaItemPropertyPlaybackDuration];
-    NSLog(@"thread :%@",[NSThread currentThread]);
-    
-    [[YYWebImageManager sharedManager] requestImageWithURL:[NSURL URLWithString:media.imageUrlString] options:YYWebImageOptionShowNetworkActivity progress:nil transform:nil completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
-        if (image) {
-            NSLog(@" block thread :%@",[NSThread currentThread]);
-            dispatch_main_async_safe(^{
-                NSLog(@"safe block thread :%@",[NSThread currentThread]);
-                MPMediaItemArtwork *artwork = [[MPMediaItemArtwork alloc] initWithImage:image];
-                [songDict setObject:artwork forKey:MPMediaItemPropertyArtwork];
-                [songDict setObject:@(MPMediaTypeAnyAudio) forKey:MPMediaItemPropertyMediaType];
-                [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:songDict];
-            });
-        }
-    }];
+    [songDict setObject:@(_audioPlayer.currentTime) forKey:MPNowPlayingInfoPropertyElapsedPlaybackTime];
+    [songDict setObject:@(_audioPlayer.duration) forKey:MPMediaItemPropertyPlaybackDuration];
+    UIImage *image = [UIImage imageNamed:@"backgroundImage5.jpg"];
+    MPMediaItemArtwork *artwork = [[MPMediaItemArtwork alloc] initWithImage:image];
+    [songDict setObject:artwork forKey:MPMediaItemPropertyArtwork];
+    [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:songDict];
+
+//    [[YYWebImageManager sharedManager] requestImageWithURL:[NSURL URLWithString:media.imageUrlString] options:YYWebImageOptionShowNetworkActivity progress:nil transform:nil completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
+//        if (image) {
+//            NSLog(@" block thread :%@",[NSThread currentThread]);
+//            dispatch_main_async_safe(^{
+//                NSLog(@"safe block thread :%@",[NSThread currentThread]);
+//                MPMediaItemArtwork *artwork = [[MPMediaItemArtwork alloc] initWithImage:image];
+//                [songDict setObject:artwork forKey:MPMediaItemPropertyArtwork];
+//                [songDict setObject:@(MPMediaTypeAnyAudio) forKey:MPMediaItemPropertyMediaType];
+//                [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:songDict];
+//            });
+//        }
+//    }];
 }
 
 @end

@@ -31,6 +31,7 @@
 		418A177A1F5D267000474E1A /* 陈慧娴 - 与泪抱拥.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 418A17791F5D267000474E1A /* 陈慧娴 - 与泪抱拥.mp3 */; };
 		418A177C1F5D269000474E1A /* 陈慧娴 - 与泪抱拥.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 418A177B1F5D269000474E1A /* 陈慧娴 - 与泪抱拥.mp3 */; };
 		418A177F1F5D395F00474E1A /* YDPannelINfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 418A177E1F5D395F00474E1A /* YDPannelINfo.m */; };
+		418A17811F5D574800474E1A /* backgroundImage5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 418A17801F5D574800474E1A /* backgroundImage5.jpg */; };
 		41FBDEE11F5CE828006AE863 /* XHDraggableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBDEDA1F5CE828006AE863 /* XHDraggableButton.m */; };
 		41FBDEE21F5CE828006AE863 /* XHFloatWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBDEDC1F5CE828006AE863 /* XHFloatWindowController.m */; };
 		41FBDEE31F5CE828006AE863 /* XHFloatWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBDEDE1F5CE828006AE863 /* XHFloatWindow.m */; };
@@ -102,6 +103,7 @@
 		418A177B1F5D269000474E1A /* 陈慧娴 - 与泪抱拥.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陈慧娴 - 与泪抱拥.mp3"; sourceTree = "<group>"; };
 		418A177D1F5D395F00474E1A /* YDPannelINfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDPannelINfo.h; sourceTree = "<group>"; };
 		418A177E1F5D395F00474E1A /* YDPannelINfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDPannelINfo.m; sourceTree = "<group>"; };
+		418A17801F5D574800474E1A /* backgroundImage5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundImage5.jpg; sourceTree = "<group>"; };
 		41FBDED91F5CE828006AE863 /* XHDraggableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDraggableButton.h; sourceTree = "<group>"; };
 		41FBDEDA1F5CE828006AE863 /* XHDraggableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDraggableButton.m; sourceTree = "<group>"; };
 		41FBDEDB1F5CE828006AE863 /* XHFloatWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHFloatWindowController.h; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				418A17701F5D20E700474E1A /* YDMedia.m */,
 				418A17711F5D20E700474E1A /* YDBgMediaMgr.h */,
 				418A17721F5D20E700474E1A /* YDBgMediaMgr.m */,
+				418A17801F5D574800474E1A /* backgroundImage5.jpg */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -402,6 +405,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2ERYNAFK87;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					413DF3161F590BB0000BA784 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -442,6 +450,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418A17811F5D574800474E1A /* backgroundImage5.jpg in Resources */,
 				413DF3111F590BB0000BA784 /* LaunchScreen.storyboard in Resources */,
 				418A177A1F5D267000474E1A /* 陈慧娴 - 与泪抱拥.mp3 in Resources */,
 				413DF30E1F590BB0000BA784 /* Assets.xcassets in Resources */,

@@ -60,7 +60,7 @@
                         @"李玉刚 - 刚好遇见你.mp3",
                       ];
     [self hoverBtnInit];
-    YDMedia *media = [YDMedia medialWithTitle:souces[0] mediaUrl:souces[0] imageUrl:@"" artist:@"" currentTime:0 totalTime:0];
+    YDMedia *media = [YDMedia medialWithTitle:souces[0] mediaUrl:souces[0] imageUrl:@"" artist:@"陈慧琳" currentTime:0 totalTime:0];
     [audioMgr playWithMedia:media];
     
 }
