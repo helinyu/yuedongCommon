@@ -13,6 +13,7 @@
 #import "YDBgMediaMgr.h"
 #import "YDPannelINfo.h"
 #import <AVFoundation/AVFoundation.h>
+#import "YDAudioSlider.h"
 
 @interface YDAudioControlPannelMgr ()
 
@@ -131,10 +132,16 @@
             [[YDBgMediaMgr shared] stop];
         };
         
-        self.rootVc.changeValueBlock = ^(float value) {
-            NSLog(@"value : %f",value);
+        self.rootVc.progressSlider.valueBeginChagneBlock = ^{
+            NSLog(@"destroy the timer");
+            [[YDBgMediaMgr shared] destroyTimer];
+        };
+        
+        self.rootVc.progressSlider.valueChangeBlock = ^(float value) {
+            NSLog(@"change the value: %f",value);
             [[YDBgMediaMgr shared] playAtTime:value];
         };
+        
         
         self.rootVc.nextBlock = ^{
             [[YDBgMediaMgr shared] nextTrack:^(YDPannelINfo *info) {

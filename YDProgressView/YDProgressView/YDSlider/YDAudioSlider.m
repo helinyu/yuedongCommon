@@ -89,4 +89,23 @@
     };
 }
 
+#pragma mark -- rewrite super class methods
+
+- (BOOL)beginTrackingWithTouch:(UITouch *)touch withEvent:(nullable UIEvent *)event {
+    !_valueBeginChagneBlock?:_valueBeginChagneBlock();
+    return YES;
+}
+
+//- (BOOL)continueTrackingWithTouch:(UITouch *)touch withEvent:(nullable UIEvent *)event {
+//    return NO;
+//}
+
+- (void)endTrackingWithTouch:(nullable UITouch *)touch withEvent:(nullable UIEvent *)event {
+    NSLog(@"end vlaue :%f",self.value);
+    !_valueChangeBlock?:_valueChangeBlock(self.value);
+}
+
+- (void)cancelTrackingWithEvent:(nullable UIEvent *)event {
+}
+
 @end

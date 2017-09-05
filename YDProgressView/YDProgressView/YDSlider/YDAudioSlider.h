@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YDAudioDefine.h"
 
 @interface YDAudioSlider : UISlider
 
@@ -20,5 +21,8 @@
 
 - (YDAudioSlider *(^)(UIImage *img, CGSize size))customThumbImage;
 - (YDAudioSlider *(^)(NSString *imgName, CGSize size))customThumbImageWithName;
+
+@property (nonatomic, copy) FloatBlock valueChangeBlock;
+@property (nonatomic, copy) VoidBlcok valueBeginChagneBlock;
 
 @end

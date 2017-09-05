@@ -38,7 +38,7 @@
 
     _progressSlider = [YDAudioSlider new];
     _progressSlider.ydSupperView(self.view).ydFrame(CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 20)).ydMinimumTrackTintColor([UIColor greenColor]).ydMaximumTrackTintColor([UIColor grayColor]).customThumbImageWithName(@"icon_audio_hover_btn",CGSizeMake(15, 15));
-    [_progressSlider addTarget:self action:@selector(onChangeProgressClick:) forControlEvents:UIControlEventValueChanged];
+//    [_progressSlider addTarget:self action:@selector(onChangeProgressClick:) forControlEvents:UIControlEventValueChanged];
     [_progressSlider mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view).offset(62.f);
         make.centerY.equalTo(self.view).offset(-9);
@@ -144,10 +144,10 @@
     [super didReceiveMemoryWarning];
 }
 
-- (void)onChangeProgressClick:(UISlider *)slider {
-    NSLog(@"slider value : %f",slider.value);
-    !_changeValueBlock?:_changeValueBlock(slider.value);
-}
+//- (void)onChangeProgressClick:(UISlider *)slider {
+//    NSLog(@"slider value : %f",slider.value);
+//    !_changeValueBlock?:_changeValueBlock(slider.value);
+//}
 
 #pragma mark --- nomal custom methods
 
@@ -195,18 +195,7 @@
 - (YDControlPannelController *(^)(void))updateView {
     __weak typeof (self) wSelf = self;
     return ^(void) {
-//        if (wSelf.totalTime <= 0.0) {
-//            NSLog(@"请先传入总的时间");
-//            return self;
-//        }
-//        
-//        wSelf.leftPreviousLabel.text = [NSString stringWithFormat:@"%d",(NSInteger)wSelf.currentTime];
-//        NSInteger leaveTime = wSelf.totalTime - _currentTime;
-//        wSelf.rightNextLabel.text = [NSString stringWithFormat:@"%d",leaveTime];
-//        float progress = wSelf.currentTime/wSelf.totalTime;
-//        [wSelf.progressSlider setValue:progress animated:YES];
         wSelf.updateProgressView().updatePlayOrPause(YES);
-        
         return self;
     };
 }
@@ -227,7 +216,5 @@
         return self;
     };
 }
-
-
 
 @end

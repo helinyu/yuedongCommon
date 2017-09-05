@@ -39,7 +39,6 @@ dispatch_async(dispatch_get_main_queue(), block);\
 - (void)dealloc{
     [self destroyTimer];
     [self removeObserver];
-
 }
 
 + (instancetype)shared {
@@ -103,11 +102,15 @@ dispatch_async(dispatch_get_main_queue(), block);\
     }
 }
 
-#warning -- 需要修改
 - (void)playAtTime:(NSTimeInterval)progress {
     if (_audioPlayer) {
         NSTimeInterval addTime = progress * _audioPlayer.duration;
-        [_audioPlayer playAtTime:addTime];
+        [_audioPlayer playAtTime:(_audioPlayer.deviceCurrentTime + addTime)];
+        YDPannelINfo *info = [YDPannelINfo new];
+        info.evaluateTotalTime(_audioPlayer.duration).evaluateCurrentTime(addTime);
+        [[YDAudioControlPannelMgr shared] updateProgressViewWithInfo:info];
+//         播放到指定的时间
+        [self resetTimer];
     }
 }
 
@@ -175,9 +178,7 @@ dispatch_async(dispatch_get_main_queue(), block);\
 
 #pragma mark -- timer for audio player timer
 - (void)resetTimer {
-    if (_audioTimeTimer) {
-        [self destroyTimer];
-    }
+    [self destroyTimer];
     [self setTimer];
 }
 
@@ -190,10 +191,15 @@ dispatch_async(dispatch_get_main_queue(), block);\
         YDPannelINfo *info = [YDPannelINfo new];
         info.evaluateCurrentTime(_audioPlayer.currentTime).evaluateTotalTime(_audioPlayer.duration);
         [[YDAudioControlPannelMgr shared] updateProgressViewWithInfo:info];
+    }else{
+        
     }
 }
 
 - (void)destroyTimer {
+    if (!_audioPlayer) {
+        return;
+    }
     [_audioTimeTimer invalidate];
     _audioTimeTimer = nil;
 }

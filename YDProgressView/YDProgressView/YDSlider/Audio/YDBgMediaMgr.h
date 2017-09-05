@@ -35,4 +35,6 @@ typedef void(^CurrentPlayInfo)(YDPannelINfo *info);
 @property (nonatomic, strong, readonly) YDMedia *media;
 @property (nonatomic, strong) AVAudioPlayer *audioPlayer;
 
+- (void)destroyTimer;
+
 @end
