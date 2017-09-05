@@ -11,6 +11,7 @@
 #import "YDBaseSliderController.h"
 #import "YDSliderViewController.h"
 #import "XHFloatWindow.h"
+#import "YDNSProgressViewController.h"
 
 @interface ViewController () <UITableViewDelegate,UITableViewDataSource>
 
@@ -40,7 +41,7 @@ static NSString *const reuseCellIdentifier = @"reuse.cell.identifier";
     _tableView.dataSource = self;
     _tableView.delegate = self;
     
-    _dataSources = @[@"基础属性设置,progress",@"slider 的设置",@"重写slider"];
+    _dataSources = @[@"基础属性设置,progress",@"slider 的设置",@"重写slider",@"NSProgess的使用"];
 }
 
 #pragma mark -- tableView datasource
@@ -71,7 +72,8 @@ static NSString *const reuseCellIdentifier = @"reuse.cell.identifier";
         case 2:
             [self.navigationController pushViewController:[YDSliderViewController new] animated:YES];
             break;
-            
+        case 3:
+            [self.navigationController pushViewController:[YDNSProgressViewController new] animated:YES];
         default:
             break;
     }

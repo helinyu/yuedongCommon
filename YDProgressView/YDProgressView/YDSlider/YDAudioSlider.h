@@ -21,5 +21,4 @@
 - (YDAudioSlider *(^)(UIImage *img, CGSize size))customThumbImage;
 - (YDAudioSlider *(^)(NSString *imgName, CGSize size))customThumbImageWithName;
 
-
 @end

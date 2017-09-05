@@ -13,8 +13,6 @@
 		413DF30C1F590BB0000BA784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413DF30A1F590BB0000BA784 /* Main.storyboard */; };
 		413DF30E1F590BB0000BA784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413DF30D1F590BB0000BA784 /* Assets.xcassets */; };
 		413DF3111F590BB0000BA784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413DF30F1F590BB0000BA784 /* LaunchScreen.storyboard */; };
-		413DF31C1F590BB0000BA784 /* YDProgressViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DF31B1F590BB0000BA784 /* YDProgressViewTests.m */; };
-		413DF3271F590BB0000BA784 /* YDProgressViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DF3261F590BB0000BA784 /* YDProgressViewUITests.m */; };
 		413DF3381F590E82000BA784 /* YDBase1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DF3371F590E82000BA784 /* YDBase1ViewController.m */; };
 		413DF33B1F5911E2000BA784 /* Snip20170901_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 413DF3391F5911E2000BA784 /* Snip20170901_1.png */; };
 		413DF33E1F59128D000BA784 /* Snip20170901_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 413DF33D1F59128D000BA784 /* Snip20170901_5.png */; };
@@ -24,6 +22,7 @@
 		413DF34E1F593A48000BA784 /* YDControlPannelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DF34C1F593A48000BA784 /* YDControlPannelController.m */; };
 		413DF3511F593A78000BA784 /* YDSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DF3501F593A78000BA784 /* YDSliderViewController.m */; };
 		413DF3541F59674A000BA784 /* bgAudio.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413DF3531F59674A000BA784 /* bgAudio.xcassets */; };
+		4148DB6B1F5E4A1E00F6FA10 /* YDNSProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4148DB6A1F5E4A1E00F6FA10 /* YDNSProgressViewController.m */; };
 		418A17731F5D20E700474E1A /* YDMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 418A17701F5D20E700474E1A /* YDMedia.m */; };
 		418A17741F5D20E700474E1A /* YDBgMediaMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 418A17721F5D20E700474E1A /* YDBgMediaMgr.m */; };
 		418A17761F5D263800474E1A /* 李玉刚 - 刚好遇见你.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 418A17751F5D263800474E1A /* 李玉刚 - 刚好遇见你.mp3 */; };
@@ -36,27 +35,8 @@
 		41FBDEE21F5CE828006AE863 /* XHFloatWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBDEDC1F5CE828006AE863 /* XHFloatWindowController.m */; };
 		41FBDEE31F5CE828006AE863 /* XHFloatWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBDEDE1F5CE828006AE863 /* XHFloatWindow.m */; };
 		41FBDEE41F5CE828006AE863 /* XHFloatWindowSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBDEE01F5CE828006AE863 /* XHFloatWindowSingleton.m */; };
-		5E016C09B46ABB77DA272710 /* libPods-YDProgressViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B19BFA4DE4D4A5E31690725 /* libPods-YDProgressViewUITests.a */; };
 		A33A0A9765270AE74E673CBC /* libPods-YDProgressView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF60E62657CAF252CBBCA2BB /* libPods-YDProgressView.a */; };
-		B7D48BC691B28FE365F003FA /* libPods-YDProgressViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA04E959917746F01800B2FA /* libPods-YDProgressViewTests.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		413DF3181F590BB0000BA784 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 413DF2F61F590BB0000BA784 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 413DF2FD1F590BB0000BA784;
-			remoteInfo = YDProgressView;
-		};
-		413DF3231F590BB0000BA784 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 413DF2F61F590BB0000BA784 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 413DF2FD1F590BB0000BA784;
-			remoteInfo = YDProgressView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		032EBECE33896D97F513AEEE /* Pods-YDProgressViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDProgressViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YDProgressViewTests/Pods-YDProgressViewTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,10 +51,8 @@
 		413DF30D1F590BB0000BA784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		413DF3101F590BB0000BA784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		413DF3121F590BB0000BA784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		413DF3171F590BB0000BA784 /* YDProgressViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YDProgressViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		413DF31B1F590BB0000BA784 /* YDProgressViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDProgressViewTests.m; sourceTree = "<group>"; };
 		413DF31D1F590BB0000BA784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		413DF3221F590BB0000BA784 /* YDProgressViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YDProgressViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		413DF3261F590BB0000BA784 /* YDProgressViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDProgressViewUITests.m; sourceTree = "<group>"; };
 		413DF3281F590BB0000BA784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		413DF3361F590E82000BA784 /* YDBase1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBase1ViewController.h; sourceTree = "<group>"; };
@@ -92,6 +70,8 @@
 		413DF34F1F593A78000BA784 /* YDSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSliderViewController.h; sourceTree = "<group>"; };
 		413DF3501F593A78000BA784 /* YDSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSliderViewController.m; sourceTree = "<group>"; };
 		413DF3531F59674A000BA784 /* bgAudio.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = bgAudio.xcassets; sourceTree = "<group>"; };
+		4148DB691F5E4A1E00F6FA10 /* YDNSProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNSProgressViewController.h; sourceTree = "<group>"; };
+		4148DB6A1F5E4A1E00F6FA10 /* YDNSProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNSProgressViewController.m; sourceTree = "<group>"; };
 		418A176D1F5D0C1000474E1A /* YDAudioDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAudioDefine.h; sourceTree = "<group>"; };
 		418A176F1F5D20E700474E1A /* YDMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMedia.h; sourceTree = "<group>"; };
 		418A17701F5D20E700474E1A /* YDMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMedia.m; sourceTree = "<group>"; };
@@ -130,22 +110,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		413DF3141F590BB0000BA784 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B7D48BC691B28FE365F003FA /* libPods-YDProgressViewTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		413DF31F1F590BB0000BA784 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5E016C09B46ABB77DA272710 /* libPods-YDProgressViewUITests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -165,8 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				413DF2FE1F590BB0000BA784 /* YDProgressView.app */,
-				413DF3171F590BB0000BA784 /* YDProgressViewTests.xctest */,
-				413DF3221F590BB0000BA784 /* YDProgressViewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,6 +136,7 @@
 		413DF3001F590BB0000BA784 /* YDProgressView */ = {
 			isa = PBXGroup;
 			children = (
+				4148DB681F5E4A0900F6FA10 /* NSProgress */,
 				413DF3451F593A22000BA784 /* YDSlider */,
 				413DF33F1F59309B000BA784 /* BaseSlider */,
 				413DF3351F590E78000BA784 /* base */,
@@ -276,6 +239,16 @@
 			path = Pannel;
 			sourceTree = "<group>";
 		};
+		4148DB681F5E4A0900F6FA10 /* NSProgress */ = {
+			isa = PBXGroup;
+			children = (
+				4148DB691F5E4A1E00F6FA10 /* YDNSProgressViewController.h */,
+				4148DB6A1F5E4A1E00F6FA10 /* YDNSProgressViewController.m */,
+			);
+			name = NSProgress;
+			path = YDSlider/NSProgress;
+			sourceTree = "<group>";
+		};
 		418A176E1F5D20DF00474E1A /* Audio */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,48 +323,6 @@
 			productReference = 413DF2FE1F590BB0000BA784 /* YDProgressView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		413DF3161F590BB0000BA784 /* YDProgressViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 413DF32E1F590BB0000BA784 /* Build configuration list for PBXNativeTarget "YDProgressViewTests" */;
-			buildPhases = (
-				C0AB84767A9D18ACAEBD941E /* [CP] Check Pods Manifest.lock */,
-				413DF3131F590BB0000BA784 /* Sources */,
-				413DF3141F590BB0000BA784 /* Frameworks */,
-				413DF3151F590BB0000BA784 /* Resources */,
-				F0DE61C1676B67FC9D2E4D1F /* [CP] Embed Pods Frameworks */,
-				46A28472CF9395E537CFD711 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				413DF3191F590BB0000BA784 /* PBXTargetDependency */,
-			);
-			name = YDProgressViewTests;
-			productName = YDProgressViewTests;
-			productReference = 413DF3171F590BB0000BA784 /* YDProgressViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		413DF3211F590BB0000BA784 /* YDProgressViewUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 413DF3311F590BB0000BA784 /* Build configuration list for PBXNativeTarget "YDProgressViewUITests" */;
-			buildPhases = (
-				062B046C50EFBAA0181D9B8C /* [CP] Check Pods Manifest.lock */,
-				413DF31E1F590BB0000BA784 /* Sources */,
-				413DF31F1F590BB0000BA784 /* Frameworks */,
-				413DF3201F590BB0000BA784 /* Resources */,
-				EED503A09CF7131B486FF4BE /* [CP] Embed Pods Frameworks */,
-				9E695484498E80F39D7C0FB1 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				413DF3241F590BB0000BA784 /* PBXTargetDependency */,
-			);
-			name = YDProgressViewUITests;
-			productName = YDProgressViewUITests;
-			productReference = 413DF3221F590BB0000BA784 /* YDProgressViewUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -411,18 +342,6 @@
 							};
 						};
 					};
-					413DF3161F590BB0000BA784 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = D2XBEJ6876;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 413DF2FD1F590BB0000BA784;
-					};
-					413DF3211F590BB0000BA784 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = D2XBEJ6876;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 413DF2FD1F590BB0000BA784;
-					};
 				};
 			};
 			buildConfigurationList = 413DF2F91F590BB0000BA784 /* Build configuration list for PBXProject "YDProgressView" */;
@@ -439,8 +358,6 @@
 			projectRoot = "";
 			targets = (
 				413DF2FD1F590BB0000BA784 /* YDProgressView */,
-				413DF3161F590BB0000BA784 /* YDProgressViewTests */,
-				413DF3211F590BB0000BA784 /* YDProgressViewUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -464,38 +381,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		413DF3151F590BB0000BA784 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		413DF3201F590BB0000BA784 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		062B046C50EFBAA0181D9B8C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		3BD1BA80C70E690687C33C93 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -511,36 +399,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YDProgressView/Pods-YDProgressView-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		46A28472CF9395E537CFD711 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YDProgressViewTests/Pods-YDProgressViewTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9E695484498E80F39D7C0FB1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YDProgressViewUITests/Pods-YDProgressViewUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A607EC6DB0657155F57FDF61 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -554,51 +412,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YDProgressView/Pods-YDProgressView-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C0AB84767A9D18ACAEBD941E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		EED503A09CF7131B486FF4BE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YDProgressViewUITests/Pods-YDProgressViewUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0DE61C1676B67FC9D2E4D1F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YDProgressViewTests/Pods-YDProgressViewTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FA0D42835CC4B6112B5C3746 /* [CP] Check Pods Manifest.lock */ = {
@@ -634,6 +447,7 @@
 				41FBDEE41F5CE828006AE863 /* XHFloatWindowSingleton.m in Sources */,
 				413DF3381F590E82000BA784 /* YDBase1ViewController.m in Sources */,
 				413DF3031F590BB0000BA784 /* main.m in Sources */,
+				4148DB6B1F5E4A1E00F6FA10 /* YDNSProgressViewController.m in Sources */,
 				418A17731F5D20E700474E1A /* YDMedia.m in Sources */,
 				41FBDEE31F5CE828006AE863 /* XHFloatWindow.m in Sources */,
 				41FBDEE11F5CE828006AE863 /* XHDraggableButton.m in Sources */,
@@ -642,36 +456,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		413DF3131F590BB0000BA784 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				413DF31C1F590BB0000BA784 /* YDProgressViewTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		413DF31E1F590BB0000BA784 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				413DF3271F590BB0000BA784 /* YDProgressViewUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		413DF3191F590BB0000BA784 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 413DF2FD1F590BB0000BA784 /* YDProgressView */;
-			targetProxy = 413DF3181F590BB0000BA784 /* PBXContainerItemProxy */;
-		};
-		413DF3241F590BB0000BA784 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 413DF2FD1F590BB0000BA784 /* YDProgressView */;
-			targetProxy = 413DF3231F590BB0000BA784 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		413DF30A1F590BB0000BA784 /* Main.storyboard */ = {
@@ -816,60 +601,6 @@
 			};
 			name = Release;
 		};
-		413DF32F1F590BB0000BA784 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E4C1969B132C94F70AA87DC /* Pods-YDProgressViewTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = D2XBEJ6876;
-				INFOPLIST_FILE = YDProgressViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.YDProgressViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YDProgressView.app/YDProgressView";
-			};
-			name = Debug;
-		};
-		413DF3301F590BB0000BA784 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 032EBECE33896D97F513AEEE /* Pods-YDProgressViewTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = D2XBEJ6876;
-				INFOPLIST_FILE = YDProgressViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.YDProgressViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YDProgressView.app/YDProgressView";
-			};
-			name = Release;
-		};
-		413DF3321F590BB0000BA784 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55B10CC99DB9BFD6780A545D /* Pods-YDProgressViewUITests.debug.xcconfig */;
-			buildSettings = {
-				DEVELOPMENT_TEAM = D2XBEJ6876;
-				INFOPLIST_FILE = YDProgressViewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.YDProgressViewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = YDProgressView;
-			};
-			name = Debug;
-		};
-		413DF3331F590BB0000BA784 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DC051EDC4B06D13CCC5FCA2 /* Pods-YDProgressViewUITests.release.xcconfig */;
-			buildSettings = {
-				DEVELOPMENT_TEAM = D2XBEJ6876;
-				INFOPLIST_FILE = YDProgressViewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.YDProgressViewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = YDProgressView;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -887,24 +618,6 @@
 			buildConfigurations = (
 				413DF32C1F590BB0000BA784 /* Debug */,
 				413DF32D1F590BB0000BA784 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		413DF32E1F590BB0000BA784 /* Build configuration list for PBXNativeTarget "YDProgressViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				413DF32F1F590BB0000BA784 /* Debug */,
-				413DF3301F590BB0000BA784 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		413DF3311F590BB0000BA784 /* Build configuration list for PBXNativeTarget "YDProgressViewUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				413DF3321F590BB0000BA784 /* Debug */,
-				413DF3331F590BB0000BA784 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

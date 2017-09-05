@@ -21,7 +21,6 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
 
-    
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
     [btn setTitle:@"frame 初始化" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(onFrameMethod) forControlEvents:UIControlEventTouchUpInside];
@@ -38,10 +37,14 @@
     [progressBtn setTitle:@"style 初始化" forState:UIControlStateNormal];
     [progressBtn addTarget:self action:@selector(onPlayProgress) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:progressBtn];
-    progressBtn.frame = CGRectMake(110, 100, 100, 30);
-
-
-//    @property(nonatomic, strong, nullable) NSProgress *observedProgress NS_AVAILABLE_IOS(9_0);
+    progressBtn.frame = CGRectMake(220, 100, 100, 30);
+    
+//    ios 9 or later
+    UIButton *progressbtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btn setTitle:@"NSProgress" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(onProgressClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    btn.frame = CGRectMake(100, 200, 100, 30);
 }
 
 - (void)onPlayProgress {
@@ -57,7 +60,7 @@
 }
 
 - (void)test0 {
-    UIProgressView *progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, 200, 300, 20)];
+    UIProgressView *progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, 250, 300, 20)];
     [self.view addSubview:progressView];
     progressView.progressViewStyle = UIProgressViewStyleDefault;
     [progressView setProgress:0.4 animated:YES];
@@ -81,7 +84,17 @@
     _progressView = progressView;
 //   这个大小设置不了了
     
-    
+}
+
+// ios 9 later
+- (void)onProgressClick {
+    UIProgressView *progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleBar];
+    [self.view addSubview:progressView];
+    progressView.tintColor = [UIColor greenColor];
+    progressView.trackTintColor = [UIColor grayColor];
+    progressView.frame = CGRectMake(100, 300, 200,20);
+//    progressView.observedProgress = []
+//    NSProgress *observeProgress = [NSProgress alloc] initWithParent:/ userInfo:<#(nullable NSDictionary *)#>
 }
 
 - (void)testAttribute {
