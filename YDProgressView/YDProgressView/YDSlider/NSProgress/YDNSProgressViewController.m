@@ -123,6 +123,7 @@ static void *ProgressObserverContext = &ProgressObserverContext;
             NSLog(@"progress addiction description :%@",progress.localizedAdditionalDescription);
 //            self.progressLabel.text = progress.localizedDescription;
 //            self.progressAdditionalInfoLabel.text = progress.localizedAdditionalDescription;
+
         }];
     }
     else
