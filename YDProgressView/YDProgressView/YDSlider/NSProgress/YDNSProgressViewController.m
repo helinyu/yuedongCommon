@@ -8,10 +8,14 @@
 
 #import "YDNSProgressViewController.h"
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface YDNSProgressViewController ()
 
 @property (nonatomic, strong) NSProgress *progress;
+
+@property (nonatomic, strong) AVAudioPlayer *audioPlayer;
+@property (nonatomic, strong) UIProgressView *progressView;
 
 @end
 
@@ -42,8 +46,23 @@
     [_progress becomeCurrentWithPendingUnitCount:5];
     [self subTaskOne];
     [_progress resignCurrent];
+    
+    [self comInit];
 
 }
+
+- (void)comInit {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btn setTitle:@"播放音乐" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(onPlayAudioClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    btn.frame = CGRectMake(100, 200, 120, 30);
+    
+    _progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(100, 250, 200, 10)];
+    [self.view addSubview:_progressView];
+
+}
+
 
 
 -(void)subTaskOne{
@@ -56,10 +75,7 @@
     }
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-{
-    NSLog(@"进度= %f",_progress.fractionCompleted);
-}
+
 
 -(void)onTaskTimer{
     //完成任务单元数+1
@@ -68,6 +84,52 @@
         _progress.completedUnitCount +=1;
     }
     
+}
+
+static void *ProgressObserverContext = &ProgressObserverContext;
+
+- (void)onPlayAudioClick {
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"陈奕迅 - 富士山下.mp3" ofType:nil];
+    NSError *error;
+    _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL URLWithString:path] error:&error];
+    if (error) {
+        NSLog(@"error");
+    }
+    NSProgress *progress = [NSProgress progressWithTotalUnitCount:10];
+    [progress addObserver:self
+               forKeyPath:NSStringFromSelector(@selector(fractionCompleted))
+                  options:NSKeyValueObservingOptionInitial
+                  context:ProgressObserverContext];
+    [progress becomeCurrentWithPendingUnitCount:10];
+    BOOL flag = [_audioPlayer play];
+    NSLog(@"current progress :%@",[NSProgress currentProgress]);
+    [progress resignCurrent];
+
+    if (!flag) {
+        NSLog(@"play error");
+    }
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if (context == ProgressObserverContext)
+    {
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            NSProgress *progress = object;
+//            self.progress.progress = progress.fractionCompleted;
+            self.progressView.progress = progress.fractionCompleted;
+            NSLog(@"progress description :%@",progress.localizedDescription);
+            NSLog(@"progress addiction description :%@",progress.localizedAdditionalDescription);
+//            self.progressLabel.text = progress.localizedDescription;
+//            self.progressAdditionalInfoLabel.text = progress.localizedAdditionalDescription;
+        }];
+    }
+    else
+    {
+//        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+            NSLog(@"进度= %f",_progress.fractionCompleted);
+    }
 }
 
 - (void)didReceiveMemoryWarning {

@@ -23,6 +23,7 @@
 		413DF3511F593A78000BA784 /* YDSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DF3501F593A78000BA784 /* YDSliderViewController.m */; };
 		413DF3541F59674A000BA784 /* bgAudio.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413DF3531F59674A000BA784 /* bgAudio.xcassets */; };
 		4148DB6B1F5E4A1E00F6FA10 /* YDNSProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4148DB6A1F5E4A1E00F6FA10 /* YDNSProgressViewController.m */; };
+		4148DB6D1F5E58D900F6FA10 /* 陈奕迅 - 富士山下.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4148DB6C1F5E58D900F6FA10 /* 陈奕迅 - 富士山下.mp3 */; };
 		418A17731F5D20E700474E1A /* YDMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 418A17701F5D20E700474E1A /* YDMedia.m */; };
 		418A17741F5D20E700474E1A /* YDBgMediaMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 418A17721F5D20E700474E1A /* YDBgMediaMgr.m */; };
 		418A17761F5D263800474E1A /* 李玉刚 - 刚好遇见你.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 418A17751F5D263800474E1A /* 李玉刚 - 刚好遇见你.mp3 */; };
@@ -51,10 +52,6 @@
 		413DF30D1F590BB0000BA784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		413DF3101F590BB0000BA784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		413DF3121F590BB0000BA784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		413DF31B1F590BB0000BA784 /* YDProgressViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDProgressViewTests.m; sourceTree = "<group>"; };
-		413DF31D1F590BB0000BA784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		413DF3261F590BB0000BA784 /* YDProgressViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDProgressViewUITests.m; sourceTree = "<group>"; };
-		413DF3281F590BB0000BA784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		413DF3361F590E82000BA784 /* YDBase1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBase1ViewController.h; sourceTree = "<group>"; };
 		413DF3371F590E82000BA784 /* YDBase1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBase1ViewController.m; sourceTree = "<group>"; };
 		413DF3391F5911E2000BA784 /* Snip20170901_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20170901_1.png; sourceTree = "<group>"; };
@@ -72,6 +69,7 @@
 		413DF3531F59674A000BA784 /* bgAudio.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = bgAudio.xcassets; sourceTree = "<group>"; };
 		4148DB691F5E4A1E00F6FA10 /* YDNSProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNSProgressViewController.h; sourceTree = "<group>"; };
 		4148DB6A1F5E4A1E00F6FA10 /* YDNSProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNSProgressViewController.m; sourceTree = "<group>"; };
+		4148DB6C1F5E58D900F6FA10 /* 陈奕迅 - 富士山下.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陈奕迅 - 富士山下.mp3"; sourceTree = "<group>"; };
 		418A176D1F5D0C1000474E1A /* YDAudioDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAudioDefine.h; sourceTree = "<group>"; };
 		418A176F1F5D20E700474E1A /* YDMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMedia.h; sourceTree = "<group>"; };
 		418A17701F5D20E700474E1A /* YDMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMedia.m; sourceTree = "<group>"; };
@@ -117,8 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				413DF3001F590BB0000BA784 /* YDProgressView */,
-				413DF31A1F590BB0000BA784 /* YDProgressViewTests */,
-				413DF3251F590BB0000BA784 /* YDProgressViewUITests */,
 				413DF2FF1F590BB0000BA784 /* Products */,
 				4B0774A692EB2ADEA235972F /* Pods */,
 				9CB6549F756A91BCE51FBF02 /* Frameworks */,
@@ -160,24 +156,6 @@
 				413DF3021F590BB0000BA784 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		413DF31A1F590BB0000BA784 /* YDProgressViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				413DF31B1F590BB0000BA784 /* YDProgressViewTests.m */,
-				413DF31D1F590BB0000BA784 /* Info.plist */,
-			);
-			path = YDProgressViewTests;
-			sourceTree = "<group>";
-		};
-		413DF3251F590BB0000BA784 /* YDProgressViewUITests */ = {
-			isa = PBXGroup;
-			children = (
-				413DF3261F590BB0000BA784 /* YDProgressViewUITests.m */,
-				413DF3281F590BB0000BA784 /* Info.plist */,
-			);
-			path = YDProgressViewUITests;
 			sourceTree = "<group>";
 		};
 		413DF3351F590E78000BA784 /* base */ = {
@@ -244,6 +222,7 @@
 			children = (
 				4148DB691F5E4A1E00F6FA10 /* YDNSProgressViewController.h */,
 				4148DB6A1F5E4A1E00F6FA10 /* YDNSProgressViewController.m */,
+				4148DB6C1F5E58D900F6FA10 /* 陈奕迅 - 富士山下.mp3 */,
 			);
 			name = NSProgress;
 			path = YDSlider/NSProgress;
@@ -373,6 +352,7 @@
 				413DF30E1F590BB0000BA784 /* Assets.xcassets in Resources */,
 				413DF30C1F590BB0000BA784 /* Main.storyboard in Resources */,
 				413DF3541F59674A000BA784 /* bgAudio.xcassets in Resources */,
+				4148DB6D1F5E58D900F6FA10 /* 陈奕迅 - 富士山下.mp3 in Resources */,
 				413DF33E1F59128D000BA784 /* Snip20170901_5.png in Resources */,
 				418A17761F5D263800474E1A /* 李玉刚 - 刚好遇见你.mp3 in Resources */,
 				418A17781F5D264900474E1A /* 陈奕迅 - 富士山下.mp3 in Resources */,

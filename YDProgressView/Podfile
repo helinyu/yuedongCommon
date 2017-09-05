@@ -8,17 +8,18 @@ target 'YDProgressView' do
  pod 'Masonry', '~> 1.0.2'
  pod 'YYImage', '~> 1.0.4'
  pod 'YYWebImage'
+pod 'AFNetworking', '~> 3.1.0'
 
   # Pods for YDProgressView
 
-  target 'YDProgressViewTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'YDProgressViewUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+#  target 'YDProgressViewTests' do
+#    inherit! :search_paths
+#    # Pods for testing
+#  end
+#
+#  target 'YDProgressViewUITests' do
+#    inherit! :search_paths
+#    # Pods for testing
+#  end
 
 end
