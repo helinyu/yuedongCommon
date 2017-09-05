@@ -25,5 +25,7 @@
 
 - (YDControlPannelController *(^)(void))updateView;
 
+- (YDControlPannelController *(^)(void))updateProgressView;
+
 
 @end

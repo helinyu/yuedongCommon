@@ -30,9 +30,17 @@ dispatch_async(dispatch_get_main_queue(), block);\
 @property (nonatomic, assign) NSTimeInterval nowSecondTime;
 //@property (nonatomic, strong) AVAudioPlayer *audioPlayer;
 
+@property (nonatomic, strong) NSTimer *audioTimeTimer;
+
 @end
 
 @implementation YDBgMediaMgr
+
+- (void)dealloc{
+    [self destroyTimer];
+    [self removeObserver];
+
+}
 
 + (instancetype)shared {
     static id singleton = nil;
@@ -45,8 +53,9 @@ dispatch_async(dispatch_get_main_queue(), block);\
 
 - (void)playWithMedia:(YDMedia *)media {
     _media = media;
-    [self playWithUrlString:media.mediaUrlString];
-    [self _configureLockLightScreenWithMedia:media];
+    YDMediaItem *currentItem = _media.mediaItemList[_media.currentIndex];
+    [self playWithUrlString:currentItem.mediaUrlStr];
+    [self _configureLockLightScreenWithMedia:currentItem];
     [self _createRemoteCommandCenter];
 }
 
@@ -70,7 +79,11 @@ dispatch_async(dispatch_get_main_queue(), block);\
     if (!playState) {
         NSLog(@"播放失败");
     }
+    
+    [self resetTimer];
 }
+
+
 
 - (void)pause {
     if (_audioPlayer) {
@@ -100,20 +113,21 @@ dispatch_async(dispatch_get_main_queue(), block);\
 
 - (void)nextTrack:(CurrentPlayInfo)currentPlayInfo {
     if (_audioPlayer) {
-        if (_media.mediaUrlStrings.count <=0) {
+        if (_media.mediaItemList.count <=1) {
             NSLog(@"当前可能只有一首歌");
             return;
         }
-        NSInteger currentIndex = _media.index +1;
-        if (_media.index >= (_media.mediaUrlStrings.count-1)) {
+        
+        NSInteger currentIndex = _media.currentIndex +1;
+        if (currentIndex >= (_media.mediaItemList.count-1)) {
             NSLog(@"最后一首");
             return;
         }
-        
-        _media.index = currentIndex;
-        [self playWithUrlString:_media.mediaUrlStrings[currentIndex]];
+        _media.currentIndex = currentIndex;
+        YDMediaItem *currentItem = _media.mediaItemList[currentIndex];
+        [self playWithUrlString:currentItem.mediaUrlStr];
         YDPannelINfo *info = [YDPannelINfo new];
-        info.evaluateTitle(_media.title).evaluateCurrentTime(_media.currentTime).evaluateTotalTime(_audioPlayer.duration).evaluatePlayingState(YES);
+        info.evaluateTitle(currentItem.title).evaluateCurrentTime(_audioPlayer.currentTime).evaluateTotalTime(_audioPlayer.duration).evaluatePlayingState(YES);
         !currentPlayInfo?:currentPlayInfo(info);
         return;
     }
@@ -122,14 +136,15 @@ dispatch_async(dispatch_get_main_queue(), block);\
 
 - (void)previousTrack:(CurrentPlayInfo)currentPlayInfo {
     if (_audioPlayer) {
-        if (_media.mediaUrlStrings.count <= 1 || _media.index == 0) {
-            NSLog(@"当前只有一首歌或者是第一手");
+        if (_media.mediaItemList.count <= 1 || _media.currentIndex == 0) {
+            NSLog(@"当前只有一首歌或者是第一首");
             return;
         }
-        _media.index -= 1;
-        [self playWithUrlString:_media.mediaUrlStrings[_media.index]];
+        _media.currentIndex -= 1;
+        YDMediaItem *currentItem = _media.mediaItemList[_media.currentIndex];
+        [self playWithUrlString:currentItem.mediaUrlStr];
         YDPannelINfo *info = [YDPannelINfo new];
-        info.evaluateTitle(_media.title).evaluateCurrentTime(_media.currentTime).evaluateTotalTime(_audioPlayer.duration).evaluatePlayingState(YES);
+        info.evaluateTitle(currentItem.title).evaluateCurrentTime(_audioPlayer.currentTime).evaluateTotalTime(_audioPlayer.duration).evaluatePlayingState(YES);
         !currentPlayInfo?:currentPlayInfo(info);
         return;
     }
@@ -141,7 +156,8 @@ dispatch_async(dispatch_get_main_queue(), block);\
 - (void)playOrPause:(CurrentPlayInfo)currentPlayInfo {
     if (_audioPlayer) {
         YDPannelINfo *info = [YDPannelINfo new];
-        info.evaluateTitle(_media.title).evaluateCurrentTime(_media.currentTime).evaluateTotalTime(_audioPlayer.duration);
+        YDMediaItem *currentItem = _media.mediaItemList[_media.currentIndex];
+        info.evaluateTitle(currentItem.title).evaluateCurrentTime(_audioPlayer.currentTime).evaluateTotalTime(_audioPlayer.duration);
         if (_audioPlayer.isPlaying) {
             [_audioPlayer pause];
             info.evaluatePlayingState(NO);
@@ -156,33 +172,52 @@ dispatch_async(dispatch_get_main_queue(), block);\
     !currentPlayInfo?:currentPlayInfo(nil);
 }
 
+
+#pragma mark -- timer for audio player timer
+- (void)resetTimer {
+    if (_audioTimeTimer) {
+        [self destroyTimer];
+    }
+    [self setTimer];
+}
+
+- (void)setTimer {
+    _audioTimeTimer = [NSTimer scheduledTimerWithTimeInterval:1.f target:self selector:@selector(onGetAudioPlayTimeTimer) userInfo:nil repeats:YES];
+}
+
+- (void)onGetAudioPlayTimeTimer {
+    if (_audioPlayer.isPlaying) {
+        YDPannelINfo *info = [YDPannelINfo new];
+        info.evaluateCurrentTime(_audioPlayer.currentTime).evaluateTotalTime(_audioPlayer.duration);
+        [[YDAudioControlPannelMgr shared] updateProgressViewWithInfo:info];
+    }
+}
+
+- (void)destroyTimer {
+    [_audioTimeTimer invalidate];
+    _audioTimeTimer = nil;
+}
+
+
+#pragma mark -- lock and light screen 
+
 - (void)_createRemoteCommandCenter {
     MPRemoteCommandCenter *cmdCenter = [MPRemoteCommandCenter sharedCommandCenter];
     
-    __weak typeof (self) wSelf = self;
     [cmdCenter.playCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
         NSLog(@"播放");
         _nowSecondTime = [[NSDate date] timeIntervalSince1970];
-        [wSelf _configureLockLightScreenWithMedia:_media];
         return MPRemoteCommandHandlerStatusSuccess;
     }];
     
     [cmdCenter.pauseCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
         NSLog(@"暂停播放");
-        NSTimeInterval nowSecondTime = [[NSDate date] timeIntervalSince1970];
-        NSTimeInterval lastTime = _media.currentTime;
-        _media.currentTime = (nowSecondTime - _nowSecondTime) + lastTime;
-        [wSelf _configureLockLightScreenWithMedia:_media];
         return MPRemoteCommandHandlerStatusSuccess;
     }];
     
     [cmdCenter.changePlaybackPositionCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
         return MPRemoteCommandHandlerStatusSuccess;
     }];
-}
-
-- (void)dealloc {
-    [self removeObserver];
 }
 
 - (void)removeObserver{
@@ -199,15 +234,15 @@ dispatch_async(dispatch_get_main_queue(), block);\
     [session setCategory:AVAudioSessionCategoryPlayback error:nil];
 }
 
-- (void)_configureLockLightScreenWithMedia:(YDMedia *)media {
+- (void)_configureLockLightScreenWithMedia:(YDMediaItem *)mediaItem {
     [self _enablePlayBack];
-    _media = media;
     _nowSecondTime = [NSDate date].timeIntervalSince1970;
     NSLog(@"设置后台播放信息");
     
+    YDMediaItem *currentItem = _media.mediaItemList[_media.currentIndex];
     NSMutableDictionary * songDict = @{}.mutableCopy;
-    [songDict setObject:media.title forKey:MPMediaItemPropertyTitle];
-    [songDict setObject:media.artist forKey:MPMediaItemPropertyArtist];
+    [songDict setObject:currentItem.title forKey:MPMediaItemPropertyTitle];
+    [songDict setObject:currentItem.speaker forKey:MPMediaItemPropertyArtist];
     [songDict setObject:@(_audioPlayer.currentTime) forKey:MPNowPlayingInfoPropertyElapsedPlaybackTime];
     [songDict setObject:@(_audioPlayer.duration) forKey:MPMediaItemPropertyPlaybackDuration];
     UIImage *image = [UIImage imageNamed:@"backgroundImage5.jpg"];

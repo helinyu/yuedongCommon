@@ -8,7 +8,9 @@ target 'YDProgressView' do
  pod 'Masonry', '~> 1.0.2'
  pod 'YYImage', '~> 1.0.4'
  pod 'YYWebImage'
-pod 'AFNetworking', '~> 3.1.0'
+ pod 'AFNetworking', '~> 3.1.0'
+ pod 'YYModel', '~> 1.0.4'
+
 
   # Pods for YDProgressView
 

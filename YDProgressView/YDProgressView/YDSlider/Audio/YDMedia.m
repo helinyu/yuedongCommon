@@ -7,6 +7,7 @@
 //
 
 #import "YDMedia.h"
+#import "YYModel.h"
 
 @implementation YDMedia
 
@@ -14,50 +15,22 @@
 {
     self = [super init];
     if (self) {
-        _title = @"";
-        _mediaUrlString = @"";
-        _artist = @"";
-        _composer = @"";
-        _imageUrlString = @"";
-        _lyric = @"";
-        _lyricUrlString = @"";
-        _albumTitle = @"";
-        _currentTime = 0;
-        _totalTime = 0;
-        _composer = @"";
-        _mediaUrlStrings = @[].mutableCopy;
     }
     return self;
 }
 
-+ (instancetype)medialWithTitle:(NSString *)title mediaUrl:(NSString *)mediaUrlStr imageUrl:(NSString *)imageUrl artist:(NSString *)artist currentTime:(NSTimeInterval)currentTime totalTime:(NSTimeInterval)totalTime {
-    YDMedia *media = [YDMedia new];
-    media.title = title;
-    media.mediaUrlString = mediaUrlStr;
-    media.imageUrlString = imageUrl;
-    media.artist = artist;
-    media.currentTime = currentTime;
-    media.totalTime = totalTime;
++ (YDMedia *)mediaConvertionWithDic:(NSDictionary *)dic{
+    YDMedia *media = [YDMedia yy_modelWithDictionary:dic];
     return media;
 }
 
-+ (instancetype)medialWithTitle:(NSString *)title mediaUrl:(NSString *)mediaUrlStr imageUrl:(NSString *)imageUrl artist:(NSString *)artist currentTime:(NSTimeInterval)currentTime totalTime:(NSTimeInterval)totalTime medialUrlStrings:(NSArray<NSString *> *)mediaUrlStrings {
-    YDMedia *media = [YDMedia medialWithTitle:title mediaUrl:mediaUrlStr imageUrl:imageUrl artist:artist currentTime:currentTime totalTime:totalTime];
-    media.mediaUrlStrings = mediaUrlStrings;
-    return media;
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{@"mediaItemList" : [YDMediaItem class]};
 }
 
 @end
 
-@implementation YDMediaList
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        _media = [NSArray<YDMedia *> new];
-    }
-    return self;
-}
+@implementation YDMediaItem
 
 @end

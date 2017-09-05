@@ -28,6 +28,8 @@
 
 @property (nonatomic, assign) BOOL hasRegisterTouch;
 
+@property (nonatomic, strong) NSTimer *timer; // 1s 更新一次
+
 @end
 
 
@@ -107,8 +109,13 @@
 //       configure extension
        [strongSelf registerOnceMainWindowTouch];
        [strongSelf registerEvents];
+       
         return self;
     };
+}
+
+- (void)createTimerForUpdateProgress {
+    
 }
 
 - (void)registerEvents {
@@ -175,9 +182,19 @@
     };
 }
 
-- (void)updateWithInfo:(YDPannelINfo *)info {
+- (void)updateViewWithInfo:(YDPannelINfo *)info {
+    if (!_rootVc) {
+        return;
+    }
     self.rootVc.controlPanelTitle(info.title).controlPanelTotalTime(info.totalTime).controlPanelCurrentTime(info.currentTime).updateView();
     
+}
+
+- (void)updateProgressViewWithInfo:(YDPannelINfo *)info {
+    if (!_rootVc) {
+        return;
+    }
+    _rootVc.controlPanelCurrentTime(info.currentTime).controlPanelTotalTime(info.totalTime).updateProgressView();
 }
 
 @end

@@ -24,7 +24,7 @@
 
 - (YDAudioControlPannelMgr *(^)(BOOL hidden))hideHoverPannel;
 
-- (void)updateWithInfo:(YDPannelINfo *)info;
-
+- (void)updateViewWithInfo:(YDPannelINfo *)info;// update all the changeable control
+- (void)updateProgressViewWithInfo:(YDPannelINfo *)info ;  // update the control which relavent to the progress
 
 @end

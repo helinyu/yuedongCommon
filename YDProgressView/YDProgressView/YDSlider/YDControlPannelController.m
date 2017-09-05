@@ -195,6 +195,25 @@
 - (YDControlPannelController *(^)(void))updateView {
     __weak typeof (self) wSelf = self;
     return ^(void) {
+//        if (wSelf.totalTime <= 0.0) {
+//            NSLog(@"请先传入总的时间");
+//            return self;
+//        }
+//        
+//        wSelf.leftPreviousLabel.text = [NSString stringWithFormat:@"%d",(NSInteger)wSelf.currentTime];
+//        NSInteger leaveTime = wSelf.totalTime - _currentTime;
+//        wSelf.rightNextLabel.text = [NSString stringWithFormat:@"%d",leaveTime];
+//        float progress = wSelf.currentTime/wSelf.totalTime;
+//        [wSelf.progressSlider setValue:progress animated:YES];
+        wSelf.updateProgressView().updatePlayOrPause(YES);
+        
+        return self;
+    };
+}
+
+- (YDControlPannelController *(^)(void))updateProgressView {
+    __weak typeof (self) wSelf = self;
+    return ^(void) {
         if (wSelf.totalTime <= 0.0) {
             NSLog(@"请先传入总的时间");
             return self;
@@ -202,14 +221,13 @@
         
         wSelf.leftPreviousLabel.text = [NSString stringWithFormat:@"%d",(NSInteger)wSelf.currentTime];
         NSInteger leaveTime = wSelf.totalTime - _currentTime;
-        wSelf.rightNextLabel.text = [NSString stringWithFormat:@"%d",leaveTime];
+        wSelf.rightNextLabel.text = [NSString stringWithFormat:@"-%d",leaveTime];
         float progress = wSelf.currentTime/wSelf.totalTime;
         [wSelf.progressSlider setValue:progress animated:YES];
-        wSelf.updatePlayOrPause(YES);
         return self;
     };
-
 }
+
 
 
 @end

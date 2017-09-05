@@ -20,6 +20,8 @@
 @property (nonatomic, strong) YDAudioControlPannelMgr *pannelMgr;
 @property (nonatomic, strong) YDBgMediaMgr *audioMgr;
 
+@property (nonatomic, strong) YDMedia *media;
+
 @end
 
 @implementation YDSliderViewController
@@ -54,15 +56,24 @@
 - (void)onPlayClick {
     YDBgMediaMgr *audioMgr = [YDBgMediaMgr shared];
     _audioMgr = audioMgr;
-    NSArray *souces = @[
-                        @"陈慧娴 - 与泪抱拥.mp3",
-                        @"陈奕迅 - 富士山下.mp3",
-                        @"李玉刚 - 刚好遇见你.mp3",
-                      ];
+   
     [self hoverBtnInit];
-    YDMedia *media = [YDMedia medialWithTitle:souces[0] mediaUrl:souces[0] imageUrl:@"" artist:@"陈慧琳" currentTime:0 totalTime:0];
-    [audioMgr playWithMedia:media];
+    [self configureSources];
+    [audioMgr playWithMedia:_media];
     
+}
+
+- (void)configureSources {
+    NSDictionary *sourceDic = @{
+                                @"currentIndex":@0,
+                                @"mediaItemList":@[
+                                        @{@"title":@"与泪抱拥",@"mediaUrlStr":@"陈慧娴 - 与泪抱拥.mp3",@"imgUrlStr":@"",@"speaker":@"陈慧娴"},
+                                        @{@"title":@"富士山下",@"mediaUrlStr":@"陈奕迅 - 富士山下.mp3",@"imgUrlStr":@"",@"speaker":@"陈奕迅"},
+                                        @{@"title":@"刚好遇见你",@"mediaUrlStr":@"李玉刚 - 刚好遇见你.mp3",@"imgUrlStr":@"",@"speaker":@"李玉刚"},
+                                        ],
+                                };
+    _media = [YDMedia mediaConvertionWithDic:sourceDic];
+    NSLog(@"medias :%@",_media);
 }
 
 - (void)hoverBtnInit {
@@ -83,8 +94,9 @@
         NSTimeInterval currentTime = wSelf.audioMgr.audioPlayer.currentTime;
         NSTimeInterval totalTime = wSelf.audioMgr.audioPlayer.duration;
         YDPannelINfo *info = [YDPannelINfo new];
-        info.evaluateTitle(@"标题").evaluateCurrentTime(currentTime).evaluateTotalTime(totalTime).evaluatePlayingState(YES);
-        [wSelf.pannelMgr updateWithInfo:info];
+        YDMediaItem *currentItem = _media.mediaItemList[_media.currentIndex];
+        info.evaluateTitle(currentItem.title).evaluateCurrentTime(currentTime).evaluateTotalTime(totalTime).evaluatePlayingState(YES);
+        [wSelf.pannelMgr updateViewWithInfo:info];
     }];
     
 //    xh_setBackgroundImage
