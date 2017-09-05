@@ -34,6 +34,7 @@ static NSString *const reuseIdentifierId = @"reuse.identifier.id";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
 //    [self loadBase];
     [self createComponentForTestWeb];
     [self onSetAudioPlayControl];

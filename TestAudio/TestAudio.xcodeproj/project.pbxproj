@@ -20,6 +20,13 @@
 		4143DE791F515213004785A7 /* 李宗盛 - 鬼迷心窍 - live.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4143DE781F515213004785A7 /* 李宗盛 - 鬼迷心窍 - live.mp3 */; };
 		4143DE7B1F515224004785A7 /* 卢冠廷 - 一生所爱.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4143DE7A1F515224004785A7 /* 卢冠廷 - 一生所爱.mp3 */; };
 		4143DE7D1F515262004785A7 /* 叶启田 - 爱拼才会赢.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4143DE7C1F515262004785A7 /* 叶启田 - 爱拼才会赢.mp3 */; };
+		4148DB361F5E3F1600F6FA10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4148DB351F5E3F1600F6FA10 /* main.m */; };
+		4148DB391F5E3F1600F6FA10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4148DB381F5E3F1600F6FA10 /* AppDelegate.m */; };
+		4148DB3C1F5E3F1600F6FA10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4148DB3B1F5E3F1600F6FA10 /* ViewController.m */; };
+		4148DB3F1F5E3F1600F6FA10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4148DB3D1F5E3F1600F6FA10 /* Main.storyboard */; };
+		4148DB411F5E3F1600F6FA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4148DB401F5E3F1600F6FA10 /* Assets.xcassets */; };
+		4148DB441F5E3F1600F6FA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4148DB421F5E3F1600F6FA10 /* LaunchScreen.storyboard */; };
+		4148DB661F5E3F4900F6FA10 /* 李宗盛 - 鬼迷心窍 - live.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4148DB651F5E3F4900F6FA10 /* 李宗盛 - 鬼迷心窍 - live.mp3 */; };
 		419C168E1F4D35AB00629579 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C168D1F4D35AB00629579 /* main.m */; };
 		419C16911F4D35AB00629579 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C16901F4D35AB00629579 /* AppDelegate.m */; };
 		419C16941F4D35AB00629579 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C16931F4D35AB00629579 /* ViewController.m */; };
@@ -59,6 +66,17 @@
 		4143DE781F515213004785A7 /* 李宗盛 - 鬼迷心窍 - live.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "李宗盛 - 鬼迷心窍 - live.mp3"; sourceTree = "<group>"; };
 		4143DE7A1F515224004785A7 /* 卢冠廷 - 一生所爱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "卢冠廷 - 一生所爱.mp3"; sourceTree = "<group>"; };
 		4143DE7C1F515262004785A7 /* 叶启田 - 爱拼才会赢.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "叶启田 - 爱拼才会赢.mp3"; sourceTree = "<group>"; };
+		4148DB321F5E3F1500F6FA10 /* AudioAttibute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioAttibute.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4148DB351F5E3F1600F6FA10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4148DB371F5E3F1600F6FA10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4148DB381F5E3F1600F6FA10 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4148DB3A1F5E3F1600F6FA10 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4148DB3B1F5E3F1600F6FA10 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4148DB3E1F5E3F1600F6FA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4148DB401F5E3F1600F6FA10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4148DB431F5E3F1600F6FA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4148DB451F5E3F1600F6FA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4148DB651F5E3F4900F6FA10 /* 李宗盛 - 鬼迷心窍 - live.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "李宗盛 - 鬼迷心窍 - live.mp3"; sourceTree = "<group>"; };
 		419C16891F4D35AB00629579 /* TestAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		419C168D1F4D35AB00629579 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		419C168F1F4D35AB00629579 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +107,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		410D4B1C1F550642006E51DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4148DB2F1F5E3F1500F6FA10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -141,11 +166,37 @@
 			path = AudioNode;
 			sourceTree = "<group>";
 		};
+		4148DB331F5E3F1600F6FA10 /* AudioAttibute */ = {
+			isa = PBXGroup;
+			children = (
+				4148DB651F5E3F4900F6FA10 /* 李宗盛 - 鬼迷心窍 - live.mp3 */,
+				4148DB371F5E3F1600F6FA10 /* AppDelegate.h */,
+				4148DB381F5E3F1600F6FA10 /* AppDelegate.m */,
+				4148DB3A1F5E3F1600F6FA10 /* ViewController.h */,
+				4148DB3B1F5E3F1600F6FA10 /* ViewController.m */,
+				4148DB3D1F5E3F1600F6FA10 /* Main.storyboard */,
+				4148DB401F5E3F1600F6FA10 /* Assets.xcassets */,
+				4148DB421F5E3F1600F6FA10 /* LaunchScreen.storyboard */,
+				4148DB451F5E3F1600F6FA10 /* Info.plist */,
+				4148DB341F5E3F1600F6FA10 /* Supporting Files */,
+			);
+			path = AudioAttibute;
+			sourceTree = "<group>";
+		};
+		4148DB341F5E3F1600F6FA10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4148DB351F5E3F1600F6FA10 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		419C16801F4D35AB00629579 = {
 			isa = PBXGroup;
 			children = (
 				419C168B1F4D35AB00629579 /* TestAudio */,
 				410D4B201F550642006E51DE /* TestAudio1 */,
+				4148DB331F5E3F1600F6FA10 /* AudioAttibute */,
 				419C168A1F4D35AB00629579 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -155,6 +206,7 @@
 			children = (
 				419C16891F4D35AB00629579 /* TestAudio.app */,
 				410D4B1F1F550642006E51DE /* TestAudio1.app */,
+				4148DB321F5E3F1500F6FA10 /* AudioAttibute.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -240,6 +292,23 @@
 			productReference = 410D4B1F1F550642006E51DE /* TestAudio1.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4148DB311F5E3F1500F6FA10 /* AudioAttibute */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4148DB621F5E3F1600F6FA10 /* Build configuration list for PBXNativeTarget "AudioAttibute" */;
+			buildPhases = (
+				4148DB2E1F5E3F1500F6FA10 /* Sources */,
+				4148DB2F1F5E3F1500F6FA10 /* Frameworks */,
+				4148DB301F5E3F1500F6FA10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioAttibute;
+			productName = AudioAttibute;
+			productReference = 4148DB321F5E3F1500F6FA10 /* AudioAttibute.app */;
+			productType = "com.apple.product-type.application";
+		};
 		419C16881F4D35AB00629579 /* TestAudio */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 419C16B61F4D35AB00629579 /* Build configuration list for PBXNativeTarget "TestAudio" */;
@@ -276,6 +345,11 @@
 							};
 						};
 					};
+					4148DB311F5E3F1500F6FA10 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = D2XBEJ6876;
+						ProvisioningStyle = Automatic;
+					};
 					419C16881F4D35AB00629579 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2ERYNAFK87;
@@ -303,6 +377,7 @@
 			targets = (
 				419C16881F4D35AB00629579 /* TestAudio */,
 				410D4B1E1F550642006E51DE /* TestAudio1 */,
+				4148DB311F5E3F1500F6FA10 /* AudioAttibute */,
 			);
 		};
 /* End PBXProject section */
@@ -316,6 +391,17 @@
 				410D4B311F550642006E51DE /* LaunchScreen.storyboard in Resources */,
 				410D4B2E1F550642006E51DE /* Assets.xcassets in Resources */,
 				410D4B2C1F550642006E51DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4148DB301F5E3F1500F6FA10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4148DB661F5E3F4900F6FA10 /* 李宗盛 - 鬼迷心窍 - live.mp3 in Resources */,
+				4148DB441F5E3F1600F6FA10 /* LaunchScreen.storyboard in Resources */,
+				4148DB411F5E3F1600F6FA10 /* Assets.xcassets in Resources */,
+				4148DB3F1F5E3F1600F6FA10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +438,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4148DB2E1F5E3F1500F6FA10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4148DB3C1F5E3F1600F6FA10 /* ViewController.m in Sources */,
+				4148DB391F5E3F1600F6FA10 /* AppDelegate.m in Sources */,
+				4148DB361F5E3F1600F6FA10 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		419C16851F4D35AB00629579 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,6 +480,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				410D4B301F550642006E51DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4148DB3D1F5E3F1600F6FA10 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4148DB3E1F5E3F1600F6FA10 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4148DB421F5E3F1600F6FA10 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4148DB431F5E3F1600F6FA10 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -433,6 +545,30 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		4148DB5C1F5E3F1600F6FA10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = AudioAttibute/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.AudioAttibute;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4148DB5D1F5E3F1600F6FA10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = AudioAttibute/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.AudioAttibute;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -569,6 +705,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		4148DB621F5E3F1600F6FA10 /* Build configuration list for PBXNativeTarget "AudioAttibute" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4148DB5C1F5E3F1600F6FA10 /* Debug */,
+				4148DB5D1F5E3F1600F6FA10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		419C16841F4D35AB00629579 /* Build configuration list for PBXProject "TestAudio" */ = {
 			isa = XCConfigurationList;
