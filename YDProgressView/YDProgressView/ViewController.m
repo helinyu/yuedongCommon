@@ -11,6 +11,7 @@
 #import "YDBaseSliderController.h"
 #import "YDSliderViewController.h"
 #import "RCDraggableButton.h"
+#import "YDPlayerViewController.h"
 #import "YDNSProgressViewController.h"
 
 @interface ViewController () <UITableViewDelegate,UITableViewDataSource>
@@ -41,7 +42,7 @@ static NSString *const reuseCellIdentifier = @"reuse.cell.identifier";
     _tableView.dataSource = self;
     _tableView.delegate = self;
     
-    _dataSources = @[@"基础属性设置,progress",@"slider 的设置",@"重写slider",@"NSProgess的使用"];
+    _dataSources = @[@"基础属性设置,progress",@"slider 的设置",@"重写slider",@"NSProgess的使用",@"AVPlayer play auido"];
 }
 
 #pragma mark -- tableView datasource
@@ -61,10 +62,7 @@ static NSString *const reuseCellIdentifier = @"reuse.cell.identifier";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
         case 0:
-        {
-            NSLog(@"test");
             [self.navigationController pushViewController:[YDBase1ViewController new] animated:YES];
-        }
             break;
         case 1:
             [self.navigationController pushViewController:[YDBaseSliderController new] animated:YES];
@@ -74,6 +72,10 @@ static NSString *const reuseCellIdentifier = @"reuse.cell.identifier";
             break;
         case 3:
             [self.navigationController pushViewController:[YDNSProgressViewController new] animated:YES];
+            break;
+        case 4:
+            [self.navigationController pushViewController:[YDPlayerViewController new] animated:YES];
+            break;
         default:
             break;
     }

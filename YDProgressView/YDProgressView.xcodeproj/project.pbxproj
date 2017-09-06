@@ -26,6 +26,7 @@
 		4148DB6D1F5E58D900F6FA10 /* 陈奕迅 - 富士山下.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4148DB6C1F5E58D900F6FA10 /* 陈奕迅 - 富士山下.mp3 */; };
 		4152CD1C1F5FA29C0065350F /* RCDraggableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152CD1B1F5FA29C0065350F /* RCDraggableButton.m */; };
 		4152CD1F1F5FA73A0065350F /* DraggableBtnMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152CD1E1F5FA73A0065350F /* DraggableBtnMgr.m */; };
+		4152CD401F5FC6C80065350F /* YDPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152CD3F1F5FC6C80065350F /* YDPlayerViewController.m */; };
 		418A17731F5D20E700474E1A /* YDMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 418A17701F5D20E700474E1A /* YDMedia.m */; };
 		418A17741F5D20E700474E1A /* YDBgMediaMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 418A17721F5D20E700474E1A /* YDBgMediaMgr.m */; };
 		418A17761F5D263800474E1A /* 李玉刚 - 刚好遇见你.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 418A17751F5D263800474E1A /* 李玉刚 - 刚好遇见你.mp3 */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		032EBECE33896D97F513AEEE /* Pods-YDProgressViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDProgressViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YDProgressViewTests/Pods-YDProgressViewTests.release.xcconfig"; sourceTree = "<group>"; };
 		3DC051EDC4B06D13CCC5FCA2 /* Pods-YDProgressViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDProgressViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YDProgressViewUITests/Pods-YDProgressViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		411056D11F5FC87F002508DD /* 陈奕迅 - 富士山下.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "陈奕迅 - 富士山下.mp3"; path = "YDProgressView/YDSlider/NSProgress/陈奕迅 - 富士山下.mp3"; sourceTree = SOURCE_ROOT; };
 		413DF2FE1F590BB0000BA784 /* YDProgressView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDProgressView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		413DF3021F590BB0000BA784 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		413DF3041F590BB0000BA784 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +74,8 @@
 		4152CD1B1F5FA29C0065350F /* RCDraggableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCDraggableButton.m; sourceTree = "<group>"; };
 		4152CD1D1F5FA73A0065350F /* DraggableBtnMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableBtnMgr.h; sourceTree = "<group>"; };
 		4152CD1E1F5FA73A0065350F /* DraggableBtnMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableBtnMgr.m; sourceTree = "<group>"; };
+		4152CD3E1F5FC6C80065350F /* YDPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDPlayerViewController.h; sourceTree = "<group>"; };
+		4152CD3F1F5FC6C80065350F /* YDPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDPlayerViewController.m; sourceTree = "<group>"; };
 		418A176D1F5D0C1000474E1A /* YDAudioDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAudioDefine.h; sourceTree = "<group>"; };
 		418A176F1F5D20E700474E1A /* YDMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMedia.h; sourceTree = "<group>"; };
 		418A17701F5D20E700474E1A /* YDMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMedia.m; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 		413DF3001F590BB0000BA784 /* YDProgressView */ = {
 			isa = PBXGroup;
 			children = (
+				4152CD3D1F5FC6B30065350F /* AVPlayer */,
 				4148DB681F5E4A0900F6FA10 /* NSProgress */,
 				413DF3451F593A22000BA784 /* YDSlider */,
 				413DF33F1F59309B000BA784 /* BaseSlider */,
@@ -228,6 +233,16 @@
 			children = (
 			);
 			path = HoverBtn;
+			sourceTree = "<group>";
+		};
+		4152CD3D1F5FC6B30065350F /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				411056D11F5FC87F002508DD /* 陈奕迅 - 富士山下.mp3 */,
+				4152CD3E1F5FC6C80065350F /* YDPlayerViewController.h */,
+				4152CD3F1F5FC6C80065350F /* YDPlayerViewController.m */,
+			);
+			path = AVPlayer;
 			sourceTree = "<group>";
 		};
 		418A176E1F5D20DF00474E1A /* Audio */ = {
@@ -426,6 +441,7 @@
 				4148DB6B1F5E4A1E00F6FA10 /* YDNSProgressViewController.m in Sources */,
 				4152CD1F1F5FA73A0065350F /* DraggableBtnMgr.m in Sources */,
 				418A17731F5D20E700474E1A /* YDMedia.m in Sources */,
+				4152CD401F5FC6C80065350F /* YDPlayerViewController.m in Sources */,
 				4152CD1C1F5FA29C0065350F /* RCDraggableButton.m in Sources */,
 				413DF34E1F593A48000BA784 /* YDControlPannelController.m in Sources */,
 				413DF3481F593A3E000BA784 /* YDAudioSlider.m in Sources */,
@@ -553,7 +569,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				INFOPLIST_FILE = YDProgressView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -569,7 +585,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = YDProgressView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
