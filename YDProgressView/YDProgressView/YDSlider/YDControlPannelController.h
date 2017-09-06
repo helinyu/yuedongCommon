@@ -18,6 +18,7 @@
 @property (nonatomic, copy) VoidBlcok nextBlock;
 @property (nonatomic, copy) VoidBlcok previousBlock;
 @property (nonatomic, copy) VoidBlcok playOrPauseBlock;
+@property (nonatomic, copy) VoidBlcok titleTapBlock;
 
 - (YDControlPannelController *(^)(NSString *title))controlPanelTitle;
 - (YDControlPannelController *(^)(NSTimeInterval currentTime))controlPanelCurrentTime;

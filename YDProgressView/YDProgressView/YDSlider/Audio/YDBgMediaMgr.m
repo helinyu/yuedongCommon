@@ -187,8 +187,8 @@ dispatch_async(dispatch_get_main_queue(), block);\
     !currentPlayInfo?:currentPlayInfo(nil);
 }
 
-
 #pragma mark -- timer for audio player timer
+
 - (void)resetTimer {
     [self destroyTimer];
     [self setTimer];
@@ -205,6 +205,12 @@ dispatch_async(dispatch_get_main_queue(), block);\
         NSTimeInterval totalTime = CMTimeGetSeconds(_audioPlayer.currentItem.duration);
         info.evaluateCurrentTime(currentTime).evaluateTotalTime(totalTime);
         [[YDAudioControlPannelMgr shared] updateProgressViewWithInfo:info];
+        if (currentTime >= totalTime) {
+            [self destroyTimer];
+            [[YDBgMediaMgr shared] nextTrack:^(YDPannelINfo *info) {
+                [[YDAudioControlPannelMgr shared] updateViewWithInfo:info];
+            }];
+        }
     }else{
         
     }

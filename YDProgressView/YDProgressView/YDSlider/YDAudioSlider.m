@@ -96,10 +96,6 @@
     return YES;
 }
 
-//- (BOOL)continueTrackingWithTouch:(UITouch *)touch withEvent:(nullable UIEvent *)event {
-//    return NO;
-//}
-
 - (void)endTrackingWithTouch:(nullable UITouch *)touch withEvent:(nullable UIEvent *)event {
     NSLog(@"end vlaue :%f",self.value);
     !_valueChangeBlock?:_valueChangeBlock(self.value);

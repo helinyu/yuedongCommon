@@ -163,6 +163,10 @@
                [YDAudioControlPannelMgr shared].rootVc.updatePlayOrPause(info.isPlaying);
            }];
         };
+        
+        self.rootVc.titleTapBlock = ^{
+            NSLog(@"跳转链接");
+        };
     }
 }
 
@@ -206,5 +210,7 @@
     }
     _rootVc.controlPanelCurrentTime(info.currentTime).controlPanelTotalTime(info.totalTime).updateProgressView();
 }
+
+
 
 @end

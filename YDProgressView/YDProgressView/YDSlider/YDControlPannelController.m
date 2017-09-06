@@ -50,19 +50,22 @@
         make.left.equalTo(_containerView).offset(62.f);
         make.centerY.equalTo(_containerView).offset(-9);
         make.height.mas_equalTo(10.f);
-        make.right.equalTo(_containerView).offset(-62);
+        make.right.equalTo(_containerView).offset(-70);
     }];
     
     _titleLabel = [UILabel new];
     [_containerView addSubview:_titleLabel];
-    _titleLabel.text = @"3o天训练跑";
-    _titleLabel.textColor = [UIColor darkGrayColor]; // need to change the text color 333333
+    _titleLabel.text = @"";
+    _titleLabel.textColor = [UIColor darkGrayColor];
     [_titleLabel setFont:[UIFont fontWithName:@"SFNSText-Regular" size:16]];
     [_titleLabel sizeToFit];
     [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_containerView).offset(32);
         make.centerX.equalTo(_containerView);
     }];
+    _titleLabel.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTitleClick:)];
+    [_titleLabel addGestureRecognizer:tapRecognizer];
     
     _leftPreviousLabel = [UILabel new];
     [_containerView addSubview:_leftPreviousLabel];
@@ -94,13 +97,12 @@
         make.bottom.equalTo(_containerView).offset(-20);
     }];
     
-    
     _previousBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_previousBtn setImage:[UIImage imageNamed:@"icon_audio_previous"] forState:UIControlStateNormal];
     [_previousBtn addTarget:self action:@selector(onPreviousClick) forControlEvents:UIControlEventTouchUpInside];
     [_containerView addSubview:_previousBtn];
     [_previousBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.height.mas_equalTo(18.f);
+//        make.width.height.mas_equalTo(18.f);
         make.right.equalTo(_playOrPauseBtn).offset(-50.f);
         make.centerY.equalTo(_playOrPauseBtn);
     }];
@@ -110,39 +112,34 @@
     [_nextBtn addTarget:self action:@selector(onNextClick) forControlEvents:UIControlEventTouchUpInside];
     [_containerView addSubview:_nextBtn];
     [_nextBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.height.mas_equalTo(18.f);
+//        make.width.height.mas_equalTo(18.f);
         make.left.equalTo(_playOrPauseBtn).offset(50.f);
         make.centerY.equalTo(_playOrPauseBtn);
     }];
     
     _closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_closeBtn setTitle:@"结束播放" forState:UIControlStateNormal];
-    [_closeBtn sizeToFit];
     [_closeBtn setTitleColor:[UIColor colorWithRed:33.0/255.0 green:33.0/255.0 blue:33.0/255.0 alpha:1.0] forState:UIControlStateNormal];
-    _closeBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:12.f]; // 字体颜色333333
+    _closeBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14.f]; // 字体颜色333333
     [_closeBtn addTarget:self action:@selector(onCloseClick) forControlEvents:UIControlEventTouchUpInside];
     [_containerView addSubview:_closeBtn];
     [_closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.mas_equalTo(18.f);
         make.centerY.equalTo(_playOrPauseBtn);
         make.right.equalTo(_containerView).offset(-14.f);
     }];
     
     _putAwayBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_putAwayBtn setTitle:@"收起" forState:UIControlStateNormal];
-    [_putAwayBtn sizeToFit];
     [_putAwayBtn setTitleColor:[UIColor colorWithRed:33.0/255.0 green:33.0/255.0 blue:33.0/255.0 alpha:1.0] forState:UIControlStateNormal];
-    _putAwayBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:12.f]; // 字体颜色333333
+    _putAwayBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14.f]; // 字体颜色333333
     [_putAwayBtn addTarget:self action:@selector(onPutAwayClick) forControlEvents:UIControlEventTouchUpInside];
     [_containerView addSubview:_putAwayBtn];
     [_putAwayBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.mas_equalTo(18.f);
         make.centerY.equalTo(_playOrPauseBtn);
-        make.left.equalTo(_containerView).offset(14.f);
+        make.left.equalTo(_containerView).offset(20.f);
     }];
-    
-}
 
+}
 
 #pragma mark --- nomal custom methods
 
@@ -166,6 +163,11 @@
 
 - (void)onPlayOrPause {
     !_playOrPauseBlock?:_playOrPauseBlock();
+}
+
+- (void)onTitleClick:(UITapGestureRecognizer *)recognizer {
+    NSLog(@"tap gesture");
+    !_titleTapBlock?:_titleTapBlock();
 }
 
 - (void)didReceiveMemoryWarning {
@@ -228,13 +230,29 @@
             return self;
         }
         
-        wSelf.leftPreviousLabel.text = [NSString stringWithFormat:@"%d",(NSInteger)wSelf.currentTime];
+        wSelf.leftPreviousLabel.text = [NSString stringWithFormat:@"%@",[self _toFormatTimeWithSeconds:wSelf.currentTime]];
         NSInteger leaveTime = wSelf.totalTime - _currentTime;
-        wSelf.rightNextLabel.text = [NSString stringWithFormat:@"-%d",leaveTime];
+        wSelf.rightNextLabel.text = [NSString stringWithFormat:@"-%@",[self _toFormatTimeWithSeconds:leaveTime]];
         float progress = wSelf.currentTime/wSelf.totalTime;
         [wSelf.progressSlider setValue:progress animated:YES];
         return self;
     };
+}
+
+- (NSString *)_toFormatTimeWithSeconds:(NSInteger)seconds {
+    NSInteger second = seconds % 60;
+    NSInteger minutes = seconds / 60;
+    if (seconds < 60*60) {
+        return [NSString stringWithFormat:@"%02d:%02d",minutes,second];
+    }
+    
+    if (seconds > 60 * 60) {
+        NSInteger hour = minutes / 60;
+        NSInteger minute = seconds % 60;
+        return [NSString stringWithFormat:@"%02d:%02d:%02d",hour,minute,second];
+    }
+    
+    return nil;
 }
 
 @end
