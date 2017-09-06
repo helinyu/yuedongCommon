@@ -14,7 +14,7 @@
 @interface YDControlPannelController : UIViewController
 
 @property (nonatomic, copy) VoidBlcok closeBlock;
-//@property (nonatomic, copy) FloatBlock changeValueBlock;
+@property (nonatomic, copy) VoidBlcok putAwayBlock;
 @property (nonatomic, copy) VoidBlcok nextBlock;
 @property (nonatomic, copy) VoidBlcok previousBlock;
 @property (nonatomic, copy) VoidBlcok playOrPauseBlock;

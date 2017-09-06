@@ -15,7 +15,6 @@
 
 
 typedef void(^CurrentPlayInfo)(YDPannelINfo *info);
-//@property (nonatomic, copy) CurrentPlayInfo currentPlayInfo;
 
 + (instancetype)shared;
 
@@ -36,5 +35,9 @@ typedef void(^CurrentPlayInfo)(YDPannelINfo *info);
 @property (nonatomic, strong) AVAudioPlayer *audioPlayer;
 
 - (void)destroyTimer;
+
+// media image hidden
+
+- (void)setHiddenHoverBtn:(BOOL)flag;
 
 @end

@@ -11,7 +11,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "YDMedia.h"
 #import "YYWebImage.h"
-#import "XHFloatWindow.h"
+#import "RCDraggableButton.h"
 #import "YDAudioControlPannelMgr.h"
 #import "YDPannelINfo.h"
 
@@ -31,6 +31,9 @@ dispatch_async(dispatch_get_main_queue(), block);\
 //@property (nonatomic, strong) AVAudioPlayer *audioPlayer;
 
 @property (nonatomic, strong) NSTimer *audioTimeTimer;
+
+
+@property (nonatomic, strong) RCDraggableButton *hoverBtn;
 
 @end
 
@@ -56,6 +59,8 @@ dispatch_async(dispatch_get_main_queue(), block);\
     [self playWithUrlString:currentItem.mediaUrlStr];
     [self _configureLockLightScreenWithMedia:currentItem];
     [self _createRemoteCommandCenter];
+    
+    [self initHoverBtn];
 }
 
 - (void)playWithUrlString:(NSString *)mediaUrlString {
@@ -81,8 +86,6 @@ dispatch_async(dispatch_get_main_queue(), block);\
     
     [self resetTimer];
 }
-
-
 
 - (void)pause {
     if (_audioPlayer) {
@@ -268,6 +271,54 @@ dispatch_async(dispatch_get_main_queue(), block);\
 //            });
 //        }
 //    }];
+
+}
+
+
+#pragma mark -- hover
+
+- (void)initHoverBtn {
+    if (_hoverBtn) {
+        if (_hoverBtn.isHidden) {
+            [_hoverBtn setHidden:NO];
+        }
+        return;
+    }
+    
+    __weak typeof (self) wSelf = self;
+    _hoverBtn = [[RCDraggableButton alloc] initInKeyWindowWithFrame:CGRectMake(CGRectGetWidth([UIScreen mainScreen].bounds)-40, 200, 40, 40)];
+    [_hoverBtn setBackgroundImage:[UIImage imageNamed:@"icon_audio_hover_btn"] forState:UIControlStateNormal];
+    
+    [_hoverBtn setLongPressBlock:^(RCDraggableButton *avatar) {
+        NSLog(@"\n\tAvatar in keyWindow ===  LongPress!!! ===");
+        
+    }];
+    
+    [_hoverBtn setTapBlock:^(RCDraggableButton *avatar) {
+        NSLog(@"\n\tAvatar in keyWindow ===  Tap!!! ===");
+//        点击处理事件
+        YDAudioControlPannelMgr *pannelMgr = [YDAudioControlPannelMgr shared];
+        if (!pannelMgr.hasCreate) {
+            CGRect rect = CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 153);
+            pannelMgr.createAControlPannel(rect).bgColor([UIColor colorWithRed:1.f green:1.f blue:1.f alpha:0.9]);
+        }
+
+        if (pannelMgr.isPannelHidden) {
+            pannelMgr.hideHoverPannel(NO);
+        }
+
+        NSTimeInterval currentTime = wSelf.audioPlayer.currentTime;
+        NSTimeInterval totalTime = wSelf.audioPlayer.duration;
+        YDPannelINfo *info = [YDPannelINfo new];
+        YDMediaItem *currentItem = wSelf.media.mediaItemList[wSelf.media.currentIndex];
+        info.evaluateTitle(currentItem.title).evaluateCurrentTime(currentTime).evaluateTotalTime(totalTime).evaluatePlayingState(YES);
+        [pannelMgr updateViewWithInfo:info];
+    }];
+    
+}
+
+- (void)setHiddenHoverBtn:(BOOL)flag {
+    [_hoverBtn setHidden:flag];
 }
 
 @end

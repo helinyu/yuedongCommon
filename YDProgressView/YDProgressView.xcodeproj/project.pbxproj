@@ -24,6 +24,8 @@
 		413DF3541F59674A000BA784 /* bgAudio.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413DF3531F59674A000BA784 /* bgAudio.xcassets */; };
 		4148DB6B1F5E4A1E00F6FA10 /* YDNSProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4148DB6A1F5E4A1E00F6FA10 /* YDNSProgressViewController.m */; };
 		4148DB6D1F5E58D900F6FA10 /* 陈奕迅 - 富士山下.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4148DB6C1F5E58D900F6FA10 /* 陈奕迅 - 富士山下.mp3 */; };
+		4152CD1C1F5FA29C0065350F /* RCDraggableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152CD1B1F5FA29C0065350F /* RCDraggableButton.m */; };
+		4152CD1F1F5FA73A0065350F /* DraggableBtnMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152CD1E1F5FA73A0065350F /* DraggableBtnMgr.m */; };
 		418A17731F5D20E700474E1A /* YDMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 418A17701F5D20E700474E1A /* YDMedia.m */; };
 		418A17741F5D20E700474E1A /* YDBgMediaMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 418A17721F5D20E700474E1A /* YDBgMediaMgr.m */; };
 		418A17761F5D263800474E1A /* 李玉刚 - 刚好遇见你.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 418A17751F5D263800474E1A /* 李玉刚 - 刚好遇见你.mp3 */; };
@@ -32,10 +34,6 @@
 		418A177C1F5D269000474E1A /* 陈慧娴 - 与泪抱拥.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 418A177B1F5D269000474E1A /* 陈慧娴 - 与泪抱拥.mp3 */; };
 		418A177F1F5D395F00474E1A /* YDPannelINfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 418A177E1F5D395F00474E1A /* YDPannelINfo.m */; };
 		418A17811F5D574800474E1A /* backgroundImage5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 418A17801F5D574800474E1A /* backgroundImage5.jpg */; };
-		41FBDEE11F5CE828006AE863 /* XHDraggableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBDEDA1F5CE828006AE863 /* XHDraggableButton.m */; };
-		41FBDEE21F5CE828006AE863 /* XHFloatWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBDEDC1F5CE828006AE863 /* XHFloatWindowController.m */; };
-		41FBDEE31F5CE828006AE863 /* XHFloatWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBDEDE1F5CE828006AE863 /* XHFloatWindow.m */; };
-		41FBDEE41F5CE828006AE863 /* XHFloatWindowSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FBDEE01F5CE828006AE863 /* XHFloatWindowSingleton.m */; };
 		A33A0A9765270AE74E673CBC /* libPods-YDProgressView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF60E62657CAF252CBBCA2BB /* libPods-YDProgressView.a */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +68,10 @@
 		4148DB691F5E4A1E00F6FA10 /* YDNSProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNSProgressViewController.h; sourceTree = "<group>"; };
 		4148DB6A1F5E4A1E00F6FA10 /* YDNSProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNSProgressViewController.m; sourceTree = "<group>"; };
 		4148DB6C1F5E58D900F6FA10 /* 陈奕迅 - 富士山下.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陈奕迅 - 富士山下.mp3"; sourceTree = "<group>"; };
+		4152CD1A1F5FA29C0065350F /* RCDraggableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCDraggableButton.h; sourceTree = "<group>"; };
+		4152CD1B1F5FA29C0065350F /* RCDraggableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCDraggableButton.m; sourceTree = "<group>"; };
+		4152CD1D1F5FA73A0065350F /* DraggableBtnMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableBtnMgr.h; sourceTree = "<group>"; };
+		4152CD1E1F5FA73A0065350F /* DraggableBtnMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableBtnMgr.m; sourceTree = "<group>"; };
 		418A176D1F5D0C1000474E1A /* YDAudioDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAudioDefine.h; sourceTree = "<group>"; };
 		418A176F1F5D20E700474E1A /* YDMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMedia.h; sourceTree = "<group>"; };
 		418A17701F5D20E700474E1A /* YDMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMedia.m; sourceTree = "<group>"; };
@@ -82,14 +84,6 @@
 		418A177D1F5D395F00474E1A /* YDPannelINfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDPannelINfo.h; sourceTree = "<group>"; };
 		418A177E1F5D395F00474E1A /* YDPannelINfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDPannelINfo.m; sourceTree = "<group>"; };
 		418A17801F5D574800474E1A /* backgroundImage5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundImage5.jpg; sourceTree = "<group>"; };
-		41FBDED91F5CE828006AE863 /* XHDraggableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDraggableButton.h; sourceTree = "<group>"; };
-		41FBDEDA1F5CE828006AE863 /* XHDraggableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDraggableButton.m; sourceTree = "<group>"; };
-		41FBDEDB1F5CE828006AE863 /* XHFloatWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHFloatWindowController.h; sourceTree = "<group>"; };
-		41FBDEDC1F5CE828006AE863 /* XHFloatWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHFloatWindowController.m; sourceTree = "<group>"; };
-		41FBDEDD1F5CE828006AE863 /* XHFloatWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHFloatWindow.h; sourceTree = "<group>"; };
-		41FBDEDE1F5CE828006AE863 /* XHFloatWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHFloatWindow.m; sourceTree = "<group>"; };
-		41FBDEDF1F5CE828006AE863 /* XHFloatWindowSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHFloatWindowSingleton.h; sourceTree = "<group>"; };
-		41FBDEE01F5CE828006AE863 /* XHFloatWindowSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHFloatWindowSingleton.m; sourceTree = "<group>"; };
 		472CB204ED895081CB4744EE /* Pods-YDProgressView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDProgressView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YDProgressView/Pods-YDProgressView.debug.xcconfig"; sourceTree = "<group>"; };
 		4B19BFA4DE4D4A5E31690725 /* libPods-YDProgressViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YDProgressViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B10CC99DB9BFD6780A545D /* Pods-YDProgressViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDProgressViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YDProgressViewUITests/Pods-YDProgressViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +175,7 @@
 		413DF3451F593A22000BA784 /* YDSlider */ = {
 			isa = PBXGroup;
 			children = (
+				4152CD101F5F96A80065350F /* HoverBtn */,
 				418A176E1F5D20DF00474E1A /* Audio */,
 				413E5E481F5CEA5100B06852 /* Pannel */,
 				41FBDED81F5CE810006AE863 /* Hover */,
@@ -228,6 +223,13 @@
 			path = YDSlider/NSProgress;
 			sourceTree = "<group>";
 		};
+		4152CD101F5F96A80065350F /* HoverBtn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HoverBtn;
+			sourceTree = "<group>";
+		};
 		418A176E1F5D20DF00474E1A /* Audio */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,15 +245,11 @@
 		41FBDED81F5CE810006AE863 /* Hover */ = {
 			isa = PBXGroup;
 			children = (
+				4152CD1A1F5FA29C0065350F /* RCDraggableButton.h */,
+				4152CD1B1F5FA29C0065350F /* RCDraggableButton.m */,
+				4152CD1D1F5FA73A0065350F /* DraggableBtnMgr.h */,
+				4152CD1E1F5FA73A0065350F /* DraggableBtnMgr.m */,
 				418A17791F5D267000474E1A /* 陈慧娴 - 与泪抱拥.mp3 */,
-				41FBDED91F5CE828006AE863 /* XHDraggableButton.h */,
-				41FBDEDA1F5CE828006AE863 /* XHDraggableButton.m */,
-				41FBDEDB1F5CE828006AE863 /* XHFloatWindowController.h */,
-				41FBDEDC1F5CE828006AE863 /* XHFloatWindowController.m */,
-				41FBDEDD1F5CE828006AE863 /* XHFloatWindow.h */,
-				41FBDEDE1F5CE828006AE863 /* XHFloatWindow.m */,
-				41FBDEDF1F5CE828006AE863 /* XHFloatWindowSingleton.h */,
-				41FBDEE01F5CE828006AE863 /* XHFloatWindowSingleton.m */,
 			);
 			path = Hover;
 			sourceTree = "<group>";
@@ -423,14 +421,12 @@
 				413DF3061F590BB0000BA784 /* AppDelegate.m in Sources */,
 				413DF34D1F593A48000BA784 /* YDAudioControlPannelMgr.m in Sources */,
 				418A17741F5D20E700474E1A /* YDBgMediaMgr.m in Sources */,
-				41FBDEE21F5CE828006AE863 /* XHFloatWindowController.m in Sources */,
-				41FBDEE41F5CE828006AE863 /* XHFloatWindowSingleton.m in Sources */,
 				413DF3381F590E82000BA784 /* YDBase1ViewController.m in Sources */,
 				413DF3031F590BB0000BA784 /* main.m in Sources */,
 				4148DB6B1F5E4A1E00F6FA10 /* YDNSProgressViewController.m in Sources */,
+				4152CD1F1F5FA73A0065350F /* DraggableBtnMgr.m in Sources */,
 				418A17731F5D20E700474E1A /* YDMedia.m in Sources */,
-				41FBDEE31F5CE828006AE863 /* XHFloatWindow.m in Sources */,
-				41FBDEE11F5CE828006AE863 /* XHDraggableButton.m in Sources */,
+				4152CD1C1F5FA29C0065350F /* RCDraggableButton.m in Sources */,
 				413DF34E1F593A48000BA784 /* YDControlPannelController.m in Sources */,
 				413DF3481F593A3E000BA784 /* YDAudioSlider.m in Sources */,
 			);

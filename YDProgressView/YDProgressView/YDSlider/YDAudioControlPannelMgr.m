@@ -9,7 +9,7 @@
 #import "YDAudioControlPannelMgr.h"
 #import <UIKit/UIKit.h>
 #import "YDControlPannelController.h"
-#import "XHFloatWindow.h"
+#import "RCDraggableButton.h"
 #import "YDBgMediaMgr.h"
 #import "YDPannelINfo.h"
 #import <AVFoundation/AVFoundation.h>
@@ -115,10 +115,6 @@
     };
 }
 
-- (void)createTimerForUpdateProgress {
-    
-}
-
 - (void)registerEvents {
     __weak typeof (self) wSelf = self;
    
@@ -128,7 +124,7 @@
             [wSelf removeMainWindowTabGesture];
             wSelf.pannelWindow.hidden = YES;
             wSelf.pannelWindow = nil;
-            [XHFloatWindow xh_setHideWindow:YES];
+            [[YDBgMediaMgr shared] setHiddenHoverBtn:YES];
             [[YDBgMediaMgr shared] stop];
         };
         
@@ -153,6 +149,10 @@
             [[YDBgMediaMgr shared] previousTrack:^(YDPannelINfo *info) {
                 
             }];
+        };
+        
+        self.rootVc.putAwayBlock = ^{
+            wSelf.pannelWindow.hidden = YES;
         };
         
         self.rootVc.playOrPauseBlock = ^{

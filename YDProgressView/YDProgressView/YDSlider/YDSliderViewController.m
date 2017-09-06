@@ -9,7 +9,7 @@
 
 #import "YDSliderViewController.h"
 #import "YDAudioControlPannelMgr.h"
-#import "XHFloatWindow.h"
+#import "RCDraggableButton.h"
 #import "YDMedia.h"
 #import "YDBgMediaMgr.h"
 #import <AVFoundation/AVFoundation.h>
@@ -57,7 +57,7 @@
     YDBgMediaMgr *audioMgr = [YDBgMediaMgr shared];
     _audioMgr = audioMgr;
    
-    [self hoverBtnInit];
+//    [self hoverBtnInit];
     [self configureSources];
     [audioMgr playWithMedia:_media];
     
@@ -78,30 +78,30 @@
 
 - (void)hoverBtnInit {
 
-    __weak typeof(self) wSelf = self;
-    [XHFloatWindow xh_addWindowOnTarget:self onClick:^{
-        YDAudioControlPannelMgr *mgr = [YDAudioControlPannelMgr shared];
-        _pannelMgr =  mgr;
-        if (!mgr.hasCreate) {
-            CGRect rect = CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 153);
-            mgr.createAControlPannel(rect).bgColor([UIColor colorWithRed:1.f green:1.f blue:1.f alpha:0.9]);
-        }
-
-        if (mgr.isPannelHidden) {
-            mgr.hideHoverPannel(NO);
-        }
-
-        NSTimeInterval currentTime = wSelf.audioMgr.audioPlayer.currentTime;
-        NSTimeInterval totalTime = wSelf.audioMgr.audioPlayer.duration;
-        YDPannelINfo *info = [YDPannelINfo new];
-        YDMediaItem *currentItem = _media.mediaItemList[_media.currentIndex];
-        info.evaluateTitle(currentItem.title).evaluateCurrentTime(currentTime).evaluateTotalTime(totalTime).evaluatePlayingState(YES);
-        [wSelf.pannelMgr updateViewWithInfo:info];
-    }];
-    
-//    xh_setBackgroundImage
-    [XHFloatWindow xh_setBackgroundImage:@"icon_audio_hover_btn" forState:UIControlStateNormal];
-    [XHFloatWindow xh_setBackgroundImage:@"icon_audio_hover_btn" forState:UIControlStateSelected];
+//    __weak typeof(self) wSelf = self;
+//    [XHFloatWindow xh_addWindowOnTarget:self onClick:^{
+//        YDAudioControlPannelMgr *mgr = [YDAudioControlPannelMgr shared];
+//        _pannelMgr =  mgr;
+//        if (!mgr.hasCreate) {
+//            CGRect rect = CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 153);
+//            mgr.createAControlPannel(rect).bgColor([UIColor colorWithRed:1.f green:1.f blue:1.f alpha:0.9]);
+//        }
+//
+//        if (mgr.isPannelHidden) {
+//            mgr.hideHoverPannel(NO);
+//        }
+//
+//        NSTimeInterval currentTime = wSelf.audioMgr.audioPlayer.currentTime;
+//        NSTimeInterval totalTime = wSelf.audioMgr.audioPlayer.duration;
+//        YDPannelINfo *info = [YDPannelINfo new];
+//        YDMediaItem *currentItem = _media.mediaItemList[_media.currentIndex];
+//        info.evaluateTitle(currentItem.title).evaluateCurrentTime(currentTime).evaluateTotalTime(totalTime).evaluatePlayingState(YES);
+//        [wSelf.pannelMgr updateViewWithInfo:info];
+//    }];
+//    
+////    xh_setBackgroundImage
+//    [XHFloatWindow xh_setBackgroundImage:@"icon_audio_hover_btn" forState:UIControlStateNormal];
+//    [XHFloatWindow xh_setBackgroundImage:@"icon_audio_hover_btn" forState:UIControlStateSelected];
 }
 
 - (void)didReceiveMemoryWarning {

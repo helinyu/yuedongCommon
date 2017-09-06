@@ -16,6 +16,8 @@
 
 @property (nonatomic, strong) YDAudioSlider *progressSlider;
 
+@property (nonatomic, strong) UIView *containerView;
+
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UILabel *leftPreviousLabel;
 @property (nonatomic, strong) UILabel *rightNextLabel;
@@ -25,9 +27,10 @@
 @property (nonatomic, strong) UIButton *playOrPauseBtn;
 @property (nonatomic, strong) UIButton *closeBtn;
 
-
 @property (nonatomic, assign) NSTimeInterval totalTime;
 @property (nonatomic, assign) NSTimeInterval currentTime;
+
+@property (nonatomic, strong) UIButton *putAwayBtn;
 
 @end
 
@@ -35,45 +38,49 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    _containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 153)];
+    [self.view addSubview:_containerView];
+    _containerView.backgroundColor = [UIColor whiteColor];
+    
+    self.view.backgroundColor = [UIColor yellowColor];
     _progressSlider = [YDAudioSlider new];
-    _progressSlider.ydSupperView(self.view).ydFrame(CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 20)).ydMinimumTrackTintColor([UIColor greenColor]).ydMaximumTrackTintColor([UIColor grayColor]).customThumbImageWithName(@"icon_audio_hover_btn",CGSizeMake(15, 15));
-//    [_progressSlider addTarget:self action:@selector(onChangeProgressClick:) forControlEvents:UIControlEventValueChanged];
+    _progressSlider.ydSupperView(_containerView).ydFrame(CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 20)).ydMinimumTrackTintColor([UIColor greenColor]).ydMaximumTrackTintColor([UIColor grayColor]).customThumbImageWithName(@"icon_audio_hover_btn",CGSizeMake(15, 15));
     [_progressSlider mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.view).offset(62.f);
-        make.centerY.equalTo(self.view).offset(-9);
+        make.left.equalTo(_containerView).offset(62.f);
+        make.centerY.equalTo(_containerView).offset(-9);
         make.height.mas_equalTo(10.f);
-        make.right.equalTo(self.view).offset(-62);
+        make.right.equalTo(_containerView).offset(-62);
     }];
     
     _titleLabel = [UILabel new];
-    [self.view addSubview:_titleLabel];
+    [_containerView addSubview:_titleLabel];
     _titleLabel.text = @"3o天训练跑";
     _titleLabel.textColor = [UIColor darkGrayColor]; // need to change the text color 333333
     [_titleLabel setFont:[UIFont fontWithName:@"SFNSText-Regular" size:16]];
     [_titleLabel sizeToFit];
     [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view).offset(32);
-        make.centerX.equalTo(self.view);
+        make.top.equalTo(_containerView).offset(32);
+        make.centerX.equalTo(_containerView);
     }];
     
     _leftPreviousLabel = [UILabel new];
-    [self.view addSubview:_leftPreviousLabel];
+    [_containerView addSubview:_leftPreviousLabel];
     _leftPreviousLabel.text = @"0:00";
     [_leftPreviousLabel setFont:[UIFont fontWithName:@"AppleSystemUIFont" size:12.f]];
     [_leftPreviousLabel sizeToFit];
     [_leftPreviousLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.view).offset(14.f);
+        make.left.equalTo(_containerView).offset(14.f);
         make.centerY.equalTo(_progressSlider);
     }];
     
     _rightNextLabel = [UILabel new];
-    [self.view addSubview:_rightNextLabel];
+    [_containerView addSubview:_rightNextLabel];
     _rightNextLabel.text = @"-3:21";
     [_rightNextLabel setFont:[UIFont fontWithName:@"AppleSystemUIFont" size:12.f]];
     [_rightNextLabel sizeToFit];
     [_rightNextLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self.view).offset(-14.f);
+        make.right.equalTo(_containerView).offset(-14.f);
         make.centerY.equalTo(_progressSlider);
     }];
     
@@ -81,17 +88,17 @@
     _playOrPauseBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_playOrPauseBtn setImage:[UIImage imageNamed:@"icon_audio_play"] forState:UIControlStateNormal];
     [_playOrPauseBtn addTarget:self action:@selector(onPlayOrPause) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_playOrPauseBtn];
+    [_containerView addSubview:_playOrPauseBtn];
     [_playOrPauseBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.view);
-        make.bottom.equalTo(self.view).offset(-20);
+        make.centerX.equalTo(_containerView);
+        make.bottom.equalTo(_containerView).offset(-20);
     }];
     
     
     _previousBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_previousBtn setImage:[UIImage imageNamed:@"icon_audio_previous"] forState:UIControlStateNormal];
     [_previousBtn addTarget:self action:@selector(onPreviousClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_previousBtn];
+    [_containerView addSubview:_previousBtn];
     [_previousBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.height.mas_equalTo(18.f);
         make.right.equalTo(_playOrPauseBtn).offset(-50.f);
@@ -101,7 +108,7 @@
     _nextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_nextBtn setImage:[UIImage imageNamed:@"icon_audio_next"] forState:UIControlStateNormal];
     [_nextBtn addTarget:self action:@selector(onNextClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_nextBtn];
+    [_containerView addSubview:_nextBtn];
     [_nextBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.height.mas_equalTo(18.f);
         make.left.equalTo(_playOrPauseBtn).offset(50.f);
@@ -114,18 +121,39 @@
     [_closeBtn setTitleColor:[UIColor colorWithRed:33.0/255.0 green:33.0/255.0 blue:33.0/255.0 alpha:1.0] forState:UIControlStateNormal];
     _closeBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:12.f]; // 字体颜色333333
     [_closeBtn addTarget:self action:@selector(onCloseClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_closeBtn];
+    [_containerView addSubview:_closeBtn];
     [_closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(18.f);
         make.centerY.equalTo(_playOrPauseBtn);
-        make.right.equalTo(self.view).offset(-14.f);
+        make.right.equalTo(_containerView).offset(-14.f);
+    }];
+    
+    _putAwayBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_putAwayBtn setTitle:@"收起" forState:UIControlStateNormal];
+    [_putAwayBtn sizeToFit];
+    [_putAwayBtn setTitleColor:[UIColor colorWithRed:33.0/255.0 green:33.0/255.0 blue:33.0/255.0 alpha:1.0] forState:UIControlStateNormal];
+    _putAwayBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:12.f]; // 字体颜色333333
+    [_putAwayBtn addTarget:self action:@selector(onPutAwayClick) forControlEvents:UIControlEventTouchUpInside];
+    [_containerView addSubview:_putAwayBtn];
+    [_putAwayBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(18.f);
+        make.centerY.equalTo(_playOrPauseBtn);
+        make.left.equalTo(_containerView).offset(14.f);
     }];
     
 }
 
+
+#pragma mark --- nomal custom methods
+
 - (void)onCloseClick {
     NSLog(@"close ");
     !_closeBlock?:_closeBlock();
+}
+
+- (void)onPutAwayClick {
+    NSLog(@"put away");
+    !_putAwayBlock?:_putAwayBlock();
 }
 
 - (void)onPreviousClick {
@@ -143,14 +171,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
-//- (void)onChangeProgressClick:(UISlider *)slider {
-//    NSLog(@"slider value : %f",slider.value);
-//    !_changeValueBlock?:_changeValueBlock(slider.value);
-//}
-
-#pragma mark --- nomal custom methods
-
 
 
 #pragma mark -- block of the property 
