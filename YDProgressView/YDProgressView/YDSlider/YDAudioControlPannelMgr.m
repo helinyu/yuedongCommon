@@ -141,13 +141,15 @@
         
         self.rootVc.nextBlock = ^{
             [[YDBgMediaMgr shared] nextTrack:^(YDPannelINfo *info) {
-                
+                NSLog(@" 下一首歌");
+                wSelf.rootVc.controlPanelTitle(info.title);
             }];
         };
         
         self.rootVc.previousBlock = ^{
             [[YDBgMediaMgr shared] previousTrack:^(YDPannelINfo *info) {
-                
+                NSLog(@"上一首歌");
+                wSelf.rootVc.controlPanelTitle(info.title);
             }];
         };
         
@@ -156,6 +158,7 @@
         };
         
         self.rootVc.playOrPauseBlock = ^{
+            NSLog(@"点击了暂停与播放按钮");
            [[YDBgMediaMgr shared] playOrPause:^(YDPannelINfo *info) {
                [YDAudioControlPannelMgr shared].rootVc.updatePlayOrPause(info.isPlaying);
            }];

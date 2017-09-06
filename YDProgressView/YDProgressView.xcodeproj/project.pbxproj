@@ -180,7 +180,6 @@
 		413DF3451F593A22000BA784 /* YDSlider */ = {
 			isa = PBXGroup;
 			children = (
-				4152CD101F5F96A80065350F /* HoverBtn */,
 				418A176E1F5D20DF00474E1A /* Audio */,
 				413E5E481F5CEA5100B06852 /* Pannel */,
 				41FBDED81F5CE810006AE863 /* Hover */,
@@ -226,13 +225,6 @@
 			);
 			name = NSProgress;
 			path = YDSlider/NSProgress;
-			sourceTree = "<group>";
-		};
-		4152CD101F5F96A80065350F /* HoverBtn */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HoverBtn;
 			sourceTree = "<group>";
 		};
 		4152CD3D1F5FC6B30065350F /* AVPlayer */ = {
@@ -569,7 +561,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				INFOPLIST_FILE = YDProgressView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -585,7 +577,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = YDProgressView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -28,12 +28,12 @@ dispatch_async(dispatch_get_main_queue(), block);\
 
 @property (nonatomic, strong) YDMedia *media;
 @property (nonatomic, assign) NSTimeInterval nowSecondTime;
-//@property (nonatomic, strong) AVAudioPlayer *audioPlayer;
 
 @property (nonatomic, strong) NSTimer *audioTimeTimer;
 
-
 @property (nonatomic, strong) RCDraggableButton *hoverBtn;
+
+@property (nonatomic, assign) BOOL isPlaying;
 
 @end
 
@@ -59,7 +59,6 @@ dispatch_async(dispatch_get_main_queue(), block);\
     [self playWithUrlString:currentItem.mediaUrlStr];
     [self _configureLockLightScreenWithMedia:currentItem];
     [self _createRemoteCommandCenter];
-    
     [self initHoverBtn];
 }
 
@@ -74,16 +73,15 @@ dispatch_async(dispatch_get_main_queue(), block);\
     }
     
     NSError *error = nil;
-    _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:mediaUrl error:&error];
+    _audioPlayer = [AVPlayer playerWithURL:mediaUrl];
     if (error) {
         NSLog(@"初始化播放音频失败");
         return;
     }
-    BOOL playState = [_audioPlayer play];
-    if (!playState) {
-        NSLog(@"播放失败");
-    }
     
+    [_audioPlayer play];
+    _isPlaying = YES;
+    [_audioPlayer setRate:1.f];
     [self resetTimer];
 }
 
@@ -95,24 +93,22 @@ dispatch_async(dispatch_get_main_queue(), block);\
 
 - (void)stop {
     if (_audioPlayer) {
-        [_audioPlayer stop];
-    }
-}
-
-- (void)continousPlay {
-    if (_audioPlayer && !_audioPlayer.isPlaying) {
-        [_audioPlayer play];
+        [_audioPlayer pause];
+        _audioPlayer = nil;
+        _isPlaying = NO;
     }
 }
 
 - (void)playAtTime:(NSTimeInterval)progress {
     if (_audioPlayer) {
-        NSTimeInterval addTime = progress * _audioPlayer.duration;
-        [_audioPlayer playAtTime:(_audioPlayer.deviceCurrentTime + addTime)];
+        NSTimeInterval totalTime = CMTimeGetSeconds(_audioPlayer.currentItem.duration);
+        NSTimeInterval changeToTime = progress * CMTimeGetSeconds(_audioPlayer.currentItem.duration);
+        int32_t timescale = 30;
+        CMTime time = CMTimeMake(changeToTime *timescale, timescale);
+        [_audioPlayer seekToTime:time];
         YDPannelINfo *info = [YDPannelINfo new];
-        info.evaluateTotalTime(_audioPlayer.duration).evaluateCurrentTime(addTime);
+        info.evaluateTotalTime(totalTime).evaluateCurrentTime(changeToTime);
         [[YDAudioControlPannelMgr shared] updateProgressViewWithInfo:info];
-//         播放到指定的时间
         [self resetTimer];
     }
 }
@@ -125,15 +121,19 @@ dispatch_async(dispatch_get_main_queue(), block);\
         }
         
         NSInteger currentIndex = _media.currentIndex +1;
-        if (currentIndex >= (_media.mediaItemList.count-1)) {
+        if (currentIndex >= (_media.mediaItemList.count)) {
             NSLog(@"最后一首");
             return;
         }
         _media.currentIndex = currentIndex;
         YDMediaItem *currentItem = _media.mediaItemList[currentIndex];
         [self playWithUrlString:currentItem.mediaUrlStr];
+        
         YDPannelINfo *info = [YDPannelINfo new];
-        info.evaluateTitle(currentItem.title).evaluateCurrentTime(_audioPlayer.currentTime).evaluateTotalTime(_audioPlayer.duration).evaluatePlayingState(YES);
+        NSTimeInterval currentTime = CMTimeGetSeconds(_audioPlayer.currentTime);
+        NSTimeInterval totalTime = CMTimeGetSeconds(_audioPlayer.currentItem.duration);
+        NSLog(@"curretn item title: %@",currentItem.title);
+        info.evaluateTitle(currentItem.title).evaluateCurrentTime(currentTime).evaluateTotalTime(totalTime).evaluatePlayingState(YES);
         !currentPlayInfo?:currentPlayInfo(info);
         return;
     }
@@ -149,13 +149,17 @@ dispatch_async(dispatch_get_main_queue(), block);\
         _media.currentIndex -= 1;
         YDMediaItem *currentItem = _media.mediaItemList[_media.currentIndex];
         [self playWithUrlString:currentItem.mediaUrlStr];
+        
         YDPannelINfo *info = [YDPannelINfo new];
-        info.evaluateTitle(currentItem.title).evaluateCurrentTime(_audioPlayer.currentTime).evaluateTotalTime(_audioPlayer.duration).evaluatePlayingState(YES);
+        NSTimeInterval currentTime = CMTimeGetSeconds(_audioPlayer.currentTime);
+        NSTimeInterval totalTime = CMTimeGetSeconds(_audioPlayer.currentItem.duration);
+        NSLog(@"curretn item title: %@",currentItem.title);
+
+        info.evaluateTitle(currentItem.title).evaluateCurrentTime(currentTime).evaluateTotalTime(totalTime).evaluatePlayingState(YES);
         !currentPlayInfo?:currentPlayInfo(info);
         return;
     }
     !currentPlayInfo?:currentPlayInfo(nil);
-
 }
 
 // isPlaying = yes ,or No
@@ -163,16 +167,21 @@ dispatch_async(dispatch_get_main_queue(), block);\
     if (_audioPlayer) {
         YDPannelINfo *info = [YDPannelINfo new];
         YDMediaItem *currentItem = _media.mediaItemList[_media.currentIndex];
-        info.evaluateTitle(currentItem.title).evaluateCurrentTime(_audioPlayer.currentTime).evaluateTotalTime(_audioPlayer.duration);
-        if (_audioPlayer.isPlaying) {
+        NSTimeInterval currentTime = CMTimeGetSeconds(_audioPlayer.currentTime);
+        NSTimeInterval totalTime = CMTimeGetSeconds(_audioPlayer.currentItem.duration);
+        info.evaluateTitle(currentItem.title).evaluateCurrentTime(currentTime).evaluateTotalTime(totalTime);
+        
+        if (_isPlaying) {
             [_audioPlayer pause];
             info.evaluatePlayingState(NO);
             !currentPlayInfo?:currentPlayInfo(info);
+            _isPlaying = NO;
             return;
         }
         [_audioPlayer play];
         info.evaluatePlayingState(YES);
         !currentPlayInfo?:currentPlayInfo(info);
+        _isPlaying = YES;
         return;
     }
     !currentPlayInfo?:currentPlayInfo(nil);
@@ -190,9 +199,11 @@ dispatch_async(dispatch_get_main_queue(), block);\
 }
 
 - (void)onGetAudioPlayTimeTimer {
-    if (_audioPlayer.isPlaying) {
+    if (_audioPlayer.status == AVPlayerStatusReadyToPlay) {
         YDPannelINfo *info = [YDPannelINfo new];
-        info.evaluateCurrentTime(_audioPlayer.currentTime).evaluateTotalTime(_audioPlayer.duration);
+        NSTimeInterval currentTime = CMTimeGetSeconds(_audioPlayer.currentTime);
+        NSTimeInterval totalTime = CMTimeGetSeconds(_audioPlayer.currentItem.duration);
+        info.evaluateCurrentTime(currentTime).evaluateTotalTime(totalTime);
         [[YDAudioControlPannelMgr shared] updateProgressViewWithInfo:info];
     }else{
         
@@ -252,8 +263,10 @@ dispatch_async(dispatch_get_main_queue(), block);\
     NSMutableDictionary * songDict = @{}.mutableCopy;
     [songDict setObject:currentItem.title forKey:MPMediaItemPropertyTitle];
     [songDict setObject:currentItem.speaker forKey:MPMediaItemPropertyArtist];
-    [songDict setObject:@(_audioPlayer.currentTime) forKey:MPNowPlayingInfoPropertyElapsedPlaybackTime];
-    [songDict setObject:@(_audioPlayer.duration) forKey:MPMediaItemPropertyPlaybackDuration];
+    NSTimeInterval currentTime = CMTimeGetSeconds(_audioPlayer.currentTime);
+    NSTimeInterval totalTime = CMTimeGetSeconds(_audioPlayer.currentItem.duration);
+    [songDict setObject:@(currentTime) forKey:MPNowPlayingInfoPropertyElapsedPlaybackTime];
+    [songDict setObject:@(totalTime) forKey:MPMediaItemPropertyPlaybackDuration];
     UIImage *image = [UIImage imageNamed:@"backgroundImage5.jpg"];
     MPMediaItemArtwork *artwork = [[MPMediaItemArtwork alloc] initWithImage:image];
     [songDict setObject:artwork forKey:MPMediaItemPropertyArtwork];
@@ -289,11 +302,6 @@ dispatch_async(dispatch_get_main_queue(), block);\
     _hoverBtn = [[RCDraggableButton alloc] initInKeyWindowWithFrame:CGRectMake(CGRectGetWidth([UIScreen mainScreen].bounds)-40, 200, 40, 40)];
     [_hoverBtn setBackgroundImage:[UIImage imageNamed:@"icon_audio_hover_btn"] forState:UIControlStateNormal];
     
-    [_hoverBtn setLongPressBlock:^(RCDraggableButton *avatar) {
-        NSLog(@"\n\tAvatar in keyWindow ===  LongPress!!! ===");
-        
-    }];
-    
     [_hoverBtn setTapBlock:^(RCDraggableButton *avatar) {
         NSLog(@"\n\tAvatar in keyWindow ===  Tap!!! ===");
 //        点击处理事件
@@ -307,8 +315,8 @@ dispatch_async(dispatch_get_main_queue(), block);\
             pannelMgr.hideHoverPannel(NO);
         }
 
-        NSTimeInterval currentTime = wSelf.audioPlayer.currentTime;
-        NSTimeInterval totalTime = wSelf.audioPlayer.duration;
+        NSTimeInterval currentTime = CMTimeGetSeconds(wSelf.audioPlayer.currentTime);
+        NSTimeInterval totalTime = CMTimeGetSeconds(wSelf.audioPlayer.currentItem.duration);
         YDPannelINfo *info = [YDPannelINfo new];
         YDMediaItem *currentItem = wSelf.media.mediaItemList[wSelf.media.currentIndex];
         info.evaluateTitle(currentItem.title).evaluateCurrentTime(currentTime).evaluateTotalTime(totalTime).evaluatePlayingState(YES);

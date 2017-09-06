@@ -8,11 +8,10 @@
 
 #import <Foundation/Foundation.h>
 @class YDMedia;
-@class AVAudioPlayer;
+@class AVPlayer;
 @class YDPannelINfo;
 
 @interface YDBgMediaMgr : NSObject
-
 
 typedef void(^CurrentPlayInfo)(YDPannelINfo *info);
 
@@ -21,10 +20,9 @@ typedef void(^CurrentPlayInfo)(YDPannelINfo *info);
 - (void)playWithMedia:(YDMedia *)media;
 
 - (void)playWithUrlString:(NSString *)mediaUrlString;
+
 - (void)pause;
 - (void)stop;
-- (void)continousPlay;
-
 - (void)playAtTime:(NSTimeInterval)progress; /* 0.f ~1.f */
 
 - (void)nextTrack:(CurrentPlayInfo)currentPlayInfo;
@@ -32,7 +30,7 @@ typedef void(^CurrentPlayInfo)(YDPannelINfo *info);
 - (void)playOrPause:(CurrentPlayInfo)currentPlayInfo;
 
 @property (nonatomic, strong, readonly) YDMedia *media;
-@property (nonatomic, strong) AVAudioPlayer *audioPlayer;
+@property (nonatomic, strong) AVPlayer *audioPlayer;
 
 - (void)destroyTimer;
 
