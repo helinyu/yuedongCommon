@@ -20,18 +20,17 @@
 @property (nonatomic, copy) VoidBlcok playOrPauseBlock;
 @property (nonatomic, copy) VoidBlcok titleTapBlock;
 
+
 - (YDControlPannelController *(^)(NSString *title))controlPanelTitle;
 - (YDControlPannelController *(^)(NSTimeInterval currentTime))controlPanelCurrentTime;
 - (YDControlPannelController *(^)(NSTimeInterval totalTime))controlPanelTotalTime;
 
 - (YDControlPannelController *(^)(BOOL isPlaying))updatePlayOrPause;
 
-- (YDControlPannelController *(^)(void))updateView;
-
 - (YDControlPannelController *(^)(void))updateProgressView;
 
 @property (nonatomic, strong, readonly) YDAudioSlider *progressSlider;
 
-
+- (void)animationDisAppearWithBlock:(VoidBlcok)finishedBlock;
 
 @end

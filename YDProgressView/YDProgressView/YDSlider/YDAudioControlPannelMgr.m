@@ -33,7 +33,6 @@
 
 @end
 
-
 @implementation YDAudioControlPannelMgr
 
 + (instancetype)shared {
@@ -59,12 +58,15 @@
 }
 
 - (void)registerOnceMainWindowTouch {
+    
     if (_hasRegisterTouch) {
         return;
     }
-    _hasRegisterTouch = YES;
-    UIWindow *mainWindow = [UIApplication sharedApplication].windows.firstObject;
-    [mainWindow addGestureRecognizer:_tabRecognizer];
+    
+    if (_pannelWindow && _tabRecognizer) {
+        [_pannelWindow addGestureRecognizer:_tabRecognizer];
+        _hasRegisterTouch = YES;
+    }
 }
 
 - (void)onTabWindowClick:(UIGestureRecognizer *)recognier {
@@ -74,9 +76,10 @@
 }
 
 - (void)removeMainWindowTabGesture {
-    UIWindow *mainWindow = [UIApplication sharedApplication].windows.firstObject;
-    [mainWindow removeGestureRecognizer:_tabRecognizer];
-    _hasRegisterTouch = NO;
+    if (_pannelWindow && _tabRecognizer) {
+        [_pannelWindow removeGestureRecognizer:_tabRecognizer];
+        _hasRegisterTouch = NO;
+    }
 }
 
 
@@ -102,7 +105,7 @@
    return ^(CGRect rect){
        __strong typeof (wSelf) strongSelf = wSelf;
        strongSelf.rootVc = [YDControlPannelController new];
-       strongSelf.pannelWindow = [[UIWindow alloc] initWithFrame:rect];
+       strongSelf.pannelWindow = [[UIWindow alloc] initWithFrame:CGRectMake(0, 20.f, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)-20.f)];
        strongSelf.pannelWindow.windowLevel = NSIntegerMax;
        strongSelf.pannelWindow.rootViewController = strongSelf.rootVc;
        [strongSelf.pannelWindow makeKeyAndVisible];
@@ -122,10 +125,13 @@
     if (self.rootVc) {
         self.rootVc.closeBlock = ^{
             [wSelf removeMainWindowTabGesture];
-            wSelf.pannelWindow.hidden = YES;
-            wSelf.pannelWindow = nil;
             [[YDBgMediaMgr shared] setHiddenHoverBtn:YES];
             [[YDBgMediaMgr shared] stop];
+            
+            [wSelf.rootVc animationDisAppearWithBlock:^{
+                wSelf.pannelWindow.hidden = YES;
+                wSelf.pannelWindow = nil;
+            }]; 
         };
         
         self.rootVc.progressSlider.valueBeginChagneBlock = ^{
@@ -184,14 +190,7 @@
         if (!wSelf.pannelWindow) {
             return self;
         }
-        
         wSelf.pannelWindow.hidden = hidden;
-        if (wSelf.pannelWindow.isHidden) {
-            [wSelf removeMainWindowTabGesture];
-        }else{
-            [self registerOnceMainWindowTouch];
-        }
-        
         return self;
     };
 }
@@ -200,7 +199,7 @@
     if (!_rootVc) {
         return;
     }
-    self.rootVc.controlPanelTitle(info.title).controlPanelTotalTime(info.totalTime).controlPanelCurrentTime(info.currentTime).updateView();
+    self.rootVc.controlPanelTitle(info.title).controlPanelTotalTime(info.totalTime).controlPanelCurrentTime(info.currentTime).updateProgressView();
     
 }
 
@@ -210,7 +209,5 @@
     }
     _rootVc.controlPanelCurrentTime(info.currentTime).controlPanelTotalTime(info.totalTime).updateProgressView();
 }
-
-
 
 @end

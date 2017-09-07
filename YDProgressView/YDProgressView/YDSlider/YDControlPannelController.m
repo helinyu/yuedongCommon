@@ -39,7 +39,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 153)];
+    _containerView = [[UIView alloc] initWithFrame:CGRectMake(0, -153, CGRectGetWidth([UIScreen mainScreen].bounds), 153)];
     [self.view addSubview:_containerView];
     _containerView.backgroundColor = [UIColor whiteColor];
     
@@ -141,6 +141,24 @@
 
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [UIView animateWithDuration:0.8f animations:^{
+        _containerView.frame = CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 153);
+    } completion:^(BOOL finished) {
+        NSLog(@"动画完成");
+    }];
+}
+
+- (void)animationDisAppearWithBlock:(VoidBlcok)finishedBlock {
+    [UIView animateWithDuration:0.8f animations:^{
+        _containerView.frame = CGRectMake(0, -153, CGRectGetWidth([UIScreen mainScreen].bounds), 153);
+    } completion:^(BOOL finished) {
+        NSLog(@"动画完成");
+        !finishedBlock?:finishedBlock();
+    }];
+}
+
 #pragma mark --- nomal custom methods
 
 - (void)onCloseClick {
@@ -214,14 +232,6 @@
     };
 }
 
-- (YDControlPannelController *(^)(void))updateView {
-    __weak typeof (self) wSelf = self;
-    return ^(void) {
-        wSelf.updateProgressView().updatePlayOrPause(YES);
-        return self;
-    };
-}
-
 - (YDControlPannelController *(^)(void))updateProgressView {
     __weak typeof (self) wSelf = self;
     return ^(void) {
@@ -243,13 +253,13 @@
     NSInteger second = seconds % 60;
     NSInteger minutes = seconds / 60;
     if (seconds < 60*60) {
-        return [NSString stringWithFormat:@"%02d:%02d",minutes,second];
+        return [NSString stringWithFormat:@"%02ld:%02ld",(long)minutes,(long)second];
     }
     
     if (seconds > 60 * 60) {
         NSInteger hour = minutes / 60;
         NSInteger minute = seconds % 60;
-        return [NSString stringWithFormat:@"%02d:%02d:%02d",hour,minute,second];
+        return [NSString stringWithFormat:@"%02ld:%02ld:%02ld",(long)hour,(long)minute,(long)second];
     }
     
     return nil;

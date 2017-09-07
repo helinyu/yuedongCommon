@@ -232,16 +232,30 @@ dispatch_async(dispatch_get_main_queue(), block);\
     
     [cmdCenter.playCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
         NSLog(@"播放");
-        _nowSecondTime = [[NSDate date] timeIntervalSince1970];
+        YDMediaItem *item = _media.mediaItemList[_media.currentIndex];
+//        [self _configureLockLightScreenWithMedia:item];
+        [self playOrPause:^(YDPannelINfo *info) {
+            [[YDAudioControlPannelMgr shared] updateViewWithInfo:info];
+        }];
         return MPRemoteCommandHandlerStatusSuccess;
     }];
     
     [cmdCenter.pauseCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
         NSLog(@"暂停播放");
+        [self playOrPause:^(YDPannelINfo *info) {
+            [[YDAudioControlPannelMgr shared] updateViewWithInfo:info];
+        }];
+        YDMediaItem *item = _media.mediaItemList[_media.currentIndex];
+        [self _configureLockLightScreenWithMedia:item];
         return MPRemoteCommandHandlerStatusSuccess;
     }];
     
     [cmdCenter.changePlaybackPositionCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+        MPChangePlaybackPositionCommandEvent *positionEvent = (MPChangePlaybackPositionCommandEvent *)event;
+        NSTimeInterval positionTime = positionEvent.positionTime;
+        NSLog(@"position time :%f",positionTime);
+        NSTimeInterval timeScale = 30.f;
+        [_audioPlayer seekToTime:CMTimeMake(positionTime *timeScale, timeScale)];
         return MPRemoteCommandHandlerStatusSuccess;
     }];
 }
@@ -261,23 +275,27 @@ dispatch_async(dispatch_get_main_queue(), block);\
 }
 
 - (void)_configureLockLightScreenWithMedia:(YDMediaItem *)mediaItem {
-    [self _enablePlayBack];
-    _nowSecondTime = [NSDate date].timeIntervalSince1970;
-    NSLog(@"设置后台播放信息");
-    
-    YDMediaItem *currentItem = _media.mediaItemList[_media.currentIndex];
-    NSMutableDictionary * songDict = @{}.mutableCopy;
-    [songDict setObject:currentItem.title forKey:MPMediaItemPropertyTitle];
-    [songDict setObject:currentItem.speaker forKey:MPMediaItemPropertyArtist];
-    NSTimeInterval currentTime = CMTimeGetSeconds(_audioPlayer.currentTime);
-    NSTimeInterval totalTime = CMTimeGetSeconds(_audioPlayer.currentItem.duration);
-    [songDict setObject:@(currentTime) forKey:MPNowPlayingInfoPropertyElapsedPlaybackTime];
-    [songDict setObject:@(totalTime) forKey:MPMediaItemPropertyPlaybackDuration];
-    UIImage *image = [UIImage imageNamed:@"backgroundImage5.jpg"];
-    MPMediaItemArtwork *artwork = [[MPMediaItemArtwork alloc] initWithImage:image];
-    [songDict setObject:artwork forKey:MPMediaItemPropertyArtwork];
-    [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:songDict];
+    NSLog(@"_audio state: %d",_audioPlayer.status);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self _enablePlayBack];
+        NSLog(@"设置后台播放信息");
+        NSLog(@"2 s later _audio state: %d",_audioPlayer.status);
 
+        YDMediaItem *currentItem = _media.mediaItemList[_media.currentIndex];
+        NSMutableDictionary * songDict = @{}.mutableCopy;
+        [songDict setObject:currentItem.title forKey:MPMediaItemPropertyTitle];
+        [songDict setObject:currentItem.speaker forKey:MPMediaItemPropertyArtist];
+        NSTimeInterval currentTime = CMTimeGetSeconds(_audioPlayer.currentTime);
+        NSTimeInterval totalTime = CMTimeGetSeconds(_audioPlayer.currentItem.duration);
+        [songDict setObject:@(currentTime) forKey:MPNowPlayingInfoPropertyElapsedPlaybackTime];
+        [songDict setObject:@(totalTime) forKey:MPMediaItemPropertyPlaybackDuration];
+        NSLog(@"total time :%f",totalTime);
+        UIImage *image = [UIImage imageNamed:@"backgroundImage5.jpg"];
+        MPMediaItemArtwork *artwork = [[MPMediaItemArtwork alloc] initWithImage:image];
+        [songDict setObject:artwork forKey:MPMediaItemPropertyArtwork];
+        [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:songDict];
+    });
+   
 //    [[YYWebImageManager sharedManager] requestImageWithURL:[NSURL URLWithString:media.imageUrlString] options:YYWebImageOptionShowNetworkActivity progress:nil transform:nil completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
 //        if (image) {
 //            NSLog(@" block thread :%@",[NSThread currentThread]);
@@ -314,7 +332,7 @@ dispatch_async(dispatch_get_main_queue(), block);\
         YDAudioControlPannelMgr *pannelMgr = [YDAudioControlPannelMgr shared];
         if (!pannelMgr.hasCreate) {
             CGRect rect = CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 153);
-            pannelMgr.createAControlPannel(rect).bgColor([UIColor colorWithRed:1.f green:1.f blue:1.f alpha:0.9]);
+            pannelMgr.createAControlPannel(rect).bgColor([UIColor grayColor]);
         }
 
         if (pannelMgr.isPannelHidden) {
