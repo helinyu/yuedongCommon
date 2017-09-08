@@ -1,0 +1,1 @@
+../../../AKSpeech/sources/AKSpeechMgr.h

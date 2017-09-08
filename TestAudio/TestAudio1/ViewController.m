@@ -10,6 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
 
+
 typedef NS_ENUM(NSInteger, YDTestType) {
     YDTestTypeNone = 0,
     YDTestTypeOne = 1,
@@ -73,14 +74,13 @@ typedef NS_ENUM(NSInteger, YDTestType) {
     [btn addTarget:self action:@selector(onPlayClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     btn.frame = CGRectMake(100, 150, 100, 30);
+    
 }
 
 - (void)commonAudioConfigure {
 //    [AVAudioSession sharedInstance].delegate = self;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onInterrect:) name:AVAudioSessionInterruptionNotification object:nil];
 }
-
-
 
 - (void)onInterrect:(NSNotification *)noti {
     NSLog(@"被打断 : noti %@",noti);

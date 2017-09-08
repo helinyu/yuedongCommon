@@ -1,0 +1,965 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02D1B7A95EB7FE400A6328E54EC6115E /* AKASpeechDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 33953D104F6B171CEDEEF198818B896C /* AKASpeechDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F0F6CC67175E2152E181536D63D7FDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1134C1803C58A511651A71E332EA7694 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		208AB12D716DDE1CA3FA373507D0E0FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2A102C0AFCEE8B373A55EC06A6E6B9E9 /* AKSpeechModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 834C95119B6B9E58195BC17EA7CF913A /* AKSpeechModel.m */; };
+		2F8A311D6C94146309F0F38177B40329 /* AKSpeechModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 834C95119B6B9E58195BC17EA7CF913A /* AKSpeechModel.m */; };
+		4E2B4ECF1866D0974CC70EEC5E4583C0 /* Pods-AudioAttibute-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FB0955BF815113A119243E4D3F9638 /* Pods-AudioAttibute-dummy.m */; };
+		5327E9F53F1F0927C158746D86C07B61 /* AKSpeech-iOS10.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9176B70B2276EEC66045CEED4E0992 /* AKSpeech-iOS10.3-dummy.m */; };
+		54B1322DA7CC62BE90A32914C1DBDAA7 /* AKSpeechMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5634EE3F275843567E316A6FE6D2C9 /* AKSpeechMgr.m */; };
+		64444728EEE2D2058D0004AEF5974B7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		6BA225946A4B0B62D0E019D578952A34 /* AKASpeechDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 33953D104F6B171CEDEEF198818B896C /* AKASpeechDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7678CD96C5CB36FE26385A3B3F9AB904 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		87F0FA9543E734D2613955E9B3F3341D /* AKSpeechMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = A2806B315CAD8D542025238FCA6DB107 /* AKSpeechMgr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ABEE1F9DBC36583A419E14BA399F525 /* AKSpeechModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A2DDDC36B240CB40F0B79E6930C5FD7 /* AKSpeechModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F26E3EBF8F34F868C862FF7AF5D7C7 /* AKSpeechModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A2DDDC36B240CB40F0B79E6930C5FD7 /* AKSpeechModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B726C89D27C0C8EB3BAC56143A0AFC5C /* AKSpeechMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = A2806B315CAD8D542025238FCA6DB107 /* AKSpeechMgr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6671BAA7F3F3E4C1F6D90545C5AAB6B /* AKSpeechMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5634EE3F275843567E316A6FE6D2C9 /* AKSpeechMgr.m */; };
+		CB1F61A0CF6090C14DE4E1DF018A2A0E /* Pods-TestAudio1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5142799C7F622F77AE9C645E8E9099BE /* Pods-TestAudio1-dummy.m */; };
+		CCB285DAA2CC7FEA3E5235472D7F9DF5 /* Pods-TestAudio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D6BA38EC16E423D81205D4B58613E6 /* Pods-TestAudio-dummy.m */; };
+		D695DE5599927C80E16DBB481DC1D0BD /* AKSpeech-iOS7.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1623909A8FC933309C6C9F2FCF611CE4 /* AKSpeech-iOS7.0-dummy.m */; };
+		DAE89C812059E60F704E8BAA3A4E442A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DBAE8621C7D9BEA74063DFCE568DB2C4 /* Pods-AVPlayerTEst-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEB001CE452AB9845C66A2CF4F9B199 /* Pods-AVPlayerTEst-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		043FDC38C0907B6A51F72A14528CAF2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 663A0AFE00772ECDB6D2B7499574FD5A;
+			remoteInfo = "AKSpeech-iOS7.0";
+		};
+		3CAEE121D1FB876504F71F2404C76CC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05C886C0B9E6424C07155C0973085360;
+			remoteInfo = "AKSpeech-iOS10.3";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06465CD5FAC448E804C0EDE0C20657D7 /* Pods-AVPlayerTEst-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AVPlayerTEst-resources.sh"; sourceTree = "<group>"; };
+		0C853FF56CC4434D0FBABFD0A4F8B4D5 /* Pods-TestAudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestAudio.release.xcconfig"; sourceTree = "<group>"; };
+		1623909A8FC933309C6C9F2FCF611CE4 /* AKSpeech-iOS7.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AKSpeech-iOS7.0-dummy.m"; path = "../AKSpeech-iOS7.0/AKSpeech-iOS7.0-dummy.m"; sourceTree = "<group>"; };
+		185249ED350A4000D75DD6771F65DC7F /* Pods-TestAudio-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestAudio-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1BE60A0E58ADD2F539F701529EE89682 /* Pods-AudioAttibute.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioAttibute.release.xcconfig"; sourceTree = "<group>"; };
+		1BEB001CE452AB9845C66A2CF4F9B199 /* Pods-AVPlayerTEst-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AVPlayerTEst-dummy.m"; sourceTree = "<group>"; };
+		1F9176B70B2276EEC66045CEED4E0992 /* AKSpeech-iOS10.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AKSpeech-iOS10.3-dummy.m"; sourceTree = "<group>"; };
+		21D6BA38EC16E423D81205D4B58613E6 /* Pods-TestAudio-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestAudio-dummy.m"; sourceTree = "<group>"; };
+		24BEB0FE4419C62EEFE210BEE4EFC0EC /* Pods-AudioAttibute-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudioAttibute-acknowledgements.plist"; sourceTree = "<group>"; };
+		2A023E00C15540242D0656BAA7457E3B /* Pods-TestAudio1-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestAudio1-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3077D48729CD8DEA68DFE6C0A5AB8608 /* Pods-TestAudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestAudio.debug.xcconfig"; sourceTree = "<group>"; };
+		33904853E2FBA9E783A22B776965123B /* Pods-AVPlayerTEst.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVPlayerTEst.release.xcconfig"; sourceTree = "<group>"; };
+		33953D104F6B171CEDEEF198818B896C /* AKASpeechDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKASpeechDefine.h; path = sources/AKASpeechDefine.h; sourceTree = "<group>"; };
+		33E86C3E28F53889970A29CD771383DC /* libAKSpeech-iOS10.3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libAKSpeech-iOS10.3.a"; path = "libAKSpeech-iOS10.3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B25CC64A625A174CA2F86DBAB53B691 /* Pods-TestAudio-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestAudio-resources.sh"; sourceTree = "<group>"; };
+		4522C26B61C646B0A8C9690D8938F836 /* Pods-TestAudio-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestAudio-frameworks.sh"; sourceTree = "<group>"; };
+		5142799C7F622F77AE9C645E8E9099BE /* Pods-TestAudio1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestAudio1-dummy.m"; sourceTree = "<group>"; };
+		583EE426E9B8915ACAACF17CE5293C26 /* Pods-TestAudio-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestAudio-acknowledgements.plist"; sourceTree = "<group>"; };
+		5969FED6749BAF1C8D13BF736D057B52 /* Pods-AudioAttibute-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AudioAttibute-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6A2DDDC36B240CB40F0B79E6930C5FD7 /* AKSpeechModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSpeechModel.h; path = sources/AKSpeechModel.h; sourceTree = "<group>"; };
+		718E5A969B34DA476F34402B39377C4D /* AKSpeech-iOS7.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AKSpeech-iOS7.0-prefix.pch"; path = "../AKSpeech-iOS7.0/AKSpeech-iOS7.0-prefix.pch"; sourceTree = "<group>"; };
+		7A5634EE3F275843567E316A6FE6D2C9 /* AKSpeechMgr.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKSpeechMgr.m; path = sources/AKSpeechMgr.m; sourceTree = "<group>"; };
+		82FB0955BF815113A119243E4D3F9638 /* Pods-AudioAttibute-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AudioAttibute-dummy.m"; sourceTree = "<group>"; };
+		831474C19B1D870B383085B94CFEF2A1 /* Pods-AudioAttibute-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioAttibute-resources.sh"; sourceTree = "<group>"; };
+		834C95119B6B9E58195BC17EA7CF913A /* AKSpeechModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKSpeechModel.m; path = sources/AKSpeechModel.m; sourceTree = "<group>"; };
+		9209AA56D94158BABC94DDE50C8770D3 /* libPods-TestAudio1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TestAudio1.a"; path = "libPods-TestAudio1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9250D58D1B591261F99C939CC361DDC3 /* Pods-AVPlayerTEst-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AVPlayerTEst-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A247C3FFF3CF1F0642A0EB25346F5375 /* libPods-AVPlayerTEst.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AVPlayerTEst.a"; path = "libPods-AVPlayerTEst.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2806B315CAD8D542025238FCA6DB107 /* AKSpeechMgr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSpeechMgr.h; path = sources/AKSpeechMgr.h; sourceTree = "<group>"; };
+		AA3C45A56B97A7A104754D6D8A556F52 /* libPods-AudioAttibute.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AudioAttibute.a"; path = "libPods-AudioAttibute.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0EDC324A6187F6A6A2DA02915D1F982 /* Pods-TestAudio1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestAudio1.release.xcconfig"; sourceTree = "<group>"; };
+		C756C95C523628169A5BAAD854A7A161 /* Pods-AudioAttibute.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioAttibute.debug.xcconfig"; sourceTree = "<group>"; };
+		CA7A1C382B4ED9147562D40AB2A23D42 /* Pods-TestAudio1-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestAudio1-acknowledgements.plist"; sourceTree = "<group>"; };
+		CE15E5444AF3C15182AEAAABDE8C6933 /* Pods-AVPlayerTEst-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AVPlayerTEst-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CE5E9C6D90EA67F38096CD91BFADE8BB /* Pods-TestAudio1-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestAudio1-frameworks.sh"; sourceTree = "<group>"; };
+		CF7DF52B328D8C142032FC94AFC2F748 /* Pods-TestAudio1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestAudio1.debug.xcconfig"; sourceTree = "<group>"; };
+		D03AA880B86E27D11C07F1F4AA4B4A9E /* Pods-AVPlayerTEst.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVPlayerTEst.debug.xcconfig"; sourceTree = "<group>"; };
+		D0751905276A564ADF3C2CADD1FD1FAA /* Pods-TestAudio1-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestAudio1-resources.sh"; sourceTree = "<group>"; };
+		D62B70688A21C5D60ECE127FAF0C9270 /* AKSpeech-iOS10.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKSpeech-iOS10.3-prefix.pch"; sourceTree = "<group>"; };
+		DEF0F1D04482689B00E7664FB2478DBC /* Pods-AudioAttibute-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioAttibute-frameworks.sh"; sourceTree = "<group>"; };
+		E9B18CCBAC888A09526D9BF8B9C23834 /* AKSpeech-iOS10.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AKSpeech-iOS10.3.xcconfig"; sourceTree = "<group>"; };
+		EA3BDF72E30A55D6AB12385E7DB00781 /* Pods-AVPlayerTEst-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AVPlayerTEst-frameworks.sh"; sourceTree = "<group>"; };
+		EFCAA3FB38DF3187EBA1E251F7135BB4 /* libAKSpeech-iOS7.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libAKSpeech-iOS7.0.a"; path = "libAKSpeech-iOS7.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B7A0C3D39628313DBE035F618B9E3F /* AKSpeech-iOS7.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "AKSpeech-iOS7.0.xcconfig"; path = "../AKSpeech-iOS7.0/AKSpeech-iOS7.0.xcconfig"; sourceTree = "<group>"; };
+		F1E0A67AFA0522253AC7D1D66D601787 /* libPods-TestAudio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TestAudio.a"; path = "libPods-TestAudio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		102434835075531FDF72E5F147C39BDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F0F6CC67175E2152E181536D63D7FDE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ABE9508B2F5A1ED5EBA64137E91CE2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				208AB12D716DDE1CA3FA373507D0E0FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D86FCBB80C698E8288388945C7511BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE89C812059E60F704E8BAA3A4E442A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8127E0DB9566C171BF9886BBD2A81A4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7678CD96C5CB36FE26385A3B3F9AB904 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B44A242966D2A43C8F3FA258472B7C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64444728EEE2D2058D0004AEF5974B7F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D52EA9CC0D6E0F28627616FB454E6F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1134C1803C58A511651A71E332EA7694 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C71796ED98F16D3795F2AA3D06F4C29 /* Pods-TestAudio1 */ = {
+			isa = PBXGroup;
+			children = (
+				2A023E00C15540242D0656BAA7457E3B /* Pods-TestAudio1-acknowledgements.markdown */,
+				CA7A1C382B4ED9147562D40AB2A23D42 /* Pods-TestAudio1-acknowledgements.plist */,
+				5142799C7F622F77AE9C645E8E9099BE /* Pods-TestAudio1-dummy.m */,
+				CE5E9C6D90EA67F38096CD91BFADE8BB /* Pods-TestAudio1-frameworks.sh */,
+				D0751905276A564ADF3C2CADD1FD1FAA /* Pods-TestAudio1-resources.sh */,
+				CF7DF52B328D8C142032FC94AFC2F748 /* Pods-TestAudio1.debug.xcconfig */,
+				B0EDC324A6187F6A6A2DA02915D1F982 /* Pods-TestAudio1.release.xcconfig */,
+			);
+			name = "Pods-TestAudio1";
+			path = "Target Support Files/Pods-TestAudio1";
+			sourceTree = "<group>";
+		};
+		50DDB2ABAC803A3A4C1E70D1BF685F82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33E86C3E28F53889970A29CD771383DC /* libAKSpeech-iOS10.3.a */,
+				EFCAA3FB38DF3187EBA1E251F7135BB4 /* libAKSpeech-iOS7.0.a */,
+				AA3C45A56B97A7A104754D6D8A556F52 /* libPods-AudioAttibute.a */,
+				A247C3FFF3CF1F0642A0EB25346F5375 /* libPods-AVPlayerTEst.a */,
+				F1E0A67AFA0522253AC7D1D66D601787 /* libPods-TestAudio.a */,
+				9209AA56D94158BABC94DDE50C8770D3 /* libPods-TestAudio1.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73961DC3FB39E9574FBA2B38A47CB155 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB0FCAE13241AC52D59B0179B577976C /* AKSpeech */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				73961DC3FB39E9574FBA2B38A47CB155 /* Pods */,
+				50DDB2ABAC803A3A4C1E70D1BF685F82 /* Products */,
+				9CD6F4BACEAFD14B408B31752470A1C3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9A4B822E581D7AA12B9DE33CBC24A831 /* Pods-TestAudio */ = {
+			isa = PBXGroup;
+			children = (
+				185249ED350A4000D75DD6771F65DC7F /* Pods-TestAudio-acknowledgements.markdown */,
+				583EE426E9B8915ACAACF17CE5293C26 /* Pods-TestAudio-acknowledgements.plist */,
+				21D6BA38EC16E423D81205D4B58613E6 /* Pods-TestAudio-dummy.m */,
+				4522C26B61C646B0A8C9690D8938F836 /* Pods-TestAudio-frameworks.sh */,
+				3B25CC64A625A174CA2F86DBAB53B691 /* Pods-TestAudio-resources.sh */,
+				3077D48729CD8DEA68DFE6C0A5AB8608 /* Pods-TestAudio.debug.xcconfig */,
+				0C853FF56CC4434D0FBABFD0A4F8B4D5 /* Pods-TestAudio.release.xcconfig */,
+			);
+			name = "Pods-TestAudio";
+			path = "Target Support Files/Pods-TestAudio";
+			sourceTree = "<group>";
+		};
+		9CD6F4BACEAFD14B408B31752470A1C3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C66E0B2AC681C2C83D90E6BF659E3859 /* Pods-AudioAttibute */,
+				C15ABF212582571E01B19B2B2D696971 /* Pods-AVPlayerTEst */,
+				9A4B822E581D7AA12B9DE33CBC24A831 /* Pods-TestAudio */,
+				2C71796ED98F16D3795F2AA3D06F4C29 /* Pods-TestAudio1 */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BB0FCAE13241AC52D59B0179B577976C /* AKSpeech */ = {
+			isa = PBXGroup;
+			children = (
+				33953D104F6B171CEDEEF198818B896C /* AKASpeechDefine.h */,
+				A2806B315CAD8D542025238FCA6DB107 /* AKSpeechMgr.h */,
+				7A5634EE3F275843567E316A6FE6D2C9 /* AKSpeechMgr.m */,
+				6A2DDDC36B240CB40F0B79E6930C5FD7 /* AKSpeechModel.h */,
+				834C95119B6B9E58195BC17EA7CF913A /* AKSpeechModel.m */,
+				E41A4D59D6B65250160EF10F56B967FF /* Support Files */,
+			);
+			name = AKSpeech;
+			path = AKSpeech;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C15ABF212582571E01B19B2B2D696971 /* Pods-AVPlayerTEst */ = {
+			isa = PBXGroup;
+			children = (
+				CE15E5444AF3C15182AEAAABDE8C6933 /* Pods-AVPlayerTEst-acknowledgements.markdown */,
+				9250D58D1B591261F99C939CC361DDC3 /* Pods-AVPlayerTEst-acknowledgements.plist */,
+				1BEB001CE452AB9845C66A2CF4F9B199 /* Pods-AVPlayerTEst-dummy.m */,
+				EA3BDF72E30A55D6AB12385E7DB00781 /* Pods-AVPlayerTEst-frameworks.sh */,
+				06465CD5FAC448E804C0EDE0C20657D7 /* Pods-AVPlayerTEst-resources.sh */,
+				D03AA880B86E27D11C07F1F4AA4B4A9E /* Pods-AVPlayerTEst.debug.xcconfig */,
+				33904853E2FBA9E783A22B776965123B /* Pods-AVPlayerTEst.release.xcconfig */,
+			);
+			name = "Pods-AVPlayerTEst";
+			path = "Target Support Files/Pods-AVPlayerTEst";
+			sourceTree = "<group>";
+		};
+		C66E0B2AC681C2C83D90E6BF659E3859 /* Pods-AudioAttibute */ = {
+			isa = PBXGroup;
+			children = (
+				5969FED6749BAF1C8D13BF736D057B52 /* Pods-AudioAttibute-acknowledgements.markdown */,
+				24BEB0FE4419C62EEFE210BEE4EFC0EC /* Pods-AudioAttibute-acknowledgements.plist */,
+				82FB0955BF815113A119243E4D3F9638 /* Pods-AudioAttibute-dummy.m */,
+				DEF0F1D04482689B00E7664FB2478DBC /* Pods-AudioAttibute-frameworks.sh */,
+				831474C19B1D870B383085B94CFEF2A1 /* Pods-AudioAttibute-resources.sh */,
+				C756C95C523628169A5BAAD854A7A161 /* Pods-AudioAttibute.debug.xcconfig */,
+				1BE60A0E58ADD2F539F701529EE89682 /* Pods-AudioAttibute.release.xcconfig */,
+			);
+			name = "Pods-AudioAttibute";
+			path = "Target Support Files/Pods-AudioAttibute";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E41A4D59D6B65250160EF10F56B967FF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9B18CCBAC888A09526D9BF8B9C23834 /* AKSpeech-iOS10.3.xcconfig */,
+				1F9176B70B2276EEC66045CEED4E0992 /* AKSpeech-iOS10.3-dummy.m */,
+				D62B70688A21C5D60ECE127FAF0C9270 /* AKSpeech-iOS10.3-prefix.pch */,
+				F0B7A0C3D39628313DBE035F618B9E3F /* AKSpeech-iOS7.0.xcconfig */,
+				1623909A8FC933309C6C9F2FCF611CE4 /* AKSpeech-iOS7.0-dummy.m */,
+				718E5A969B34DA476F34402B39377C4D /* AKSpeech-iOS7.0-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AKSpeech-iOS10.3";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		058A41BE3CC5AD4672B3ACDE9B6F56BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BA225946A4B0B62D0E019D578952A34 /* AKASpeechDefine.h in Headers */,
+				B726C89D27C0C8EB3BAC56143A0AFC5C /* AKSpeechMgr.h in Headers */,
+				8ABEE1F9DBC36583A419E14BA399F525 /* AKSpeechModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D70DFA60DFC3BF6A2090209FA8C9BC5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02D1B7A95EB7FE400A6328E54EC6115E /* AKASpeechDefine.h in Headers */,
+				87F0FA9543E734D2613955E9B3F3341D /* AKSpeechMgr.h in Headers */,
+				A7F26E3EBF8F34F868C862FF7AF5D7C7 /* AKSpeechModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		05C886C0B9E6424C07155C0973085360 /* AKSpeech-iOS10.3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C284279CDC3FF65273C2DFDE3D57421 /* Build configuration list for PBXNativeTarget "AKSpeech-iOS10.3" */;
+			buildPhases = (
+				3B09E05BF840C8D1AB01CA49C0E4AA1A /* Sources */,
+				102434835075531FDF72E5F147C39BDA /* Frameworks */,
+				2D70DFA60DFC3BF6A2090209FA8C9BC5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AKSpeech-iOS10.3";
+			productName = "AKSpeech-iOS10.3";
+			productReference = 33E86C3E28F53889970A29CD771383DC /* libAKSpeech-iOS10.3.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		394A7CA40321843242CC90F03CB2F35E /* Pods-TestAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5204F0B1D37A5C87F8DD0EA542A213B0 /* Build configuration list for PBXNativeTarget "Pods-TestAudio" */;
+			buildPhases = (
+				CB1F36B4EE2B1F20B7F256B3CCEDA0E3 /* Sources */,
+				D52EA9CC0D6E0F28627616FB454E6F4E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TestAudio";
+			productName = "Pods-TestAudio";
+			productReference = F1E0A67AFA0522253AC7D1D66D601787 /* libPods-TestAudio.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4C02FE5B431A62AFA1C7B1AAFB707134 /* Pods-TestAudio1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D1310F4AE7CF33B6FF558607073B76F /* Build configuration list for PBXNativeTarget "Pods-TestAudio1" */;
+			buildPhases = (
+				C6CC2CC37AD65264150E1E5C22F055C4 /* Sources */,
+				4D86FCBB80C698E8288388945C7511BE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TestAudio1";
+			productName = "Pods-TestAudio1";
+			productReference = 9209AA56D94158BABC94DDE50C8770D3 /* libPods-TestAudio1.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		663A0AFE00772ECDB6D2B7499574FD5A /* AKSpeech-iOS7.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C95BBB035DF5F759177D7A72A2019B84 /* Build configuration list for PBXNativeTarget "AKSpeech-iOS7.0" */;
+			buildPhases = (
+				4A6256AE9BC331572D5CDD47A05ECF01 /* Sources */,
+				8127E0DB9566C171BF9886BBD2A81A4D /* Frameworks */,
+				058A41BE3CC5AD4672B3ACDE9B6F56BC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AKSpeech-iOS7.0";
+			productName = "AKSpeech-iOS7.0";
+			productReference = EFCAA3FB38DF3187EBA1E251F7135BB4 /* libAKSpeech-iOS7.0.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7B4BBBF92B045D064198EEAF9A772192 /* Pods-AudioAttibute */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7217578463F6F7D092C7FCB0E1FE288 /* Build configuration list for PBXNativeTarget "Pods-AudioAttibute" */;
+			buildPhases = (
+				2E886FFBEFBD1A5D4CBB0E5DB5B437BD /* Sources */,
+				3ABE9508B2F5A1ED5EBA64137E91CE2B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C88EB8DF3121D6C9FD70553E26CA2F60 /* PBXTargetDependency */,
+			);
+			name = "Pods-AudioAttibute";
+			productName = "Pods-AudioAttibute";
+			productReference = AA3C45A56B97A7A104754D6D8A556F52 /* libPods-AudioAttibute.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CD99C4709C0A228DB872639D5DA2ABB9 /* Pods-AVPlayerTEst */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F59D3790E52D807F00DE27872B4B8060 /* Build configuration list for PBXNativeTarget "Pods-AVPlayerTEst" */;
+			buildPhases = (
+				046593A2A3B6BC4E3E08D76973D3A39C /* Sources */,
+				9B44A242966D2A43C8F3FA258472B7C8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65C316C340D7F68920611C7456EFD14D /* PBXTargetDependency */,
+			);
+			name = "Pods-AVPlayerTEst";
+			productName = "Pods-AVPlayerTEst";
+			productReference = A247C3FFF3CF1F0642A0EB25346F5375 /* libPods-AVPlayerTEst.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 50DDB2ABAC803A3A4C1E70D1BF685F82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05C886C0B9E6424C07155C0973085360 /* AKSpeech-iOS10.3 */,
+				663A0AFE00772ECDB6D2B7499574FD5A /* AKSpeech-iOS7.0 */,
+				7B4BBBF92B045D064198EEAF9A772192 /* Pods-AudioAttibute */,
+				CD99C4709C0A228DB872639D5DA2ABB9 /* Pods-AVPlayerTEst */,
+				394A7CA40321843242CC90F03CB2F35E /* Pods-TestAudio */,
+				4C02FE5B431A62AFA1C7B1AAFB707134 /* Pods-TestAudio1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		046593A2A3B6BC4E3E08D76973D3A39C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBAE8621C7D9BEA74063DFCE568DB2C4 /* Pods-AVPlayerTEst-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E886FFBEFBD1A5D4CBB0E5DB5B437BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E2B4ECF1866D0974CC70EEC5E4583C0 /* Pods-AudioAttibute-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B09E05BF840C8D1AB01CA49C0E4AA1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5327E9F53F1F0927C158746D86C07B61 /* AKSpeech-iOS10.3-dummy.m in Sources */,
+				54B1322DA7CC62BE90A32914C1DBDAA7 /* AKSpeechMgr.m in Sources */,
+				2A102C0AFCEE8B373A55EC06A6E6B9E9 /* AKSpeechModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A6256AE9BC331572D5CDD47A05ECF01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D695DE5599927C80E16DBB481DC1D0BD /* AKSpeech-iOS7.0-dummy.m in Sources */,
+				C6671BAA7F3F3E4C1F6D90545C5AAB6B /* AKSpeechMgr.m in Sources */,
+				2F8A311D6C94146309F0F38177B40329 /* AKSpeechModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CC2CC37AD65264150E1E5C22F055C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1F61A0CF6090C14DE4E1DF018A2A0E /* Pods-TestAudio1-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1F36B4EE2B1F20B7F256B3CCEDA0E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB285DAA2CC7FEA3E5235472D7F9DF5 /* Pods-TestAudio-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65C316C340D7F68920611C7456EFD14D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AKSpeech-iOS7.0";
+			target = 663A0AFE00772ECDB6D2B7499574FD5A /* AKSpeech-iOS7.0 */;
+			targetProxy = 043FDC38C0907B6A51F72A14528CAF2E /* PBXContainerItemProxy */;
+		};
+		C88EB8DF3121D6C9FD70553E26CA2F60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AKSpeech-iOS10.3";
+			target = 05C886C0B9E6424C07155C0973085360 /* AKSpeech-iOS10.3 */;
+			targetProxy = 3CAEE121D1FB876504F71F2404C76CC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0CF230EDF5B78F2730F6C6EACE1FA54C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0B7A0C3D39628313DBE035F618B9E3F /* AKSpeech-iOS7.0.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AKSpeech-iOS7.0/AKSpeech-iOS7.0-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		10AC9A809D6D5D8EFC3887619469E014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D03AA880B86E27D11C07F1F4AA4B4A9E /* Pods-AVPlayerTEst.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2A7FF4909A1812E52732451F1EFEC525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0EDC324A6187F6A6A2DA02915D1F982 /* Pods-TestAudio1.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3890D7C92DE120C2BA762135796CFA80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E1143059763B02B1829CEA5C79F2891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3077D48729CD8DEA68DFE6C0A5AB8608 /* Pods-TestAudio.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		587B8ECC28E3A9FF4796C121925DC113 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		777A4169FA9CF9033503C4D873A770B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BE60A0E58ADD2F539F701529EE89682 /* Pods-AudioAttibute.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		809470B03A182D1E0AA6CBF8622E7C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9B18CCBAC888A09526D9BF8B9C23834 /* AKSpeech-iOS10.3.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AKSpeech-iOS10.3/AKSpeech-iOS10.3-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8C39E5A9C0339FADF7EB3C1A5B55000F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33904853E2FBA9E783A22B776965123B /* Pods-AVPlayerTEst.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AC5D206D5F928AC7CA4F0C88F788AF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C756C95C523628169A5BAAD854A7A161 /* Pods-AudioAttibute.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B0313151CCD33CA6A5A4E1588A35734C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9B18CCBAC888A09526D9BF8B9C23834 /* AKSpeech-iOS10.3.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AKSpeech-iOS10.3/AKSpeech-iOS10.3-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BB0D43B6BCD5E4929A204D215490CC86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0B7A0C3D39628313DBE035F618B9E3F /* AKSpeech-iOS7.0.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AKSpeech-iOS7.0/AKSpeech-iOS7.0-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CBAF4A599416BA2A67A5965F7911B461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF7DF52B328D8C142032FC94AFC2F748 /* Pods-TestAudio1.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D30EF3B41D37E911755042E859FB2F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C853FF56CC4434D0FBABFD0A4F8B4D5 /* Pods-TestAudio.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				587B8ECC28E3A9FF4796C121925DC113 /* Debug */,
+				3890D7C92DE120C2BA762135796CFA80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5204F0B1D37A5C87F8DD0EA542A213B0 /* Build configuration list for PBXNativeTarget "Pods-TestAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E1143059763B02B1829CEA5C79F2891 /* Debug */,
+				D30EF3B41D37E911755042E859FB2F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D1310F4AE7CF33B6FF558607073B76F /* Build configuration list for PBXNativeTarget "Pods-TestAudio1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAF4A599416BA2A67A5965F7911B461 /* Debug */,
+				2A7FF4909A1812E52732451F1EFEC525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C284279CDC3FF65273C2DFDE3D57421 /* Build configuration list for PBXNativeTarget "AKSpeech-iOS10.3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0313151CCD33CA6A5A4E1588A35734C /* Debug */,
+				809470B03A182D1E0AA6CBF8622E7C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C95BBB035DF5F759177D7A72A2019B84 /* Build configuration list for PBXNativeTarget "AKSpeech-iOS7.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0D43B6BCD5E4929A204D215490CC86 /* Debug */,
+				0CF230EDF5B78F2730F6C6EACE1FA54C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7217578463F6F7D092C7FCB0E1FE288 /* Build configuration list for PBXNativeTarget "Pods-AudioAttibute" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5D206D5F928AC7CA4F0C88F788AF61 /* Debug */,
+				777A4169FA9CF9033503C4D873A770B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F59D3790E52D807F00DE27872B4B8060 /* Build configuration list for PBXNativeTarget "Pods-AVPlayerTEst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10AC9A809D6D5D8EFC3887619469E014 /* Debug */,
+				8C39E5A9C0339FADF7EB3C1A5B55000F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
