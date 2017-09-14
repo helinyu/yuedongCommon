@@ -1,0 +1,15 @@
+PODS:
+  - AKSpeech (0.0.7)
+  - Masonry (1.0.2)
+
+DEPENDENCIES:
+  - AKSpeech (~> 0.0.7)
+  - Masonry (~> 1.0.2)
+
+SPEC CHECKSUMS:
+  AKSpeech: 57793b0e11980ad92b7a9196f22a0fff9974b6a9
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+
+PODFILE CHECKSUM: f4963b7b61b072aad7d3b59ed4a0808f56a53e9e
+
+COCOAPODS: 1.2.1

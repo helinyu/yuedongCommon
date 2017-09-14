@@ -1,0 +1,962 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01E09711F001C49F92A97060414E262B /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD2D8762CE40473410D719D0AD3220D /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13635B78121B99E5C03C92506A161607 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = D39787E7F81802FA31F69516DE37C4F7 /* MASViewAttribute.m */; };
+		1F3BD3BC28432BB5E2F73501E06E4579 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CD401C3426F6F9CB5D928243711654 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27A7925DBB0F6A5E380F413FB58A2EAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		2AC45688E4E3BEABED7570C2CD182B3E /* Pods-AudioSessionUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF4720B8BC738A2152813D00F49EB3 /* Pods-AudioSessionUITests-dummy.m */; };
+		2DBB74B8B5DDB1F621433DD12BF35102 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF300BF498AEDC05A81765FEFC962E /* MASViewConstraint.m */; };
+		3C0034408E963EC3648DA7C49E2F0D05 /* AKASpeechDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B3B07D39A63526C59831A53C1038B79 /* AKASpeechDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E8E6916C563B9CB12AA417275FC6EB3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA7B057C814737B93741841FFD0AB4 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		490CA524521F7D444EA58FA915D7E99C /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AF3EAB52E0B3A516A3C1D4C258E5DF4D /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49B903D576E09560C52AA92FDCC31A68 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E81B48E98919C472A7A8462121CE4EE /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CBE1B46550A3FB90FDD1CB9CBA7B7FE /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F5EF794517638C404B7E9D2C12171644 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61CCEA01CBE8EFFA5515E7A0D8635AAE /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8E8B21142CB77542DFB3AE9D7AF5D /* MASCompositeConstraint.m */; };
+		6209E20926D79222E59F58B962BFAA1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		6249770A7D163B0F3001D5A76C5FA01C /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BE4ED0E3A08FFE5D171D3A4D5376DA5 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64FD86BAD881B0D27E09638220A116F6 /* AKSpeechModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB643CBFE7C817F51420A7C6243C485E /* AKSpeechModel.m */; };
+		68F98758BA84B8EC3472A8C6FD646D16 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC1F936B13A63C47A683A158FB984AF /* Masonry-dummy.m */; };
+		7BDDE51AF16FA53A09506EDB91E1C3C2 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9FCC221CF08710542F74E449B9FE6 /* NSArray+MASAdditions.m */; };
+		81DF63621ED15CCE09F24464D8E810AE /* AKSpeechModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E3548FA5DD30E6A3844912EF7805FA7C /* AKSpeechModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86EE1CB5473A4A07081D8DE3A2C45924 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C09585E3AAB877093C2CB5F6BF8486D3 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89450A58FD91E5B227171FC75160E4EA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 337D52BFE2CD1FEC146D1921402CFDAD /* MASConstraint.m */; };
+		8F1DC54C9342A0411572F0D858A93098 /* AKSpeech-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA73D4303A3274AB5952985CB99B40E /* AKSpeech-dummy.m */; };
+		955BE39896CA35F2A585DC3309E5FDA5 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7293C9D48D96E9459EB74E121F3C5309 /* MASLayoutConstraint.m */; };
+		97D889327DF3369DD96123DDD9A850C4 /* Pods-AudioSession-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15CFD11FF714B5433B34CCAD7C74B3 /* Pods-AudioSession-dummy.m */; };
+		983CB852CBBFBC04C2A6BA407E34F59B /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 79B6B85F0E586A3DACF66536A6A22D37 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98EDDB5C41C2CCA27333E1B7255B7A9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		9934AEA2C891C201D8ED5746FF42FE1B /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 01F2FE38E6C342564D44B77B374BA79D /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1FA046FDFC42676D17FEC387B10D24A /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E5FDA8241E71B554EFE77DE4194020D8 /* View+MASAdditions.m */; };
+		A6436E3CFFCBFE591E2D2A68ED90CAC6 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CF7FDE15A1079C1E5324DE1604EF13 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A83991D7C1373DF66020C2FDFC5D7564 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C5C35D8AE1A1E28B03A5FBD927EE16 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F2FA906F03CCC3703C75126689773E /* Pods-AudioSessionTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8886F93A0078F45BDDB3ACA53A4386FC /* Pods-AudioSessionTests-dummy.m */; };
+		BD18767A63FB1173CEAD77D21DDE77F8 /* AKSpeechMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DE64D328CD7D8CBED868DE0DDC6A71 /* AKSpeechMgr.m */; };
+		C51DFD6111800B117F8C6A7D26D5EDD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		C88F85D3200060BD98FC13EA58121706 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B8BA6C3F7547D5E1A35D62E3EBD6116 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7CE05A743B7ACD50796191FA442814C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F1FCC9C55F0253803EF98F4DCEAC42 /* ViewController+MASAdditions.m */; };
+		DF7F88B58B564EDF169EC0C9CF8E5124 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3B18EC39A289AF952D1805BCA13C45 /* MASConstraintMaker.m */; };
+		E072DA57403C4BFF9B10467BE05604C5 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4595C51BFC4AD529DF5BDB1EC715DA8F /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1E771349813022263F549BDF33CB4BB /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 328FF7CE34A3BDDA27807E5ED23CEA8A /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E895814213849DF201F52C1AB41D747F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		EC48DE078CA5E55922CCE02354D475CD /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9699D6F55E4E50E9675B5CC8FDCB78C4 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0B56A7D38A399A2F67F9920C9526A66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		FA2EB3F7B60098B7A724F47FE6A4C1D0 /* AKSpeechMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 199104FD2205898A88A68FB9F0D531CA /* AKSpeechMgr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E6F0A3A45CE9ABCF96C371B93A23F14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DC8D9E02903E93BD0B2FEC9D846EA20;
+			remoteInfo = Masonry;
+		};
+		7A3BC438E8B9E7A417341971E2ED4D6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 113FEE0AB8A5F07C060BC894B938F678;
+			remoteInfo = AKSpeech;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0168E15C05C4DABEB7B3659AB9BF29C7 /* Pods-AudioSessionTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudioSessionTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		01F2FE38E6C342564D44B77B374BA79D /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		03EF300BF498AEDC05A81765FEFC962E /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		08CD401C3426F6F9CB5D928243711654 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		0DD2D8762CE40473410D719D0AD3220D /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		190DFF0E6A32F7A16EDB2D933C1DFA78 /* Pods-AudioSessionTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AudioSessionTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		199104FD2205898A88A68FB9F0D531CA /* AKSpeechMgr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSpeechMgr.h; path = sources/AKSpeechMgr.h; sourceTree = "<group>"; };
+		1ACF4720B8BC738A2152813D00F49EB3 /* Pods-AudioSessionUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AudioSessionUITests-dummy.m"; sourceTree = "<group>"; };
+		1B8BA6C3F7547D5E1A35D62E3EBD6116 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		1F8F04C99ABD45F5788DE2100C74ED24 /* libPods-AudioSessionUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AudioSessionUITests.a"; path = "libPods-AudioSessionUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F1FCC9C55F0253803EF98F4DCEAC42 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		31AF914A5C399909F7CADD5A604B5285 /* Pods-AudioSessionTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioSessionTests-frameworks.sh"; sourceTree = "<group>"; };
+		328FF7CE34A3BDDA27807E5ED23CEA8A /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		337D52BFE2CD1FEC146D1921402CFDAD /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		377E3B201D050F7A883AC860F0BD72FB /* Pods-AudioSessionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioSessionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		39DE64D328CD7D8CBED868DE0DDC6A71 /* AKSpeechMgr.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKSpeechMgr.m; path = sources/AKSpeechMgr.m; sourceTree = "<group>"; };
+		3C0822E8F57E5FADA322FD298BB6A6EF /* Pods-AudioSession-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AudioSession-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3C4E333542E5D5F6F66E780CDF715C39 /* Pods-AudioSessionUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AudioSessionUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4595C51BFC4AD529DF5BDB1EC715DA8F /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		468393106676A30904A7D84FE5206570 /* libAKSpeech.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAKSpeech.a; path = libAKSpeech.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BBAE6C7A8DE705CB21500A11D7B9BDE /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0A79BDE14D694A81842C6F3D6F76D0 /* Pods-AudioSession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioSession.release.xcconfig"; sourceTree = "<group>"; };
+		55FAAD3B445A66653E57A5D5D7623BC4 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		58C8E8B21142CB77542DFB3AE9D7AF5D /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		591FC779949A3EC13C68C44B9010156B /* Pods-AudioSessionUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioSessionUITests-frameworks.sh"; sourceTree = "<group>"; };
+		5C18B8F70A669AEC05D0803C40F31B5F /* Pods-AudioSession-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioSession-resources.sh"; sourceTree = "<group>"; };
+		5EC9FCC221CF08710542F74E449B9FE6 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		61C0FF6326E1BE540357B38792281985 /* Pods-AudioSession-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioSession-frameworks.sh"; sourceTree = "<group>"; };
+		6F9B73EB1A07125669840CE190275F4A /* AKSpeech.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AKSpeech.xcconfig; sourceTree = "<group>"; };
+		7293C9D48D96E9459EB74E121F3C5309 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		73E5D58F0D8C7B3173C485C537CAA5BD /* Pods-AudioSession-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudioSession-acknowledgements.plist"; sourceTree = "<group>"; };
+		79B6B85F0E586A3DACF66536A6A22D37 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		7CD87A999AD10231F16ABFF14A044EC1 /* libPods-AudioSession.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AudioSession.a"; path = "libPods-AudioSession.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F932AF07FC99D18743A14DF7899AA31 /* Pods-AudioSessionUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudioSessionUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8211652D4710E36F8C163B33FB74B54A /* Pods-AudioSessionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioSessionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		84E9708B4AAD186209FE612969740CF0 /* AKSpeech-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKSpeech-prefix.pch"; sourceTree = "<group>"; };
+		8886F93A0078F45BDDB3ACA53A4386FC /* Pods-AudioSessionTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AudioSessionTests-dummy.m"; sourceTree = "<group>"; };
+		8A6147CAB5F19CAE1F7B83A323EAA5E0 /* Pods-AudioSessionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioSessionTests.release.xcconfig"; sourceTree = "<group>"; };
+		8BA73D4303A3274AB5952985CB99B40E /* AKSpeech-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AKSpeech-dummy.m"; sourceTree = "<group>"; };
+		8E81B48E98919C472A7A8462121CE4EE /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9699D6F55E4E50E9675B5CC8FDCB78C4 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		99CF7FDE15A1079C1E5324DE1604EF13 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		9B3B07D39A63526C59831A53C1038B79 /* AKASpeechDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKASpeechDefine.h; path = sources/AKASpeechDefine.h; sourceTree = "<group>"; };
+		9BE4ED0E3A08FFE5D171D3A4D5376DA5 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		A0A87A669AFDD05741DD71A2FB8ECB0A /* Pods-AudioSessionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioSessionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0C5C35D8AE1A1E28B03A5FBD927EE16 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		AEC1F936B13A63C47A683A158FB984AF /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		AF3EAB52E0B3A516A3C1D4C258E5DF4D /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BD0DDE9AAF02DA6782F45F7ADD22830E /* libPods-AudioSessionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AudioSessionTests.a"; path = "libPods-AudioSessionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3B18EC39A289AF952D1805BCA13C45 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		C09585E3AAB877093C2CB5F6BF8486D3 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		CF3374B2FF30D1B636ED3FAA4C7A9CC9 /* Pods-AudioSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioSession.debug.xcconfig"; sourceTree = "<group>"; };
+		D39787E7F81802FA31F69516DE37C4F7 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E21C36699304EC0275A0355C738E9BAD /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		E331F6F165E0380873DAF71302FB6D9D /* Pods-AudioSessionUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioSessionUITests-resources.sh"; sourceTree = "<group>"; };
+		E3548FA5DD30E6A3844912EF7805FA7C /* AKSpeechModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSpeechModel.h; path = sources/AKSpeechModel.h; sourceTree = "<group>"; };
+		E5FDA8241E71B554EFE77DE4194020D8 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		EDEA7B057C814737B93741841FFD0AB4 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		F4ECCF5D4FEAC2FCB9C33894C83FD9F0 /* Pods-AudioSessionTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioSessionTests-resources.sh"; sourceTree = "<group>"; };
+		F5EF794517638C404B7E9D2C12171644 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		FB643CBFE7C817F51420A7C6243C485E /* AKSpeechModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKSpeechModel.m; path = sources/AKSpeechModel.m; sourceTree = "<group>"; };
+		FD15CFD11FF714B5433B34CCAD7C74B3 /* Pods-AudioSession-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AudioSession-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1833E6961385A7799BA12F8D94A90C13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98EDDB5C41C2CCA27333E1B7255B7A9E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20EC773E585CB37F3F9E1859AE274481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C51DFD6111800B117F8C6A7D26D5EDD6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD8312A1AEB348F49A81C438DB25115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B56A7D38A399A2F67F9920C9526A66 /* Foundation.framework in Frameworks */,
+				6209E20926D79222E59F58B962BFAA1E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71B047C4C1EDF7D7EDB1CEFB0FA6FE2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27A7925DBB0F6A5E380F413FB58A2EAB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A88E0ECC3EC776811062688878E0E04D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E895814213849DF201F52C1AB41D747F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C9FFBF141A3E628B4DC449B264640D0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F9B73EB1A07125669840CE190275F4A /* AKSpeech.xcconfig */,
+				8BA73D4303A3274AB5952985CB99B40E /* AKSpeech-dummy.m */,
+				84E9708B4AAD186209FE612969740CF0 /* AKSpeech-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AKSpeech";
+			sourceTree = "<group>";
+		};
+		22E466FBAC5704F83BBC30228978C34B /* Pods-AudioSession */ = {
+			isa = PBXGroup;
+			children = (
+				3C0822E8F57E5FADA322FD298BB6A6EF /* Pods-AudioSession-acknowledgements.markdown */,
+				73E5D58F0D8C7B3173C485C537CAA5BD /* Pods-AudioSession-acknowledgements.plist */,
+				FD15CFD11FF714B5433B34CCAD7C74B3 /* Pods-AudioSession-dummy.m */,
+				61C0FF6326E1BE540357B38792281985 /* Pods-AudioSession-frameworks.sh */,
+				5C18B8F70A669AEC05D0803C40F31B5F /* Pods-AudioSession-resources.sh */,
+				CF3374B2FF30D1B636ED3FAA4C7A9CC9 /* Pods-AudioSession.debug.xcconfig */,
+				4C0A79BDE14D694A81842C6F3D6F76D0 /* Pods-AudioSession.release.xcconfig */,
+			);
+			name = "Pods-AudioSession";
+			path = "Target Support Files/Pods-AudioSession";
+			sourceTree = "<group>";
+		};
+		2B8EE7F966BB53D8C4CDBFBD0FE102CB /* AKSpeech */ = {
+			isa = PBXGroup;
+			children = (
+				9B3B07D39A63526C59831A53C1038B79 /* AKASpeechDefine.h */,
+				199104FD2205898A88A68FB9F0D531CA /* AKSpeechMgr.h */,
+				39DE64D328CD7D8CBED868DE0DDC6A71 /* AKSpeechMgr.m */,
+				E3548FA5DD30E6A3844912EF7805FA7C /* AKSpeechModel.h */,
+				FB643CBFE7C817F51420A7C6243C485E /* AKSpeechModel.m */,
+				0C9FFBF141A3E628B4DC449B264640D0 /* Support Files */,
+			);
+			name = AKSpeech;
+			path = AKSpeech;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4F29EB6044A9B24E7512766BCB6A5781 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				468393106676A30904A7D84FE5206570 /* libAKSpeech.a */,
+				4BBAE6C7A8DE705CB21500A11D7B9BDE /* libMasonry.a */,
+				7CD87A999AD10231F16ABFF14A044EC1 /* libPods-AudioSession.a */,
+				BD0DDE9AAF02DA6782F45F7ADD22830E /* libPods-AudioSessionTests.a */,
+				1F8F04C99ABD45F5788DE2100C74ED24 /* libPods-AudioSessionUITests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5891EAA63E2EB8B03B0A3B9BA48FEC01 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				0DD2D8762CE40473410D719D0AD3220D /* MASCompositeConstraint.h */,
+				58C8E8B21142CB77542DFB3AE9D7AF5D /* MASCompositeConstraint.m */,
+				9BE4ED0E3A08FFE5D171D3A4D5376DA5 /* MASConstraint.h */,
+				337D52BFE2CD1FEC146D1921402CFDAD /* MASConstraint.m */,
+				F5EF794517638C404B7E9D2C12171644 /* MASConstraint+Private.h */,
+				9699D6F55E4E50E9675B5CC8FDCB78C4 /* MASConstraintMaker.h */,
+				BE3B18EC39A289AF952D1805BCA13C45 /* MASConstraintMaker.m */,
+				99CF7FDE15A1079C1E5324DE1604EF13 /* MASLayoutConstraint.h */,
+				7293C9D48D96E9459EB74E121F3C5309 /* MASLayoutConstraint.m */,
+				8E81B48E98919C472A7A8462121CE4EE /* Masonry.h */,
+				08CD401C3426F6F9CB5D928243711654 /* MASUtilities.h */,
+				328FF7CE34A3BDDA27807E5ED23CEA8A /* MASViewAttribute.h */,
+				D39787E7F81802FA31F69516DE37C4F7 /* MASViewAttribute.m */,
+				A0C5C35D8AE1A1E28B03A5FBD927EE16 /* MASViewConstraint.h */,
+				03EF300BF498AEDC05A81765FEFC962E /* MASViewConstraint.m */,
+				AF3EAB52E0B3A516A3C1D4C258E5DF4D /* NSArray+MASAdditions.h */,
+				5EC9FCC221CF08710542F74E449B9FE6 /* NSArray+MASAdditions.m */,
+				4595C51BFC4AD529DF5BDB1EC715DA8F /* NSArray+MASShorthandAdditions.h */,
+				01F2FE38E6C342564D44B77B374BA79D /* NSLayoutConstraint+MASDebugAdditions.h */,
+				EDEA7B057C814737B93741841FFD0AB4 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				C09585E3AAB877093C2CB5F6BF8486D3 /* View+MASAdditions.h */,
+				E5FDA8241E71B554EFE77DE4194020D8 /* View+MASAdditions.m */,
+				79B6B85F0E586A3DACF66536A6A22D37 /* View+MASShorthandAdditions.h */,
+				1B8BA6C3F7547D5E1A35D62E3EBD6116 /* ViewController+MASAdditions.h */,
+				27F1FCC9C55F0253803EF98F4DCEAC42 /* ViewController+MASAdditions.m */,
+				ADB119978D314EC55A119580298435C7 /* Support Files */,
+			);
+			name = Masonry;
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		75D1E38CC36D262BF36C9487EB5FDE49 /* Pods-AudioSessionTests */ = {
+			isa = PBXGroup;
+			children = (
+				190DFF0E6A32F7A16EDB2D933C1DFA78 /* Pods-AudioSessionTests-acknowledgements.markdown */,
+				0168E15C05C4DABEB7B3659AB9BF29C7 /* Pods-AudioSessionTests-acknowledgements.plist */,
+				8886F93A0078F45BDDB3ACA53A4386FC /* Pods-AudioSessionTests-dummy.m */,
+				31AF914A5C399909F7CADD5A604B5285 /* Pods-AudioSessionTests-frameworks.sh */,
+				F4ECCF5D4FEAC2FCB9C33894C83FD9F0 /* Pods-AudioSessionTests-resources.sh */,
+				A0A87A669AFDD05741DD71A2FB8ECB0A /* Pods-AudioSessionTests.debug.xcconfig */,
+				8A6147CAB5F19CAE1F7B83A323EAA5E0 /* Pods-AudioSessionTests.release.xcconfig */,
+			);
+			name = "Pods-AudioSessionTests";
+			path = "Target Support Files/Pods-AudioSessionTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				C7E2D55D7327044EB26192AA73485438 /* Pods */,
+				4F29EB6044A9B24E7512766BCB6A5781 /* Products */,
+				99FC4E35E98F33A8E372EC1C467BF920 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		99FC4E35E98F33A8E372EC1C467BF920 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				22E466FBAC5704F83BBC30228978C34B /* Pods-AudioSession */,
+				75D1E38CC36D262BF36C9487EB5FDE49 /* Pods-AudioSessionTests */,
+				F6407A084E60429C98213CC6BD292719 /* Pods-AudioSessionUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		ADB119978D314EC55A119580298435C7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				55FAAD3B445A66653E57A5D5D7623BC4 /* Masonry.xcconfig */,
+				AEC1F936B13A63C47A683A158FB984AF /* Masonry-dummy.m */,
+				E21C36699304EC0275A0355C738E9BAD /* Masonry-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		C7E2D55D7327044EB26192AA73485438 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B8EE7F966BB53D8C4CDBFBD0FE102CB /* AKSpeech */,
+				5891EAA63E2EB8B03B0A3B9BA48FEC01 /* Masonry */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F6407A084E60429C98213CC6BD292719 /* Pods-AudioSessionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C4E333542E5D5F6F66E780CDF715C39 /* Pods-AudioSessionUITests-acknowledgements.markdown */,
+				7F932AF07FC99D18743A14DF7899AA31 /* Pods-AudioSessionUITests-acknowledgements.plist */,
+				1ACF4720B8BC738A2152813D00F49EB3 /* Pods-AudioSessionUITests-dummy.m */,
+				591FC779949A3EC13C68C44B9010156B /* Pods-AudioSessionUITests-frameworks.sh */,
+				E331F6F165E0380873DAF71302FB6D9D /* Pods-AudioSessionUITests-resources.sh */,
+				8211652D4710E36F8C163B33FB74B54A /* Pods-AudioSessionUITests.debug.xcconfig */,
+				377E3B201D050F7A883AC860F0BD72FB /* Pods-AudioSessionUITests.release.xcconfig */,
+			);
+			name = "Pods-AudioSessionUITests";
+			path = "Target Support Files/Pods-AudioSessionUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BDF73468622762862D2FB76ED4AC0D8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E09711F001C49F92A97060414E262B /* MASCompositeConstraint.h in Headers */,
+				4CBE1B46550A3FB90FDD1CB9CBA7B7FE /* MASConstraint+Private.h in Headers */,
+				6249770A7D163B0F3001D5A76C5FA01C /* MASConstraint.h in Headers */,
+				EC48DE078CA5E55922CCE02354D475CD /* MASConstraintMaker.h in Headers */,
+				A6436E3CFFCBFE591E2D2A68ED90CAC6 /* MASLayoutConstraint.h in Headers */,
+				49B903D576E09560C52AA92FDCC31A68 /* Masonry.h in Headers */,
+				1F3BD3BC28432BB5E2F73501E06E4579 /* MASUtilities.h in Headers */,
+				E1E771349813022263F549BDF33CB4BB /* MASViewAttribute.h in Headers */,
+				A83991D7C1373DF66020C2FDFC5D7564 /* MASViewConstraint.h in Headers */,
+				490CA524521F7D444EA58FA915D7E99C /* NSArray+MASAdditions.h in Headers */,
+				E072DA57403C4BFF9B10467BE05604C5 /* NSArray+MASShorthandAdditions.h in Headers */,
+				9934AEA2C891C201D8ED5746FF42FE1B /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				86EE1CB5473A4A07081D8DE3A2C45924 /* View+MASAdditions.h in Headers */,
+				983CB852CBBFBC04C2A6BA407E34F59B /* View+MASShorthandAdditions.h in Headers */,
+				C88F85D3200060BD98FC13EA58121706 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7C89166A30169E594ACEB81D7CEC8E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0034408E963EC3648DA7C49E2F0D05 /* AKASpeechDefine.h in Headers */,
+				FA2EB3F7B60098B7A724F47FE6A4C1D0 /* AKSpeechMgr.h in Headers */,
+				81DF63621ED15CCE09F24464D8E810AE /* AKSpeechModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		113FEE0AB8A5F07C060BC894B938F678 /* AKSpeech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3C6E666769BC87DB633FFCF3FA1DAE3 /* Build configuration list for PBXNativeTarget "AKSpeech" */;
+			buildPhases = (
+				8CB8540A57167CB074101808D2A7CA00 /* Sources */,
+				1833E6961385A7799BA12F8D94A90C13 /* Frameworks */,
+				E7C89166A30169E594ACEB81D7CEC8E3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AKSpeech;
+			productName = AKSpeech;
+			productReference = 468393106676A30904A7D84FE5206570 /* libAKSpeech.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		17C270A1608E1F0B365417804B51150E /* Pods-AudioSessionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C0C03A05489624B455A36AD1430370F /* Build configuration list for PBXNativeTarget "Pods-AudioSessionUITests" */;
+			buildPhases = (
+				DC2435A7825076B8E161EF747CDD04E9 /* Sources */,
+				71B047C4C1EDF7D7EDB1CEFB0FA6FE2D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AudioSessionUITests";
+			productName = "Pods-AudioSessionUITests";
+			productReference = 1F8F04C99ABD45F5788DE2100C74ED24 /* libPods-AudioSessionUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		36A6FCB42D029F78E79E18A56083BDA2 /* Pods-AudioSessionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB135B4CDCFD34A36DECC3484D3DA414 /* Build configuration list for PBXNativeTarget "Pods-AudioSessionTests" */;
+			buildPhases = (
+				00074839B839D55010316F035E09F474 /* Sources */,
+				A88E0ECC3EC776811062688878E0E04D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AudioSessionTests";
+			productName = "Pods-AudioSessionTests";
+			productReference = BD0DDE9AAF02DA6782F45F7ADD22830E /* libPods-AudioSessionTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		88A1E17EEC7F5941A46BBC3272CD0D8A /* Pods-AudioSession */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D62E9AF4AA5849D63FC518ACD5F3430 /* Build configuration list for PBXNativeTarget "Pods-AudioSession" */;
+			buildPhases = (
+				B5EEE191F15B08221B453CBEEA15B866 /* Sources */,
+				20EC773E585CB37F3F9E1859AE274481 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F319BC729E03F7D057C923275B60126 /* PBXTargetDependency */,
+				92B546046CCA8142FF1D3664E0AD4A8A /* PBXTargetDependency */,
+			);
+			name = "Pods-AudioSession";
+			productName = "Pods-AudioSession";
+			productReference = 7CD87A999AD10231F16ABFF14A044EC1 /* libPods-AudioSession.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34CAE1CB89EDBF2E53735CC5D4E5E69F /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				C4BE2DC1E815E7367562323223772531 /* Sources */,
+				6FD8312A1AEB348F49A81C438DB25115 /* Frameworks */,
+				BDF73468622762862D2FB76ED4AC0D8E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = 4BBAE6C7A8DE705CB21500A11D7B9BDE /* libMasonry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4F29EB6044A9B24E7512766BCB6A5781 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				113FEE0AB8A5F07C060BC894B938F678 /* AKSpeech */,
+				9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */,
+				88A1E17EEC7F5941A46BBC3272CD0D8A /* Pods-AudioSession */,
+				36A6FCB42D029F78E79E18A56083BDA2 /* Pods-AudioSessionTests */,
+				17C270A1608E1F0B365417804B51150E /* Pods-AudioSessionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00074839B839D55010316F035E09F474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4F2FA906F03CCC3703C75126689773E /* Pods-AudioSessionTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CB8540A57167CB074101808D2A7CA00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F1DC54C9342A0411572F0D858A93098 /* AKSpeech-dummy.m in Sources */,
+				BD18767A63FB1173CEAD77D21DDE77F8 /* AKSpeechMgr.m in Sources */,
+				64FD86BAD881B0D27E09638220A116F6 /* AKSpeechModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5EEE191F15B08221B453CBEEA15B866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97D889327DF3369DD96123DDD9A850C4 /* Pods-AudioSession-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4BE2DC1E815E7367562323223772531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61CCEA01CBE8EFFA5515E7A0D8635AAE /* MASCompositeConstraint.m in Sources */,
+				89450A58FD91E5B227171FC75160E4EA /* MASConstraint.m in Sources */,
+				DF7F88B58B564EDF169EC0C9CF8E5124 /* MASConstraintMaker.m in Sources */,
+				955BE39896CA35F2A585DC3309E5FDA5 /* MASLayoutConstraint.m in Sources */,
+				68F98758BA84B8EC3472A8C6FD646D16 /* Masonry-dummy.m in Sources */,
+				13635B78121B99E5C03C92506A161607 /* MASViewAttribute.m in Sources */,
+				2DBB74B8B5DDB1F621433DD12BF35102 /* MASViewConstraint.m in Sources */,
+				7BDDE51AF16FA53A09506EDB91E1C3C2 /* NSArray+MASAdditions.m in Sources */,
+				3E8E6916C563B9CB12AA417275FC6EB3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				A1FA046FDFC42676D17FEC387B10D24A /* View+MASAdditions.m in Sources */,
+				D7CE05A743B7ACD50796191FA442814C /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC2435A7825076B8E161EF747CDD04E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC45688E4E3BEABED7570C2CD182B3E /* Pods-AudioSessionUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92B546046CCA8142FF1D3664E0AD4A8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */;
+			targetProxy = 1E6F0A3A45CE9ABCF96C371B93A23F14 /* PBXContainerItemProxy */;
+		};
+		9F319BC729E03F7D057C923275B60126 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AKSpeech;
+			target = 113FEE0AB8A5F07C060BC894B938F678 /* AKSpeech */;
+			targetProxy = 7A3BC438E8B9E7A417341971E2ED4D6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08EBF6AEDC7DDCDE5072ECAF794EC8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 377E3B201D050F7A883AC860F0BD72FB /* Pods-AudioSessionUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		264FFFF8CDB84EA0842621BC6A7518E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8211652D4710E36F8C163B33FB74B54A /* Pods-AudioSessionUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2E03243618247E29A045DC6F18A082D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F9B73EB1A07125669840CE190275F4A /* AKSpeech.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AKSpeech/AKSpeech-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3304AB8ACF73D68067397F6093FCE886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0A87A669AFDD05741DD71A2FB8ECB0A /* Pods-AudioSessionTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3890D7C92DE120C2BA762135796CFA80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44B98826E53B1BFA4FD3E3C6404C1787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A6147CAB5F19CAE1F7B83A323EAA5E0 /* Pods-AudioSessionTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		587B8ECC28E3A9FF4796C121925DC113 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5A6ACE61C4D128598EA7472C87982601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55FAAD3B445A66653E57A5D5D7623BC4 /* Masonry.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6CA42F62CE0652819ED46936FE31E065 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55FAAD3B445A66653E57A5D5D7623BC4 /* Masonry.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7553E2C615911565B38B7AFE0D0E0F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C0A79BDE14D694A81842C6F3D6F76D0 /* Pods-AudioSession.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9BD98D687A2456C6D8F027FB83DD6FC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F9B73EB1A07125669840CE190275F4A /* AKSpeech.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AKSpeech/AKSpeech-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E886599C30CA0FE1BAD922E85DF204EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF3374B2FF30D1B636ED3FAA4C7A9CC9 /* Pods-AudioSession.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C0C03A05489624B455A36AD1430370F /* Build configuration list for PBXNativeTarget "Pods-AudioSessionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				264FFFF8CDB84EA0842621BC6A7518E2 /* Debug */,
+				08EBF6AEDC7DDCDE5072ECAF794EC8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D62E9AF4AA5849D63FC518ACD5F3430 /* Build configuration list for PBXNativeTarget "Pods-AudioSession" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E886599C30CA0FE1BAD922E85DF204EE /* Debug */,
+				7553E2C615911565B38B7AFE0D0E0F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				587B8ECC28E3A9FF4796C121925DC113 /* Debug */,
+				3890D7C92DE120C2BA762135796CFA80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34CAE1CB89EDBF2E53735CC5D4E5E69F /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A6ACE61C4D128598EA7472C87982601 /* Debug */,
+				6CA42F62CE0652819ED46936FE31E065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB135B4CDCFD34A36DECC3484D3DA414 /* Build configuration list for PBXNativeTarget "Pods-AudioSessionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3304AB8ACF73D68067397F6093FCE886 /* Debug */,
+				44B98826E53B1BFA4FD3E3C6404C1787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3C6E666769BC87DB633FFCF3FA1DAE3 /* Build configuration list for PBXNativeTarget "AKSpeech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E03243618247E29A045DC6F18A082D5 /* Debug */,
+				9BD98D687A2456C6D8F027FB83DD6FC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
