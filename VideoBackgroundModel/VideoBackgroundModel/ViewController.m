@@ -31,8 +31,7 @@
     _isPlayingNow = YES;
     
     //后台播放显示信息设置
-    [self setPlayingInfo];
-}
+ }
 
 #pragma mark - 接收方法的设置
 - (void)remoteControlReceivedWithEvent:(UIEvent *)event {

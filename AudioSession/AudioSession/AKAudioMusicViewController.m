@@ -29,26 +29,62 @@
     [playBtn setTitle:@"播放(长)音频" forState:UIControlStateNormal];
     [playBtn addTarget:self action:@selector(onAudioMusicClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:playBtn];
-    playBtn.frame = CGRectMake(100, 100, 200, 30);
+    playBtn.frame = CGRectMake(100, 100, 100, 30);
     
     UIButton *openSessionBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     [openSessionBtn setTitle:@"open audiosession" forState:UIControlStateNormal];
     [openSessionBtn addTarget:self action:@selector(onOpenSessionClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:openSessionBtn];
-    openSessionBtn.frame = CGRectMake(100, 200, 200, 30);
+    openSessionBtn.frame = CGRectMake(100, 200, 100, 30);
     
     UIButton *closeSessionBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     [closeSessionBtn setTitle:@"close audiosession" forState:UIControlStateNormal];
     [closeSessionBtn addTarget:self action:@selector(onCloseSessionClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:closeSessionBtn];
-    closeSessionBtn.frame = CGRectMake(100, 300, 200, 30);
+    closeSessionBtn.frame = CGRectMake(100, 300, 100, 30);
     
     UIButton *stopBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     [stopBtn setTitle:@"停止播放" forState:UIControlStateNormal];
     [stopBtn addTarget:self action:@selector(onStopClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:stopBtn];
     stopBtn.frame = CGRectMake(100, 400, 100, 30);
+    
+    UIButton *playbackBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [playbackBtn setTitle:@"playback" forState:UIControlStateNormal];
+    [playbackBtn addTarget:self action:@selector(onPlaybackClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:playbackBtn];
+    playbackBtn.frame = CGRectMake(250, 100, 100, 30);
+    
+    UIButton *ambientBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [ambientBtn setTitle:@"ambientBtn" forState:UIControlStateNormal];
+    [ambientBtn addTarget:self action:@selector(onAmbientClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:ambientBtn];
+    ambientBtn.frame = CGRectMake(250, 150, 100, 30);
+    
+//    UIButton playbackBtn* = [UIButton buttonWithType:UIButtonTypeSystem];
+//    [playbackBtn setTitle:@"playback" forState:UIControlStateNormal];
+//    [playbackBtn addTarget:self action:@selector(onPlaybackClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:playbackBtn];
+//    playbackBtn.frame = CGRectMake(250, 200, 100, 30);   UIButton playbackBtn* = [UIButton buttonWithType:UIButtonTypeSystem];
+//    [playbackBtn setTitle:@"playback" forState:UIControlStateNormal];
+//    [playbackBtn addTarget:self action:@selector(onPlaybackClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:playbackBtn];
+//    playbackBtn.frame = CGRectMake(250, 250, 100, 30);
+//    
+//    UIButton *playbackBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+//    [playbackBtn setTitle:@"playback" forState:UIControlStateNormal];
+//    [playbackBtn addTarget:self action:@selector(onPlaybackClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:playbackBtn];
+//    playbackBtn.frame = CGRectMake(250, 300, 100, 30);
+//    UIButton playbackBtn* = [UIButton buttonWithType:UIButtonTypeSystem];
+}
 
+- (void)onPlaybackClick:(UIButton *)sender {
+    NSError *error = nil;
+    BOOL result =  [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
+    if (!result) {
+        NSLog(@"errro :%@",error);
+    }
 }
 
 #pragma mark -- custom btn method
