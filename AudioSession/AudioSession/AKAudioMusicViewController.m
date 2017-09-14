@@ -11,6 +11,8 @@
 
 @interface AKAudioMusicViewController ()
 
+@property (nonatomic, strong) AVAudioPlayer *player;
+//@property (nonatomic, strong) AVPlayer *player;
 @end
 
 @implementation AKAudioMusicViewController
@@ -40,6 +42,13 @@
     [closeSessionBtn addTarget:self action:@selector(onCloseSessionClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:closeSessionBtn];
     closeSessionBtn.frame = CGRectMake(100, 300, 200, 30);
+    
+    UIButton *stopBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [stopBtn setTitle:@"停止播放" forState:UIControlStateNormal];
+    [stopBtn addTarget:self action:@selector(onStopClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:stopBtn];
+    stopBtn.frame = CGRectMake(100, 400, 100, 30);
+
 }
 
 #pragma mark -- custom btn method
@@ -56,7 +65,7 @@
 
 - (void)onCloseSessionClick:(UIButton *)sender {
     NSLog(@"关闭音频回话");
-    AudioSessionSetActiveWithFlags(NO, kAudioSessionSetActiveFlag_NotifyOthersOnDeactivation);
+//    AudioSessionSetActiveWithFlags(NO, kAudioSessionSetActiveFlag_NotifyOthersOnDeactivation);
     NSError *error = nil;
     BOOL result = [[AVAudioSession sharedInstance] setActive:NO error:&error];
     if (error) {
@@ -66,16 +75,18 @@
 
 - (void)onAudioMusicClick:(UIButton *)sender {
     NSLog(@"播放音频");
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"yekongzhongzuiliangdexing" ofType:@"mp3"];
-    NSError *error = nil;
-    AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:&error];
-    if (error) {
-        NSLog(@"error :%@",error);
-    }
-    [player prepareToPlay];
-    [player play];
-    
-    
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"那些花儿" ofType:@"mp3"] ];
+    _player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+//    _player = [[AVPlayer alloc] initWithURL:url];
+    [_player play];
+}
+
+- (void)onStopClick:(UIButton *)sender {
+    NSLog(@"停止播放");
+//    [_player pause]; // 这个过程应该还是有缓存的
+    [_player stop]; // 上面两个是audioPlayer，
+  
+//    [_player pause];  // avplayer的内容
 }
 
 @end

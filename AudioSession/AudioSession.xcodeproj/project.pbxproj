@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		41294D031F6A1CA600B3DD95 /* AKAudioMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41294D021F6A1CA600B3DD95 /* AKAudioMusicViewController.m */; };
 		41294D051F6A1D8100B3DD95 /* yekongzhongzuiliangdexing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41294D041F6A1D8100B3DD95 /* yekongzhongzuiliangdexing.mp3 */; };
+		41294D491F6A2A6E00B3DD95 /* 那些花儿.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41294D481F6A2A6E00B3DD95 /* 那些花儿.mp3 */; };
 		41E5A6B91F69186F002EDDD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5A6B81F69186F002EDDD6 /* main.m */; };
 		41E5A6BC1F69186F002EDDD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5A6BB1F69186F002EDDD6 /* AppDelegate.m */; };
 		41E5A6BF1F69186F002EDDD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5A6BE1F69186F002EDDD6 /* ViewController.m */; };
@@ -50,6 +51,7 @@
 		41294D011F6A1CA600B3DD95 /* AKAudioMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAudioMusicViewController.h; sourceTree = "<group>"; };
 		41294D021F6A1CA600B3DD95 /* AKAudioMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAudioMusicViewController.m; sourceTree = "<group>"; };
 		41294D041F6A1D8100B3DD95 /* yekongzhongzuiliangdexing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yekongzhongzuiliangdexing.mp3; sourceTree = "<group>"; };
+		41294D481F6A2A6E00B3DD95 /* 那些花儿.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "那些花儿.mp3"; sourceTree = "<group>"; };
 		41E5A6B41F69186F002EDDD6 /* AudioSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioSession.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E5A6B81F69186F002EDDD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		41E5A6BA1F69186F002EDDD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				41294D011F6A1CA600B3DD95 /* AKAudioMusicViewController.h */,
 				41294D021F6A1CA600B3DD95 /* AKAudioMusicViewController.m */,
 				41294D041F6A1D8100B3DD95 /* yekongzhongzuiliangdexing.mp3 */,
+				41294D481F6A2A6E00B3DD95 /* 那些花儿.mp3 */,
 			);
 			name = AudioMsic;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41294D491F6A2A6E00B3DD95 /* 那些花儿.mp3 in Resources */,
 				41294D051F6A1D8100B3DD95 /* yekongzhongzuiliangdexing.mp3 in Resources */,
 				41E5A6CA1F69186F002EDDD6 /* LaunchScreen.storyboard in Resources */,
 				41E5A6C71F69186F002EDDD6 /* Assets.xcassets in Resources */,
