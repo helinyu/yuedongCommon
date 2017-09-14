@@ -10,7 +10,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 
 @interface ViewController () {
-    AVPlayer *_player;
+    AVAudioPlayer *_player;
     BOOL _isPlayingNow;
 }
 
@@ -25,9 +25,8 @@
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     
     //    设置播放器
-    
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"那些花儿" ofType:@"mp3"] ];
-    _player = [[AVPlayer alloc] initWithURL:url];
+    _player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     [_player play];
     _isPlayingNow = YES;
     
