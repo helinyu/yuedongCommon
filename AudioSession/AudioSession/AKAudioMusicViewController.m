@@ -8,6 +8,7 @@
 
 #import "AKAudioMusicViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface AKAudioMusicViewController ()
 
@@ -22,6 +23,15 @@
 
     [self comInit];
 
+    [self setLockScreen];
+}
+
+- (void)setLockScreen {
+    [[AVAudioSession sharedInstance] setActive:YES error:nil];
+//    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionMixWithOthers error:nil];
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    [self _createRemoteCommandCenter];
 }
 
 - (void)comInit {
@@ -104,7 +114,7 @@
 //    AudioSessionSetActiveWithFlags(NO, kAudioSessionSetActiveFlag_NotifyOthersOnDeactivation);
     NSError *error = nil;
     BOOL result = [[AVAudioSession sharedInstance] setActive:NO error:&error];
-    if (error) {
+    if (!result) {
         NSLog(@"error set active of audio session : %@",error);
     }
 }
@@ -122,7 +132,80 @@
 //    [_player pause]; // 这个过程应该还是有缓存的
     [_player stop]; // 上面两个是audioPlayer，
   
-//    [_player pause];  // avplayer的内容
 }
+
+
+- (void)_createRemoteCommandCenter {
+    if ([UIDevice currentDevice].systemVersion.floatValue >=7.1f) {
+        MPRemoteCommandCenter *cmdCenter = [MPRemoteCommandCenter sharedCommandCenter];
+        [cmdCenter.playCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+            return MPRemoteCommandHandlerStatusSuccess;
+        }];
+        
+        [cmdCenter.pauseCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+            return MPRemoteCommandHandlerStatusSuccess;
+        }];
+        
+        [cmdCenter.nextTrackCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+            NSLog(@"下一首");
+            return MPRemoteCommandHandlerStatusSuccess;
+        }];
+        
+        [cmdCenter.previousTrackCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+            return MPRemoteCommandHandlerStatusSuccess;
+        }];
+        
+        [cmdCenter.changePlaybackPositionCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+            MPChangePlaybackPositionCommandEvent *positionEvent = (MPChangePlaybackPositionCommandEvent *)event;
+            return MPRemoteCommandHandlerStatusSuccess;
+        }];
+    }else{
+        //        7.0 的需要进行处理
+    }
+}
+
+//处理iOS 7
+- (void)remoteControlReceivedWithEvent:(nullable UIEvent *)event NS_AVAILABLE_IOS(4_0) {
+    
+    switch (event.subtype) {
+        case UIEventSubtypeRemoteControlPlay:
+        {
+//            [self playOrPause];
+            break;
+        }
+        case UIEventSubtypeRemoteControlPause:
+        {
+//            [self playOrPause];
+            break;
+        }
+        case UIEventSubtypeRemoteControlNextTrack:
+        {
+            break;
+        }
+        case UIEventSubtypeRemoteControlPreviousTrack:
+        {
+            break;
+        }
+        case UIEventSubtypeRemoteControlBeginSeekingBackward:
+        {
+            break;
+        }
+        case UIEventSubtypeRemoteControlEndSeekingBackward:
+        {
+            break;
+        }
+        case UIEventSubtypeRemoteControlBeginSeekingForward:
+        {
+            break;
+        }
+        case UIEventSubtypeRemoteControlEndSeekingForward:
+        {
+            break;
+        }
+        default:
+            break;
+    }
+}
+
 
 @end

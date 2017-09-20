@@ -14,6 +14,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import <AudioToolbox/AudioSession.h>
+#import "YDAudioSessionMgr.h"
 
 @interface AKTextSpeakerViewController ()
 
@@ -24,6 +25,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+//    SET_PLAYBACK_MIXOPTION_IF_NOT_M7;
+//    SET_PLAYBACK_MIXWITHOTHERS;
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     [self comInit];
     
 }
@@ -52,28 +57,35 @@
 #pragma mark -- custom btn method
 
 - (void)onOpenSessionClick:(UIButton *)sender {
-    NSLog(@"开启音频回话");
-    NSError *error = nil;
-    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
-   BOOL flag = [[AVAudioSession sharedInstance] setActive:YES error:&error];
-    if (!flag) {
-        NSLog(@"error : %@",error);
-    }
+//    NSLog(@"开启音频回话");
+//    NSError *error = nil;
+//    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+//   BOOL flag = [[AVAudioSession sharedInstance] setActive:YES error:&error];
+//    if (!flag) {
+//        NSLog(@"error : %@",error);
+//    }
+//    INCREASE_AUDIOSESSION_ONE;
+    
+    [[AVAudioSession sharedInstance] setActive:YES withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:nil];
+
 }
 
 - (void)onCloseSessionClick:(UIButton *)sender {
-    NSLog(@"关闭音频回话");
-    AudioSessionSetActiveWithFlags(NO, kAudioSessionSetActiveFlag_NotifyOthersOnDeactivation);
-    NSError *error = nil;
-    BOOL result = [[AVAudioSession sharedInstance] setActive:NO error:&error];
-    if (error) {
-        NSLog(@"error set active of audio session : %@",error);
-    }
+    [[AVAudioSession sharedInstance] setActive:NO withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:nil];
+
+//    REDUCE_AUDIOSESSION_ONE;
+//    NSLog(@"关闭音频会话");
+//    AudioSessionSetActiveWithFlags(NO, kAudioSessionSetActiveFlag_NotifyOthersOnDeactivation);
+//    NSError *error = nil;
+//    BOOL result = [[AVAudioSession sharedInstance] setActive:NO error:&error];
+//    if (error) {
+//        NSLog(@"error set active of audio session : %@",error);
+//    }
 }
 
 - (void)onSpeakerClick:(UIButton *)sender {
     AKSpeechModel *item = [AKSpeechModel new];
-    item.contentText = @"先说说iOS应用程序5个状态：停止运行-应用程序已经终止，或者还未启动。 ... 着当应用退至后台，其后台运行仅能持续10分钟便会转至休眠状态。iOS ... 不过拥有了这个接口后，这情况将不复存在，以后推送将能够直接启动后台任务";
+    item.contentText = @"着当应用退至后台，其后台运行仅能持续10分钟便会转至休眠状态。iOS ... 不过拥有了这个接口后，这情况将不复存在，以后推送将能够直接启动后台任务";
     [[AKSpeechMgr shared] speechWithItem:item complete:^(AVSpeechSynthesizer *synthesizer, AVSpeechUtterance *utterance, NSRange characterRange, AKASpeechDelegateType type) {
 //        NSLog(@"text :%@",[utterance.speechString substringWithRange:characterRange]);
     }];
