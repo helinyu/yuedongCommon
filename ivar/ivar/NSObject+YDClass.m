@@ -27,6 +27,20 @@ NSArray* MethodsOfClassFilter(Class cls, NSString *prefix){
             if (name) {
                 nameString = [NSString stringWithUTF8String:name];
             }
+            
+//            if (!prefix) {
+//                class.name = nameString;
+//                class.sel = sel;
+//                [methodObjs addObject:class];
+//            }else{
+//                if ([nameString hasPrefix:prefix]) {
+//                    YDClass *class = [YDClass new];
+//                    class.name = nameString;
+//                    class.sel = sel;
+//                    [methodObjs addObject:class];
+//                }
+//            }
+            
             if ([nameString hasPrefix:prefix]) {
                 YDClass *class = [YDClass new];
                 class.name = nameString;
@@ -59,5 +73,10 @@ NSArray* MethodsOfClass(Class cls){
     return methodObjs;
 }
 
+NSArray *AttributesOfClass(Class cls) {
+    NSArray *attributeObjs = @[].mutableCopy;
+
+    return attributeObjs;
+}
 
 @end

@@ -8,23 +8,46 @@
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import "NSObject+YDClass.h"
+
 
 @interface ViewController () {
     AVAudioPlayer *_player;
     BOOL _isPlayingNow;
 }
-
 @property (nonatomic, strong) UIWebView *webView;
-
 @property (nonatomic, strong) MPMediaItem *medaiItem;
 
 @end
+
+static const char *queuStr= "string";
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self comInit];
+    
+//    [self testClass];
+    
+//    [self comInit];
+    
+    [self testQueue];
+}
+
+- (void)testQueue {
+    dispatch_queue_t queue1 = dispatch_queue_create(queuStr, DISPATCH_QUEUE_SERIAL);
+    dispatch_queue_t queue2 = dispatch_queue_create(queuStr, DISPATCH_QUEUE_SERIAL);
+    
+    NSLog(@"qu1 :%@",queue1);
+    NSLog(@"qu2 : %@",queue2);
+    NSLog(@"quueu task :%@",queue1);
+//    都是会创建这个队列的,看来注意队列是同一个队列
+
+}
+
+- (void)testClass {
+    NSArray *methods = MethodsOfClass([MPRemoteCommandCenter class]);
+    NSLog(@"methods : %@",methods);
 }
 
 - (void)comInit {
@@ -138,6 +161,8 @@
 //                              MPMediaItemPropertyArtwork:artWork
 //                              };
         [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:nil];
+        
+        Class remoteMediaVC = NSClassFromString(@"MPRemoteMediaPickerController");
 
 //        [cmdCenter.previousTrackCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
 //            NSLog(@"上一首");

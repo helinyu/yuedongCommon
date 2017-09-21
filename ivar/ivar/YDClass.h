@@ -11,4 +11,5 @@
 @interface YDClass : NSObject
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, assign) SEL sel;
+@property (nonatomic, copy) NSString *attribute;
 @end

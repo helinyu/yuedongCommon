@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		417C1D951F73B0BE00A92167 /* NSObject+YDClass.h in Sources */ = {isa = PBXBuildFile; fileRef = 417C1D931F73AF1100A92167 /* NSObject+YDClass.h */; };
+		417C1D961F73B0BE00A92167 /* NSObject+YDClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 417C1D921F73AF1100A92167 /* NSObject+YDClass.m */; };
+		417C1D9C1F73B13F00A92167 /* YDClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 417C1D9A1F73B13E00A92167 /* YDClass.m */; };
 		41FE1E1F1F4A875400567FB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE1E1E1F4A875400567FB8 /* AppDelegate.m */; };
 		41FE1E221F4A875500567FB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE1E211F4A875500567FB8 /* ViewController.m */; };
 		41FE1E251F4A875500567FB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41FE1E231F4A875500567FB8 /* Main.storyboard */; };
@@ -37,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		417C1D921F73AF1100A92167 /* NSObject+YDClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YDClass.m"; path = "../../ivar/ivar/NSObject+YDClass.m"; sourceTree = "<group>"; };
+		417C1D931F73AF1100A92167 /* NSObject+YDClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSObject+YDClass.h"; path = "../../ivar/ivar/NSObject+YDClass.h"; sourceTree = "<group>"; };
+		417C1D9A1F73B13E00A92167 /* YDClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YDClass.m; path = ../../ivar/ivar/YDClass.m; sourceTree = "<group>"; };
+		417C1D9B1F73B13F00A92167 /* YDClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YDClass.h; path = ../../ivar/ivar/YDClass.h; sourceTree = "<group>"; };
+		417C1DA01F73B9B300A92167 /* VideoBackgroundModel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VideoBackgroundModel.entitlements; sourceTree = "<group>"; };
 		41FE1E1A1F4A875400567FB8 /* VideoBackgroundModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoBackgroundModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FE1E1D1F4A875400567FB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41FE1E1E1F4A875400567FB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,6 +90,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		417C1D9D1F73B9AE00A92167 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		41FE1E111F4A875400567FB8 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +104,7 @@
 				41FE1E351F4A875500567FB8 /* VideoBackgroundModelTests */,
 				41FE1E401F4A875500567FB8 /* VideoBackgroundModelUITests */,
 				41FE1E1B1F4A875400567FB8 /* Products */,
+				417C1D9D1F73B9AE00A92167 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,12 +121,17 @@
 		41FE1E1C1F4A875400567FB8 /* VideoBackgroundModel */ = {
 			isa = PBXGroup;
 			children = (
+				417C1DA01F73B9B300A92167 /* VideoBackgroundModel.entitlements */,
 				41FE1E1D1F4A875400567FB8 /* AppDelegate.h */,
 				41FE1E1E1F4A875400567FB8 /* AppDelegate.m */,
 				41FE1E201F4A875400567FB8 /* ViewController.h */,
 				41FE1E211F4A875500567FB8 /* ViewController.m */,
 				41FE1E231F4A875500567FB8 /* Main.storyboard */,
 				41FE1E4F1F4A882700567FB8 /* 那些花儿.mp3 */,
+				417C1D931F73AF1100A92167 /* NSObject+YDClass.h */,
+				417C1D921F73AF1100A92167 /* NSObject+YDClass.m */,
+				417C1D9B1F73B13F00A92167 /* YDClass.h */,
+				417C1D9A1F73B13E00A92167 /* YDClass.m */,
 				41FE1E501F4A882700567FB8 /* pushu.jpg */,
 				41FE1E261F4A875500567FB8 /* Assets.xcassets */,
 				41FE1E281F4A875500567FB8 /* LaunchScreen.storyboard */,
@@ -210,6 +231,24 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+							com.apple.HotspotConfiguration = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 0;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 0;
+							};
+							com.apple.Siri = {
+								enabled = 0;
+							};
 						};
 					};
 					41FE1E311F4A875500567FB8 = {
@@ -276,9 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417C1D951F73B0BE00A92167 /* NSObject+YDClass.h in Sources */,
+				417C1D961F73B0BE00A92167 /* NSObject+YDClass.m in Sources */,
 				41FE1E221F4A875500567FB8 /* ViewController.m in Sources */,
 				41FE1E2D1F4A875500567FB8 /* main.m in Sources */,
 				41FE1E1F1F4A875400567FB8 /* AppDelegate.m in Sources */,
+				417C1D9C1F73B13F00A92167 /* YDClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -430,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -444,7 +486,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				INFOPLIST_FILE = VideoBackgroundModel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -461,7 +503,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				INFOPLIST_FILE = VideoBackgroundModel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
