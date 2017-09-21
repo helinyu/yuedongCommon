@@ -16,6 +16,7 @@
 
 @property (nonatomic, strong) UIWebView *webView;
 
+@property (nonatomic, strong) MPMediaItem *medaiItem;
 
 @end
 
@@ -101,7 +102,7 @@
     [cmdCenter.nextTrackCommand removeTarget:self];
 //    cmdCenter.playCommand.enabled = NO;
 //    cmdCenter.pauseCommand.enabled = NO;
-    cmdCenter.nextTrackCommand.enabled = NO;
+//    cmdCenter.nextTrackCommand.enabled = NO;
 }
 
 - (void)_createRemoteCommandCenter {
@@ -121,10 +122,22 @@
 //            return MPRemoteCommandHandlerStatusSuccess;
 //        }];
         
-        [cmdCenter.nextTrackCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
-            NSLog(@"下一首");
-            return MPRemoteCommandHandlerStatusSuccess;
-        }];
+//      [cmdCenter.nextTrackCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+//            NSLog(@"下一首");
+//            return MPRemoteCommandHandlerStatusSuccess;
+//        }];  
+        
+        [cmdCenter.nextTrackCommand addTarget:self action:@selector(onNextclick:)];
+
+        
+        //    <MediaPlayer/MediaPlayer.h>
+//        MPMediaItemArtwork *artWork = [[MPMediaItemArtwork alloc] initWithImage:[UIImage imageNamed:@"pushu.jpg"]];
+        
+//        NSDictionary *dic = @{MPMediaItemPropertyTitle:@"那些花儿",
+//                              MPMediaItemPropertyArtist:@"朴树",
+//                              MPMediaItemPropertyArtwork:artWork
+//                              };
+        [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:nil];
 
 //        [cmdCenter.previousTrackCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
 //            NSLog(@"上一首");
@@ -142,6 +155,10 @@
     }else{
         //        7.0 的需要进行处理
     }
+}
+
+- (void)onNextclick:(id)sender {
+    NSLog(@"下一首");
 }
 
 - (void)onPlayCMDClick:(id)sender {
