@@ -16,6 +16,7 @@
 
 @property (nonatomic, strong) UIWebView *webView;
 
+
 @end
 
 @implementation ViewController
@@ -44,7 +45,13 @@
     [self.view addSubview:webBtn];
     webBtn.frame = CGRectMake(210, 100, 100, 30);
     
-    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 200, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)-200.f)];
+    UIButton *removeCMDBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [removeCMDBtn setTitle:@"删除center" forState:UIControlStateNormal];
+    [removeCMDBtn addTarget:self action:@selector(onRemoveCMDCenterClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:removeCMDBtn];
+    removeCMDBtn.frame = CGRectMake(210, 150, 100, 30);
+    
+    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 300, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)-200.f)];
     _webView.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:_webView];
     
@@ -56,7 +63,7 @@
 
 - (void)onStopPlayClick:(id)sender {
     NSLog(@"停止播放");
-    [[UIApplication sharedApplication] endReceivingRemoteControlEvents];
+//    [[UIApplication sharedApplication] endReceivingRemoteControlEvents];
     [_player stop];
     _player = nil;
     NSError *error = nil;
@@ -74,7 +81,7 @@
 //        NSLog(@"erorro :%@",cateforyError);
 //    }
 //    
-    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+//    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
     NSLog(@"开始播放");
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"那些花儿" ofType:@"mp3"] ];
@@ -84,74 +91,94 @@
     _isPlayingNow = YES;
     
     [self setPlayingInfo];
-//    [self _createRemoteCommandCenter];
+    [self _createRemoteCommandCenter];
+}
+
+- (void)onRemoveCMDCenterClick:(UIButton *)sender {
+    MPRemoteCommandCenter *cmdCenter = [MPRemoteCommandCenter sharedCommandCenter];
+//    [cmdCenter.playCommand removeTarget:self];
+//    [cmdCenter.pauseCommand removeTarget:self];
+    [cmdCenter.nextTrackCommand removeTarget:self];
+//    cmdCenter.playCommand.enabled = NO;
+//    cmdCenter.pauseCommand.enabled = NO;
+    cmdCenter.nextTrackCommand.enabled = NO;
 }
 
 - (void)_createRemoteCommandCenter {
+    
     NSLog(@"cmd center");
     if ([UIDevice currentDevice].systemVersion.floatValue >=7.1f) {
         MPRemoteCommandCenter *cmdCenter = [MPRemoteCommandCenter sharedCommandCenter];
-        
-        [cmdCenter.playCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
-            NSLog(@"播放");
-            return MPRemoteCommandHandlerStatusSuccess;
-        }];
-        
-        [cmdCenter.pauseCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
-            NSLog(@"暂停播放");
-            return MPRemoteCommandHandlerStatusSuccess;
-        }];
+//        [_cmdCenter.playCommand addTarget:self action:@selector(onPlayCMDClick:)];
+//        [_cmdCenter.pauseCommand addTarget:self action:@selector(onPauseCMDClick:)];
+//        [cmdCenter.playCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+//            NSLog(@"播放");
+//            return MPRemoteCommandHandlerStatusSuccess;
+//        }];
+//        
+//        [cmdCenter.pauseCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+//            NSLog(@"暂停播放");
+//            return MPRemoteCommandHandlerStatusSuccess;
+//        }];
         
         [cmdCenter.nextTrackCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
             NSLog(@"下一首");
             return MPRemoteCommandHandlerStatusSuccess;
         }];
+
+//        [cmdCenter.previousTrackCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+//            NSLog(@"上一首");
+//            return MPRemoteCommandHandlerStatusSuccess;
+//        }];
         
-        [cmdCenter.previousTrackCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
-            NSLog(@"上一首");
-            return MPRemoteCommandHandlerStatusSuccess;
-        }];
-        
-        [cmdCenter.changePlaybackPositionCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
-            MPChangePlaybackPositionCommandEvent *positionEvent = (MPChangePlaybackPositionCommandEvent *)event;
-            NSTimeInterval positionTime = positionEvent.positionTime;
-            NSTimeInterval timeScale = 30.f;
-            NSLog(@"change position time ;%f",positionTime);
-            return MPRemoteCommandHandlerStatusSuccess;
-        }];
+//        [cmdCenter.changePlaybackPositionCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+//            MPChangePlaybackPositionCommandEvent *positionEvent = (MPChangePlaybackPositionCommandEvent *)event;
+//            NSTimeInterval positionTime = positionEvent.positionTime;
+//            NSTimeInterval timeScale = 30.f;
+//            NSLog(@"change position time ;%f",positionTime);
+//            return MPRemoteCommandHandlerStatusSuccess;
+//        }];
         
     }else{
         //        7.0 的需要进行处理
     }
 }
 
-#pragma mark - 接收方法的设置
-- (void)remoteControlReceivedWithEvent:(UIEvent *)event {
-    if (event.type == UIEventTypeRemoteControl) {  //判断是否为远程控制
-        switch (event.subtype) {
-            case  UIEventSubtypeRemoteControlPlay:
-                if (!_isPlayingNow) {
-                    [_player play];
-                }
-                _isPlayingNow = !_isPlayingNow;
-                break;
-            case UIEventSubtypeRemoteControlPause:
-                if (_isPlayingNow) {
-                    [_player pause];
-                }
-                _isPlayingNow = !_isPlayingNow;
-                break;
-            case UIEventSubtypeRemoteControlNextTrack:
-                NSLog(@"下一首");
-                break;
-            case UIEventSubtypeRemoteControlPreviousTrack:
-                NSLog(@"上一首 ");
-                break;
-            default:
-                break;
-        }
-    }
+- (void)onPlayCMDClick:(id)sender {
+    NSLog(@"play");
 }
+
+- (void)onPauseCMDClick:(id)sender {
+    NSLog(@"pause");
+}
+
+//#pragma mark - 接收方法的设置
+//- (void)remoteControlReceivedWithEvent:(UIEvent *)event {
+//    if (event.type == UIEventTypeRemoteControl) {  //判断是否为远程控制
+//        switch (event.subtype) {
+//            case  UIEventSubtypeRemoteControlPlay:
+//                if (!_isPlayingNow) {
+//                    [_player play];
+//                }
+//                _isPlayingNow = !_isPlayingNow;
+//                break;
+//            case UIEventSubtypeRemoteControlPause:
+//                if (_isPlayingNow) {
+//                    [_player pause];
+//                }
+//                _isPlayingNow = !_isPlayingNow;
+//                break;
+//            case UIEventSubtypeRemoteControlNextTrack:
+//                NSLog(@"下一首");
+//                break;
+//            case UIEventSubtypeRemoteControlPreviousTrack:
+//                NSLog(@"上一首 ");
+//                break;
+//            default:
+//                break;
+//        }
+//    }
+//}
 
 - (void)setPlayingInfo {
     //    设置后台播放时显示的东西，例如歌曲名字，图片等
@@ -173,7 +200,7 @@
 - (void)viewDidDisappear:(BOOL)animated {
     //取消远程控制
     [self resignFirstResponder];
-    [[UIApplication sharedApplication] endReceivingRemoteControlEvents];
+//    [[UIApplication sharedApplication] endReceivingRemoteControlEvents];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
