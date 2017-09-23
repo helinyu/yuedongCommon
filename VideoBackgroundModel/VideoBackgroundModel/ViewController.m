@@ -11,7 +11,8 @@
 #import "NSObject+YDClass.h"
 
 
-@interface ViewController () {
+@interface ViewController ()<AVAudioPlayerDelegate>
+{
     AVAudioPlayer *_player;
     BOOL _isPlayingNow;
 }
@@ -28,10 +29,44 @@ static const char *queuStr= "string";
     [super viewDidLoad];
     
 //    [self testClass];
-    
-//    [self comInit];
-    
-    [self testQueue];
+    [self comInit];
+//    [self testQueue];
+}
+
+- (void)onBackGroundAudioClick:(id)sender {
+
+}
+
+- (void)onBackGroundAudioNoti:(NSNotification *)noti {
+    NSLog(@"进入后台");
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        for (NSInteger index =0; index < 100; index++) {
+            NSLog(@"主线程");
+            NSError *error = nil;
+            [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
+            if (error) {
+                NSLog(@"mix erroro :%@",error);
+            }else {
+                NSLog(@"success");
+            }
+            [[AVAudioSession sharedInstance] setActive:YES withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:&error];
+            if (error) {
+                NSLog(@" index :%ld ,error : %@",(long)index,error);
+            }else{
+                NSLog(@"success");
+            }
+//        }
+        [self onAudioPlayClick:nil];
+//    });
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        NSLog(@"恢复到前台");
+//      BOOL result =  [[UIApplication sharedApplication] canBecomeFirstResponder];
+//        NSLog(@"result :%d",result);
+//        if (result) {
+//            [[UIApplication sharedApplication] becomeFirstResponder];
+////            [UIApplication sharedApplication] ope;
+//        }
+//    });
 }
 
 - (void)testQueue {
@@ -51,108 +86,225 @@ static const char *queuStr= "string";
 }
 
 - (void)comInit {
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onBackGroundAudioNoti:) name:@"background" object:nil];
+    
+    UIButton *inactiveBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [inactiveBtn setTitle:@"inactive" forState:UIControlStateNormal];
+    [inactiveBtn addTarget:self action:@selector(onInactiveClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:inactiveBtn];
+    inactiveBtn.frame = CGRectMake(150, 50, 100, 30);
+    
+    UIButton *activeBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [activeBtn setTitle:@"active" forState:UIControlStateNormal];
+    [activeBtn addTarget:self action:@selector(onActiveClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:activeBtn];
+    activeBtn.frame = CGRectMake(0, 50, 100, 30);
+
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [btn setTitle:@"播放音频" forState:UIControlStateNormal];
+    [btn setTitle:@"audio play" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(onAudioPlayClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     btn.frame = CGRectMake(100, 100, 100, 30);
     
-    UIButton *stopBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [stopBtn setTitle:@"停止播放" forState:UIControlStateNormal];
-    [stopBtn addTarget:self action:@selector(onStopPlayClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:stopBtn];
-    stopBtn.frame = CGRectMake(100, 150, 100, 30);
+    UIButton *playbackBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [playbackBtn setTitle:@"playback" forState:UIControlStateNormal];
+    [playbackBtn addTarget:self action:@selector(onPlayBackClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:playbackBtn];
+    playbackBtn.frame = CGRectMake(210, 150, 100, 30);
     
-    UIButton *webBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [webBtn setTitle:@"网页加载" forState:UIControlStateNormal];
-    [webBtn addTarget:self action:@selector(onWebClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:webBtn];
-    webBtn.frame = CGRectMake(210, 100, 100, 30);
+    UIButton *ambientBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [ambientBtn setTitle:@"ambient" forState:UIControlStateNormal];
+    [ambientBtn addTarget:self action:@selector(onAmbientClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:ambientBtn];
+    ambientBtn.frame = CGRectMake(100, 150, 100, 30);
+    
+    UIButton *soloAmbientBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [soloAmbientBtn setTitle:@"soloambient" forState:UIControlStateNormal];
+    [soloAmbientBtn addTarget:self action:@selector(onSoloAmbientClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:soloAmbientBtn];
+    soloAmbientBtn.frame = CGRectMake(210, 100, 100, 30);
+
+    UIButton *addCMDBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [addCMDBtn setTitle:@"MultiRoute" forState:UIControlStateNormal];
+    [addCMDBtn addTarget:self action:@selector(onMultiRouteClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:addCMDBtn];
+    addCMDBtn.frame = CGRectMake(0, 120, 98, 30);
+    
+    UIButton *recordBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [recordBtn setTitle:@"record" forState:UIControlStateNormal];
+    [recordBtn addTarget:self action:@selector(onRecordClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:recordBtn];
+    recordBtn.frame = CGRectMake(100, 200, 100, 30);
+
+    UIButton *playAndRecordBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [playAndRecordBtn setTitle:@"playAndRecord" forState:UIControlStateNormal];
+    [playAndRecordBtn addTarget:self action:@selector(onPlayANdRecordClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:playAndRecordBtn];
+    playAndRecordBtn.frame = CGRectMake(100, 250, 100, 30);
+
+    UIButton *audioProcessingBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [audioProcessingBtn setTitle:@"AudioProcessing" forState:UIControlStateNormal];
+    [audioProcessingBtn addTarget:self action:@selector(onAudioProcessingClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:audioProcessingBtn];
+    audioProcessingBtn.frame = CGRectMake(210, 250, 100, 30);
+    
+    UIButton *addcmdBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [addcmdBtn setTitle:@"add cmd" forState:UIControlStateNormal];
+    [addcmdBtn addTarget:self action:@selector(onAddCMDClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:addcmdBtn];
+    addcmdBtn.frame = CGRectMake(0, 300, 100, 30);
     
     UIButton *removeCMDBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [removeCMDBtn setTitle:@"删除center" forState:UIControlStateNormal];
-    [removeCMDBtn addTarget:self action:@selector(onRemoveCMDCenterClick:) forControlEvents:UIControlEventTouchUpInside];
+    [removeCMDBtn setTitle:@"removeCmd" forState:UIControlStateNormal];
+    [removeCMDBtn addTarget:self action:@selector(onRemoveCMDClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:removeCMDBtn];
-    removeCMDBtn.frame = CGRectMake(210, 150, 100, 30);
+    removeCMDBtn.frame = CGRectMake(110, 300, 100, 30);
+
+
     
-    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 300, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)-200.f)];
-    _webView.backgroundColor = [UIColor yellowColor];
-    [self.view addSubview:_webView];
-    
+//    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 300, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)-200.f)];
+//    _webView.backgroundColor = [UIColor yellowColor];
+//    [self.view addSubview:_webView];
+
 }
 
-- (void)onWebClick:(UIButton *)sender {
-    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.33.97:8000/movie/audio.html"]]];
+- (void)onActiveClick:(id)sender {
+    NSLog(@"active ");
+    NSError *error = nil;
+    [[AVAudioSession sharedInstance] setActive:YES withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:&error];
+    if (error) {
+        NSLog(@"recond error:%@",error);
+    }else{
+        NSLog(@"success");
+    }
 }
 
-- (void)onStopPlayClick:(id)sender {
-    NSLog(@"停止播放");
-//    [[UIApplication sharedApplication] endReceivingRemoteControlEvents];
+- (void)onAudioProcessingClick:(id)sender {
+    NSLog(@"audio processing");
+    NSError *error = nil;
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAudioProcessing error:&error];
+    if (error) {
+        NSLog(@"recond error:%@",error);
+    }else{
+        NSLog(@"success");
+    }
+}
+
+- (void)onPlayANdRecordClick:(id)sender {
+    NSLog(@"play and record");
+    NSError *error = nil;
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:&error];
+    if (error) {
+        NSLog(@"recond error:%@",error);
+    }else{
+        NSLog(@"success");
+    }
+}
+
+- (void)onInactiveClick:(id)sender {
+    NSLog(@"inactive ");
     [_player stop];
-    _player = nil;
     NSError *error = nil;
     [[AVAudioSession sharedInstance] setActive:NO withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:&error];
     if (error) {
-        NSLog(@"error");
+        NSLog(@"eror :%@",error);
+    }else {
+        NSLog(@"success ");
+    }
+}
+
+- (void)onRecordClick:(id)sender {
+    NSLog(@"record");
+    NSError *error = nil;
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryRecord error:&error];
+    if (error) {
+        NSLog(@"recond error:%@",error);
+    }else{
+        NSLog(@"success");
+    }
+}
+
+- (void)onAmbientClick:(UIButton *)sender {
+    NSLog(@"Ambient");
+    NSError *error = nil;
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:&error];
+    if (error) {
+        NSLog(@"error :%@",error);
+    }else{
+        NSLog(@"success");
+    }
+//    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.33.97:8000/movie/audio.html"]]];
+}
+
+- (void)onSoloAmbientClick:(id)sender {
+    NSLog(@"SoloAmbient");
+    NSError *error = nil;
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategorySoloAmbient error:&error];
+    if (error) {
+        NSLog(@"eror ;%@",error);
     }
 }
 
 - (void)onAudioPlayClick:(id)sender {
-
-//    NSError *cateforyError = nil;
-//    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategory error:&cateforyError];
-//    if (cateforyError) {
-//        NSLog(@"erorro :%@",cateforyError);
-//    }
-//    
-//    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
-    NSLog(@"开始播放");
-    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    NSLog(@"play");
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"那些花儿" ofType:@"mp3"] ];
-//    _player = [[AVPlayer alloc] initWithURL:url];
     _player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    _player.delegate = self;
     [_player play];
     _isPlayingNow = YES;
-    
+}
+
+- (void)onPlayBackClick:(id)sender {
+    NSLog(@"PlayBack");
+    NSError *error = nil;
+    [[AVAudioSession sharedInstance]setCategory:AVAudioSessionCategoryPlayback error:&error];
+    if (error) {
+        NSLog(@"playback error :%@",error);
+    }
+}
+
+- (void)onAddCMDClick:(UIButton *)sender {
+    NSLog(@"add cmd");
     [self setPlayingInfo];
     [self _createRemoteCommandCenter];
 }
 
-- (void)onRemoveCMDCenterClick:(UIButton *)sender {
-    MPRemoteCommandCenter *cmdCenter = [MPRemoteCommandCenter sharedCommandCenter];
-//    [cmdCenter.playCommand removeTarget:self];
-//    [cmdCenter.pauseCommand removeTarget:self];
-    [cmdCenter.nextTrackCommand removeTarget:self];
-//    cmdCenter.playCommand.enabled = NO;
-//    cmdCenter.pauseCommand.enabled = NO;
-//    cmdCenter.nextTrackCommand.enabled = NO;
+- (void)onRemoveCMDClick:(id)sender {
+    NSLog(@"remove cmd");
+//    [[MPRemoteCommandCenter sharedCommandCenter].nextTrackCommand removeTarget:self];
+//    [[MPRemoteCommandCenter sharedCommandCenter] performSelector:NSSelectorFromString(@"_handleRemoveCommand:") withObject:^void(){
+//        NSLog(@"finished");
+//    }];
+//    [MPRemoteCommandCenter sharedCommandCenter];
+//   NSInteger num = [(UIViewController *)self performSelector:NSSelectorFromString(@"testPerform:") withObject:@3];
+//    NSLog(@"num :%ld",(long)num);
+    [[MPRemoteCommandCenter sharedCommandCenter].nextTrackCommand removeTarget:self action:@selector(onNextclick:)];
+    [[MPRemoteCommandCenter sharedCommandCenter].nextTrackCommand removeTarget:self];
+    [[MPRemoteCommandCenter sharedCommandCenter] stopCommand];
+}
+
+- (NSInteger)testPerform:(NSNumber *)num {
+    return num.integerValue;
+}
+
+- (void)onMultiRouteClick:(UIButton *)sender {
+    NSLog(@"multi route");
+    NSError *error = nil;
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryMultiRoute error:&error];
+    if (error) {
+        NSLog(@"error :%@",error);
+    }
 }
 
 - (void)_createRemoteCommandCenter {
-    
-    NSLog(@"cmd center");
+    NSLog(@"add cmd center");
     if ([UIDevice currentDevice].systemVersion.floatValue >=7.1f) {
         MPRemoteCommandCenter *cmdCenter = [MPRemoteCommandCenter sharedCommandCenter];
-//        [_cmdCenter.playCommand addTarget:self action:@selector(onPlayCMDClick:)];
-//        [_cmdCenter.pauseCommand addTarget:self action:@selector(onPauseCMDClick:)];
-//        [cmdCenter.playCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
-//            NSLog(@"播放");
-//            return MPRemoteCommandHandlerStatusSuccess;
-//        }];
-//        
-//        [cmdCenter.pauseCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
-//            NSLog(@"暂停播放");
-//            return MPRemoteCommandHandlerStatusSuccess;
-//        }];
-        
-//      [cmdCenter.nextTrackCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
-//            NSLog(@"下一首");
-//            return MPRemoteCommandHandlerStatusSuccess;
-//        }];  
-        
+        MPRemoteCommand *cmd = cmdCenter.nextTrackCommand;
+        NSLog(@"cmd ;%@",cmd);
         [cmdCenter.nextTrackCommand addTarget:self action:@selector(onNextclick:)];
 
-        
         //    <MediaPlayer/MediaPlayer.h>
 //        MPMediaItemArtwork *artWork = [[MPMediaItemArtwork alloc] initWithImage:[UIImage imageNamed:@"pushu.jpg"]];
         
@@ -160,23 +312,8 @@ static const char *queuStr= "string";
 //                              MPMediaItemPropertyArtist:@"朴树",
 //                              MPMediaItemPropertyArtwork:artWork
 //                              };
-        [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:nil];
-        
-        Class remoteMediaVC = NSClassFromString(@"MPRemoteMediaPickerController");
-
-//        [cmdCenter.previousTrackCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
-//            NSLog(@"上一首");
-//            return MPRemoteCommandHandlerStatusSuccess;
-//        }];
-        
-//        [cmdCenter.changePlaybackPositionCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
-//            MPChangePlaybackPositionCommandEvent *positionEvent = (MPChangePlaybackPositionCommandEvent *)event;
-//            NSTimeInterval positionTime = positionEvent.positionTime;
-//            NSTimeInterval timeScale = 30.f;
-//            NSLog(@"change position time ;%f",positionTime);
-//            return MPRemoteCommandHandlerStatusSuccess;
-//        }];
-        
+//        [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:nil];
+//        Class remoteMediaVC = NSClassFromString(@"MPRemoteMediaPickerController");
     }else{
         //        7.0 的需要进行处理
     }
@@ -194,39 +331,10 @@ static const char *queuStr= "string";
     NSLog(@"pause");
 }
 
-//#pragma mark - 接收方法的设置
-//- (void)remoteControlReceivedWithEvent:(UIEvent *)event {
-//    if (event.type == UIEventTypeRemoteControl) {  //判断是否为远程控制
-//        switch (event.subtype) {
-//            case  UIEventSubtypeRemoteControlPlay:
-//                if (!_isPlayingNow) {
-//                    [_player play];
-//                }
-//                _isPlayingNow = !_isPlayingNow;
-//                break;
-//            case UIEventSubtypeRemoteControlPause:
-//                if (_isPlayingNow) {
-//                    [_player pause];
-//                }
-//                _isPlayingNow = !_isPlayingNow;
-//                break;
-//            case UIEventSubtypeRemoteControlNextTrack:
-//                NSLog(@"下一首");
-//                break;
-//            case UIEventSubtypeRemoteControlPreviousTrack:
-//                NSLog(@"上一首 ");
-//                break;
-//            default:
-//                break;
-//        }
-//    }
-//}
-
 - (void)setPlayingInfo {
     //    设置后台播放时显示的东西，例如歌曲名字，图片等
     //    <MediaPlayer/MediaPlayer.h>
     MPMediaItemArtwork *artWork = [[MPMediaItemArtwork alloc] initWithImage:[UIImage imageNamed:@"pushu.jpg"]];
-    
     NSDictionary *dic = @{MPMediaItemPropertyTitle:@"那些花儿",
                           MPMediaItemPropertyArtist:@"朴树",
                           MPMediaItemPropertyArtwork:artWork
@@ -247,6 +355,45 @@ static const char *queuStr= "string";
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+#pragma mark -- audio player delegate
+
+/* audioPlayerDidFinishPlaying:successfully: is called when a sound has finished playing. This method is NOT called if the player is stopped due to an interruption. */
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
+    NSLog(@"audioPlayerDidFinishPlaying");
+}
+
+/* if an error occurs while decoding it will be reported to the delegate. */
+- (void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError * __nullable)error {
+    NSLog(@"audioPlayerDecodeErrorDidOccur");
+}
+
+/* AVAudioPlayer INTERRUPTION NOTIFICATIONS ARE DEPRECATED - Use AVAudioSession instead. */
+
+/* audioPlayerBeginInterruption: is called when the audio session has been interrupted while the player was playing. The player will have been paused. */
+- (void)audioPlayerBeginInterruption:(AVAudioPlayer *)player NS_DEPRECATED_IOS(2_2, 8_0) {
+    NSLog(@"audioPlayerBeginInterruption");
+
+}
+
+/* audioPlayerEndInterruption:withOptions: is called when the audio session interruption has ended and this player had been interrupted while playing. */
+/* Currently the only flag is AVAudioSessionInterruptionFlags_ShouldResume. */
+- (void)audioPlayerEndInterruption:(AVAudioPlayer *)player withOptions:(NSUInteger)flags NS_DEPRECATED_IOS(6_0, 8_0) {
+    NSLog(@"audioPlayerEndInterruption");
+
+}
+
+- (void)audioPlayerEndInterruption:(AVAudioPlayer *)player withFlags:(NSUInteger)flags NS_DEPRECATED_IOS(4_0, 6_0) {
+    NSLog(@"audioPlayerEndInterruption");
+
+}
+
+/* audioPlayerEndInterruption: is called when the preferred method, audioPlayerEndInterruption:withFlags:, is not implemented. */
+- (void)audioPlayerEndInterruption:(AVAudioPlayer *)player NS_DEPRECATED_IOS(2_2, 6_0) {
+    NSLog(@"audioPlayerEndInterruption");
+}
+
+
 
 @end
 
