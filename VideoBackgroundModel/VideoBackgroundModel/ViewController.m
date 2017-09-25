@@ -31,6 +31,12 @@ static const char *queuStr= "string";
 //    [self testClass];
     [self comInit];
 //    [self testQueue];
+    
+    [self testAudio];
+}
+
+- (void)testAudio {
+    AVAudioSession
 }
 
 - (void)onBackGroundAudioClick:(id)sender {
@@ -41,20 +47,49 @@ static const char *queuStr= "string";
     NSLog(@"进入后台");
 //    dispatch_async(dispatch_get_main_queue(), ^{
 //        for (NSInteger index =0; index < 100; index++) {
-            NSLog(@"主线程");
+//            NSLog(@"主线程");
             NSError *error = nil;
-            [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
-            if (error) {
-                NSLog(@"mix erroro :%@",error);
-            }else {
-                NSLog(@"success");
-            }
-            [[AVAudioSession sharedInstance] setActive:YES withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:&error];
-            if (error) {
-                NSLog(@" index :%ld ,error : %@",(long)index,error);
-            }else{
-                NSLog(@"success");
-            }
+//            [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionDuckOthers error:&error];
+////            [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
+//            if (error) {
+//                NSLog(@"mix erroro :%@",error);
+//            }else {
+//                NSLog(@"success");
+//            }
+////            [self onSoloAmbientClick:nil];
+//            [[AVAudioSession sharedInstance] setActive:YES withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:&error];
+//            if (error) {
+//                NSLog(@" index12 :%ld ,error : %@",(long)index,error);
+//            }else{
+//                NSLog(@"active2  success");
+//            }
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
+//    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategorySoloAmbient withOptions:AVAudioSessionCategoryOptionDuckOthers error:&error];
+    if (error) {
+        NSLog(@"eroro abm :%@",error);
+    }else{
+        NSLog(@"success : abm ");
+    }
+    
+    [[AVAudioSession sharedInstance] setActive:YES withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:&error];
+    if (error) {
+        NSLog(@"22 index12 :%ld ,error ambient : %@",(long)index,error);
+    }else{
+        NSLog(@"22active2  success ambient");
+    }
+
+//            [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionMixWithOthers error:&error];
+//            if (error) {
+//                NSLog(@"error :%@",error);
+//            }else{
+//                NSLog(@"success 0");
+//            }
+//            [[AVAudioSession sharedInstance] setActive:YES withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:&error];
+//            if (error) {
+//                NSLog(@"again index :%ld ,error : %@",(long)index,error);
+//            }else{
+//                NSLog(@"again active success");
+//            }
 //        }
         [self onAudioPlayClick:nil];
 //    });
@@ -243,6 +278,8 @@ static const char *queuStr= "string";
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategorySoloAmbient error:&error];
     if (error) {
         NSLog(@"eror ;%@",error);
+    }else{
+        NSLog(@"smbient success");
     }
 }
 
@@ -258,7 +295,7 @@ static const char *queuStr= "string";
 - (void)onPlayBackClick:(id)sender {
     NSLog(@"PlayBack");
     NSError *error = nil;
-    [[AVAudioSession sharedInstance]setCategory:AVAudioSessionCategoryPlayback error:&error];
+    [[AVAudioSession sharedInstance]setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionDuckOthers error:&error];
     if (error) {
         NSLog(@"playback error :%@",error);
     }

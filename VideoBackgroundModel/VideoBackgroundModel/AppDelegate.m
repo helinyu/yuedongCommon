@@ -37,7 +37,7 @@
     if (error) {
         NSLog(@"eroror :%@",error);
     }else{
-        NSLog(@"success");
+        NSLog(@"active 0success");
     }
     [[NSNotificationCenter defaultCenter] postNotificationName:@"background" object:nil];
 }
