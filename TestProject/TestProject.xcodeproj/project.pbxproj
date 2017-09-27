@@ -16,6 +16,7 @@
 		41E7F8921F7B8F1400435439 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E7F8911F7B8F1400435439 /* main.m */; };
 		41E7F89C1F7B8F1400435439 /* TestProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E7F89B1F7B8F1400435439 /* TestProjectTests.m */; };
 		41E7F8A71F7B8F1400435439 /* TestProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E7F8A61F7B8F1400435439 /* TestProjectUITests.m */; };
+		41E7F90D1F7B9F3C00435439 /* Snip20170927_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E7F90C1F7B9F0400435439 /* Snip20170927_1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		41E7F9091F7B8F2A00435439 /* YDTopicRecommendCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTopicRecommendCell.m; sourceTree = "<group>"; };
 		41E7F90A1F7B8F2A00435439 /* YDTopicRecommendItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTopicRecommendItem.h; sourceTree = "<group>"; };
 		41E7F90B1F7B8F2A00435439 /* YDTopicRecommendItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTopicRecommendItem.m; sourceTree = "<group>"; };
+		41E7F90C1F7B9F0400435439 /* Snip20170927_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20170927_1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 				41E7F8821F7B8F1400435439 /* ViewController.h */,
 				41E7F8831F7B8F1400435439 /* ViewController.m */,
 				41E7F8851F7B8F1400435439 /* Main.storyboard */,
+				41E7F90C1F7B9F0400435439 /* Snip20170927_1.png */,
 				41E7F88B1F7B8F1400435439 /* Assets.xcassets */,
 				41E7F88D1F7B8F1400435439 /* LaunchScreen.storyboard */,
 				41E7F8901F7B8F1400435439 /* Info.plist */,
@@ -441,6 +444,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41E7F90D1F7B9F3C00435439 /* Snip20170927_1.png in Resources */,
 				41E7F88F1F7B8F1400435439 /* LaunchScreen.storyboard in Resources */,
 				41E7F88C1F7B8F1400435439 /* Assets.xcassets in Resources */,
 				41E7F8871F7B8F1400435439 /* Main.storyboard in Resources */,
