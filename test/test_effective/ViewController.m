@@ -12,6 +12,7 @@
 #import "HLy7ViewController.h"
 #import "HLY8ViewController.h"
 #import "HLYTestModelViewController.h"
+#import "YDEMojiViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -28,8 +29,12 @@
     
     self.title = @"所有实例列表";
     
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 69, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)-69)];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 69, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)-69) style:UITableViewStyleGrouped];
     [self.view addSubview:self.tableView];
+    
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 100.f)];
+    _tableView.tableHeaderView = headerView;
+    headerView.backgroundColor = [UIColor redColor];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
     self.tableView.dataSource = self;
@@ -40,7 +45,8 @@
                         @[@"测试yymodel",[HLYTestModelViewController new]],
                         @[@"第八条特性的理解",[HLY8ViewController new]],
                         @[@"setter 或者getter 使用",[HLy7ViewController new]],
-                        @[@"属性测试",[HLYPropertyViewController new]]
+                        @[@"属性测试",[HLYPropertyViewController new]],
+                        @[@"emoji",[YDEMojiViewController new]],
                         ];
 }
 
@@ -50,6 +56,7 @@
     return self.dataSource.count;
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];
     cell.textLabel.text = self.dataSource[indexPath.row][0];
@@ -58,6 +65,16 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 50;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 44.f;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    UIView *headerview= [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44.f)];
+    headerview.backgroundColor = [UIColor yellowColor];
+    return headerview;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -10,6 +10,7 @@
 		4121725C1F3D81B300A47AD9 /* HLYTestModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121725B1F3D81B300A47AD9 /* HLYTestModelViewController.m */; };
 		4121725F1F3D820800A47AD9 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121725E1F3D820800A47AD9 /* Father.m */; };
 		412172621F3D821B00A47AD9 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 412172611F3D821B00A47AD9 /* Son.m */; };
+		41716EE71F946C1E00D5D927 /* YDEMojiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41716EE61F946C1E00D5D927 /* YDEMojiViewController.m */; };
 		41ABCEF81F0BC51200927CCC /* HLYAnimationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */; };
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
@@ -154,6 +155,8 @@
 		4121725E1F3D820800A47AD9 /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
 		412172601F3D821B00A47AD9 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
 		412172611F3D821B00A47AD9 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		41716EE51F946C1E00D5D927 /* YDEMojiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDEMojiViewController.h; sourceTree = "<group>"; };
+		41716EE61F946C1E00D5D927 /* YDEMojiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDEMojiViewController.m; sourceTree = "<group>"; };
 		41ABCEF61F0BC51200927CCC /* HLYAnimationCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAnimationCollectionViewController.h; sourceTree = "<group>"; };
 		41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAnimationCollectionViewController.m; sourceTree = "<group>"; };
 		41ABCEF91F0BC57700927CCC /* AnimationCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationCollectionViewCell.h; path = "数据解析/AnimationCollectionViewCell.h"; sourceTree = "<group>"; };
@@ -1141,6 +1144,8 @@
 				DCCED7241EF98816001D2474 /* Info.plist */,
 				DCCED71C1EF98816001D2474 /* test_effective.xcdatamodeld */,
 				DCCED7101EF98816001D2474 /* Supporting Files */,
+				41716EE51F946C1E00D5D927 /* YDEMojiViewController.h */,
+				41716EE61F946C1E00D5D927 /* YDEMojiViewController.m */,
 			);
 			path = test_effective;
 			sourceTree = "<group>";
@@ -1308,7 +1313,7 @@
 				TargetAttributes = {
 					DC0504381EBDC45800718AAD = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 5992BVN2L6;
+						DevelopmentTeam = 2ERYNAFK87;
 						ProvisioningStyle = Manual;
 					};
 					DC42B61F1F02BB030065F49E = {
@@ -1612,6 +1617,7 @@
 			files = (
 				412172621F3D821B00A47AD9 /* Son.m in Sources */,
 				DCCED7181EF98816001D2474 /* ViewController.m in Sources */,
+				41716EE71F946C1E00D5D927 /* YDEMojiViewController.m in Sources */,
 				DC38AE681EFFE6A200FB44FE /* EOCPerson.m in Sources */,
 				DCCB56141EFADDEE00A5A44C /* HLy7ViewController.m in Sources */,
 				DCCED7151EF98816001D2474 /* AppDelegate.m in Sources */,
@@ -1805,7 +1811,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 5992BVN2L6;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/test",
@@ -1814,10 +1821,10 @@
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vanchu.apps.guimiquan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "76070d7b-a4e6-41c2-b9bc-8fb897b6dffb";
-				PROVISIONING_PROFILE_SPECIFIER = "guimiquan-dev";
+				PROVISIONING_PROFILE = "9a1ca6a2-6de1-4a9a-9807-dfc1a630237d";
+				PROVISIONING_PROFILE_SPECIFIER = dis_sport_170304;
 			};
 			name = Debug;
 		};
@@ -1836,7 +1843,7 @@
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vanchu.apps.guimiquan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "76070d7b-a4e6-41c2-b9bc-8fb897b6dffb";
 				PROVISIONING_PROFILE_SPECIFIER = "guimiquan-dev";
