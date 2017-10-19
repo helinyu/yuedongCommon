@@ -10,6 +10,7 @@
 		4121725C1F3D81B300A47AD9 /* HLYTestModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121725B1F3D81B300A47AD9 /* HLYTestModelViewController.m */; };
 		4121725F1F3D820800A47AD9 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121725E1F3D820800A47AD9 /* Father.m */; };
 		412172621F3D821B00A47AD9 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 412172611F3D821B00A47AD9 /* Son.m */; };
+		4143FFD61F96EC09001B783F /* YDLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4143FFD51F96EC09001B783F /* YDLabelViewController.m */; };
 		41716EE71F946C1E00D5D927 /* YDEMojiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41716EE61F946C1E00D5D927 /* YDEMojiViewController.m */; };
 		41ABCEF81F0BC51200927CCC /* HLYAnimationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */; };
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
@@ -155,6 +156,8 @@
 		4121725E1F3D820800A47AD9 /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
 		412172601F3D821B00A47AD9 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
 		412172611F3D821B00A47AD9 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		4143FFD41F96EC09001B783F /* YDLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDLabelViewController.h; sourceTree = "<group>"; };
+		4143FFD51F96EC09001B783F /* YDLabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDLabelViewController.m; sourceTree = "<group>"; };
 		41716EE51F946C1E00D5D927 /* YDEMojiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDEMojiViewController.h; sourceTree = "<group>"; };
 		41716EE61F946C1E00D5D927 /* YDEMojiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDEMojiViewController.m; sourceTree = "<group>"; };
 		41ABCEF61F0BC51200927CCC /* HLYAnimationCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAnimationCollectionViewController.h; sourceTree = "<group>"; };
@@ -1146,6 +1149,8 @@
 				DCCED7101EF98816001D2474 /* Supporting Files */,
 				41716EE51F946C1E00D5D927 /* YDEMojiViewController.h */,
 				41716EE61F946C1E00D5D927 /* YDEMojiViewController.m */,
+				4143FFD41F96EC09001B783F /* YDLabelViewController.h */,
+				4143FFD51F96EC09001B783F /* YDLabelViewController.m */,
 			);
 			path = test_effective;
 			sourceTree = "<group>";
@@ -1627,6 +1632,7 @@
 				DCCED7121EF98816001D2474 /* main.m in Sources */,
 				DCCED74A1EF98E62001D2474 /* CustomObj.m in Sources */,
 				4121725F1F3D820800A47AD9 /* Father.m in Sources */,
+				4143FFD61F96EC09001B783F /* YDLabelViewController.m in Sources */,
 				DCCED71E1EF98816001D2474 /* test_effective.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

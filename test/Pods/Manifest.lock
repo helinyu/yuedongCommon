@@ -9,6 +9,9 @@ PODS:
   - DateTools (2.0.0)
   - Masonry (1.0.2)
   - TYPagerController (1.0.2)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -18,6 +21,7 @@ DEPENDENCIES:
   - DateTools (~> 2.0.0)
   - Masonry (~> 1.0.2)
   - TYPagerController
+  - YYKit (~> 1.0.9)
   - YYModel (~> 1.0.4)
 
 SPEC CHECKSUMS:
@@ -28,8 +32,9 @@ SPEC CHECKSUMS:
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   TYPagerController: 0b3e3e589a217ff537d5f78e1e76594beaa4cfc6
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: c6aa4eeae08d4eee3cf173f2e306068db9075570
+PODFILE CHECKSUM: 56959ce59056a662da364db0581e557ccaaeeae3
 
 COCOAPODS: 1.2.1

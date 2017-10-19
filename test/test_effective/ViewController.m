@@ -13,6 +13,7 @@
 #import "HLY8ViewController.h"
 #import "HLYTestModelViewController.h"
 #import "YDEMojiViewController.h"
+#import "YDLabelViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -47,6 +48,7 @@
                         @[@"setter 或者getter 使用",[HLy7ViewController new]],
                         @[@"属性测试",[HLYPropertyViewController new]],
                         @[@"emoji",[YDEMojiViewController new]],
+                        @[@"label 计算高度",[YDLabelViewController new]],
                         ];
 }
 
