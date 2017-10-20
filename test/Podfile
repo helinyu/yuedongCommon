@@ -13,7 +13,7 @@ platform :ios, '7.0'
     pod 'AMapSearch', '~> 4.5.0'
     pod 'AMapLocation', '~> 2.3.0'
     pod 'DateTools', '~> 2.0.0'
-    pod 'YYModel', '~> 1.0.4'
+#    pod 'YYModel', '~> 1.0.4'
    pod 'YYKit', '~> 1.0.9'
 
 target 'test' do
@@ -21,7 +21,7 @@ target 'test' do
 end
 
 target 'test_effective' do
-    pod 'YYModel', '~> 1.0.4'
+#    pod 'YYModel', '~> 1.0.4'
 end
 
 #platform :ios, '8.0'

@@ -8,7 +8,7 @@
 
 #import "HLYTestModelViewController.h"
 #import "Son.h"
-#import "YYModel.h"
+#import "YYKit.h"
 #import <CoreBluetooth/CoreBluetooth.h>
 
 @interface HLYTestModelViewController ()
@@ -25,8 +25,8 @@
     son.name = @"kask";
     son.age = @(19);
     son.UUID = [CBUUID UUIDWithString:@"F000FFC0-0451-4000-B000-000000000000"];
-    NSDictionary *datas = [son yy_modelToJSONObject];
-    NSLog(@"son dictionay : %@",datas);
+//    NSDictionary *datas = [son yy_modelToJSONObject];
+//    NSLog(@"son dictionay : %@",datas);
 }
 
 - (void)didReceiveMemoryWarning {

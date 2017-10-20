@@ -11,6 +11,10 @@
 		4121725F1F3D820800A47AD9 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121725E1F3D820800A47AD9 /* Father.m */; };
 		412172621F3D821B00A47AD9 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 412172611F3D821B00A47AD9 /* Son.m */; };
 		4143FFD61F96EC09001B783F /* YDLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4143FFD51F96EC09001B783F /* YDLabelViewController.m */; };
+		4143FFDD1F98982B001B783F /* HLYResponderiewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4143FFDC1F98982B001B783F /* HLYResponderiewController.m */; };
+		4143FFE01F9899AC001B783F /* YDCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4143FFDF1F9899AC001B783F /* YDCustomView.m */; };
+		4143FFE31F989EB2001B783F /* HLYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4143FFE21F989EB2001B783F /* HLYView.m */; };
+		4143FFE61F98A67F001B783F /* YDVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4143FFE51F98A67F001B783F /* YDVideoView.m */; };
 		41716EE71F946C1E00D5D927 /* YDEMojiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41716EE61F946C1E00D5D927 /* YDEMojiViewController.m */; };
 		41ABCEF81F0BC51200927CCC /* HLYAnimationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */; };
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
@@ -158,6 +162,14 @@
 		412172611F3D821B00A47AD9 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
 		4143FFD41F96EC09001B783F /* YDLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDLabelViewController.h; sourceTree = "<group>"; };
 		4143FFD51F96EC09001B783F /* YDLabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDLabelViewController.m; sourceTree = "<group>"; };
+		4143FFDB1F98982B001B783F /* HLYResponderiewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLYResponderiewController.h; sourceTree = "<group>"; };
+		4143FFDC1F98982B001B783F /* HLYResponderiewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLYResponderiewController.m; sourceTree = "<group>"; };
+		4143FFDE1F9899AC001B783F /* YDCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCustomView.h; sourceTree = "<group>"; };
+		4143FFDF1F9899AC001B783F /* YDCustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDCustomView.m; sourceTree = "<group>"; };
+		4143FFE11F989EB2001B783F /* HLYView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLYView.h; sourceTree = "<group>"; };
+		4143FFE21F989EB2001B783F /* HLYView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLYView.m; sourceTree = "<group>"; };
+		4143FFE41F98A67F001B783F /* YDVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDVideoView.h; sourceTree = "<group>"; };
+		4143FFE51F98A67F001B783F /* YDVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDVideoView.m; sourceTree = "<group>"; };
 		41716EE51F946C1E00D5D927 /* YDEMojiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDEMojiViewController.h; sourceTree = "<group>"; };
 		41716EE61F946C1E00D5D927 /* YDEMojiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDEMojiViewController.m; sourceTree = "<group>"; };
 		41ABCEF61F0BC51200927CCC /* HLYAnimationCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAnimationCollectionViewController.h; sourceTree = "<group>"; };
@@ -460,6 +472,21 @@
 				412172611F3D821B00A47AD9 /* Son.m */,
 			);
 			name = 9;
+			sourceTree = "<group>";
+		};
+		4143FFDA1F989805001B783F /* UIResponder */ = {
+			isa = PBXGroup;
+			children = (
+				4143FFDB1F98982B001B783F /* HLYResponderiewController.h */,
+				4143FFDC1F98982B001B783F /* HLYResponderiewController.m */,
+				4143FFDE1F9899AC001B783F /* YDCustomView.h */,
+				4143FFDF1F9899AC001B783F /* YDCustomView.m */,
+				4143FFE41F98A67F001B783F /* YDVideoView.h */,
+				4143FFE51F98A67F001B783F /* YDVideoView.m */,
+				4143FFE11F989EB2001B783F /* HLYView.h */,
+				4143FFE21F989EB2001B783F /* HLYView.m */,
+			);
+			name = UIResponder;
 			sourceTree = "<group>";
 		};
 		41ABCEF51F0BC4F800927CCC /* collectionview cell 上的动画 */ = {
@@ -1133,6 +1160,7 @@
 		DCCED70F1EF98816001D2474 /* test_effective */ = {
 			isa = PBXGroup;
 			children = (
+				4143FFDA1F989805001B783F /* UIResponder */,
 				412172591F3D812400A47AD9 /* 9 */,
 				DC38AE621EFFE5D600FB44FE /* 8 */,
 				DCCB56111EFADDD400A5A44C /* 7 */,
@@ -1620,6 +1648,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4143FFDD1F98982B001B783F /* HLYResponderiewController.m in Sources */,
 				412172621F3D821B00A47AD9 /* Son.m in Sources */,
 				DCCED7181EF98816001D2474 /* ViewController.m in Sources */,
 				41716EE71F946C1E00D5D927 /* YDEMojiViewController.m in Sources */,
@@ -1630,10 +1659,13 @@
 				DC38AE651EFFE5EF00FB44FE /* HLY8ViewController.m in Sources */,
 				DCCED7471EF98867001D2474 /* HLYPropertyViewController.m in Sources */,
 				DCCED7121EF98816001D2474 /* main.m in Sources */,
+				4143FFE31F989EB2001B783F /* HLYView.m in Sources */,
 				DCCED74A1EF98E62001D2474 /* CustomObj.m in Sources */,
+				4143FFE01F9899AC001B783F /* YDCustomView.m in Sources */,
 				4121725F1F3D820800A47AD9 /* Father.m in Sources */,
 				4143FFD61F96EC09001B783F /* YDLabelViewController.m in Sources */,
 				DCCED71E1EF98816001D2474 /* test_effective.xcdatamodeld in Sources */,
+				4143FFE61F98A67F001B783F /* YDVideoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

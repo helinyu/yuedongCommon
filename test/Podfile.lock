@@ -12,7 +12,6 @@ PODS:
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
-  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AMap3DMap (~> 4.6.1)
@@ -22,7 +21,6 @@ DEPENDENCIES:
   - Masonry (~> 1.0.2)
   - TYPagerController
   - YYKit (~> 1.0.9)
-  - YYModel (~> 1.0.4)
 
 SPEC CHECKSUMS:
   AMap3DMap: eb6656fb441ed7eb310b3c121032e947d4d649e5
@@ -33,8 +31,7 @@ SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   TYPagerController: 0b3e3e589a217ff537d5f78e1e76594beaa4cfc6
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
-  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 56959ce59056a662da364db0581e557ccaaeeae3
+PODFILE CHECKSUM: 915c86f60861e5ffe4c0377c685c4f8d1e3bb238
 
 COCOAPODS: 1.2.1

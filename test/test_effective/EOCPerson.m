@@ -41,7 +41,7 @@
 //接下来是实现hash的方法
 - (NSUInteger)hash {
 //    return 1337;
-    NSString *stringT0Hash = [NSString stringWithFormat:@"%@:%@:%i",_firstName,_lastName,_age];
+    NSString *stringT0Hash = [NSString stringWithFormat:@"%@:%@:%lu",_firstName,_lastName,(unsigned long)_age];
     return [stringT0Hash hash];
 }
 // 若是这样写，在collection中使用这种对象将会产生性能问题，因为collection在检索哈希表时候，会用对象的哈希码索引。
