@@ -11,6 +11,8 @@
 #import <AVFoundation/AVFoundation.h>
 #import "YDVideoView.h"
 #import "Masonry.h"
+#import "HLYView.h"
+#import "HLY2View.h"
 
 @interface HLYResponderiewController ()
 
@@ -36,12 +38,27 @@
 //    [self test0]; /// 实现layer上面的内容处理
 //    [self test1];
 //    [self test2];
-    [self test3];
-//    [self test4];
+//    [self test3];
+    [self test4];
 }
 
 - (void)test4 {
+    HLYView *view1 = [HLYView new];
+    [self.view addSubview:view1];
+    [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.equalTo(self.view).offset(100);
+        make.width.height.mas_equalTo(100);
+    }];
+    view1.backgroundColor = [UIColor yellowColor];
+//    view1.clipsToBounds = NO;
     
+    HLY2View *view2 = [HLY2View new];
+    [view1 addSubview:view2];
+    [view2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.equalTo(view1).offset(50);
+        make.width.height.mas_equalTo(100);
+    }];
+    view2.backgroundColor = [UIColor greenColor];
 }
 
 - (void)test3 {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410A63F71F9995AD006835A9 /* HLY2View.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A63F61F9995AD006835A9 /* HLY2View.m */; };
 		4121725C1F3D81B300A47AD9 /* HLYTestModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121725B1F3D81B300A47AD9 /* HLYTestModelViewController.m */; };
 		4121725F1F3D820800A47AD9 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121725E1F3D820800A47AD9 /* Father.m */; };
 		412172621F3D821B00A47AD9 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 412172611F3D821B00A47AD9 /* Son.m */; };
@@ -154,6 +155,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		410A63F51F9995AD006835A9 /* HLY2View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLY2View.h; sourceTree = "<group>"; };
+		410A63F61F9995AD006835A9 /* HLY2View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLY2View.m; sourceTree = "<group>"; };
 		4121725A1F3D81B300A47AD9 /* HLYTestModelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLYTestModelViewController.h; sourceTree = "<group>"; };
 		4121725B1F3D81B300A47AD9 /* HLYTestModelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLYTestModelViewController.m; sourceTree = "<group>"; };
 		4121725D1F3D820800A47AD9 /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
@@ -485,6 +488,8 @@
 				4143FFE51F98A67F001B783F /* YDVideoView.m */,
 				4143FFE11F989EB2001B783F /* HLYView.h */,
 				4143FFE21F989EB2001B783F /* HLYView.m */,
+				410A63F51F9995AD006835A9 /* HLY2View.h */,
+				410A63F61F9995AD006835A9 /* HLY2View.m */,
 			);
 			name = UIResponder;
 			sourceTree = "<group>";
@@ -1356,8 +1361,8 @@
 					};
 					DCCED70D1EF98816001D2474 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = D2XBEJ6876;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Manual;
 					};
 					DCEE85B41F035DD600CAC9CA = {
 						CreatedOnToolsVersion = 9.0;
@@ -1656,6 +1661,7 @@
 				DCCB56141EFADDEE00A5A44C /* HLy7ViewController.m in Sources */,
 				DCCED7151EF98816001D2474 /* AppDelegate.m in Sources */,
 				4121725C1F3D81B300A47AD9 /* HLYTestModelViewController.m in Sources */,
+				410A63F71F9995AD006835A9 /* HLY2View.m in Sources */,
 				DC38AE651EFFE5EF00FB44FE /* HLY8ViewController.m in Sources */,
 				DCCED7471EF98867001D2474 /* HLYPropertyViewController.m in Sources */,
 				DCCED7121EF98816001D2474 /* main.m in Sources */,
@@ -1919,12 +1925,15 @@
 			baseConfigurationReference = DB411E6BEDAFB83945250F32 /* Pods-test_effective.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				INFOPLIST_FILE = test_effective/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dtspread.apps.test-effective";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "79c440bc-11be-4981-8fe5-8b8a027eec52";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 			};
 			name = Debug;
 		};
@@ -1933,12 +1942,14 @@
 			baseConfigurationReference = A3D8D6271AADA2B1C96C1516 /* Pods-test_effective.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = test_effective/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dtspread.apps.test-effective";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
