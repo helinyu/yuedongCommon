@@ -15,6 +15,12 @@
 #import "YDEMojiViewController.h"
 #import "YDLabelViewController.h"
 #import "HLYResponderiewController.h"
+#import "HLYiOS11ViewController.h"
+#import "YDNSNullViewController.h"
+#import "YDShadowViewController.h"
+#import "YDCoreTextViewController.h"
+#import "YDTestYYLabelViewController.h"
+#import "YDDrawViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -31,12 +37,9 @@
     
     self.title = @"所有实例列表";
     
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 69, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)-69) style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)) style:UITableViewStyleGrouped];
     [self.view addSubview:self.tableView];
-    
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 100.f)];
-    _tableView.tableHeaderView = headerView;
-    headerView.backgroundColor = [UIColor redColor];
+    self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
     self.tableView.dataSource = self;
@@ -50,7 +53,13 @@
                         @[@"属性测试",[HLYPropertyViewController new]],
                         @[@"emoji",[YDEMojiViewController new]],
                         @[@"label 计算高度",[YDLabelViewController new]],
-                        @[@"responder 内容",[HLYResponderiewController new]]
+                        @[@"responder 内容",[HLYResponderiewController new]],
+                        @[@"ios 11的新特性",[HLYiOS11ViewController new]],
+                        @[@"nsnull 上面的内容",[YDNSNullViewController new]],
+                        @[@"view 上的shadow",[YDShadowViewController new]],
+                        @[@"core text 测试",[YDCoreTextViewController new]],
+                        @[@"yylabel test & dicover",[YDTestYYLabelViewController new]],
+                        @[@"UIView 上绘画-文本",[YDDrawViewController new]],
                         ];
 }
 
@@ -72,13 +81,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 44.f;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    UIView *headerview= [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44.f)];
-    headerview.backgroundColor = [UIColor yellowColor];
-    return headerview;
+    return 0.f;
 }
 
 - (void)didReceiveMemoryWarning {
