@@ -25,6 +25,11 @@
 		4143FFE31F989EB2001B783F /* HLYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4143FFE21F989EB2001B783F /* HLYView.m */; };
 		4143FFE61F98A67F001B783F /* YDVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4143FFE51F98A67F001B783F /* YDVideoView.m */; };
 		41716EE71F946C1E00D5D927 /* YDEMojiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41716EE61F946C1E00D5D927 /* YDEMojiViewController.m */; };
+		41729EEB1FA18A2F002E4A44 /* YDPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41729EEA1FA18A2F002E4A44 /* YDPhotoViewController.m */; };
+		41729EF01FA18C91002E4A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41729EEF1FA18C90002E4A44 /* Assets.xcassets */; };
+		41729EF11FA18C91002E4A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41729EEF1FA18C90002E4A44 /* Assets.xcassets */; };
+		41729EF21FA18C91002E4A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41729EEF1FA18C90002E4A44 /* Assets.xcassets */; };
+		41729EF31FA18C91002E4A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41729EEF1FA18C90002E4A44 /* Assets.xcassets */; };
 		41ABCEF81F0BC51200927CCC /* HLYAnimationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */; };
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
@@ -143,7 +148,6 @@
 		DCCED7181EF98816001D2474 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCED7171EF98816001D2474 /* ViewController.m */; };
 		DCCED71B1EF98816001D2474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCCED7191EF98816001D2474 /* Main.storyboard */; };
 		DCCED71E1EF98816001D2474 /* test_effective.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCCED71C1EF98816001D2474 /* test_effective.xcdatamodeld */; };
-		DCCED7201EF98816001D2474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCCED71F1EF98816001D2474 /* Assets.xcassets */; };
 		DCCED7231EF98816001D2474 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCCED7211EF98816001D2474 /* LaunchScreen.storyboard */; };
 		DCCED7471EF98867001D2474 /* HLYPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCED7461EF98867001D2474 /* HLYPropertyViewController.m */; };
 		DCCED74A1EF98E62001D2474 /* CustomObj.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCED7491EF98E62001D2474 /* CustomObj.m */; };
@@ -200,6 +204,9 @@
 		4143FFE51F98A67F001B783F /* YDVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDVideoView.m; sourceTree = "<group>"; };
 		41716EE51F946C1E00D5D927 /* YDEMojiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDEMojiViewController.h; sourceTree = "<group>"; };
 		41716EE61F946C1E00D5D927 /* YDEMojiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDEMojiViewController.m; sourceTree = "<group>"; };
+		41729EE91FA18A2F002E4A44 /* YDPhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDPhotoViewController.h; sourceTree = "<group>"; };
+		41729EEA1FA18A2F002E4A44 /* YDPhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDPhotoViewController.m; sourceTree = "<group>"; };
+		41729EEF1FA18C90002E4A44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41ABCEF61F0BC51200927CCC /* HLYAnimationCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAnimationCollectionViewController.h; sourceTree = "<group>"; };
 		41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAnimationCollectionViewController.m; sourceTree = "<group>"; };
 		41ABCEF91F0BC57700927CCC /* AnimationCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationCollectionViewCell.h; path = "数据解析/AnimationCollectionViewCell.h"; sourceTree = "<group>"; };
@@ -422,7 +429,6 @@
 		DCCED7171EF98816001D2474 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DCCED71A1EF98816001D2474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCCED71D1EF98816001D2474 /* test_effective.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = test_effective.xcdatamodel; sourceTree = "<group>"; };
-		DCCED71F1EF98816001D2474 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCCED7221EF98816001D2474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCCED7241EF98816001D2474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCCED7451EF98867001D2474 /* HLYPropertyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYPropertyViewController.h; sourceTree = "<group>"; };
@@ -576,6 +582,15 @@
 				410A63F61F9995AD006835A9 /* HLY2View.m */,
 			);
 			name = UIResponder;
+			sourceTree = "<group>";
+		};
+		41729EE81FA18A0A002E4A44 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				41729EE91FA18A2F002E4A44 /* YDPhotoViewController.h */,
+				41729EEA1FA18A2F002E4A44 /* YDPhotoViewController.m */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 		41ABCEF51F0BC4F800927CCC /* collectionview cell 上的动画 */ = {
@@ -1249,8 +1264,9 @@
 		DCCED70F1EF98816001D2474 /* test_effective */ = {
 			isa = PBXGroup;
 			children = (
-				411F86251F9E0F8500C195AC /* YDDraw */,
 				411F86211F9E034D00C195AC /* YYlabel */,
+				41729EE81FA18A0A002E4A44 /* image */,
+				411F86251F9E0F8500C195AC /* YDDraw */,
 				411F861A1F9DD40F00C195AC /* CoreText */,
 				4133E8B31F9D9BEE004B3242 /* Shadow */,
 				4133E8AF1F9D94B8004B3242 /* NSNull */,
@@ -1265,10 +1281,10 @@
 				DCCED7161EF98816001D2474 /* ViewController.h */,
 				DCCED7171EF98816001D2474 /* ViewController.m */,
 				DCCED7191EF98816001D2474 /* Main.storyboard */,
-				DCCED71F1EF98816001D2474 /* Assets.xcassets */,
 				DCCED7211EF98816001D2474 /* LaunchScreen.storyboard */,
 				DCCED7241EF98816001D2474 /* Info.plist */,
 				DCCED71C1EF98816001D2474 /* test_effective.xcdatamodeld */,
+				41729EEF1FA18C90002E4A44 /* Assets.xcassets */,
 				DCCED7101EF98816001D2474 /* Supporting Files */,
 				41716EE51F946C1E00D5D927 /* YDEMojiViewController.h */,
 				41716EE61F946C1E00D5D927 /* YDEMojiViewController.m */,
@@ -1492,6 +1508,7 @@
 				DC7FF2721ED9286900FC6AE4 /* Images.xcassets in Resources */,
 				DC783F051EE6818600CF132C /* HLYCollectionViewCell.xib in Resources */,
 				DCAB14881EF930BE0062942F /* Snip20170620_1.png in Resources */,
+				41729EF01FA18C91002E4A44 /* Assets.xcassets in Resources */,
 				DC04102B1EF817CF000B69A3 /* Audio.xcassets in Resources */,
 				DC27A62E1ED338B0001CE499 /* storyboard.storyboard in Resources */,
 				DC05044C1EBDC45900718AAD /* Assets.xcassets in Resources */,
@@ -1507,6 +1524,7 @@
 			files = (
 				DC42B6351F02BB040065F49E /* LaunchScreen.storyboard in Resources */,
 				DC42B6321F02BB040065F49E /* Assets.xcassets in Resources */,
+				41729EF21FA18C91002E4A44 /* Assets.xcassets in Resources */,
 				DC42B62D1F02BB040065F49E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1516,7 +1534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCCED7231EF98816001D2474 /* LaunchScreen.storyboard in Resources */,
-				DCCED7201EF98816001D2474 /* Assets.xcassets in Resources */,
+				41729EF11FA18C91002E4A44 /* Assets.xcassets in Resources */,
 				DCCED71B1EF98816001D2474 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1529,6 +1547,7 @@
 				DCEE85C61F035DD700CAC9CA /* LaunchScreen.storyboard in Resources */,
 				DCEE85C31F035DD700CAC9CA /* Assets.xcassets in Resources */,
 				DCEE85C11F035DD700CAC9CA /* Main.storyboard in Resources */,
+				41729EF31FA18C91002E4A44 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1767,6 +1786,7 @@
 				4143FFD61F96EC09001B783F /* YDLabelViewController.m in Sources */,
 				DCCED71E1EF98816001D2474 /* test_effective.xcdatamodeld in Sources */,
 				411F86201F9DF4B100C195AC /* YDVerticalView.m in Sources */,
+				41729EEB1FA18A2F002E4A44 /* YDPhotoViewController.m in Sources */,
 				4143FFE61F98A67F001B783F /* YDVideoView.m in Sources */,
 				4133E8B61F9D9BFD004B3242 /* YDShadowViewController.m in Sources */,
 				411F86241F9E035F00C195AC /* YDTestYYLabelViewController.m in Sources */,

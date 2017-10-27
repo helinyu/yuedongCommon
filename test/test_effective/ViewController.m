@@ -21,6 +21,7 @@
 #import "YDCoreTextViewController.h"
 #import "YDTestYYLabelViewController.h"
 #import "YDDrawViewController.h"
+#import "YDPhotoViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -60,6 +61,7 @@
                         @[@"core text 测试",[YDCoreTextViewController new]],
                         @[@"yylabel test & dicover",[YDTestYYLabelViewController new]],
                         @[@"UIView 上绘画-文本",[YDDrawViewController new]],
+                        @[@"图片 选择",[YDPhotoViewController new]],
                         ];
 }
 
