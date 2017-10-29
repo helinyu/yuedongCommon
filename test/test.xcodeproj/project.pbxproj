@@ -34,6 +34,7 @@
 		41729EF31FA18C91002E4A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41729EEF1FA18C90002E4A44 /* Assets.xcassets */; };
 		41ABCEF81F0BC51200927CCC /* HLYAnimationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */; };
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
+		41B1B8DB1FA593720008D317 /* YDImgPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B1B8D91FA593710008D317 /* YDImgPickerViewController.m */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
 		41E0D8E21F0CDBA500E16E9E /* HLYShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8E11F0CDBA500E16E9E /* HLYShapeLayerViewController.m */; };
 		B79C5E7C731D80DF88CB4722 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */; };
@@ -217,6 +218,8 @@
 		41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAnimationCollectionViewController.m; sourceTree = "<group>"; };
 		41ABCEF91F0BC57700927CCC /* AnimationCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationCollectionViewCell.h; path = "数据解析/AnimationCollectionViewCell.h"; sourceTree = "<group>"; };
 		41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimationCollectionViewCell.m; path = "数据解析/AnimationCollectionViewCell.m"; sourceTree = "<group>"; };
+		41B1B8D91FA593710008D317 /* YDImgPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDImgPickerViewController.m; sourceTree = "<group>"; };
+		41B1B8DA1FA593710008D317 /* YDImgPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDImgPickerViewController.h; sourceTree = "<group>"; };
 		41E0D8D81F0C785D00E16E9E /* YDBgImageStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBgImageStatusView.h; sourceTree = "<group>"; };
 		41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBgImageStatusView.m; sourceTree = "<group>"; };
 		41E0D8E01F0CDBA500E16E9E /* HLYShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYShapeLayerViewController.h; sourceTree = "<group>"; };
@@ -614,6 +617,15 @@
 				41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */,
 			);
 			name = "collectionview cell 上的动画";
+			sourceTree = "<group>";
+		};
+		41B1B8D51FA592DF0008D317 /* collecction */ = {
+			isa = PBXGroup;
+			children = (
+				41B1B8DA1FA593710008D317 /* YDImgPickerViewController.h */,
+				41B1B8D91FA593710008D317 /* YDImgPickerViewController.m */,
+			);
+			name = collecction;
 			sourceTree = "<group>";
 		};
 		41E0D8DF1F0CDB8800E16E9E /* CAShapeLayer */ = {
@@ -1274,6 +1286,7 @@
 		DCCED70F1EF98816001D2474 /* test_effective */ = {
 			isa = PBXGroup;
 			children = (
+				41B1B8D51FA592DF0008D317 /* collecction */,
 				411F86211F9E034D00C195AC /* YYlabel */,
 				41729EE81FA18A0A002E4A44 /* image */,
 				411F86251F9E0F8500C195AC /* YDDraw */,
@@ -1782,6 +1795,7 @@
 				DCCB56141EFADDEE00A5A44C /* HLy7ViewController.m in Sources */,
 				DCCED7151EF98816001D2474 /* AppDelegate.m in Sources */,
 				411F861D1F9DD41C00C195AC /* YDCoreTextViewController.m in Sources */,
+				41B1B8DB1FA593720008D317 /* YDImgPickerViewController.m in Sources */,
 				4121725C1F3D81B300A47AD9 /* HLYTestModelViewController.m in Sources */,
 				411F862B1F9E10C200C195AC /* YDDrawView.m in Sources */,
 				410A63F71F9995AD006835A9 /* HLY2View.m in Sources */,

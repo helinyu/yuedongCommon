@@ -22,6 +22,7 @@
 #import "YDTestYYLabelViewController.h"
 #import "YDDrawViewController.h"
 #import "YDPhotoViewController.h"
+#import "YDImgPickerViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -62,6 +63,7 @@
                         @[@"yylabel test & dicover",[YDTestYYLabelViewController new]],
                         @[@"UIView 上绘画-文本",[YDDrawViewController new]],
                         @[@"图片 选择",[YDPhotoViewController new]],
+                        @[@"collectionview 为什么渲染不出来？ 测试",[YDImgPickerViewController new]],
                         ];
 }
 
@@ -70,7 +72,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.dataSource.count;
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];

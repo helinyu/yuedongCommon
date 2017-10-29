@@ -13,7 +13,7 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <Photos/Photos.h>
 
-@interface YDPhotoViewController ()<UICollectionViewDelegateFlowLayout,UICollectionViewDataSource,PHPhotoLibraryChangeObserver>
+@interface YDPhotoViewController ()<UICollectionViewDelegateFlowLayout,UICollectionViewDataSource>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 
@@ -41,8 +41,8 @@
     _collectionView.delegate = self;
 
     
-//    [self test0];
-    [self test1];
+    [self test0];
+//    [self test1];
 }
 
 - (void)test1 {
