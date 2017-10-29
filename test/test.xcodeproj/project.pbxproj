@@ -38,6 +38,11 @@
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
 		41B1B8DB1FA593720008D317 /* YDImgPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B1B8D91FA593710008D317 /* YDImgPickerViewController.m */; };
 		41C7E7711FA5E4EB00F93E05 /* YDSingleTitleCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7E7701FA5E4EB00F93E05 /* YDSingleTitleCCell.m */; };
+		41C7E7751FA62D3200F93E05 /* YDIos9BeforeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7E7741FA62D3200F93E05 /* YDIos9BeforeViewController.m */; };
+		41C7E77E1FA62E9700F93E05 /* XWCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41C7E7791FA62E9600F93E05 /* XWCell.xib */; };
+		41C7E77F1FA62E9700F93E05 /* XWCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7E77A1FA62E9600F93E05 /* XWCell.m */; };
+		41C7E7801FA62E9700F93E05 /* XWCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7E77C1FA62E9700F93E05 /* XWCellModel.m */; };
+		41C7E7831FA6321900F93E05 /* XWDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7E7821FA6321900F93E05 /* XWDragCellCollectionView.m */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
 		41E0D8E21F0CDBA500E16E9E /* HLYShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8E11F0CDBA500E16E9E /* HLYShapeLayerViewController.m */; };
 		B79C5E7C731D80DF88CB4722 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */; };
@@ -229,6 +234,15 @@
 		41B1B8DA1FA593710008D317 /* YDImgPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDImgPickerViewController.h; sourceTree = "<group>"; };
 		41C7E76F1FA5E4EB00F93E05 /* YDSingleTitleCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDSingleTitleCCell.h; sourceTree = "<group>"; };
 		41C7E7701FA5E4EB00F93E05 /* YDSingleTitleCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDSingleTitleCCell.m; sourceTree = "<group>"; };
+		41C7E7731FA62D3200F93E05 /* YDIos9BeforeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDIos9BeforeViewController.h; sourceTree = "<group>"; };
+		41C7E7741FA62D3200F93E05 /* YDIos9BeforeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDIos9BeforeViewController.m; sourceTree = "<group>"; };
+		41C7E7791FA62E9600F93E05 /* XWCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XWCell.xib; sourceTree = "<group>"; };
+		41C7E77A1FA62E9600F93E05 /* XWCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCell.m; sourceTree = "<group>"; };
+		41C7E77B1FA62E9600F93E05 /* XWCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCell.h; sourceTree = "<group>"; };
+		41C7E77C1FA62E9700F93E05 /* XWCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCellModel.m; sourceTree = "<group>"; };
+		41C7E77D1FA62E9700F93E05 /* XWCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCellModel.h; sourceTree = "<group>"; };
+		41C7E7811FA6321800F93E05 /* XWDragCellCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDragCellCollectionView.h; sourceTree = "<group>"; };
+		41C7E7821FA6321900F93E05 /* XWDragCellCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDragCellCollectionView.m; sourceTree = "<group>"; };
 		41E0D8D81F0C785D00E16E9E /* YDBgImageStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBgImageStatusView.h; sourceTree = "<group>"; };
 		41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBgImageStatusView.m; sourceTree = "<group>"; };
 		41E0D8E01F0CDBA500E16E9E /* HLYShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYShapeLayerViewController.h; sourceTree = "<group>"; };
@@ -648,6 +662,22 @@
 				41B1B8D91FA593710008D317 /* YDImgPickerViewController.m */,
 			);
 			name = collecction;
+			sourceTree = "<group>";
+		};
+		41C7E7721FA62D0600F93E05 /* ios 9 之前的内容 */ = {
+			isa = PBXGroup;
+			children = (
+				41C7E77B1FA62E9600F93E05 /* XWCell.h */,
+				41C7E77A1FA62E9600F93E05 /* XWCell.m */,
+				41C7E7791FA62E9600F93E05 /* XWCell.xib */,
+				41C7E77D1FA62E9700F93E05 /* XWCellModel.h */,
+				41C7E77C1FA62E9700F93E05 /* XWCellModel.m */,
+				41C7E7811FA6321800F93E05 /* XWDragCellCollectionView.h */,
+				41C7E7821FA6321900F93E05 /* XWDragCellCollectionView.m */,
+				41C7E7731FA62D3200F93E05 /* YDIos9BeforeViewController.h */,
+				41C7E7741FA62D3200F93E05 /* YDIos9BeforeViewController.m */,
+			);
+			name = "ios 9 之前的内容";
 			sourceTree = "<group>";
 		};
 		41E0D8DF1F0CDB8800E16E9E /* CAShapeLayer */ = {
@@ -1308,6 +1338,7 @@
 		DCCED70F1EF98816001D2474 /* test_effective */ = {
 			isa = PBXGroup;
 			children = (
+				41C7E7721FA62D0600F93E05 /* ios 9 之前的内容 */,
 				411C6E711FA5A63300FA2F5F /* Layout */,
 				41B1B8D51FA592DF0008D317 /* collecction */,
 				411F86211F9E034D00C195AC /* YYlabel */,
@@ -1581,6 +1612,7 @@
 			files = (
 				DCCED7231EF98816001D2474 /* LaunchScreen.storyboard in Resources */,
 				41729EF11FA18C91002E4A44 /* Assets.xcassets in Resources */,
+				41C7E77E1FA62E9700F93E05 /* XWCell.xib in Resources */,
 				DCCED71B1EF98816001D2474 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1814,13 +1846,16 @@
 				41C7E7711FA5E4EB00F93E05 /* YDSingleTitleCCell.m in Sources */,
 				41716EE71F946C1E00D5D927 /* YDEMojiViewController.m in Sources */,
 				DC38AE681EFFE6A200FB44FE /* EOCPerson.m in Sources */,
+				41C7E7751FA62D3200F93E05 /* YDIos9BeforeViewController.m in Sources */,
 				415669D41FA328FE00629AC7 /* YDAlbumMgr.m in Sources */,
 				4133E8B21F9D9514004B3242 /* YDNSNullViewController.m in Sources */,
 				DCCB56141EFADDEE00A5A44C /* HLy7ViewController.m in Sources */,
 				411C6E741FA5A65A00FA2F5F /* YDMoveLayoutViewController.m in Sources */,
 				DCCED7151EF98816001D2474 /* AppDelegate.m in Sources */,
+				41C7E77F1FA62E9700F93E05 /* XWCell.m in Sources */,
 				411F861D1F9DD41C00C195AC /* YDCoreTextViewController.m in Sources */,
 				41B1B8DB1FA593720008D317 /* YDImgPickerViewController.m in Sources */,
+				41C7E7831FA6321900F93E05 /* XWDragCellCollectionView.m in Sources */,
 				4121725C1F3D81B300A47AD9 /* HLYTestModelViewController.m in Sources */,
 				411F862B1F9E10C200C195AC /* YDDrawView.m in Sources */,
 				410A63F71F9995AD006835A9 /* HLY2View.m in Sources */,
@@ -1841,6 +1876,7 @@
 				41729EEB1FA18A2F002E4A44 /* YDPhotoViewController.m in Sources */,
 				4143FFE61F98A67F001B783F /* YDVideoView.m in Sources */,
 				4133E8B61F9D9BFD004B3242 /* YDShadowViewController.m in Sources */,
+				41C7E7801FA62E9700F93E05 /* XWCellModel.m in Sources */,
 				411F86241F9E035F00C195AC /* YDTestYYLabelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2098,7 +2134,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				INFOPLIST_FILE = test_effective/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2115,7 +2151,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = test_effective/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -15,7 +15,6 @@
 @property (nonatomic, strong) UICollectionViewFlowLayout *flowLayout;
 @property (nonatomic, strong) NSMutableArray *array;
 @property (nonatomic, strong) UILongPressGestureRecognizer *longPress;
-
 @property (nonatomic, strong) NSIndexPath *selectedIndexPath;
 
 @end
