@@ -24,6 +24,8 @@
 		4143FFE01F9899AC001B783F /* YDCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4143FFDF1F9899AC001B783F /* YDCustomView.m */; };
 		4143FFE31F989EB2001B783F /* HLYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4143FFE21F989EB2001B783F /* HLYView.m */; };
 		4143FFE61F98A67F001B783F /* YDVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4143FFE51F98A67F001B783F /* YDVideoView.m */; };
+		415669D11FA326B300629AC7 /* YDSingleImgCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 415669CF1FA326B300629AC7 /* YDSingleImgCCell.m */; };
+		415669D41FA328FE00629AC7 /* YDAlbumMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 415669D31FA328FE00629AC7 /* YDAlbumMgr.m */; };
 		41716EE71F946C1E00D5D927 /* YDEMojiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41716EE61F946C1E00D5D927 /* YDEMojiViewController.m */; };
 		41729EEB1FA18A2F002E4A44 /* YDPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41729EEA1FA18A2F002E4A44 /* YDPhotoViewController.m */; };
 		41729EF01FA18C91002E4A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41729EEF1FA18C90002E4A44 /* Assets.xcassets */; };
@@ -202,6 +204,10 @@
 		4143FFE21F989EB2001B783F /* HLYView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLYView.m; sourceTree = "<group>"; };
 		4143FFE41F98A67F001B783F /* YDVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDVideoView.h; sourceTree = "<group>"; };
 		4143FFE51F98A67F001B783F /* YDVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDVideoView.m; sourceTree = "<group>"; };
+		415669CF1FA326B300629AC7 /* YDSingleImgCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSingleImgCCell.m; sourceTree = "<group>"; };
+		415669D01FA326B300629AC7 /* YDSingleImgCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSingleImgCCell.h; sourceTree = "<group>"; };
+		415669D21FA328FE00629AC7 /* YDAlbumMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAlbumMgr.h; sourceTree = "<group>"; };
+		415669D31FA328FE00629AC7 /* YDAlbumMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAlbumMgr.m; sourceTree = "<group>"; };
 		41716EE51F946C1E00D5D927 /* YDEMojiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDEMojiViewController.h; sourceTree = "<group>"; };
 		41716EE61F946C1E00D5D927 /* YDEMojiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDEMojiViewController.m; sourceTree = "<group>"; };
 		41729EE91FA18A2F002E4A44 /* YDPhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDPhotoViewController.h; sourceTree = "<group>"; };
@@ -589,6 +595,10 @@
 			children = (
 				41729EE91FA18A2F002E4A44 /* YDPhotoViewController.h */,
 				41729EEA1FA18A2F002E4A44 /* YDPhotoViewController.m */,
+				415669D01FA326B300629AC7 /* YDSingleImgCCell.h */,
+				415669CF1FA326B300629AC7 /* YDSingleImgCCell.m */,
+				415669D21FA328FE00629AC7 /* YDAlbumMgr.h */,
+				415669D31FA328FE00629AC7 /* YDAlbumMgr.m */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -1767,6 +1777,7 @@
 				DCCED7181EF98816001D2474 /* ViewController.m in Sources */,
 				41716EE71F946C1E00D5D927 /* YDEMojiViewController.m in Sources */,
 				DC38AE681EFFE6A200FB44FE /* EOCPerson.m in Sources */,
+				415669D41FA328FE00629AC7 /* YDAlbumMgr.m in Sources */,
 				4133E8B21F9D9514004B3242 /* YDNSNullViewController.m in Sources */,
 				DCCB56141EFADDEE00A5A44C /* HLy7ViewController.m in Sources */,
 				DCCED7151EF98816001D2474 /* AppDelegate.m in Sources */,
@@ -1776,6 +1787,7 @@
 				410A63F71F9995AD006835A9 /* HLY2View.m in Sources */,
 				411F86281F9E0F9100C195AC /* YDDrawViewController.m in Sources */,
 				DC38AE651EFFE5EF00FB44FE /* HLY8ViewController.m in Sources */,
+				415669D11FA326B300629AC7 /* YDSingleImgCCell.m in Sources */,
 				DCCED7471EF98867001D2474 /* HLYPropertyViewController.m in Sources */,
 				DCCED7121EF98816001D2474 /* main.m in Sources */,
 				410A63FB1F99E479006835A9 /* HLYiOS11ViewController.m in Sources */,

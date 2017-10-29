@@ -46,5 +46,43 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>NSAppleMusicUsageDescription</key>
+    <string>悦动圈需要访问您的多媒体库</string>
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>悦动圈需要使用您的蓝牙</string>
+    <key>NSCalendarsUsageDescription</key>
+    <string>悦动圈需要使用您的日历</string>
+    <key>NSCameraUsageDescription</key>
+    <string>悦动圈需要使用您的相机拍照</string>
+    <key>NSContactsUsageDescription</key>
+    <string>悦动圈需要访问您的通讯录</string>
+    <key>NSHealthShareUsageDescription</key>
+    <string>悦动圈需要使用您的健康分享</string>
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>悦动圈需要访问您的健康信息</string>
+    <key>NSHomeKitUsageDescription</key>
+    <string>悦动圈需要访问您的HomeKit信息</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>悦动圈需要访问您的定位以更好的记录您的轨迹</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>悦动圈需要访问您的定位</string>
+    <key>NSLocationUsageDescription</key>
+    <string>悦动圈需要访问您的定位</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>悦动圈需要访问您的定位</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>悦动圈需要使用您的耳机</string>
+    <key>NSMotionUsageDescription</key>
+    <string>悦动圈需要获取您的健身信息以更好地记录您的运动</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>悦动圈需要访问您的相册</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>悦动圈需要访问您的相册</string>
+    <key>NSRemindersUsageDescription</key>
+    <string>悦动圈需要使用您的提醒服务</string>
+    <key>NSSiriUsageDescription</key>
+    <string>悦动圈需要使用您的Siri</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>悦动圈需要使用您的录音功能</string>
 </dict>
 </plist>
