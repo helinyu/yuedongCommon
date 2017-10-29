@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		410A63F71F9995AD006835A9 /* HLY2View.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A63F61F9995AD006835A9 /* HLY2View.m */; };
 		410A63FB1F99E479006835A9 /* HLYiOS11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A63FA1F99E479006835A9 /* HLYiOS11ViewController.m */; };
+		411C6E741FA5A65A00FA2F5F /* YDMoveLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C6E731FA5A65A00FA2F5F /* YDMoveLayoutViewController.m */; };
+		411C6E771FA5A6BD00FA2F5F /* LXReorderableCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C6E761FA5A6BD00FA2F5F /* LXReorderableCollectionViewFlowLayout.m */; };
 		411F861D1F9DD41C00C195AC /* YDCoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411F861C1F9DD41C00C195AC /* YDCoreTextViewController.m */; };
 		411F86201F9DF4B100C195AC /* YDVerticalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 411F861F1F9DF4B100C195AC /* YDVerticalView.m */; };
 		411F86241F9E035F00C195AC /* YDTestYYLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411F86231F9E035F00C195AC /* YDTestYYLabelViewController.m */; };
@@ -35,6 +37,7 @@
 		41ABCEF81F0BC51200927CCC /* HLYAnimationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */; };
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
 		41B1B8DB1FA593720008D317 /* YDImgPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B1B8D91FA593710008D317 /* YDImgPickerViewController.m */; };
+		41C7E7711FA5E4EB00F93E05 /* YDSingleTitleCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7E7701FA5E4EB00F93E05 /* YDSingleTitleCCell.m */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
 		41E0D8E21F0CDBA500E16E9E /* HLYShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8E11F0CDBA500E16E9E /* HLYShapeLayerViewController.m */; };
 		B79C5E7C731D80DF88CB4722 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */; };
@@ -175,6 +178,10 @@
 		410A63F91F99E479006835A9 /* HLYiOS11ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLYiOS11ViewController.h; sourceTree = "<group>"; };
 		410A63FA1F99E479006835A9 /* HLYiOS11ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLYiOS11ViewController.m; sourceTree = "<group>"; };
 		410A63FC1F99F70F006835A9 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
+		411C6E721FA5A65A00FA2F5F /* YDMoveLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMoveLayoutViewController.h; sourceTree = "<group>"; };
+		411C6E731FA5A65A00FA2F5F /* YDMoveLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDMoveLayoutViewController.m; sourceTree = "<group>"; };
+		411C6E751FA5A6BD00FA2F5F /* LXReorderableCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXReorderableCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		411C6E761FA5A6BD00FA2F5F /* LXReorderableCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXReorderableCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		411F861B1F9DD41C00C195AC /* YDCoreTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCoreTextViewController.h; sourceTree = "<group>"; };
 		411F861C1F9DD41C00C195AC /* YDCoreTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDCoreTextViewController.m; sourceTree = "<group>"; };
 		411F861E1F9DF4B100C195AC /* YDVerticalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDVerticalView.h; sourceTree = "<group>"; };
@@ -220,6 +227,8 @@
 		41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimationCollectionViewCell.m; path = "数据解析/AnimationCollectionViewCell.m"; sourceTree = "<group>"; };
 		41B1B8D91FA593710008D317 /* YDImgPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDImgPickerViewController.m; sourceTree = "<group>"; };
 		41B1B8DA1FA593710008D317 /* YDImgPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDImgPickerViewController.h; sourceTree = "<group>"; };
+		41C7E76F1FA5E4EB00F93E05 /* YDSingleTitleCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDSingleTitleCCell.h; sourceTree = "<group>"; };
+		41C7E7701FA5E4EB00F93E05 /* YDSingleTitleCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDSingleTitleCCell.m; sourceTree = "<group>"; };
 		41E0D8D81F0C785D00E16E9E /* YDBgImageStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBgImageStatusView.h; sourceTree = "<group>"; };
 		41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBgImageStatusView.m; sourceTree = "<group>"; };
 		41E0D8E01F0CDBA500E16E9E /* HLYShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYShapeLayerViewController.h; sourceTree = "<group>"; };
@@ -512,6 +521,19 @@
 				410A63FC1F99F70F006835A9 /* test.gif */,
 			);
 			name = "11 一些新特性";
+			sourceTree = "<group>";
+		};
+		411C6E711FA5A63300FA2F5F /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				411C6E721FA5A65A00FA2F5F /* YDMoveLayoutViewController.h */,
+				411C6E731FA5A65A00FA2F5F /* YDMoveLayoutViewController.m */,
+				411C6E751FA5A6BD00FA2F5F /* LXReorderableCollectionViewFlowLayout.h */,
+				411C6E761FA5A6BD00FA2F5F /* LXReorderableCollectionViewFlowLayout.m */,
+				41C7E76F1FA5E4EB00F93E05 /* YDSingleTitleCCell.h */,
+				41C7E7701FA5E4EB00F93E05 /* YDSingleTitleCCell.m */,
+			);
+			name = Layout;
 			sourceTree = "<group>";
 		};
 		411F861A1F9DD40F00C195AC /* CoreText */ = {
@@ -1286,6 +1308,7 @@
 		DCCED70F1EF98816001D2474 /* test_effective */ = {
 			isa = PBXGroup;
 			children = (
+				411C6E711FA5A63300FA2F5F /* Layout */,
 				41B1B8D51FA592DF0008D317 /* collecction */,
 				411F86211F9E034D00C195AC /* YYlabel */,
 				41729EE81FA18A0A002E4A44 /* image */,
@@ -1788,11 +1811,13 @@
 				4143FFDD1F98982B001B783F /* HLYResponderiewController.m in Sources */,
 				412172621F3D821B00A47AD9 /* Son.m in Sources */,
 				DCCED7181EF98816001D2474 /* ViewController.m in Sources */,
+				41C7E7711FA5E4EB00F93E05 /* YDSingleTitleCCell.m in Sources */,
 				41716EE71F946C1E00D5D927 /* YDEMojiViewController.m in Sources */,
 				DC38AE681EFFE6A200FB44FE /* EOCPerson.m in Sources */,
 				415669D41FA328FE00629AC7 /* YDAlbumMgr.m in Sources */,
 				4133E8B21F9D9514004B3242 /* YDNSNullViewController.m in Sources */,
 				DCCB56141EFADDEE00A5A44C /* HLy7ViewController.m in Sources */,
+				411C6E741FA5A65A00FA2F5F /* YDMoveLayoutViewController.m in Sources */,
 				DCCED7151EF98816001D2474 /* AppDelegate.m in Sources */,
 				411F861D1F9DD41C00C195AC /* YDCoreTextViewController.m in Sources */,
 				41B1B8DB1FA593720008D317 /* YDImgPickerViewController.m in Sources */,
@@ -1802,6 +1827,7 @@
 				411F86281F9E0F9100C195AC /* YDDrawViewController.m in Sources */,
 				DC38AE651EFFE5EF00FB44FE /* HLY8ViewController.m in Sources */,
 				415669D11FA326B300629AC7 /* YDSingleImgCCell.m in Sources */,
+				411C6E771FA5A6BD00FA2F5F /* LXReorderableCollectionViewFlowLayout.m in Sources */,
 				DCCED7471EF98867001D2474 /* HLYPropertyViewController.m in Sources */,
 				DCCED7121EF98816001D2474 /* main.m in Sources */,
 				410A63FB1F99E479006835A9 /* HLYiOS11ViewController.m in Sources */,

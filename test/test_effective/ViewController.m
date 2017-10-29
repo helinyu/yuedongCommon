@@ -23,6 +23,7 @@
 #import "YDDrawViewController.h"
 #import "YDPhotoViewController.h"
 #import "YDImgPickerViewController.h"
+#import "YDMoveLayoutViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -64,6 +65,7 @@
                         @[@"UIView 上绘画-文本",[YDDrawViewController new]],
                         @[@"图片 选择",[YDPhotoViewController new]],
                         @[@"collectionview 为什么渲染不出来？ 测试",[YDImgPickerViewController new]],
+                        @[@"拖拽内容",[YDMoveLayoutViewController new]],
                         ];
 }
 

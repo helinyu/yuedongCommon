@@ -29,6 +29,7 @@ static NSString *const kImgPickerTakeCellCIdentifier = @"k.img.picker.take.cell.
     [super viewDidLoad];
 
     _collectionView = [[UICollectionView alloc] initWithFrame:[UIScreen mainScreen].bounds collectionViewLayout:[UICollectionViewFlowLayout new]];
+//     这里面的layout注意看清除是flowlayout 默认的
     [self.view addSubview:_collectionView];
 //    [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.left.right.bottom.equalTo(self.view);
