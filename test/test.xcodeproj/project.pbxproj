@@ -43,6 +43,8 @@
 		41C7E77F1FA62E9700F93E05 /* XWCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7E77A1FA62E9600F93E05 /* XWCell.m */; };
 		41C7E7801FA62E9700F93E05 /* XWCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7E77C1FA62E9700F93E05 /* XWCellModel.m */; };
 		41C7E7831FA6321900F93E05 /* XWDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7E7821FA6321900F93E05 /* XWDragCellCollectionView.m */; };
+		41C7E7861FA63C8400F93E05 /* YDMoveCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7E7851FA63C8400F93E05 /* YDMoveCollectionView.m */; };
+		41C7E78A1FA6C57B00F93E05 /* YDIOS9BeforeCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7E7891FA6C57B00F93E05 /* YDIOS9BeforeCustomViewController.m */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
 		41E0D8E21F0CDBA500E16E9E /* HLYShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8E11F0CDBA500E16E9E /* HLYShapeLayerViewController.m */; };
 		B79C5E7C731D80DF88CB4722 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */; };
@@ -243,6 +245,10 @@
 		41C7E77D1FA62E9700F93E05 /* XWCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCellModel.h; sourceTree = "<group>"; };
 		41C7E7811FA6321800F93E05 /* XWDragCellCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDragCellCollectionView.h; sourceTree = "<group>"; };
 		41C7E7821FA6321900F93E05 /* XWDragCellCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDragCellCollectionView.m; sourceTree = "<group>"; };
+		41C7E7841FA63C8400F93E05 /* YDMoveCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMoveCollectionView.h; sourceTree = "<group>"; };
+		41C7E7851FA63C8400F93E05 /* YDMoveCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDMoveCollectionView.m; sourceTree = "<group>"; };
+		41C7E7881FA6C57B00F93E05 /* YDIOS9BeforeCustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDIOS9BeforeCustomViewController.h; sourceTree = "<group>"; };
+		41C7E7891FA6C57B00F93E05 /* YDIOS9BeforeCustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDIOS9BeforeCustomViewController.m; sourceTree = "<group>"; };
 		41E0D8D81F0C785D00E16E9E /* YDBgImageStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBgImageStatusView.h; sourceTree = "<group>"; };
 		41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBgImageStatusView.m; sourceTree = "<group>"; };
 		41E0D8E01F0CDBA500E16E9E /* HLYShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYShapeLayerViewController.h; sourceTree = "<group>"; };
@@ -672,12 +678,23 @@
 				41C7E7791FA62E9600F93E05 /* XWCell.xib */,
 				41C7E77D1FA62E9700F93E05 /* XWCellModel.h */,
 				41C7E77C1FA62E9700F93E05 /* XWCellModel.m */,
+				41C7E7841FA63C8400F93E05 /* YDMoveCollectionView.h */,
+				41C7E7851FA63C8400F93E05 /* YDMoveCollectionView.m */,
 				41C7E7811FA6321800F93E05 /* XWDragCellCollectionView.h */,
 				41C7E7821FA6321900F93E05 /* XWDragCellCollectionView.m */,
 				41C7E7731FA62D3200F93E05 /* YDIos9BeforeViewController.h */,
 				41C7E7741FA62D3200F93E05 /* YDIos9BeforeViewController.m */,
 			);
 			name = "ios 9 之前的内容";
+			sourceTree = "<group>";
+		};
+		41C7E7871FA6C53700F93E05 /* YDIos 9之前的内容 */ = {
+			isa = PBXGroup;
+			children = (
+				41C7E7881FA6C57B00F93E05 /* YDIOS9BeforeCustomViewController.h */,
+				41C7E7891FA6C57B00F93E05 /* YDIOS9BeforeCustomViewController.m */,
+			);
+			name = "YDIos 9之前的内容";
 			sourceTree = "<group>";
 		};
 		41E0D8DF1F0CDB8800E16E9E /* CAShapeLayer */ = {
@@ -1338,6 +1355,7 @@
 		DCCED70F1EF98816001D2474 /* test_effective */ = {
 			isa = PBXGroup;
 			children = (
+				41C7E7871FA6C53700F93E05 /* YDIos 9之前的内容 */,
 				41C7E7721FA62D0600F93E05 /* ios 9 之前的内容 */,
 				411C6E711FA5A63300FA2F5F /* Layout */,
 				41B1B8D51FA592DF0008D317 /* collecction */,
@@ -1847,6 +1865,7 @@
 				41716EE71F946C1E00D5D927 /* YDEMojiViewController.m in Sources */,
 				DC38AE681EFFE6A200FB44FE /* EOCPerson.m in Sources */,
 				41C7E7751FA62D3200F93E05 /* YDIos9BeforeViewController.m in Sources */,
+				41C7E78A1FA6C57B00F93E05 /* YDIOS9BeforeCustomViewController.m in Sources */,
 				415669D41FA328FE00629AC7 /* YDAlbumMgr.m in Sources */,
 				4133E8B21F9D9514004B3242 /* YDNSNullViewController.m in Sources */,
 				DCCB56141EFADDEE00A5A44C /* HLy7ViewController.m in Sources */,
@@ -1868,6 +1887,7 @@
 				410A63FB1F99E479006835A9 /* HLYiOS11ViewController.m in Sources */,
 				4143FFE31F989EB2001B783F /* HLYView.m in Sources */,
 				DCCED74A1EF98E62001D2474 /* CustomObj.m in Sources */,
+				41C7E7861FA63C8400F93E05 /* YDMoveCollectionView.m in Sources */,
 				4143FFE01F9899AC001B783F /* YDCustomView.m in Sources */,
 				4121725F1F3D820800A47AD9 /* Father.m in Sources */,
 				4143FFD61F96EC09001B783F /* YDLabelViewController.m in Sources */,

@@ -25,6 +25,7 @@
 #import "YDImgPickerViewController.h"
 #import "YDMoveLayoutViewController.h"
 #import "YDIos9BeforeViewController.h"
+#import "YDIOS9BeforeCustomViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -68,6 +69,7 @@
                         @[@"collectionview 为什么渲染不出来？ 测试",[YDImgPickerViewController new]],
                         @[@"拖拽内容",[YDMoveLayoutViewController new]],
                         @[@"ios 9 之前的拖拽功能",[YDIos9BeforeViewController new]],
+                        @[@"自定义的内容",[YDIOS9BeforeCustomViewController new]],
                         ];
 }
 

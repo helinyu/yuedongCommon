@@ -30,25 +30,6 @@
 @optional
 
 /**
- *  某些indexPaths是不需要交换和晃动的，常见的比如添加按钮等，传入这些indexPaths数组排出交换和抖动操作
- *  @param return   需要排除的indexPath数组，该数组中的indexPath无法长按抖动和交换
- */
-- (NSArray<NSIndexPath *> *)excludeIndexPathsWhenMoveDragCellCollectionView:(XWDragCellCollectionView *)collectionView;
-
-/**
- *  某个cell将要开始移动的时候调用
- *  @param indexPath      该cell当前的indexPath
- */
-- (void)dragCellCollectionView:(XWDragCellCollectionView *)collectionView cellWillBeginMoveAtIndexPath:(NSIndexPath *)indexPath;
-/**
- *  某个cell正在移动的时候
- */
-- (void)dragCellCollectionViewCellisMoving:(XWDragCellCollectionView *)collectionView;
-/**
- *  cell移动完毕，并成功移动到新位置的时候调用
- */
-- (void)dragCellCollectionViewCellEndMoving:(XWDragCellCollectionView *)collectionView;
-/**
  *  成功交换了位置的时候调用
  *  @param fromIndexPath    交换cell的起始位置
  *  @param toIndexPath      交换cell的新位置
@@ -72,17 +53,5 @@
 
 @property (nonatomic, assign) id<XWDragCellCollectionViewDelegate> delegate;
 @property (nonatomic, assign) id<XWDragCellCollectionViewDataSource> dataSource;
-
-/**长按多少秒触发拖动手势，默认1秒，如果设置为0，表示手指按下去立刻就触发拖动*/
-@property (nonatomic, assign) NSTimeInterval minimumPressDuration;
-
-/**是否正在编辑模式，调用xwp_enterEditingModel和xw_stopEditingModel会修改该方法的值*/
-@property (nonatomic, assign, readonly, getter=isEditing) BOOL editing;
-
-/**进入编辑模式，如果开启抖动会自动持续抖动，且不用长按就能出发拖动*/
-- (void)xw_enterEditingModel;
-
-/**退出编辑模式*/
-- (void)xw_stopEditingModel;
 
 @end

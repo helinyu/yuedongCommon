@@ -15,14 +15,13 @@
 
 @property (nonatomic, strong) NSArray *data;
 @property (nonatomic, weak) XWDragCellCollectionView *mainView;
-@property (nonatomic, assign) UIBarButtonItem *editButton;
 @end
 
 @implementation YDIos9BeforeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"XWDragCellCollectionView";
+
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
     CGFloat width = (self.view.bounds.size.width - 40) / 3.0f;
     layout.itemSize = CGSizeMake(width, width);
@@ -32,13 +31,9 @@
     _mainView = mainView;
     mainView.delegate = self;
     mainView.dataSource = self;
-    //    mainView.shakeLevel = 3.0f;
     mainView.backgroundColor = [UIColor whiteColor];
     [mainView registerNib:[UINib nibWithNibName:@"XWCell" bundle:nil] forCellWithReuseIdentifier:@"XWCell"];
     [self.view addSubview:mainView];
-    UIBarButtonItem *editingButton = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(xwp_edting:)];
-    _editButton = editingButton;
-    self.navigationItem.rightBarButtonItem = editingButton;
 }
 
 - (NSArray *)data{
@@ -61,15 +56,6 @@
     return _data;
 }
 
-- (void)xwp_edting:(UIBarButtonItem *)sender{
-    if (_mainView.isEditing) {
-        [_mainView xw_stopEditingModel];
-        sender.title = @"编辑";
-    }else{
-        [_mainView xw_enterEditingModel];
-        sender.title = @"退出";
-    }
-}
 
 #pragma mark - <XWDragCellCollectionViewDataSource>
 
@@ -96,23 +82,6 @@
 
 - (void)dragCellCollectionView:(XWDragCellCollectionView *)collectionView newDataArrayAfterMove:(NSArray *)newDataArray{
     _data = newDataArray;
-}
-
-- (void)dragCellCollectionView:(XWDragCellCollectionView *)collectionView cellWillBeginMoveAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"手势开始");
-}
-
-- (void)dragCellCollectionViewCellEndMoving:(XWDragCellCollectionView *)collectionView{
-    NSLog(@"手势结束滑动");
-}
-
-- (NSArray<NSIndexPath *> *)excludeIndexPathsWhenMoveDragCellCollectionView:(XWDragCellCollectionView *)collectionView{
-    //每个section的最后一个cell都不能交换
-    NSMutableArray * excluedeIndexPaths = [NSMutableArray arrayWithCapacity:self.data.count];
-    [self.data enumerateObjectsUsingBlock:^(NSArray*  _Nonnull section, NSUInteger idx, BOOL * _Nonnull stop) {
-        [excluedeIndexPaths addObject:[NSIndexPath indexPathForItem:section.count - 1 inSection:idx]];
-    }];
-    return excluedeIndexPaths.copy;
 }
 
 @end

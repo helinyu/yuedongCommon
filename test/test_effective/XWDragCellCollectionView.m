@@ -11,25 +11,16 @@
 
 #define angelToRandian(x)  ((x)/180.0*M_PI)
 
-typedef NS_ENUM(NSUInteger, XWDragCellCollectionViewScrollDirection) {
-    XWDragCellCollectionViewScrollDirectionNone = 0,
-    XWDragCellCollectionViewScrollDirectionLeft,
-    XWDragCellCollectionViewScrollDirectionRight,
-    XWDragCellCollectionViewScrollDirectionUp,
-    XWDragCellCollectionViewScrollDirectionDown
-};
-
 @interface XWDragCellCollectionView ()
+
 @property (nonatomic, strong) NSIndexPath *originalIndexPath;
 @property (nonatomic, weak) UICollectionViewCell *orignalCell;
 @property (nonatomic, assign) CGPoint orignalCenter;
+
 @property (nonatomic, strong) NSIndexPath *moveIndexPath;
 @property (nonatomic, weak) UIView *tempMoveCell;
 @property (nonatomic, weak) UILongPressGestureRecognizer *longPressGesture;
-@property (nonatomic, strong) CADisplayLink *edgeTimer;
 @property (nonatomic, assign) CGPoint lastPoint;
-@property (nonatomic, assign) XWDragCellCollectionViewScrollDirection scrollDirection;
-@property (nonatomic) BOOL isPanning;
 
 @end
 
@@ -46,16 +37,6 @@ typedef NS_ENUM(NSUInteger, XWDragCellCollectionViewScrollDirection) {
     }
     return self;
 }
-
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super initWithCoder:coder];
-    if (self) {
-        [self xwp_addGesture];
-    }
-    return self;
-}
-
 
 #pragma mark - longPressGesture methods
 
@@ -90,10 +71,6 @@ typedef NS_ENUM(NSUInteger, XWDragCellCollectionViewScrollDirection) {
 - (void)xwp_gestureBegan:(UILongPressGestureRecognizer *)longPressGesture{
     //获取手指所在的cell
     _originalIndexPath = [self indexPathForItemAtPoint:[longPressGesture locationOfTouch:0 inView:longPressGesture.view]];
-    if ([self xwp_indexPathIsExcluded:_originalIndexPath]) {
-        return;
-    }
-    _isPanning = YES;
     UICollectionViewCell *cell = [self cellForItemAtIndexPath:_originalIndexPath];
     UIImage *snap;
     UIGraphicsBeginImageContextWithOptions(cell.bounds.size, 1.0f, 0);
@@ -110,23 +87,13 @@ typedef NS_ENUM(NSUInteger, XWDragCellCollectionViewScrollDirection) {
     _tempMoveCell = tempMoveCell;
     _tempMoveCell.frame = cell.frame;
     [self addSubview:_tempMoveCell];
-    //开启边缘滚动定时器
-    [self xwp_setEdgeTimer];
 
     _lastPoint = [longPressGesture locationOfTouch:0 inView:longPressGesture.view];
-    //通知代理
-    if ([self.delegate respondsToSelector:@selector(dragCellCollectionView:cellWillBeginMoveAtIndexPath:)]) {
-        [self.delegate dragCellCollectionView:self cellWillBeginMoveAtIndexPath:_originalIndexPath];
-    }
 }
 /**
  *  手势拖动
  */
-- (void)xwp_gestureChange:(UILongPressGestureRecognizer *)longPressGesture{
-    //通知代理
-    if ([self.delegate respondsToSelector:@selector(dragCellCollectionViewCellisMoving:)]) {
-        [self.delegate dragCellCollectionViewCellisMoving:self];
-    }
+- (void)xwp_gestureChange:(UILongPressGestureRecognizer *)longPressGesture {
     CGFloat tranX = [longPressGesture locationOfTouch:0 inView:longPressGesture.view].x - _lastPoint.x;
     CGFloat tranY = [longPressGesture locationOfTouch:0 inView:longPressGesture.view].y - _lastPoint.y;
     _tempMoveCell.center = CGPointApplyAffineTransform(_tempMoveCell.center, CGAffineTransformMakeTranslation(tranX, tranY));
@@ -140,12 +107,6 @@ typedef NS_ENUM(NSUInteger, XWDragCellCollectionViewScrollDirection) {
 - (void)xwp_gestureEndOrCancle:(UILongPressGestureRecognizer *)longPressGesture{
     UICollectionViewCell *cell = [self cellForItemAtIndexPath:_originalIndexPath];
     self.userInteractionEnabled = NO;
-    _isPanning = NO;
-    [self xwp_stopEdgeTimer];
-    //通知代理
-    if ([self.delegate respondsToSelector:@selector(dragCellCollectionViewCellEndMoving:)]) {
-        [self.delegate dragCellCollectionViewCellEndMoving:self];
-    }
     [UIView animateWithDuration:0.25 animations:^{
         _tempMoveCell.center = _orignalCenter;
     } completion:^(BOOL finished) {
@@ -157,29 +118,11 @@ typedef NS_ENUM(NSUInteger, XWDragCellCollectionViewScrollDirection) {
     }];
 }
 
-
-#pragma mark - timer methods
-
-- (void)xwp_setEdgeTimer{
-    if (!_edgeTimer) {
-        _edgeTimer = [CADisplayLink displayLinkWithTarget:self selector:@selector(xwp_edgeScroll)];
-        [_edgeTimer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
-    }
-}
-
-- (void)xwp_stopEdgeTimer{
-    if (_edgeTimer) {
-        [_edgeTimer invalidate];
-        _edgeTimer = nil;
-    }
-}
-
-
 #pragma mark - private methods
 
 - (void)xwp_moveCell{
     for (UICollectionViewCell *cell in [self visibleCells]) {
-        if ([self indexPathForCell:cell] == _originalIndexPath || [self xwp_indexPathIsExcluded:[self indexPathForCell:cell]]) {
+        if ([self indexPathForCell:cell] == _originalIndexPath) {
             continue;
         }
         //计算中心距
@@ -193,18 +136,16 @@ typedef NS_ENUM(NSUInteger, XWDragCellCollectionViewScrollDirection) {
             [self xwp_updateDataSource];
             //移动
             NSLog(@"%@", [self cellForItemAtIndexPath:_originalIndexPath]);
-//            cell.hidden = YES;
             [CATransaction begin];
             [self moveItemAtIndexPath:_originalIndexPath toIndexPath:_moveIndexPath];
             [CATransaction setCompletionBlock:^{
                 NSLog(@"动画完成 xwD");
             }];
             [CATransaction commit];
-            //通知代理
+
             if ([self.delegate respondsToSelector:@selector(dragCellCollectionView:moveCellFromIndexPath:toIndexPath:)]) {
                 [self.delegate dragCellCollectionView:self moveCellFromIndexPath:_originalIndexPath toIndexPath:_moveIndexPath];
             }
-            //设置移动后的起始indexPath
             _originalIndexPath = _moveIndexPath;
             break;
         }
@@ -216,11 +157,11 @@ typedef NS_ENUM(NSUInteger, XWDragCellCollectionViewScrollDirection) {
  */
 - (void)xwp_updateDataSource{
     NSMutableArray *temp = @[].mutableCopy;
+    
     //获取数据源
     if ([self.dataSource respondsToSelector:@selector(dataSourceArrayOfCollectionView:)]) {
         [temp addObjectsFromArray:[self.dataSource dataSourceArrayOfCollectionView:self]];
     }
-    //判断数据源是单个数组还是数组套数组的多section形式，YES表示数组套数组
     BOOL dataTypeCheck = ([self numberOfSections] != 1 || ([self numberOfSections] == 1 && [temp[0] isKindOfClass:[NSArray class]]));
     if (dataTypeCheck) {
         for (int i = 0; i < temp.count; i ++) {
@@ -244,98 +185,15 @@ typedef NS_ENUM(NSUInteger, XWDragCellCollectionViewScrollDirection) {
         [currentSection insertObject:orignalSection[_originalIndexPath.item] atIndex:_moveIndexPath.item];
         [orignalSection removeObject:orignalSection[_originalIndexPath.item]];
     }
+    
     //将重排好的数据传递给外部
     if ([self.delegate respondsToSelector:@selector(dragCellCollectionView:newDataArrayAfterMove:)]) {
         [self.delegate dragCellCollectionView:self newDataArrayAfterMove:temp.copy];
     }
 }
 
-- (void)xwp_edgeScroll{
-    [self xwp_setScrollDirection];
-    switch (_scrollDirection) {
-        case XWDragCellCollectionViewScrollDirectionLeft:{
-            //这里的动画必须设为NO
-            [self setContentOffset:CGPointMake(self.contentOffset.x - 4, self.contentOffset.y) animated:NO];
-            _tempMoveCell.center = CGPointMake(_tempMoveCell.center.x - 4, _tempMoveCell.center.y);
-            _lastPoint.x -= 4;
-            
-        }
-            break;
-        case XWDragCellCollectionViewScrollDirectionRight:{
-            [self setContentOffset:CGPointMake(self.contentOffset.x + 4, self.contentOffset.y) animated:NO];
-            _tempMoveCell.center = CGPointMake(_tempMoveCell.center.x + 4, _tempMoveCell.center.y);
-            _lastPoint.x += 4;
-            
-        }
-            break;
-        case XWDragCellCollectionViewScrollDirectionUp:{
-            [self setContentOffset:CGPointMake(self.contentOffset.x, self.contentOffset.y - 4) animated:NO];
-            _tempMoveCell.center = CGPointMake(_tempMoveCell.center.x, _tempMoveCell.center.y - 4);
-            _lastPoint.y -= 4;
-        }
-            break;
-        case XWDragCellCollectionViewScrollDirectionDown:{
-            [self setContentOffset:CGPointMake(self.contentOffset.x, self.contentOffset.y + 4) animated:NO];
-            _tempMoveCell.center = CGPointMake(_tempMoveCell.center.x, _tempMoveCell.center.y + 4);
-            _lastPoint.y += 4;
-        }
-            break;
-        default:
-            break;
-    }
-    
-}
-
-- (void)xwp_setScrollDirection{
-    _scrollDirection = XWDragCellCollectionViewScrollDirectionNone;
-    if (self.bounds.size.height + self.contentOffset.y - _tempMoveCell.center.y < _tempMoveCell.bounds.size.height / 2 && self.bounds.size.height + self.contentOffset.y < self.contentSize.height) {
-        _scrollDirection = XWDragCellCollectionViewScrollDirectionDown;
-    }
-    if (_tempMoveCell.center.y - self.contentOffset.y < _tempMoveCell.bounds.size.height / 2 && self.contentOffset.y > 0) {
-        _scrollDirection = XWDragCellCollectionViewScrollDirectionUp;
-    }
-    if (self.bounds.size.width + self.contentOffset.x - _tempMoveCell.center.x < _tempMoveCell.bounds.size.width / 2 && self.bounds.size.width + self.contentOffset.x < self.contentSize.width) {
-        _scrollDirection = XWDragCellCollectionViewScrollDirectionRight;
-    }
-    
-    if (_tempMoveCell.center.x - self.contentOffset.x < _tempMoveCell.bounds.size.width / 2 && self.contentOffset.x > 0) {
-        _scrollDirection = XWDragCellCollectionViewScrollDirectionLeft;
-    }
-}
-
-- (BOOL)xwp_indexPathIsExcluded:(NSIndexPath *)indexPath{
-    if (!indexPath || ![self.delegate respondsToSelector:@selector(excludeIndexPathsWhenMoveDragCellCollectionView:)]) {
-        return NO;
-    }
-    NSArray<NSIndexPath *> *excludeIndexPaths = [self.delegate excludeIndexPathsWhenMoveDragCellCollectionView:self];
-    __block BOOL flag = NO;
-    [excludeIndexPaths enumerateObjectsUsingBlock:^(NSIndexPath * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (obj.item == indexPath.item && obj.section == indexPath.section) {
-            flag = YES;
-            *stop = YES;
-        }
-    }];
-    return flag;
-}
-
-#pragma mark - public methods
-
-- (void)xw_enterEditingModel{
-    _editing = YES;
-}
-
-- (void)xw_stopEditingModel{
-    _editing = NO;
-}
-
-#pragma mark - overWrite methods
-
-/**
- *  重写hitTest事件，判断是否应该相应自己的滑动手势，还是系统的滑动手势
- */
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
-    _longPressGesture.enabled = [self indexPathForItemAtPoint:point];
     return [super hitTest:point withEvent:event];
 }
 
