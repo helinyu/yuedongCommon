@@ -23,6 +23,10 @@
 
 @property (nonatomic, strong) PHPhotoLibrary *phLibrary;
 
+@property (nonatomic, strong) PHFetchResult<PHAsset *> *allPhotos;
+
+@property (nonatomic, assign) NSInteger index;
+
 @end
 
 @implementation YDPhotoViewController
@@ -41,12 +45,13 @@
     _collectionView.delegate = self;
 
     
-    [self test0];
-//    [self test1];
+//    [self test0];
+    [self test1];
 }
 
 - (void)test1 {
     
+    _index = 1;
     PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
     if (status != PHAuthorizationStatusAuthorized) {
         [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
@@ -62,19 +67,30 @@
     
     __block NSString *createdAssetID =nil;//唯一标识，可以用于图片资源获取
     NSError *error =nil;
-    
-//    [PHAssetResourceManager share];
-    [_phLibrary performChanges:^{
-        NSLog(@"performChanges");
-        createdAssetID = [PHAssetChangeRequest            creationRequestForAssetFromImage:nil].placeholderForCreatedAsset.localIdentifier;
 
-    } completionHandler:^(BOOL success, NSError * _Nullable error) {
-        NSLog(@"flag : %d ; erorr :%@",success,error);
-    }];
+    PHFetchOptions *options = [PHFetchOptions new];
+    options.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:YES]];
+    _allPhotos = [PHAsset fetchAssetsWithOptions:options];
     
-    [_phLibrary performChangesAndWait:^{
-        NSLog(@"performChangesAndWait");
-    } error:&error];
+//    Create a PHFetchResult object for each section in the table view.
+//    allPhotos = PHAsset.fetchAssets(with: allPhotosOptions)
+//    smartAlbums = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .albumRegular, options: nil)
+//    userCollections = PHCollectionList.fetchTopLevelUserCollections(with: nil)
+//
+//    PHPhotoLibrary.shared().register(self)
+
+//    [PHAssetResourceManager share];
+//    [_phLibrary performChanges:^{
+//        NSLog(@"performChanges");
+//        createdAssetID = [PHAssetChangeRequest            creationRequestForAssetFromImage:nil].placeholderForCreatedAsset.localIdentifier;
+//
+//    } completionHandler:^(BOOL success, NSError * _Nullable error) {
+//        NSLog(@"flag : %d ; erorr :%@",success,error);
+//    }];
+//
+//    [_phLibrary performChangesAndWait:^{
+//        NSLog(@"performChangesAndWait");
+//    } error:&error];
 }
 
 - (void)test0 {
@@ -114,13 +130,25 @@
 #pragma mark -- collectionview datasource & delegate
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return _datas.count;
+    if (_index == 0) {
+        return _datas.count;
+    }
+    else {
+        return _allPhotos.count;
+    }
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     YDSingleImgCCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([YDSingleImgCCell class]) forIndexPath:indexPath];
-    ALAsset *asset = _datas[indexPath.item];
-    cell.imgView.image = [UIImage imageWithCGImage:asset.aspectRatioThumbnail];
+    if (_index == 0) {
+        ALAsset *asset = _datas[indexPath.item];
+        cell.imgView.image = [UIImage imageWithCGImage:asset.aspectRatioThumbnail];
+    }else {
+        PHAsset *asset = _allPhotos[indexPath.item];
+        [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:CGSizeMake(50.f, 50.f) contentMode:PHImageContentModeAspectFill options:PHImageRequestOptionsResizeModeNone resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+            cell.imgView.image = result;
+        }];
+    }
     return cell;
 }
 
