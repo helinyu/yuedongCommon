@@ -45,6 +45,7 @@
 		41C7E7831FA6321900F93E05 /* XWDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7E7821FA6321900F93E05 /* XWDragCellCollectionView.m */; };
 		41C7E7861FA63C8400F93E05 /* YDMoveCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7E7851FA63C8400F93E05 /* YDMoveCollectionView.m */; };
 		41C7E78A1FA6C57B00F93E05 /* YDIOS9BeforeCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7E7891FA6C57B00F93E05 /* YDIOS9BeforeCustomViewController.m */; };
+		41C7E79A1FA71DC000F93E05 /* YDMsonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7E7991FA71DC000F93E05 /* YDMsonryViewController.m */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
 		41E0D8E21F0CDBA500E16E9E /* HLYShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8E11F0CDBA500E16E9E /* HLYShapeLayerViewController.m */; };
 		B79C5E7C731D80DF88CB4722 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */; };
@@ -249,6 +250,8 @@
 		41C7E7851FA63C8400F93E05 /* YDMoveCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDMoveCollectionView.m; sourceTree = "<group>"; };
 		41C7E7881FA6C57B00F93E05 /* YDIOS9BeforeCustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDIOS9BeforeCustomViewController.h; sourceTree = "<group>"; };
 		41C7E7891FA6C57B00F93E05 /* YDIOS9BeforeCustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDIOS9BeforeCustomViewController.m; sourceTree = "<group>"; };
+		41C7E7981FA71DC000F93E05 /* YDMsonryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMsonryViewController.h; sourceTree = "<group>"; };
+		41C7E7991FA71DC000F93E05 /* YDMsonryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDMsonryViewController.m; sourceTree = "<group>"; };
 		41E0D8D81F0C785D00E16E9E /* YDBgImageStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBgImageStatusView.h; sourceTree = "<group>"; };
 		41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBgImageStatusView.m; sourceTree = "<group>"; };
 		41E0D8E01F0CDBA500E16E9E /* HLYShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYShapeLayerViewController.h; sourceTree = "<group>"; };
@@ -635,7 +638,7 @@
 			name = UIResponder;
 			sourceTree = "<group>";
 		};
-		41729EE81FA18A0A002E4A44 /* image */ = {
+		41729EE81FA18A0A002E4A44 /* phphoto */ = {
 			isa = PBXGroup;
 			children = (
 				41729EE91FA18A2F002E4A44 /* YDPhotoViewController.h */,
@@ -645,7 +648,7 @@
 				415669D21FA328FE00629AC7 /* YDAlbumMgr.h */,
 				415669D31FA328FE00629AC7 /* YDAlbumMgr.m */,
 			);
-			name = image;
+			name = phphoto;
 			sourceTree = "<group>";
 		};
 		41ABCEF51F0BC4F800927CCC /* collectionview cell 上的动画 */ = {
@@ -661,13 +664,13 @@
 			name = "collectionview cell 上的动画";
 			sourceTree = "<group>";
 		};
-		41B1B8D51FA592DF0008D317 /* collecction */ = {
+		41B1B8D51FA592DF0008D317 /* imagePicker */ = {
 			isa = PBXGroup;
 			children = (
 				41B1B8DA1FA593710008D317 /* YDImgPickerViewController.h */,
 				41B1B8D91FA593710008D317 /* YDImgPickerViewController.m */,
 			);
-			name = collecction;
+			name = imagePicker;
 			sourceTree = "<group>";
 		};
 		41C7E7721FA62D0600F93E05 /* ios 9 之前的内容 */ = {
@@ -695,6 +698,15 @@
 				41C7E7891FA6C57B00F93E05 /* YDIOS9BeforeCustomViewController.m */,
 			);
 			name = "YDIos 9之前的内容";
+			sourceTree = "<group>";
+		};
+		41C7E7971FA71D9C00F93E05 /* masonry */ = {
+			isa = PBXGroup;
+			children = (
+				41C7E7981FA71DC000F93E05 /* YDMsonryViewController.h */,
+				41C7E7991FA71DC000F93E05 /* YDMsonryViewController.m */,
+			);
+			path = masonry;
 			sourceTree = "<group>";
 		};
 		41E0D8DF1F0CDB8800E16E9E /* CAShapeLayer */ = {
@@ -1355,12 +1367,13 @@
 		DCCED70F1EF98816001D2474 /* test_effective */ = {
 			isa = PBXGroup;
 			children = (
+				41C7E7971FA71D9C00F93E05 /* masonry */,
 				41C7E7871FA6C53700F93E05 /* YDIos 9之前的内容 */,
 				41C7E7721FA62D0600F93E05 /* ios 9 之前的内容 */,
 				411C6E711FA5A63300FA2F5F /* Layout */,
-				41B1B8D51FA592DF0008D317 /* collecction */,
+				41B1B8D51FA592DF0008D317 /* imagePicker */,
 				411F86211F9E034D00C195AC /* YYlabel */,
-				41729EE81FA18A0A002E4A44 /* image */,
+				41729EE81FA18A0A002E4A44 /* phphoto */,
 				411F86251F9E0F8500C195AC /* YDDraw */,
 				411F861A1F9DD40F00C195AC /* CoreText */,
 				4133E8B31F9D9BEE004B3242 /* Shadow */,
@@ -1894,6 +1907,7 @@
 				DCCED71E1EF98816001D2474 /* test_effective.xcdatamodeld in Sources */,
 				411F86201F9DF4B100C195AC /* YDVerticalView.m in Sources */,
 				41729EEB1FA18A2F002E4A44 /* YDPhotoViewController.m in Sources */,
+				41C7E79A1FA71DC000F93E05 /* YDMsonryViewController.m in Sources */,
 				4143FFE61F98A67F001B783F /* YDVideoView.m in Sources */,
 				4133E8B61F9D9BFD004B3242 /* YDShadowViewController.m in Sources */,
 				41C7E7801FA62E9700F93E05 /* XWCellModel.m in Sources */,

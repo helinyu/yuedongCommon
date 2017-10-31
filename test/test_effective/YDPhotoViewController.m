@@ -71,7 +71,7 @@
     PHFetchOptions *options = [PHFetchOptions new];
     options.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:YES]];
     _allPhotos = [PHAsset fetchAssetsWithOptions:options];
-    
+
 //    Create a PHFetchResult object for each section in the table view.
 //    allPhotos = PHAsset.fetchAssets(with: allPhotosOptions)
 //    smartAlbums = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .albumRegular, options: nil)
@@ -114,9 +114,6 @@
         }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
 
 - (void)dealloc {
     [_phLibrary unregisterChangeObserver:self];
@@ -124,7 +121,7 @@
 
 - (void)photoLibraryDidChange:(PHChange *)changeInstance {
     PHObjectChangeDetails *changeDetails = [changeInstance changeDetailsForObject:[PHObject new]]; /// for specifiy obj
-    PHFetchResultChangeDetails *resultChangeDetails = [changeInstance changeDetailsForFetchResult:[PHFetchResult new]]; // for specifiy obj
+    PHFetchResultChangeDetails *resultChangeDetails = [changeInstance changeDetailsForFetchResult:[PHFetchResult new]];
 }
 
 #pragma mark -- collectionview datasource & delegate

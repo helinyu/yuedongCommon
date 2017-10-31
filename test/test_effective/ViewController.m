@@ -26,6 +26,7 @@
 #import "YDMoveLayoutViewController.h"
 #import "YDIos9BeforeViewController.h"
 #import "YDIOS9BeforeCustomViewController.h"
+#import "YDMsonryViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -70,6 +71,7 @@
                         @[@"拖拽内容",[YDMoveLayoutViewController new]],
                         @[@"ios 9 之前的拖拽功能",[YDIos9BeforeViewController new]],
                         @[@"自定义的内容",[YDIOS9BeforeCustomViewController new]],
+                        @[@"测试masonry 设置约束",[YDMsonryViewController new]]
                         ];
 }
 
