@@ -32,17 +32,16 @@
 - (void)test0 {
     if ([QMUIAssetsManager authorizationStatus] == QMUIAssetAuthorizationStatusNotAuthorized) {
         // 如果没有获取访问授权，或者访问授权状态已经被明确禁止，则显示提示语，引导用户开启授权
-        NSLog(@"已经被禁止了");
-                NSString *tipString = self.tipTextWhenNoPhotosAuthorization;
-                if (!tipString) {
-                    NSDictionary *mainInfoDictionary = [[NSBundle mainBundle] infoDictionary];
-                    NSString *appName = [mainInfoDictionary objectForKey:@"CFBundleDisplayName"];
-                    if (!appName) {
-                        appName = [mainInfoDictionary objectForKey:(NSString *)kCFBundleNameKey];
-                    }
-                    tipString = [NSString stringWithFormat:@"请在设备的\"设置-隐私-照片\"选项中，允许%@访问你的手机相册", appName];
-                }
-                [self showEmptyViewWithText:tipString detailText:nil buttonTitle:nil buttonAction:nil];
+//        NSLog(@"已经被禁止了");
+//                NSString *tipString = self.tipTextWhenNoPhotosAuthorization;
+//                if (!tipString) {
+//                    NSDictionary *mainInfoDictionary = [[NSBundle mainBundle] infoDictionary];
+//                    NSString *appName = [mainInfoDictionary objectForKey:@"CFBundleDisplayName"];
+//                    if (!appName) {
+//                        appName = [mainInfoDictionary objectForKey:(NSString *)kCFBundleNameKey];
+//                    }
+//                    tipString = [NSString stringWithFormat:@"请在设备的\"设置-隐私-照片\"选项中，允许%@访问你的手机相册", appName];
+//                }
     } else {
         
         _albumsArray = @[].mutableCopy;

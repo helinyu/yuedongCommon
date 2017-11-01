@@ -28,6 +28,7 @@
 #import "YDIOS9BeforeCustomViewController.h"
 #import "YDMsonryViewController.h"
 #import "YDTest1AlbumViewController.h"
+#import "YDZoomViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -73,6 +74,7 @@
                         @[@"自定义的内容",[YDIOS9BeforeCustomViewController new]],
                         @[@"测试masonry 设置约束",[YDMsonryViewController new]],
                         @[@"相册图片的处理",[YDTest1AlbumViewController new]],
+                        @[@"view以及cell上的图片放大",[YDZoomViewController new]],
                         ];
 }
 
