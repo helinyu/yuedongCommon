@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		410A63F71F9995AD006835A9 /* HLY2View.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A63F61F9995AD006835A9 /* HLY2View.m */; };
 		410A63FB1F99E479006835A9 /* HLYiOS11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A63FA1F99E479006835A9 /* HLYiOS11ViewController.m */; };
+		41145D771FA898A900984D08 /* YDTest1AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41145D761FA898A900984D08 /* YDTest1AlbumViewController.m */; };
 		411C6E741FA5A65A00FA2F5F /* YDMoveLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C6E731FA5A65A00FA2F5F /* YDMoveLayoutViewController.m */; };
 		411C6E771FA5A6BD00FA2F5F /* LXReorderableCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C6E761FA5A6BD00FA2F5F /* LXReorderableCollectionViewFlowLayout.m */; };
 		411F861D1F9DD41C00C195AC /* YDCoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411F861C1F9DD41C00C195AC /* YDCoreTextViewController.m */; };
@@ -186,6 +187,8 @@
 		410A63F91F99E479006835A9 /* HLYiOS11ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLYiOS11ViewController.h; sourceTree = "<group>"; };
 		410A63FA1F99E479006835A9 /* HLYiOS11ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLYiOS11ViewController.m; sourceTree = "<group>"; };
 		410A63FC1F99F70F006835A9 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
+		41145D751FA898A900984D08 /* YDTest1AlbumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest1AlbumViewController.h; sourceTree = "<group>"; };
+		41145D761FA898A900984D08 /* YDTest1AlbumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest1AlbumViewController.m; sourceTree = "<group>"; };
 		411C6E721FA5A65A00FA2F5F /* YDMoveLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMoveLayoutViewController.h; sourceTree = "<group>"; };
 		411C6E731FA5A65A00FA2F5F /* YDMoveLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDMoveLayoutViewController.m; sourceTree = "<group>"; };
 		411C6E751FA5A6BD00FA2F5F /* LXReorderableCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXReorderableCollectionViewFlowLayout.h; sourceTree = "<group>"; };
@@ -544,6 +547,15 @@
 				410A63FC1F99F70F006835A9 /* test.gif */,
 			);
 			name = "11 一些新特性";
+			sourceTree = "<group>";
+		};
+		41145D641FA8942300984D08 /* photos */ = {
+			isa = PBXGroup;
+			children = (
+				41145D751FA898A900984D08 /* YDTest1AlbumViewController.h */,
+				41145D761FA898A900984D08 /* YDTest1AlbumViewController.m */,
+			);
+			name = photos;
 			sourceTree = "<group>";
 		};
 		411C6E711FA5A63300FA2F5F /* Layout */ = {
@@ -1367,6 +1379,7 @@
 		DCCED70F1EF98816001D2474 /* test_effective */ = {
 			isa = PBXGroup;
 			children = (
+				41145D641FA8942300984D08 /* photos */,
 				41C7E7971FA71D9C00F93E05 /* masonry */,
 				41C7E7871FA6C53700F93E05 /* YDIos 9之前的内容 */,
 				41C7E7721FA62D0600F93E05 /* ios 9 之前的内容 */,
@@ -1909,6 +1922,7 @@
 				41729EEB1FA18A2F002E4A44 /* YDPhotoViewController.m in Sources */,
 				41C7E79A1FA71DC000F93E05 /* YDMsonryViewController.m in Sources */,
 				4143FFE61F98A67F001B783F /* YDVideoView.m in Sources */,
+				41145D771FA898A900984D08 /* YDTest1AlbumViewController.m in Sources */,
 				4133E8B61F9D9BFD004B3242 /* YDShadowViewController.m in Sources */,
 				41C7E7801FA62E9700F93E05 /* XWCellModel.m in Sources */,
 				411F86241F9E035F00C195AC /* YDTestYYLabelViewController.m in Sources */,

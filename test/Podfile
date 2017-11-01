@@ -15,13 +15,14 @@ platform :ios, '7.0'
     pod 'DateTools', '~> 2.0.0'
 #    pod 'YYModel', '~> 1.0.4'
     pod 'YYKit', '~> 1.0.9'
-    pod 'QMUIKit', '~> 2.0.0'
 target 'test' do
 
 end
 
 target 'test_effective' do
 #    pod 'YYModel', '~> 1.0.4'
+    pod 'QMUIKit', '~> 2.0.0'
+
 end
 
 #platform :ios, '8.0'
