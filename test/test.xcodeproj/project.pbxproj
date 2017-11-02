@@ -25,6 +25,17 @@
 		4121725C1F3D81B300A47AD9 /* HLYTestModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121725B1F3D81B300A47AD9 /* HLYTestModelViewController.m */; };
 		4121725F1F3D820800A47AD9 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121725E1F3D820800A47AD9 /* Father.m */; };
 		412172621F3D821B00A47AD9 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 412172611F3D821B00A47AD9 /* Son.m */; };
+		4123A8FC1FAB468B004FBD1F /* YDPhotoTakenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4123A8FB1FAB468B004FBD1F /* YDPhotoTakenViewController.m */; };
+		4123A9021FAB46E7004FBD1F /* CaptureSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4123A8FF1FAB46E7004FBD1F /* CaptureSessionManager.m */; };
+		4123A9031FAB46E7004FBD1F /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4123A9011FAB46E7004FBD1F /* Constants.m */; };
+		4123A9071FAB46EE004FBD1F /* CameraSessionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4123A9061FAB46EE004FBD1F /* CameraSessionView.m */; };
+		4123A9151FAB4809004FBD1F /* CameraDismissButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4123A90A1FAB4809004FBD1F /* CameraDismissButton.m */; };
+		4123A9161FAB4809004FBD1F /* CameraFlashButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4123A90C1FAB4809004FBD1F /* CameraFlashButton.m */; };
+		4123A9171FAB4809004FBD1F /* CameraFocalReticule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4123A90E1FAB4809004FBD1F /* CameraFocalReticule.m */; };
+		4123A9181FAB4809004FBD1F /* CameraShutterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4123A9101FAB4809004FBD1F /* CameraShutterButton.m */; };
+		4123A9191FAB4809004FBD1F /* CameraToggleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4123A9121FAB4809004FBD1F /* CameraToggleButton.m */; };
+		4123A91A1FAB4809004FBD1F /* LaunchCameraButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4123A9141FAB4809004FBD1F /* LaunchCameraButton.m */; };
+		4123A91E1FAB4815004FBD1F /* CameraStyleKitClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4123A91D1FAB4815004FBD1F /* CameraStyleKitClass.m */; };
 		4133E8B21F9D9514004B3242 /* YDNSNullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4133E8B11F9D9514004B3242 /* YDNSNullViewController.m */; };
 		4133E8B61F9D9BFD004B3242 /* YDShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4133E8B51F9D9BFD004B3242 /* YDShadowViewController.m */; };
 		4143FFD61F96EC09001B783F /* YDLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4143FFD51F96EC09001B783F /* YDLabelViewController.m */; };
@@ -223,6 +234,28 @@
 		4121725E1F3D820800A47AD9 /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
 		412172601F3D821B00A47AD9 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
 		412172611F3D821B00A47AD9 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		4123A8FA1FAB468B004FBD1F /* YDPhotoTakenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDPhotoTakenViewController.h; sourceTree = "<group>"; };
+		4123A8FB1FAB468B004FBD1F /* YDPhotoTakenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDPhotoTakenViewController.m; sourceTree = "<group>"; };
+		4123A8FE1FAB46E7004FBD1F /* CaptureSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureSessionManager.h; sourceTree = "<group>"; };
+		4123A8FF1FAB46E7004FBD1F /* CaptureSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureSessionManager.m; sourceTree = "<group>"; };
+		4123A9001FAB46E7004FBD1F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		4123A9011FAB46E7004FBD1F /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		4123A9051FAB46EE004FBD1F /* CameraSessionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraSessionView.h; sourceTree = "<group>"; };
+		4123A9061FAB46EE004FBD1F /* CameraSessionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraSessionView.m; sourceTree = "<group>"; };
+		4123A9091FAB4809004FBD1F /* CameraDismissButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraDismissButton.h; sourceTree = "<group>"; };
+		4123A90A1FAB4809004FBD1F /* CameraDismissButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraDismissButton.m; sourceTree = "<group>"; };
+		4123A90B1FAB4809004FBD1F /* CameraFlashButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraFlashButton.h; sourceTree = "<group>"; };
+		4123A90C1FAB4809004FBD1F /* CameraFlashButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraFlashButton.m; sourceTree = "<group>"; };
+		4123A90D1FAB4809004FBD1F /* CameraFocalReticule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraFocalReticule.h; sourceTree = "<group>"; };
+		4123A90E1FAB4809004FBD1F /* CameraFocalReticule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraFocalReticule.m; sourceTree = "<group>"; };
+		4123A90F1FAB4809004FBD1F /* CameraShutterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraShutterButton.h; sourceTree = "<group>"; };
+		4123A9101FAB4809004FBD1F /* CameraShutterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraShutterButton.m; sourceTree = "<group>"; };
+		4123A9111FAB4809004FBD1F /* CameraToggleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraToggleButton.h; sourceTree = "<group>"; };
+		4123A9121FAB4809004FBD1F /* CameraToggleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraToggleButton.m; sourceTree = "<group>"; };
+		4123A9131FAB4809004FBD1F /* LaunchCameraButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchCameraButton.h; sourceTree = "<group>"; };
+		4123A9141FAB4809004FBD1F /* LaunchCameraButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchCameraButton.m; sourceTree = "<group>"; };
+		4123A91C1FAB4815004FBD1F /* CameraStyleKitClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraStyleKitClass.h; sourceTree = "<group>"; };
+		4123A91D1FAB4815004FBD1F /* CameraStyleKitClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraStyleKitClass.m; sourceTree = "<group>"; };
 		4133E8B01F9D9514004B3242 /* YDNSNullViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDNSNullViewController.h; sourceTree = SOURCE_ROOT; };
 		4133E8B11F9D9514004B3242 /* YDNSNullViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDNSNullViewController.m; sourceTree = SOURCE_ROOT; };
 		4133E8B41F9D9BFD004B3242 /* YDShadowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDShadowViewController.h; sourceTree = "<group>"; };
@@ -641,6 +674,67 @@
 				412172611F3D821B00A47AD9 /* Son.m */,
 			);
 			name = 9;
+			sourceTree = "<group>";
+		};
+		4123A8F91FAB4674004FBD1F /* take photos */ = {
+			isa = PBXGroup;
+			children = (
+				4123A8FA1FAB468B004FBD1F /* YDPhotoTakenViewController.h */,
+				4123A8FB1FAB468B004FBD1F /* YDPhotoTakenViewController.m */,
+				4123A91B1FAB4815004FBD1F /* UI Assets */,
+				4123A9081FAB4809004FBD1F /* CameraViewComponents */,
+				4123A9041FAB46EE004FBD1F /* Camera View */,
+				4123A8FD1FAB46E7004FBD1F /* Model Classes */,
+			);
+			name = "take photos";
+			sourceTree = "<group>";
+		};
+		4123A8FD1FAB46E7004FBD1F /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4123A8FE1FAB46E7004FBD1F /* CaptureSessionManager.h */,
+				4123A8FF1FAB46E7004FBD1F /* CaptureSessionManager.m */,
+				4123A9001FAB46E7004FBD1F /* Constants.h */,
+				4123A9011FAB46E7004FBD1F /* Constants.m */,
+			);
+			path = "Model Classes";
+			sourceTree = "<group>";
+		};
+		4123A9041FAB46EE004FBD1F /* Camera View */ = {
+			isa = PBXGroup;
+			children = (
+				4123A9051FAB46EE004FBD1F /* CameraSessionView.h */,
+				4123A9061FAB46EE004FBD1F /* CameraSessionView.m */,
+			);
+			path = "Camera View";
+			sourceTree = "<group>";
+		};
+		4123A9081FAB4809004FBD1F /* CameraViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				4123A9091FAB4809004FBD1F /* CameraDismissButton.h */,
+				4123A90A1FAB4809004FBD1F /* CameraDismissButton.m */,
+				4123A90B1FAB4809004FBD1F /* CameraFlashButton.h */,
+				4123A90C1FAB4809004FBD1F /* CameraFlashButton.m */,
+				4123A90D1FAB4809004FBD1F /* CameraFocalReticule.h */,
+				4123A90E1FAB4809004FBD1F /* CameraFocalReticule.m */,
+				4123A90F1FAB4809004FBD1F /* CameraShutterButton.h */,
+				4123A9101FAB4809004FBD1F /* CameraShutterButton.m */,
+				4123A9111FAB4809004FBD1F /* CameraToggleButton.h */,
+				4123A9121FAB4809004FBD1F /* CameraToggleButton.m */,
+				4123A9131FAB4809004FBD1F /* LaunchCameraButton.h */,
+				4123A9141FAB4809004FBD1F /* LaunchCameraButton.m */,
+			);
+			path = CameraViewComponents;
+			sourceTree = "<group>";
+		};
+		4123A91B1FAB4815004FBD1F /* UI Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4123A91C1FAB4815004FBD1F /* CameraStyleKitClass.h */,
+				4123A91D1FAB4815004FBD1F /* CameraStyleKitClass.m */,
+			);
+			path = "UI Assets";
 			sourceTree = "<group>";
 		};
 		4133E8AF1F9D94B8004B3242 /* NSNull */ = {
@@ -1409,6 +1503,7 @@
 		DCCED70F1EF98816001D2474 /* test_effective */ = {
 			isa = PBXGroup;
 			children = (
+				4123A8F91FAB4674004FBD1F /* take photos */,
 				41145D951FA9B2BE00984D08 /* zoom */,
 				41145D641FA8942300984D08 /* photos */,
 				41C7E7971FA71D9C00F93E05 /* masonry */,
@@ -1921,20 +2016,27 @@
 				DCCED7181EF98816001D2474 /* ViewController.m in Sources */,
 				41C7E7711FA5E4EB00F93E05 /* YDSingleTitleCCell.m in Sources */,
 				41716EE71F946C1E00D5D927 /* YDEMojiViewController.m in Sources */,
+				4123A9021FAB46E7004FBD1F /* CaptureSessionManager.m in Sources */,
 				DC38AE681EFFE6A200FB44FE /* EOCPerson.m in Sources */,
+				4123A91A1FAB4809004FBD1F /* LaunchCameraButton.m in Sources */,
 				41C7E7751FA62D3200F93E05 /* YDIos9BeforeViewController.m in Sources */,
 				41145D981FA9B2D300984D08 /* YDZoomViewController.m in Sources */,
 				41145D9D1FA9BB1500984D08 /* YDZoomView.m in Sources */,
 				41C7E78A1FA6C57B00F93E05 /* YDIOS9BeforeCustomViewController.m in Sources */,
 				415669D41FA328FE00629AC7 /* YDAlbumMgr.m in Sources */,
 				4133E8B21F9D9514004B3242 /* YDNSNullViewController.m in Sources */,
+				4123A9161FAB4809004FBD1F /* CameraFlashButton.m in Sources */,
+				4123A9171FAB4809004FBD1F /* CameraFocalReticule.m in Sources */,
 				DCCB56141EFADDEE00A5A44C /* HLy7ViewController.m in Sources */,
 				411C6E741FA5A65A00FA2F5F /* YDMoveLayoutViewController.m in Sources */,
 				DCCED7151EF98816001D2474 /* AppDelegate.m in Sources */,
+				4123A9071FAB46EE004FBD1F /* CameraSessionView.m in Sources */,
 				41C7E77F1FA62E9700F93E05 /* XWCell.m in Sources */,
 				411F861D1F9DD41C00C195AC /* YDCoreTextViewController.m in Sources */,
 				41B1B8DB1FA593720008D317 /* YDImgPickerViewController.m in Sources */,
+				4123A9031FAB46E7004FBD1F /* Constants.m in Sources */,
 				41C7E7831FA6321900F93E05 /* XWDragCellCollectionView.m in Sources */,
+				4123A9191FAB4809004FBD1F /* CameraToggleButton.m in Sources */,
 				4121725C1F3D81B300A47AD9 /* HLYTestModelViewController.m in Sources */,
 				411F862B1F9E10C200C195AC /* YDDrawView.m in Sources */,
 				410A63F71F9995AD006835A9 /* HLY2View.m in Sources */,
@@ -1952,14 +2054,18 @@
 				41C7E7861FA63C8400F93E05 /* YDMoveCollectionView.m in Sources */,
 				4143FFE01F9899AC001B783F /* YDCustomView.m in Sources */,
 				4121725F1F3D820800A47AD9 /* Father.m in Sources */,
+				4123A9151FAB4809004FBD1F /* CameraDismissButton.m in Sources */,
 				4143FFD61F96EC09001B783F /* YDLabelViewController.m in Sources */,
 				DCCED71E1EF98816001D2474 /* test_effective.xcdatamodeld in Sources */,
+				4123A91E1FAB4815004FBD1F /* CameraStyleKitClass.m in Sources */,
 				411F86201F9DF4B100C195AC /* YDVerticalView.m in Sources */,
 				41729EEB1FA18A2F002E4A44 /* YDPhotoViewController.m in Sources */,
 				41C7E79A1FA71DC000F93E05 /* YDMsonryViewController.m in Sources */,
 				4143FFE61F98A67F001B783F /* YDVideoView.m in Sources */,
+				4123A9181FAB4809004FBD1F /* CameraShutterButton.m in Sources */,
 				41145D771FA898A900984D08 /* YDTest1AlbumViewController.m in Sources */,
 				4133E8B61F9D9BFD004B3242 /* YDShadowViewController.m in Sources */,
+				4123A8FC1FAB468B004FBD1F /* YDPhotoTakenViewController.m in Sources */,
 				41C7E7801FA62E9700F93E05 /* XWCellModel.m in Sources */,
 				411F86241F9E035F00C195AC /* YDTestYYLabelViewController.m in Sources */,
 			);

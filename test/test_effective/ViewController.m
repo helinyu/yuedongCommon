@@ -29,6 +29,7 @@
 #import "YDMsonryViewController.h"
 #import "YDTest1AlbumViewController.h"
 #import "YDZoomViewController.h"
+#import "YDPhotoTakenViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -75,6 +76,7 @@
                         @[@"测试masonry 设置约束",[YDMsonryViewController new]],
                         @[@"相册图片的处理",[YDTest1AlbumViewController new]],
                         @[@"view以及cell上的图片放大",[YDZoomViewController new]],
+                        @[@"拍照",[YDPhotoTakenViewController new]],
                         ];
 }
 
