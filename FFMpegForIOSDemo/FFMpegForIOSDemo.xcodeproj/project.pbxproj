@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		019183CAEFEFD8F559158462 /* libPods-FFMpegForIOSDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53244D61EB83FD918AD94ED7 /* libPods-FFMpegForIOSDemoUITests.a */; };
+		020A6BC4FB4700CA1F69574E /* libPods-FFMpegForIOSDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAE3FBEE408C6BD01BA3777 /* libPods-FFMpegForIOSDemoTests.a */; };
+		1F1FAB24EFD559661A0A5D8F /* libPods-FFMpegForIOSDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0DE7D63A6CA7A167C9912BA /* libPods-FFMpegForIOSDemo.a */; };
 		412BAC7D1FAF1C8900E9A2CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 412BAC7C1FAF1C8900E9A2CD /* AppDelegate.m */; };
 		412BAC801FAF1C8900E9A2CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 412BAC7F1FAF1C8900E9A2CD /* ViewController.m */; };
 		412BAC831FAF1C8900E9A2CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412BAC811FAF1C8900E9A2CD /* Main.storyboard */; };
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00BB06010516E2FCA22F9B7C /* Pods-FFMpegForIOSDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMpegForIOSDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FFMpegForIOSDemoUITests/Pods-FFMpegForIOSDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2AAE3FBEE408C6BD01BA3777 /* libPods-FFMpegForIOSDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFMpegForIOSDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		412BAC781FAF1C8900E9A2CD /* FFMpegForIOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFMpegForIOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		412BAC7B1FAF1C8900E9A2CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		412BAC7C1FAF1C8900E9A2CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +58,13 @@
 		412BAC9E1FAF1C8900E9A2CD /* FFMpegForIOSDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFMpegForIOSDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		412BACA21FAF1C8900E9A2CD /* FFMpegForIOSDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFMpegForIOSDemoUITests.m; sourceTree = "<group>"; };
 		412BACA41FAF1C8900E9A2CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53244D61EB83FD918AD94ED7 /* libPods-FFMpegForIOSDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFMpegForIOSDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5506DB4CDABD9D9B1B7AD575 /* Pods-FFMpegForIOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMpegForIOSDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FFMpegForIOSDemo/Pods-FFMpegForIOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		852192E903BD9188221733C5 /* Pods-FFMpegForIOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMpegForIOSDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FFMpegForIOSDemo/Pods-FFMpegForIOSDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8D2040C58E046C4F59A5BD61 /* Pods-FFMpegForIOSDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMpegForIOSDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FFMpegForIOSDemoTests/Pods-FFMpegForIOSDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0DE7D63A6CA7A167C9912BA /* libPods-FFMpegForIOSDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFMpegForIOSDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FEB719A00D5096CD44A18A /* Pods-FFMpegForIOSDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMpegForIOSDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FFMpegForIOSDemoTests/Pods-FFMpegForIOSDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		CB465F28F3329AE9E238A905 /* Pods-FFMpegForIOSDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMpegForIOSDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FFMpegForIOSDemoUITests/Pods-FFMpegForIOSDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1FAB24EFD559661A0A5D8F /* libPods-FFMpegForIOSDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020A6BC4FB4700CA1F69574E /* libPods-FFMpegForIOSDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				019183CAEFEFD8F559158462 /* libPods-FFMpegForIOSDemoUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +102,8 @@
 				412BAC961FAF1C8900E9A2CD /* FFMpegForIOSDemoTests */,
 				412BACA11FAF1C8900E9A2CD /* FFMpegForIOSDemoUITests */,
 				412BAC791FAF1C8900E9A2CD /* Products */,
+				CF74FBA0CFD582E5E314503E /* Pods */,
+				F914DA0932C88286564D9F7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +152,29 @@
 			path = FFMpegForIOSDemoUITests;
 			sourceTree = "<group>";
 		};
+		CF74FBA0CFD582E5E314503E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5506DB4CDABD9D9B1B7AD575 /* Pods-FFMpegForIOSDemo.debug.xcconfig */,
+				852192E903BD9188221733C5 /* Pods-FFMpegForIOSDemo.release.xcconfig */,
+				8D2040C58E046C4F59A5BD61 /* Pods-FFMpegForIOSDemoTests.debug.xcconfig */,
+				C9FEB719A00D5096CD44A18A /* Pods-FFMpegForIOSDemoTests.release.xcconfig */,
+				CB465F28F3329AE9E238A905 /* Pods-FFMpegForIOSDemoUITests.debug.xcconfig */,
+				00BB06010516E2FCA22F9B7C /* Pods-FFMpegForIOSDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F914DA0932C88286564D9F7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE7D63A6CA7A167C9912BA /* libPods-FFMpegForIOSDemo.a */,
+				2AAE3FBEE408C6BD01BA3777 /* libPods-FFMpegForIOSDemoTests.a */,
+				53244D61EB83FD918AD94ED7 /* libPods-FFMpegForIOSDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 412BACA71FAF1C8900E9A2CD /* Build configuration list for PBXNativeTarget "FFMpegForIOSDemo" */;
 			buildPhases = (
+				6A99F00901D8FBFFB5CB8FE1 /* [CP] Check Pods Manifest.lock */,
 				412BAC741FAF1C8900E9A2CD /* Sources */,
 				412BAC751FAF1C8900E9A2CD /* Frameworks */,
 				412BAC761FAF1C8900E9A2CD /* Resources */,
+				6C50F759E7CF95D7ECA0DE1C /* [CP] Embed Pods Frameworks */,
+				32EE8B383CA8DB546FC1C16B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 412BACAA1FAF1C8900E9A2CD /* Build configuration list for PBXNativeTarget "FFMpegForIOSDemoTests" */;
 			buildPhases = (
+				FE90007C38DC3F03B21C196D /* [CP] Check Pods Manifest.lock */,
 				412BAC8F1FAF1C8900E9A2CD /* Sources */,
 				412BAC901FAF1C8900E9A2CD /* Frameworks */,
 				412BAC911FAF1C8900E9A2CD /* Resources */,
+				DCC83E3100D394CA0A2F2741 /* [CP] Embed Pods Frameworks */,
+				9A8A236D5029149E1650B315 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,9 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 412BACAD1FAF1C8900E9A2CD /* Build configuration list for PBXNativeTarget "FFMpegForIOSDemoUITests" */;
 			buildPhases = (
+				FAE180C76EAA4BE73A45A39D /* [CP] Check Pods Manifest.lock */,
 				412BAC9A1FAF1C8900E9A2CD /* Sources */,
 				412BAC9B1FAF1C8900E9A2CD /* Frameworks */,
 				412BAC9C1FAF1C8900E9A2CD /* Resources */,
+				B59B2DC4ACEFA52A35460430 /* [CP] Embed Pods Frameworks */,
+				9183857E43B76E16C268872B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,7 +251,7 @@
 				TargetAttributes = {
 					412BAC771FAF1C8900E9A2CD = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					412BAC921FAF1C8900E9A2CD = {
 						CreatedOnToolsVersion = 9.1;
@@ -262,6 +311,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32EE8B383CA8DB546FC1C16B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFMpegForIOSDemo/Pods-FFMpegForIOSDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A99F00901D8FBFFB5CB8FE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6C50F759E7CF95D7ECA0DE1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFMpegForIOSDemo/Pods-FFMpegForIOSDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9183857E43B76E16C268872B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFMpegForIOSDemoUITests/Pods-FFMpegForIOSDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A8A236D5029149E1650B315 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFMpegForIOSDemoTests/Pods-FFMpegForIOSDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B59B2DC4ACEFA52A35460430 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFMpegForIOSDemoUITests/Pods-FFMpegForIOSDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCC83E3100D394CA0A2F2741 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFMpegForIOSDemoTests/Pods-FFMpegForIOSDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAE180C76EAA4BE73A45A39D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE90007C38DC3F03B21C196D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		412BAC741FAF1C8900E9A2CD /* Sources */ = {
@@ -432,34 +619,40 @@
 		};
 		412BACA81FAF1C8900E9A2CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5506DB4CDABD9D9B1B7AD575 /* Pods-FFMpegForIOSDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				INFOPLIST_FILE = FFMpegForIOSDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.FFMpegForIOSDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b363ae29-99b5-4a80-8387-fb15465ff666";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		412BACA91FAF1C8900E9A2CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 852192E903BD9188221733C5 /* Pods-FFMpegForIOSDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FFMpegForIOSDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.FFMpegForIOSDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		412BACAB1FAF1C8900E9A2CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D2040C58E046C4F59A5BD61 /* Pods-FFMpegForIOSDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -475,6 +668,7 @@
 		};
 		412BACAC1FAF1C8900E9A2CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9FEB719A00D5096CD44A18A /* Pods-FFMpegForIOSDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +684,7 @@
 		};
 		412BACAE1FAF1C8900E9A2CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB465F28F3329AE9E238A905 /* Pods-FFMpegForIOSDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2XBEJ6876;
@@ -504,6 +699,7 @@
 		};
 		412BACAF1FAF1C8900E9A2CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00BB06010516E2FCA22F9B7C /* Pods-FFMpegForIOSDemoUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2XBEJ6876;
