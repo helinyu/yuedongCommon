@@ -15,6 +15,7 @@
 #import "YDTestNavigationVC.h"
 #import "YDDatasViewController.h"
 #import "YDSortViewController.h"
+#import "YDScrollCollectionViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -47,6 +48,7 @@
                         @[@"测试导航栏",[YDTestNavigationVC new]],
                         @[@"有关的内容",[YDDatasViewController new]],
                         @[@"排序数组",[YDSortViewController new]],
+                        @[@"collectionview 滑动不可见",[YDScrollCollectionViewController new]],
                         ];
 }
 

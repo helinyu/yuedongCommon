@@ -18,6 +18,8 @@
 		413371ED1FB4625500C00AEB /* YDDatasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413371EC1FB4625500C00AEB /* YDDatasViewController.m */; };
 		413371F11FB4647F00C00AEB /* YDSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413371F01FB4647F00C00AEB /* YDSortViewController.m */; };
 		413371F41FB464E300C00AEB /* YDPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 413371F31FB464E300C00AEB /* YDPerson.m */; };
+		413371F81FB4912300C00AEB /* YDScrollCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413371F71FB4912300C00AEB /* YDScrollCollectionViewController.m */; };
+		413371F91FB493FB00C00AEB /* HLYCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC783F021EE6818600CF132C /* HLYCollectionViewCell.m */; };
 		41ABCEF81F0BC51200927CCC /* HLYAnimationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */; };
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
@@ -76,8 +78,6 @@
 		DC6C0EA61EC48EBC006B7581 /* YDAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6C0EA51EC48EBC006B7581 /* YDAnimationView.m */; };
 		DC6C0EAD1EC5AA1A006B7581 /* CircleExtentionAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6C0EAC1EC5AA1A006B7581 /* CircleExtentionAnimationViewController.m */; };
 		DC783F001EE680F800CF132C /* HLYMineViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = DC783EFF1EE680F800CF132C /* HLYMineViewcontroller.m */; };
-		DC783F041EE6818600CF132C /* HLYCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC783F021EE6818600CF132C /* HLYCollectionViewCell.m */; };
-		DC783F051EE6818600CF132C /* HLYCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC783F031EE6818600CF132C /* HLYCollectionViewCell.xib */; };
 		DC783F091EE6843F00CF132C /* HLYMIneTAbleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC783F081EE6843F00CF132C /* HLYMIneTAbleViewController.m */; };
 		DC783F0C1EE6858900CF132C /* HLYBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC783F0B1EE6858900CF132C /* HLYBaseView.m */; };
 		DC783F0E1EE68E7900CF132C /* Snip20170606_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DC783F0D1EE68E7900CF132C /* Snip20170606_1.png */; };
@@ -178,6 +178,8 @@
 		413371F01FB4647F00C00AEB /* YDSortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDSortViewController.m; sourceTree = "<group>"; };
 		413371F21FB464E300C00AEB /* YDPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDPerson.h; sourceTree = "<group>"; };
 		413371F31FB464E300C00AEB /* YDPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDPerson.m; sourceTree = "<group>"; };
+		413371F61FB4912300C00AEB /* YDScrollCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDScrollCollectionViewController.h; sourceTree = "<group>"; };
+		413371F71FB4912300C00AEB /* YDScrollCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDScrollCollectionViewController.m; sourceTree = "<group>"; };
 		41ABCEF61F0BC51200927CCC /* HLYAnimationCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAnimationCollectionViewController.h; sourceTree = "<group>"; };
 		41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAnimationCollectionViewController.m; sourceTree = "<group>"; };
 		41ABCEF91F0BC57700927CCC /* AnimationCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationCollectionViewCell.h; path = "数据解析/AnimationCollectionViewCell.h"; sourceTree = "<group>"; };
@@ -287,9 +289,8 @@
 		DC6C0EAC1EC5AA1A006B7581 /* CircleExtentionAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleExtentionAnimationViewController.m; sourceTree = "<group>"; };
 		DC783EFE1EE680F800CF132C /* HLYMineViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYMineViewcontroller.h; sourceTree = "<group>"; };
 		DC783EFF1EE680F800CF132C /* HLYMineViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYMineViewcontroller.m; sourceTree = "<group>"; };
-		DC783F011EE6818600CF132C /* HLYCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYCollectionViewCell.h; sourceTree = "<group>"; };
-		DC783F021EE6818600CF132C /* HLYCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYCollectionViewCell.m; sourceTree = "<group>"; };
-		DC783F031EE6818600CF132C /* HLYCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLYCollectionViewCell.xib; sourceTree = "<group>"; };
+		DC783F011EE6818600CF132C /* HLYCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HLYCollectionViewCell.h; path = ../test/HLYCollectionViewCell.h; sourceTree = "<group>"; };
+		DC783F021EE6818600CF132C /* HLYCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HLYCollectionViewCell.m; path = ../test/HLYCollectionViewCell.m; sourceTree = "<group>"; };
 		DC783F071EE6843F00CF132C /* HLYMIneTAbleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYMIneTAbleViewController.h; sourceTree = "<group>"; };
 		DC783F081EE6843F00CF132C /* HLYMIneTAbleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYMIneTAbleViewController.m; sourceTree = "<group>"; };
 		DC783F0A1EE6858900CF132C /* HLYBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYBaseView.h; sourceTree = "<group>"; };
@@ -515,6 +516,17 @@
 				413371F31FB464E300C00AEB /* YDPerson.m */,
 			);
 			name = "排序的内容";
+			sourceTree = "<group>";
+		};
+		413371F51FB490FD00C00AEB /* collection view 滑动不可见 */ = {
+			isa = PBXGroup;
+			children = (
+				DC783F011EE6818600CF132C /* HLYCollectionViewCell.h */,
+				DC783F021EE6818600CF132C /* HLYCollectionViewCell.m */,
+				413371F61FB4912300C00AEB /* YDScrollCollectionViewController.h */,
+				413371F71FB4912300C00AEB /* YDScrollCollectionViewController.m */,
+			);
+			name = "collection view 滑动不可见";
 			sourceTree = "<group>";
 		};
 		41ABCEF51F0BC4F800927CCC /* collectionview cell 上的动画 */ = {
@@ -896,9 +908,6 @@
 			children = (
 				DC783EFE1EE680F800CF132C /* HLYMineViewcontroller.h */,
 				DC783EFF1EE680F800CF132C /* HLYMineViewcontroller.m */,
-				DC783F011EE6818600CF132C /* HLYCollectionViewCell.h */,
-				DC783F021EE6818600CF132C /* HLYCollectionViewCell.m */,
-				DC783F031EE6818600CF132C /* HLYCollectionViewCell.xib */,
 			);
 			name = collectionview;
 			sourceTree = "<group>";
@@ -1188,6 +1197,7 @@
 		DCCED70F1EF98816001D2474 /* test_effective */ = {
 			isa = PBXGroup;
 			children = (
+				413371F51FB490FD00C00AEB /* collection view 滑动不可见 */,
 				413371EE1FB4647100C00AEB /* 排序的内容 */,
 				413371EA1FB4623400C00AEB /* 10 */,
 				413371DA1FB3F00200C00AEB /* navigation */,
@@ -1421,7 +1431,6 @@
 				DC05044F1EBDC45900718AAD /* LaunchScreen.storyboard in Resources */,
 				DC783F0E1EE68E7900CF132C /* Snip20170606_1.png in Resources */,
 				DC7FF2721ED9286900FC6AE4 /* Images.xcassets in Resources */,
-				DC783F051EE6818600CF132C /* HLYCollectionViewCell.xib in Resources */,
 				DCAB14881EF930BE0062942F /* Snip20170620_1.png in Resources */,
 				DC04102B1EF817CF000B69A3 /* Audio.xcassets in Resources */,
 				DC27A62E1ED338B0001CE499 /* storyboard.storyboard in Resources */,
@@ -1570,7 +1579,6 @@
 				DC6C0E8C1EC46802006B7581 /* VCPresentTransitionViewController.m in Sources */,
 				DC783F141EE698B700CF132C /* HLYRelativeCollectionViewCell.m in Sources */,
 				DCCED4411EE00F0400CEA54D /* OfflineDetailViewController.m in Sources */,
-				DC783F041EE6818600CF132C /* HLYCollectionViewCell.m in Sources */,
 				DC6C0E991EC4768B006B7581 /* VCNavPushedViewController.m in Sources */,
 				DC6C0E8F1EC468E1006B7581 /* VCToPresentedTransitionViewController.m in Sources */,
 				DC06099B1EE798C30061713D /* HLyTestCollectionViewCell.m in Sources */,
@@ -1676,6 +1684,7 @@
 			files = (
 				413371E61FB3F08C00C00AEB /* YDTest2ViewController.m in Sources */,
 				413371ED1FB4625500C00AEB /* YDDatasViewController.m in Sources */,
+				413371F91FB493FB00C00AEB /* HLYCollectionViewCell.m in Sources */,
 				412172621F3D821B00A47AD9 /* Son.m in Sources */,
 				DCCED7181EF98816001D2474 /* ViewController.m in Sources */,
 				413371E91FB4010100C00AEB /* YDTest3ViewController.m in Sources */,
@@ -1683,6 +1692,7 @@
 				413371F11FB4647F00C00AEB /* YDSortViewController.m in Sources */,
 				DC38AE681EFFE6A200FB44FE /* EOCPerson.m in Sources */,
 				DCCB56141EFADDEE00A5A44C /* HLy7ViewController.m in Sources */,
+				413371F81FB4912300C00AEB /* YDScrollCollectionViewController.m in Sources */,
 				DCCED7151EF98816001D2474 /* AppDelegate.m in Sources */,
 				4121725C1F3D81B300A47AD9 /* HLYTestModelViewController.m in Sources */,
 				DC38AE651EFFE5EF00FB44FE /* HLY8ViewController.m in Sources */,

@@ -7,12 +7,27 @@
 //
 
 #import "HLYCollectionViewCell.h"
+#import "Masonry.h"
 
 @implementation HLYCollectionViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        _descLabel = [UILabel new];
+        [self addSubview:_descLabel];
+        [_descLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.equalTo(self);
+        }];
+        _descLabel.textColor = [UIColor redColor];
+    }
+    return self;
 }
 
 @end

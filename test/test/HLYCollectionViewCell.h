@@ -10,4 +10,6 @@
 
 @interface HLYCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, strong) UILabel *descLabel;
+
 @end
