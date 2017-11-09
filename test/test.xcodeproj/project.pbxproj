@@ -10,6 +10,11 @@
 		4121725C1F3D81B300A47AD9 /* HLYTestModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121725B1F3D81B300A47AD9 /* HLYTestModelViewController.m */; };
 		4121725F1F3D820800A47AD9 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121725E1F3D820800A47AD9 /* Father.m */; };
 		412172621F3D821B00A47AD9 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 412172611F3D821B00A47AD9 /* Son.m */; };
+		413371DD1FB3F02700C00AEB /* YDTestNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 413371DC1FB3F02700C00AEB /* YDTestNavigationVC.m */; };
+		413371E01FB3F07900C00AEB /* YDTest0ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413371DF1FB3F07800C00AEB /* YDTest0ViewController.m */; };
+		413371E31FB3F08300C00AEB /* YDTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413371E21FB3F08300C00AEB /* YDTest1ViewController.m */; };
+		413371E61FB3F08C00C00AEB /* YDTest2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413371E51FB3F08C00C00AEB /* YDTest2ViewController.m */; };
+		413371E91FB4010100C00AEB /* YDTest3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413371E81FB4010100C00AEB /* YDTest3ViewController.m */; };
 		41ABCEF81F0BC51200927CCC /* HLYAnimationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */; };
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
@@ -154,6 +159,16 @@
 		4121725E1F3D820800A47AD9 /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
 		412172601F3D821B00A47AD9 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
 		412172611F3D821B00A47AD9 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		413371DB1FB3F02700C00AEB /* YDTestNavigationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTestNavigationVC.h; sourceTree = "<group>"; };
+		413371DC1FB3F02700C00AEB /* YDTestNavigationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTestNavigationVC.m; sourceTree = "<group>"; };
+		413371DE1FB3F07800C00AEB /* YDTest0ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest0ViewController.h; sourceTree = "<group>"; };
+		413371DF1FB3F07800C00AEB /* YDTest0ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest0ViewController.m; sourceTree = "<group>"; };
+		413371E11FB3F08300C00AEB /* YDTest1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest1ViewController.h; sourceTree = "<group>"; };
+		413371E21FB3F08300C00AEB /* YDTest1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest1ViewController.m; sourceTree = "<group>"; };
+		413371E41FB3F08C00C00AEB /* YDTest2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest2ViewController.h; sourceTree = "<group>"; };
+		413371E51FB3F08C00C00AEB /* YDTest2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest2ViewController.m; sourceTree = "<group>"; };
+		413371E71FB4010100C00AEB /* YDTest3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest3ViewController.h; sourceTree = "<group>"; };
+		413371E81FB4010100C00AEB /* YDTest3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest3ViewController.m; sourceTree = "<group>"; };
 		41ABCEF61F0BC51200927CCC /* HLYAnimationCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAnimationCollectionViewController.h; sourceTree = "<group>"; };
 		41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAnimationCollectionViewController.m; sourceTree = "<group>"; };
 		41ABCEF91F0BC57700927CCC /* AnimationCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationCollectionViewCell.h; path = "数据解析/AnimationCollectionViewCell.h"; sourceTree = "<group>"; };
@@ -454,6 +469,23 @@
 				412172611F3D821B00A47AD9 /* Son.m */,
 			);
 			name = 9;
+			sourceTree = "<group>";
+		};
+		413371DA1FB3F00200C00AEB /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				413371DB1FB3F02700C00AEB /* YDTestNavigationVC.h */,
+				413371DC1FB3F02700C00AEB /* YDTestNavigationVC.m */,
+				413371DE1FB3F07800C00AEB /* YDTest0ViewController.h */,
+				413371DF1FB3F07800C00AEB /* YDTest0ViewController.m */,
+				413371E11FB3F08300C00AEB /* YDTest1ViewController.h */,
+				413371E21FB3F08300C00AEB /* YDTest1ViewController.m */,
+				413371E41FB3F08C00C00AEB /* YDTest2ViewController.h */,
+				413371E51FB3F08C00C00AEB /* YDTest2ViewController.m */,
+				413371E71FB4010100C00AEB /* YDTest3ViewController.h */,
+				413371E81FB4010100C00AEB /* YDTest3ViewController.m */,
+			);
+			name = navigation;
 			sourceTree = "<group>";
 		};
 		41ABCEF51F0BC4F800927CCC /* collectionview cell 上的动画 */ = {
@@ -1127,6 +1159,7 @@
 		DCCED70F1EF98816001D2474 /* test_effective */ = {
 			isa = PBXGroup;
 			children = (
+				413371DA1FB3F00200C00AEB /* navigation */,
 				412172591F3D812400A47AD9 /* 9 */,
 				DC38AE621EFFE5D600FB44FE /* 8 */,
 				DCCB56111EFADDD400A5A44C /* 7 */,
@@ -1610,8 +1643,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				413371E61FB3F08C00C00AEB /* YDTest2ViewController.m in Sources */,
 				412172621F3D821B00A47AD9 /* Son.m in Sources */,
 				DCCED7181EF98816001D2474 /* ViewController.m in Sources */,
+				413371E91FB4010100C00AEB /* YDTest3ViewController.m in Sources */,
+				413371DD1FB3F02700C00AEB /* YDTestNavigationVC.m in Sources */,
 				DC38AE681EFFE6A200FB44FE /* EOCPerson.m in Sources */,
 				DCCB56141EFADDEE00A5A44C /* HLy7ViewController.m in Sources */,
 				DCCED7151EF98816001D2474 /* AppDelegate.m in Sources */,
@@ -1621,6 +1657,8 @@
 				DCCED7121EF98816001D2474 /* main.m in Sources */,
 				DCCED74A1EF98E62001D2474 /* CustomObj.m in Sources */,
 				4121725F1F3D820800A47AD9 /* Father.m in Sources */,
+				413371E31FB3F08300C00AEB /* YDTest1ViewController.m in Sources */,
+				413371E01FB3F07900C00AEB /* YDTest0ViewController.m in Sources */,
 				DCCED71E1EF98816001D2474 /* test_effective.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
