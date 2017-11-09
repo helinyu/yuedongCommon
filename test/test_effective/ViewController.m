@@ -13,6 +13,8 @@
 #import "HLY8ViewController.h"
 #import "HLYTestModelViewController.h"
 #import "YDTestNavigationVC.h"
+#import "YDDatasViewController.h"
+#import "YDSortViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -42,7 +44,9 @@
                         @[@"第八条特性的理解",[HLY8ViewController new]],
                         @[@"setter 或者getter 使用",[HLy7ViewController new]],
                         @[@"属性测试",[HLYPropertyViewController new]],
-                        @[@"测试导航栏",[YDTestNavigationVC new]]
+                        @[@"测试导航栏",[YDTestNavigationVC new]],
+                        @[@"有关的内容",[YDDatasViewController new]],
+                        @[@"排序数组",[YDSortViewController new]],
                         ];
 }
 
