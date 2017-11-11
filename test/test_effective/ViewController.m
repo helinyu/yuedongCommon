@@ -16,6 +16,8 @@
 #import "YDDatasViewController.h"
 #import "YDSortViewController.h"
 #import "YDScrollCollectionViewController.h"
+#import "YDCameraViewController.h"
+#import "YDPhotoTakeViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -49,6 +51,8 @@
                         @[@"有关的内容",[YDDatasViewController new]],
                         @[@"排序数组",[YDSortViewController new]],
                         @[@"collectionview 滑动不可见",[YDScrollCollectionViewController new]],
+                        @[@"相机的实现",[YDCameraViewController new]],
+                        @[@"拍照功能",[YDPhotoTakeViewController new]],
                         ];
 }
 

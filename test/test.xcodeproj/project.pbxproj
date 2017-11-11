@@ -24,6 +24,12 @@
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
 		41E0D8E21F0CDBA500E16E9E /* HLYShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8E11F0CDBA500E16E9E /* HLYShapeLayerViewController.m */; };
+		41EB79BA1FB6A0F30090418E /* YDCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EB79B91FB6A0F30090418E /* YDCameraViewController.m */; };
+		41EB79BD1FB6AC5B0090418E /* YDPhotoTakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EB79BC1FB6AC5B0090418E /* YDPhotoTakeViewController.m */; };
+		41EB79C01FB6ACB70090418E /* YDPhotoTakenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EB79BF1FB6ACB70090418E /* YDPhotoTakenView.m */; };
+		41EB79C31FB6AD020090418E /* YDPhotoTakenMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EB79C21FB6AD020090418E /* YDPhotoTakenMgr.m */; };
+		41EB79D41FB6E9630090418E /* Snip20171111_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB79D31FB6E9620090418E /* Snip20171111_2.png */; };
+		41EB79D61FB6EB3C0090418E /* Snip20171111_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB79D51FB6EB3C0090418E /* Snip20171111_5.png */; };
 		B79C5E7C731D80DF88CB4722 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEA92CEEA885CC46DB00EB9 /* libPods-test.a */; };
 		DC04101F1EF80E07000B69A3 /* HLYAudioPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC04101E1EF80E07000B69A3 /* HLYAudioPlayerManager.m */; };
 		DC0410221EF80E1E000B69A3 /* HLYAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0410211EF80E1E000B69A3 /* HLYAudioViewController.m */; };
@@ -188,6 +194,16 @@
 		41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBgImageStatusView.m; sourceTree = "<group>"; };
 		41E0D8E01F0CDBA500E16E9E /* HLYShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYShapeLayerViewController.h; sourceTree = "<group>"; };
 		41E0D8E11F0CDBA500E16E9E /* HLYShapeLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYShapeLayerViewController.m; sourceTree = "<group>"; };
+		41EB79B81FB6A0F30090418E /* YDCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCameraViewController.h; sourceTree = "<group>"; };
+		41EB79B91FB6A0F30090418E /* YDCameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDCameraViewController.m; sourceTree = "<group>"; };
+		41EB79BB1FB6AC5B0090418E /* YDPhotoTakeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDPhotoTakeViewController.h; sourceTree = "<group>"; };
+		41EB79BC1FB6AC5B0090418E /* YDPhotoTakeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDPhotoTakeViewController.m; sourceTree = "<group>"; };
+		41EB79BE1FB6ACB70090418E /* YDPhotoTakenView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDPhotoTakenView.h; sourceTree = "<group>"; };
+		41EB79BF1FB6ACB70090418E /* YDPhotoTakenView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDPhotoTakenView.m; sourceTree = "<group>"; };
+		41EB79C11FB6AD020090418E /* YDPhotoTakenMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDPhotoTakenMgr.h; sourceTree = "<group>"; };
+		41EB79C21FB6AD020090418E /* YDPhotoTakenMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDPhotoTakenMgr.m; sourceTree = "<group>"; };
+		41EB79D31FB6E9620090418E /* Snip20171111_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20171111_2.png; sourceTree = "<group>"; };
+		41EB79D51FB6EB3C0090418E /* Snip20171111_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20171111_5.png; sourceTree = "<group>"; };
 		89914FF9277B52F087EA3821 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		A3D8D6271AADA2B1C96C1516 /* Pods-test_effective.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_effective.release.xcconfig"; path = "Pods/Target Support Files/Pods-test_effective/Pods-test_effective.release.xcconfig"; sourceTree = "<group>"; };
 		BF6D6503E1747DC0113BDCF9 /* libPods-test_effective.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test_effective.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -549,6 +565,23 @@
 				41E0D8E11F0CDBA500E16E9E /* HLYShapeLayerViewController.m */,
 			);
 			name = CAShapeLayer;
+			sourceTree = "<group>";
+		};
+		41EB79B71FB69EA20090418E /* 拍照的内容 */ = {
+			isa = PBXGroup;
+			children = (
+				41EB79D51FB6EB3C0090418E /* Snip20171111_5.png */,
+				41EB79D31FB6E9620090418E /* Snip20171111_2.png */,
+				41EB79B81FB6A0F30090418E /* YDCameraViewController.h */,
+				41EB79B91FB6A0F30090418E /* YDCameraViewController.m */,
+				41EB79BB1FB6AC5B0090418E /* YDPhotoTakeViewController.h */,
+				41EB79BC1FB6AC5B0090418E /* YDPhotoTakeViewController.m */,
+				41EB79BE1FB6ACB70090418E /* YDPhotoTakenView.h */,
+				41EB79BF1FB6ACB70090418E /* YDPhotoTakenView.m */,
+				41EB79C11FB6AD020090418E /* YDPhotoTakenMgr.h */,
+				41EB79C21FB6AD020090418E /* YDPhotoTakenMgr.m */,
+			);
+			name = "拍照的内容";
 			sourceTree = "<group>";
 		};
 		74B13597549662E119950E0D /* Frameworks */ = {
@@ -1197,6 +1230,7 @@
 		DCCED70F1EF98816001D2474 /* test_effective */ = {
 			isa = PBXGroup;
 			children = (
+				41EB79B71FB69EA20090418E /* 拍照的内容 */,
 				413371F51FB490FD00C00AEB /* collection view 滑动不可见 */,
 				413371EE1FB4647100C00AEB /* 排序的内容 */,
 				413371EA1FB4623400C00AEB /* 10 */,
@@ -1392,8 +1426,8 @@
 					};
 					DCCED70D1EF98816001D2474 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = D2XBEJ6876;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Manual;
 					};
 					DCEE85B41F035DD600CAC9CA = {
 						CreatedOnToolsVersion = 9.0;
@@ -1457,6 +1491,8 @@
 			files = (
 				DCCED7231EF98816001D2474 /* LaunchScreen.storyboard in Resources */,
 				DCCED7201EF98816001D2474 /* Assets.xcassets in Resources */,
+				41EB79D41FB6E9630090418E /* Snip20171111_2.png in Resources */,
+				41EB79D61FB6EB3C0090418E /* Snip20171111_5.png in Resources */,
 				DCCED71B1EF98816001D2474 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1688,16 +1724,20 @@
 				412172621F3D821B00A47AD9 /* Son.m in Sources */,
 				DCCED7181EF98816001D2474 /* ViewController.m in Sources */,
 				413371E91FB4010100C00AEB /* YDTest3ViewController.m in Sources */,
+				41EB79C01FB6ACB70090418E /* YDPhotoTakenView.m in Sources */,
 				413371DD1FB3F02700C00AEB /* YDTestNavigationVC.m in Sources */,
 				413371F11FB4647F00C00AEB /* YDSortViewController.m in Sources */,
 				DC38AE681EFFE6A200FB44FE /* EOCPerson.m in Sources */,
 				DCCB56141EFADDEE00A5A44C /* HLy7ViewController.m in Sources */,
 				413371F81FB4912300C00AEB /* YDScrollCollectionViewController.m in Sources */,
+				41EB79C31FB6AD020090418E /* YDPhotoTakenMgr.m in Sources */,
 				DCCED7151EF98816001D2474 /* AppDelegate.m in Sources */,
 				4121725C1F3D81B300A47AD9 /* HLYTestModelViewController.m in Sources */,
+				41EB79BA1FB6A0F30090418E /* YDCameraViewController.m in Sources */,
 				DC38AE651EFFE5EF00FB44FE /* HLY8ViewController.m in Sources */,
 				DCCED7471EF98867001D2474 /* HLYPropertyViewController.m in Sources */,
 				413371F41FB464E300C00AEB /* YDPerson.m in Sources */,
+				41EB79BD1FB6AC5B0090418E /* YDPhotoTakeViewController.m in Sources */,
 				DCCED7121EF98816001D2474 /* main.m in Sources */,
 				DCCED74A1EF98E62001D2474 /* CustomObj.m in Sources */,
 				4121725F1F3D820800A47AD9 /* Father.m in Sources */,
@@ -1956,12 +1996,15 @@
 			baseConfigurationReference = DB411E6BEDAFB83945250F32 /* Pods-test_effective.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				INFOPLIST_FILE = test_effective/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dtspread.apps.test-effective";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b363ae29-99b5-4a80-8387-fb15465ff666";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 			};
 			name = Debug;
 		};
@@ -1970,12 +2013,14 @@
 			baseConfigurationReference = A3D8D6271AADA2B1C96C1516 /* Pods-test_effective.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = test_effective/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dtspread.apps.test-effective";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
