@@ -7,6 +7,7 @@ PODS:
   - AMapSearch (4.5.0):
     - AMapFoundation (~> 1.2)
   - DateTools (2.0.0)
+  - DZNEmptyDataSet (1.8.1)
   - Masonry (1.0.2)
   - TYPagerController (1.0.2)
   - YYModel (1.0.4)
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - AMapLocation (~> 2.3.0)
   - AMapSearch (~> 4.5.0)
   - DateTools (~> 2.0.0)
+  - DZNEmptyDataSet
   - Masonry (~> 1.0.2)
   - TYPagerController
   - YYModel (~> 1.0.4)
@@ -26,10 +28,11 @@ SPEC CHECKSUMS:
   AMapLocation: 6016f0e09c127461c9c8e36945f34c0f037ad962
   AMapSearch: 7a6ebc20a42e34a021b042b047f198082fc2fc30
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   TYPagerController: 0b3e3e589a217ff537d5f78e1e76594beaa4cfc6
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: c6aa4eeae08d4eee3cf173f2e306068db9075570
+PODFILE CHECKSUM: 5c556677a4f975957f3398b808648372114045b8
 
 COCOAPODS: 1.2.1

@@ -22,6 +22,8 @@
 		413371F91FB493FB00C00AEB /* HLYCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC783F021EE6818600CF132C /* HLYCollectionViewCell.m */; };
 		41ABCEF81F0BC51200927CCC /* HLYAnimationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */; };
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
+		41C3D3E11FB8902A00008168 /* YDFloadRoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C3D3E01FB8902A00008168 /* YDFloadRoundViewController.m */; };
+		41C3D3E41FB8A55600008168 /* YDNoDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C3D3E31FB8A55600008168 /* YDNoDataViewController.m */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
 		41E0D8E21F0CDBA500E16E9E /* HLYShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8E11F0CDBA500E16E9E /* HLYShapeLayerViewController.m */; };
 		41EB79BA1FB6A0F30090418E /* YDCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EB79B91FB6A0F30090418E /* YDCameraViewController.m */; };
@@ -190,6 +192,10 @@
 		41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAnimationCollectionViewController.m; sourceTree = "<group>"; };
 		41ABCEF91F0BC57700927CCC /* AnimationCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationCollectionViewCell.h; path = "数据解析/AnimationCollectionViewCell.h"; sourceTree = "<group>"; };
 		41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimationCollectionViewCell.m; path = "数据解析/AnimationCollectionViewCell.m"; sourceTree = "<group>"; };
+		41C3D3DF1FB8902A00008168 /* YDFloadRoundViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDFloadRoundViewController.h; sourceTree = "<group>"; };
+		41C3D3E01FB8902A00008168 /* YDFloadRoundViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDFloadRoundViewController.m; sourceTree = "<group>"; };
+		41C3D3E21FB8A55600008168 /* YDNoDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDNoDataViewController.h; sourceTree = "<group>"; };
+		41C3D3E31FB8A55600008168 /* YDNoDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDNoDataViewController.m; sourceTree = "<group>"; };
 		41E0D8D81F0C785D00E16E9E /* YDBgImageStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBgImageStatusView.h; sourceTree = "<group>"; };
 		41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBgImageStatusView.m; sourceTree = "<group>"; };
 		41E0D8E01F0CDBA500E16E9E /* HLYShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYShapeLayerViewController.h; sourceTree = "<group>"; };
@@ -556,6 +562,24 @@
 				41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */,
 			);
 			name = "collectionview cell 上的动画";
+			sourceTree = "<group>";
+		};
+		41C3D3DE1FB88E9300008168 /* 数字取整的问题 */ = {
+			isa = PBXGroup;
+			children = (
+				41C3D3DF1FB8902A00008168 /* YDFloadRoundViewController.h */,
+				41C3D3E01FB8902A00008168 /* YDFloadRoundViewController.m */,
+			);
+			name = "数字取整的问题";
+			sourceTree = "<group>";
+		};
+		41C3D3E51FB8A55C00008168 /* NoData */ = {
+			isa = PBXGroup;
+			children = (
+				41C3D3E21FB8A55600008168 /* YDNoDataViewController.h */,
+				41C3D3E31FB8A55600008168 /* YDNoDataViewController.m */,
+			);
+			name = NoData;
 			sourceTree = "<group>";
 		};
 		41E0D8DF1F0CDB8800E16E9E /* CAShapeLayer */ = {
@@ -1230,6 +1254,8 @@
 		DCCED70F1EF98816001D2474 /* test_effective */ = {
 			isa = PBXGroup;
 			children = (
+				41C3D3E51FB8A55C00008168 /* NoData */,
+				41C3D3DE1FB88E9300008168 /* 数字取整的问题 */,
 				41EB79B71FB69EA20090418E /* 拍照的内容 */,
 				413371F51FB490FD00C00AEB /* collection view 滑动不可见 */,
 				413371EE1FB4647100C00AEB /* 排序的内容 */,
@@ -1736,6 +1762,8 @@
 				41EB79BA1FB6A0F30090418E /* YDCameraViewController.m in Sources */,
 				DC38AE651EFFE5EF00FB44FE /* HLY8ViewController.m in Sources */,
 				DCCED7471EF98867001D2474 /* HLYPropertyViewController.m in Sources */,
+				41C3D3E41FB8A55600008168 /* YDNoDataViewController.m in Sources */,
+				41C3D3E11FB8902A00008168 /* YDFloadRoundViewController.m in Sources */,
 				413371F41FB464E300C00AEB /* YDPerson.m in Sources */,
 				41EB79BD1FB6AC5B0090418E /* YDPhotoTakeViewController.m in Sources */,
 				DCCED7121EF98816001D2474 /* main.m in Sources */,

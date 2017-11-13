@@ -18,6 +18,8 @@
 #import "YDScrollCollectionViewController.h"
 #import "YDCameraViewController.h"
 #import "YDPhotoTakeViewController.h"
+#import "YDFloadRoundViewController.h"
+#import "YDNoDataViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -53,6 +55,8 @@
                         @[@"collectionview 滑动不可见",[YDScrollCollectionViewController new]],
                         @[@"相机的实现",[YDCameraViewController new]],
                         @[@"拍照功能",[YDPhotoTakeViewController new]],
+                        @[@"浮点型数据的取整等操作",[YDFloadRoundViewController new]],
+                        @[@"没有数据的时候的处理",[YDNoDataViewController new]],
                         ];
 }
 

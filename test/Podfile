@@ -21,6 +21,7 @@ end
 
 target 'test_effective' do
     pod 'YYModel', '~> 1.0.4'
+    pod 'DZNEmptyDataSet'
 end
 
 #platform :ios, '8.0'
