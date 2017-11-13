@@ -29,7 +29,8 @@
     YDTitleView *titleView = [YDTitleView new];
     titleView.backgroundColor = [UIColor redColor];
     titleView.frame = CGRectMake(0, 0, 100, 100);
-    self.navigationItem.titleView = titleView;
+    [self.navigationItem.titleView addSubview:_titleView];
+//    self.navigationItem.titleView = titleView;
     _titleView = titleView;
 }
 

@@ -26,7 +26,9 @@
     
     _imgView = [UIImageView new];
     [self addSubview:_imgView];
-    
+//     navigation Bar 上添加设置TitleView是不同的
+//     8以及之后，都是可以通过addSubView 的方式，
+//     8 之前是可以通过直接设置titleView 就可以了
     [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(_titleLabel.superview);
         make.centerY.equalTo(_titleLabel.superview);
