@@ -24,6 +24,10 @@ target 'test_effective' do
     pod 'DZNEmptyDataSet'
 end
 
+target 'ios 7' do
+    pod 'Masonry', '~> 1.0.2'
+end
+
 #platform :ios, '8.0'
 #pod 'Reveal-SDK', :configurations => ['Debug']
 #end
