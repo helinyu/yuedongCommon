@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		019183CAEFEFD8F559158462 /* libPods-FFMpegForIOSDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53244D61EB83FD918AD94ED7 /* libPods-FFMpegForIOSDemoUITests.a */; };
+		020A6BC4FB4700CA1F69574E /* libPods-FFMpegForIOSDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAE3FBEE408C6BD01BA3777 /* libPods-FFMpegForIOSDemoTests.a */; };
+		1F1FAB24EFD559661A0A5D8F /* libPods-FFMpegForIOSDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0DE7D63A6CA7A167C9912BA /* libPods-FFMpegForIOSDemo.a */; };
+		412BAC7D1FAF1C8900E9A2CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 412BAC7C1FAF1C8900E9A2CD /* AppDelegate.m */; };
+		412BAC801FAF1C8900E9A2CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 412BAC7F1FAF1C8900E9A2CD /* ViewController.m */; };
+		412BAC831FAF1C8900E9A2CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412BAC811FAF1C8900E9A2CD /* Main.storyboard */; };
+		412BAC861FAF1C8900E9A2CD /* FFMpegForIOSDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 412BAC841FAF1C8900E9A2CD /* FFMpegForIOSDemo.xcdatamodeld */; };
+		412BAC881FAF1C8900E9A2CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 412BAC871FAF1C8900E9A2CD /* Assets.xcassets */; };
+		412BAC8B1FAF1C8900E9A2CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412BAC891FAF1C8900E9A2CD /* LaunchScreen.storyboard */; };
+		412BAC8E1FAF1C8900E9A2CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 412BAC8D1FAF1C8900E9A2CD /* main.m */; };
+		412BAC981FAF1C8900E9A2CD /* FFMpegForIOSDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 412BAC971FAF1C8900E9A2CD /* FFMpegForIOSDemoTests.m */; };
+		412BACA31FAF1C8900E9A2CD /* FFMpegForIOSDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 412BACA21FAF1C8900E9A2CD /* FFMpegForIOSDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		412BAC941FAF1C8900E9A2CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 412BAC701FAF1C8900E9A2CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 412BAC771FAF1C8900E9A2CD;
+			remoteInfo = FFMpegForIOSDemo;
+		};
+		412BAC9F1FAF1C8900E9A2CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 412BAC701FAF1C8900E9A2CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 412BAC771FAF1C8900E9A2CD;
+			remoteInfo = FFMpegForIOSDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00BB06010516E2FCA22F9B7C /* Pods-FFMpegForIOSDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMpegForIOSDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FFMpegForIOSDemoUITests/Pods-FFMpegForIOSDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2AAE3FBEE408C6BD01BA3777 /* libPods-FFMpegForIOSDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFMpegForIOSDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		412BAC781FAF1C8900E9A2CD /* FFMpegForIOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFMpegForIOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		412BAC7B1FAF1C8900E9A2CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		412BAC7C1FAF1C8900E9A2CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		412BAC7E1FAF1C8900E9A2CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		412BAC7F1FAF1C8900E9A2CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		412BAC821FAF1C8900E9A2CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		412BAC851FAF1C8900E9A2CD /* FFMpegForIOSDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FFMpegForIOSDemo.xcdatamodel; sourceTree = "<group>"; };
+		412BAC871FAF1C8900E9A2CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		412BAC8A1FAF1C8900E9A2CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		412BAC8C1FAF1C8900E9A2CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		412BAC8D1FAF1C8900E9A2CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		412BAC931FAF1C8900E9A2CD /* FFMpegForIOSDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFMpegForIOSDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		412BAC971FAF1C8900E9A2CD /* FFMpegForIOSDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFMpegForIOSDemoTests.m; sourceTree = "<group>"; };
+		412BAC991FAF1C8900E9A2CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		412BAC9E1FAF1C8900E9A2CD /* FFMpegForIOSDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFMpegForIOSDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		412BACA21FAF1C8900E9A2CD /* FFMpegForIOSDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFMpegForIOSDemoUITests.m; sourceTree = "<group>"; };
+		412BACA41FAF1C8900E9A2CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53244D61EB83FD918AD94ED7 /* libPods-FFMpegForIOSDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFMpegForIOSDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5506DB4CDABD9D9B1B7AD575 /* Pods-FFMpegForIOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMpegForIOSDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FFMpegForIOSDemo/Pods-FFMpegForIOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		852192E903BD9188221733C5 /* Pods-FFMpegForIOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMpegForIOSDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FFMpegForIOSDemo/Pods-FFMpegForIOSDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8D2040C58E046C4F59A5BD61 /* Pods-FFMpegForIOSDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMpegForIOSDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FFMpegForIOSDemoTests/Pods-FFMpegForIOSDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0DE7D63A6CA7A167C9912BA /* libPods-FFMpegForIOSDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFMpegForIOSDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FEB719A00D5096CD44A18A /* Pods-FFMpegForIOSDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMpegForIOSDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FFMpegForIOSDemoTests/Pods-FFMpegForIOSDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		CB465F28F3329AE9E238A905 /* Pods-FFMpegForIOSDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMpegForIOSDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FFMpegForIOSDemoUITests/Pods-FFMpegForIOSDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		412BAC751FAF1C8900E9A2CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F1FAB24EFD559661A0A5D8F /* libPods-FFMpegForIOSDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		412BAC901FAF1C8900E9A2CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020A6BC4FB4700CA1F69574E /* libPods-FFMpegForIOSDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		412BAC9B1FAF1C8900E9A2CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019183CAEFEFD8F559158462 /* libPods-FFMpegForIOSDemoUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		412BAC6F1FAF1C8900E9A2CD = {
+			isa = PBXGroup;
+			children = (
+				412BAC7A1FAF1C8900E9A2CD /* FFMpegForIOSDemo */,
+				412BAC961FAF1C8900E9A2CD /* FFMpegForIOSDemoTests */,
+				412BACA11FAF1C8900E9A2CD /* FFMpegForIOSDemoUITests */,
+				412BAC791FAF1C8900E9A2CD /* Products */,
+				CF74FBA0CFD582E5E314503E /* Pods */,
+				F914DA0932C88286564D9F7A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		412BAC791FAF1C8900E9A2CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				412BAC781FAF1C8900E9A2CD /* FFMpegForIOSDemo.app */,
+				412BAC931FAF1C8900E9A2CD /* FFMpegForIOSDemoTests.xctest */,
+				412BAC9E1FAF1C8900E9A2CD /* FFMpegForIOSDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		412BAC7A1FAF1C8900E9A2CD /* FFMpegForIOSDemo */ = {
+			isa = PBXGroup;
+			children = (
+				412BAC7B1FAF1C8900E9A2CD /* AppDelegate.h */,
+				412BAC7C1FAF1C8900E9A2CD /* AppDelegate.m */,
+				412BAC7E1FAF1C8900E9A2CD /* ViewController.h */,
+				412BAC7F1FAF1C8900E9A2CD /* ViewController.m */,
+				412BAC811FAF1C8900E9A2CD /* Main.storyboard */,
+				412BAC871FAF1C8900E9A2CD /* Assets.xcassets */,
+				412BAC891FAF1C8900E9A2CD /* LaunchScreen.storyboard */,
+				412BAC8C1FAF1C8900E9A2CD /* Info.plist */,
+				412BAC8D1FAF1C8900E9A2CD /* main.m */,
+				412BAC841FAF1C8900E9A2CD /* FFMpegForIOSDemo.xcdatamodeld */,
+			);
+			path = FFMpegForIOSDemo;
+			sourceTree = "<group>";
+		};
+		412BAC961FAF1C8900E9A2CD /* FFMpegForIOSDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				412BAC971FAF1C8900E9A2CD /* FFMpegForIOSDemoTests.m */,
+				412BAC991FAF1C8900E9A2CD /* Info.plist */,
+			);
+			path = FFMpegForIOSDemoTests;
+			sourceTree = "<group>";
+		};
+		412BACA11FAF1C8900E9A2CD /* FFMpegForIOSDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				412BACA21FAF1C8900E9A2CD /* FFMpegForIOSDemoUITests.m */,
+				412BACA41FAF1C8900E9A2CD /* Info.plist */,
+			);
+			path = FFMpegForIOSDemoUITests;
+			sourceTree = "<group>";
+		};
+		CF74FBA0CFD582E5E314503E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5506DB4CDABD9D9B1B7AD575 /* Pods-FFMpegForIOSDemo.debug.xcconfig */,
+				852192E903BD9188221733C5 /* Pods-FFMpegForIOSDemo.release.xcconfig */,
+				8D2040C58E046C4F59A5BD61 /* Pods-FFMpegForIOSDemoTests.debug.xcconfig */,
+				C9FEB719A00D5096CD44A18A /* Pods-FFMpegForIOSDemoTests.release.xcconfig */,
+				CB465F28F3329AE9E238A905 /* Pods-FFMpegForIOSDemoUITests.debug.xcconfig */,
+				00BB06010516E2FCA22F9B7C /* Pods-FFMpegForIOSDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F914DA0932C88286564D9F7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE7D63A6CA7A167C9912BA /* libPods-FFMpegForIOSDemo.a */,
+				2AAE3FBEE408C6BD01BA3777 /* libPods-FFMpegForIOSDemoTests.a */,
+				53244D61EB83FD918AD94ED7 /* libPods-FFMpegForIOSDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		412BAC771FAF1C8900E9A2CD /* FFMpegForIOSDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 412BACA71FAF1C8900E9A2CD /* Build configuration list for PBXNativeTarget "FFMpegForIOSDemo" */;
+			buildPhases = (
+				6A99F00901D8FBFFB5CB8FE1 /* [CP] Check Pods Manifest.lock */,
+				412BAC741FAF1C8900E9A2CD /* Sources */,
+				412BAC751FAF1C8900E9A2CD /* Frameworks */,
+				412BAC761FAF1C8900E9A2CD /* Resources */,
+				6C50F759E7CF95D7ECA0DE1C /* [CP] Embed Pods Frameworks */,
+				32EE8B383CA8DB546FC1C16B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FFMpegForIOSDemo;
+			productName = FFMpegForIOSDemo;
+			productReference = 412BAC781FAF1C8900E9A2CD /* FFMpegForIOSDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		412BAC921FAF1C8900E9A2CD /* FFMpegForIOSDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 412BACAA1FAF1C8900E9A2CD /* Build configuration list for PBXNativeTarget "FFMpegForIOSDemoTests" */;
+			buildPhases = (
+				FE90007C38DC3F03B21C196D /* [CP] Check Pods Manifest.lock */,
+				412BAC8F1FAF1C8900E9A2CD /* Sources */,
+				412BAC901FAF1C8900E9A2CD /* Frameworks */,
+				412BAC911FAF1C8900E9A2CD /* Resources */,
+				DCC83E3100D394CA0A2F2741 /* [CP] Embed Pods Frameworks */,
+				9A8A236D5029149E1650B315 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				412BAC951FAF1C8900E9A2CD /* PBXTargetDependency */,
+			);
+			name = FFMpegForIOSDemoTests;
+			productName = FFMpegForIOSDemoTests;
+			productReference = 412BAC931FAF1C8900E9A2CD /* FFMpegForIOSDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		412BAC9D1FAF1C8900E9A2CD /* FFMpegForIOSDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 412BACAD1FAF1C8900E9A2CD /* Build configuration list for PBXNativeTarget "FFMpegForIOSDemoUITests" */;
+			buildPhases = (
+				FAE180C76EAA4BE73A45A39D /* [CP] Check Pods Manifest.lock */,
+				412BAC9A1FAF1C8900E9A2CD /* Sources */,
+				412BAC9B1FAF1C8900E9A2CD /* Frameworks */,
+				412BAC9C1FAF1C8900E9A2CD /* Resources */,
+				B59B2DC4ACEFA52A35460430 /* [CP] Embed Pods Frameworks */,
+				9183857E43B76E16C268872B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				412BACA01FAF1C8900E9A2CD /* PBXTargetDependency */,
+			);
+			name = FFMpegForIOSDemoUITests;
+			productName = FFMpegForIOSDemoUITests;
+			productReference = 412BAC9E1FAF1C8900E9A2CD /* FFMpegForIOSDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		412BAC701FAF1C8900E9A2CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Aka;
+				TargetAttributes = {
+					412BAC771FAF1C8900E9A2CD = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Manual;
+					};
+					412BAC921FAF1C8900E9A2CD = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 412BAC771FAF1C8900E9A2CD;
+					};
+					412BAC9D1FAF1C8900E9A2CD = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 412BAC771FAF1C8900E9A2CD;
+					};
+				};
+			};
+			buildConfigurationList = 412BAC731FAF1C8900E9A2CD /* Build configuration list for PBXProject "FFMpegForIOSDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 412BAC6F1FAF1C8900E9A2CD;
+			productRefGroup = 412BAC791FAF1C8900E9A2CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				412BAC771FAF1C8900E9A2CD /* FFMpegForIOSDemo */,
+				412BAC921FAF1C8900E9A2CD /* FFMpegForIOSDemoTests */,
+				412BAC9D1FAF1C8900E9A2CD /* FFMpegForIOSDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		412BAC761FAF1C8900E9A2CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412BAC8B1FAF1C8900E9A2CD /* LaunchScreen.storyboard in Resources */,
+				412BAC881FAF1C8900E9A2CD /* Assets.xcassets in Resources */,
+				412BAC831FAF1C8900E9A2CD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		412BAC911FAF1C8900E9A2CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		412BAC9C1FAF1C8900E9A2CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32EE8B383CA8DB546FC1C16B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFMpegForIOSDemo/Pods-FFMpegForIOSDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A99F00901D8FBFFB5CB8FE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6C50F759E7CF95D7ECA0DE1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFMpegForIOSDemo/Pods-FFMpegForIOSDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9183857E43B76E16C268872B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFMpegForIOSDemoUITests/Pods-FFMpegForIOSDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A8A236D5029149E1650B315 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFMpegForIOSDemoTests/Pods-FFMpegForIOSDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B59B2DC4ACEFA52A35460430 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFMpegForIOSDemoUITests/Pods-FFMpegForIOSDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCC83E3100D394CA0A2F2741 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFMpegForIOSDemoTests/Pods-FFMpegForIOSDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAE180C76EAA4BE73A45A39D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE90007C38DC3F03B21C196D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		412BAC741FAF1C8900E9A2CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412BAC861FAF1C8900E9A2CD /* FFMpegForIOSDemo.xcdatamodeld in Sources */,
+				412BAC801FAF1C8900E9A2CD /* ViewController.m in Sources */,
+				412BAC8E1FAF1C8900E9A2CD /* main.m in Sources */,
+				412BAC7D1FAF1C8900E9A2CD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		412BAC8F1FAF1C8900E9A2CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412BAC981FAF1C8900E9A2CD /* FFMpegForIOSDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		412BAC9A1FAF1C8900E9A2CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412BACA31FAF1C8900E9A2CD /* FFMpegForIOSDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		412BAC951FAF1C8900E9A2CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 412BAC771FAF1C8900E9A2CD /* FFMpegForIOSDemo */;
+			targetProxy = 412BAC941FAF1C8900E9A2CD /* PBXContainerItemProxy */;
+		};
+		412BACA01FAF1C8900E9A2CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 412BAC771FAF1C8900E9A2CD /* FFMpegForIOSDemo */;
+			targetProxy = 412BAC9F1FAF1C8900E9A2CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		412BAC811FAF1C8900E9A2CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				412BAC821FAF1C8900E9A2CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		412BAC891FAF1C8900E9A2CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				412BAC8A1FAF1C8900E9A2CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		412BACA51FAF1C8900E9A2CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		412BACA61FAF1C8900E9A2CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		412BACA81FAF1C8900E9A2CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5506DB4CDABD9D9B1B7AD575 /* Pods-FFMpegForIOSDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
+				INFOPLIST_FILE = FFMpegForIOSDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b363ae29-99b5-4a80-8387-fb15465ff666";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		412BACA91FAF1C8900E9A2CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 852192E903BD9188221733C5 /* Pods-FFMpegForIOSDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FFMpegForIOSDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		412BACAB1FAF1C8900E9A2CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D2040C58E046C4F59A5BD61 /* Pods-FFMpegForIOSDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = FFMpegForIOSDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.FFMpegForIOSDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFMpegForIOSDemo.app/FFMpegForIOSDemo";
+			};
+			name = Debug;
+		};
+		412BACAC1FAF1C8900E9A2CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9FEB719A00D5096CD44A18A /* Pods-FFMpegForIOSDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = FFMpegForIOSDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.FFMpegForIOSDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFMpegForIOSDemo.app/FFMpegForIOSDemo";
+			};
+			name = Release;
+		};
+		412BACAE1FAF1C8900E9A2CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB465F28F3329AE9E238A905 /* Pods-FFMpegForIOSDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = FFMpegForIOSDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.FFMpegForIOSDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FFMpegForIOSDemo;
+			};
+			name = Debug;
+		};
+		412BACAF1FAF1C8900E9A2CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00BB06010516E2FCA22F9B7C /* Pods-FFMpegForIOSDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = FFMpegForIOSDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong.FFMpegForIOSDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FFMpegForIOSDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		412BAC731FAF1C8900E9A2CD /* Build configuration list for PBXProject "FFMpegForIOSDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				412BACA51FAF1C8900E9A2CD /* Debug */,
+				412BACA61FAF1C8900E9A2CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		412BACA71FAF1C8900E9A2CD /* Build configuration list for PBXNativeTarget "FFMpegForIOSDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				412BACA81FAF1C8900E9A2CD /* Debug */,
+				412BACA91FAF1C8900E9A2CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		412BACAA1FAF1C8900E9A2CD /* Build configuration list for PBXNativeTarget "FFMpegForIOSDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				412BACAB1FAF1C8900E9A2CD /* Debug */,
+				412BACAC1FAF1C8900E9A2CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		412BACAD1FAF1C8900E9A2CD /* Build configuration list for PBXNativeTarget "FFMpegForIOSDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				412BACAE1FAF1C8900E9A2CD /* Debug */,
+				412BACAF1FAF1C8900E9A2CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		412BAC841FAF1C8900E9A2CD /* FFMpegForIOSDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				412BAC851FAF1C8900E9A2CD /* FFMpegForIOSDemo.xcdatamodel */,
+			);
+			currentVersion = 412BAC851FAF1C8900E9A2CD /* FFMpegForIOSDemo.xcdatamodel */;
+			path = FFMpegForIOSDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 412BAC701FAF1C8900E9A2CD /* Project object */;
+}
