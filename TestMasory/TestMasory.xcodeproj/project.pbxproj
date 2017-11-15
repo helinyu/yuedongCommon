@@ -16,6 +16,9 @@
 		41E0CCF41FBC6391006CFAC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0CCF31FBC6391006CFAC3 /* main.m */; };
 		41E0CCFE1FBC6391006CFAC3 /* TestMasoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0CCFD1FBC6391006CFAC3 /* TestMasoryTests.m */; };
 		41E0CD091FBC6391006CFAC3 /* TestMasoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0CD081FBC6391006CFAC3 /* TestMasoryUITests.m */; };
+		5E11B329C38BAB32B0E1BE6E /* libPods-TestMasoryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 532DDABED772AF972ECC6486 /* libPods-TestMasoryTests.a */; };
+		81C8CB92E36D346F1B2DC9E3 /* libPods-TestMasory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 130D92CC8DFCEF814E831A8A /* libPods-TestMasory.a */; };
+		8FF67FB286A847B7B0E4A1E8 /* libPods-TestMasoryUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4B90A57742C6FC7E7A17A2 /* libPods-TestMasoryUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11F3944D1FED2C84D96D39CF /* Pods-TestMasory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMasory.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestMasory/Pods-TestMasory.release.xcconfig"; sourceTree = "<group>"; };
+		12C1E141F01BD8C61D0AF283 /* Pods-TestMasory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMasory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestMasory/Pods-TestMasory.debug.xcconfig"; sourceTree = "<group>"; };
+		130D92CC8DFCEF814E831A8A /* libPods-TestMasory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestMasory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D7E3385602472780BA8A9C0 /* Pods-TestMasoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMasoryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestMasoryTests/Pods-TestMasoryTests.release.xcconfig"; sourceTree = "<group>"; };
 		41E0CCDE1FBC6391006CFAC3 /* TestMasory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMasory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0CCE11FBC6391006CFAC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41E0CCE21FBC6391006CFAC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +60,11 @@
 		41E0CD041FBC6391006CFAC3 /* TestMasoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMasoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0CD081FBC6391006CFAC3 /* TestMasoryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMasoryUITests.m; sourceTree = "<group>"; };
 		41E0CD0A1FBC6391006CFAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		532DDABED772AF972ECC6486 /* libPods-TestMasoryTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestMasoryTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		870A8DC113E2D84B4522FEA6 /* Pods-TestMasoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMasoryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestMasoryUITests/Pods-TestMasoryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8A4B90A57742C6FC7E7A17A2 /* libPods-TestMasoryUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestMasoryUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEBC2A2890301763996D9FDD /* Pods-TestMasoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMasoryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestMasoryTests/Pods-TestMasoryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8DB185B9D20B43344455CB9 /* Pods-TestMasoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMasoryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestMasoryUITests/Pods-TestMasoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C8CB92E36D346F1B2DC9E3 /* libPods-TestMasory.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E11B329C38BAB32B0E1BE6E /* libPods-TestMasoryTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FF67FB286A847B7B0E4A1E8 /* libPods-TestMasoryUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +102,8 @@
 				41E0CCFC1FBC6391006CFAC3 /* TestMasoryTests */,
 				41E0CD071FBC6391006CFAC3 /* TestMasoryUITests */,
 				41E0CCDF1FBC6391006CFAC3 /* Products */,
+				CA8BA02D528C1DCF66C1F828 /* Pods */,
+				7F51B4A95944F1E03918FA54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +152,29 @@
 			path = TestMasoryUITests;
 			sourceTree = "<group>";
 		};
+		7F51B4A95944F1E03918FA54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				130D92CC8DFCEF814E831A8A /* libPods-TestMasory.a */,
+				532DDABED772AF972ECC6486 /* libPods-TestMasoryTests.a */,
+				8A4B90A57742C6FC7E7A17A2 /* libPods-TestMasoryUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA8BA02D528C1DCF66C1F828 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12C1E141F01BD8C61D0AF283 /* Pods-TestMasory.debug.xcconfig */,
+				11F3944D1FED2C84D96D39CF /* Pods-TestMasory.release.xcconfig */,
+				BEBC2A2890301763996D9FDD /* Pods-TestMasoryTests.debug.xcconfig */,
+				1D7E3385602472780BA8A9C0 /* Pods-TestMasoryTests.release.xcconfig */,
+				F8DB185B9D20B43344455CB9 /* Pods-TestMasoryUITests.debug.xcconfig */,
+				870A8DC113E2D84B4522FEA6 /* Pods-TestMasoryUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41E0CD0D1FBC6391006CFAC3 /* Build configuration list for PBXNativeTarget "TestMasory" */;
 			buildPhases = (
+				1D7392D67737667F94FA0EB3 /* [CP] Check Pods Manifest.lock */,
 				41E0CCDA1FBC6391006CFAC3 /* Sources */,
 				41E0CCDB1FBC6391006CFAC3 /* Frameworks */,
 				41E0CCDC1FBC6391006CFAC3 /* Resources */,
+				BB8DB35BDC50C55B2611E067 /* [CP] Embed Pods Frameworks */,
+				CDEA14866B8D778CB0027E68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41E0CD101FBC6391006CFAC3 /* Build configuration list for PBXNativeTarget "TestMasoryTests" */;
 			buildPhases = (
+				8C396F67A0CE29EDC542EE50 /* [CP] Check Pods Manifest.lock */,
 				41E0CCF51FBC6391006CFAC3 /* Sources */,
 				41E0CCF61FBC6391006CFAC3 /* Frameworks */,
 				41E0CCF71FBC6391006CFAC3 /* Resources */,
+				006AD1D7B52E9D6C4239E42C /* [CP] Embed Pods Frameworks */,
+				30BA9B9D0AE8AA4A77D8B761 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,9 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41E0CD131FBC6391006CFAC3 /* Build configuration list for PBXNativeTarget "TestMasoryUITests" */;
 			buildPhases = (
+				30E2D04464B42A69FA8B242C /* [CP] Check Pods Manifest.lock */,
 				41E0CD001FBC6391006CFAC3 /* Sources */,
 				41E0CD011FBC6391006CFAC3 /* Frameworks */,
 				41E0CD021FBC6391006CFAC3 /* Resources */,
+				A7473D7EC60ACA5FA9D70577 /* [CP] Embed Pods Frameworks */,
+				008FD2290D88716A0399706B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +311,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		006AD1D7B52E9D6C4239E42C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestMasoryTests/Pods-TestMasoryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		008FD2290D88716A0399706B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestMasoryUITests/Pods-TestMasoryUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D7392D67737667F94FA0EB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		30BA9B9D0AE8AA4A77D8B761 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestMasoryTests/Pods-TestMasoryTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30E2D04464B42A69FA8B242C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8C396F67A0CE29EDC542EE50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A7473D7EC60ACA5FA9D70577 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestMasoryUITests/Pods-TestMasoryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB8DB35BDC50C55B2611E067 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestMasory/Pods-TestMasory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDEA14866B8D778CB0027E68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestMasory/Pods-TestMasory-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		41E0CCDA1FBC6391006CFAC3 /* Sources */ = {
@@ -432,6 +619,7 @@
 		};
 		41E0CD0E1FBC6391006CFAC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12C1E141F01BD8C61D0AF283 /* Pods-TestMasory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +634,7 @@
 		};
 		41E0CD0F1FBC6391006CFAC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F3944D1FED2C84D96D39CF /* Pods-TestMasory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -460,6 +649,7 @@
 		};
 		41E0CD111FBC6391006CFAC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEBC2A2890301763996D9FDD /* Pods-TestMasoryTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -475,6 +665,7 @@
 		};
 		41E0CD121FBC6391006CFAC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D7E3385602472780BA8A9C0 /* Pods-TestMasoryTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +681,7 @@
 		};
 		41E0CD141FBC6391006CFAC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8DB185B9D20B43344455CB9 /* Pods-TestMasoryUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2XBEJ6876;
@@ -504,6 +696,7 @@
 		};
 		41E0CD151FBC6391006CFAC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 870A8DC113E2D84B4522FEA6 /* Pods-TestMasoryUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2XBEJ6876;
