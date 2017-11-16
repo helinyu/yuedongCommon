@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41A7BF4C1FBD757B00A795DB /* YDTestParallaxDimmingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A7BF4B1FBD757B00A795DB /* YDTestParallaxDimmingViewController.m */; };
 		41E0CCE31FBC6391006CFAC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0CCE21FBC6391006CFAC3 /* AppDelegate.m */; };
 		41E0CCE61FBC6391006CFAC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0CCE51FBC6391006CFAC3 /* ViewController.m */; };
 		41E0CCE91FBC6391006CFAC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E0CCE71FBC6391006CFAC3 /* Main.storyboard */; };
@@ -43,6 +44,8 @@
 		12C1E141F01BD8C61D0AF283 /* Pods-TestMasory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMasory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestMasory/Pods-TestMasory.debug.xcconfig"; sourceTree = "<group>"; };
 		130D92CC8DFCEF814E831A8A /* libPods-TestMasory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestMasory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7E3385602472780BA8A9C0 /* Pods-TestMasoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMasoryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestMasoryTests/Pods-TestMasoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		41A7BF4A1FBD757B00A795DB /* YDTestParallaxDimmingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTestParallaxDimmingViewController.h; sourceTree = "<group>"; };
+		41A7BF4B1FBD757B00A795DB /* YDTestParallaxDimmingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTestParallaxDimmingViewController.m; sourceTree = "<group>"; };
 		41E0CCDE1FBC6391006CFAC3 /* TestMasory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMasory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E0CCE11FBC6391006CFAC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41E0CCE21FBC6391006CFAC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,6 +98,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41A7BF491FBD738400A795DB /* ParalaxDimmingView */ = {
+			isa = PBXGroup;
+			children = (
+				41A7BF4A1FBD757B00A795DB /* YDTestParallaxDimmingViewController.h */,
+				41A7BF4B1FBD757B00A795DB /* YDTestParallaxDimmingViewController.m */,
+			);
+			path = ParalaxDimmingView;
+			sourceTree = "<group>";
+		};
 		41E0CCD51FBC6391006CFAC3 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +132,7 @@
 		41E0CCE01FBC6391006CFAC3 /* TestMasory */ = {
 			isa = PBXGroup;
 			children = (
+				41A7BF491FBD738400A795DB /* ParalaxDimmingView */,
 				41E0CCE11FBC6391006CFAC3 /* AppDelegate.h */,
 				41E0CCE21FBC6391006CFAC3 /* AppDelegate.m */,
 				41E0CCE41FBC6391006CFAC3 /* ViewController.h */,
@@ -459,6 +472,7 @@
 				41E0CCEC1FBC6391006CFAC3 /* TestMasory.xcdatamodeld in Sources */,
 				41E0CCF41FBC6391006CFAC3 /* main.m in Sources */,
 				41E0CCE31FBC6391006CFAC3 /* AppDelegate.m in Sources */,
+				41A7BF4C1FBD757B00A795DB /* YDTestParallaxDimmingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
