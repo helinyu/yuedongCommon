@@ -81,14 +81,14 @@
     
     {
         
-        [_view1 removeFromSuperview];
+//        [_view1 removeFromSuperview];
 //        这里的view被删除了之后，就会出现问题 （也就是它的父的view不存在了，怎么去对齐呢？）
 
-        [_sonView11 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(_sonView01.mas_bottom).offset(200);
-            make.height.width.mas_equalTo(200);
-            make.left.equalTo(_view0);
-        }];
+//        [_sonView11 mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.top.equalTo(_sonView01.mas_bottom).offset(200);
+//            make.height.width.mas_equalTo(200);
+//            make.left.equalTo(_view0);
+//        }];
         
     }
 }
