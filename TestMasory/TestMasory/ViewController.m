@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "Masonry.h"
 #import "YDTestParallaxDimmingViewController.h"
-
+#import "YDTestSViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -17,6 +17,7 @@
 @property (nonatomic, strong) UIView *twoView;
 
 @property (nonatomic, strong) NSArray *datasources;
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
@@ -27,11 +28,15 @@
     
     
     _datasources = @[
-                     @[@"测试 时差调光view",[YDTestParallaxDimmingViewController new]],
-                     
+                     @[@"测试 时差调光view"],
+                     @[@"测试"],
                     ];
-    
-    
+    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    [self.view addSubview:_tableView];
+    _tableView.backgroundColor = [UIColor grayColor];
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
 }
 
 - (void)test0 {
@@ -76,7 +81,9 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.navigationController pushViewController:_datasources[indexPath.row][1] animated:YES];
+//    [self.navigationController pushViewController:_datasources[indexPath.row][1] animated:YES];
+//     注意不要存储这个VC，这里面可能返回来没有销毁掉
+    [self.navigationController pushViewController:[YDTestSViewController new] animated:YES];
 }
 
 @end
