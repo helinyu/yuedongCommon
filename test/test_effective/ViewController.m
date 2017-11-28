@@ -12,6 +12,7 @@
 #import "HLy7ViewController.h"
 #import "HLY8ViewController.h"
 #import "HLYTestModelViewController.h"
+#import "YDTest10ViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -40,7 +41,8 @@
                         @[@"测试yymodel",[HLYTestModelViewController new]],
                         @[@"第八条特性的理解",[HLY8ViewController new]],
                         @[@"setter 或者getter 使用",[HLy7ViewController new]],
-                        @[@"属性测试",[HLYPropertyViewController new]]
+                        @[@"属性测试",[HLYPropertyViewController new]],
+                        @[@"粘贴测试",[YDTest10ViewController new]],
                         ];
 }
 

@@ -10,6 +10,7 @@
 		4121725C1F3D81B300A47AD9 /* HLYTestModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121725B1F3D81B300A47AD9 /* HLYTestModelViewController.m */; };
 		4121725F1F3D820800A47AD9 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121725E1F3D820800A47AD9 /* Father.m */; };
 		412172621F3D821B00A47AD9 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 412172611F3D821B00A47AD9 /* Son.m */; };
+		416837C01FCD787200F0429C /* YDTest10ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 416837BF1FCD787200F0429C /* YDTest10ViewController.m */; };
 		41ABCEF81F0BC51200927CCC /* HLYAnimationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */; };
 		41ABCEFB1F0BC57700927CCC /* AnimationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ABCEFA1F0BC57700927CCC /* AnimationCollectionViewCell.m */; };
 		41E0D8DA1F0C785D00E16E9E /* YDBgImageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0D8D91F0C785D00E16E9E /* YDBgImageStatusView.m */; };
@@ -154,6 +155,8 @@
 		4121725E1F3D820800A47AD9 /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
 		412172601F3D821B00A47AD9 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
 		412172611F3D821B00A47AD9 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		416837BE1FCD787200F0429C /* YDTest10ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest10ViewController.h; sourceTree = "<group>"; };
+		416837BF1FCD787200F0429C /* YDTest10ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest10ViewController.m; sourceTree = "<group>"; };
 		41ABCEF61F0BC51200927CCC /* HLYAnimationCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAnimationCollectionViewController.h; sourceTree = "<group>"; };
 		41ABCEF71F0BC51200927CCC /* HLYAnimationCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAnimationCollectionViewController.m; sourceTree = "<group>"; };
 		41ABCEF91F0BC57700927CCC /* AnimationCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationCollectionViewCell.h; path = "数据解析/AnimationCollectionViewCell.h"; sourceTree = "<group>"; };
@@ -454,6 +457,15 @@
 				412172611F3D821B00A47AD9 /* Son.m */,
 			);
 			name = 9;
+			sourceTree = "<group>";
+		};
+		416837BD1FCD783100F0429C /* 粘贴的功能 */ = {
+			isa = PBXGroup;
+			children = (
+				416837BE1FCD787200F0429C /* YDTest10ViewController.h */,
+				416837BF1FCD787200F0429C /* YDTest10ViewController.m */,
+			);
+			name = "粘贴的功能";
 			sourceTree = "<group>";
 		};
 		41ABCEF51F0BC4F800927CCC /* collectionview cell 上的动画 */ = {
@@ -1127,6 +1139,7 @@
 		DCCED70F1EF98816001D2474 /* test_effective */ = {
 			isa = PBXGroup;
 			children = (
+				416837BD1FCD783100F0429C /* 粘贴的功能 */,
 				412172591F3D812400A47AD9 /* 9 */,
 				DC38AE621EFFE5D600FB44FE /* 8 */,
 				DCCB56111EFADDD400A5A44C /* 7 */,
@@ -1611,6 +1624,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				412172621F3D821B00A47AD9 /* Son.m in Sources */,
+				416837C01FCD787200F0429C /* YDTest10ViewController.m in Sources */,
 				DCCED7181EF98816001D2474 /* ViewController.m in Sources */,
 				DC38AE681EFFE6A200FB44FE /* EOCPerson.m in Sources */,
 				DCCB56141EFADDEE00A5A44C /* HLy7ViewController.m in Sources */,
