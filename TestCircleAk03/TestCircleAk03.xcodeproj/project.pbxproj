@@ -16,6 +16,10 @@
 		41BC60CD1FC418E200A9946C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BC60CC1FC418E200A9946C /* main.m */; };
 		41BC60D71FC418E200A9946C /* TestCircleAk03Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BC60D61FC418E200A9946C /* TestCircleAk03Tests.m */; };
 		41BC60E21FC418E200A9946C /* TestCircleAk03UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BC60E11FC418E200A9946C /* TestCircleAk03UITests.m */; };
+		41BC60F11FC4273000A9946C /* YDCommentTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BC60F01FC4273000A9946C /* YDCommentTCell.m */; };
+		41BC60F41FC42AF500A9946C /* YDDynamicDetailHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BC60F31FC42AF500A9946C /* YDDynamicDetailHeaderView.m */; };
+		41BC60F71FC42D2300A9946C /* YDTitleCollecitonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BC60F61FC42D2300A9946C /* YDTitleCollecitonView.m */; };
+		41BC60FA1FC42D7F00A9946C /* YDAvatarCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BC60F91FC42D7F00A9946C /* YDAvatarCCell.m */; };
 		4A04F3729DDE35D8686F3403 /* libPods-TestCircleAk03.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 817F715172BF1A52FA53166B /* libPods-TestCircleAk03.a */; };
 		7958F0B43F9D5212CA8DCAFF /* libPods-TestCircleAk03UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C436B246C50AE6E298BF36 /* libPods-TestCircleAk03UITests.a */; };
 		9AA2CD9CB7CCB95764EE18C0 /* libPods-TestCircleAk03Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4C13E1EFE4A890A126D6CC /* libPods-TestCircleAk03Tests.a */; };
@@ -59,6 +63,14 @@
 		41BC60DD1FC418E200A9946C /* TestCircleAk03UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCircleAk03UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41BC60E11FC418E200A9946C /* TestCircleAk03UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCircleAk03UITests.m; sourceTree = "<group>"; };
 		41BC60E31FC418E200A9946C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41BC60EF1FC4273000A9946C /* YDCommentTCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCommentTCell.h; sourceTree = "<group>"; };
+		41BC60F01FC4273000A9946C /* YDCommentTCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDCommentTCell.m; sourceTree = "<group>"; };
+		41BC60F21FC42AF500A9946C /* YDDynamicDetailHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDDynamicDetailHeaderView.h; sourceTree = "<group>"; };
+		41BC60F31FC42AF500A9946C /* YDDynamicDetailHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDDynamicDetailHeaderView.m; sourceTree = "<group>"; };
+		41BC60F51FC42D2300A9946C /* YDTitleCollecitonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTitleCollecitonView.h; sourceTree = "<group>"; };
+		41BC60F61FC42D2300A9946C /* YDTitleCollecitonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTitleCollecitonView.m; sourceTree = "<group>"; };
+		41BC60F81FC42D7F00A9946C /* YDAvatarCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAvatarCCell.h; sourceTree = "<group>"; };
+		41BC60F91FC42D7F00A9946C /* YDAvatarCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAvatarCCell.m; sourceTree = "<group>"; };
 		4E4C13E1EFE4A890A126D6CC /* libPods-TestCircleAk03Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestCircleAk03Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7EB56B8C3F18155114B897 /* Pods-TestCircleAk03.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCircleAk03.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestCircleAk03/Pods-TestCircleAk03.release.xcconfig"; sourceTree = "<group>"; };
 		817F715172BF1A52FA53166B /* libPods-TestCircleAk03.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestCircleAk03.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +149,14 @@
 				41BC60BB1FC418E100A9946C /* AppDelegate.m */,
 				41BC60BD1FC418E100A9946C /* ViewController.h */,
 				41BC60BE1FC418E100A9946C /* ViewController.m */,
+				41BC60EF1FC4273000A9946C /* YDCommentTCell.h */,
+				41BC60F01FC4273000A9946C /* YDCommentTCell.m */,
+				41BC60F21FC42AF500A9946C /* YDDynamicDetailHeaderView.h */,
+				41BC60F31FC42AF500A9946C /* YDDynamicDetailHeaderView.m */,
+				41BC60F51FC42D2300A9946C /* YDTitleCollecitonView.h */,
+				41BC60F61FC42D2300A9946C /* YDTitleCollecitonView.m */,
+				41BC60F81FC42D7F00A9946C /* YDAvatarCCell.h */,
+				41BC60F91FC42D7F00A9946C /* YDAvatarCCell.m */,
 				41BC60C01FC418E100A9946C /* Main.storyboard */,
 				41BC60C61FC418E200A9946C /* Assets.xcassets */,
 				41BC60C81FC418E200A9946C /* LaunchScreen.storyboard */,
@@ -456,6 +476,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				41BC60BF1FC418E100A9946C /* ViewController.m in Sources */,
+				41BC60FA1FC42D7F00A9946C /* YDAvatarCCell.m in Sources */,
+				41BC60F41FC42AF500A9946C /* YDDynamicDetailHeaderView.m in Sources */,
+				41BC60F11FC4273000A9946C /* YDCommentTCell.m in Sources */,
+				41BC60F71FC42D2300A9946C /* YDTitleCollecitonView.m in Sources */,
 				41BC60BC1FC418E100A9946C /* AppDelegate.m in Sources */,
 				41BC60CD1FC418E200A9946C /* main.m in Sources */,
 				41BC60C51FC418E100A9946C /* TestCircleAk03.xcdatamodeld in Sources */,
