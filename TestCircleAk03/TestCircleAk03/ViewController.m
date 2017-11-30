@@ -66,6 +66,18 @@
     return headerView;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"did select");
+    NSURL *url = [NSURL URLWithString:@"prefs:root=Wallpaper"];
+    if ([[UIApplication sharedApplication] canOpenURL:url])
+    {
+        [[UIApplication sharedApplication] openURL:url];
+    }
+    else {
+        NSLog(@"不能够打开这个文件");
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
