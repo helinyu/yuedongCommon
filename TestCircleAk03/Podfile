@@ -6,6 +6,7 @@ target 'TestCircleAk03' do
   # use_frameworks!
    pod 'Masonry', '~> 1.1.0'
    pod 'YYKit', '~> 1.0.9'
+   pod 'IQKeyboardManager', '~> 3.3.7'
 
   # Pods for TestCircleAk03
 
