@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 #import "YD1ViewController.h"
+#import "YD2ViewController.h"
+#import "YD3ViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -35,7 +37,7 @@ static NSString *const reuserTableViewCellIdentifier = @"tableView.cell.identifi
     _tableView.dataSource = self;
     _tableView.delegate = self;
     
-    _dataSoruces = @[@"基础属性测试"];
+    _dataSoruces = @[@"基础属性测试",@"按钮内的图片滚动",@"多线程的处理"];
 
 }
 
@@ -66,6 +68,16 @@ static NSString *const reuserTableViewCellIdentifier = @"tableView.cell.identifi
         }
             break;
         case 1:
+        {
+            YD2ViewController *vc2 = [YD2ViewController new];
+            [self presentViewController:vc2 animated:YES completion:nil];
+        }
+            break;
+        case 2:
+        {
+            YD3ViewController *vc3 = [YD3ViewController new];
+            [self presentViewController:vc3 animated:YES completion:nil];
+        }
             break;
         default:
             break;
@@ -76,6 +88,5 @@ static NSString *const reuserTableViewCellIdentifier = @"tableView.cell.identifi
     [super didReceiveMemoryWarning];
 
 }
-
 
 @end

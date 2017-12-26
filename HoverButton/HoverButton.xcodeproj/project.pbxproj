@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		412C9DE31FF0AE8F007BC98E /* Snip20171225_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 412C9DE21FF0AE8F007BC98E /* Snip20171225_1.png */; };
 		415A1B1A1F57E58800FBDB5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A1B191F57E58800FBDB5C /* main.m */; };
 		415A1B1D1F57E58800FBDB5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A1B1C1F57E58800FBDB5C /* AppDelegate.m */; };
 		415A1B201F57E58800FBDB5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A1B1F1F57E58800FBDB5C /* ViewController.m */; };
@@ -16,6 +17,7 @@
 		415A1B3E1F57E58800FBDB5C /* HoverButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A1B3D1F57E58800FBDB5C /* HoverButtonUITests.m */; };
 		415A1B521F57F26800FBDB5C /* YD1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A1B511F57F26800FBDB5C /* YD1ViewController.m */; };
 		415A1B561F5801CE00FBDB5C /* YD2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A1B551F5801CE00FBDB5C /* YD2ViewController.m */; };
+		41BD73BD1FF249CD009D4DC9 /* YD3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BD73BC1FF249CD009D4DC9 /* YD3ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		412C9DE21FF0AE8F007BC98E /* Snip20171225_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20171225_1.png; sourceTree = "<group>"; };
 		415A1B151F57E58800FBDB5C /* HoverButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoverButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		415A1B191F57E58800FBDB5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		415A1B1B1F57E58800FBDB5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,6 +58,8 @@
 		415A1B511F57F26800FBDB5C /* YD1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YD1ViewController.m; sourceTree = "<group>"; };
 		415A1B541F5801CE00FBDB5C /* YD2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YD2ViewController.h; sourceTree = "<group>"; };
 		415A1B551F5801CE00FBDB5C /* YD2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YD2ViewController.m; sourceTree = "<group>"; };
+		41BD73BB1FF249CD009D4DC9 /* YD3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YD3ViewController.h; sourceTree = "<group>"; };
+		41BD73BC1FF249CD009D4DC9 /* YD3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YD3ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,7 @@
 		415A1B171F57E58800FBDB5C /* HoverButton */ = {
 			isa = PBXGroup;
 			children = (
+				41BD73BA1FF249B6009D4DC9 /* 3_base */,
 				415A1B4F1F57F25100FBDB5C /* 1_base */,
 				415A1B531F5801C400FBDB5C /* 2_base */,
 				415A1B1B1F57E58800FBDB5C /* AppDelegate.h */,
@@ -159,8 +165,18 @@
 			children = (
 				415A1B541F5801CE00FBDB5C /* YD2ViewController.h */,
 				415A1B551F5801CE00FBDB5C /* YD2ViewController.m */,
+				412C9DE21FF0AE8F007BC98E /* Snip20171225_1.png */,
 			);
 			path = 2_base;
+			sourceTree = "<group>";
+		};
+		41BD73BA1FF249B6009D4DC9 /* 3_base */ = {
+			isa = PBXGroup;
+			children = (
+				41BD73BB1FF249CD009D4DC9 /* YD3ViewController.h */,
+				41BD73BC1FF249CD009D4DC9 /* YD3ViewController.m */,
+			);
+			path = 3_base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +290,7 @@
 			files = (
 				415A1B281F57E58800FBDB5C /* LaunchScreen.storyboard in Resources */,
 				415A1B251F57E58800FBDB5C /* Assets.xcassets in Resources */,
+				412C9DE31FF0AE8F007BC98E /* Snip20171225_1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +320,7 @@
 				415A1B561F5801CE00FBDB5C /* YD2ViewController.m in Sources */,
 				415A1B1A1F57E58800FBDB5C /* main.m in Sources */,
 				415A1B521F57F26800FBDB5C /* YD1ViewController.m in Sources */,
+				41BD73BD1FF249CD009D4DC9 /* YD3ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

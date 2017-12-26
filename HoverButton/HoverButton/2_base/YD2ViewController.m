@@ -10,6 +10,8 @@
 
 @interface YD2ViewController ()
 
+@property (nonatomic, assign) BOOL isOPen;
+
 @end
 
 @implementation YD2ViewController
@@ -19,17 +21,29 @@
     
     self.view.backgroundColor = [UIColor yellowColor];
     
-    
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [btn setTitle:@"第二个页面" forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(onSecondPlay) forControlEvents:UIControlEventTouchUpInside];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setImage:[UIImage imageNamed:@"Snip20171225_1"] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(onSecondPlay:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
-    btn.frame = CGRectMake(100, 100, 300, 100);
-    
+    btn.backgroundColor = [UIColor redColor];
+    btn.frame = CGRectMake(50, 50, 200, 200);
 }
 
-- (void)onSecondPlay {
+- (void)onSecondPlay:(UIButton *)sender {
     NSLog(@"second play");
+    
+    if (!_isOPen) {
+        [UIView animateWithDuration:1 animations:^{
+            sender.imageView.transform = CGAffineTransformMakeRotation(M_PI);
+        }];
+        self.isOPen = YES;
+    }
+    else {
+        [UIView animateWithDuration:1 animations:^{
+            sender.imageView.transform = CGAffineTransformIdentity;
+        }];
+        self.isOPen = NO;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

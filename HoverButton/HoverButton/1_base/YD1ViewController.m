@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor blueColor];
+//    self.view.backgroundColor = [UIColor blueColor];
     
 //    YD2ViewController *vc2 = [YD2ViewController new];
 //    [self configureExternalDisplayAndShowWithContent:vc2];
