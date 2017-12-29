@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "Masonry.h"
 
 @interface ViewController ()
+
+
 
 @end
 
@@ -16,7 +19,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton *btn0 = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn0 setTitle:@"btn0" forState:UIControlStateNormal];
+    [self.view addSubview:btn0];
+    [btn0 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.equalTo(self.view).offset(80);
+        make.width.height.mas_equalTo(100);
+    }];
+    
+    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn1 setTitle:@"btn1" forState:UIControlStateNormal];
+    [self.view addSubview:btn1];
+    [btn1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.equalTo(btn0).offset(btn0);
+        make.width.height.mas_equalTo(100);
+    }];
 }
 
 
