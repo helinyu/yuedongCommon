@@ -18,6 +18,8 @@
 		415A1B521F57F26800FBDB5C /* YD1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A1B511F57F26800FBDB5C /* YD1ViewController.m */; };
 		415A1B561F5801CE00FBDB5C /* YD2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A1B551F5801CE00FBDB5C /* YD2ViewController.m */; };
 		41BD73BD1FF249CD009D4DC9 /* YD3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BD73BC1FF249CD009D4DC9 /* YD3ViewController.m */; };
+		41BD73C11FF26298009D4DC9 /* YD4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BD73C01FF26298009D4DC9 /* YD4ViewController.m */; };
+		41BD73C61FF375B9009D4DC9 /* YD5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BD73C51FF375B9009D4DC9 /* YD5ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		415A1B551F5801CE00FBDB5C /* YD2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YD2ViewController.m; sourceTree = "<group>"; };
 		41BD73BB1FF249CD009D4DC9 /* YD3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YD3ViewController.h; sourceTree = "<group>"; };
 		41BD73BC1FF249CD009D4DC9 /* YD3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YD3ViewController.m; sourceTree = "<group>"; };
+		41BD73BF1FF26298009D4DC9 /* YD4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YD4ViewController.h; sourceTree = "<group>"; };
+		41BD73C01FF26298009D4DC9 /* YD4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YD4ViewController.m; sourceTree = "<group>"; };
+		41BD73C41FF375B9009D4DC9 /* YD5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YD5ViewController.h; sourceTree = "<group>"; };
+		41BD73C51FF375B9009D4DC9 /* YD5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YD5ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,8 @@
 		415A1B171F57E58800FBDB5C /* HoverButton */ = {
 			isa = PBXGroup;
 			children = (
+				41BD73C31FF375AE009D4DC9 /* 5_base */,
+				41BD73BE1FF26286009D4DC9 /* 4_base */,
 				41BD73BA1FF249B6009D4DC9 /* 3_base */,
 				415A1B4F1F57F25100FBDB5C /* 1_base */,
 				415A1B531F5801C400FBDB5C /* 2_base */,
@@ -177,6 +185,24 @@
 				41BD73BC1FF249CD009D4DC9 /* YD3ViewController.m */,
 			);
 			path = 3_base;
+			sourceTree = "<group>";
+		};
+		41BD73BE1FF26286009D4DC9 /* 4_base */ = {
+			isa = PBXGroup;
+			children = (
+				41BD73BF1FF26298009D4DC9 /* YD4ViewController.h */,
+				41BD73C01FF26298009D4DC9 /* YD4ViewController.m */,
+			);
+			path = 4_base;
+			sourceTree = "<group>";
+		};
+		41BD73C31FF375AE009D4DC9 /* 5_base */ = {
+			isa = PBXGroup;
+			children = (
+				41BD73C41FF375B9009D4DC9 /* YD5ViewController.h */,
+				41BD73C51FF375B9009D4DC9 /* YD5ViewController.m */,
+			);
+			path = 5_base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +347,8 @@
 				415A1B1A1F57E58800FBDB5C /* main.m in Sources */,
 				415A1B521F57F26800FBDB5C /* YD1ViewController.m in Sources */,
 				41BD73BD1FF249CD009D4DC9 /* YD3ViewController.m in Sources */,
+				41BD73C11FF26298009D4DC9 /* YD4ViewController.m in Sources */,
+				41BD73C61FF375B9009D4DC9 /* YD5ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

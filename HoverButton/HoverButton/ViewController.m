@@ -11,6 +11,8 @@
 #import "YD1ViewController.h"
 #import "YD2ViewController.h"
 #import "YD3ViewController.h"
+#import "YD4ViewController.h"
+#import "YD5ViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -37,7 +39,7 @@ static NSString *const reuserTableViewCellIdentifier = @"tableView.cell.identifi
     _tableView.dataSource = self;
     _tableView.delegate = self;
     
-    _dataSoruces = @[@"基础属性测试",@"按钮内的图片滚动",@"多线程的处理"];
+    _dataSoruces = @[@"基础属性测试",@"按钮内的图片滚动",@"多线程的处理",@"阴影部分",@"tableView 删除"];
 
 }
 
@@ -79,10 +81,25 @@ static NSString *const reuserTableViewCellIdentifier = @"tableView.cell.identifi
             [self presentViewController:vc3 animated:YES completion:nil];
         }
             break;
+        case 3:
+        {
+            YD4ViewController *v4 = [YD4ViewController new];
+            [self presentViewController:v4 animated:YES completion:nil];
+            
+        }
+            break;
+        case 4:
+        {
+            YD5ViewController *vc5 = [YD5ViewController new];
+            [self presentViewController:vc5 animated:YES completion:nil];
+        }
+            break;
         default:
             break;
     }
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
