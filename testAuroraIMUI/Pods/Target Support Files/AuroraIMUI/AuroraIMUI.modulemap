@@ -1,0 +1,6 @@
+framework module AuroraIMUI {
+  umbrella header "AuroraIMUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

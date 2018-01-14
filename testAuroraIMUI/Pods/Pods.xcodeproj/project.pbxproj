@@ -1,0 +1,1362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04B94571E04F695CBE987FBF98AD052F /* IMUIProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8228D077F11776BB084D0F383152B /* IMUIProgressButton.swift */; };
+		07F3E8C90D88A70AF69E2712B0C530FC /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E1B14E075D31E79A8DEE42A8AEBD0 /* UIColorExtension.swift */; };
+		07FA3C1918664F83F9D0B12127AD739F /* IMUIGalleryContainerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 101C45D5BA314F330FB6CB6025DEAF08 /* IMUIGalleryContainerCell.xib */; };
+		09C1117A9147565B64503191DC7B2603 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C559458CFF87732EB3EB3A1E9DB3B23E /* Foundation.framework */; };
+		104792485344FC4F064BDA1C4CAC3450 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B7A5DBF8FD4925267A504F4444F131 /* UIKit.framework */; };
+		12CF7CE39576687B7072EFC5BC8B7AE1 /* IMUIEmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26501F78E8511D68EDD4E7062111ADF8 /* IMUIEmojiCell.swift */; };
+		14847109DA9EF300FF60156DF73A8EC3 /* IMUIAudioPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF263D74ADCF2BB3B282258D335EAEF /* IMUIAudioPlayerHelper.swift */; };
+		17D624C9F1B4D0C0E0A87F9671D46F24 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F880A27AB1A3E62E4EDE7431C746E72 /* UIImageExtension.swift */; };
+		21A88D741A3AD524D1EF195B0B660A5F /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD75F79BBE843924269CC6B4C4C66C7 /* CGRectExtension.swift */; };
+		24D65B675BED59F4314A4F52CA471873 /* IMUITextMessageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB87CF893678B19274C4E4BFB52DE6F1 /* IMUITextMessageContentView.swift */; };
+		250860D13C9C9A540578B9AF4FF998E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1A1B7072D0584912E7891D4674ECD2 /* CoreGraphics.framework */; };
+		26AC384E8CF636A6892662D3FDCE97B2 /* IMUIFeatureListIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E51352289D59968BC03DFD24C51A182 /* IMUIFeatureListIconCell.swift */; };
+		26C38F554F0DCDF83435393E77842FA2 /* Pods-testAuroraIMUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4A79524281CC9AD183E1336A28B7A4A /* Pods-testAuroraIMUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27D6C151BB5F00465A68106ACD7DC697 /* IMUIEmojiItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1827EB10BEED9F1146CD847472B8A /* IMUIEmojiItemCell.swift */; };
+		28B526914EEEA405169C9F490B1C87ED /* IMUIChatDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E3BDCA39BB2952404BFACB9CAD4911 /* IMUIChatDataManager.swift */; };
+		2972FE87769DE839293A168D2BC68C60 /* Aurora-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B549110FD961B971912B479A3F94A2 /* Aurora-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CB57B8FC179CEB753EB11A55B645B63 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A5156496B85A4560FD372668BF9AF8 /* CoreLocation.framework */; };
+		2EEC20B5C74AA857DA7DF46946624386 /* IMUIEmojiItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41A072618DCAA8D1C49677280561DE1F /* IMUIEmojiItemCell.xib */; };
+		3323003B0D895B93C2B7C0B6B2CFD13A /* IMUIVideoFileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D80D947968BEBA1B8BD900CB73F62E3 /* IMUIVideoFileLoader.swift */; };
+		397380F7BDADF8CBAC57B49F6C1DB5F3 /* Pods-testAuroraIMUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B76D9BE611827D588A75F62ABE3421F /* Pods-testAuroraIMUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FECCD92F45FE280100D6690BAE4F777 /* IMUIInputViewAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 126214F9365FFFE3FED136AB9790A7FA /* IMUIInputViewAssets.bundle */; };
+		4080E1DF6E1FE65A7C824DFDA5CDA355 /* IMUIRecordVoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0E0A63334AC3634010162EECB7FE6 /* IMUIRecordVoiceCell.swift */; };
+		42B263897977043428DEA3D0501819CB /* IMUIPhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB2AC2D3AEC00A9E2C6386D60C75C72 /* IMUIPhotoCaptureDelegate.swift */; };
+		43283E30C6B8D09D69A60BD9E3FCB924 /* IMUIFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C149AEDF8090618EECB5E6E18360D189 /* IMUIFeatureView.swift */; };
+		44DB5A3B5D9BF382B9A616B654A8EC7F /* IMUIMessageStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C953D70FC173F68DA34254F818C90D /* IMUIMessageStatusView.swift */; };
+		46B2F4502C6BD16B7AAC0968D772CE48 /* IMUIVideoMessageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8844A44C6717C3A9AF7511818F4EA6 /* IMUIVideoMessageContentView.swift */; };
+		4C8AB3ECF91069C387373749D471124B /* IMUICameraCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B654B9B200C6EA4C6FB8116E4AB40100 /* IMUICameraCell.xib */; };
+		4EB78B21AF4472452CEFF616CDE90163 /* IMUIFeatureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BFB26E10F85CD4866F5BA179D66F64A /* IMUIFeatureView.xib */; };
+		4F5A536292183EB4D23EDE7D77623767 /* IMUIViewCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1E6FA4E527F69528F54443087294F /* IMUIViewCache.swift */; };
+		506239BA25427B607E209C1758CC7FEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C559458CFF87732EB3EB3A1E9DB3B23E /* Foundation.framework */; };
+		571E59E7F283F0383ED257DA93FE4AD0 /* IMUIMessageStatusViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DB171AF9B8F6BA3C33DCF1BEB8F6D /* IMUIMessageStatusViewProtocol.swift */; };
+		5ACC3025EAD6852D37EA2F350EE315F7 /* IMUIReuseViewCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115365877B13598687E3DEC8027BAFF /* IMUIReuseViewCache.swift */; };
+		5E2BBF16A0EFFF790C120378D348347A /* IMUIGalleryDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD4625283D72F60828E49841F35CBBD /* IMUIGalleryDataManager.swift */; };
+		5F106D405D7506BDA805DBDBC0417FDD /* IMUITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8B731FAC1B288F704963BB91380C07 /* IMUITextView.swift */; };
+		6098BE488BADBF7B9E7EB6E7F4D7FDB6 /* IMUIGalleryContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47093BB7F686EC7034CCC562A359A8D /* IMUIGalleryContainerCell.swift */; };
+		69AF4C778675B81E92F2FA5BBF36C377 /* IMUIMessageCellLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613CC6B44681581565BD5EB66C22CC49 /* IMUIMessageCellLayoutProtocol.swift */; };
+		6CAA74478469BB5DA02631AE5990F731 /* IMUIFeatureIconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AFCA7D34512E9BB88027F08D8F7614 /* IMUIFeatureIconModel.swift */; };
+		73553F481BB60B8C33A3F71CAB13569B /* Aurora-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 476215325B80A47B116CF4BB6F8A57DF /* Aurora-dummy.m */; };
+		73F05EC6BCA3E1588025C7D6C587F93A /* IMUIMessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18882D438252E7EFE9615D17C4B569DA /* IMUIMessageBubbleView.swift */; };
+		75AFA1A1F9A6EDA75AFB2069434C65DC /* Pods-testAuroraIMUIUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A29BAB280D9F926CDABAA0DEFFFDD46F /* Pods-testAuroraIMUIUITests-dummy.m */; };
+		75BF4DA98A1B51A106D67BB68C4B04BD /* IMUIEmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74F1722C8493CAFB4BA24F1744E9AFE /* IMUIEmojiModel.swift */; };
+		78755E68B63F00B1F093DD426AE487D4 /* IMUIMessageMessageCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390CE30EDCA780552596CFE9ECA5A17 /* IMUIMessageMessageCollectionViewDelegate.swift */; };
+		7C8D39B5EF6918AE7E39AABD891056B4 /* Pods-testAuroraIMUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA3C4D151BEFC1503E8321A9E98FDBC /* Pods-testAuroraIMUITests-dummy.m */; };
+		811E42F44A543D63F7C758CEC6F4C4BE /* IMUICameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EC35FEBF5C50E134C4587EA872D836 /* IMUICameraView.swift */; };
+		8EC819DC57CCAA5B7DEED83D72EB2926 /* IMUIGalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D107120CFF13B3F1CDFCBAC3C8EF2E8C /* IMUIGalleryCell.swift */; };
+		91A51661FD1E470E697DD8D6CDCE6981 /* CIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA953AA8C9DC1B5159836B2599DC803E /* CIImageView.swift */; };
+		91EA0F45A05F21BE3CF515FBEC945B29 /* IMUIMessageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE4092EB21CDE20FB15E3C0C5EBFCD /* IMUIMessageProtocol.swift */; };
+		924D076C55A77FD207C5ADBFBC3973D8 /* IMUIMessageContentViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47CF9D565BAA6583994A7C99F2D483 /* IMUIMessageContentViewProtocol.swift */; };
+		98F1FD227F34BE072B82C651BB7C8CB9 /* IMUIMessageCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFFDB582BBFF6E57C4A02BECBD1DA2D0 /* IMUIMessageCollectionView.xib */; };
+		9A6E4C077F4F139026C9764654665735 /* AuroraIMUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9A1B4E19CCD13297E7124ECF48C873 /* AuroraIMUI-dummy.m */; };
+		9AACD4DC9F1B8A8B0B0F0A3D45EDE2D3 /* IMUIMessageCellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F78A0C02ADE9E47A32E68B699F4B35 /* IMUIMessageCellLayout.swift */; };
+		9AE6129058892F3BEE3E9EA737F37A8B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3E965498C5A558772C2ABAC39CCB98 /* AVFoundation.framework */; };
+		9B65BF6B102F1155162B9E380D28A3C5 /* Pods-testAuroraIMUIUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27DDC50943FA90F739DFD333C124BC19 /* Pods-testAuroraIMUIUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C9BA15D175F858A147367D3437CAC80 /* IMUIBaseMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F994FFA01C0113F300F48B56F40B0 /* IMUIBaseMessageCell.swift */; };
+		9CFCC2D872F43BC81E39E37CA04764B2 /* IMUICameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6100A6119B6F6354E9E41D0F872EB2AB /* IMUICameraView.xib */; };
+		A429385F475176CDB2B2E7FDB4F66B78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C559458CFF87732EB3EB3A1E9DB3B23E /* Foundation.framework */; };
+		A5FC0069042B3E687A77DEFE16583ED5 /* AuroraIMUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 805F0DF92FFE60EE5BB7DABDFDE71CED /* AuroraIMUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A84B1F5FBEE6E463CFDCCCC28258A10A /* IMUICameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC8010D076D4008E94892BE95983B82 /* IMUICameraPreviewView.swift */; };
+		B00E411B542FD69ECC1397DF56DCCE1B /* IMUIMessageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAAA6512510A0EF70CF3CA9D5586186 /* IMUIMessageCollectionView.swift */; };
+		B13D33371F26C568A13A91EBEFFFB98B /* IMUIGalleryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 124869C6450C573BE7DADC9DA0CBDF88 /* IMUIGalleryCell.xib */; };
+		B361842554571CF1EDD2FAC0D46FDE06 /* IMUIAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5A4B6885D283B4413388CB327E20252 /* IMUIAssets.bundle */; };
+		B6A88723800731A991F0BE112D9F8B04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C559458CFF87732EB3EB3A1E9DB3B23E /* Foundation.framework */; };
+		B7695EFE431FD00FB04DD33D69B83565 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39872C4EFEAC66EF7301F8322715F33 /* UIViewExtension.swift */; };
+		BAD60103C3D6434514D28030010C081E /* IMUIInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39083E522F2D847D1E21B66F968D6C37 /* IMUIInputView.xib */; };
+		BC74C07F150E020FE69BF0B0604B78D6 /* CMSampleBufferExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4165CE4C06C897A08ECE182C93E269C6 /* CMSampleBufferExtension.swift */; };
+		BCD86272882CDA68834C88AA869CC275 /* BundleInputViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F49E4BE65BCD53064D220894C808A8 /* BundleInputViewExtension.swift */; };
+		BD0B9F5CD3FC2391AE0C4318BC4F73A9 /* IMUIMessageModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19069162767490F4E4A94218EA693410 /* IMUIMessageModelProtocol.swift */; };
+		BF08433057FCAF252CD824D1788A6E3F /* IMUIEmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D0A5BC3D81D3EE95F8870BFCCED3591 /* IMUIEmojiCell.xib */; };
+		C49B1E0E98E116FD132DE752D098CB3A /* Aurora.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD7527B72BC44DACA3F9D878A0AD39D /* Aurora.swift */; };
+		C58538D7EB175DB81ECED4E33AC7F03F /* IMUIChatLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759FFBF61FBD42D6B40F67293A57804 /* IMUIChatLayout.swift */; };
+		C975563760E12E2A88FC158F716A0EDF /* IMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DB1D3FD095700FC73C27CE09E2EA7CD /* IMUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9D21D413CF2BE67D2055B789119EF58 /* IMUIUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5981B058000D686F640E416829075C /* IMUIUserProtocol.swift */; };
+		CBDF27F7F7F9799807A095F53299286F /* IMUIInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E11E0C41B0AAB705E5D8EF6DD0DE9DA /* IMUIInputView.swift */; };
+		CC0AAAC7C77C4B6131354AA869836B15 /* IMUIRecordVoiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48263ED1A2A16B84F1F120297C6D39B /* IMUIRecordVoiceHelper.swift */; };
+		CCADD801403C4D50E7AEBBD6376BF0D6 /* IMUIFeatureListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1EB91C2007FD404362E28E6DD4FF03 /* IMUIFeatureListView.xib */; };
+		D499320ABA5D82DFCA339EE1A033215C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF6E4C12AE48320B215D362A19E567 /* DateExtension.swift */; };
+		D4B85927947BB6AB17BC1CCB815A0F58 /* BundleMessageListExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D1C92A9CE42FB48DC1061126DEF385 /* BundleMessageListExtension.swift */; };
+		D61B5DDFA8B718987D7525B7D55E4CB5 /* CIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A628862D30F35F2EB4995D96DCFE234A /* CIImageExtension.swift */; };
+		D699336617BA8E9661223476CA33283D /* IMUIMessageCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91357F26A159FA372E3D9F68360A0023 /* IMUIMessageCellProtocol.swift */; };
+		D8CFAB1263A618BA6C977BEFDDB0AA46 /* IMUICameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E156D135EAB651D0098CC4DEBD61B618 /* IMUICameraCell.swift */; };
+		E18ED785F17E5A49045EBE5E1C13B220 /* IMUIImageMessageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF5A6E0A088F7C60828442238C9C6EF /* IMUIImageMessageContentView.swift */; };
+		E204BC6F8CB81D4BC14EDA4CEEDCB273 /* IMUIVoiceMessageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B767FF98C31FE0BB7334179E66078 /* IMUIVoiceMessageContentView.swift */; };
+		E25E577EA5C6E337F1CE7B56E47EA829 /* IMUIInputViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C8190A9BB7BA40AF1C5975059766E2 /* IMUIInputViewDelegate.swift */; };
+		E333D819117873460D01B1E12D0D2910 /* IMUIMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598311DA6555FC30320815A91B966466 /* IMUIMessageModel.swift */; };
+		E6A87C8E1F07DD1673F10173FA1D45E1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915996D326D4AFC9FF9D4C9CB2E3BEE /* StringExtension.swift */; };
+		E7870E2ABCEE0519821072D429BC454B /* UIImageMessageListExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A5D4AFF919E872EF9239C28FEF1B95 /* UIImageMessageListExtension.swift */; };
+		E8FF60F4209131CE03F716D49EE7A1E7 /* IMUIFeatureListIconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 811EF88C35AB0E25E6C8EC30CE9DFB64 /* IMUIFeatureListIconCell.xib */; };
+		EF928BDF06F3FC7B557844A41F000BCE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15ED7721DCA7C41DEF2B41FC1F716F1 /* QuartzCore.framework */; };
+		F3A5D1C7B468000FA2133E8CAD3D488F /* Pods-testAuroraIMUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FF8DBC533F26F89512CAADA7B55574 /* Pods-testAuroraIMUI-dummy.m */; };
+		F427D7E175662C50957DF66832C71BD4 /* IMUIRecordVoiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BBEFCA79DC3BA80CE3364A732F74B47 /* IMUIRecordVoiceCell.xib */; };
+		F71EDBAE1BBB7EF85E3564D98032493E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C559458CFF87732EB3EB3A1E9DB3B23E /* Foundation.framework */; };
+		FE01522D73F726F1E99C27F9A85F15EC /* IMUIFeatureListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EFB859BCD8183DC908BD796D8085D /* IMUIFeatureListView.swift */; };
+		FF0AB44776AEFDE7DD2B41317F5941D1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230A42C6F07A4DF26D6626F79AB3491E /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		364D5A4F7838E2A0879AFEC32E82B50D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 596F32EBFB8C723B5048B59C641492D9;
+			remoteInfo = AuroraIMUI;
+		};
+		CDB7E7E514B4F7B2D680FC240898B9A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B6386C4FEFF302FEBD358AC8B956A1;
+			remoteInfo = Aurora;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FD8228D077F11776BB084D0F383152B /* IMUIProgressButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIProgressButton.swift; path = iOS/IMUIInputView/Views/IMUIProgressButton.swift; sourceTree = "<group>"; };
+		101C45D5BA314F330FB6CB6025DEAF08 /* IMUIGalleryContainerCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = IMUIGalleryContainerCell.xib; path = iOS/IMUIInputView/Views/IMUIGalleryContainerCell.xib; sourceTree = "<group>"; };
+		124869C6450C573BE7DADC9DA0CBDF88 /* IMUIGalleryCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = IMUIGalleryCell.xib; path = iOS/IMUIInputView/Views/IMUIGalleryCell.xib; sourceTree = "<group>"; };
+		126214F9365FFFE3FED136AB9790A7FA /* IMUIInputViewAssets.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IMUIInputViewAssets.bundle; path = iOS/IMUIInputView/Assets/IMUIInputViewAssets.bundle; sourceTree = "<group>"; };
+		12AEE20C3094381BD79C5E2064058197 /* Pods-testAuroraIMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testAuroraIMUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		14F78A0C02ADE9E47A32E68B699F4B35 /* IMUIMessageCellLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIMessageCellLayout.swift; path = iOS/IMUIMessageCollectionView/Layout/IMUIMessageCellLayout.swift; sourceTree = "<group>"; };
+		18882D438252E7EFE9615D17C4B569DA /* IMUIMessageBubbleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIMessageBubbleView.swift; path = iOS/IMUIMessageCollectionView/Views/IMUIMessageBubbleView.swift; sourceTree = "<group>"; };
+		19069162767490F4E4A94218EA693410 /* IMUIMessageModelProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIMessageModelProtocol.swift; path = iOS/IMUIMessageCollectionView/Protocol/IMUIMessageModelProtocol.swift; sourceTree = "<group>"; };
+		19135C44DE367C248E32C9CE88DA020D /* Pods-testAuroraIMUI-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testAuroraIMUI-resources.sh"; sourceTree = "<group>"; };
+		1A6230B79C1D435CCBBAFCBC2A49534A /* Aurora.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Aurora.xcconfig; sourceTree = "<group>"; };
+		2218CEA3255372B40D738E8B82B7351D /* Pods-testAuroraIMUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-testAuroraIMUI.modulemap"; sourceTree = "<group>"; };
+		223512175E962BA272794456F992E382 /* AuroraIMUI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AuroraIMUI.xcconfig; sourceTree = "<group>"; };
+		230A42C6F07A4DF26D6626F79AB3491E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		26501F78E8511D68EDD4E7062111ADF8 /* IMUIEmojiCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIEmojiCell.swift; path = iOS/IMUIInputView/Views/IMUIEmojiCell.swift; sourceTree = "<group>"; };
+		27DDC50943FA90F739DFD333C124BC19 /* Pods-testAuroraIMUIUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-testAuroraIMUIUITests-umbrella.h"; sourceTree = "<group>"; };
+		2B8B767FF98C31FE0BB7334179E66078 /* IMUIVoiceMessageContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIVoiceMessageContentView.swift; path = iOS/IMUIMessageCollectionView/Views/IMUIVoiceMessageContentView.swift; sourceTree = "<group>"; };
+		2DD75F79BBE843924269CC6B4C4C66C7 /* CGRectExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectExtension.swift; path = iOS/IMUICommon/Extension/CGRectExtension.swift; sourceTree = "<group>"; };
+		2F8ABA63DF0799705DB0081575F2CA17 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FB2AC2D3AEC00A9E2C6386D60C75C72 /* IMUIPhotoCaptureDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIPhotoCaptureDelegate.swift; path = iOS/IMUIInputView/Views/IMUIPhotoCaptureDelegate.swift; sourceTree = "<group>"; };
+		31A5D4AFF919E872EF9239C28FEF1B95 /* UIImageMessageListExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageMessageListExtension.swift; path = iOS/IMUIMessageCollectionView/Extension/UIImageMessageListExtension.swift; sourceTree = "<group>"; };
+		33FE4092EB21CDE20FB15E3C0C5EBFCD /* IMUIMessageProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIMessageProtocol.swift; path = iOS/IMUIMessageCollectionView/Protocol/IMUIMessageProtocol.swift; sourceTree = "<group>"; };
+		39083E522F2D847D1E21B66F968D6C37 /* IMUIInputView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = IMUIInputView.xib; path = iOS/IMUIInputView/Controllers/IMUIInputView.xib; sourceTree = "<group>"; };
+		3915996D326D4AFC9FF9D4C9CB2E3BEE /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = iOS/IMUICommon/Extension/StringExtension.swift; sourceTree = "<group>"; };
+		3B47CF9D565BAA6583994A7C99F2D483 /* IMUIMessageContentViewProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIMessageContentViewProtocol.swift; path = iOS/IMUIMessageCollectionView/Protocol/IMUIMessageContentViewProtocol.swift; sourceTree = "<group>"; };
+		3B6DB171AF9B8F6BA3C33DCF1BEB8F6D /* IMUIMessageStatusViewProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIMessageStatusViewProtocol.swift; path = iOS/IMUIMessageCollectionView/Protocol/IMUIMessageStatusViewProtocol.swift; sourceTree = "<group>"; };
+		3BD4625283D72F60828E49841F35CBBD /* IMUIGalleryDataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIGalleryDataManager.swift; path = iOS/IMUIInputView/Controllers/IMUIGalleryDataManager.swift; sourceTree = "<group>"; };
+		3DB1D3FD095700FC73C27CE09E2EA7CD /* IMUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMUI.h; path = iOS/IMUIMessageCollectionView/IMUI.h; sourceTree = "<group>"; };
+		3DF263D74ADCF2BB3B282258D335EAEF /* IMUIAudioPlayerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIAudioPlayerHelper.swift; path = iOS/IMUICommon/Controllers/IMUIAudioPlayerHelper.swift; sourceTree = "<group>"; };
+		3E11E0C41B0AAB705E5D8EF6DD0DE9DA /* IMUIInputView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIInputView.swift; path = iOS/IMUIInputView/Controllers/IMUIInputView.swift; sourceTree = "<group>"; };
+		4165CE4C06C897A08ECE182C93E269C6 /* CMSampleBufferExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMSampleBufferExtension.swift; path = iOS/IMUICommon/Extension/CMSampleBufferExtension.swift; sourceTree = "<group>"; };
+		41A072618DCAA8D1C49677280561DE1F /* IMUIEmojiItemCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = IMUIEmojiItemCell.xib; path = iOS/IMUIInputView/Views/IMUIEmojiItemCell.xib; sourceTree = "<group>"; };
+		476215325B80A47B116CF4BB6F8A57DF /* Aurora-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Aurora-dummy.m"; sourceTree = "<group>"; };
+		49CD73616B2F8E762EFF1FC1228EF576 /* Pods-testAuroraIMUI-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testAuroraIMUI-frameworks.sh"; sourceTree = "<group>"; };
+		4BBEFCA79DC3BA80CE3364A732F74B47 /* IMUIRecordVoiceCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = IMUIRecordVoiceCell.xib; path = iOS/IMUIInputView/Views/IMUIRecordVoiceCell.xib; sourceTree = "<group>"; };
+		50396AFF1FF418A47DB05F06ECC920B4 /* Pods-testAuroraIMUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testAuroraIMUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		52954C6A26B2C41722CC3DE520A76C31 /* Pods-testAuroraIMUI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-testAuroraIMUI-acknowledgements.markdown"; sourceTree = "<group>"; };
+		598311DA6555FC30320815A91B966466 /* IMUIMessageModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIMessageModel.swift; path = iOS/IMUIMessageCollectionView/Models/IMUIMessageModel.swift; sourceTree = "<group>"; };
+		59A0E0A63334AC3634010162EECB7FE6 /* IMUIRecordVoiceCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIRecordVoiceCell.swift; path = iOS/IMUIInputView/Views/IMUIRecordVoiceCell.swift; sourceTree = "<group>"; };
+		5C5981B058000D686F640E416829075C /* IMUIUserProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIUserProtocol.swift; path = iOS/IMUIMessageCollectionView/Protocol/IMUIUserProtocol.swift; sourceTree = "<group>"; };
+		5D0A5BC3D81D3EE95F8870BFCCED3591 /* IMUIEmojiCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = IMUIEmojiCell.xib; path = iOS/IMUIInputView/Views/IMUIEmojiCell.xib; sourceTree = "<group>"; };
+		5D873D686F5B2B57C6AA114CBE345859 /* AuroraIMUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AuroraIMUI-prefix.pch"; sourceTree = "<group>"; };
+		5D89F404B7E312603FCED5EC0C947E65 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E8E18E8540281492F969DCEC5719DAF /* Pods-testAuroraIMUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testAuroraIMUITests-frameworks.sh"; sourceTree = "<group>"; };
+		5ECB59A7D277BA4CF2463B3F3BD2C11E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6100A6119B6F6354E9E41D0F872EB2AB /* IMUICameraView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = IMUICameraView.xib; path = iOS/IMUIInputView/Views/IMUICameraView.xib; sourceTree = "<group>"; };
+		613CC6B44681581565BD5EB66C22CC49 /* IMUIMessageCellLayoutProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIMessageCellLayoutProtocol.swift; path = iOS/IMUIMessageCollectionView/Protocol/IMUIMessageCellLayoutProtocol.swift; sourceTree = "<group>"; };
+		6A0B60EDF319768867483DF625A9C8CD /* Pods-testAuroraIMUIUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-testAuroraIMUIUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6E51352289D59968BC03DFD24C51A182 /* IMUIFeatureListIconCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIFeatureListIconCell.swift; path = iOS/IMUIInputView/Views/IMUIFeatureListIconCell.swift; sourceTree = "<group>"; };
+		6F879947949F0EB321B3429E8BF41E45 /* Pods-testAuroraIMUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-testAuroraIMUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7718F77BA3323009F17BDE571E906B20 /* Pods-testAuroraIMUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testAuroraIMUI.debug.xcconfig"; sourceTree = "<group>"; };
+		7B76D9BE611827D588A75F62ABE3421F /* Pods-testAuroraIMUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-testAuroraIMUITests-umbrella.h"; sourceTree = "<group>"; };
+		7D01D23967C9DF77DA014FC54D4A5B77 /* Pods-testAuroraIMUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testAuroraIMUITests-resources.sh"; sourceTree = "<group>"; };
+		7F880A27AB1A3E62E4EDE7431C746E72 /* UIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageExtension.swift; path = iOS/IMUICommon/Extension/UIImageExtension.swift; sourceTree = "<group>"; };
+		805F0DF92FFE60EE5BB7DABDFDE71CED /* AuroraIMUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AuroraIMUI-umbrella.h"; sourceTree = "<group>"; };
+		811EF88C35AB0E25E6C8EC30CE9DFB64 /* IMUIFeatureListIconCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = IMUIFeatureListIconCell.xib; path = iOS/IMUIInputView/Views/IMUIFeatureListIconCell.xib; sourceTree = "<group>"; };
+		81E41CEA616C96ECD0471D8B83D77CCD /* Pods-testAuroraIMUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testAuroraIMUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		81FF8DBC533F26F89512CAADA7B55574 /* Pods-testAuroraIMUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-testAuroraIMUI-dummy.m"; sourceTree = "<group>"; };
+		85A5156496B85A4560FD372668BF9AF8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		8BFB26E10F85CD4866F5BA179D66F64A /* IMUIFeatureView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = IMUIFeatureView.xib; path = iOS/IMUIInputView/Views/IMUIFeatureView.xib; sourceTree = "<group>"; };
+		8DB99308186CAF51D021B80F2EA19E41 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E3E965498C5A558772C2ABAC39CCB98 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		8FF9B0CAA4A0CE69FE5B6A6BBF9BCE14 /* Pods-testAuroraIMUI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testAuroraIMUI-acknowledgements.plist"; sourceTree = "<group>"; };
+		91357F26A159FA372E3D9F68360A0023 /* IMUIMessageCellProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIMessageCellProtocol.swift; path = iOS/IMUIMessageCollectionView/Protocol/IMUIMessageCellProtocol.swift; sourceTree = "<group>"; };
+		92D1C92A9CE42FB48DC1061126DEF385 /* BundleMessageListExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BundleMessageListExtension.swift; path = iOS/IMUIMessageCollectionView/Extension/BundleMessageListExtension.swift; sourceTree = "<group>"; };
+		92EC35FEBF5C50E134C4587EA872D836 /* IMUICameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUICameraView.swift; path = iOS/IMUIInputView/Views/IMUICameraView.swift; sourceTree = "<group>"; };
+		93209F70C9FEC86003F38DB0D9090F9C /* AuroraIMUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AuroraIMUI.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		981EFB859BCD8183DC908BD796D8085D /* IMUIFeatureListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIFeatureListView.swift; path = iOS/IMUIInputView/Views/IMUIFeatureListView.swift; sourceTree = "<group>"; };
+		9C0218C56F4740B8D97D8C287CEC18CF /* Pods-testAuroraIMUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testAuroraIMUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D80D947968BEBA1B8BD900CB73F62E3 /* IMUIVideoFileLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIVideoFileLoader.swift; path = iOS/IMUIMessageCollectionView/Controllers/IMUIVideoFileLoader.swift; sourceTree = "<group>"; };
+		A1AFCA7D34512E9BB88027F08D8F7614 /* IMUIFeatureIconModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIFeatureIconModel.swift; path = iOS/IMUIInputView/Models/IMUIFeatureIconModel.swift; sourceTree = "<group>"; };
+		A29BAB280D9F926CDABAA0DEFFFDD46F /* Pods-testAuroraIMUIUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-testAuroraIMUIUITests-dummy.m"; sourceTree = "<group>"; };
+		A37D848018A9350E62B2A81E7EB99F43 /* Pods-testAuroraIMUIUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-testAuroraIMUIUITests.modulemap"; sourceTree = "<group>"; };
+		A47093BB7F686EC7034CCC562A359A8D /* IMUIGalleryContainerCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIGalleryContainerCell.swift; path = iOS/IMUIInputView/Views/IMUIGalleryContainerCell.swift; sourceTree = "<group>"; };
+		A4A79524281CC9AD183E1336A28B7A4A /* Pods-testAuroraIMUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-testAuroraIMUI-umbrella.h"; sourceTree = "<group>"; };
+		A628862D30F35F2EB4995D96DCFE234A /* CIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CIImageExtension.swift; path = iOS/IMUICommon/Extension/CIImageExtension.swift; sourceTree = "<group>"; };
+		AA5F94ED051D27B88F5A76B2A4143C2F /* Pods_testAuroraIMUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_testAuroraIMUIUITests.framework; path = "Pods-testAuroraIMUIUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA8B731FAC1B288F704963BB91380C07 /* IMUITextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUITextView.swift; path = iOS/IMUIMessageCollectionView/Views/IMUITextView.swift; sourceTree = "<group>"; };
+		AB87CF893678B19274C4E4BFB52DE6F1 /* IMUITextMessageContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUITextMessageContentView.swift; path = iOS/IMUIMessageCollectionView/Views/IMUITextMessageContentView.swift; sourceTree = "<group>"; };
+		ABC8010D076D4008E94892BE95983B82 /* IMUICameraPreviewView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUICameraPreviewView.swift; path = iOS/IMUIInputView/Views/IMUICameraPreviewView.swift; sourceTree = "<group>"; };
+		AC1A1B7072D0584912E7891D4674ECD2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		B1C8190A9BB7BA40AF1C5975059766E2 /* IMUIInputViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIInputViewDelegate.swift; path = iOS/IMUIInputView/Protocal/IMUIInputViewDelegate.swift; sourceTree = "<group>"; };
+		B2EBEF86651AAF080A92D66BC6A1BA1B /* Pods-testAuroraIMUIUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testAuroraIMUIUITests-frameworks.sh"; sourceTree = "<group>"; };
+		B654B9B200C6EA4C6FB8116E4AB40100 /* IMUICameraCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = IMUICameraCell.xib; path = iOS/IMUIInputView/Views/IMUICameraCell.xib; sourceTree = "<group>"; };
+		B68E1B14E075D31E79A8DEE42A8AEBD0 /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = iOS/IMUICommon/Extension/UIColorExtension.swift; sourceTree = "<group>"; };
+		B6F49E4BE65BCD53064D220894C808A8 /* BundleInputViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BundleInputViewExtension.swift; path = iOS/IMUIInputView/Extension/BundleInputViewExtension.swift; sourceTree = "<group>"; };
+		B74AF1DC97B167254845705928D3C6B3 /* Pods_testAuroraIMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_testAuroraIMUITests.framework; path = "Pods-testAuroraIMUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8564379227482D8387007EC74C153E4 /* Pods-testAuroraIMUIUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testAuroraIMUIUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C115365877B13598687E3DEC8027BAFF /* IMUIReuseViewCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIReuseViewCache.swift; path = iOS/IMUIMessageCollectionView/Models/IMUIReuseViewCache.swift; sourceTree = "<group>"; };
+		C149AEDF8090618EECB5E6E18360D189 /* IMUIFeatureView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIFeatureView.swift; path = iOS/IMUIInputView/Views/IMUIFeatureView.swift; sourceTree = "<group>"; };
+		C1BC0525683FF03B00653F089CD7F5FE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C29538E85764F62271825D2701E11635 /* AuroraIMUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AuroraIMUI.framework; path = AuroraIMUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2C953D70FC173F68DA34254F818C90D /* IMUIMessageStatusView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIMessageStatusView.swift; path = iOS/IMUIMessageCollectionView/Views/IMUIMessageStatusView.swift; sourceTree = "<group>"; };
+		C559458CFF87732EB3EB3A1E9DB3B23E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C5A4B6885D283B4413388CB327E20252 /* IMUIAssets.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IMUIAssets.bundle; path = iOS/IMUIMessageCollectionView/Assets/IMUIAssets.bundle; sourceTree = "<group>"; };
+		C6E173B58E46D0BF57582A04D3A2E5ED /* Pods-testAuroraIMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testAuroraIMUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C83BC3963F81E7B14C7F6923C63675F4 /* Aurora.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Aurora.modulemap; sourceTree = "<group>"; };
+		C8608EBB2393F5C28A03374303B349B0 /* Pods-testAuroraIMUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testAuroraIMUI.release.xcconfig"; sourceTree = "<group>"; };
+		C9C0917C87D3D979BA128DDD03697ED0 /* Aurora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Aurora.framework; path = Aurora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFF6E4C12AE48320B215D362A19E567 /* DateExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = iOS/IMUICommon/Extension/DateExtension.swift; sourceTree = "<group>"; };
+		CFD1E6FA4E527F69528F54443087294F /* IMUIViewCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIViewCache.swift; path = iOS/IMUIMessageCollectionView/Models/IMUIViewCache.swift; sourceTree = "<group>"; };
+		D107120CFF13B3F1CDFCBAC3C8EF2E8C /* IMUIGalleryCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIGalleryCell.swift; path = iOS/IMUIInputView/Views/IMUIGalleryCell.swift; sourceTree = "<group>"; };
+		D39872C4EFEAC66EF7301F8322715F33 /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = iOS/IMUICommon/Extension/UIViewExtension.swift; sourceTree = "<group>"; };
+		D4849B72BF20524311C472A30A4E4059 /* Pods-testAuroraIMUIUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testAuroraIMUIUITests-resources.sh"; sourceTree = "<group>"; };
+		D759FFBF61FBD42D6B40F67293A57804 /* IMUIChatLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIChatLayout.swift; path = iOS/IMUIMessageCollectionView/Controllers/IMUIChatLayout.swift; sourceTree = "<group>"; };
+		D8B549110FD961B971912B479A3F94A2 /* Aurora-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Aurora-umbrella.h"; sourceTree = "<group>"; };
+		D90F994FFA01C0113F300F48B56F40B0 /* IMUIBaseMessageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIBaseMessageCell.swift; path = iOS/IMUIMessageCollectionView/Views/IMUIBaseMessageCell.swift; sourceTree = "<group>"; };
+		DA3681795BB84342E54290128014AD6B /* Aurora-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Aurora-prefix.pch"; sourceTree = "<group>"; };
+		DA953AA8C9DC1B5159836B2599DC803E /* CIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CIImageView.swift; path = iOS/IMUIMessageCollectionView/Views/CIImageView.swift; sourceTree = "<group>"; };
+		DE9A1B4E19CCD13297E7124ECF48C873 /* AuroraIMUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AuroraIMUI-dummy.m"; sourceTree = "<group>"; };
+		DEBEA0E298DEE44FDE0CAB872797288F /* Pods_testAuroraIMUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_testAuroraIMUI.framework; path = "Pods-testAuroraIMUI.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFA3C4D151BEFC1503E8321A9E98FDBC /* Pods-testAuroraIMUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-testAuroraIMUITests-dummy.m"; sourceTree = "<group>"; };
+		E156D135EAB651D0098CC4DEBD61B618 /* IMUICameraCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUICameraCell.swift; path = iOS/IMUIInputView/Views/IMUICameraCell.swift; sourceTree = "<group>"; };
+		E15ED7721DCA7C41DEF2B41FC1F716F1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		E3B7A5DBF8FD4925267A504F4444F131 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E48263ED1A2A16B84F1F120297C6D39B /* IMUIRecordVoiceHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIRecordVoiceHelper.swift; path = iOS/IMUIInputView/Controllers/IMUIRecordVoiceHelper.swift; sourceTree = "<group>"; };
+		E4B7ED042FCDADB6399BE8D0BDD392D0 /* Pods-testAuroraIMUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-testAuroraIMUITests.modulemap"; sourceTree = "<group>"; };
+		E5E3BDCA39BB2952404BFACB9CAD4911 /* IMUIChatDataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIChatDataManager.swift; path = iOS/IMUIMessageCollectionView/Controllers/IMUIChatDataManager.swift; sourceTree = "<group>"; };
+		E74F1722C8493CAFB4BA24F1744E9AFE /* IMUIEmojiModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIEmojiModel.swift; path = iOS/IMUIInputView/Models/IMUIEmojiModel.swift; sourceTree = "<group>"; };
+		EBAAA6512510A0EF70CF3CA9D5586186 /* IMUIMessageCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIMessageCollectionView.swift; path = iOS/IMUIMessageCollectionView/Views/IMUIMessageCollectionView.swift; sourceTree = "<group>"; };
+		F2B1827EB10BEED9F1146CD847472B8A /* IMUIEmojiItemCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIEmojiItemCell.swift; path = iOS/IMUIInputView/Views/IMUIEmojiItemCell.swift; sourceTree = "<group>"; };
+		F390CE30EDCA780552596CFE9ECA5A17 /* IMUIMessageMessageCollectionViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIMessageMessageCollectionViewDelegate.swift; path = iOS/IMUIMessageCollectionView/Protocol/IMUIMessageMessageCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		FCF5A6E0A088F7C60828442238C9C6EF /* IMUIImageMessageContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIImageMessageContentView.swift; path = iOS/IMUIMessageCollectionView/Views/IMUIImageMessageContentView.swift; sourceTree = "<group>"; };
+		FE1EB91C2007FD404362E28E6DD4FF03 /* IMUIFeatureListView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = IMUIFeatureListView.xib; path = iOS/IMUIInputView/Views/IMUIFeatureListView.xib; sourceTree = "<group>"; };
+		FE8844A44C6717C3A9AF7511818F4EA6 /* IMUIVideoMessageContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMUIVideoMessageContentView.swift; path = iOS/IMUIMessageCollectionView/Views/IMUIVideoMessageContentView.swift; sourceTree = "<group>"; };
+		FFD7527B72BC44DACA3F9D878A0AD39D /* Aurora.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Aurora.swift; path = Aurora/Source/Aurora.swift; sourceTree = "<group>"; };
+		FFFDB582BBFF6E57C4A02BECBD1DA2D0 /* IMUIMessageCollectionView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = IMUIMessageCollectionView.xib; path = iOS/IMUIMessageCollectionView/Views/IMUIMessageCollectionView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		171F454B54283B0FCE6CA510E168D444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A429385F475176CDB2B2E7FDB4F66B78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BD7FD50454A35165DFF2F99A23C174 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE6129058892F3BEE3E9EA737F37A8B /* AVFoundation.framework in Frameworks */,
+				250860D13C9C9A540578B9AF4FF998E1 /* CoreGraphics.framework in Frameworks */,
+				2CB57B8FC179CEB753EB11A55B645B63 /* CoreLocation.framework in Frameworks */,
+				F71EDBAE1BBB7EF85E3564D98032493E /* Foundation.framework in Frameworks */,
+				FF0AB44776AEFDE7DD2B41317F5941D1 /* MapKit.framework in Frameworks */,
+				EF928BDF06F3FC7B557844A41F000BCE /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A5B83A2CFD5904A22D0F33EB5C9FF99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C1117A9147565B64503191DC7B2603 /* Foundation.framework in Frameworks */,
+				104792485344FC4F064BDA1C4CAC3450 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A458D5D051C2842783377DB283FD77F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A88723800731A991F0BE112D9F8B04 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C807938B60FFD0310B838CB25AC5EF1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506239BA25427B607E209C1758CC7FEA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09C1AA30FA2C59E66F98D6D9B30A5894 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				93209F70C9FEC86003F38DB0D9090F9C /* AuroraIMUI.modulemap */,
+				223512175E962BA272794456F992E382 /* AuroraIMUI.xcconfig */,
+				DE9A1B4E19CCD13297E7124ECF48C873 /* AuroraIMUI-dummy.m */,
+				5D873D686F5B2B57C6AA114CBE345859 /* AuroraIMUI-prefix.pch */,
+				805F0DF92FFE60EE5BB7DABDFDE71CED /* AuroraIMUI-umbrella.h */,
+				C1BC0525683FF03B00653F089CD7F5FE /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AuroraIMUI";
+			sourceTree = "<group>";
+		};
+		0C52419FB209E4E5F5B2D2C56FC73C52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5EDFC2AC0DF8F1AC740A520C52D1BFD /* Aurora */,
+				C091242CABF3E00EEE41C1115A9D2215 /* AuroraIMUI */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		12AA22F2BF735F04A55AAF16CD64DCF0 /* Pods-testAuroraIMUI */ = {
+			isa = PBXGroup;
+			children = (
+				2F8ABA63DF0799705DB0081575F2CA17 /* Info.plist */,
+				2218CEA3255372B40D738E8B82B7351D /* Pods-testAuroraIMUI.modulemap */,
+				52954C6A26B2C41722CC3DE520A76C31 /* Pods-testAuroraIMUI-acknowledgements.markdown */,
+				8FF9B0CAA4A0CE69FE5B6A6BBF9BCE14 /* Pods-testAuroraIMUI-acknowledgements.plist */,
+				81FF8DBC533F26F89512CAADA7B55574 /* Pods-testAuroraIMUI-dummy.m */,
+				49CD73616B2F8E762EFF1FC1228EF576 /* Pods-testAuroraIMUI-frameworks.sh */,
+				19135C44DE367C248E32C9CE88DA020D /* Pods-testAuroraIMUI-resources.sh */,
+				A4A79524281CC9AD183E1336A28B7A4A /* Pods-testAuroraIMUI-umbrella.h */,
+				7718F77BA3323009F17BDE571E906B20 /* Pods-testAuroraIMUI.debug.xcconfig */,
+				C8608EBB2393F5C28A03374303B349B0 /* Pods-testAuroraIMUI.release.xcconfig */,
+			);
+			name = "Pods-testAuroraIMUI";
+			path = "Target Support Files/Pods-testAuroraIMUI";
+			sourceTree = "<group>";
+		};
+		144AB764944D88C1470208C252C40D57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C5A4B6885D283B4413388CB327E20252 /* IMUIAssets.bundle */,
+				B654B9B200C6EA4C6FB8116E4AB40100 /* IMUICameraCell.xib */,
+				6100A6119B6F6354E9E41D0F872EB2AB /* IMUICameraView.xib */,
+				5D0A5BC3D81D3EE95F8870BFCCED3591 /* IMUIEmojiCell.xib */,
+				41A072618DCAA8D1C49677280561DE1F /* IMUIEmojiItemCell.xib */,
+				811EF88C35AB0E25E6C8EC30CE9DFB64 /* IMUIFeatureListIconCell.xib */,
+				FE1EB91C2007FD404362E28E6DD4FF03 /* IMUIFeatureListView.xib */,
+				8BFB26E10F85CD4866F5BA179D66F64A /* IMUIFeatureView.xib */,
+				124869C6450C573BE7DADC9DA0CBDF88 /* IMUIGalleryCell.xib */,
+				101C45D5BA314F330FB6CB6025DEAF08 /* IMUIGalleryContainerCell.xib */,
+				39083E522F2D847D1E21B66F968D6C37 /* IMUIInputView.xib */,
+				126214F9365FFFE3FED136AB9790A7FA /* IMUIInputViewAssets.bundle */,
+				FFFDB582BBFF6E57C4A02BECBD1DA2D0 /* IMUIMessageCollectionView.xib */,
+				4BBEFCA79DC3BA80CE3364A732F74B47 /* IMUIRecordVoiceCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		32C9DED7A44A632852DE6D9B5F5A1342 /* Pods-testAuroraIMUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5ECB59A7D277BA4CF2463B3F3BD2C11E /* Info.plist */,
+				A37D848018A9350E62B2A81E7EB99F43 /* Pods-testAuroraIMUIUITests.modulemap */,
+				6A0B60EDF319768867483DF625A9C8CD /* Pods-testAuroraIMUIUITests-acknowledgements.markdown */,
+				B8564379227482D8387007EC74C153E4 /* Pods-testAuroraIMUIUITests-acknowledgements.plist */,
+				A29BAB280D9F926CDABAA0DEFFFDD46F /* Pods-testAuroraIMUIUITests-dummy.m */,
+				B2EBEF86651AAF080A92D66BC6A1BA1B /* Pods-testAuroraIMUIUITests-frameworks.sh */,
+				D4849B72BF20524311C472A30A4E4059 /* Pods-testAuroraIMUIUITests-resources.sh */,
+				27DDC50943FA90F739DFD333C124BC19 /* Pods-testAuroraIMUIUITests-umbrella.h */,
+				50396AFF1FF418A47DB05F06ECC920B4 /* Pods-testAuroraIMUIUITests.debug.xcconfig */,
+				81E41CEA616C96ECD0471D8B83D77CCD /* Pods-testAuroraIMUIUITests.release.xcconfig */,
+			);
+			name = "Pods-testAuroraIMUIUITests";
+			path = "Target Support Files/Pods-testAuroraIMUIUITests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				F4CDA5FA9197A41E0081E84F932906EB /* Frameworks */,
+				0C52419FB209E4E5F5B2D2C56FC73C52 /* Pods */,
+				DEEA709EA0C186FFD92B7050B1AF9AAA /* Products */,
+				B5820532B9A9B78106D84A904ADA8DC6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		928A630BE9B8A48CADC877BC7B0E8465 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8E3E965498C5A558772C2ABAC39CCB98 /* AVFoundation.framework */,
+				AC1A1B7072D0584912E7891D4674ECD2 /* CoreGraphics.framework */,
+				85A5156496B85A4560FD372668BF9AF8 /* CoreLocation.framework */,
+				C559458CFF87732EB3EB3A1E9DB3B23E /* Foundation.framework */,
+				230A42C6F07A4DF26D6626F79AB3491E /* MapKit.framework */,
+				E15ED7721DCA7C41DEF2B41FC1F716F1 /* QuartzCore.framework */,
+				E3B7A5DBF8FD4925267A504F4444F131 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B122B45F362FBF153B33860CE1B28DE8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C83BC3963F81E7B14C7F6923C63675F4 /* Aurora.modulemap */,
+				1A6230B79C1D435CCBBAFCBC2A49534A /* Aurora.xcconfig */,
+				476215325B80A47B116CF4BB6F8A57DF /* Aurora-dummy.m */,
+				DA3681795BB84342E54290128014AD6B /* Aurora-prefix.pch */,
+				D8B549110FD961B971912B479A3F94A2 /* Aurora-umbrella.h */,
+				5D89F404B7E312603FCED5EC0C947E65 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Aurora";
+			sourceTree = "<group>";
+		};
+		B5820532B9A9B78106D84A904ADA8DC6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				12AA22F2BF735F04A55AAF16CD64DCF0 /* Pods-testAuroraIMUI */,
+				DF58F2ADC2E958561758A8724380C701 /* Pods-testAuroraIMUITests */,
+				32C9DED7A44A632852DE6D9B5F5A1342 /* Pods-testAuroraIMUIUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C091242CABF3E00EEE41C1115A9D2215 /* AuroraIMUI */ = {
+			isa = PBXGroup;
+			children = (
+				B6F49E4BE65BCD53064D220894C808A8 /* BundleInputViewExtension.swift */,
+				92D1C92A9CE42FB48DC1061126DEF385 /* BundleMessageListExtension.swift */,
+				2DD75F79BBE843924269CC6B4C4C66C7 /* CGRectExtension.swift */,
+				A628862D30F35F2EB4995D96DCFE234A /* CIImageExtension.swift */,
+				DA953AA8C9DC1B5159836B2599DC803E /* CIImageView.swift */,
+				4165CE4C06C897A08ECE182C93E269C6 /* CMSampleBufferExtension.swift */,
+				CEFF6E4C12AE48320B215D362A19E567 /* DateExtension.swift */,
+				3DB1D3FD095700FC73C27CE09E2EA7CD /* IMUI.h */,
+				3DF263D74ADCF2BB3B282258D335EAEF /* IMUIAudioPlayerHelper.swift */,
+				D90F994FFA01C0113F300F48B56F40B0 /* IMUIBaseMessageCell.swift */,
+				E156D135EAB651D0098CC4DEBD61B618 /* IMUICameraCell.swift */,
+				ABC8010D076D4008E94892BE95983B82 /* IMUICameraPreviewView.swift */,
+				92EC35FEBF5C50E134C4587EA872D836 /* IMUICameraView.swift */,
+				E5E3BDCA39BB2952404BFACB9CAD4911 /* IMUIChatDataManager.swift */,
+				D759FFBF61FBD42D6B40F67293A57804 /* IMUIChatLayout.swift */,
+				26501F78E8511D68EDD4E7062111ADF8 /* IMUIEmojiCell.swift */,
+				F2B1827EB10BEED9F1146CD847472B8A /* IMUIEmojiItemCell.swift */,
+				E74F1722C8493CAFB4BA24F1744E9AFE /* IMUIEmojiModel.swift */,
+				A1AFCA7D34512E9BB88027F08D8F7614 /* IMUIFeatureIconModel.swift */,
+				6E51352289D59968BC03DFD24C51A182 /* IMUIFeatureListIconCell.swift */,
+				981EFB859BCD8183DC908BD796D8085D /* IMUIFeatureListView.swift */,
+				C149AEDF8090618EECB5E6E18360D189 /* IMUIFeatureView.swift */,
+				D107120CFF13B3F1CDFCBAC3C8EF2E8C /* IMUIGalleryCell.swift */,
+				A47093BB7F686EC7034CCC562A359A8D /* IMUIGalleryContainerCell.swift */,
+				3BD4625283D72F60828E49841F35CBBD /* IMUIGalleryDataManager.swift */,
+				FCF5A6E0A088F7C60828442238C9C6EF /* IMUIImageMessageContentView.swift */,
+				3E11E0C41B0AAB705E5D8EF6DD0DE9DA /* IMUIInputView.swift */,
+				B1C8190A9BB7BA40AF1C5975059766E2 /* IMUIInputViewDelegate.swift */,
+				18882D438252E7EFE9615D17C4B569DA /* IMUIMessageBubbleView.swift */,
+				14F78A0C02ADE9E47A32E68B699F4B35 /* IMUIMessageCellLayout.swift */,
+				613CC6B44681581565BD5EB66C22CC49 /* IMUIMessageCellLayoutProtocol.swift */,
+				91357F26A159FA372E3D9F68360A0023 /* IMUIMessageCellProtocol.swift */,
+				EBAAA6512510A0EF70CF3CA9D5586186 /* IMUIMessageCollectionView.swift */,
+				3B47CF9D565BAA6583994A7C99F2D483 /* IMUIMessageContentViewProtocol.swift */,
+				F390CE30EDCA780552596CFE9ECA5A17 /* IMUIMessageMessageCollectionViewDelegate.swift */,
+				598311DA6555FC30320815A91B966466 /* IMUIMessageModel.swift */,
+				19069162767490F4E4A94218EA693410 /* IMUIMessageModelProtocol.swift */,
+				33FE4092EB21CDE20FB15E3C0C5EBFCD /* IMUIMessageProtocol.swift */,
+				C2C953D70FC173F68DA34254F818C90D /* IMUIMessageStatusView.swift */,
+				3B6DB171AF9B8F6BA3C33DCF1BEB8F6D /* IMUIMessageStatusViewProtocol.swift */,
+				2FB2AC2D3AEC00A9E2C6386D60C75C72 /* IMUIPhotoCaptureDelegate.swift */,
+				0FD8228D077F11776BB084D0F383152B /* IMUIProgressButton.swift */,
+				59A0E0A63334AC3634010162EECB7FE6 /* IMUIRecordVoiceCell.swift */,
+				E48263ED1A2A16B84F1F120297C6D39B /* IMUIRecordVoiceHelper.swift */,
+				C115365877B13598687E3DEC8027BAFF /* IMUIReuseViewCache.swift */,
+				AB87CF893678B19274C4E4BFB52DE6F1 /* IMUITextMessageContentView.swift */,
+				AA8B731FAC1B288F704963BB91380C07 /* IMUITextView.swift */,
+				5C5981B058000D686F640E416829075C /* IMUIUserProtocol.swift */,
+				9D80D947968BEBA1B8BD900CB73F62E3 /* IMUIVideoFileLoader.swift */,
+				FE8844A44C6717C3A9AF7511818F4EA6 /* IMUIVideoMessageContentView.swift */,
+				CFD1E6FA4E527F69528F54443087294F /* IMUIViewCache.swift */,
+				2B8B767FF98C31FE0BB7334179E66078 /* IMUIVoiceMessageContentView.swift */,
+				3915996D326D4AFC9FF9D4C9CB2E3BEE /* StringExtension.swift */,
+				B68E1B14E075D31E79A8DEE42A8AEBD0 /* UIColorExtension.swift */,
+				7F880A27AB1A3E62E4EDE7431C746E72 /* UIImageExtension.swift */,
+				31A5D4AFF919E872EF9239C28FEF1B95 /* UIImageMessageListExtension.swift */,
+				D39872C4EFEAC66EF7301F8322715F33 /* UIViewExtension.swift */,
+				144AB764944D88C1470208C252C40D57 /* Resources */,
+				09C1AA30FA2C59E66F98D6D9B30A5894 /* Support Files */,
+			);
+			name = AuroraIMUI;
+			path = AuroraIMUI;
+			sourceTree = "<group>";
+		};
+		C5EDFC2AC0DF8F1AC740A520C52D1BFD /* Aurora */ = {
+			isa = PBXGroup;
+			children = (
+				FFD7527B72BC44DACA3F9D878A0AD39D /* Aurora.swift */,
+				B122B45F362FBF153B33860CE1B28DE8 /* Support Files */,
+			);
+			name = Aurora;
+			path = Aurora;
+			sourceTree = "<group>";
+		};
+		DEEA709EA0C186FFD92B7050B1AF9AAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9C0917C87D3D979BA128DDD03697ED0 /* Aurora.framework */,
+				C29538E85764F62271825D2701E11635 /* AuroraIMUI.framework */,
+				DEBEA0E298DEE44FDE0CAB872797288F /* Pods_testAuroraIMUI.framework */,
+				B74AF1DC97B167254845705928D3C6B3 /* Pods_testAuroraIMUITests.framework */,
+				AA5F94ED051D27B88F5A76B2A4143C2F /* Pods_testAuroraIMUIUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF58F2ADC2E958561758A8724380C701 /* Pods-testAuroraIMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8DB99308186CAF51D021B80F2EA19E41 /* Info.plist */,
+				E4B7ED042FCDADB6399BE8D0BDD392D0 /* Pods-testAuroraIMUITests.modulemap */,
+				6F879947949F0EB321B3429E8BF41E45 /* Pods-testAuroraIMUITests-acknowledgements.markdown */,
+				9C0218C56F4740B8D97D8C287CEC18CF /* Pods-testAuroraIMUITests-acknowledgements.plist */,
+				DFA3C4D151BEFC1503E8321A9E98FDBC /* Pods-testAuroraIMUITests-dummy.m */,
+				5E8E18E8540281492F969DCEC5719DAF /* Pods-testAuroraIMUITests-frameworks.sh */,
+				7D01D23967C9DF77DA014FC54D4A5B77 /* Pods-testAuroraIMUITests-resources.sh */,
+				7B76D9BE611827D588A75F62ABE3421F /* Pods-testAuroraIMUITests-umbrella.h */,
+				12AEE20C3094381BD79C5E2064058197 /* Pods-testAuroraIMUITests.debug.xcconfig */,
+				C6E173B58E46D0BF57582A04D3A2E5ED /* Pods-testAuroraIMUITests.release.xcconfig */,
+			);
+			name = "Pods-testAuroraIMUITests";
+			path = "Target Support Files/Pods-testAuroraIMUITests";
+			sourceTree = "<group>";
+		};
+		F4CDA5FA9197A41E0081E84F932906EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				928A630BE9B8A48CADC877BC7B0E8465 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1270FE966D35F5F6C957D6F8C58AB375 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2972FE87769DE839293A168D2BC68C60 /* Aurora-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12B2AB567F94279804CE9B3B24074CAD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26C38F554F0DCDF83435393E77842FA2 /* Pods-testAuroraIMUI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C0038444060B5BA2DA7FEA350550A3C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B65BF6B102F1155162B9E380D28A3C5 /* Pods-testAuroraIMUIUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63DCDA40065237FE13EEBEAD11A31524 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				397380F7BDADF8CBAC57B49F6C1DB5F3 /* Pods-testAuroraIMUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		663C6499EFDC20329EECF63F8DDCAFCB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5FC0069042B3E687A77DEFE16583ED5 /* AuroraIMUI-umbrella.h in Headers */,
+				C975563760E12E2A88FC158F716A0EDF /* IMUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		18B6386C4FEFF302FEBD358AC8B956A1 /* Aurora */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01A4B548DDC7DF260BB925D976819F96 /* Build configuration list for PBXNativeTarget "Aurora" */;
+			buildPhases = (
+				59247DE85F59832ACFAF09BE9B70C9DF /* Sources */,
+				9A5B83A2CFD5904A22D0F33EB5C9FF99 /* Frameworks */,
+				1270FE966D35F5F6C957D6F8C58AB375 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aurora;
+			productName = Aurora;
+			productReference = C9C0917C87D3D979BA128DDD03697ED0 /* Aurora.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		596F32EBFB8C723B5048B59C641492D9 /* AuroraIMUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0158A91788E37D1A9E8657CF00315C0 /* Build configuration list for PBXNativeTarget "AuroraIMUI" */;
+			buildPhases = (
+				1A47766BC3ACC0C1F0363A5C6B26DCD0 /* Sources */,
+				73BD7FD50454A35165DFF2F99A23C174 /* Frameworks */,
+				663C6499EFDC20329EECF63F8DDCAFCB /* Headers */,
+				638C67379420542AC2114C9A5D59F73A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AuroraIMUI;
+			productName = AuroraIMUI;
+			productReference = C29538E85764F62271825D2701E11635 /* AuroraIMUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6EFA6024036300E89EC92349AB9DB8AF /* Pods-testAuroraIMUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD2E3328C66136DBD126D553F7D3433E /* Build configuration list for PBXNativeTarget "Pods-testAuroraIMUIUITests" */;
+			buildPhases = (
+				CCCD0E3DB4B40C9C6D89B1F445757899 /* Sources */,
+				171F454B54283B0FCE6CA510E168D444 /* Frameworks */,
+				5C0038444060B5BA2DA7FEA350550A3C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-testAuroraIMUIUITests";
+			productName = "Pods-testAuroraIMUIUITests";
+			productReference = AA5F94ED051D27B88F5A76B2A4143C2F /* Pods_testAuroraIMUIUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		933E702DFB091E649E47CC331E30707B /* Pods-testAuroraIMUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40351105D9C0608D5ED1CADC4F710A75 /* Build configuration list for PBXNativeTarget "Pods-testAuroraIMUI" */;
+			buildPhases = (
+				8093F0E584CFEF36BB5743C16FD61629 /* Sources */,
+				C807938B60FFD0310B838CB25AC5EF1F /* Frameworks */,
+				12B2AB567F94279804CE9B3B24074CAD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67568758EC8AE24A35ED7BD1E68FB82A /* PBXTargetDependency */,
+				54996D1508A91DC3BC2F796B8D211792 /* PBXTargetDependency */,
+			);
+			name = "Pods-testAuroraIMUI";
+			productName = "Pods-testAuroraIMUI";
+			productReference = DEBEA0E298DEE44FDE0CAB872797288F /* Pods_testAuroraIMUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ECB22833BEE2592FC48B62C928CA2B15 /* Pods-testAuroraIMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6277D9D3980509107C07CDD39875AF78 /* Build configuration list for PBXNativeTarget "Pods-testAuroraIMUITests" */;
+			buildPhases = (
+				356B76A2DFF146B2976AC681BFCCDE73 /* Sources */,
+				A458D5D051C2842783377DB283FD77F7 /* Frameworks */,
+				63DCDA40065237FE13EEBEAD11A31524 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-testAuroraIMUITests";
+			productName = "Pods-testAuroraIMUITests";
+			productReference = B74AF1DC97B167254845705928D3C6B3 /* Pods_testAuroraIMUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DEEA709EA0C186FFD92B7050B1AF9AAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B6386C4FEFF302FEBD358AC8B956A1 /* Aurora */,
+				596F32EBFB8C723B5048B59C641492D9 /* AuroraIMUI */,
+				933E702DFB091E649E47CC331E30707B /* Pods-testAuroraIMUI */,
+				ECB22833BEE2592FC48B62C928CA2B15 /* Pods-testAuroraIMUITests */,
+				6EFA6024036300E89EC92349AB9DB8AF /* Pods-testAuroraIMUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		638C67379420542AC2114C9A5D59F73A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B361842554571CF1EDD2FAC0D46FDE06 /* IMUIAssets.bundle in Resources */,
+				4C8AB3ECF91069C387373749D471124B /* IMUICameraCell.xib in Resources */,
+				9CFCC2D872F43BC81E39E37CA04764B2 /* IMUICameraView.xib in Resources */,
+				BF08433057FCAF252CD824D1788A6E3F /* IMUIEmojiCell.xib in Resources */,
+				2EEC20B5C74AA857DA7DF46946624386 /* IMUIEmojiItemCell.xib in Resources */,
+				E8FF60F4209131CE03F716D49EE7A1E7 /* IMUIFeatureListIconCell.xib in Resources */,
+				CCADD801403C4D50E7AEBBD6376BF0D6 /* IMUIFeatureListView.xib in Resources */,
+				4EB78B21AF4472452CEFF616CDE90163 /* IMUIFeatureView.xib in Resources */,
+				B13D33371F26C568A13A91EBEFFFB98B /* IMUIGalleryCell.xib in Resources */,
+				07FA3C1918664F83F9D0B12127AD739F /* IMUIGalleryContainerCell.xib in Resources */,
+				BAD60103C3D6434514D28030010C081E /* IMUIInputView.xib in Resources */,
+				3FECCD92F45FE280100D6690BAE4F777 /* IMUIInputViewAssets.bundle in Resources */,
+				98F1FD227F34BE072B82C651BB7C8CB9 /* IMUIMessageCollectionView.xib in Resources */,
+				F427D7E175662C50957DF66832C71BD4 /* IMUIRecordVoiceCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A47766BC3ACC0C1F0363A5C6B26DCD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A6E4C077F4F139026C9764654665735 /* AuroraIMUI-dummy.m in Sources */,
+				BCD86272882CDA68834C88AA869CC275 /* BundleInputViewExtension.swift in Sources */,
+				D4B85927947BB6AB17BC1CCB815A0F58 /* BundleMessageListExtension.swift in Sources */,
+				21A88D741A3AD524D1EF195B0B660A5F /* CGRectExtension.swift in Sources */,
+				D61B5DDFA8B718987D7525B7D55E4CB5 /* CIImageExtension.swift in Sources */,
+				91A51661FD1E470E697DD8D6CDCE6981 /* CIImageView.swift in Sources */,
+				BC74C07F150E020FE69BF0B0604B78D6 /* CMSampleBufferExtension.swift in Sources */,
+				D499320ABA5D82DFCA339EE1A033215C /* DateExtension.swift in Sources */,
+				14847109DA9EF300FF60156DF73A8EC3 /* IMUIAudioPlayerHelper.swift in Sources */,
+				9C9BA15D175F858A147367D3437CAC80 /* IMUIBaseMessageCell.swift in Sources */,
+				D8CFAB1263A618BA6C977BEFDDB0AA46 /* IMUICameraCell.swift in Sources */,
+				A84B1F5FBEE6E463CFDCCCC28258A10A /* IMUICameraPreviewView.swift in Sources */,
+				811E42F44A543D63F7C758CEC6F4C4BE /* IMUICameraView.swift in Sources */,
+				28B526914EEEA405169C9F490B1C87ED /* IMUIChatDataManager.swift in Sources */,
+				C58538D7EB175DB81ECED4E33AC7F03F /* IMUIChatLayout.swift in Sources */,
+				12CF7CE39576687B7072EFC5BC8B7AE1 /* IMUIEmojiCell.swift in Sources */,
+				27D6C151BB5F00465A68106ACD7DC697 /* IMUIEmojiItemCell.swift in Sources */,
+				75BF4DA98A1B51A106D67BB68C4B04BD /* IMUIEmojiModel.swift in Sources */,
+				6CAA74478469BB5DA02631AE5990F731 /* IMUIFeatureIconModel.swift in Sources */,
+				26AC384E8CF636A6892662D3FDCE97B2 /* IMUIFeatureListIconCell.swift in Sources */,
+				FE01522D73F726F1E99C27F9A85F15EC /* IMUIFeatureListView.swift in Sources */,
+				43283E30C6B8D09D69A60BD9E3FCB924 /* IMUIFeatureView.swift in Sources */,
+				8EC819DC57CCAA5B7DEED83D72EB2926 /* IMUIGalleryCell.swift in Sources */,
+				6098BE488BADBF7B9E7EB6E7F4D7FDB6 /* IMUIGalleryContainerCell.swift in Sources */,
+				5E2BBF16A0EFFF790C120378D348347A /* IMUIGalleryDataManager.swift in Sources */,
+				E18ED785F17E5A49045EBE5E1C13B220 /* IMUIImageMessageContentView.swift in Sources */,
+				CBDF27F7F7F9799807A095F53299286F /* IMUIInputView.swift in Sources */,
+				E25E577EA5C6E337F1CE7B56E47EA829 /* IMUIInputViewDelegate.swift in Sources */,
+				73F05EC6BCA3E1588025C7D6C587F93A /* IMUIMessageBubbleView.swift in Sources */,
+				9AACD4DC9F1B8A8B0B0F0A3D45EDE2D3 /* IMUIMessageCellLayout.swift in Sources */,
+				69AF4C778675B81E92F2FA5BBF36C377 /* IMUIMessageCellLayoutProtocol.swift in Sources */,
+				D699336617BA8E9661223476CA33283D /* IMUIMessageCellProtocol.swift in Sources */,
+				B00E411B542FD69ECC1397DF56DCCE1B /* IMUIMessageCollectionView.swift in Sources */,
+				924D076C55A77FD207C5ADBFBC3973D8 /* IMUIMessageContentViewProtocol.swift in Sources */,
+				78755E68B63F00B1F093DD426AE487D4 /* IMUIMessageMessageCollectionViewDelegate.swift in Sources */,
+				E333D819117873460D01B1E12D0D2910 /* IMUIMessageModel.swift in Sources */,
+				BD0B9F5CD3FC2391AE0C4318BC4F73A9 /* IMUIMessageModelProtocol.swift in Sources */,
+				91EA0F45A05F21BE3CF515FBEC945B29 /* IMUIMessageProtocol.swift in Sources */,
+				44DB5A3B5D9BF382B9A616B654A8EC7F /* IMUIMessageStatusView.swift in Sources */,
+				571E59E7F283F0383ED257DA93FE4AD0 /* IMUIMessageStatusViewProtocol.swift in Sources */,
+				42B263897977043428DEA3D0501819CB /* IMUIPhotoCaptureDelegate.swift in Sources */,
+				04B94571E04F695CBE987FBF98AD052F /* IMUIProgressButton.swift in Sources */,
+				4080E1DF6E1FE65A7C824DFDA5CDA355 /* IMUIRecordVoiceCell.swift in Sources */,
+				CC0AAAC7C77C4B6131354AA869836B15 /* IMUIRecordVoiceHelper.swift in Sources */,
+				5ACC3025EAD6852D37EA2F350EE315F7 /* IMUIReuseViewCache.swift in Sources */,
+				24D65B675BED59F4314A4F52CA471873 /* IMUITextMessageContentView.swift in Sources */,
+				5F106D405D7506BDA805DBDBC0417FDD /* IMUITextView.swift in Sources */,
+				C9D21D413CF2BE67D2055B789119EF58 /* IMUIUserProtocol.swift in Sources */,
+				3323003B0D895B93C2B7C0B6B2CFD13A /* IMUIVideoFileLoader.swift in Sources */,
+				46B2F4502C6BD16B7AAC0968D772CE48 /* IMUIVideoMessageContentView.swift in Sources */,
+				4F5A536292183EB4D23EDE7D77623767 /* IMUIViewCache.swift in Sources */,
+				E204BC6F8CB81D4BC14EDA4CEEDCB273 /* IMUIVoiceMessageContentView.swift in Sources */,
+				E6A87C8E1F07DD1673F10173FA1D45E1 /* StringExtension.swift in Sources */,
+				07F3E8C90D88A70AF69E2712B0C530FC /* UIColorExtension.swift in Sources */,
+				17D624C9F1B4D0C0E0A87F9671D46F24 /* UIImageExtension.swift in Sources */,
+				E7870E2ABCEE0519821072D429BC454B /* UIImageMessageListExtension.swift in Sources */,
+				B7695EFE431FD00FB04DD33D69B83565 /* UIViewExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		356B76A2DFF146B2976AC681BFCCDE73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C8D39B5EF6918AE7E39AABD891056B4 /* Pods-testAuroraIMUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59247DE85F59832ACFAF09BE9B70C9DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73553F481BB60B8C33A3F71CAB13569B /* Aurora-dummy.m in Sources */,
+				C49B1E0E98E116FD132DE752D098CB3A /* Aurora.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8093F0E584CFEF36BB5743C16FD61629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A5D1C7B468000FA2133E8CAD3D488F /* Pods-testAuroraIMUI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCCD0E3DB4B40C9C6D89B1F445757899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AFA1A1F9A6EDA75AFB2069434C65DC /* Pods-testAuroraIMUIUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54996D1508A91DC3BC2F796B8D211792 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AuroraIMUI;
+			target = 596F32EBFB8C723B5048B59C641492D9 /* AuroraIMUI */;
+			targetProxy = 364D5A4F7838E2A0879AFEC32E82B50D /* PBXContainerItemProxy */;
+		};
+		67568758EC8AE24A35ED7BD1E68FB82A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Aurora;
+			target = 18B6386C4FEFF302FEBD358AC8B956A1 /* Aurora */;
+			targetProxy = CDB7E7E514B4F7B2D680FC240898B9A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B5A8DE2EC6E5A64185B0A167D0A4AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		247E163F447B97471C742DA648B6D8F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12AEE20C3094381BD79C5E2064058197 /* Pods-testAuroraIMUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-testAuroraIMUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testAuroraIMUITests/Pods-testAuroraIMUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_testAuroraIMUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4170F407F43BDF8928CE07078F172CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8608EBB2393F5C28A03374303B349B0 /* Pods-testAuroraIMUI.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-testAuroraIMUI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testAuroraIMUI/Pods-testAuroraIMUI.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_testAuroraIMUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A459BE10C52E3E38455F2D1D0E61094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A6230B79C1D435CCBBAFCBC2A49534A /* Aurora.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Aurora/Aurora-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Aurora/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Aurora/Aurora.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Aurora;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6EAAB67DC5458D9F15DE7909965B626A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7718F77BA3323009F17BDE571E906B20 /* Pods-testAuroraIMUI.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-testAuroraIMUI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testAuroraIMUI/Pods-testAuroraIMUI.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_testAuroraIMUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		70EFC2D4EDF6D27618B83BD64E234B41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A6230B79C1D435CCBBAFCBC2A49534A /* Aurora.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Aurora/Aurora-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Aurora/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Aurora/Aurora.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Aurora;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ABC1C622E3A94D5EFA80B6DBB5E64193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF63A22754E60D1589BFCFE9B78428B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81E41CEA616C96ECD0471D8B83D77CCD /* Pods-testAuroraIMUIUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-testAuroraIMUIUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testAuroraIMUIUITests/Pods-testAuroraIMUIUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_testAuroraIMUIUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7C3E269378A5A22452EAEFDDA016132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 223512175E962BA272794456F992E382 /* AuroraIMUI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AuroraIMUI/AuroraIMUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AuroraIMUI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AuroraIMUI/AuroraIMUI.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AuroraIMUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE9101BAC4A8AC2EB43FA6A28ECB2127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 223512175E962BA272794456F992E382 /* AuroraIMUI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AuroraIMUI/AuroraIMUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AuroraIMUI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AuroraIMUI/AuroraIMUI.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AuroraIMUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D084AF8E39492F44DE22DEF4949BAE55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6E173B58E46D0BF57582A04D3A2E5ED /* Pods-testAuroraIMUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-testAuroraIMUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testAuroraIMUITests/Pods-testAuroraIMUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_testAuroraIMUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EEEE220C84745D88F5D4B4F1841F9A45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50396AFF1FF418A47DB05F06ECC920B4 /* Pods-testAuroraIMUIUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-testAuroraIMUIUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testAuroraIMUIUITests/Pods-testAuroraIMUIUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_testAuroraIMUIUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01A4B548DDC7DF260BB925D976819F96 /* Build configuration list for PBXNativeTarget "Aurora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70EFC2D4EDF6D27618B83BD64E234B41 /* Debug */,
+				6A459BE10C52E3E38455F2D1D0E61094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B5A8DE2EC6E5A64185B0A167D0A4AD1 /* Debug */,
+				ABC1C622E3A94D5EFA80B6DBB5E64193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40351105D9C0608D5ED1CADC4F710A75 /* Build configuration list for PBXNativeTarget "Pods-testAuroraIMUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EAAB67DC5458D9F15DE7909965B626A /* Debug */,
+				4170F407F43BDF8928CE07078F172CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6277D9D3980509107C07CDD39875AF78 /* Build configuration list for PBXNativeTarget "Pods-testAuroraIMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				247E163F447B97471C742DA648B6D8F5 /* Debug */,
+				D084AF8E39492F44DE22DEF4949BAE55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD2E3328C66136DBD126D553F7D3433E /* Build configuration list for PBXNativeTarget "Pods-testAuroraIMUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEEE220C84745D88F5D4B4F1841F9A45 /* Debug */,
+				AF63A22754E60D1589BFCFE9B78428B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0158A91788E37D1A9E8657CF00315C0 /* Build configuration list for PBXNativeTarget "AuroraIMUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7C3E269378A5A22452EAEFDDA016132 /* Debug */,
+				BE9101BAC4A8AC2EB43FA6A28ECB2127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

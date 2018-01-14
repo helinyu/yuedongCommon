@@ -1,0 +1,15 @@
+PODS:
+  - Aurora (1.0.0)
+  - AuroraIMUI (0.6.2)
+
+DEPENDENCIES:
+  - Aurora (~> 1.0.0)
+  - AuroraIMUI (~> 0.6.2)
+
+SPEC CHECKSUMS:
+  Aurora: 8eb1d26015cff3f730cf82ae172d5aa5b173dcf9
+  AuroraIMUI: 0b2fdc9e13b8b5c83ce05446288de9f5dab0a3c6
+
+PODFILE CHECKSUM: 19788510a515133412fa44a32b742cf1afe3b18e
+
+COCOAPODS: 1.2.1

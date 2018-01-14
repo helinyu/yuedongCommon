@@ -15,6 +15,9 @@
 		410D9F6A200BB26900853F23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 410D9F69200BB26900853F23 /* main.m */; };
 		410D9F74200BB26A00853F23 /* testAuroraIMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 410D9F73200BB26A00853F23 /* testAuroraIMUITests.m */; };
 		410D9F7F200BB26A00853F23 /* testAuroraIMUIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 410D9F7E200BB26A00853F23 /* testAuroraIMUIUITests.m */; };
+		8A9EFDA39EC610A855449D6C /* Pods_testAuroraIMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D46D14DF26B7490702E4F3B /* Pods_testAuroraIMUITests.framework */; };
+		AD21654901BC3CD4F7845CAE /* Pods_testAuroraIMUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6CD00CDD212922151EEA592 /* Pods_testAuroraIMUIUITests.framework */; };
+		D6C91FF7E7527D21E0591AFB /* Pods_testAuroraIMUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF26EC67CF7A3E32A6FDBE0 /* Pods_testAuroraIMUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D46D14DF26B7490702E4F3B /* Pods_testAuroraIMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testAuroraIMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37A14A4BDB367C1026CF1A57 /* Pods-testAuroraIMUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAuroraIMUIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testAuroraIMUIUITests/Pods-testAuroraIMUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3AF26EC67CF7A3E32A6FDBE0 /* Pods_testAuroraIMUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testAuroraIMUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AF503CC3D86F8494169C2CE /* Pods-testAuroraIMUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAuroraIMUIUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testAuroraIMUIUITests/Pods-testAuroraIMUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		410D9F57200BB26900853F23 /* testAuroraIMUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testAuroraIMUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		410D9F5A200BB26900853F23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		410D9F5B200BB26900853F23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +58,11 @@
 		410D9F7A200BB26A00853F23 /* testAuroraIMUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testAuroraIMUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		410D9F7E200BB26A00853F23 /* testAuroraIMUIUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testAuroraIMUIUITests.m; sourceTree = "<group>"; };
 		410D9F80200BB26A00853F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		760B55743FA0CBD027C1C356 /* Pods-testAuroraIMUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAuroraIMUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-testAuroraIMUI/Pods-testAuroraIMUI.release.xcconfig"; sourceTree = "<group>"; };
+		BA870D1457512F582EA698C3 /* Pods-testAuroraIMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAuroraIMUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testAuroraIMUITests/Pods-testAuroraIMUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4ABE5EE2A277BEEF8D18EB9 /* Pods-testAuroraIMUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAuroraIMUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testAuroraIMUI/Pods-testAuroraIMUI.debug.xcconfig"; sourceTree = "<group>"; };
+		D82C1F98E9CFDF467A3FC7C7 /* Pods-testAuroraIMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAuroraIMUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testAuroraIMUITests/Pods-testAuroraIMUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F6CD00CDD212922151EEA592 /* Pods_testAuroraIMUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testAuroraIMUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6C91FF7E7527D21E0591AFB /* Pods_testAuroraIMUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A9EFDA39EC610A855449D6C /* Pods_testAuroraIMUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD21654901BC3CD4F7845CAE /* Pods_testAuroraIMUIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				410D9F72200BB26A00853F23 /* testAuroraIMUITests */,
 				410D9F7D200BB26A00853F23 /* testAuroraIMUIUITests */,
 				410D9F58200BB26900853F23 /* Products */,
+				E60961368EBD1E113C2269F4 /* Pods */,
+				DC686230F46DB43E135E8ADE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +149,29 @@
 			path = testAuroraIMUIUITests;
 			sourceTree = "<group>";
 		};
+		DC686230F46DB43E135E8ADE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AF26EC67CF7A3E32A6FDBE0 /* Pods_testAuroraIMUI.framework */,
+				2D46D14DF26B7490702E4F3B /* Pods_testAuroraIMUITests.framework */,
+				F6CD00CDD212922151EEA592 /* Pods_testAuroraIMUIUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E60961368EBD1E113C2269F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4ABE5EE2A277BEEF8D18EB9 /* Pods-testAuroraIMUI.debug.xcconfig */,
+				760B55743FA0CBD027C1C356 /* Pods-testAuroraIMUI.release.xcconfig */,
+				BA870D1457512F582EA698C3 /* Pods-testAuroraIMUITests.debug.xcconfig */,
+				D82C1F98E9CFDF467A3FC7C7 /* Pods-testAuroraIMUITests.release.xcconfig */,
+				3AF503CC3D86F8494169C2CE /* Pods-testAuroraIMUIUITests.debug.xcconfig */,
+				37A14A4BDB367C1026CF1A57 /* Pods-testAuroraIMUIUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 410D9F83200BB26A00853F23 /* Build configuration list for PBXNativeTarget "testAuroraIMUI" */;
 			buildPhases = (
+				BA9682E193DC9531D301A1FB /* [CP] Check Pods Manifest.lock */,
 				410D9F53200BB26900853F23 /* Sources */,
 				410D9F54200BB26900853F23 /* Frameworks */,
 				410D9F55200BB26900853F23 /* Resources */,
+				ECA5E1D1D440E80343E7B8FC /* [CP] Embed Pods Frameworks */,
+				4CF896AA211DDC83A3C93661 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 410D9F86200BB26A00853F23 /* Build configuration list for PBXNativeTarget "testAuroraIMUITests" */;
 			buildPhases = (
+				727D9233314D962536B7CC21 /* [CP] Check Pods Manifest.lock */,
 				410D9F6B200BB26A00853F23 /* Sources */,
 				410D9F6C200BB26A00853F23 /* Frameworks */,
 				410D9F6D200BB26A00853F23 /* Resources */,
+				DB89D4C83A2794A0A4D8E67C /* [CP] Embed Pods Frameworks */,
+				4DF14ACD975C3DB6597B6DCC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 410D9F89200BB26A00853F23 /* Build configuration list for PBXNativeTarget "testAuroraIMUIUITests" */;
 			buildPhases = (
+				27259C80A0EA24EADE905DEB /* [CP] Check Pods Manifest.lock */,
 				410D9F76200BB26A00853F23 /* Sources */,
 				410D9F77200BB26A00853F23 /* Frameworks */,
 				410D9F78200BB26A00853F23 /* Resources */,
+				7819DA96CCD97E45F90C5E67 /* [CP] Embed Pods Frameworks */,
+				96880CB2260337B3900F4D23 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +308,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27259C80A0EA24EADE905DEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4CF896AA211DDC83A3C93661 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testAuroraIMUI/Pods-testAuroraIMUI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DF14ACD975C3DB6597B6DCC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testAuroraIMUITests/Pods-testAuroraIMUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		727D9233314D962536B7CC21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7819DA96CCD97E45F90C5E67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testAuroraIMUIUITests/Pods-testAuroraIMUIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96880CB2260337B3900F4D23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testAuroraIMUIUITests/Pods-testAuroraIMUIUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA9682E193DC9531D301A1FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB89D4C83A2794A0A4D8E67C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testAuroraIMUITests/Pods-testAuroraIMUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECA5E1D1D440E80343E7B8FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testAuroraIMUI/Pods-testAuroraIMUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		410D9F53200BB26900853F23 /* Sources */ = {
@@ -428,6 +615,7 @@
 		};
 		410D9F84200BB26A00853F23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4ABE5EE2A277BEEF8D18EB9 /* Pods-testAuroraIMUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +630,7 @@
 		};
 		410D9F85200BB26A00853F23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 760B55743FA0CBD027C1C356 /* Pods-testAuroraIMUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +645,7 @@
 		};
 		410D9F87200BB26A00853F23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA870D1457512F582EA698C3 /* Pods-testAuroraIMUITests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +661,7 @@
 		};
 		410D9F88200BB26A00853F23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D82C1F98E9CFDF467A3FC7C7 /* Pods-testAuroraIMUITests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -486,6 +677,7 @@
 		};
 		410D9F8A200BB26A00853F23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AF503CC3D86F8494169C2CE /* Pods-testAuroraIMUIUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2XBEJ6876;
@@ -500,6 +692,7 @@
 		};
 		410D9F8B200BB26A00853F23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37A14A4BDB367C1026CF1A57 /* Pods-testAuroraIMUIUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2XBEJ6876;

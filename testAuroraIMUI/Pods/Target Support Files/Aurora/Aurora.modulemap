@@ -1,0 +1,6 @@
+framework module Aurora {
+  umbrella header "Aurora-umbrella.h"
+
+  export *
+  module * { export * }
+}
