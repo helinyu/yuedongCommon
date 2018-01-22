@@ -8,13 +8,19 @@
 
 #import "ViewController.h"
 #import "CTDisplayView.h"
-#import "CoreTextData.h"
-#import "CTFrameParser.h"
+#import "YDCTModel.h"
+#import "YDCTParser.h"
 #import "UIView+frameAdjust.h"
+#import "YDCTConfig.h"
+#import "YDCTLinkModel.h"
+#import <CoreText/CoreText.h>
+#import "ImageViewController.h"
+#import "WebContentViewController.h"
+#import "YDCTImageModel.h"
 
 @interface ViewController ()
 
-@property (nonatomic, strong) CTDisplayView *displayView;
+@property (nonatomic, strong) CTDisplayView *ctView;
 
 @end
 
@@ -23,43 +29,51 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _displayView = [CTDisplayView new];
-    _displayView.frame = CGRectMake(100, 100, 100, 100);
-    [self.view addSubview:_displayView];
-    
-    CTFrameParserConfig *config = [[CTFrameParserConfig alloc] init];
-    config.width = self.displayView.bounds.size.width;
-    config.textColor = [UIColor blackColor];
-    
-    NSString *content =
-    @" 对于上面的例子，我们给 CTFrameParser 增加了一个将 NSString 转 "
-    " 换为 CoreTextData 的方法。"
-    " 但这样的实现方式有很多局限性，因为整个内容虽然可以定制字体 "
-    " 大小，颜色，行高等信息，但是却不能支持定制内容中的某一部分。"
-    " 例如，如果我们只想让内容的前三个字显示成红色，而其它文字显 "
-    " 示成黑色，那么就办不到了。"
-    "\n\n"
-    " 解决的办法很简单，我们让`CTFrameParser`支持接受 "
-    "NSAttributeString 作为参数，然后在 NSAttributeString 中设置好 "
-    " 我们想要的信息。";
-    NSDictionary *attr = [CTFrameParser attributesWithConfig:config];
-    NSMutableAttributedString *attributedString =
-    [[NSMutableAttributedString alloc] initWithString:content
-                                           attributes:attr];
-    [attributedString addAttribute:NSForegroundColorAttributeName
-                             value:[UIColor redColor]
-                             range:NSMakeRange(0, 7)];
-    CoreTextData *data = [CTFrameParser parseAttributedContent:attributedString
-                                                        config:config];
-    self.displayView.data = data;
-    self.displayView.height = data.height;
-    self.displayView.backgroundColor = [UIColor yellowColor];
+    self.ctView = [CTDisplayView new];
+    self.ctView.frame = CGRectMake(0, 100, self.view.width, 800);
+    [self.view addSubview:self.ctView];
+
+    [self setupUserInterface];
+    [self setupNotifications];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+- (void)setupUserInterface {
+    YDCTConfig *config = [[YDCTConfig alloc] init];
+    config.width = self.ctView.width;
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"content" ofType:@"json"];
+    YDCTModel *data = [YDCTParser parseTemplateFile:path config:config];
+    self.ctView.data = data;
+    self.ctView.height = data.height;
+    self.ctView.backgroundColor = [UIColor yellowColor];
 }
 
+- (void)setupNotifications {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(imagePressed:) name:@"CTDisplayViewImagePressedNotification" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(linkPressed:) name:@"CTDisplayViewLinkPressedNotification" object:nil];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+}
+
+- (void)imagePressed:(NSNotification*)notification {
+    NSDictionary *userInfo = [notification userInfo];
+    YDCTImageModel *imageData = userInfo[@"imageData"];
+    
+    ImageViewController *vc = [[ImageViewController alloc] init];
+    vc.image = [UIImage imageNamed:imageData.name];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (void)linkPressed:(NSNotification*)notification {
+    NSDictionary *userInfo = [notification userInfo];
+    YDCTLinkModel *linkData = userInfo[@"linkData"];
+    
+    WebContentViewController *vc = [[WebContentViewController alloc] init];
+    vc.urlTitle = linkData.title;
+    vc.url = linkData.url;
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 @end

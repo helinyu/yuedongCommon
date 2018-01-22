@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-@class  CoreTextData;
+@class  YDCTModel;
+
+//NSString *const CTDisplayViewImagePressedNotification = @"CTDisplayViewImagePressedNotification";
+//NSString *const CTDisplayViewLinkPressedNotification = @"CTDisplayViewLinkPressedNotification";
 
 @interface CTDisplayView : UIView
 
-@property (strong, nonatomic) CoreTextData * data;
+@property (strong, nonatomic) YDCTModel * data;
 
 @end
