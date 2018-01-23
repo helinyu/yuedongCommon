@@ -9,16 +9,16 @@
 #import "ViewController.h"
 #import "GHView.h"
 #import "GHLabel.h"
+#import "GHCustomView.h"
 
 @interface ViewController ()
 
 @property (nonatomic, strong) GHView *subView0;
-
 @property (nonatomic, strong) UIButton *btn;
-
 @property (nonatomic, strong) GHLabel *subLabel;
-
 @property (nonatomic, strong) UICollectionView *collectionView;
+
+@property (nonatomic, strong) GHCustomView *customView;
 
 @end
 
@@ -27,9 +27,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    _subView0 = [[GHView alloc] initWithFrame:CGRectMake(0, 100, 100, 100)];
-//    _subView0.backgroundColor = [UIColor yellowColor];
-//    [self.view addSubview:_subView0]; //invalidateIntrinsicContentSize
+    [self test1];
+}
+
+- (void)test1 {
+    
+    _customView = [[GHCustomView alloc] initWithFrame:CGRectMake(0, 100, 200, 300)];
+    [self.view addSubview:_customView];
+//    应该是要添加对应的内容进入
+    _customView.backgroundColor = [UIColor yellowColor];
+}
+
+- (void)test0 {
+    //    _subView0 = [[GHView alloc] initWithFrame:CGRectMake(0, 100, 100, 100)];
+    //    _subView0.backgroundColor = [UIColor yellowColor];
+    //    [self.view addSubview:_subView0]; //invalidateIntrinsicContentSize
     
     _btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.view addSubview:_btn];

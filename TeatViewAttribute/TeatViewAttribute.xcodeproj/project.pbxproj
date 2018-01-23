@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04AAE75F201720DC002D48E8 /* GHCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AAE75E201720DC002D48E8 /* GHCustomView.m */; };
 		04C968F8201711C70024F104 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C968F7201711C70024F104 /* AppDelegate.m */; };
 		04C968FB201711C70024F104 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C968FA201711C70024F104 /* ViewController.m */; };
 		04C968FE201711C70024F104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C968FC201711C70024F104 /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04AAE75D201720DC002D48E8 /* GHCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHCustomView.h; sourceTree = "<group>"; };
+		04AAE75E201720DC002D48E8 /* GHCustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHCustomView.m; sourceTree = "<group>"; };
 		04C968F3201711C70024F104 /* TeatViewAttribute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeatViewAttribute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C968F6201711C70024F104 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04C968F7201711C70024F104 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 				04C96929201712620024F104 /* GHView.m */,
 				04C9692B201717020024F104 /* GHLabel.h */,
 				04C9692C201717020024F104 /* GHLabel.m */,
+				04AAE75D201720DC002D48E8 /* GHCustomView.h */,
+				04AAE75E201720DC002D48E8 /* GHCustomView.m */,
 			);
 			path = TeatViewAttribute;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 				04C9692D201717020024F104 /* GHLabel.m in Sources */,
 				04C9692A201712620024F104 /* GHView.m in Sources */,
 				04C96906201711C70024F104 /* main.m in Sources */,
+				04AAE75F201720DC002D48E8 /* GHCustomView.m in Sources */,
 				04C968F8201711C70024F104 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
