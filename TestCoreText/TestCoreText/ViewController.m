@@ -26,7 +26,6 @@
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTHTMLParserDelegate,DTAttributedTextContentViewDelegate>
 
 @property (nonatomic, strong) CTDisplayView *ctView;
-
 @property (nonatomic, strong) YDTransView *transView;
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -67,6 +66,7 @@
     _headLabel = [[DTAttributedLabel alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 200.f)];
     [self.view addSubview:_headLabel];
     _headLabel.attributedString = [self loadDatas];
+//    可以通过计算高度来进行实现
     
 //    _originLabel = [UILabel new];
 //    [self.view addSubview:_originLabel];
