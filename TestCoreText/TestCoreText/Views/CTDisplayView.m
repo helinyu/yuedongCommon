@@ -1,4 +1,4 @@
-//
+;//
 //  CTDisplayView.m
 //  TestCoreText
 //
@@ -307,14 +307,14 @@ typedef enum CTDisplayViewState : NSInteger {
     }
     
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetTextMatrix(context, CGAffineTransformIdentity);
+    CGContextSetTextMatrix(context, CGAffineTransformIdentity); //设置不变嘛
     CGContextTranslateCTM(context, 0, self.bounds.size.height);
     CGContextScaleCTM(context, 1.0, -1.0);
     
-    if (self.state == CTDisplayViewStateTouching || self.state == CTDisplayViewStateSelecting) {
-        [self drawSelectionArea];
-        [self drawAnchors];
-    }
+//    if (self.state == CTDisplayViewStateTouching || self.state == CTDisplayViewStateSelecting) {
+//        [self drawSelectionArea];
+//        [self drawAnchors];
+//    }
 
 //     先画完文字，然后在进行 插入突破爱你
     CTFrameDraw(self.data.ctFrame, context);
@@ -324,6 +324,11 @@ typedef enum CTDisplayViewState : NSInteger {
             CGContextDrawImage(context, imageData.imagePosition, image.CGImage);
         }
     }
+    
+    CALayer *sonLayer = [CALayer new];
+    [self.layer addSublayer:sonLayer];
+    sonLayer.backgroundColor = [UIColor redColor].CGColor;
+    sonLayer.frame = CGRectMake(0, 200, 50, 50);
 }
 
 - (void)drawAnchors {

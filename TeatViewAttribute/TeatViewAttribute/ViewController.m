@@ -31,7 +31,8 @@
     
 //    [self test1];
     
-    [self test2];
+//    [self test
+    
 }
 
 - (void)test2 {
