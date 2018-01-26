@@ -15,7 +15,6 @@
 //@property (nonatomic, strong) DTAttributedLabel *label;
 @property (nonatomic, strong) DTAttributedTextView *textView;
 
-
 @end
 
 @implementation YDHeaderView

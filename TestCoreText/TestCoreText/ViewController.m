@@ -23,6 +23,12 @@
 #import <DTWebVideoView.h>
 #import "Masonry.h"
 
+#import <libxml/list.h>
+#import <libxml/HTMLparser.h>
+#import <libxml/HTMLtree.h>
+#import <libxml/uri.h>
+
+
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTHTMLParserDelegate,DTAttributedTextContentViewDelegate>
 
 @property (nonatomic, strong) CTDisplayView *ctView;
@@ -45,8 +51,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    [self test2];
-    
+    // [self test2];
+    [self test3];
+}
+
+//测试html文件解析库
+- (void)test3 {
+    NSString *urlStr = @"http://www.baidu.com/index.html";
+    NSURL *url = [NSURL URLWithString:urlStr];
+    NSError *error = nil;
+    NSData *data = [NSData dataWithContentsOfURL:url options:NSDataReadingUncached error:&error];
+//    html = [NSString stringWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",readmePath,_fileName]] encoding:NSUTF8StringEncoding error:&error];
+
+    NSLog(@"data length :%zd",data.length);
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -63,9 +80,9 @@
 //    _label.layoutFrame
 //    CGRect frame = _headerView.label.layoutFrame.frame;
 //    _headerView.label.attributedString = [self loadDatas];
-    _headLabel = [[DTAttributedLabel alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 200.f)];
-    [self.view addSubview:_headLabel];
-    _headLabel.attributedString = [self loadDatas];
+//    _headLabel = [[DTAttributedLabel alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 200.f)];
+//    [self.view addSubview:_headLabel];
+//    _headLabel.attributedString = [self loadDatas];
 //    可以通过计算高度来进行实现
     
 //    _originLabel = [UILabel new];
