@@ -23,31 +23,126 @@
 #import <DTWebVideoView.h>
 #import "Masonry.h"
 
-#import <libxml/list.h>
 #import <libxml/HTMLparser.h>
-#import <libxml/HTMLtree.h>
-#import <libxml/uri.h>
 
 
-@interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTHTMLParserDelegate,DTAttributedTextContentViewDelegate>
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate>
+// html 页面解析
+{
+    htmlSAXHandler _handler; //处理
+    NSData *_data; // 数据
+    NSStringEncoding _encoding; // 编码
+    htmlParserCtxtPtr _parserContext;
+    NSMutableString *_accumulateBuffer; // 计算的缓存
+    __weak id<vcDelegate> _delegate;
+    BOOL _isAborting;
+}
 
 @property (nonatomic, strong) CTDisplayView *ctView;
 @property (nonatomic, strong) YDTransView *transView;
-
 @property (nonatomic, strong) UITableView *tableView;
-
 @property (nonatomic, strong) YDHeaderView *headerView;
-
 @property (nonatomic, assign) CGFloat headerViewHeight;
-
 @property (nonatomic, strong) DTAttributedLabel *headLabel;
-
 @property (nonatomic, strong) UILabel *originLabel;
 
 @end
 
+#pragma mark Event function prototypes
+
+void yd_startDocument(void *context);
+void yd_endDocument(void *context);
+void yd_startElement(void *context, const xmlChar *name,const xmlChar **atts);
+void yd_startElement_no_delegate(void *context, const xmlChar *name, const xmlChar **atts);
+void yd_endElement(void *context, const xmlChar *name);
+void yd_endElement_no_delegate(void *context, const xmlChar *chars);
+void yd_characters(void *context, const xmlChar *ch, int len);
+void yd_comment(void *context, const xmlChar *value);
+void yd_dterror(void *context, const char *msg, ...);
+void yd_cdataBlock(void *context, const xmlChar *value, int len);
+void yd_processingInstruction (void *context, const xmlChar *target, const xmlChar *data);
+
+#pragma mark Event functions
+
+void yd_startDocument(void *context)
+{
+    NSLog(@"_startDocument");
+}
+
+void yd_endDocument(void *context)
+{
+    NSLog(@"end document");
+}
+
+void yd_startElement(void *context, const xmlChar *name, const xmlChar **atts)
+{
+    NSLog(@"start element");
+}
+
+void yd_startElement_no_delegate(void *context, const xmlChar *name, const xmlChar **atts)
+{
+    NSLog(@"start element");
+}
+
+void yd_endElement(void *context, const xmlChar *chars)
+{
+    NSLog(@"end element");
+}
+
+void yd_endElement_no_delegate(void *context, const xmlChar *chars)
+{
+    NSLog(@"end element no delegate");
+}
+
+void yd_characters(void *context, const xmlChar *chars, int len)
+{
+    NSLog(@"characters ");
+}
+
+void yd_comment(void *context, const xmlChar *chars)
+{
+    NSLog(@"comment");
+}
+
+void yd_dterror(void *context, const char *msg, ...)
+{
+    NSLog(@"tder4ror");
+}
+
+void yd_cdataBlock(void *context, const xmlChar *value, int len)
+{
+    NSLog(@"data block");
+}
+
+void yd_processingInstruction (void *context, const xmlChar *target, const xmlChar *data)
+{
+    NSLog(@"context :%@",context);
+}
+
+void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *ExternalID, const xmlChar *SystemID) {
+    NSLog(@"internalSubset");
+}
+
 @implementation ViewController
 
+- (id<vcDelegate>)delegate {
+    return _delegate;
+}
+
+- (void)setDelegate:(id <vcDelegate>)delegate
+{
+    _delegate = delegate;
+    
+    if ([delegate respondsToSelector:@selector(doText:)])
+    {
+        _handler.startDocument = yd_startDocument;
+    }
+    else
+    {
+//        _handler.startDocument = yd_stat;
+    }
+  
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -57,13 +152,43 @@
 
 //测试html文件解析库
 - (void)test3 {
-    NSString *urlStr = @"http://www.baidu.com/index.html";
+    NSString *urlStr = @"http://localhost:8080/index.html";
     NSURL *url = [NSURL URLWithString:urlStr];
     NSError *error = nil;
     NSData *data = [NSData dataWithContentsOfURL:url options:NSDataReadingUncached error:&error];
-//    html = [NSString stringWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",readmePath,_fileName]] encoding:NSUTF8StringEncoding error:&error];
-
     NSLog(@"data length :%zd",data.length);
+    NSString *string = [NSString stringWithContentsOfURL:[NSURL URLWithString:urlStr] encoding:NSUTF8StringEncoding error:&error];
+    NSLog(@"string:%@",string);
+    _data = data;
+    _encoding = NSUTF8StringEncoding;
+
+//    _handler.startDocument = yd_startDocument;
+//    _handler.endDocument = yd_endDocument;
+//    _handler.startElement = yd_startElement;
+//    _handler.endElement = yd_endElement;
+//    _handler.characters = yd_characters;
+//    _handler.comment = yd_comment;
+//    _handler.cdataBlock = yd_cdataBlock;
+//    _handler.processingInstruction = yd_processingInstruction;
+//    _handler.internalSubset = yd_internalSubset;
+    
+    xmlSAX2InitHtmlDefaultSAXHandler(&_handler);
+    
+    void *dataBytes = (char *)[data bytes];
+
+    _parserContext = htmlCreatePushParserCtxt(&_handler, (__bridge void *)self, dataBytes, (int)data.length, NULL, XML_CHAR_ENCODING_UTF8);
+    htmlCtxtUseOptions(_parserContext, HTML_PARSE_RECOVER | HTML_PARSE_NONET | HTML_PARSE_COMPACT | HTML_PARSE_NOBLANKS);
+    
+    int result = htmlParseDocument(_parserContext);
+    NSLog(@"result code :%zd",result);
+}
+
+- (void)dealloc
+{
+    if (_parserContext)
+    {
+        htmlFreeParserCtxt(_parserContext);
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
