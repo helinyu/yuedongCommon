@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0438E73E201EC60D0032E8F8 /* YDDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E73D201EC60D0032E8F8 /* YDDisplayView.m */; };
+		0438E74A201F13280032E8F8 /* NSString+GHTransformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E749201F13280032E8F8 /* NSString+GHTransformation.m */; };
+		0438E74C201F27450032E8F8 /* Strawberry Blossom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0438E74B201F27450032E8F8 /* Strawberry Blossom.ttf */; };
 		0441EF8D2015C9A80048F881 /* YDCTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441EF8C2015C9A80048F881 /* YDCTView.m */; };
 		0441EF902015D0520048F881 /* YDCTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441EF8F2015D0520048F881 /* YDCTModel.m */; };
 		0441EF922015D1C40048F881 /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = 0441EF912015D1C40048F881 /* content.json */; };
@@ -96,6 +99,11 @@
 
 /* Begin PBXFileReference section */
 		000209BC3D7C5DD4662F9B47 /* libPods-TestCoreText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestCoreText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0438E73C201EC60D0032E8F8 /* YDDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDDisplayView.h; sourceTree = "<group>"; };
+		0438E73D201EC60D0032E8F8 /* YDDisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDDisplayView.m; sourceTree = "<group>"; };
+		0438E748201F13280032E8F8 /* NSString+GHTransformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+GHTransformation.h"; sourceTree = "<group>"; };
+		0438E749201F13280032E8F8 /* NSString+GHTransformation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+GHTransformation.m"; sourceTree = "<group>"; };
+		0438E74B201F27450032E8F8 /* Strawberry Blossom.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Strawberry Blossom.ttf"; sourceTree = "<group>"; };
 		0441EF8B2015C9A80048F881 /* YDCTView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCTView.h; sourceTree = "<group>"; };
 		0441EF8C2015C9A80048F881 /* YDCTView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDCTView.m; sourceTree = "<group>"; };
 		0441EF8E2015D0520048F881 /* YDCTModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCTModel.h; sourceTree = "<group>"; };
@@ -222,6 +230,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0438E74D201F27480032E8F8 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				0438E74B201F27450032E8F8 /* Strawberry Blossom.ttf */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		0441EF8A2015C9880048F881 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +329,9 @@
 		04FF493D2015917700C02EEF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0438E74D201F27480032E8F8 /* resources */,
+				0438E73C201EC60D0032E8F8 /* YDDisplayView.h */,
+				0438E73D201EC60D0032E8F8 /* YDDisplayView.m */,
 				04FF494F2015B1AC00C02EEF /* UIView+frameAdjust.h */,
 				04FF494E2015B1AC00C02EEF /* UIView+frameAdjust.m */,
 				04FF494B20159C3800C02EEF /* CTDisplayView.h */,
@@ -327,6 +346,8 @@
 				0441EFB52015EFB90048F881 /* MagnifiterView.m */,
 				04FFAF082019A8EE00E54521 /* YDTransView.h */,
 				04FFAF092019A8EE00E54521 /* YDTransView.m */,
+				0438E748201F13280032E8F8 /* NSString+GHTransformation.h */,
+				0438E749201F13280032E8F8 /* NSString+GHTransformation.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -552,6 +573,7 @@
 				04FFAF552019C98200E54521 /* Video.html in Resources */,
 				04FFAF362019C98200E54521 /* Alignment.html in Resources */,
 				04FFAF4E2019C98200E54521 /* Oliver.jpg in Resources */,
+				0438E74C201F27450032E8F8 /* Strawberry Blossom.ttf in Resources */,
 				04FFAF522019C98200E54521 /* styles.html in Resources */,
 				04FFAF4D2019C98200E54521 /* Objects.html in Resources */,
 				0441EF952015D1D10048F881 /* coretext-image-2.jpg in Resources */,
@@ -743,9 +765,11 @@
 				04FF490C2015910500C02EEF /* AppDelegate.m in Sources */,
 				0441EFA62015DA1A0048F881 /* YDCTConfig.m in Sources */,
 				04FF494D20159C3800C02EEF /* CTDisplayView.m in Sources */,
+				0438E73E201EC60D0032E8F8 /* YDDisplayView.m in Sources */,
 				0441EFB32015E21D0048F881 /* ImageViewController.m in Sources */,
 				0441EFB72015EFB90048F881 /* MagnifiterView.m in Sources */,
 				0441EFAF2015E2160048F881 /* WebContentViewController.m in Sources */,
+				0438E74A201F13280032E8F8 /* NSString+GHTransformation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

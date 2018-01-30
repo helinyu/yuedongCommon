@@ -22,9 +22,13 @@
 #import "YDHeaderView.h"
 #import <DTWebVideoView.h>
 #import "Masonry.h"
+#import "YDDisplayView.h"
+#import "YDDisplayView.h"
 
 #import <libxml/HTMLparser.h>
 
+#import "Masonry.h"
+#import "NSString+GHTransformation.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate>
 // html 页面解析
@@ -45,6 +49,14 @@
 @property (nonatomic, assign) CGFloat headerViewHeight;
 @property (nonatomic, strong) DTAttributedLabel *headLabel;
 @property (nonatomic, strong) UILabel *originLabel;
+
+@property (nonatomic, strong) YDDisplayView *displayView;
+
+//for test5
+@property (nonatomic, strong) YDDisplayView *test5view;
+
+//for test6
+@property (nonatomic, strong) UILabel *test6Label;
 
 @end
 
@@ -146,8 +158,89 @@ void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *Exter
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+//    [self test0];
     // [self test2];
-    [self test3];
+//    [self test3];
+//    [self test4];
+    [self test5];
+//    [self test6];
+//    [self test7];
+}
+
+- (void)test7 {
+    
+    UILabel *label = [[UILabel alloc]initWithFrame:self.view.frame];
+    label.font = [UIFont fontWithName:@"Strawberry Blossom" size:100];
+    label.text = @"Dong";
+    label.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:label];
+
+//    这个路径要正确，否则是系统的
+    CFStringRef aCFString = CFSTR("Strawberry Blossom");
+    CTFontRef fontRef = CTFontCreateWithName(aCFString, 0.0,NULL);
+    CFStringRef sampleText=CTFontCopyName(fontRef,kCTFontSampleTextNameKey);
+    CFStringRef copyRight = CTFontCopyName(fontRef,kCTFontCopyrightNameKey);
+    CFStringRef familyName = CTFontCopyName(fontRef,kCTFontFamilyNameKey);
+    CFStringRef postSCriptName = CTFontCopyName(fontRef,kCTFontPostScriptNameKey);
+    CFStringRef urlName = CTFontCopyName(fontRef,kCTFontDesignerURLNameKey);
+    CFStringRef manufacturerName = CTFontCopyName(fontRef,kCTFontManufacturerNameKey);
+    
+//    NSLog(@"%@",sampleText);
+}
+
+- (void)test6 {
+    NSString *str = @"text\ntext\ntext\ntext\ntext";
+    _test6Label = [UILabel new];
+    [self.view addSubview:_test6Label];
+    _test6Label.text = str;
+//    let textSize = [str ];
+//    str.uppercaseString.sizeWithAttributes([NSFontAttributeName:UIFont(name: label.font as String, size: label.fontSize)!])
+    
+    
+    //    1.
+    int32_t version = CTGetCoreTextVersion();
+    NSString *hex = [NSString hexByDecimal:version];
+    
+    UIFont *currentFont = [UIFont systemFontOfSize:17.f];
+    UIFont *currentfont3 = [UIFont fontWithName:@"PingFangSC-Semibold" size:17.f];
+    UIFont *currentFont1 = [UIFont systemFontOfSize:17.f];
+    UIFont *currentFont2 = [UIFont systemFontOfSize:14.f];
+    CFTypeID cfId = CFGetTypeID((CFTypeRef)(currentFont));
+    CFTypeID cfId1 = CFGetTypeID((CFTypeRef)(currentFont1));
+    CFTypeID cfId2 = CFGetTypeID((CFTypeRef)(currentFont2));
+    CFTypeID cfId3 = CFGetTypeID((CFTypeRef)(currentfont3));
+    CFTypeID ctId = CTFontGetTypeID();
+//    CFStringRef aCFstring = CTFontGetGlyphWithName(CTFontRef(currentFont), <#CFStringRef  _Nonnull glyphName#>)();
+    
+    if (cfId == ctId) {
+        NSLog(@"yes");
+    }
+    else {
+        NSLog(@"no");
+    }
+    //    2. 有关字体换行大小可能存在问题
+
+}
+
+
+- (void)test5 {
+    _test5view = [YDDisplayView new];
+    _test5view.frame = CGRectMake(100, 100, 200, 200);
+    [self.view addSubview:_test5view];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+  
+    NSLog(@"accept");
+}
+
+- (void)test4 {
+    
+    _displayView = [YDDisplayView new];
+    [self.view addSubview:_displayView];
+    _displayView.backgroundColor = [UIColor yellowColor];
+    _displayView.frame = CGRectMake(0, 100, 300, 100);
 }
 
 //测试html文件解析库
@@ -408,10 +501,6 @@ void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *Exter
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(imagePressed:) name:@"CTDisplayViewImagePressedNotification" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(linkPressed:) name:@"CTDisplayViewLinkPressedNotification" object:nil];
     
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
 }
 
 - (void)imagePressed:(NSNotification*)notification {

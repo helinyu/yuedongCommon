@@ -31,7 +31,7 @@
 
 - (void)setImgs:(NSArray *)imgs {
     _imgs = imgs;
-    [self fillImagePosition];
+//    [self fillImagePosition];
 }
 
 - (void)fillImagePosition {
