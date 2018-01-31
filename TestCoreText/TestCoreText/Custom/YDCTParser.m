@@ -27,6 +27,12 @@ static CGFloat widthCallback(void* ref){
     return [(NSNumber*)[(__bridge NSDictionary*)ref objectForKey:@"width"] floatValue];
 }
 
+static void callbacksDealloc(void * refCon ) {
+    NSLog(@"dealloc :%@",refCon);
+    return;
+}
+
+
 // 返回属性
 + (NSMutableDictionary *)attributesWithConfig:(YDCTConfig *)config {
     CGFloat fontSize = config.fontSize;
@@ -71,7 +77,7 @@ static CGFloat widthCallback(void* ref){
                               imageArray:(NSMutableArray *)imageArray
                                linkArray:(NSMutableArray *)linkArray {
     NSData *data = [NSData dataWithContentsOfFile:path];
-    NSMutableAttributedString *result = [[NSMutableAttributedString alloc] init];
+    NSMutableAttributedString *result = [NSMutableAttributedString new];
     if (data) {
         NSArray *array = [NSJSONSerialization JSONObjectWithData:data
                                                          options:NSJSONReadingAllowFragments
@@ -87,7 +93,7 @@ static CGFloat widthCallback(void* ref){
                     [result appendAttributedString:as];
                 } else if ([type isEqualToString:@"img"]) {
                     // 创建 CoreTextImageData
-                    YDCTImageModel *imageData = [[YDCTImageModel alloc] init];
+                    YDCTImageModel *imageData = [YDCTImageModel new];
                     imageData.name = dict[@"name"];
                     imageData.postion = [result length];
                     [imageArray addObject:imageData];
@@ -116,13 +122,13 @@ static CGFloat widthCallback(void* ref){
 
 + (NSAttributedString *)parseAttributedContentFromNSDictionary:(NSDictionary *)dict
                                                         config:(YDCTConfig*)config {
-    NSMutableDictionary *attributes = [self attributesWithConfig:config];
+    NSMutableDictionary *attributes = [self attributesWithConfig:config]; // 属性字典
     // set color
     UIColor *color = [self colorFromTemplate:dict[@"color"]];
     if (color) {
         attributes[(id)kCTForegroundColorAttributeName] = (id)color.CGColor;
     }
-    // set font size
+    // set font sizeCTTextTab
     CGFloat fontSize = [dict[@"size"] floatValue];
     if (fontSize > 0) {
         CTFontRef fontRef = CTFontCreateWithName((CFStringRef)@"ArialMT", fontSize, NULL);
@@ -148,16 +154,18 @@ static CGFloat widthCallback(void* ref){
 + (NSAttributedString *)parseImageDataFromNSDictionary:(NSDictionary *)dict config:(YDCTConfig*)config {
     CTRunDelegateCallbacks callbacks;
     memset(&callbacks, 0, sizeof(CTRunDelegateCallbacks));
-    callbacks.version = kCTRunDelegateVersion1;
+    callbacks.version = kCTRunDelegateCurrentVersion;
     callbacks.getAscent = ascentCallback;
     callbacks.getDescent = descentCallback;
     callbacks.getWidth = widthCallback;
-    CTRunDelegateRef delegate = CTRunDelegateCreate(&callbacks, (__bridge void *)(dict));
+    CTRunDelegateRef delegate = CTRunDelegateCreate(&callbacks, (__bridge void * _Nullable)(dict));
     
     // 使用0xFFFC作为空白的占位符
-    unichar objectReplacementChar = 0xFFFC;
-    NSString * content = [NSString stringWithCharacters:&objectReplacementChar length:1];
-    NSDictionary * attributes = [self attributesWithConfig:config];
+    unichar objectReplacementChar = 0xFFFC; //空白符号
+    NSString *content = [NSString stringWithCharacters:&objectReplacementChar length:1];
+    NSDictionary *attributes = [self attributesWithConfig:config];
+//    添加了一个空白的符号
+    
     NSMutableAttributedString * space = [[NSMutableAttributedString alloc] initWithString:content attributes:attributes];
     CFAttributedStringSetAttribute((CFMutableAttributedStringRef)space, CFRangeMake(0, 1), kCTRunDelegateAttributeName, delegate);
     CFRelease(delegate);
@@ -174,7 +182,7 @@ static CGFloat widthCallback(void* ref){
     CGFloat textHeight = coreTextSize.height;
     
     // 生成CTFrameRef实例
-    CTFrameRef frame = [self createFrameWithFramesetter:framesetter config:config height:textHeight];
+    CTFrameRef frame = [self createFrameWithFramesetter:framesetter config:config height:textHeight]; // 获取frame
     
     // 将生成好的CTFrameRef实例和计算好的缓制高度保存到CoreTextData实例中，最后返回YDCTModel实例
     YDCTModel *data = [[YDCTModel alloc] init];

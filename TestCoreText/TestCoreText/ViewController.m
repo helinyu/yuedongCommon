@@ -26,11 +26,14 @@
 #import "YDDisplayView.h"
 
 #import <libxml/HTMLparser.h>
+#import "YDTest10ViewController.h"
 
 #import "Masonry.h"
 #import "NSString+GHTransformation.h"
+#import "YDCollectionReusableView.h"
+#import <CoreText/CoreText.h>
 
-@interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate>
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 // html 页面解析
 {
     htmlSAXHandler _handler; //处理
@@ -57,6 +60,16 @@
 
 //for test6
 @property (nonatomic, strong) UILabel *test6Label;
+
+//for test8
+//@property (nonatomic, strong) UITableView *tableView;
+
+//for test9
+@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) UICollectionViewFlowLayout *layout;
+
+//for test10
+@property (nonatomic, strong) UIButton *raBtn;
 
 @end
 
@@ -162,9 +175,114 @@ void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *Exter
     // [self test2];
 //    [self test3];
 //    [self test4];
-    [self test5];
+//    [self test5];
 //    [self test6];
 //    [self test7];
+//    [self test8];
+    [self test9];
+//    [self test10];
+}
+
+- (void)test10 {
+    _raBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.view addSubview:_raBtn];
+    [_raBtn setTitle:@"test10" forState:UIControlStateNormal];
+    [_raBtn addTarget:self action:@selector(onRATap:) forControlEvents:UIControlEventTouchUpInside];
+    [_raBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.equalTo(self.view).offset(100);
+        make.width.mas_equalTo(100);
+        make.height.mas_equalTo(40);
+    }];
+}
+
+- (void)onRATap:(UIButton *)sender {
+    YDTest10ViewController *vc =[YDTest10ViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)test9 {
+    _layout = [UICollectionViewFlowLayout new];
+    _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:_layout];
+    _collectionView.backgroundColor = [UIColor whiteColor];
+    _layout.itemSize = CGSizeMake(80, 80);
+    _layout.minimumLineSpacing = 8.f;
+    _layout.minimumInteritemSpacing = 8.f;
+    _layout.estimatedItemSize = CGSizeMake(100, 100);
+//    preferredLayoutAttributesFittingAttributes 和这个有关
+    _layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+//    _layout.footerReferenceSize = CGSizeMake(self.view.bounds.size.width, 100.f);
+    _layout.headerReferenceSize = CGSizeMake(self.view.bounds.size.width, 80.f);
+    _layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+    _layout.sectionInsetReference = UICollectionViewFlowLayoutSectionInsetFromContentInset; //11
+    _layout.sectionHeadersPinToVisibleBounds = YES;// 9
+    _layout.sectionFootersPinToVisibleBounds = YES; //9
+    
+    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([UICollectionViewCell class])];
+    [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([UICollectionReusableView class])];
+    [_collectionView registerClass:[YDCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([YDCollectionReusableView class])];
+    _collectionView.dataSource = self;
+    _collectionView.delegate = self;
+    [self.view addSubview:_collectionView];
+}
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 2;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 10;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([UICollectionViewCell class]) forIndexPath:indexPath];
+    cell.contentView.backgroundColor = [UIColor yellowColor];
+    return cell;
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    if ([kind isEqualToString:UICollectionElementKindSectionFooter]) {
+        return nil;
+    }
+    
+    UICollectionReusableView *reuserView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([UICollectionReusableView class]) forIndexPath:indexPath];
+    if (indexPath.section == 0) {
+        reuserView.backgroundColor  = [UIColor yellowColor];
+        return reuserView;
+    }
+    else {
+        YDCollectionReusableView *resuseView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([YDCollectionReusableView class]) forIndexPath:indexPath];
+        resuseView.backgroundColor = [UIColor blueColor];
+        return resuseView;
+    }
+}
+
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    return _layout.headerReferenceSize;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section {
+    return _layout.footerReferenceSize;
+}
+
+//- (NSIndexPath *)collectionView:(UICollectionView *)collectionView targetIndexPathForMoveFromItemAtIndexPath:(NSIndexPath *)originalIndexPath toProposedIndexPath:(NSIndexPath *)proposedIndexPath {
+//
+//}
+
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+//    return CGSizeMake(100.f, 100.f);
+//}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"did selected item ");
+}
+
+- (void)test8 {
+    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
+    [self.view addSubview:_tableView];
 }
 
 - (void)test7 {
@@ -460,7 +578,12 @@ void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *Exter
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];
     cell.textLabel.text = @"asjdkf";
+    cell.backgroundColor = [UIColor yellowColor];
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60.f;
 }
 
 - (void)test2 {

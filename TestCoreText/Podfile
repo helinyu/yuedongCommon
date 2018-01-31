@@ -6,6 +6,7 @@ target 'TestCoreText' do
   # use_frameworks!
    pod 'DTCoreText', '~> 1.6.21'
    pod 'Masonry', '~> 1.1.0'
+   pod "RACollectionViewReorderableTripletLayout"
 
 
   # Pods for TestCoreText

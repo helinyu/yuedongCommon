@@ -62,6 +62,7 @@
             }
             
             NSDictionary * metaDic = CTRunDelegateGetRefCon(delegate);
+            // 判断代理字典 也就是获取delegate中的ref的字典消息，看看是不是字典 ，如果是在进行处理
             if (![metaDic isKindOfClass:[NSDictionary class]]) {
                 continue;
             }

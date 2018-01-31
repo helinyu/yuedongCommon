@@ -10,6 +10,9 @@
 		0438E73E201EC60D0032E8F8 /* YDDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E73D201EC60D0032E8F8 /* YDDisplayView.m */; };
 		0438E74A201F13280032E8F8 /* NSString+GHTransformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E749201F13280032E8F8 /* NSString+GHTransformation.m */; };
 		0438E74C201F27450032E8F8 /* Strawberry Blossom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0438E74B201F27450032E8F8 /* Strawberry Blossom.ttf */; };
+		0438E7702021CE020032E8F8 /* YDCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E76F2021CE020032E8F8 /* YDCollectionReusableView.m */; };
+		0438E7742021D8600032E8F8 /* YDTest10ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E7732021D8600032E8F8 /* YDTest10ViewController.m */; };
+		0438E7772021DB510032E8F8 /* YDCustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E7762021DB510032E8F8 /* YDCustomCollectionViewCell.m */; };
 		0441EF8D2015C9A80048F881 /* YDCTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441EF8C2015C9A80048F881 /* YDCTView.m */; };
 		0441EF902015D0520048F881 /* YDCTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441EF8F2015D0520048F881 /* YDCTModel.m */; };
 		0441EF922015D1C40048F881 /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = 0441EF912015D1C40048F881 /* content.json */; };
@@ -104,6 +107,12 @@
 		0438E748201F13280032E8F8 /* NSString+GHTransformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+GHTransformation.h"; sourceTree = "<group>"; };
 		0438E749201F13280032E8F8 /* NSString+GHTransformation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+GHTransformation.m"; sourceTree = "<group>"; };
 		0438E74B201F27450032E8F8 /* Strawberry Blossom.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Strawberry Blossom.ttf"; sourceTree = "<group>"; };
+		0438E76E2021CE020032E8F8 /* YDCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCollectionReusableView.h; sourceTree = "<group>"; };
+		0438E76F2021CE020032E8F8 /* YDCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDCollectionReusableView.m; sourceTree = "<group>"; };
+		0438E7722021D8600032E8F8 /* YDTest10ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest10ViewController.h; sourceTree = "<group>"; };
+		0438E7732021D8600032E8F8 /* YDTest10ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest10ViewController.m; sourceTree = "<group>"; };
+		0438E7752021DB510032E8F8 /* YDCustomCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCustomCollectionViewCell.h; sourceTree = "<group>"; };
+		0438E7762021DB510032E8F8 /* YDCustomCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDCustomCollectionViewCell.m; sourceTree = "<group>"; };
 		0441EF8B2015C9A80048F881 /* YDCTView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCTView.h; sourceTree = "<group>"; };
 		0441EF8C2015C9A80048F881 /* YDCTView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDCTView.m; sourceTree = "<group>"; };
 		0441EF8E2015D0520048F881 /* YDCTModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCTModel.h; sourceTree = "<group>"; };
@@ -238,6 +247,17 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
+		0438E7712021D8500032E8F8 /* test10 */ = {
+			isa = PBXGroup;
+			children = (
+				0438E7722021D8600032E8F8 /* YDTest10ViewController.h */,
+				0438E7732021D8600032E8F8 /* YDTest10ViewController.m */,
+				0438E7752021DB510032E8F8 /* YDCustomCollectionViewCell.h */,
+				0438E7762021DB510032E8F8 /* YDCustomCollectionViewCell.m */,
+			);
+			path = test10;
+			sourceTree = "<group>";
+		};
 		0441EF8A2015C9880048F881 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,12 +305,15 @@
 		04FF49092015910500C02EEF /* TestCoreText */ = {
 			isa = PBXGroup;
 			children = (
+				0438E7712021D8500032E8F8 /* test10 */,
 				0441EF8A2015C9880048F881 /* Custom */,
 				04FF493D2015917700C02EEF /* Views */,
 				04FF490A2015910500C02EEF /* AppDelegate.h */,
 				04FF490B2015910500C02EEF /* AppDelegate.m */,
 				04FF490D2015910500C02EEF /* ViewController.h */,
 				04FF490E2015910500C02EEF /* ViewController.m */,
+				0438E76E2021CE020032E8F8 /* YDCollectionReusableView.h */,
+				0438E76F2021CE020032E8F8 /* YDCollectionReusableView.m */,
 				04FF49102015910500C02EEF /* Main.storyboard */,
 				04FFAF0B2019C54D00E54521 /* YDHeaderView.h */,
 				04FFAF0C2019C54D00E54521 /* YDHeaderView.m */,
@@ -751,6 +774,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0438E7702021CE020032E8F8 /* YDCollectionReusableView.m in Sources */,
+				0438E7742021D8600032E8F8 /* YDTest10ViewController.m in Sources */,
 				04FFAF0D2019C54D00E54521 /* YDHeaderView.m in Sources */,
 				0441EF9D2015D44B0048F881 /* YDCTImageModel.m in Sources */,
 				0441EFA32015D5D90048F881 /* YDCTUtils.m in Sources */,
@@ -761,6 +786,7 @@
 				0441EFA02015D53C0048F881 /* YDCTLinkModel.m in Sources */,
 				0441EFAA2015DB440048F881 /* YDCTParser.m in Sources */,
 				04FFAF0A2019A8EE00E54521 /* YDTransView.m in Sources */,
+				0438E7772021DB510032E8F8 /* YDCustomCollectionViewCell.m in Sources */,
 				0441EF8D2015C9A80048F881 /* YDCTView.m in Sources */,
 				04FF490C2015910500C02EEF /* AppDelegate.m in Sources */,
 				0441EFA62015DA1A0048F881 /* YDCTConfig.m in Sources */,
