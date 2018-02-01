@@ -12,13 +12,10 @@
 
 @property (nonatomic, assign) NSInteger numberOfCells;
 @property (nonatomic, assign) CGFloat numberOfLines;
-@property (nonatomic, assign) CGFloat itemSpacing;
-@property (nonatomic, assign) CGFloat lineSpacing;
 @property (nonatomic, assign) CGFloat sectionSpacing;
 @property (nonatomic, assign) CGSize collectionViewSize;
-@property (nonatomic, assign) UIEdgeInsets insets;
 @property (nonatomic, assign) CGRect oldRect;
-@property (nonatomic, strong) NSArray *oldArray;
+//@property (nonatomic, strong) NSArray *oldArray;
 @property (nonatomic, strong) NSMutableArray *largeCellSizeArray;
 @property (nonatomic, strong) NSMutableArray *smallCellSizeArray;
 
@@ -32,24 +29,24 @@
 {
     [super prepareLayout];
     
-    //collection view size
     _collectionViewSize = self.collectionView.bounds.size;
-    //some values
-    _itemSpacing = 0;
-    _lineSpacing = 0;
     _sectionSpacing = 0;
-    _insets = UIEdgeInsetsMake(0, 0, 0, 0);
+//    基本的结构
+    
     if ([self.delegate respondsToSelector:@selector(minimumInteritemSpacingForCollectionView:)]) {
-        _itemSpacing = [self.delegate minimumInteritemSpacingForCollectionView:self.collectionView];
+        self.minimumInteritemSpacing = [self.delegate minimumInteritemSpacingForCollectionView:self.collectionView];
     }
+    
     if ([self.delegate respondsToSelector:@selector(minimumLineSpacingForCollectionView:)]) {
-        _lineSpacing = [self.delegate minimumLineSpacingForCollectionView:self.collectionView];
+        self.minimumLineSpacing = [self.delegate minimumLineSpacingForCollectionView:self.collectionView];
     }
+    
     if ([self.delegate respondsToSelector:@selector(sectionSpacingForCollectionView:)]) {
         _sectionSpacing = [self.delegate sectionSpacingForCollectionView:self.collectionView];
     }
+    
     if ([self.delegate respondsToSelector:@selector(insetsForCollectionView:)]) {
-        _insets = [self.delegate insetsForCollectionView:self.collectionView];
+        self.sectionInset = [self.delegate insetsForCollectionView:self.collectionView];
     }
 }
 
@@ -77,23 +74,30 @@
     }
     
     contentHeight += insets.top + insets.bottom + sectionSpacing * (numberOfSections - 1);
+//    先加入空隙的高度
+// sectionSpacing * (numberOfSections - 1) 这个只是多个距离之间大小
     
     CGFloat lastSmallCellHeight = 0;
     for (NSInteger i = 0; i < numberOfSections; i++) {
         NSInteger numberOfLines = ceil((CGFloat)[self.collectionView numberOfItemsInSection:i] / 3.f);
+//         计算出函数（向上取整）
         
         CGFloat largeCellSideLength = (2.f * (collectionViewSize.width - insets.left - insets.right) - itemSpacing) / 3.f;
         CGFloat smallCellSideLength = (largeCellSideLength - itemSpacing) / 2.f;
+//        大的边 是小边的两倍
+        
         CGSize largeCellSize = CGSizeMake(largeCellSideLength, largeCellSideLength);
         CGSize smallCellSize = CGSizeMake(smallCellSideLength, smallCellSideLength);
+        
         if ([self.delegate respondsToSelector:@selector(collectionView:sizeForLargeItemsInSection:)]) {
             if (!CGSizeEqualToSize([self.delegate collectionView:self.collectionView sizeForLargeItemsInSection:i], RACollectionViewTripletLayoutStyleSquare)) {
                 largeCellSize = [self.delegate collectionView:self.collectionView sizeForLargeItemsInSection:i];
-                smallCellSize = CGSizeMake(collectionViewSize.width - largeCellSize.width - itemSpacing - insets.left - insets.right, (largeCellSize.height / 2.f) - (itemSpacing / 2.f));
+                smallCellSize = CGSizeMake(collectionViewSize.width - largeCellSize.width - itemSpacing - insets.left - insets.right, (largeCellSize.height- itemSpacing)/ 2.f);
             }
         }
         lastSmallCellHeight = smallCellSize.height;
         CGFloat largeCellHeight = largeCellSize.height;
+        
         CGFloat lineHeight = numberOfLines * (largeCellHeight + lineSpacing) - lineSpacing;
         contentHeight += lineHeight;
     }
@@ -110,6 +114,7 @@
 {
     self.collectionView.delegate = delegate;
 }
+// delegate传递，注意这样的写法很常见
 
 - (id<RACollectionViewDelegateTripletLayout>)delegate
 {
@@ -118,26 +123,26 @@
 
 - (CGSize)collectionViewContentSize
 {
-    CGSize contentSize = CGSizeMake(_collectionViewSize.width, 0);
-    for (NSInteger i = 0; i < self.collectionView.numberOfSections; i++) {
-        if ([self.collectionView numberOfItemsInSection:i] == 0) {
-            break;
-        }
-        NSInteger numberOfLines = ceil((CGFloat)[self.collectionView numberOfItemsInSection:i] / 3.f);
-        CGFloat lineHeight = numberOfLines * ([_largeCellSizeArray[i] CGSizeValue].height + _lineSpacing) - _lineSpacing;
-        contentSize.height += lineHeight;
-    }
-    contentSize.height += _insets.top + _insets.bottom + _sectionSpacing * (self.collectionView.numberOfSections - 1);
-    NSInteger numberOfItemsInLastSection = [self.collectionView numberOfItemsInSection:self.collectionView.numberOfSections - 1];
-    if ((numberOfItemsInLastSection - 1) % 3 == 0 && (numberOfItemsInLastSection - 1) % 6 != 0) {
-        contentSize.height -= [_smallCellSizeArray[self.collectionView.numberOfSections - 1] CGSizeValue].height + _itemSpacing;
-    }
-    return contentSize;
+//    CGSize contentSize = CGSizeMake(_collectionViewSize.width, 0);
+//    for (NSInteger i = 0; i < self.collectionView.numberOfSections; i++) {
+//        if ([self.collectionView numberOfItemsInSection:i] == 0) {
+//            break;
+//        }
+//        NSInteger numberOfLines = ceil((CGFloat)[self.collectionView numberOfItemsInSection:i] / 3.f);
+//        CGFloat lineHeight = numberOfLines * ([_largeCellSizeArray[i] CGSizeValue].height + self.minimumLineSpacing) - self.minimumLineSpacing;
+//        contentSize.height += lineHeight;
+//    }
+//    contentSize.height += self.sectionInset.top + self.sectionInset.bottom + _sectionSpacing * (self.collectionView.numberOfSections - 1);
+//    NSInteger numberOfItemsInLastSection = [self.collectionView numberOfItemsInSection:self.collectionView.numberOfSections - 1];
+//    if ((numberOfItemsInLastSection - 1) % 3 == 0 && (numberOfItemsInLastSection - 1) % 6 != 0) {
+//        contentSize.height -= [_smallCellSizeArray[self.collectionView.numberOfSections - 1] CGSizeValue].height + self.minimumInteritemSpacing;
+//    }
+    return CGSizeMake(_collectionViewSize.width, self.contentHeight);
 }
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
-    _oldRect = rect;
+//    _oldRect = rect;
     NSMutableArray *attributesArray = [NSMutableArray array];
     for (NSInteger i = 0; i < self.collectionView.numberOfSections; i++) {
         NSInteger numberOfCellsInSection = [self.collectionView numberOfItemsInSection:i];
@@ -149,23 +154,23 @@
             }
         }
     }
-    _oldArray = attributesArray;
     return  attributesArray;
 }
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewLayoutAttributes *attribute = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+    UICollectionViewLayoutAttributes *attribute = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];\
+//    这里主要是填充attribute的属性；
 
     //cellSize
-    CGFloat largeCellSideLength = (2.f * (_collectionViewSize.width - _insets.left - _insets.right) - _itemSpacing) / 3.f;
-    CGFloat smallCellSideLength = (largeCellSideLength - _itemSpacing) / 2.f;
+    CGFloat largeCellSideLength = (2.f * (_collectionViewSize.width - self.sectionInset.left - self.sectionInset.right) - self.minimumInteritemSpacing) / 3.f;
+    CGFloat smallCellSideLength = (largeCellSideLength - self.minimumInteritemSpacing) / 2.f;
     _largeCellSize = CGSizeMake(largeCellSideLength, largeCellSideLength);
     _smallCellSize = CGSizeMake(smallCellSideLength, smallCellSideLength);
     if ([self.delegate respondsToSelector:@selector(collectionView:sizeForLargeItemsInSection:)]) {
         if (!CGSizeEqualToSize([self.delegate collectionView:self.collectionView sizeForLargeItemsInSection:indexPath.section], RACollectionViewTripletLayoutStyleSquare)) {
             _largeCellSize = [self.delegate collectionView:self.collectionView sizeForLargeItemsInSection:indexPath.section];
-            _smallCellSize = CGSizeMake(_collectionViewSize.width - _largeCellSize.width - _itemSpacing - _insets.left - _insets.right, (_largeCellSize.height / 2.f) - (_itemSpacing / 2.f));
+            _smallCellSize = CGSizeMake(_collectionViewSize.width - _largeCellSize.width - self.minimumInteritemSpacing - self.sectionInset.left - self.sectionInset.right, (_largeCellSize.height / 2.f) - (self.minimumInteritemSpacing / 2.f));
         }
     }
     if (!_largeCellSizeArray) {
@@ -184,39 +189,47 @@
         CGFloat largeCellHeight = [_largeCellSizeArray[i] CGSizeValue].height;
         CGFloat smallCellHeight = [_smallCellSizeArray[i] CGSizeValue].height;
         NSInteger lines = ceil((CGFloat)cellsCount / 3.f);
-        sectionHeight += lines * (_lineSpacing + largeCellHeight) + _sectionSpacing;
+        sectionHeight += lines * (self.minimumLineSpacing + largeCellHeight) + _sectionSpacing;
         if ((cellsCount - 1) % 3 == 0 && (cellsCount - 1) % 6 != 0) {
-            sectionHeight -= smallCellHeight + _itemSpacing;
+            sectionHeight -= smallCellHeight + self.minimumInteritemSpacing;
         }
     }
     if (sectionHeight > 0) {
-        sectionHeight -= _lineSpacing;
+        sectionHeight -= self.minimumLineSpacing;
     }
 
     NSInteger line = indexPath.item / 3;
-    CGFloat lineSpaceForIndexPath = _lineSpacing * line;
-    CGFloat lineOriginY = _largeCellSize.height * line + sectionHeight + lineSpaceForIndexPath + _insets.top;
-    CGFloat rightSideLargeCellOriginX = _collectionViewSize.width - _largeCellSize.width - _insets.right;
-    CGFloat rightSideSmallCellOriginX = _collectionViewSize.width - _smallCellSize.width - _insets.right;
+    CGFloat lineSpaceForIndexPath = self.minimumLineSpacing * line;
+    CGFloat lineOriginY = _largeCellSize.height * line + sectionHeight + lineSpaceForIndexPath + self.sectionInset.top;
+    CGFloat rightSideLargeCellOriginX = _collectionViewSize.width - _largeCellSize.width - self.sectionInset.right;
+    CGFloat rightSideSmallCellOriginX = _collectionViewSize.width - _smallCellSize.width - self.sectionInset.right;
     
     if (indexPath.item % 6 == 0) {
-        attribute.frame = CGRectMake(_insets.left, lineOriginY, _largeCellSize.width, _largeCellSize.height);
+        attribute.frame = CGRectMake(self.sectionInset.left, lineOriginY, _largeCellSize.width, _largeCellSize.height);
     }else if ((indexPath.item + 1) % 6 == 0) {
         attribute.frame = CGRectMake(rightSideLargeCellOriginX, lineOriginY, _largeCellSize.width, _largeCellSize.height);
     }else if (line % 2 == 0) {
         if (indexPath.item % 2 != 0) {
             attribute.frame = CGRectMake(rightSideSmallCellOriginX, lineOriginY, _smallCellSize.width, _smallCellSize.height);
         }else {
-            attribute.frame =CGRectMake(rightSideSmallCellOriginX, lineOriginY + _smallCellSize.height + _itemSpacing, _smallCellSize.width, _smallCellSize.height);
+            attribute.frame =CGRectMake(rightSideSmallCellOriginX, lineOriginY + _smallCellSize.height + self.minimumInteritemSpacing, _smallCellSize.width, _smallCellSize.height);
         }
     }else {
         if (indexPath.item % 2 != 0) {
-            attribute.frame = CGRectMake(_insets.left, lineOriginY, _smallCellSize.width, _smallCellSize.height);
+            attribute.frame = CGRectMake(self.sectionInset.left, lineOriginY, _smallCellSize.width, _smallCellSize.height);
         }else {
-            attribute.frame =CGRectMake(_insets.left, lineOriginY + _smallCellSize.height + _itemSpacing, _smallCellSize.width, _smallCellSize.height);
+            attribute.frame =CGRectMake(self.sectionInset.left, lineOriginY + _smallCellSize.height + self.minimumInteritemSpacing, _smallCellSize.width, _smallCellSize.height);
         }
     }
-    return attribute;
+    return attribute;// 主要是设置frame
 }
+
+//- (UIUserInterfaceLayoutDirection)developmentLayoutDirection {
+//    return UIUserInterfaceLayoutDirectionRightToLeft;
+//}
+//
+//- (BOOL)flipsHorizontallyInOppositeLayoutDirection {
+//    return YES;
+//}
 
 @end

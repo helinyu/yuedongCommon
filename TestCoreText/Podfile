@@ -7,8 +7,7 @@ target 'TestCoreText' do
    pod 'DTCoreText', '~> 1.6.21'
    pod 'Masonry', '~> 1.1.0'
    pod "RACollectionViewReorderableTripletLayout"
-
-
+   pod "BMDragCellCollectionView"
   # Pods for TestCoreText
 
   target 'TestCoreTextTests' do

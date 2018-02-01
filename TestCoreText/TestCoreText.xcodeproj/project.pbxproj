@@ -13,6 +13,7 @@
 		0438E7702021CE020032E8F8 /* YDCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E76F2021CE020032E8F8 /* YDCollectionReusableView.m */; };
 		0438E7742021D8600032E8F8 /* YDTest10ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E7732021D8600032E8F8 /* YDTest10ViewController.m */; };
 		0438E7772021DB510032E8F8 /* YDCustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E7762021DB510032E8F8 /* YDCustomCollectionViewCell.m */; };
+		0438E77A2022B0FD0032E8F8 /* YDTest11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E7792022B0FD0032E8F8 /* YDTest11ViewController.m */; };
 		0441EF8D2015C9A80048F881 /* YDCTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441EF8C2015C9A80048F881 /* YDCTView.m */; };
 		0441EF902015D0520048F881 /* YDCTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441EF8F2015D0520048F881 /* YDCTModel.m */; };
 		0441EF922015D1C40048F881 /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = 0441EF912015D1C40048F881 /* content.json */; };
@@ -113,6 +114,8 @@
 		0438E7732021D8600032E8F8 /* YDTest10ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest10ViewController.m; sourceTree = "<group>"; };
 		0438E7752021DB510032E8F8 /* YDCustomCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCustomCollectionViewCell.h; sourceTree = "<group>"; };
 		0438E7762021DB510032E8F8 /* YDCustomCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDCustomCollectionViewCell.m; sourceTree = "<group>"; };
+		0438E7782022B0FD0032E8F8 /* YDTest11ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest11ViewController.h; sourceTree = "<group>"; };
+		0438E7792022B0FD0032E8F8 /* YDTest11ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest11ViewController.m; sourceTree = "<group>"; };
 		0441EF8B2015C9A80048F881 /* YDCTView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCTView.h; sourceTree = "<group>"; };
 		0441EF8C2015C9A80048F881 /* YDCTView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDCTView.m; sourceTree = "<group>"; };
 		0441EF8E2015D0520048F881 /* YDCTModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCTModel.h; sourceTree = "<group>"; };
@@ -252,6 +255,8 @@
 			children = (
 				0438E7722021D8600032E8F8 /* YDTest10ViewController.h */,
 				0438E7732021D8600032E8F8 /* YDTest10ViewController.m */,
+				0438E7782022B0FD0032E8F8 /* YDTest11ViewController.h */,
+				0438E7792022B0FD0032E8F8 /* YDTest11ViewController.m */,
 				0438E7752021DB510032E8F8 /* YDCustomCollectionViewCell.h */,
 				0438E7762021DB510032E8F8 /* YDCustomCollectionViewCell.m */,
 			);
@@ -776,6 +781,7 @@
 			files = (
 				0438E7702021CE020032E8F8 /* YDCollectionReusableView.m in Sources */,
 				0438E7742021D8600032E8F8 /* YDTest10ViewController.m in Sources */,
+				0438E77A2022B0FD0032E8F8 /* YDTest11ViewController.m in Sources */,
 				04FFAF0D2019C54D00E54521 /* YDHeaderView.m in Sources */,
 				0441EF9D2015D44B0048F881 /* YDCTImageModel.m in Sources */,
 				0441EFA32015D5D90048F881 /* YDCTUtils.m in Sources */,

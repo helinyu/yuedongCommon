@@ -33,6 +33,8 @@
 #import "YDCollectionReusableView.h"
 #import <CoreText/CoreText.h>
 
+#import "YDTest11ViewController.h"
+
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 // html 页面解析
 {
@@ -172,27 +174,36 @@ void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *Exter
     [super viewDidLoad];
 
 //    [self test0];
-    // [self test2];
+//    [self test2];
 //    [self test3];
 //    [self test4];
 //    [self test5];
 //    [self test6];
 //    [self test7];
 //    [self test8];
-    [self test9];
-//    [self test10];
+//    [self test9];
+    [self test10];
 }
 
 - (void)test10 {
     _raBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    _raBtn.frame = CGRectMake(0, 100, 100, 40);
+    _raBtn.backgroundColor = [UIColor redColor];
     [self.view addSubview:_raBtn];
     [_raBtn setTitle:@"test10" forState:UIControlStateNormal];
     [_raBtn addTarget:self action:@selector(onRATap:) forControlEvents:UIControlEventTouchUpInside];
-    [_raBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.equalTo(self.view).offset(100);
-        make.width.mas_equalTo(100);
-        make.height.mas_equalTo(40);
-    }];
+    
+    UIButton *raBtn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    raBtn1.frame = CGRectMake(0, 150, 100, 40);
+    raBtn1.backgroundColor = [UIColor redColor];
+    [self.view addSubview:raBtn1];
+    [raBtn1 setTitle:@"测试collectionView 转化为TableView" forState:UIControlStateNormal];
+    [raBtn1 addTarget:self action:@selector(onRATap1:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)onRATap1:(id)sender {
+    YDTest11ViewController *vc = [YDTest11ViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)onRATap:(UIButton *)sender {
@@ -244,8 +255,8 @@ void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *Exter
         return nil;
     }
     
-    UICollectionReusableView *reuserView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([UICollectionReusableView class]) forIndexPath:indexPath];
     if (indexPath.section == 0) {
+        UICollectionReusableView *reuserView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([UICollectionReusableView class]) forIndexPath:indexPath];
         reuserView.backgroundColor  = [UIColor yellowColor];
         return reuserView;
     }
