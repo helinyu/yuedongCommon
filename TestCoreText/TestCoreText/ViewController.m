@@ -30,12 +30,18 @@
 
 #import "Masonry.h"
 #import "NSString+GHTransformation.h"
-#import "YDCollectionReusableView.h"
+#import "YDCollectionNullReusableView.h"
 #import <CoreText/CoreText.h>
 
 #import "YDTest11ViewController.h"
+#import <YYAsyncLayer.h>
+#import "YDTest12ViewController.h"
 
-@interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+#import "YDTest13ViewViewController.h"
+#import "YDCollectionNullReusableView.h"
+#import "YDCollectionReusableView.h"
+
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,CALayerDelegate,YYAsyncLayerDelegate>
 // html 页面解析
 {
     htmlSAXHandler _handler; //处理
@@ -72,6 +78,12 @@
 
 //for test10
 @property (nonatomic, strong) UIButton *raBtn;
+
+// test11
+//@property (nonatomic, strong) YYAsyncLayer *sonLayer;
+
+// test13
+
 
 @end
 
@@ -182,7 +194,37 @@ void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *Exter
 //    [self test7];
 //    [self test8];
 //    [self test9];
-    [self test10];
+//    [self test10];
+//    [self test11];
+//    [self test12];
+    [self test13];
+}
+
+- (void)test13 {
+    YDTest13ViewViewController *vc = [YDTest13ViewViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)test12 {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn addTarget:self action:@selector(onTest12) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    btn.frame = CGRectMake(100, 100, 100, 40);
+    btn.backgroundColor = [UIColor redColor];
+    [btn setTitle:@"test12" forState:UIControlStateNormal];
+}
+
+- (void)onTest12 {
+    YDTest12ViewController *vc = [YDTest12ViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)test11 {
+//    _sonLayer = [YYAsyncLayer new];
+//    _sonLayer.delegate = self;
+//    [self.view.layer addSublayer:_sonLayer];
+//    _sonLayer.frame = CGRectMake(0, 100, 200, 100);
+//    _sonLayer.backgroundColor = [UIColor yellowColor].CGColor;
 }
 
 - (void)test10 {
@@ -229,7 +271,7 @@ void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *Exter
     _layout.sectionFootersPinToVisibleBounds = YES; //9
     
     [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([UICollectionViewCell class])];
-    [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([UICollectionReusableView class])];
+    [_collectionView registerClass:[YDCollectionNullReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([YDCollectionNullReusableView class])];
     [_collectionView registerClass:[YDCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([YDCollectionReusableView class])];
     _collectionView.dataSource = self;
     _collectionView.delegate = self;
@@ -255,13 +297,13 @@ void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *Exter
         return nil;
     }
     
+    YDCollectionNullReusableView *reuserView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([YDCollectionNullReusableView class]) forIndexPath:indexPath];
     if (indexPath.section == 0) {
-        UICollectionReusableView *reuserView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([UICollectionReusableView class]) forIndexPath:indexPath];
         reuserView.backgroundColor  = [UIColor yellowColor];
         return reuserView;
     }
     else {
-        YDCollectionReusableView *resuseView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([YDCollectionReusableView class]) forIndexPath:indexPath];
+        YDCollectionNullReusableView *resuseView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([YDCollectionNullReusableView class]) forIndexPath:indexPath];
         resuseView.backgroundColor = [UIColor blueColor];
         return resuseView;
     }
@@ -360,8 +402,6 @@ void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *Exter
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-  
-    NSLog(@"accept");
 }
 
 - (void)test4 {

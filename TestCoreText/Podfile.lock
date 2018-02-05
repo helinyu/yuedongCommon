@@ -19,12 +19,18 @@ PODS:
     - DTFoundation/Core
   - Masonry (1.1.0)
   - RACollectionViewReorderableTripletLayout (0.1.0)
+  - UITableView+FDTemplateLayoutCell (1.6)
+  - YYAsyncLayer (1.0)
+  - YYDispatchQueuePool (1.0)
 
 DEPENDENCIES:
   - BMDragCellCollectionView
   - DTCoreText (~> 1.6.21)
   - Masonry (~> 1.1.0)
   - RACollectionViewReorderableTripletLayout
+  - UITableView+FDTemplateLayoutCell (~> 1.6)
+  - YYAsyncLayer (~> 1.0)
+  - YYDispatchQueuePool (~> 1.0)
 
 SPEC CHECKSUMS:
   BMDragCellCollectionView: 9bba624b3983b807895413315f7f1d4dce16d933
@@ -32,7 +38,10 @@ SPEC CHECKSUMS:
   DTFoundation: f03be9fd786f11e505bb8fc44e2a3732bf0917df
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   RACollectionViewReorderableTripletLayout: 929208004b2f8c2dde12326bf75b11e902959ddf
+  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  YYAsyncLayer: df6b01ebc695c5f6b4c15dd5c23fa3e081eb25c0
+  YYDispatchQueuePool: 3dfb2274bcc74207688dde8ac6f7bdd46871dd7b
 
-PODFILE CHECKSUM: 0418b0dbe7003474d7f99326505a177af87ad87f
+PODFILE CHECKSUM: 6a875b477271f6f3e19c4fb09fb5bf6e65cda73b
 
 COCOAPODS: 1.3.1

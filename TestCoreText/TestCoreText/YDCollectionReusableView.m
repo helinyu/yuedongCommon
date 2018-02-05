@@ -20,14 +20,18 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        if (!_label) {
-            _label = [UILabel new];
-            [self addSubview:_label];
-            _label.backgroundColor = [UIColor purpleColor];
-            _label.text = @"sdfashjd";
-        }
+//        if (!_label) {
+////            _label = [UILabel new];
+////            [self addSubview:_label];
+////            _label.backgroundColor = [UIColor purpleColor];
+////            _label.text = @"sdfashjd";
+//        }
     }
     return self;
+}
+
+- (void)prepareForReuse {
+    [super prepareForReuse];
 }
 
 @end
