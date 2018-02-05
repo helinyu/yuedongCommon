@@ -48,13 +48,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     YDTest13TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([YDTest13TableViewCell class]) forIndexPath:indexPath];
     if (indexPath.row %2 == 0) {
-        [cell prepareForReuse];
+//        [cell prepareForReuse];
         cell.msLabel.text = [NSString stringWithFormat:@"gh-R row :%zd",indexPath.row];
         cell.backgroundColor = [UIColor blueColor];
         cell.msLabel.backgroundColor = [UIColor greenColor];
     }
     else {
-        [cell prepareForReuse];
+//        [cell prepareForReuse];
         cell.titleLabel.text = [NSString stringWithFormat:@"gh-L row :%zd",indexPath.row];
         cell.backgroundColor = [UIColor purpleColor];
     }
