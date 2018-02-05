@@ -196,8 +196,8 @@ void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *Exter
 //    [self test9];
 //    [self test10];
 //    [self test11];
-//    [self test12];
-    [self test13];
+    [self test12];
+//    [self test13];
 }
 
 - (void)test13 {
@@ -296,9 +296,9 @@ void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *Exter
     if ([kind isEqualToString:UICollectionElementKindSectionFooter]) {
         return nil;
     }
-    
-    YDCollectionNullReusableView *reuserView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([YDCollectionNullReusableView class]) forIndexPath:indexPath];
+
     if (indexPath.section == 0) {
+        YDCollectionNullReusableView *reuserView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([YDCollectionNullReusableView class]) forIndexPath:indexPath];
         reuserView.backgroundColor  = [UIColor yellowColor];
         return reuserView;
     }

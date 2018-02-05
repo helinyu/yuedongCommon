@@ -36,6 +36,8 @@
 		048B423E2028482600FAEB19 /* YDCollectionNullReusableView.h in Sources */ = {isa = PBXBuildFile; fileRef = 048B42352028469700FAEB19 /* YDCollectionNullReusableView.h */; };
 		048B423F2028482600FAEB19 /* YDCollectionReusableView.h in Sources */ = {isa = PBXBuildFile; fileRef = 048B423C202847E400FAEB19 /* YDCollectionReusableView.h */; };
 		048B4242202849B600FAEB19 /* YDTest13TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B4241202849B600FAEB19 /* YDTest13TableViewCell.m */; };
+		048B4245202854ED00FAEB19 /* YDTest12Layer.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B4244202854ED00FAEB19 /* YDTest12Layer.m */; };
+		048B42482028562100FAEB19 /* YDAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B42472028562100FAEB19 /* YDAction.m */; };
 		04AAA638202830E5007AC7E9 /* YDTest12ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AAA637202830E5007AC7E9 /* YDTest12ViewController.m */; };
 		04AAA63B202835E8007AC7E9 /* YDTest12View.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AAA63A202835E8007AC7E9 /* YDTest12View.m */; };
 		04FF490C2015910500C02EEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FF490B2015910500C02EEF /* AppDelegate.m */; };
@@ -157,6 +159,10 @@
 		048B423C202847E400FAEB19 /* YDCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YDCollectionReusableView.h; path = TestCoreText/YDCollectionReusableView.h; sourceTree = SOURCE_ROOT; };
 		048B4240202849B600FAEB19 /* YDTest13TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest13TableViewCell.h; sourceTree = "<group>"; };
 		048B4241202849B600FAEB19 /* YDTest13TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest13TableViewCell.m; sourceTree = "<group>"; };
+		048B4243202854ED00FAEB19 /* YDTest12Layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest12Layer.h; sourceTree = "<group>"; };
+		048B4244202854ED00FAEB19 /* YDTest12Layer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest12Layer.m; sourceTree = "<group>"; };
+		048B42462028562100FAEB19 /* YDAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAction.h; sourceTree = "<group>"; };
+		048B42472028562100FAEB19 /* YDAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAction.m; sourceTree = "<group>"; };
 		04AAA636202830E5007AC7E9 /* YDTest12ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest12ViewController.h; sourceTree = "<group>"; };
 		04AAA637202830E5007AC7E9 /* YDTest12ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest12ViewController.m; sourceTree = "<group>"; };
 		04AAA639202835E8007AC7E9 /* YDTest12View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest12View.h; sourceTree = "<group>"; };
@@ -309,6 +315,10 @@
 				04AAA637202830E5007AC7E9 /* YDTest12ViewController.m */,
 				04AAA639202835E8007AC7E9 /* YDTest12View.h */,
 				04AAA63A202835E8007AC7E9 /* YDTest12View.m */,
+				048B4243202854ED00FAEB19 /* YDTest12Layer.h */,
+				048B4244202854ED00FAEB19 /* YDTest12Layer.m */,
+				048B42462028562100FAEB19 /* YDAction.h */,
+				048B42472028562100FAEB19 /* YDAction.m */,
 			);
 			path = test12;
 			sourceTree = "<group>";
@@ -822,8 +832,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048B42482028562100FAEB19 /* YDAction.m in Sources */,
 				048B423E2028482600FAEB19 /* YDCollectionNullReusableView.h in Sources */,
 				048B423F2028482600FAEB19 /* YDCollectionReusableView.h in Sources */,
+				048B4245202854ED00FAEB19 /* YDTest12Layer.m in Sources */,
 				0438E7742021D8600032E8F8 /* YDTest10ViewController.m in Sources */,
 				0438E77A2022B0FD0032E8F8 /* YDTest11ViewController.m in Sources */,
 				04FFAF0D2019C54D00E54521 /* YDHeaderView.m in Sources */,
