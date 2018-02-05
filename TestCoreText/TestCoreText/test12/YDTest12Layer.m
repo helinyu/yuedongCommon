@@ -33,7 +33,9 @@
         NSLog(@"必须输入方法");
         return;
     }
+//    SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"10");
     _actionBlock = action;
+//    XCODE_VERSION_GREATER_THAN_OR_EQUAL_TO_8;
 }
 
 - (nullable id<CAAction>)actionForLayer:(CALayer *)layer forKey:(NSString *)event {

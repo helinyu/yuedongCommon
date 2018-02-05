@@ -41,6 +41,13 @@
 #import "YDCollectionNullReusableView.h"
 #import "YDCollectionReusableView.h"
 
+#import "YDTest14ViewController.h"
+#import "YDTest15ViewController.h"
+#import <YYKeyboardManager.h>
+
+#import <YYTextView.h>
+#import "YDTest15ViewController.h"
+
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,CALayerDelegate,YYAsyncLayerDelegate>
 // html 页面解析
 {
@@ -84,6 +91,11 @@
 
 // test13
 
+//test14
+
+//test 15
+//@property (nonatomic, strong) YYTextView *textView;
+//@property (nonatomic, strong) YYTextLine *textLine;
 
 @end
 
@@ -196,8 +208,20 @@ void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *Exter
 //    [self test9];
 //    [self test10];
 //    [self test11];
-    [self test12];
+//    [self test12];
 //    [self test13];
+//    [self test14];
+    [self test15];
+}
+
+- (void)test15 {
+    YDTest15ViewController *vc = [YDTest15ViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)test14 {
+    YDTest14ViewController *vc = [YDTest14ViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)test13 {

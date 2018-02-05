@@ -11,6 +11,8 @@ target 'TestCoreText' do
    pod 'YYAsyncLayer', '~> 1.0'
    pod 'YYDispatchQueuePool', '~> 1.0'
    pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
+   pod 'YYKeyboardManager', '~> 1.0.1'
+   pod 'YYText', '~> 1.0.7'
 
   # Pods for TestCoreText
 

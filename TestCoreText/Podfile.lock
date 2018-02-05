@@ -22,6 +22,8 @@ PODS:
   - UITableView+FDTemplateLayoutCell (1.6)
   - YYAsyncLayer (1.0)
   - YYDispatchQueuePool (1.0)
+  - YYKeyboardManager (1.0.1)
+  - YYText (1.0.7)
 
 DEPENDENCIES:
   - BMDragCellCollectionView
@@ -31,6 +33,8 @@ DEPENDENCIES:
   - UITableView+FDTemplateLayoutCell (~> 1.6)
   - YYAsyncLayer (~> 1.0)
   - YYDispatchQueuePool (~> 1.0)
+  - YYKeyboardManager (~> 1.0.1)
+  - YYText (~> 1.0.7)
 
 SPEC CHECKSUMS:
   BMDragCellCollectionView: 9bba624b3983b807895413315f7f1d4dce16d933
@@ -41,7 +45,9 @@ SPEC CHECKSUMS:
   UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
   YYAsyncLayer: df6b01ebc695c5f6b4c15dd5c23fa3e081eb25c0
   YYDispatchQueuePool: 3dfb2274bcc74207688dde8ac6f7bdd46871dd7b
+  YYKeyboardManager: ff53d2e80d1808567a7f004028bd200d9469a89f
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 6a875b477271f6f3e19c4fb09fb5bf6e65cda73b
+PODFILE CHECKSUM: f8347b4ad63d9974e3b873b50c5d94a76c4316dd
 
 COCOAPODS: 1.3.1
