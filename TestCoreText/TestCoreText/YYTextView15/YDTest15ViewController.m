@@ -74,15 +74,11 @@
     UIViewAnimationOptions *options = transition.animationOption;
     if (toFlag) {
         [_textView mas_updateConstraints:^(MASConstraintMaker *make) {
-            [UIView animateWithDuration:duration animations:^{
-                make.bottom.equalTo(self.view).offset(-toFrame.size.height);
-            }];
+            make.bottom.equalTo(self.view).offset(-toFrame.size.height);
         }];
     }else {
         [_textView mas_updateConstraints:^(MASConstraintMaker *make) {
-            [UIView animateWithDuration:duration animations:^{
-                make.bottom.equalTo(self.view);
-            }];
+            make.bottom.equalTo(self.view);
         }];
     }
     
