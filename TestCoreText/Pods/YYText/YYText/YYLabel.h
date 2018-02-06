@@ -74,6 +74,7 @@ NS_ASSUME_NONNULL_BEGIN
  Get the value returns the shadow color at the head of `attributedText`.
  */
 @property (nullable, nonatomic, strong) UIColor *shadowColor;
+// 这里如果设置了呢？ 设置这个属性就会更新，这样会消耗性能，我应该怎么样进行处理？
 
 /**
  The shadow offset of the text. Default is CGSizeZero.
@@ -261,6 +262,7 @@ NS_ASSUME_NONNULL_BEGIN
  after you update the label's properties, or you can just set this property to YES.
  */
 @property (nonatomic) BOOL clearContentsBeforeAsynchronouslyDisplay;
+// 在异步渲染之前是否清楚掉内容（默认是yes）
 
 /**
  If the value is YES, and the layer is rendered asynchronously, then it will add 
@@ -268,7 +270,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  The default value is `YES`.
  */
-@property (nonatomic) BOOL fadeOnAsynchronouslyDisplay;
+@property (nonatomic) BOOL fadeOnAsynchronouslyDisplay; // 有一个渲染进入的动画效果（模糊变清晰）
 
 /**
  If the value is YES, then it will add a fade animation on layer when some range
@@ -276,7 +278,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  The default value is `YES`.
  */
-@property (nonatomic) BOOL fadeOnHighlight;
+@property (nonatomic) BOOL fadeOnHighlight;// 高亮的内容也是进入
 
 /**
  Ignore common properties (such as text, font, textColor, attributedText...) and
@@ -287,6 +289,7 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion If you control the label content only through "textLayout", then
  you may set this value to YES for higher performance.
  */
+// 如果只是使用textLayout4  , 就可以使用这个为yes {忽略的这个属性是什么意思？？ 是不使用这写属性，还是使用它们都是一样的？}
 @property (nonatomic) BOOL ignoreCommonProperties;
 
 /*

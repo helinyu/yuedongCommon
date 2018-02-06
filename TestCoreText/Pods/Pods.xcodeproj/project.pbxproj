@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,6 @@
 		037320A4E1C3D744D75FC01DE56589F4 /* NSDictionary+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B1AFA2BE6B0BC020358A81146483F4 /* NSDictionary+YYAdd.m */; };
 		042138FEA8D204BBDFC3A6A164BEA9FB /* NSData+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FDB6335347435D57AC0289F2347CDE8 /* NSData+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042A7A63C4F75E951F41037B1BDC4EE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AFB558D87C833BC7D523FD84163EF9 /* Foundation.framework */; };
-		048B4255202992C900FAEB19 /* YDTest14ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B4254202992C900FAEB19 /* YDTest14ViewController.m */; };
 		05C5B06A110D409EBA922329F8897A91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AFB558D87C833BC7D523FD84163EF9 /* Foundation.framework */; };
 		063438706700F27034DBBAA3FD1BBB36 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918E1048E9112D2F9435C16EDC57C9F0 /* CoreFoundation.framework */; };
 		0680A61717AFC7F8657D7C0C7364694F /* NSCoder+DTCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E0468D5D1286E15367A3C3E2F7FA6A /* NSCoder+DTCompatibility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
@@ -508,11 +507,10 @@
 
 /* Begin PBXFileReference section */
 		017C674D87916DC573AB16AA8AFD0768 /* NSCharacterSet+HTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCharacterSet+HTML.m"; path = "Core/Source/NSCharacterSet+HTML.m"; sourceTree = "<group>"; };
-		02591074502608CAA7F2B90A960A7060 /* libYYDispatchQueuePool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYDispatchQueuePool.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		02591074502608CAA7F2B90A960A7060 /* libYYDispatchQueuePool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYDispatchQueuePool.a; path = libYYDispatchQueuePool.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		02923827BAEBBF187567C7266B648692 /* DTHTMLElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTHTMLElement.h; path = Core/Source/DTHTMLElement.h; sourceTree = "<group>"; };
 		02B3D9D512ED5F87206E3F8F63606B81 /* NSAttributedStringRunDelegates.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSAttributedStringRunDelegates.m; path = Core/Source/NSAttributedStringRunDelegates.m; sourceTree = "<group>"; };
 		0435A94E3D1D0D15513C7E0DA5EEEEF0 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
-		048B4254202992C900FAEB19 /* YDTest14ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDTest14ViewController.m; sourceTree = "<group>"; };
 		04E9D0957226A4055C82C8060A2FBF8F /* YYTextArchiver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextArchiver.h; path = YYText/String/YYTextArchiver.h; sourceTree = "<group>"; };
 		05943767C3B0CA3C235DEB38CF705293 /* DTTiledLayerWithoutFade.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTiledLayerWithoutFade.h; path = Core/Source/iOS/DTTiledLayerWithoutFade.h; sourceTree = "<group>"; };
 		0654DC76D27ED6B35B5A1F37B26CEEFF /* YYTextMagnifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextMagnifier.h; path = YYText/Component/YYTextMagnifier.h; sourceTree = "<group>"; };
@@ -586,15 +584,15 @@
 		2EFF76CBC560DB2DF2B57560C2743258 /* DTBlockFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTBlockFunctions.m; path = Core/Source/DTBlockFunctions.m; sourceTree = "<group>"; };
 		2F71FD28D051CC68C4753423C5130DA2 /* YYAsyncLayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYAsyncLayer-prefix.pch"; sourceTree = "<group>"; };
 		2F7DD87720356B75B42191C1857D68CF /* DTCoreTextGlyphRun.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTCoreTextGlyphRun.h; path = Core/Source/DTCoreTextGlyphRun.h; sourceTree = "<group>"; };
-		2FE419BAD6BEEE348231ECEC3DC39DCF /* libDTCoreText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDTCoreText.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FE419BAD6BEEE348231ECEC3DC39DCF /* libDTCoreText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDTCoreText.a; path = libDTCoreText.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		30CB2856D850F08C4A23A0885CB51814 /* BMDragCellCollectionView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BMDragCellCollectionView-dummy.m"; sourceTree = "<group>"; };
 		327792BB980C4CCC8DF8C7EEB278BCF4 /* DTTextHTMLElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTextHTMLElement.m; path = Core/Source/DTTextHTMLElement.m; sourceTree = "<group>"; };
 		32F48C39D1ED7269F8E25492FB98F252 /* NSAttributedString+DTDebug.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+DTDebug.m"; path = "Core/Source/NSAttributedString+DTDebug.m"; sourceTree = "<group>"; };
 		3313C83E32F0C1B8C9794F530D3C1013 /* DTFoundationConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTFoundationConstants.h; path = Core/Source/DTFoundationConstants.h; sourceTree = "<group>"; };
 		335637076F7BF748D4D3DA1E9E9B93CC /* DTCoreTextLayoutFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTCoreTextLayoutFrame.m; path = Core/Source/DTCoreTextLayoutFrame.m; sourceTree = "<group>"; };
-		33C6B8C4939460AF3871D0F4BD35390B /* libUITableView+FDTemplateLayoutCell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libUITableView+FDTemplateLayoutCell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33C6B8C4939460AF3871D0F4BD35390B /* libUITableView+FDTemplateLayoutCell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libUITableView+FDTemplateLayoutCell.a"; path = "libUITableView+FDTemplateLayoutCell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D338F1B37E1CC7F31A3414E8AE9261 /* DTFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DTFoundation-dummy.m"; sourceTree = "<group>"; };
-		34326BA219A8A85D12B65D84E4E0884E /* libBMDragCellCollectionView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBMDragCellCollectionView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		34326BA219A8A85D12B65D84E4E0884E /* libBMDragCellCollectionView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libBMDragCellCollectionView.a; path = libBMDragCellCollectionView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		345243DC356BEC67B5F72521C1AE4E11 /* DTAccessibilityViewProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTAccessibilityViewProxy.h; path = Core/Source/DTAccessibilityViewProxy.h; sourceTree = "<group>"; };
 		34DD250CC7B74FF66A0D9C23FD49C312 /* DTCustomColoredAccessory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTCustomColoredAccessory.h; path = Core/Source/iOS/DTCustomColoredAccessory.h; sourceTree = "<group>"; };
 		350E955CB61D240AE6533A6C47F3DE63 /* DTImage+HTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DTImage+HTML.h"; path = "Core/Source/DTImage+HTML.h"; sourceTree = "<group>"; };
@@ -615,7 +613,7 @@
 		3F4CC0C39B1396FE12D2657922BE83AF /* UIBarButtonItem+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+YYAdd.m"; path = "YYCategories/UIKit/UIBarButtonItem+YYAdd.m"; sourceTree = "<group>"; };
 		3F52913A6D441102CF8C66543239E1A6 /* Pods-TestCoreText-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestCoreText-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3FDB6335347435D57AC0289F2347CDE8 /* NSData+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+YYAdd.h"; path = "YYCategories/Foundation/NSData+YYAdd.h"; sourceTree = "<group>"; };
-		4174F0F64C4F0567989615541D8DA31B /* libPods-TestCoreTextUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestCoreTextUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4174F0F64C4F0567989615541D8DA31B /* libPods-TestCoreTextUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TestCoreTextUITests.a"; path = "libPods-TestCoreTextUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4246DA219FFD431F9CFFF7AE49113279 /* DTHTMLElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTHTMLElement.m; path = Core/Source/DTHTMLElement.m; sourceTree = "<group>"; };
 		42DDE676D7DD3953A44ABB05BE082AC0 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		42FEB78D21962FD1A9EFCD68961BD027 /* DTVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTVersion.m; path = Core/Source/DTVersion.m; sourceTree = "<group>"; };
@@ -656,7 +654,7 @@
 		5C5F2D506E33EA9C9AC61CA7F549A517 /* DTCoreTextFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTCoreTextFunctions.h; path = Core/Source/DTCoreTextFunctions.h; sourceTree = "<group>"; };
 		5C70097774DE17C28DC17439B3B6E7AA /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		5E714ADFC5671CFC2ACCC20185AC4A1B /* UIApplication+DTNetworkActivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+DTNetworkActivity.h"; path = "Core/Source/iOS/UIApplication+DTNetworkActivity.h"; sourceTree = "<group>"; };
-		5EB724D290DE3200DE730219DD2D70CA /* libYYAsyncLayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYAsyncLayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EB724D290DE3200DE730219DD2D70CA /* libYYAsyncLayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYAsyncLayer.a; path = libYYAsyncLayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		60537934EB6F721E34EA9FBC475E7104 /* Pods-TestCoreTextUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestCoreTextUITests-dummy.m"; sourceTree = "<group>"; };
 		61CF98C720DD3DF095F08F3BCE258136 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		622D51BB4478250F3EC81C649925C1F4 /* DTSmartPagingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTSmartPagingScrollView.m; path = Core/Source/iOS/DTSmartPagingScrollView.m; sourceTree = "<group>"; };
@@ -706,13 +704,13 @@
 		78EC92A55F753D63175FC80E073EB6B4 /* DTImageTextAttachment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTImageTextAttachment.h; path = Core/Source/DTImageTextAttachment.h; sourceTree = "<group>"; };
 		79D904DDD986855218EB51E528AE4BF1 /* UIApplication+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+YYAdd.m"; path = "YYCategories/UIKit/UIApplication+YYAdd.m"; sourceTree = "<group>"; };
 		7AB1D348CA88ACBE94080C9570A5AF61 /* UIView+DTFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+DTFoundation.m"; path = "Core/Source/iOS/UIView+DTFoundation.m"; sourceTree = "<group>"; };
-		7D2CB5E25F1D51DA2F06AC1E18D042BC /* libDTFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDTFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D2CB5E25F1D51DA2F06AC1E18D042BC /* libDTFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDTFoundation.a; path = libDTFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D82D3C33284EE6E7ACD3F3B310C0610 /* NSNotificationCenter+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+YYAdd.m"; path = "YYCategories/Foundation/NSNotificationCenter+YYAdd.m"; sourceTree = "<group>"; };
 		806F4D083D2FCB26596CA8D0530D5CA1 /* DTCoreTextFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTCoreTextFunctions.m; path = Core/Source/DTCoreTextFunctions.m; sourceTree = "<group>"; };
 		8073847BEEBF626CF6DEB48BE1413C3D /* DTAttributedTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTAttributedTextView.m; path = Core/Source/DTAttributedTextView.m; sourceTree = "<group>"; };
 		80CED3B40CB592AF3A34E037C052D389 /* NSString+CSS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+CSS.m"; path = "Core/Source/NSString+CSS.m"; sourceTree = "<group>"; };
 		819D64ED170E2F48E2D78447890D144F /* NSString+CSS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+CSS.h"; path = "Core/Source/NSString+CSS.h"; sourceTree = "<group>"; };
-		81A9DA9BF8742C184CB0A09E8FE0D5F1 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		81A9DA9BF8742C184CB0A09E8FE0D5F1 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8343AAA973AC1FB05CB31795755B5ED5 /* DTCoreTextParagraphStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTCoreTextParagraphStyle.h; path = Core/Source/DTCoreTextParagraphStyle.h; sourceTree = "<group>"; };
 		835A7B99AB555ECC40EC6BA19C63EEEE /* NSDictionary+DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+DTError.h"; path = "Core/Source/NSDictionary+DTError.h"; sourceTree = "<group>"; };
 		83A52B3431C43D53939D36D6DC5E230B /* YYCategoriesMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYCategoriesMacro.h; path = YYCategories/YYCategoriesMacro.h; sourceTree = "<group>"; };
@@ -722,9 +720,9 @@
 		8451FB0BF0ED88864E8CC16D8B17E4AB /* DTColorFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTColorFunctions.h; path = Core/Source/DTColorFunctions.h; sourceTree = "<group>"; };
 		8547580FD9595A26644E281209FDD266 /* NSArray+DTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+DTError.m"; path = "Core/Source/NSArray+DTError.m"; sourceTree = "<group>"; };
 		85D51C527FD1E545F08BE40A4E2C2AA1 /* DTImage+HTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DTImage+HTML.m"; path = "Core/Source/DTImage+HTML.m"; sourceTree = "<group>"; };
-		85E9E7D74794F51BCD15441350B14917 /* libYYCategories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYCategories.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		85E9E7D74794F51BCD15441350B14917 /* libYYCategories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYCategories.a; path = libYYCategories.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FA5A6A8079780F632C296C3C98B9D8 /* YYTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextView.h; path = YYText/YYTextView.h; sourceTree = "<group>"; };
-		8621204F5EB0D2ED8BCFFF4D5034B446 /* default.css.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = default.css.c; path = Core/Source/default.css.c; sourceTree = "<group>"; };
+		8621204F5EB0D2ED8BCFFF4D5034B446 /* default.css.c */ = {isa = PBXFileReference; includeInIndex = 1; name = default.css.c; path = Core/Source/default.css.c; sourceTree = "<group>"; };
 		877AA525A98EC21C12F51C394A558109 /* Pods-TestCoreTextTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestCoreTextTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		87875A61255BD72B596CBE66EBAF68BA /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		87EF0D6CDCE1664FFA749F35921F8AC4 /* DTTiledLayerWithoutFade.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTiledLayerWithoutFade.m; path = Core/Source/iOS/DTTiledLayerWithoutFade.m; sourceTree = "<group>"; };
@@ -746,7 +744,7 @@
 		92AC50F0F8EB05D8B233A0BA22AAC2B1 /* YYTextLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextLayout.h; path = YYText/Component/YYTextLayout.h; sourceTree = "<group>"; };
 		93693CDE9500E0076C37C472E2AAE9E6 /* NSTimer+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+YYAdd.m"; path = "YYCategories/Foundation/NSTimer+YYAdd.m"; sourceTree = "<group>"; };
 		939697541362703FAA6E26322ABB3AA3 /* BMDragCellCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMDragCellCollectionView.h; path = BMDragCellCollectionView/BMDragCellCollectionView.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		952FA8FE5B85F5B3C9369F22D29575E7 /* UITextField+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+YYAdd.m"; path = "YYCategories/UIKit/UITextField+YYAdd.m"; sourceTree = "<group>"; };
 		95A43C2CAFF8D8AE9CC28A94F52E9AA1 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDKeyedHeightCache.h"; path = "Classes/UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
 		96254C0E899A32CE4331FDDC427E6380 /* NSDictionary+DTCoreText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+DTCoreText.m"; path = "Core/Source/NSDictionary+DTCoreText.m"; sourceTree = "<group>"; };
@@ -790,7 +788,7 @@
 		ABDA6869004A082212A1191B03B90FE2 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		AC465603CEC2F2234B296AE0BB3EFEB9 /* YYTextParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextParser.m; path = YYText/String/YYTextParser.m; sourceTree = "<group>"; };
 		ACE254AD2D5E9AE811AC0AD30FD1B977 /* Pods-TestCoreTextUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestCoreTextUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AD25A3C29D477B720E4071D0A63922F7 /* libPods-TestCoreTextTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestCoreTextTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD25A3C29D477B720E4071D0A63922F7 /* libPods-TestCoreTextTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TestCoreTextTests.a"; path = "libPods-TestCoreTextTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCB2FFC248BD9E7691B4C508528C426 /* DTColorFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTColorFunctions.m; path = Core/Source/DTColorFunctions.m; sourceTree = "<group>"; };
 		AE1D1F8BA73C202332D184233F86AE88 /* NSArray+DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+DTError.h"; path = "Core/Source/NSArray+DTError.h"; sourceTree = "<group>"; };
 		AF5F01B03994E44EB84225BC2DE8E619 /* DTCoreGraphicsUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTCoreGraphicsUtils.h; path = Core/Source/DTCoreGraphicsUtils.h; sourceTree = "<group>"; };
@@ -819,7 +817,7 @@
 		BE5E2E57505231DE033F80569A2184D2 /* UIView+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+YYAdd.m"; path = "YYCategories/UIKit/UIView+YYAdd.m"; sourceTree = "<group>"; };
 		BE66844EBA561AF6C66A020CE4D10F82 /* YYDispatchQueuePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYDispatchQueuePool.m; path = YYDispatchQueuePool/YYDispatchQueuePool.m; sourceTree = "<group>"; };
 		BEA6EF8E7E081E301DEB92F7C7E95A6C /* YYTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextView.m; path = YYText/YYTextView.m; sourceTree = "<group>"; };
-		BED0D8F8902BAE2F7E981EC3E44F26AE /* libYYText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYText.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED0D8F8902BAE2F7E981EC3E44F26AE /* libYYText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYText.a; path = libYYText.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5036BB140D2195A6C821E2F9289DFC /* DTCoreTextLayoutLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTCoreTextLayoutLine.m; path = Core/Source/DTCoreTextLayoutLine.m; sourceTree = "<group>"; };
 		BFF2DB6C1E0988FA06E733824F27A735 /* DTCSSListStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTCSSListStyle.m; path = Core/Source/DTCSSListStyle.m; sourceTree = "<group>"; };
 		C0410EB92177867AB71AEE07BB8C897D /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
@@ -828,7 +826,7 @@
 		C107EB96DBB480B8F02469365A91C669 /* YYAsyncLayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYAsyncLayer-dummy.m"; sourceTree = "<group>"; };
 		C13C32A6A0485E810CE8A939D99978F2 /* DTLazyImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTLazyImageView.m; path = Core/Source/DTLazyImageView.m; sourceTree = "<group>"; };
 		C2177B5422A473B5A309B3CC46C21167 /* YYCGUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYCGUtilities.m; path = YYCategories/Quartz/YYCGUtilities.m; sourceTree = "<group>"; };
-		C2645C5259DC1B85AEC514E2E21478AA /* libRACollectionViewReorderableTripletLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRACollectionViewReorderableTripletLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2645C5259DC1B85AEC514E2E21478AA /* libRACollectionViewReorderableTripletLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRACollectionViewReorderableTripletLayout.a; path = libRACollectionViewReorderableTripletLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C269B2D4B81580F9EF43D7E25EB9D7C9 /* NSDictionary+DTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+DTError.m"; path = "Core/Source/NSDictionary+DTError.m"; sourceTree = "<group>"; };
 		C3FD26B71D9093083F72BA28C5BE6A0D /* Pods-TestCoreTextUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestCoreTextUITests-resources.sh"; sourceTree = "<group>"; };
 		C41E96FC9A2AFFF99E3EA5CE4313EA1A /* CALayer+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+YYAdd.m"; path = "YYCategories/Quartz/CALayer+YYAdd.m"; sourceTree = "<group>"; };
@@ -845,7 +843,7 @@
 		CBAD2238E166E49F4831214834B2355D /* NSURL+DTUnshorten.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURL+DTUnshorten.h"; path = "Core/Source/NSURL+DTUnshorten.h"; sourceTree = "<group>"; };
 		CBEB6B3C7D215D241E355A1FAAA0F5DD /* NSData+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+YYAdd.m"; path = "YYCategories/Foundation/NSData+YYAdd.m"; sourceTree = "<group>"; };
 		CC9AA582256B76A43DC7F1757BC165ED /* UIColor+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+YYAdd.m"; path = "YYCategories/UIKit/UIColor+YYAdd.m"; sourceTree = "<group>"; };
-		CCB000B01F70BA8EF4A39344578F813B /* libYYKeyboardManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYKeyboardManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB000B01F70BA8EF4A39344578F813B /* libYYKeyboardManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYKeyboardManager.a; path = libYYKeyboardManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7B54E08EB33DE22B8A3744FB3FC856 /* YYKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYKeyboardManager.m; path = YYKeyboardManager/YYKeyboardManager.m; sourceTree = "<group>"; };
 		CDEC0C70F333A166427E14BD49F41C56 /* NSObject+YYAddForARC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYAddForARC.h"; path = "YYCategories/Foundation/NSObject+YYAddForARC.h"; sourceTree = "<group>"; };
 		CE6C448D7B9CE3EF4F361DC421C1F6AD /* DTFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DTFoundation.xcconfig; sourceTree = "<group>"; };
@@ -910,7 +908,7 @@
 		E95135AA9DB57C615E315DD342AF9BF0 /* NSObject+YYAddForARC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYAddForARC.m"; path = "YYCategories/Foundation/NSObject+YYAddForARC.m"; sourceTree = "<group>"; };
 		E96D84CBCEFDD319042FCFBD2A807BD0 /* DTStylesheetHTMLElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTStylesheetHTMLElement.h; path = Core/Source/DTStylesheetHTMLElement.h; sourceTree = "<group>"; };
 		E9F5CA97A87A3DEF556722330010C40F /* YYKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYKeyboardManager.h; path = YYKeyboardManager/YYKeyboardManager.h; sourceTree = "<group>"; };
-		EA0DAB97EA86372F9EEC13489DC556FF /* libPods-TestCoreText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestCoreText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0DAB97EA86372F9EEC13489DC556FF /* libPods-TestCoreText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TestCoreText.a"; path = "libPods-TestCoreText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2C14A1295E935A03950E06BC904673 /* NSString+DTUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+DTUtilities.m"; path = "Core/Source/NSString+DTUtilities.m"; sourceTree = "<group>"; };
 		EA49C2541470461844D873D9C0557B58 /* DTHTMLParserTextNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTHTMLParserTextNode.m; path = Core/Source/DTHTMLParserTextNode.m; sourceTree = "<group>"; };
 		EBA560E722F229584805B084BA10FC04 /* UIFont+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+YYAdd.m"; path = "YYCategories/UIKit/UIFont+YYAdd.m"; sourceTree = "<group>"; };
@@ -1172,6 +1170,7 @@
 				2244B7C2FD14B1B1F0577750D19A66CB /* RACollectionViewTripletLayout.m */,
 				E17C66E0A0C96FE8944ECFDD4DFA3D68 /* Support Files */,
 			);
+			name = RACollectionViewReorderableTripletLayout;
 			path = RACollectionViewReorderableTripletLayout;
 			sourceTree = "<group>";
 		};
@@ -1186,6 +1185,7 @@
 				438BFAC29F28DECEAC72EE93BFF35547 /* YYTransaction.m */,
 				C8FB6457A07357FFE01F8A1E63397033 /* Support Files */,
 			);
+			name = YYAsyncLayer;
 			path = YYAsyncLayer;
 			sourceTree = "<group>";
 		};
@@ -1213,13 +1213,13 @@
 		3E311151F2F143A719F464A7D62F5D6B /* DTFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				048B4254202992C900FAEB19 /* YDTest14ViewController.m */,
 				6EE0E853D3506415FC213FC412D3A214 /* Core */,
 				898E8430685987E6B8E606F627264A11 /* DTAnimatedGIF */,
 				8B6AB8D38205804C98C167E152EB37EF /* DTHTMLParser */,
 				D5396CFED5B945EBCBE4ED5B6FDC099F /* Support Files */,
 				94AD95595ADFD62A1D34E5598E412B43 /* UIKit */,
 			);
+			name = DTFoundation;
 			path = DTFoundation;
 			sourceTree = "<group>";
 		};
@@ -1325,6 +1325,7 @@
 				CD7B54E08EB33DE22B8A3744FB3FC856 /* YYKeyboardManager.m */,
 				C2E63CE9AE6009E8B50B7DADE56B2BA8 /* Support Files */,
 			);
+			name = YYKeyboardManager;
 			path = YYKeyboardManager;
 			sourceTree = "<group>";
 		};
@@ -1492,6 +1493,7 @@
 				A2FD54DFEEBFD9D0773FC7823040E937 /* Core */,
 				A5580AE1D87D1C924424367BC4F3DB03 /* Support Files */,
 			);
+			name = DTCoreText;
 			path = DTCoreText;
 			sourceTree = "<group>";
 		};
@@ -1531,6 +1533,7 @@
 				BE66844EBA561AF6C66A020CE4D10F82 /* YYDispatchQueuePool.m */,
 				5EFA549015BF86A46EF3BA973BC44F1E /* Support Files */,
 			);
+			name = YYDispatchQueuePool;
 			path = YYDispatchQueuePool;
 			sourceTree = "<group>";
 		};
@@ -1593,6 +1596,7 @@
 				483E1E370D9B9E07E7BED7ACAA458564 /* ViewController+MASAdditions.m */,
 				69EB89C69D50D533C642CD8B478B13AA /* Support Files */,
 			);
+			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -1649,6 +1653,7 @@
 				8E0FA52217EF6E205AF03818ECF6F163 /* UITableView+FDTemplateLayoutCellDebug.m */,
 				04068CAAFF56C8DA6DF29235A6FA45C8 /* Support Files */,
 			);
+			name = "UITableView+FDTemplateLayoutCell";
 			path = "UITableView+FDTemplateLayoutCell";
 			sourceTree = "<group>";
 		};
@@ -1717,6 +1722,7 @@
 				77D0DC6B13866FD58DD761B6EF61C7F9 /* YYTextWeakProxy.m */,
 				3B5E89333583FBD21EAC7A966ECC6F7A /* Support Files */,
 			);
+			name = YYText;
 			path = YYText;
 			sourceTree = "<group>";
 		};
@@ -1818,6 +1824,7 @@
 				21E8C3CBF448281C44752480B99DC13D /* no-arc */,
 				A6C83DEAFF475D35C20FA4682C859AF1 /* Support Files */,
 			);
+			name = YYCategories;
 			path = YYCategories;
 			sourceTree = "<group>";
 		};
@@ -1828,6 +1835,7 @@
 				B7BB69EAAA8CA87A63ECEDF1FFFF4A6D /* BMDragCellCollectionView.m */,
 				4EE860901B030913FA0C752D7293645A /* Support Files */,
 			);
+			name = BMDragCellCollectionView;
 			path = BMDragCellCollectionView;
 			sourceTree = "<group>";
 		};
@@ -2664,7 +2672,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6DF4A79DA0FA00DB647F92D70912D65 /* BMDragCellCollectionView-dummy.m in Sources */,
-				048B4255202992C900FAEB19 /* YDTest14ViewController.m in Sources */,
 				75648BA9ADE4D74F08F0230BC598F600 /* BMDragCellCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

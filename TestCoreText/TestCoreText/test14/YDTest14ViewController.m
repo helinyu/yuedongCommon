@@ -31,17 +31,56 @@
 
 - (void)testYY {
     _fixLabel = [YYLabel new];
-    NSAttributedString *attrStrig = [[NSAttributedString alloc] initWithString:@"fix label奥斯卡两地分居埃里克森积分卡洛斯；附近的卡萨；浪费静安寺；立法法；都是垃圾啊；l" attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17.f]}];
-    _fixLabel.attributedText = attrStrig;
+    
+    NSString *text = @"fix label奥斯卡ejkldfjgklsdfjkfljskldjskfg两地分居埃里克森积分卡洛斯；附近的卡萨；浪费静安寺；立法法；都是垃圾啊；l";
+    NSAttributedString *attrStrig = [[NSAttributedString alloc] initWithString:text attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17.f]}];
     _fixLabel.backgroundColor = [UIColor purpleColor];
     _fixLabel.numberOfLines = 0;
     [self.view addSubview:_fixLabel];
     [_fixLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.equalTo(self.view).offset(200.f);
         make.width.mas_equalTo(100.f);
+        make.height.mas_equalTo(200.f);
     }];
+    _fixLabel.attributedText = attrStrig;
+}
+
+- (void)testYY1 {
+    _fixLabel = [YYLabel new];
+    
+    NSString *text = @"fix label奥斯卡ejkldfjgklsdfjkfljskldjskfg两地分居埃里克森积分卡洛斯；附近的卡萨；浪费静安寺；立法法；都是垃圾啊；l";
+    NSAttributedString *attrStrig = [[NSAttributedString alloc] initWithString:text attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17.f]}];
+    _fixLabel.attributedText = attrStrig;
+    _fixLabel.backgroundColor = [UIColor purpleColor];
+    _fixLabel.numberOfLines = 0;
+    _fixLabel.tintAdjustmentMode = UIViewTintAdjustmentModeAutomatic;
+    [self.view addSubview:_fixLabel];
+    [_fixLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.equalTo(self.view).offset(200.f);
+        make.width.mas_equalTo(100.f);
+    }];
+
+    _originLabel = [UILabel new];
+    [self.view addSubview:_originLabel];
+    _originLabel.text = text;
+    CGFloat testH = [_fixLabel.text sizeForFont:[UIFont systemFontOfSize:17.f] size:CGSizeMake(100.f, CGFLOAT_MAX) mode:NSLineBreakByCharWrapping].height;
+    [_originLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view).offset(200.f);
+        make.left.equalTo(self.view).offset(50.f);
+        make.width.mas_equalTo(100.f);
+        make.height.mas_equalTo(testH);
+    }];
+    _originLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    _originLabel.numberOfLines = 0;
+    _originLabel.backgroundColor = [UIColor purpleColor];
+    [_originLabel sizeToFit];
+    
     YYTextLayout *layout = [YYTextLayout layoutWithContainerSize:CGSizeMake(100.f, CGFLOAT_MAX) text:_fixLabel.attributedText];
     CGFloat height = ceilf(layout.textBoundingSize.height);
+    CGRect rect = layout.textBoundingRect;
+
+    NSLog(@"cell testH:%f, layout height:%f, cell height:%f",testH,layout.textBoundingSize.height,height);
+    NSLog(@"rect :x%f,y%f,width:%f,height:%f",rect.origin.x, rect.origin.y, rect.size.width,rect.size.height);
     [_fixLabel mas_updateConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(height);
     }];
@@ -55,9 +94,7 @@
         [_originLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.top.equalTo(self.view).offset(100.f);
             make.width.mas_equalTo(100.f);
-            //            make.width.height.mas_equalTo(100.f).priorityLow();
         }];
-        //        _originLabel.frame = CGRectMake(100.f, 100.f, 100.f, 100.f);
         _originLabel.text = @"origin label 同一个；jf看撒娇地方拉克丝；fjsalkfjaksf";
         _originLabel.backgroundColor = [UIColor yellowColor];
         _originLabel.font = [UIFont systemFontOfSize:17.f];

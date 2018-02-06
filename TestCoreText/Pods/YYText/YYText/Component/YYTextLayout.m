@@ -84,7 +84,7 @@ static CGColorRef YYTextGetCGColor(CGColorRef color) {
 @implementation YYTextContainer {
     @package
     BOOL _readonly; ///< used only in YYTextLayout.implementation
-    dispatch_semaphore_t _lock;
+    dispatch_semaphore_t _lock;  // 信号量
     
     CGSize _size;
     UIEdgeInsets _insets;
@@ -93,16 +93,18 @@ static CGColorRef YYTextGetCGColor(CGColorRef color) {
     BOOL _pathFillEvenOdd;
     CGFloat _pathLineWidth;
     BOOL _verticalForm;
-    NSUInteger _maximumNumberOfRows;
+    NSUInteger _maximumNumberOfRows; // 0 无线行
     YYTextTruncationType _truncationType;
     NSAttributedString *_truncationToken;
     id<YYTextLinePositionModifier> _linePositionModifier;
 }
 
+// 设置内置打死小为0
 + (instancetype)containerWithSize:(CGSize)size {
     return [self containerWithSize:size insets:UIEdgeInsetsZero];
 }
 
+// 设置内置大小
 + (instancetype)containerWithSize:(CGSize)size insets:(UIEdgeInsets)insets {
     YYTextContainer *one = [self new];
     one.size = YYTextClipCGSize(size);
@@ -119,14 +121,14 @@ static CGColorRef YYTextGetCGColor(CGColorRef color) {
 - (instancetype)init {
     self = [super init];
     if (!self) return nil;
-    _lock = dispatch_semaphore_create(1);
+    _lock = dispatch_semaphore_create(1); // 创建一个信号量 [这样保证同一个时间只有一个对象生成]
     _pathFillEvenOdd = YES;
     return self;
 }
 
 - (id)copyWithZone:(NSZone *)zone {
     YYTextContainer *one = [self.class new];
-    dispatch_semaphore_wait(_lock, DISPATCH_TIME_FOREVER);
+    dispatch_semaphore_wait(_lock, DISPATCH_TIME_FOREVER); // 这里是永远等地啊
     one->_size = _size;
     one->_insets = _insets;
     one->_path = _path;
@@ -138,6 +140,7 @@ static CGColorRef YYTextGetCGColor(CGColorRef color) {
     one->_truncationType = _truncationType;
     one->_truncationToken = _truncationToken.copy;
     one->_linePositionModifier = [(NSObject *)_linePositionModifier copy];
+    // 赋值内部的属性内容
     dispatch_semaphore_signal(_lock);
     return one;
 }
@@ -146,6 +149,7 @@ static CGColorRef YYTextGetCGColor(CGColorRef color) {
     return [self copyWithZone:zone];
 }
 
+// 编码
 - (void)encodeWithCoder:(NSCoder *)aCoder {
     [aCoder encodeObject:[NSValue valueWithCGSize:_size] forKey:@"size"];
     [aCoder encodeObject:[NSValue valueWithUIEdgeInsets:_insets] forKey:@"insets"];
@@ -163,6 +167,7 @@ static CGColorRef YYTextGetCGColor(CGColorRef color) {
     }
 }
 
+// jie'ma
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [self init];
     _size = ((NSValue *)[aDecoder decodeObjectForKey:@"size"]).CGSizeValue;
@@ -220,6 +225,7 @@ dispatch_semaphore_signal(_lock);
     Getter(UIBezierPath *path = _path) return path;
 }
 
+// 设置path
 - (void)setPath:(UIBezierPath *)path {
     Setter(
            _path = path.copy;
@@ -282,7 +288,7 @@ dispatch_semaphore_signal(_lock);
 }
 
 - (void)setTruncationType:(YYTextTruncationType)truncationType {
-    Setter(_truncationType = truncationType);
+    Setter(_truncationType = truncationType); // 对于同一个对象属性
 }
 
 - (NSAttributedString *)truncationToken {
@@ -304,9 +310,6 @@ dispatch_semaphore_signal(_lock);
 #undef Getter
 #undef Setter
 @end
-
-
-
 
 @interface YYTextLayout ()
 
@@ -343,8 +346,6 @@ dispatch_semaphore_signal(_lock);
 
 @end
 
-
-
 @implementation YYTextLayout
 
 #pragma mark - Layout
@@ -363,6 +364,7 @@ dispatch_semaphore_signal(_lock);
     return [self layoutWithContainer:container text:text range:NSMakeRange(0, text.length)];
 }
 
+// 应该是在这里进行了绘画
 + (YYTextLayout *)layoutWithContainer:(YYTextContainer *)container text:(NSAttributedString *)text range:(NSRange)range {
     YYTextLayout *layout = NULL;
     CGPathRef cgPath = nil;
@@ -389,10 +391,11 @@ dispatch_semaphore_signal(_lock);
     NSUInteger maximumNumberOfRows = 0;
     BOOL constraintSizeIsExtended = NO;
     CGRect constraintRectBeforeExtended = {0};
+// 上面，是将所有的内用先质控
     
     text = text.mutableCopy;
-    container = container.copy;
-    if (!text || !container) return nil;
+    container = container.copy; // 使用拷贝的对象
+    if (!text || !container) return nil; // 这里有可能是空（也就是这个时候是nil）
     if (range.location + range.length > text.length) return nil;
     container->_readonly = YES;
     maximumNumberOfRows = container.maximumNumberOfRows;
@@ -667,8 +670,8 @@ dispatch_semaphore_signal(_lock);
         size.height += rect.origin.y;
         if (size.width < 0) size.width = 0;
         if (size.height < 0) size.height = 0;
-        size.width = ceil(size.width); 
-        size.height = ceil(size.height);
+//        size.width = ceil(size.width); 
+//        size.height = ceil(size.height);
         textBoundingSize = size;
     }
     

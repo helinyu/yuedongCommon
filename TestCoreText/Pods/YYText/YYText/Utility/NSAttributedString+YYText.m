@@ -538,7 +538,7 @@ return style. _attr_;
     if (range.location == NSNotFound ||range.length == NSNotFound) return nil;
     NSMutableString *result = [NSMutableString string];
     if (range.length == 0) return result;
-    NSString *string = self.string;
+    NSString *string = self.string; // 获取attributeSTring中的纯文字
     [self enumerateAttribute:YYTextBackedStringAttributeName inRange:range options:kNilOptions usingBlock:^(id value, NSRange range, BOOL *stop) {
         YYTextBackedString *backed = value;
         if (backed && backed.string) {
