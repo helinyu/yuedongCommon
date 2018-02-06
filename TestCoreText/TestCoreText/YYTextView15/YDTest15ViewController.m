@@ -37,11 +37,7 @@
     textView.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:textView];
     _textView  = textView;
-    [_textView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.equalTo(self.view);
-        make.height.mas_equalTo(100);
-        make.bottom.equalTo(self.view);
-    }];
+    _textView.frame = CGRectMake(0, self.view.bounds.size.height -100, self.view.bounds.size.width, 100);
     
     UIWindow *widow = [YYKeyboardManager defaultManager].keyboardWindow;
     UIView *keyboardView = [YYKeyboardManager defaultManager].keyboardView;
@@ -73,13 +69,15 @@
     UIViewAnimationCurve curve = transition.animationCurve;
     UIViewAnimationOptions *options = transition.animationOption;
     if (toFlag) {
-        [_textView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.bottom.equalTo(self.view).offset(-toFrame.size.height);
-        }];
+        _textView.frame = CGRectMake(0, self.view.bounds.size.height -100 -toFrame.size.height, self.view.bounds.size.width, 100);
+//        [_textView mas_updateConstraints:^(MASConstraintMaker *make) {
+//            make.bottom.equalTo(self.view).offset(-toFrame.size.height);
+//        }];
     }else {
-        [_textView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.bottom.equalTo(self.view);
-        }];
+        _textView.frame = CGRectMake(0, self.view.bounds.size.height -100, self.view.bounds.size.width, 100);
+//        [_textView mas_updateConstraints:^(MASConstraintMaker *make) {
+//            make.bottom.equalTo(self.view);
+//        }];
     }
     
 }
