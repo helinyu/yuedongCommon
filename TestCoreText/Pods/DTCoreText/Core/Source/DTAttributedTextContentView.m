@@ -681,6 +681,12 @@ static Class _layerClassToUseForDTAttributedTextContentView = nil;
 	}
 }
 
+- (void)setText:(NSString *)text {
+    _text = text;
+    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:text];
+    self.attributedString = attributedText;
+}
+
 - (void)setAttributedString:(NSAttributedString *)string
 {
 	if (_attributedString != string)

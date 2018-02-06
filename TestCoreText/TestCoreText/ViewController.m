@@ -210,8 +210,8 @@ void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *Exter
 //    [self test11];
 //    [self test12];
 //    [self test13];
-//    [self test14];
-    [self test15];
+    [self test14];
+//    [self test15];
 }
 
 - (void)test15 {

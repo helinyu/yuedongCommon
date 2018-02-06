@@ -70,19 +70,14 @@
     UIViewAnimationOptions *options = transition.animationOption;
     if (toFlag) {
         _textView.frame = CGRectMake(0, self.view.bounds.size.height -100 -toFrame.size.height, self.view.bounds.size.width, 100);
-//        [_textView mas_updateConstraints:^(MASConstraintMaker *make) {
-//            make.bottom.equalTo(self.view).offset(-toFrame.size.height);
-//        }];
     }else {
         _textView.frame = CGRectMake(0, self.view.bounds.size.height -100, self.view.bounds.size.width, 100);
-//        [_textView mas_updateConstraints:^(MASConstraintMaker *make) {
-//            make.bottom.equalTo(self.view);
-//        }];
     }
     
 }
 
 - (void)dealloc {
+//    [[YYKeyboardManager defaultManager] removeObserver:self];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 

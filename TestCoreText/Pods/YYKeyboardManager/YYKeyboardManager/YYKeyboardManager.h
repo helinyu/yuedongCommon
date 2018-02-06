@@ -12,8 +12,8 @@
 #import <UIKit/UIKit.h>
 
 #if __has_include(<YYKeyboardManager/YYKeyboardManager.h>)
-FOUNDATION_EXPORT double YYKeyboardManagerVersionNumber;
-FOUNDATION_EXPORT const unsigned char YYKeyboardManagerVersionString[];
+FOUNDATION_EXPORT double YYKeyboardManagerVersionNumber;// 版本 （可能有吧，不知道有什么用）
+FOUNDATION_EXPORT const unsigned char YYKeyboardManagerVersionString[]; // 版本字符串
 #endif
 
 NS_ASSUME_NONNULL_BEGIN
@@ -31,7 +31,7 @@ typedef struct {
     UIViewAnimationCurve animationCurve;    ///< Keyboard transition animation curve.
     UIViewAnimationOptions animationOption; ///< Keybaord transition animation option.
 } YYKeyboardTransition;
-
+// 转场的信息
 
 /**
  The YYKeyboardObserver protocol defines the method you can use
@@ -46,6 +46,7 @@ typedef struct {
 /**
  A YYKeyboardManager object lets you get the system keyboard information,
  and track the keyboard visible/frame/transition.
+//
  
  @discussion You should access this class in main thread.
  Compatible: iPhone/iPad with iOS6/7/8/9.

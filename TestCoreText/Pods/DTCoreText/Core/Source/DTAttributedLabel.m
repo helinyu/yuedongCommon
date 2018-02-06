@@ -12,6 +12,34 @@
 
 @implementation DTAttributedLabel
 
+//- (CGSize)intrinsicContentSize {
+//    return self.dtLabel.size;
+//}
+//
+//- (CGSize)sizeThatFits:(CGSize)size
+//{
+//    if (self.dtLabel.layoutFrameHeightIsConstrainedByBounds) {
+//        self.dtLabel.height = size.height;
+//    } else {
+//        self.dtLabel.width = size.width;
+//    }
+//    [self.dtLabel sizeToFit];
+//    return self.dtLabel.size;
+//}
+
+//- (void)layoutSubviews {
+//    [super layoutSubviews];
+//    self.layoutWidth = self.width;
+//    self.layoutHeight = self.height;
+//    if (self.dtLabel.layoutFrameHeightIsConstrainedByBounds) {
+//        self.dtLabel.height = self.layoutHeight;
+//    } else {
+//        self.dtLabel.width = self.layoutWidth;
+//    }
+//    [self.dtLabel sizeToFit];
+//    [self invalidateIntrinsicContentSize];
+//}
+
 + (Class)layerClass
 {
 	// most likely the label will be less than a screen size and so we don't want any tiling behavior
