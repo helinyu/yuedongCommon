@@ -47,6 +47,7 @@
 
 #import <YYTextView.h>
 #import "YDTest15ViewController.h"
+#import "YDTest1q6ViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,CALayerDelegate,YYAsyncLayerDelegate>
 // html 页面解析
@@ -212,6 +213,12 @@ void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *Exter
 //    [self test13];
     [self test14];
 //    [self test15];
+//    [self test16];
+}
+
+- (void)test16 {
+    YDTest1q6ViewController *vc = [YDTest1q6ViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)test15 {

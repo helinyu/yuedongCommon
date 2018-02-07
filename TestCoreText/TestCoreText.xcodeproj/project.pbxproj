@@ -41,6 +41,8 @@
 		048B424C2028673000FAEB19 /* YDTest14ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B424B2028673000FAEB19 /* YDTest14ViewController.m */; };
 		048B424F202867FC00FAEB19 /* YDLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B424E202867FC00FAEB19 /* YDLabel.m */; };
 		048B425320286A3200FAEB19 /* YDTest15ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B425220286A3200FAEB19 /* YDTest15ViewController.m */; };
+		048B4259202A959B00FAEB19 /* YDTest1q6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B4258202A959B00FAEB19 /* YDTest1q6ViewController.m */; };
+		048B425C202A961200FAEB19 /* YDTest16Label.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B425B202A961200FAEB19 /* YDTest16Label.m */; };
 		04AAA638202830E5007AC7E9 /* YDTest12ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AAA637202830E5007AC7E9 /* YDTest12ViewController.m */; };
 		04AAA63B202835E8007AC7E9 /* YDTest12View.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AAA63A202835E8007AC7E9 /* YDTest12View.m */; };
 		04FF490C2015910500C02EEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FF490B2015910500C02EEF /* AppDelegate.m */; };
@@ -172,6 +174,10 @@
 		048B424E202867FC00FAEB19 /* YDLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDLabel.m; sourceTree = "<group>"; };
 		048B425120286A3200FAEB19 /* YDTest15ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest15ViewController.h; sourceTree = "<group>"; };
 		048B425220286A3200FAEB19 /* YDTest15ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest15ViewController.m; sourceTree = "<group>"; };
+		048B4257202A959B00FAEB19 /* YDTest1q6ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest1q6ViewController.h; sourceTree = "<group>"; };
+		048B4258202A959B00FAEB19 /* YDTest1q6ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest1q6ViewController.m; sourceTree = "<group>"; };
+		048B425A202A961200FAEB19 /* YDTest16Label.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest16Label.h; sourceTree = "<group>"; };
+		048B425B202A961200FAEB19 /* YDTest16Label.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest16Label.m; sourceTree = "<group>"; };
 		04AAA636202830E5007AC7E9 /* YDTest12ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest12ViewController.h; sourceTree = "<group>"; };
 		04AAA637202830E5007AC7E9 /* YDTest12ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest12ViewController.m; sourceTree = "<group>"; };
 		04AAA639202835E8007AC7E9 /* YDTest12View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest12View.h; sourceTree = "<group>"; };
@@ -337,6 +343,17 @@
 			path = YYTextView15;
 			sourceTree = "<group>";
 		};
+		048B4256202A958E00FAEB19 /* test16 */ = {
+			isa = PBXGroup;
+			children = (
+				048B4257202A959B00FAEB19 /* YDTest1q6ViewController.h */,
+				048B4258202A959B00FAEB19 /* YDTest1q6ViewController.m */,
+				048B425A202A961200FAEB19 /* YDTest16Label.h */,
+				048B425B202A961200FAEB19 /* YDTest16Label.m */,
+			);
+			path = test16;
+			sourceTree = "<group>";
+		};
 		04AAA635202830D2007AC7E9 /* test12 */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +405,7 @@
 		04FF49092015910500C02EEF /* TestCoreText */ = {
 			isa = PBXGroup;
 			children = (
+				048B4256202A958E00FAEB19 /* test16 */,
 				048B425020286A1F00FAEB19 /* YYTextView15 */,
 				048B42492028670D00FAEB19 /* test14 */,
 				04AAA63C20283B8A007AC7E9 /* test13 */,
@@ -878,6 +896,7 @@
 				048B42372028469700FAEB19 /* YDCollectionNullReusableView.m in Sources */,
 				048B4242202849B600FAEB19 /* YDTest13TableViewCell.m in Sources */,
 				048B423D202847E400FAEB19 /* YDCollectionReusableView.m in Sources */,
+				048B425C202A961200FAEB19 /* YDTest16Label.m in Sources */,
 				04FF490F2015910500C02EEF /* ViewController.m in Sources */,
 				0441EF902015D0520048F881 /* YDCTModel.m in Sources */,
 				04FF49502015B1AC00C02EEF /* UIView+frameAdjust.m in Sources */,
@@ -891,6 +910,7 @@
 				0441EF8D2015C9A80048F881 /* YDCTView.m in Sources */,
 				04FF490C2015910500C02EEF /* AppDelegate.m in Sources */,
 				0441EFA62015DA1A0048F881 /* YDCTConfig.m in Sources */,
+				048B4259202A959B00FAEB19 /* YDTest1q6ViewController.m in Sources */,
 				04FF494D20159C3800C02EEF /* CTDisplayView.m in Sources */,
 				0438E73E201EC60D0032E8F8 /* YDDisplayView.m in Sources */,
 				0441EFB32015E21D0048F881 /* ImageViewController.m in Sources */,

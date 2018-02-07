@@ -468,7 +468,7 @@ static dispatch_queue_t YYLabelGetReleaseQueue() {
     }
 }
 
-// 自适应的时候需要重新绘画
+// 自适应的时候需要displaysAsynchronously
 - (CGSize)sizeThatFits:(CGSize)size {
     if (_ignoreCommonProperties) {
         return _innerLayout.textBoundingSize;
@@ -509,7 +509,7 @@ static dispatch_queue_t YYLabelGetReleaseQueue() {
     return layout.textBoundingSize;
 }
 
-- (NSString *)accessibilityLabel { // 可以暂时忽略
+- (NSString *)accessibilityLabel {
     return [_innerLayout.text yy_plainTextForRange:_innerLayout.text.yy_rangeOfAll];
 }
 
@@ -1037,9 +1037,8 @@ static dispatch_queue_t YYLabelGetReleaseQueue() {
         YYTextContainer *container = [_innerContainer copy];
         container.size = YYTextContainerMaxSize;
         
-//        YYTextLayout *layout = [YYTextLayout layoutWithContainer:container text:_innerText];
-//        return layout.textBoundingSize;
-        return CGSizeMake(100, 200);
+        YYTextLayout *layout = [YYTextLayout layoutWithContainer:container text:_innerText];
+        return layout.textBoundingSize;
     }
     
     CGSize containerSize = _innerContainer.size;
