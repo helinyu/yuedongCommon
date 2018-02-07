@@ -48,14 +48,16 @@
 #import <YYTextView.h>
 #import "YDTest15ViewController.h"
 #import "YDTest1q6ViewController.h"
+#import "YDTest17ViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,CALayerDelegate,YYAsyncLayerDelegate>
 // html 页面解析
 {
     htmlSAXHandler _handler; //处理
+    htmlParserCtxtPtr _parserContext;
+
     NSData *_data; // 数据
     NSStringEncoding _encoding; // 编码
-    htmlParserCtxtPtr _parserContext;
     NSMutableString *_accumulateBuffer; // 计算的缓存
     __weak id<vcDelegate> _delegate;
     BOOL _isAborting;
@@ -98,103 +100,12 @@
 //@property (nonatomic, strong) YYTextView *textView;
 //@property (nonatomic, strong) YYTextLine *textLine;
 
+// test 17 html
+
 @end
-
-#pragma mark Event function prototypes
-
-void yd_startDocument(void *context);
-void yd_endDocument(void *context);
-void yd_startElement(void *context, const xmlChar *name,const xmlChar **atts);
-void yd_startElement_no_delegate(void *context, const xmlChar *name, const xmlChar **atts);
-void yd_endElement(void *context, const xmlChar *name);
-void yd_endElement_no_delegate(void *context, const xmlChar *chars);
-void yd_characters(void *context, const xmlChar *ch, int len);
-void yd_comment(void *context, const xmlChar *value);
-void yd_dterror(void *context, const char *msg, ...);
-void yd_cdataBlock(void *context, const xmlChar *value, int len);
-void yd_processingInstruction (void *context, const xmlChar *target, const xmlChar *data);
-
-#pragma mark Event functions
-
-void yd_startDocument(void *context)
-{
-    NSLog(@"_startDocument");
-}
-
-void yd_endDocument(void *context)
-{
-    NSLog(@"end document");
-}
-
-void yd_startElement(void *context, const xmlChar *name, const xmlChar **atts)
-{
-    NSLog(@"start element");
-}
-
-void yd_startElement_no_delegate(void *context, const xmlChar *name, const xmlChar **atts)
-{
-    NSLog(@"start element");
-}
-
-void yd_endElement(void *context, const xmlChar *chars)
-{
-    NSLog(@"end element");
-}
-
-void yd_endElement_no_delegate(void *context, const xmlChar *chars)
-{
-    NSLog(@"end element no delegate");
-}
-
-void yd_characters(void *context, const xmlChar *chars, int len)
-{
-    NSLog(@"characters ");
-}
-
-void yd_comment(void *context, const xmlChar *chars)
-{
-    NSLog(@"comment");
-}
-
-void yd_dterror(void *context, const char *msg, ...)
-{
-    NSLog(@"tder4ror");
-}
-
-void yd_cdataBlock(void *context, const xmlChar *value, int len)
-{
-    NSLog(@"data block");
-}
-
-void yd_processingInstruction (void *context, const xmlChar *target, const xmlChar *data)
-{
-    NSLog(@"context :%@",context);
-}
-
-void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *ExternalID, const xmlChar *SystemID) {
-    NSLog(@"internalSubset");
-}
 
 @implementation ViewController
 
-- (id<vcDelegate>)delegate {
-    return _delegate;
-}
-
-- (void)setDelegate:(id <vcDelegate>)delegate
-{
-    _delegate = delegate;
-    
-    if ([delegate respondsToSelector:@selector(doText:)])
-    {
-        _handler.startDocument = yd_startDocument;
-    }
-    else
-    {
-//        _handler.startDocument = yd_stat;
-    }
-  
-}
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -211,9 +122,24 @@ void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *Exter
 //    [self test11];
 //    [self test12];
 //    [self test13];
-    [self test14];
+//    [self test14];
 //    [self test15];
 //    [self test16];
+    [self test17];
+}
+
+- (void)test17 {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.view addSubview:btn];
+    btn.backgroundColor = [UIColor purpleColor];
+    btn.frame = CGRectMake(0, 100, 200, 40);
+    [btn setTitle:@"进入自定义html解析" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(onTap) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)onTap {
+    YDTest17ViewController *vc = [YDTest17ViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)test16 {
@@ -471,7 +397,7 @@ void yd_internalSubset (void *context, const xmlChar *name, const xmlChar *Exter
 
     _parserContext = htmlCreatePushParserCtxt(&_handler, (__bridge void *)self, dataBytes, (int)data.length, NULL, XML_CHAR_ENCODING_UTF8);
     htmlCtxtUseOptions(_parserContext, HTML_PARSE_RECOVER | HTML_PARSE_NONET | HTML_PARSE_COMPACT | HTML_PARSE_NOBLANKS);
-    
+    //     解析就会有问题（因为是c写得，没有释放； 所以这里面的delegate要设置好）
     int result = htmlParseDocument(_parserContext);
     NSLog(@"result code :%zd",result);
 }

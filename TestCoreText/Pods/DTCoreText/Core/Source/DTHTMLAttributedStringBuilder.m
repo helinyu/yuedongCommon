@@ -113,8 +113,10 @@
 		// GCD setup
 		_stringAssemblyQueue = dispatch_queue_create("DTHTMLAttributedStringBuilder", 0);
 		_stringAssemblyGroup = dispatch_group_create();
+        
 		_dataParsingQueue = dispatch_queue_create("DTHTMLAttributedStringBuilderParser", 0);
 		_dataParsingGroup = dispatch_group_create();
+        
 		_treeBuildingQueue = dispatch_queue_create("DTHTMLAttributedStringBuilderParser Tree Queue", 0);
 		_treeBuildingGroup = dispatch_group_create();
 	}
