@@ -24,7 +24,8 @@ static int _YYKeyboardViewFrameObserverKey;
 
 
 @implementation _YYKeyboardViewFrameObserver {
-    __unsafe_unretained UIView *_keyboardView;
+    UIView __unsafe_unretained *_keyboardView; // 全局变量
+    //这样定义，view存在，他就存在 （这里是全局强引用和unsafe_retained关系）
 }
 - (void)addToKeyboardView:(UIView *)keyboardView {
     if (_keyboardView == keyboardView) return;

@@ -112,10 +112,7 @@ static int _YYTextKeyboardViewFrameObserverKey;
 - (instancetype)_init {
     self = [super init];
     _observers = [[NSHashTable alloc] initWithOptions:NSPointerFunctionsWeakMemory|NSPointerFunctionsObjectPointerPersonality capacity:0];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(_keyboardFrameWillChangeNotification:)
-                                                 name:UIKeyboardWillChangeFrameNotification
-                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(_keyboardFrameWillChangeNotification:)name:UIKeyboardWillChangeFrameNotification object:nil];
     // for iPad (iOS 9)
     if ([UIDevice currentDevice].systemVersion.floatValue >= 9) {
         [[NSNotificationCenter defaultCenter] addObserver:self
