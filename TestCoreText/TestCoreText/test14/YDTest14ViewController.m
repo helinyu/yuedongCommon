@@ -12,7 +12,7 @@
 #import <DTCoreText.h>
 #import <NSString+YYAdd.h>
 
-@interface YDTest14ViewController ()
+@interface YDTest14ViewController ()<DTAttributedTextContentViewDelegate>
 
 @property (nonatomic, strong) UILabel *originLabel;
 @property (nonatomic, strong) YYLabel *fixLabel;
@@ -26,7 +26,27 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
    
-    [self testYY];
+//    [self testYY];
+    [self testDT];
+}
+
+- (void)testDT {
+    _dtLabel = [DTAttributedLabel new];
+    [self.view addSubview:_dtLabel];
+    _dtLabel.backgroundColor = [UIColor yellowColor];
+    _dtLabel.delegate = self;
+//    _dtLabel.frame = CGRectMake(0, 100, 100, 100);
+    [_dtLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.equalTo(self.view).offset(100.f);
+        make.width.height.mas_equalTo(100.f);
+    }];
+    _dtLabel.text = @"label奥斯卡ejkldfjgklsdfjkfljskldjskfg两地分居埃里克森积分卡洛斯；附近的卡萨；浪费静安寺；";
+    [_dtLabel sizeToFit];
+}
+
+- (void)attributedTextContentView:(DTAttributedTextContentView *)attributedTextContentView didDrawLayoutFrame:(DTCoreTextLayoutFrame *)layoutFrame inContext:(CGContextRef)context {
+    [_dtLabel invalidateIntrinsicContentSize];
+    NSLog(@"渲染完成");
 }
 
 - (void)testYY {
