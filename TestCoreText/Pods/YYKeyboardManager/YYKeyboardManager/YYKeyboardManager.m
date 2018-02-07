@@ -130,13 +130,13 @@ static int _YYKeyboardViewFrameObserverKey;
     UIView *keyboardView = self.keyboardView;
     if (!keyboardView) return;
     __weak typeof(self) _self = self;
-    _YYKeyboardViewFrameObserver *observer = [_YYKeyboardViewFrameObserver observerForView:keyboardView];
+    _YYKeyboardViewFrameObserver *observer = [_YYKeyboardViewFrameObserver observerForView:keyboardView]; // 创建一个监听对象 （获取keyboard中添加的监听对象）
     if (!observer) {
         observer = [_YYKeyboardViewFrameObserver new];
         observer.notifyBlock = ^(UIView *keyboard) {
-            [_self _keyboardFrameChanged:keyboard];
+            [_self _keyboardFrameChanged:keyboard]; // 监测回调
         };
-        [observer addToKeyboardView:keyboardView];
+        [observer addToKeyboardView:keyboardView]; // 添加监听
     }
 }
 
@@ -171,6 +171,7 @@ static int _YYKeyboardViewFrameObserverKey;
 
 - (UIWindow *)keyboardWindow {
     UIWindow *window = nil;
+//     我觉得这里应该消耗很多内存
     for (window in [UIApplication sharedApplication].windows) {
         if ([self _getKeyboardViewFromWindow:window]) return window;
     }
@@ -208,7 +209,7 @@ static int _YYKeyboardViewFrameObserverKey;
 
 - (UIView *)keyboardView {
     UIWindow *window = nil;
-    UIView *view = nil;
+    UIView *view = nil;// 这里后去键盘的逻辑
     for (window in [UIApplication sharedApplication].windows) {
         view = [self _getKeyboardViewFromWindow:window];
         if (view) return view;
@@ -285,11 +286,11 @@ static int _YYKeyboardViewFrameObserverKey;
         if (windowName.length != 22) return nil;
         if (![windowName hasPrefix:@"UI"]) return nil;
         if (![windowName hasSuffix:@"RemoteKeyboardWindow"]) return nil;
-    }
+    }  // 排除大致上不是的没有keywindow的情况 （这种情况是怎么进行总结的？）
     
     // Get the view
     if ([self _systemVersion] < 8) {
-        // UIPeripheralHostView
+        // UIPeripheralHostView  （8 之前的处理）
         for (UIView *view in window.subviews) {
             NSString *viewName = NSStringFromClass(view.class);
             if (viewName.length != 20) continue;
@@ -298,7 +299,7 @@ static int _YYKeyboardViewFrameObserverKey;
             return view;
         }
     } else {
-        // UIInputSetContainerView
+        // UIInputSetContainerView（8之后的内容）
         for (UIView *view in window.subviews) {
             NSString *viewName = NSStringFromClass(view.class);
             if (viewName.length != 23) continue;

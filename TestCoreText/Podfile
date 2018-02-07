@@ -13,6 +13,8 @@ target 'TestCoreText' do
    pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
    pod 'YYKeyboardManager', '~> 1.0.1'
    pod 'YYText', '~> 1.0.7'
+   pod 'YYCategories', '~> 1.0.4'
+
 
   # Pods for TestCoreText
 

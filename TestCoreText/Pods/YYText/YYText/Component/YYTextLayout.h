@@ -138,7 +138,7 @@ extern const CGSize YYTextContainerMaxSize;
  
  example: (layout with a circle exclusion path)
  
-     ┌──────────────────────────┐  <------ container
+     ┌──────────────────────────┐  <------ container
      │ [--------Line0--------]  │  <- Row0
      │ [--------Line1--------]  │  <- Row1
      │ [-Line2-]     [-Line3-]  │  <- Row2
@@ -193,8 +193,7 @@ extern const CGSize YYTextContainerMaxSize;
  @return An array of YYTextLayout object (the count is same as containers),
     or nil when an error occurs.
  */
-+ (nullable NSArray<YYTextLayout *> *)layoutWithContainers:(NSArray<YYTextContainer *> *)containers
-                                                      text:(NSAttributedString *)text;
++ (nullable NSArray<YYTextLayout *> *)layoutWithContainers:(NSArray<YYTextContainer *> *)containers text:(NSAttributedString *)text;
 
 /**
  Generate layouts with the given containers and text.
@@ -206,9 +205,7 @@ extern const CGSize YYTextContainerMaxSize;
  @return An array of YYTextLayout object (the count is same as containers),
     or nil when an error occurs.
  */
-+ (nullable NSArray<YYTextLayout *> *)layoutWithContainers:(NSArray<YYTextContainer *> *)containers
-                                                      text:(NSAttributedString *)text
-                                                     range:(NSRange)range;
++ (nullable NSArray<YYTextLayout *> *)layoutWithContainers:(NSArray<YYTextContainer *> *)containers text:(NSAttributedString *)text range:(NSRange)range;
 
 - (instancetype)init UNAVAILABLE_ATTRIBUTE;
 + (instancetype)new UNAVAILABLE_ATTRIBUTE;

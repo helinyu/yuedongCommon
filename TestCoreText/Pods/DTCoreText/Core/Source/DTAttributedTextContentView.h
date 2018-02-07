@@ -238,6 +238,11 @@ typedef NSUInteger DTAttributedTextContentViewRelayoutMask;
 @property (nonatomic, copy) NSAttributedString *attributedString;
 
 
+/*
+the text string to display in the receiver
+*/
+@property (nonatomic, copy) NSString *text;
+
 /**
  The delegate that is in charge of supplying custom behavior for the receiver. It must conform to <DTAttributedTextContentViewDelegate> and provide custom subviews, link buttons, etc.
  */

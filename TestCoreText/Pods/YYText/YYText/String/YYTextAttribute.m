@@ -26,7 +26,7 @@ static double _YYDeviceSystemVersion() {
 }
 
 
-NSString *const YYTextBackedStringAttributeName = @"YYTextBackedString";
+NSString *const YYTextBackedStringAttributeName = @"YYTextBackedString";// 可以后台字符串
 NSString *const YYTextBindingAttributeName = @"YYTextBinding";
 NSString *const YYTextShadowAttributeName = @"YYTextShadow";
 NSString *const YYTextInnerShadowAttributeName = @"YYTextInnerShadow";
