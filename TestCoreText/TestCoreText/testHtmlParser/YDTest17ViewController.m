@@ -8,19 +8,13 @@
 
 #import "YDTest17ViewController.h"
 #import <libxml/HTMLparser.h>
-#import "YDHTMLParser.h"
+//#import "YDHTMLParser.h"
+#import "YDHtmlElementBuilder.h"
 
 @interface YDTest17ViewController ()
-{
-    htmlSAXHandler _handler; //处理
-    htmlParserCtxtPtr _parserContext;
-}
 
 @end
 
-void testStartElement(void *ctx, const xmlChar *name, const xmlChar **atts) {
-    NSLog(@"start element");
-}
 
 @implementation YDTest17ViewController
 
@@ -46,6 +40,8 @@ void testStartElement(void *ctx, const xmlChar *name, const xmlChar **atts) {
     
     void *dataBytes = (char *)[data bytes];
 
+    YDHtmlElementBuilder *elementBuilder = [[YDHtmlElementBuilder alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    
 }
 
 - (void)didReceiveMemoryWarning {

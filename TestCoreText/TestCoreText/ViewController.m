@@ -127,12 +127,13 @@
 //    [self test14];
 //    [self test15];
 //    [self test16];
-//    [self test17];
-    [self test18];
+    [self test17];
+//    [self test18];
 }
 
 - (void)test18 {
     YDTest16ViewController *vc = [YDTest16ViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)test17 {
