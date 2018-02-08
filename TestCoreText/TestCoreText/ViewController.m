@@ -133,6 +133,7 @@
 
 - (void)test18 {
     YDTest16ViewController *vc = [YDTest16ViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)test17 {
