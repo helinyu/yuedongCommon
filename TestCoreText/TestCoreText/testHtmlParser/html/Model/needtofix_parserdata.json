@@ -1,0 +1,339 @@
+// 将styles 字典的内容穿黄为attributeString
+- (void)applyStyleDictionary:(NSDictionary *)styles
+{
+	if (![styles count])
+	{
+		return;
+	}
+
+	
+	
+	NSString *fontSize = [styles objectForKey:@"font-size"];
+	if (fontSize)
+	{
+		// absolute sizes based on 12.0 CoreText default size, Safari has 16.0
+		
+		if ([fontSize isEqualToString:@"smaller"])
+		{
+			_fontDescriptor.pointSize /= 1.2f;
+		}
+		else if ([fontSize isEqualToString:@"larger"])
+		{
+			_fontDescriptor.pointSize *= 1.2f;
+		}
+		else if ([fontSize isEqualToString:@"xx-small"])
+		{
+			_fontDescriptor.pointSize = 9.0f * _textScale;
+		}
+		else if ([fontSize isEqualToString:@"x-small"])
+		{
+			_fontDescriptor.pointSize = 10.0f * _textScale;
+		}
+		else if ([fontSize isEqualToString:@"small"])
+		{
+			_fontDescriptor.pointSize = 13.0f * _textScale;
+		}
+		else if ([fontSize isEqualToString:@"medium"])
+		{
+			_fontDescriptor.pointSize = 16.0f * _textScale;
+		}
+		else if ([fontSize isEqualToString:@"large"])
+		{
+			_fontDescriptor.pointSize = 18.0f * _textScale;
+		}
+		else if ([fontSize isEqualToString:@"x-large"])
+		{
+			_fontDescriptor.pointSize = 24.0f * _textScale;
+		}
+		else if ([fontSize isEqualToString:@"xx-large"])
+		{
+			_fontDescriptor.pointSize = 32.0f * _textScale;
+		}
+		else if ([fontSize isEqualToString:@"-webkit-xxx-large"])
+		{
+			_fontDescriptor.pointSize = 48.0f * _textScale;
+		}
+		else if ([fontSize isEqualToString:@"inherit"])
+		{
+			_fontDescriptor.pointSize = self.parentElement.fontDescriptor.pointSize;
+		}
+		else if ([fontSize isCSSLengthValue])
+		{
+			_fontDescriptor.pointSize = [fontSize pixelSizeOfCSSMeasureRelativeToCurrentTextSize:_currentTextSize textScale:_textScale];
+		}
+	}
+	
+	
+
+	id fontFamilyStyle = [styles objectForKey:@"font-family"];
+	
+	if (fontFamilyStyle)
+	{
+		NSArray *fontFamilies;
+		
+		if ([fontFamilyStyle isKindOfClass:[NSString class]])
+		{
+			fontFamilies = [NSArray arrayWithObject:fontFamilyStyle];
+		}
+		else if ([fontFamilyStyle isKindOfClass:[NSArray class]])
+		{
+			fontFamilies = fontFamilyStyle;
+		}
+				
+		BOOL foundFontFamily = NO;
+		
+		for (NSString *fontFamily in fontFamilies)
+		{
+			_fontDescriptor.fontFamily = fontFamily;
+			
+			// check if this is a known font family
+			CTFontRef font = [_fontDescriptor newMatchingFont];
+			
+			if (font)
+			{
+				NSString *foundFamily = CFBridgingRelease(CTFontCopyFamilyName(font));
+				CFRelease(font);
+				
+				if ([foundFamily isEqualToString:fontFamily])
+				{
+					foundFontFamily = YES;
+					break;
+				}
+				
+				NSString *lowercaseFontFamily = [fontFamily lowercaseString];
+				NSString *lowercaseFontFamilyWithoutWhiteSpaces = [lowercaseFontFamily stringByReplacingOccurrencesOfString:@"\\s"
+																												 withString:@""
+																													options:NSRegularExpressionSearch
+																													  range:NSMakeRange(0, [lowercaseFontFamily length])];
+				NSArray *lowercaseFontFamilyWithoutWhiteSpacesArray = [lowercaseFontFamilyWithoutWhiteSpaces componentsSeparatedByString: @","];
+				
+				if ([lowercaseFontFamilyWithoutWhiteSpacesArray indexOfObject:@"geneva"] != NSNotFound)
+				{
+					_fontDescriptor.fontFamily = @"Helvetica";
+					foundFontFamily = YES;
+				}
+				else if ([lowercaseFontFamilyWithoutWhiteSpacesArray indexOfObject:@"cursive"] != NSNotFound)
+				{
+					_fontDescriptor.stylisticClass = kCTFontScriptsClass;
+					_fontDescriptor.fontFamily = nil;
+					foundFontFamily = YES;
+				}
+				else if ([lowercaseFontFamilyWithoutWhiteSpacesArray indexOfObject:@"sans-serif"] != NSNotFound)
+				{
+					// too many matches (24)
+					// fontDescriptor.stylisticClass = kCTFontSansSerifClass;
+					_fontDescriptor.fontFamily = @"Helvetica";
+					foundFontFamily = YES;
+				}
+				else if ([lowercaseFontFamilyWithoutWhiteSpacesArray indexOfObject:@"serif"] != NSNotFound)
+				{
+					// kCTFontTransitionalSerifsClass = Baskerville
+					// kCTFontClarendonSerifsClass = American Typewriter
+					// kCTFontSlabSerifsClass = Courier New
+					//
+					// strangely none of the classes yields Times
+					_fontDescriptor.fontFamily = @"Times New Roman";
+					foundFontFamily = YES;
+				}
+				else if ([lowercaseFontFamilyWithoutWhiteSpacesArray indexOfObject:@"fantasy"] != NSNotFound)
+				{
+					_fontDescriptor.fontFamily = @"Papyrus"; // only available on iPad
+					foundFontFamily = YES;
+				}
+				else if ([lowercaseFontFamilyWithoutWhiteSpacesArray indexOfObject:@"monospace"] != NSNotFound)
+				{
+					_fontDescriptor.monospaceTrait = YES;
+					_fontDescriptor.fontFamily = @"Courier";
+					foundFontFamily = YES;
+				}
+				else if ([lowercaseFontFamilyWithoutWhiteSpacesArray indexOfObject:@"times"] != NSNotFound)
+				{
+					_fontDescriptor.fontFamily = @"Times New Roman";
+					foundFontFamily = YES;
+				}
+				else if ([lowercaseFontFamily isEqualToString:@"inherit"])
+				{
+					_fontDescriptor.fontFamily = self.parentElement.fontDescriptor.fontFamily;
+					foundFontFamily = YES;
+				}
+
+			}
+			
+			if (foundFontFamily)
+			{
+				break;
+			}
+		}
+		
+		if (!foundFontFamily)
+		{
+			// probably custom font registered in info.plist
+			_fontDescriptor.fontFamily = [fontFamilies objectAtIndex:0];
+		}
+	}
+	
+	NSString *fontStyle = [[styles objectForKey:@"font-style"] lowercaseString];
+	if (fontStyle)
+	{
+		// remove font name since this would cause font creation to ignore the trait
+		_fontDescriptor.fontName = nil;
+		
+		if ([fontStyle isEqualToString:@"normal"])
+		{
+			_fontDescriptor.italicTrait = NO;
+		}
+		else if ([fontStyle isEqualToString:@"italic"] || [fontStyle isEqualToString:@"oblique"])
+		{
+			_fontDescriptor.italicTrait = YES;
+		}
+		else if ([fontStyle isEqualToString:@"inherit"])
+		{
+			// nothing to do
+		}
+	}
+	
+	NSString *fontWeight = [[styles objectForKey:@"font-weight"] lowercaseString];
+	if (fontWeight)
+	{
+		// remove font name since this would cause font creation to ignore the trait
+		_fontDescriptor.fontName = nil;
+		
+		if ([fontWeight isEqualToString:@"normal"])
+		{
+			_fontDescriptor.boldTrait = NO;
+		}
+		else if ([fontWeight isEqualToString:@"bold"])
+		{
+			_fontDescriptor.boldTrait = YES;
+		}
+		else if ([fontWeight isEqualToString:@"bolder"])
+		{
+			_fontDescriptor.boldTrait = YES;
+		}
+		else if ([fontWeight isEqualToString:@"lighter"])
+		{
+			_fontDescriptor.boldTrait = NO;
+		}
+		else
+		{
+			// can be 100 - 900
+			
+			NSInteger value = [fontWeight intValue];
+			
+			if (value<=600)
+			{
+				_fontDescriptor.boldTrait = NO;
+			}
+			else
+			{
+				_fontDescriptor.boldTrait = YES;
+			}
+		}
+	}
+
+	// if there is a text attachment we transfer the alignment we got
+	_textAttachment.verticalAlignment = _textAttachmentAlignment;
+	
+	id shadow = [styles objectForKey:@"text-shadow"];
+	if (shadow)
+	{
+		
+		self.shadows = [shadow arrayOfCSSShadowsWithCurrentTextSize:_fontDescriptor.pointSize currentColor:_textColor];
+	}
+
+	// there can only be padding if the word "margin" occurs in the styles keys
+	if ([allKeys rangeOfString:@"-webkit-margin"].length)
+	{
+		hasMargins = ([self _parseEdgeInsetsFromStyleDictionary:styles forAttributesWithPrefix:@"-webkit-margin" writingDirection:self.paragraphStyle.baseWritingDirection intoEdgeInsets:&_margins] || hasMargins);
+	}
+	
+	if ([allKeys rangeOfString:@"margin"].length)
+	{
+		hasMargins = ([self _parseEdgeInsetsFromStyleDictionary:styles forAttributesWithPrefix:@"margin" writingDirection:self.paragraphStyle.baseWritingDirection intoEdgeInsets:&_margins] || hasMargins);
+	}
+	
+	BOOL hasPadding = NO;
+	
+	// there can only be padding if the word "padding" occurs in the styles keys
+	if ([allKeys rangeOfString:@"-webkit-padding"].length)
+	{
+		hasPadding = ([self _parseEdgeInsetsFromStyleDictionary:styles forAttributesWithPrefix:@"-webkit-padding" writingDirection:self.paragraphStyle.baseWritingDirection intoEdgeInsets:&_padding] || hasPadding);
+	}
+	
+	if ([allKeys rangeOfString:@"padding"].length)
+	{
+		
+		hasPadding = ([self _parseEdgeInsetsFromStyleDictionary:styles forAttributesWithPrefix:@"padding" writingDirection:self.paragraphStyle.baseWritingDirection intoEdgeInsets:&_padding] || hasPadding);
+	}
+	
+	if (hasPadding)
+	{
+		if ([self.name isEqualToString:@"ul"] || [self.name isEqualToString:@"ol"])
+		{
+			_listIndent = _padding.left;
+			_padding.left = 0;
+		}
+		
+		// if we still have padding we need a block
+		if (_padding.left>0 || _padding.right>0 || _padding.top>0 || _padding.bottom>0)
+		{
+			needsTextBlock = YES;
+		}
+	}
+	
+	if (_displayStyle == DTHTMLElementDisplayStyleBlock)
+	{
+		// we only care for margins of block level elements
+		if (hasMargins)
+		{
+			self.paragraphStyle.paragraphSpacing = _margins.bottom;
+			self.paragraphStyle.paragraphSpacingBefore = _margins.top;
+			// we increase the inherited values for the time being
+			self.paragraphStyle.headIndent += _margins.left;
+			self.paragraphStyle.firstLineHeadIndent = self.paragraphStyle.headIndent;
+			
+			// tailIndent from right side is negative
+			self.paragraphStyle.tailIndent -= _margins.right;
+		}
+		
+		if (needsTextBlock)
+		{
+			// need a block
+			DTTextBlock *newBlock = [[DTTextBlock alloc] init];
+			
+			newBlock.padding = _padding;
+			
+			// transfer background color to block
+			newBlock.backgroundColor = _backgroundColor;
+			_backgroundColor = nil;
+			
+			if (self.paragraphStyle.textBlocks)
+			{
+				// make mutable version
+				NSMutableArray *mutableBlocks = [self.paragraphStyle.textBlocks mutableCopy];
+				
+				// add new block to the array
+				[mutableBlocks addObject:newBlock];
+				
+				// set non-mutable version
+				self.paragraphStyle.textBlocks = [mutableBlocks copy];
+			}
+			else
+			{
+				// didn't have any blocks before, start new array
+				NSArray *blocks = [NSArray arrayWithObject:newBlock];
+				self.paragraphStyle.textBlocks = blocks;
+			}
+		}
+	}
+	else if (_displayStyle == DTHTMLElementDisplayStyleListItem)
+	{
+		self.paragraphStyle.paragraphSpacing = _margins.bottom;
+	}
+    
+    NSString *coretextFontString = [styles objectForKey:@"-coretext-fontname"];
+    if (coretextFontString)
+    {
+        _fontDescriptor.fontName = [styles objectForKey:@"-coretext-fontname"];
+    }
+}

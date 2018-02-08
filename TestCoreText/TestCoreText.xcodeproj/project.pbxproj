@@ -46,6 +46,14 @@
 		048B4263202AA64E00FAEB19 /* YDTest17ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B4262202AA64E00FAEB19 /* YDTest17ViewController.m */; };
 		048B4275202AEF8100FAEB19 /* YDHtmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B4274202AEF8100FAEB19 /* YDHtmlParser.m */; };
 		048B4278202AEF9400FAEB19 /* YDHtmlElementBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B4277202AEF9400FAEB19 /* YDHtmlElementBuilder.m */; };
+		048B427F202C28EA00FAEB19 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 048B427E202C28EA00FAEB19 /* default.css */; };
+		048B4282202C290700FAEB19 /* YDDefaultCss.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B4281202C290700FAEB19 /* YDDefaultCss.m */; };
+		048B4287202C2EBA00FAEB19 /* YDHtmlParserNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B4286202C2EBA00FAEB19 /* YDHtmlParserNode.m */; };
+		048B428A202C30C200FAEB19 /* YDHtmlElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B4289202C30C200FAEB19 /* YDHtmlElement.m */; };
+		048B428E202C41EF00FAEB19 /* YDHtmlElementModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B428D202C41EF00FAEB19 /* YDHtmlElementModel.m */; };
+		048B4292202C47EC00FAEB19 /* YDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B4291202C47EC00FAEB19 /* YDExtension.m */; };
+		048B4294202C7EDA00FAEB19 /* needtofix_parserdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 048B4293202C7ED900FAEB19 /* needtofix_parserdata.json */; };
+		048B4296202C7F7B00FAEB19 /* struct _xmlSAXHandler { in Resources */ = {isa = PBXBuildFile; fileRef = 048B4295202C7F7B00FAEB19 /* struct _xmlSAXHandler { */; };
 		04AAA638202830E5007AC7E9 /* YDTest12ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AAA637202830E5007AC7E9 /* YDTest12ViewController.m */; };
 		04AAA63B202835E8007AC7E9 /* YDTest12View.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AAA63A202835E8007AC7E9 /* YDTest12View.m */; };
 		04FF490C2015910500C02EEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FF490B2015910500C02EEF /* AppDelegate.m */; };
@@ -98,6 +106,7 @@
 		04FFAF582019C98200E54521 /* XB NiloofarBd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04FFAF342019C98200E54521 /* XB NiloofarBd.ttf */; };
 		184EAB53EACF33E11AE2A46E /* libPods-TestCoreText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 000209BC3D7C5DD4662F9B47 /* libPods-TestCoreText.a */; };
 		1C9FB5BB349C54083A806E82 /* libPods-TestCoreTextTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 441B331D497B2090B946C7C7 /* libPods-TestCoreTextTests.a */; };
+		411E4B40202CBCB3006747A5 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 411E4B3F202CBCB2006747A5 /* libxml2.2.tbd */; };
 		418EAD3B202B4E2C0067612B /* YDTest16ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418EAD3A202B4E2C0067612B /* YDTest16ViewController.m */; };
 		DB4E6C00666DBDC297F9A008 /* libPods-TestCoreTextUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC45445AE841053CAD4DB3F7 /* libPods-TestCoreTextUITests.a */; };
 /* End PBXBuildFile section */
@@ -188,6 +197,19 @@
 		048B4274202AEF8100FAEB19 /* YDHtmlParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDHtmlParser.m; sourceTree = "<group>"; };
 		048B4276202AEF9400FAEB19 /* YDHtmlElementBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDHtmlElementBuilder.h; sourceTree = "<group>"; };
 		048B4277202AEF9400FAEB19 /* YDHtmlElementBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDHtmlElementBuilder.m; sourceTree = "<group>"; };
+		048B427E202C28EA00FAEB19 /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
+		048B4280202C290700FAEB19 /* YDDefaultCss.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDDefaultCss.h; sourceTree = "<group>"; };
+		048B4281202C290700FAEB19 /* YDDefaultCss.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDDefaultCss.m; sourceTree = "<group>"; };
+		048B4285202C2EBA00FAEB19 /* YDHtmlParserNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDHtmlParserNode.h; sourceTree = "<group>"; };
+		048B4286202C2EBA00FAEB19 /* YDHtmlParserNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDHtmlParserNode.m; sourceTree = "<group>"; };
+		048B4288202C30C200FAEB19 /* YDHtmlElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDHtmlElement.h; sourceTree = "<group>"; };
+		048B4289202C30C200FAEB19 /* YDHtmlElement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDHtmlElement.m; sourceTree = "<group>"; };
+		048B428C202C41EF00FAEB19 /* YDHtmlElementModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDHtmlElementModel.h; sourceTree = "<group>"; };
+		048B428D202C41EF00FAEB19 /* YDHtmlElementModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDHtmlElementModel.m; sourceTree = "<group>"; };
+		048B4290202C47EC00FAEB19 /* YDExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDExtension.h; sourceTree = "<group>"; };
+		048B4291202C47EC00FAEB19 /* YDExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDExtension.m; sourceTree = "<group>"; };
+		048B4293202C7ED900FAEB19 /* needtofix_parserdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = needtofix_parserdata.json; sourceTree = "<group>"; };
+		048B4295202C7F7B00FAEB19 /* struct _xmlSAXHandler { */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "struct _xmlSAXHandler {"; sourceTree = "<group>"; };
 		04AAA636202830E5007AC7E9 /* YDTest12ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest12ViewController.h; sourceTree = "<group>"; };
 		04AAA637202830E5007AC7E9 /* YDTest12ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest12ViewController.m; sourceTree = "<group>"; };
 		04AAA639202835E8007AC7E9 /* YDTest12View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest12View.h; sourceTree = "<group>"; };
@@ -254,6 +276,7 @@
 		04FFAF342019C98200E54521 /* XB NiloofarBd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "XB NiloofarBd.ttf"; sourceTree = "<group>"; };
 		1D663F57728E95195C4A930D /* Pods-TestCoreTextUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreTextUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreTextUITests/Pods-TestCoreTextUITests.release.xcconfig"; sourceTree = "<group>"; };
 		30D1CC46F87D62916D9E5AF6 /* Pods-TestCoreTextUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreTextUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreTextUITests/Pods-TestCoreTextUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		411E4B3F202CBCB2006747A5 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		418EAD39202B4E2C0067612B /* YDTest16ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest16ViewController.h; sourceTree = "<group>"; };
 		418EAD3A202B4E2C0067612B /* YDTest16ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest16ViewController.m; sourceTree = "<group>"; };
 		441B331D497B2090B946C7C7 /* libPods-TestCoreTextTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestCoreTextTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -269,6 +292,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411E4B40202CBCB3006747A5 /* libxml2.2.tbd in Frameworks */,
 				184EAB53EACF33E11AE2A46E /* libPods-TestCoreText.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +393,9 @@
 		048B425D202AA59E00FAEB19 /* testHtmlParser */ = {
 			isa = PBXGroup;
 			children = (
+				048B428F202C47DB00FAEB19 /* Extension */,
+				048B4284202C2EA700FAEB19 /* attribute */,
+				048B4283202C2E9600FAEB19 /* html */,
 				048B4267202AA6D800FAEB19 /* lib */,
 				048B4261202AA64E00FAEB19 /* YDTest17ViewController.h */,
 				048B4262202AA64E00FAEB19 /* YDTest17ViewController.m */,
@@ -379,12 +406,54 @@
 		048B4267202AA6D800FAEB19 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				048B427E202C28EA00FAEB19 /* default.css */,
 				048B4273202AEF8100FAEB19 /* YDHtmlParser.h */,
 				048B4274202AEF8100FAEB19 /* YDHtmlParser.m */,
 				048B4276202AEF9400FAEB19 /* YDHtmlElementBuilder.h */,
 				048B4277202AEF9400FAEB19 /* YDHtmlElementBuilder.m */,
+				048B4280202C290700FAEB19 /* YDDefaultCss.h */,
+				048B4281202C290700FAEB19 /* YDDefaultCss.m */,
 			);
 			path = lib;
+			sourceTree = "<group>";
+		};
+		048B4283202C2E9600FAEB19 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				048B428B202C41E000FAEB19 /* Model */,
+				048B4285202C2EBA00FAEB19 /* YDHtmlParserNode.h */,
+				048B4286202C2EBA00FAEB19 /* YDHtmlParserNode.m */,
+				048B4288202C30C200FAEB19 /* YDHtmlElement.h */,
+				048B4289202C30C200FAEB19 /* YDHtmlElement.m */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		048B4284202C2EA700FAEB19 /* attribute */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = attribute;
+			sourceTree = "<group>";
+		};
+		048B428B202C41E000FAEB19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				048B4295202C7F7B00FAEB19 /* struct _xmlSAXHandler { */,
+				048B4293202C7ED900FAEB19 /* needtofix_parserdata.json */,
+				048B428C202C41EF00FAEB19 /* YDHtmlElementModel.h */,
+				048B428D202C41EF00FAEB19 /* YDHtmlElementModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		048B428F202C47DB00FAEB19 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				048B4290202C47EC00FAEB19 /* YDExtension.h */,
+				048B4291202C47EC00FAEB19 /* YDExtension.m */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		04AAA635202830D2007AC7E9 /* test12 */ = {
@@ -585,6 +654,7 @@
 		B2F2B1BDBCAF68EF29E81E31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				411E4B3F202CBCB2006747A5 /* libxml2.2.tbd */,
 				000209BC3D7C5DD4662F9B47 /* libPods-TestCoreText.a */,
 				441B331D497B2090B946C7C7 /* libPods-TestCoreTextTests.a */,
 				DC45445AE841053CAD4DB3F7 /* libPods-TestCoreTextUITests.a */,
@@ -722,6 +792,7 @@
 				04FF49172015910500C02EEF /* LaunchScreen.storyboard in Resources */,
 				04FFAF4B2019C98200E54521 /* ListTest.html in Resources */,
 				0441EF982015D1EF0048F881 /* red@2x.png in Resources */,
+				048B4294202C7EDA00FAEB19 /* needtofix_parserdata.json in Resources */,
 				0441EF962015D1D10048F881 /* coretext-image-1.jpg in Resources */,
 				04FFAF402019C98200E54521 /* eg_tulip.jpg in Resources */,
 				04FFAF582019C98200E54521 /* XB NiloofarBd.ttf in Resources */,
@@ -730,6 +801,7 @@
 				04FFAF3A2019C98200E54521 /* css.css in Resources */,
 				04FFAF542019C98200E54521 /* TextBoxes.html in Resources */,
 				04FFAF482019C98200E54521 /* Languages.html in Resources */,
+				048B427F202C28EA00FAEB19 /* default.css in Resources */,
 				04FFAF4F2019C98200E54521 /* Oliver@2x.jpg in Resources */,
 				04FFAF562019C98200E54521 /* WarAndPeace.html in Resources */,
 				04FFAF392019C98200E54521 /* CoreTextIssues.html in Resources */,
@@ -748,6 +820,7 @@
 				04FFAF362019C98200E54521 /* Alignment.html in Resources */,
 				04FFAF4E2019C98200E54521 /* Oliver.jpg in Resources */,
 				0438E74C201F27450032E8F8 /* Strawberry Blossom.ttf in Resources */,
+				048B4296202C7F7B00FAEB19 /* struct _xmlSAXHandler { in Resources */,
 				04FFAF522019C98200E54521 /* styles.html in Resources */,
 				04FFAF4D2019C98200E54521 /* Objects.html in Resources */,
 				0441EF952015D1D10048F881 /* coretext-image-2.jpg in Resources */,
@@ -789,7 +862,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		4B417DA226C49B841E506946 /* [CP] Copy Pods Resources */ = {
@@ -822,7 +895,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		51981D51FBC5C3591EAFF997 /* [CP] Copy Pods Resources */ = {
@@ -870,7 +943,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B91FB5C7DA0106AA69711AB5 /* [CP] Copy Pods Resources */ = {
@@ -927,10 +1000,12 @@
 			files = (
 				048B42482028562100FAEB19 /* YDAction.m in Sources */,
 				048B423E2028482600FAEB19 /* YDCollectionNullReusableView.h in Sources */,
+				048B4292202C47EC00FAEB19 /* YDExtension.m in Sources */,
 				048B423F2028482600FAEB19 /* YDCollectionReusableView.h in Sources */,
 				048B4245202854ED00FAEB19 /* YDTest12Layer.m in Sources */,
 				0438E7742021D8600032E8F8 /* YDTest10ViewController.m in Sources */,
 				0438E77A2022B0FD0032E8F8 /* YDTest11ViewController.m in Sources */,
+				048B428A202C30C200FAEB19 /* YDHtmlElement.m in Sources */,
 				04FFAF0D2019C54D00E54521 /* YDHeaderView.m in Sources */,
 				048B423420283C0400FAEB19 /* YDTest13ViewViewController.m in Sources */,
 				0441EF9D2015D44B0048F881 /* YDCTImageModel.m in Sources */,
@@ -941,6 +1016,7 @@
 				048B42372028469700FAEB19 /* YDCollectionNullReusableView.m in Sources */,
 				048B4242202849B600FAEB19 /* YDTest13TableViewCell.m in Sources */,
 				048B423D202847E400FAEB19 /* YDCollectionReusableView.m in Sources */,
+				048B4287202C2EBA00FAEB19 /* YDHtmlParserNode.m in Sources */,
 				048B425C202A961200FAEB19 /* YDTest16Label.m in Sources */,
 				04FF490F2015910500C02EEF /* ViewController.m in Sources */,
 				0441EF902015D0520048F881 /* YDCTModel.m in Sources */,
@@ -955,6 +1031,7 @@
 				0438E7772021DB510032E8F8 /* YDCustomCollectionViewCell.m in Sources */,
 				0441EF8D2015C9A80048F881 /* YDCTView.m in Sources */,
 				048B4278202AEF9400FAEB19 /* YDHtmlElementBuilder.m in Sources */,
+				048B4282202C290700FAEB19 /* YDDefaultCss.m in Sources */,
 				04FF490C2015910500C02EEF /* AppDelegate.m in Sources */,
 				0441EFA62015DA1A0048F881 /* YDCTConfig.m in Sources */,
 				048B4259202A959B00FAEB19 /* YDTest1q6ViewController.m in Sources */,
@@ -966,6 +1043,7 @@
 				04AAA638202830E5007AC7E9 /* YDTest12ViewController.m in Sources */,
 				0441EFAF2015E2160048F881 /* WebContentViewController.m in Sources */,
 				0438E74A201F13280032E8F8 /* NSString+GHTransformation.m in Sources */,
+				048B428E202C41EF00FAEB19 /* YDHtmlElementModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

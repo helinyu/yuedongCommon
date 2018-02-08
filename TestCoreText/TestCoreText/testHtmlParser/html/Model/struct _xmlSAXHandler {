@@ -1,0 +1,132 @@
+2018-02-08 10:34:28.827037+0800 TestCoreText[14679:5795734] yd_setDocumentLocatorHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, loc:0x10ac169c8
+// 设置本地处理（分配） 定位
+
+2018-02-08 10:34:28.827219+0800 TestCoreText[14679:5795734] yd_startDocumenthtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>
+// 开始处理文档html
+
+2018-02-08 10:34:28.827340+0800 TestCoreText[14679:5795734] gh- internal sub set: ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, name:html, externalId:(null), systemId:(null)
+// 获取子集，也就是文档的类型 （因为文档类型可能是 html，xml等等）
+
+2018-02-08 10:34:28.827497+0800 TestCoreText[14679:5795734] yd_startElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, name:html, atts:0x0
+2018-02-08 10:34:28.827585+0800 TestCoreText[14679:5795734] yd_startElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, name:head, atts:0x0
+
+//  start element 和 end element 都是成对出现的 就是有开闭的符号 ，【多次调用的地方使用释放缓冲池】
+2018-02-08 10:34:28.827658+0800 TestCoreText[14679:5795734] yd_startElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, name:meta, atts:0x60c0001573f0
+2018-02-08 10:34:28.827734+0800 TestCoreText[14679:5795734] yd_endElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0> ,name :meta
+
+2018-02-08 10:34:28.827794+0800 TestCoreText[14679:5795734] yd_startElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, name:title, atts:0x0
+2018-02-08 10:34:28.827861+0800 TestCoreText[14679:5795734] yd_charactershtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, ch: Welcome to nginx!, length:17
+2018-02-08 10:34:28.827921+0800 TestCoreText[14679:5795734] yd_endElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0> ,name :title
+
+2018-02-08 10:34:28.827977+0800 TestCoreText[14679:5795734] yd_startElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, name:style, atts:0x0
+
+// 这里就是获取到数据操作（写在html页面上的js操作）？？？ 这一部分可以去研究一下 css上面的内容
+2018-02-08 10:34:28.828042+0800 TestCoreText[14679:5795734] yd_cdataBlockHandler ctx;<YDHtmlParser: 0x7fa4c6d1c1e0>, value :
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+    .curstom {
+                background-color:red;
+    }
+    .green_bg {
+        background-color: green;
+    }
+  /*  h1 {
+        background-color:blue;
+        color:red;
+    }*/
+, len:279
+2018-02-08 10:34:28.867880+0800 TestCoreText[14679:5795734] yd_endElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0> ,name :style
+//  样式
+
+2018-02-08 10:34:28.868063+0800 TestCoreText[14679:5795734] yd_commenthtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, value: <link rel="stylesheet" type="text/css" href="./index.css">
+//  value css的样式解析 ,更多应该是comment进行解析 (这个过程是否解析太多？将css文件判断是否需要写到本地【css文件或者js文件比较重的内容，实现本地缓存】) 【js库】
+//  这里可以好好进行处理 【这里面是注释】 没有注释，会是怎么样
+
+2018-02-08 10:34:28.868141+0800 TestCoreText[14679:5795734] yd_endElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0> ,name :head
+//  上面是头部信息
+
+
+//  下面是真正的内容
+2018-02-08 10:34:28.868252+0800 TestCoreText[14679:5795734] yd_startElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, name:body, atts:0x0
+//  atts 里面都是有对应的css等等的内容，可以通过这个指针来获取
+
+2018-02-08 10:34:28.868324+0800 TestCoreText[14679:5795734] yd_charactershtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, ch: 
+, length:1// 这里是什么意思？？？
+
+
+// 对name上的标签的处理，这里可以对属性进行处理
+2018-02-08 10:34:28.868394+0800 TestCoreText[14679:5795734] yd_startElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, name:h1, atts:0x60c0001573f0
+2018-02-08 10:34:28.868476+0800 TestCoreText[14679:5795734] yd_charactershtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, ch: Welcome to nginx!, length:17
+2018-02-08 10:34:28.868539+0800 TestCoreText[14679:5795734] yd_endElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0> ,name :h1
+
+2018-02-08 10:34:28.868600+0800 TestCoreText[14679:5795734] yd_charactershtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, ch: 
+
+2018-02-08 10:34:28.868666+0800 TestCoreText[14679:5795734] yd_startElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, name:p, atts:0x60c0001573f0
+2018-02-08 10:34:28.868732+0800 TestCoreText[14679:5795734] yd_charactershtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, ch: If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required., length:116
+2018-02-08 10:34:28.868825+0800 TestCoreText[14679:5795734] yd_endElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0> ,name :p
+2018-02-08 10:34:28.868887+0800 TestCoreText[14679:5795734] yd_charactershtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, ch: 
+
+dir：/usr/local/Cellar/nginx/1.12.2_1/html
+
+, length:47
+2018-02-08 10:34:28.868975+0800 TestCoreText[14679:5795734] yd_startElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, name:p, atts:0x0
+2018-02-08 10:34:28.869049+0800 TestCoreText[14679:5795734] yd_charactershtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, ch: For online documentation and support please refer to
+, length:53
+2018-02-08 10:34:28.869129+0800 TestCoreText[14679:5795734] yd_startElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, name:a, atts:0x60c0001573f0
+2018-02-08 10:34:28.869242+0800 TestCoreText[14679:5795734] yd_charactershtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, ch: nginx.org, length:9
+2018-02-08 10:34:28.869386+0800 TestCoreText[14679:5795734] yd_endElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0> ,name :a
+2018-02-08 10:34:28.869484+0800 TestCoreText[14679:5795734] yd_charactershtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, ch: ., length:1
+2018-02-08 10:34:28.869564+0800 TestCoreText[14679:5795734] yd_startElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, name:br, atts:0x0
+2018-02-08 10:34:28.869641+0800 TestCoreText[14679:5795734] yd_endElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0> ,name :br
+2018-02-08 10:34:28.869781+0800 TestCoreText[14679:5795734] yd_charactershtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, ch: 
+Commercial support is available at
+, length:36
+
+//  典型的数据解析结构
+2018-02-08 10:34:28.869972+0800 TestCoreText[14679:5795734] yd_startElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, name:a, atts:0x60c0001573f0
+2018-02-08 10:34:28.870066+0800 TestCoreText[14679:5795734] yd_charactershtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, ch: nginx.com, length:9
+2018-02-08 10:34:28.870137+0800 TestCoreText[14679:5795734] yd_endElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0> ,name :a
+
+2018-02-08 10:34:28.870218+0800 TestCoreText[14679:5795734] yd_charactershtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, ch: ., length:1
+2018-02-08 10:34:28.870356+0800 TestCoreText[14679:5795734] yd_endElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0> ,name :p
+2018-02-08 10:34:28.870514+0800 TestCoreText[14679:5795734] yd_charactershtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, ch: 
+, length:1
+2018-02-08 10:34:28.870629+0800 TestCoreText[14679:5795734] yd_startElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, name:a, atts:0x60c0001573f0
+
+//  图片的解析就是只有这个
+2018-02-08 10:34:28.870714+0800 TestCoreText[14679:5795734] yd_startElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, name:img, atts:0x60c0001573f0
+2018-02-08 10:34:28.870882+0800 TestCoreText[14679:5795734] yd_endElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0> ,name :img
+
+2018-02-08 10:34:28.870981+0800 TestCoreText[14679:5795734] yd_charactershtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, ch:  , length:1 // 应该是一个空格
+2018-02-08 10:34:28.871109+0800 TestCoreText[14679:5795734] yd_endElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0> ,name :a
+2018-02-08 10:34:28.871254+0800 TestCoreText[14679:5795734] yd_charactershtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, ch: 
+
+, length:2
+2018-02-08 10:34:28.871369+0800 TestCoreText[14679:5795734] yd_startElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, name:p, atts:0x0
+2018-02-08 10:34:28.871486+0800 TestCoreText[14679:5795734] yd_startElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, name:em, atts:0x0
+2018-02-08 10:34:28.871646+0800 TestCoreText[14679:5795734] yd_charactershtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, ch: Thank you for using nginx., length:26
+2018-02-08 10:34:28.871823+0800 TestCoreText[14679:5795734] yd_endElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0> ,name :em
+2018-02-08 10:34:28.871954+0800 TestCoreText[14679:5795734] yd_endElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0> ,name :p
+
+2018-02-08 10:34:28.872106+0800 TestCoreText[14679:5795734] yd_charactershtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>, ch: 
+, length:1
+2018-02-08 10:34:28.872260+0800 TestCoreText[14679:5795734] yd_endElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0> ,name :body
+2018-02-08 10:34:28.872336+0800 TestCoreText[14679:5795734] yd_endElementhtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0> ,name :html
+2018-02-08 10:34:28.872442+0800 TestCoreText[14679:5795734] yd_endDocumenthtmlHandler ctx:<YDHtmlParser: 0x7fa4c6d1c1e0>
+
+
+可以解决：
+1、 回调的内容，格式： parser / name / attributes 
+
+
+需要解决：
+1、如果加在css、js的外面链接的文本 【css上是如何处理，js是如何处理（是否需要将js的脚本转化为oc的脚本）】
+2、如果js和oc上面的内容都进行了处理之后，将会是怎么样？ 就相当于实现了js的出发动作了 ，然而现在只是一个简单的js的动作； 
+————————————————
+先查看内部的实现，然后在对外部的css进行实现；
+
+————————————————

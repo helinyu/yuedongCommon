@@ -34,7 +34,7 @@ double getMemoryUsage(void) {
 }
 
 - (void)testLayer {
-    CALayer 
+    
 }
 
 - (void)testAutoRelease {

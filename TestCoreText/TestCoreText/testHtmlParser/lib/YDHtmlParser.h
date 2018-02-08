@@ -12,7 +12,8 @@
 
 @protocol YDHtmlParserDelegate <NSObject>
 
-// change to block 
+//@optional
+// change to block
 - (void)yd_internalSubset:(YDHtmlParser *)parser;
 - (void)yd_isStandalone:(YDHtmlParser *)parser;
 - (void)yd_hasInternalSubset:(YDHtmlParser *)parser;
@@ -25,18 +26,19 @@
 - (void)yd_setDocumentLocator:(YDHtmlParser *)parser;
 - (void)yd_startDocument:(YDHtmlParser *)parser;
 - (void)yd_endDocument:(YDHtmlParser *)parser;
-- (void)yd_startElement:(YDHtmlParser *)parser;
-- (void)yd_endElement:(YDHtmlParser *)parser;
-- (void)yd_reference:(YDHtmlParser *)parser;
-- (void)yd_characters:(YDHtmlParser *)parser;
-- (void)yd_ignorableWhitespace:(YDHtmlParser *)parser;
-- (void)yd_processingInstruction:(YDHtmlParser *)parser;
-- (void)yd_comment:(YDHtmlParser *)parser;
-- (void)yd_warning:(YDHtmlParser *)parser;
+- (void)yd_startElement:(YDHtmlParser *)parser atts:(NSDictionary *)attsDic;
+- (void)yd_endElement:(YDHtmlParser *)parser name:(NSString *)name;
+- (void)yd_reference:(YDHtmlParser *)parser name:(NSString *)name;
+- (void)yd_characters:(YDHtmlParser *)parser character:(NSString *)character length:(int)length;
+- (void)yd_ignorableWhitespace:(YDHtmlParser *)parser character:(NSString *)chString length:(int)length;
+
+- (void)yd_processingInstruction:(YDHtmlParser *)parser target:(NSString *)target data:(NSString *)dataStr;
+- (void)yd_comment:(YDHtmlParser *)parser valueString:(NSString *)valueStr;
+- (void)yd_warning:(YDHtmlParser *)parser msg:(NSString *)msg;
 - (void)yd_error:(YDHtmlParser *)parser;
 - (void)yd_fatalError:(YDHtmlParser *)parser;
-- (void)yd_cdataBlock:(YDHtmlParser *)parser;
-- (void)yd_externalSubset:(YDHtmlParser *)parser;
+- (void)yd_cdataBlock:(YDHtmlParser *)parser cdataString:(NSString *)cdataSting length:(NSInteger)length;
+- (void)yd_externalSubset:(YDHtmlParser *)parser name:(NSString *)name externalId:(NSString *)externalId systemId:(NSString *)systemId;
 - (void)yd_startElementNs:(YDHtmlParser *)parser;
 - (void)yd_endElementNs:(YDHtmlParser *)parser;
 - (void)yd_serror:(YDHtmlParser *)parser;
@@ -48,7 +50,7 @@
 @property (nonatomic, weak) id<YDHtmlParserDelegate> delegate;
 
 // && properties
-@property (nonatomic, readonly) xmlSAXHandler xmlHandler;
+@property (nonatomic, readonly) htmlSAXHandler xmlHandler;
 @property (nonatomic, strong, readonly) NSData *data;
 @property (nonatomic, assign, readonly) NSStringEncoding encoding;
 
@@ -61,5 +63,13 @@
  @return return self
  */
 - (id)initWithData:(NSData *)data encoding:(NSStringEncoding)encoding;
+
+
+/**
+ parsing html methods now
+
+ @return flag
+ */
+- (BOOL)parsing;
 
 @end
