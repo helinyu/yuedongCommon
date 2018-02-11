@@ -8,6 +8,15 @@
 
 #import "YDTest16ViewController.h"
 
+#import <mach/mach.h>
+double getMemoryUsage(void) {
+    struct task_basic_info info;
+    mach_msg_type_number_t size = sizeof(info);
+    kern_return_t kerr = task_info(mach_task_self_, TASK_BASIC_INFO, (task_info_t)&info, &size);
+    double memoryUsageInMB = kerr == KERN_SUCCESS ? (info.resident_size / 1024.0 / 1024.0) : 0.0;
+    return memoryUsageInMB;
+}
+
 @interface YDTest16ViewController ()
 
 @end
@@ -17,8 +26,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self test1];
+//    [self test1];
 //    [self test0];
+
+//    [self testAutoRelease];
+    [self testLayer];
+}
+
+- (void)testLayer {
+    
+}
+
+- (void)testAutoRelease {
+    int lagerNum = 200000;
+    for (int i = 0; i < lagerNum; i++) {
+        @autoreleasepool { // 释放，是对于循环来说就是一个循环的单元【】
+            NSNumber *num = [NSNumber numberWithInt:i];
+            NSString *str = [NSString stringWithFormat:@"%d ", i];
+            [NSString stringWithFormat:@"%@%@", num, str];
+        
+            if (i == (lagerNum - 5)) {  // 获取到快结束时候的内存
+                float memory = getMemoryUsage();
+                NSLog(@" 内存 --- %f",memory);
+            }
+        }
+    }
 }
 
 // user semaphore
