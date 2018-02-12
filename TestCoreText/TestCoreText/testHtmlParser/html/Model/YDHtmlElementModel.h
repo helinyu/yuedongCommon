@@ -18,6 +18,7 @@
 @property (nonatomic, copy) NSString *beforeContent;
 
 // need to get value fot them
+@property (nonatomic, copy) NSString *fontSizeStr;
 @property (nonatomic, assign) CGFloat fontSize;
 @property (nonatomic, assign) CGFloat textScale;
 @property (nonatomic, assign) CGFloat pointSize;
@@ -83,6 +84,18 @@
 @property (nonatomic, copy) NSString *textIndentStr;
 @property (nonatomic, assign) CGFloat textIndent;
 
+@property (nonatomic, copy) NSString *fontWeightStr;
+@property (nonatomic, assign) YDHTMLFontWeightStyle fontWeight;
 
+@property (nonatomic, copy) NSString *textShadowStr;
+@property (nonatomic, strong) NSArray *textShadows;
+
+@property (nonatomic, copy) NSString *coretextFontname;
+
+@property (nonatomic, copy) NSString *fontStyleStr;
+@property (nonatomic, assign) YDHTMLFontStyle fontStyle;
+
+@property (nonatomic, copy) id fontFamilyStr;
+@property (nonatomic, strong) NSArray *fontFamilyStyle;
 
 @end

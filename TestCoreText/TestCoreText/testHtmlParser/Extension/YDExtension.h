@@ -65,6 +65,42 @@ typedef NS_ENUM(NSUInteger, YDHTMLElementDisplayStyle)
     YDHTMLElementDisplayStyleTable, // The element is a table
 };
 
+// yd font weight
+typedef NS_ENUM(NSUInteger, YDHTMLFontWeightStyle)
+{
+    YDHTMLFontWeightStyleNone = -1,
+    YDHTMLFontWeightStyleNormal = 0,
+    YDHTMLFontWeightStyleBold,
+    YDHTMLFontWeightStyleBolder,
+    YDHTMLFontWeightStyleLighter,
+    YDHTMLFontWeightStyleLessThan600, // can be 100 ~ 900
+    YDHTMLFontWeightStyleLargerThan600,
+};
+
+typedef NS_ENUM(NSUInteger, YDHTMLFontStyle) {
+    YDHTMLFontStyleNone = -1,
+    YDHTMLFontStyleNormal =0,
+    YDHTMLFontStyleItalic,
+    YDHTMLFontStyleOblique,
+    YDHTMLFontStyleInherit,
+};
+
+typedef NS_ENUM(NSUInteger, YDHTMLFontSizeStyle) {
+    YDHTMLFontSizeStyleDefault,
+    YDHTMLFontSizeStyleSmaller,
+    YDHTMLFontSizeStyleLarger,
+    YDHTMLFontSizeStyleXXSmall,
+    YDHTMLFontSizeStyleXSmall,
+    YDHTMLFontSizeStyleSmall,
+    YDHTMLFontSizeStyleMedium,
+    YDHTMLFontSizeStyleLarge,
+    YDHTMLFontSizeStyleXLarge,
+    YDHTMLFontSizeStyleXXLarge,
+    YDHTMLFontSizeStyleWebkitXXXLarge,
+    YDHTMLFontSizeStyleInherit,
+    YDHTMLFontSizeStyleCSSLengthValue,
+};
+
 @interface YDExtension : NSObject
 
 @end

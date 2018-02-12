@@ -15,7 +15,7 @@
     return @{
              @"WritingdirectionStr" : @"direction",
              @"beforeContent" : @"before:content",
-             @"fontSize" : @"font-size",
+             @"fontSizeStr" : @"font-size",
              @"colorName" : @"color",
              @"backgroundColorName" : @"background-color",
              @"floatString" : @"float",
@@ -35,6 +35,11 @@
              @"borderWidthStr" : @"border-width",
              @"borderRadiusStr" : @"border-radius",
              @"textIndentStr" : @"text-indent",
+             @"fontWeightStr" : @"font-weight",
+             @"textShadowStr" : @"text-shadow",
+             @"coretextFontname" : @"-coretext-fontname",
+             @"fontStyleStr" : @"font-style",
+             @"fontFamilyStr" : @"font-family",
              };
 
 }
@@ -388,5 +393,140 @@
 //BOOL hasMargins = NO;
 //
 //NSString *allKeys = [[styles allKeys] componentsJoinedByString:@";"];
+
+//fontWeight
+- (YDHTMLFontWeightStyle)fontWeight {
+    if (_fontWeightStr.length >0) {
+        if ([_fontWeightStr isEqualToString:@"normal"]) {
+            _fontWeight = YDHTMLFontWeightStyleNormal;
+        }
+        else if ([_fontWeightStr isEqualToString:@"bold"]) {
+            _fontWeight = YDHTMLFontWeightStyleBold;
+        }
+        else if ([_fontWeightStr isEqualToString:@"bolder"]) {
+            _fontWeight = YDHTMLFontWeightStyleBolder;
+        }
+        else if ([_fontWeightStr isEqualToString:@"lighter"]) {
+            _fontWeight = YDHTMLFontWeightStyleLighter;
+        }
+        else {
+            if (_fontWeightStr.floatValue <= 600) {
+                _fontWeight = YDHTMLFontWeightStyleLessThan600;
+            }
+            else {
+                _fontWeight = YDHTMLFontWeightStyleLargerThan600;
+            }
+        }
+    }
+    else {
+        _fontWeight = YDHTMLFontWeightStyleNone;
+    }
+    return _fontWeight;
+}
+
+#warning need change
+
+- (NSArray *)textShadows {
+    if (_textShadowStr.length >0) {
+        _textShadows = @[];
+    }
+    _textShadows = @[],
+//    self.shadows = [shadow arrayOfCSSShadowsWithCurrentTextSize:_fontDescriptor.pointSize currentColor:_textColor];
+    return @[];
+}
+
+- (YDHTMLFontStyle)fontStyle {
+    if (_fontStyleStr.length >0) {
+        if ([_fontStyleStr isEqualToString:@"normal"]) {
+            _fontStyle =YDHTMLFontStyleNormal;
+        }
+        else if ([_fontStyleStr isEqualToString:@"Italic"]) {
+            _fontStyle =YDHTMLFontStyleItalic;
+        }
+        else if ([_fontStyleStr isEqualToString:@"oblique"]) {
+            _fontStyle =YDHTMLFontStyleOblique;
+        }
+        else if ([_fontStyleStr isEqualToString:@"inherit"]) {
+            _fontStyle =YDHTMLFontStyleInherit;
+        }
+        else {
+            _fontStyle = YDHTMLFontStyleNone;
+        }
+    }
+    else {
+        _fontStyle = YDHTMLFontStyleNone;
+    }
+}
+
+- (NSArray *)fontFamilyStyle {
+    if ([_fontFamilyStr isKindOfClass:[NSString class]]) {
+        _fontFamilyStyle = [NSArray arrayWithObject:_fontFamilyStr];
+    }
+    else if ([_fontFamilyStr isKindOfClass:[NSArray class]]) {
+        _fontFamilyStyle =  _fontFamilyStr;
+    }
+}
+
+- (CGFloat)fontSize {
+    if (_fontSizeStr.length >0)
+    {
+        // absolute sizes based on 12.0 CoreText default size, Safari has 16.0
+        if ([_fontSizeStr isEqualToString:@"smaller"])
+        {
+            _fontSize = YDHTMLFontSizeStyleSmaller;
+        }
+        else if ([_fontSizeStr isEqualToString:@"larger"])
+        {
+            _fontSize = YDHTMLFontSizeStyleLarger;
+        }
+        else if ([_fontSizeStr isEqualToString:@"xx-small"])
+        {
+            _fontSize = YDHTMLFontSizeStyleXXSmall;
+        }
+        else if ([_fontSizeStr isEqualToString:@"x-small"])
+        {
+            _fontSize = YDHTMLFontSizeStyleXSmall;
+        }
+        else if ([_fontSizeStr isEqualToString:@"small"])
+        {
+            _fontSize = YDHTMLFontSizeStyleSmall;
+        }
+        else if ([_fontSizeStr isEqualToString:@"medium"])
+        {
+            _fontSize = YDHTMLFontSizeStyleMedium;
+        }
+        else if ([_fontSizeStr isEqualToString:@"large"])
+        {
+            _fontSize = YDHTMLFontSizeStyleLarge;
+        }
+        else if ([_fontSizeStr isEqualToString:@"x-large"])
+        {
+            _fontSize = YDHTMLFontSizeStyleXLarge;
+        }
+        else if ([_fontSizeStr isEqualToString:@"xx-large"])
+        {
+            _fontSize = YDHTMLFontSizeStyleXXLarge;
+        }
+        else if ([_fontSizeStr isEqualToString:@"-webkit-xxx-large"])
+        {
+            _fontSize = YDHTMLFontSizeStyleWebkitXXXLarge;
+        }
+        else if ([_fontSizeStr isEqualToString:@"inherit"])
+        {
+            _fontSize = YDHTMLFontSizeStyleInherit;
+        }
+//        else if ([_fontSizeStr isCSSLengthValue])
+//        {
+//            _fontSize = YDHTMLFontSizeStyleCSSLengthValue;
+//        }
+        else {
+            _fontSize =YDHTMLFontSizeStyleDefault;
+        }
+    }
+    else {
+        _fontSize = YDHTMLFontSizeStyleDefault;
+    }
+}
+
 
 @end
