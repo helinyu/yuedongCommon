@@ -51,6 +51,7 @@
 #import "YDTest17ViewController.h"
 
 #import "YDTest16ViewController.h"
+#import "YDTestlayerViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,CALayerDelegate,YYAsyncLayerDelegate>
 // html 页面解析
@@ -127,8 +128,22 @@
 //    [self test14];
 //    [self test15];
 //    [self test16];
-    [self test17];
+//    [self test17];
 //    [self test18];
+    [self test19];
+}
+
+- (void)test19 {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [self.view addSubview:btn];
+    [btn setTitle:@"dianji" forState:UIControlStateNormal];
+    btn.frame = CGRectMake(0, 100, 100, 40);
+    [btn addTarget:self action:@selector(onTap:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)onTap:(UITapGestureRecognizer *)recognizer {
+    YDTestlayerViewController *layerVC = [YDTestlayerViewController new];
+    [self.navigationController pushViewController:layerVC animated:YES];
 }
 
 - (void)test18 {

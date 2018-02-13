@@ -17,6 +17,7 @@ PODS:
     - DTFoundation/Core
   - DTFoundation/UIKit (1.7.13):
     - DTFoundation/Core
+  - JBChartView (3.0.13)
   - Masonry (1.1.0)
   - RACollectionViewReorderableTripletLayout (0.1.0)
   - UITableView+FDTemplateLayoutCell (1.6)
@@ -32,6 +33,7 @@ PODS:
 DEPENDENCIES:
   - BMDragCellCollectionView
   - DTCoreText (~> 1.6.21)
+  - JBChartView (~> 3.0.13)
   - Masonry (~> 1.1.0)
   - RACollectionViewReorderableTripletLayout
   - UITableView+FDTemplateLayoutCell (~> 1.6)
@@ -46,6 +48,7 @@ SPEC CHECKSUMS:
   BMDragCellCollectionView: 9bba624b3983b807895413315f7f1d4dce16d933
   DTCoreText: e5d688cffc9f6a61eddd1a4f94e2046851230de3
   DTFoundation: f03be9fd786f11e505bb8fc44e2a3732bf0917df
+  JBChartView: ea240dca7b83a92f47d4ae766beb3714753988a1
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   RACollectionViewReorderableTripletLayout: 929208004b2f8c2dde12326bf75b11e902959ddf
   UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
@@ -56,6 +59,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: be512602259d5a1edac0d360205fee3a1d1d8f7f
+PODFILE CHECKSUM: a6723a7627f8862cae7d596bc3cc3706518e4b89
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1

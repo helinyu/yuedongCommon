@@ -426,14 +426,14 @@
 
 #warning need change
 
-- (NSArray *)textShadows {
-    if (_textShadowStr.length >0) {
-        _textShadows = @[];
-    }
-    _textShadows = @[],
-//    self.shadows = [shadow arrayOfCSSShadowsWithCurrentTextSize:_fontDescriptor.pointSize currentColor:_textColor];
-    return @[];
-}
+//- (NSArray *)textShadows {
+//    if (_textShadowStr.length >0) {
+//        _textShadows = @[];
+//    }
+//    _textShadows = @[],
+////    self.shadows = [shadow arrayOfCSSShadowsWithCurrentTextSize:_fontDescriptor.pointSize currentColor:_textColor];
+//    return @[];
+//}
 
 - (YDHTMLFontStyle)fontStyle {
     if (_fontStyleStr.length >0) {
@@ -456,6 +456,7 @@
     else {
         _fontStyle = YDHTMLFontStyleNone;
     }
+    return _fontStyle;
 }
 
 - (NSArray *)fontFamilyStyle {
@@ -465,6 +466,7 @@
     else if ([_fontFamilyStr isKindOfClass:[NSArray class]]) {
         _fontFamilyStyle =  _fontFamilyStr;
     }
+    return _fontFamilyStyle;
 }
 
 - (CGFloat)fontSize {
@@ -526,6 +528,7 @@
     else {
         _fontSize = YDHTMLFontSizeStyleDefault;
     }
+    return _fontSize;
 }
 
 

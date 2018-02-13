@@ -1,0 +1,6 @@
+framework module BMDragCellCollectionView {
+  umbrella header "BMDragCellCollectionView-umbrella.h"
+
+  export *
+  module * { export * }
+}
