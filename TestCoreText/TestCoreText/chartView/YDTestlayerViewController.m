@@ -7,8 +7,8 @@
 //
 
 #import "YDTestlayerViewController.h"
-#import <JBChartView.h>
-#import <JBLineChartView.h>
+#import "JBChartView.h"
+#import "JBLineChartView.h"
 
 @interface YDTestlayerViewController ()<UITableViewDataSource,UITableViewDelegate,JBLineChartViewDataSource,JBLineChartViewDelegate>
 

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		040257C7203185CA004E58FB /* YDTestlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040257C6203185CA004E58FB /* YDTestlayerViewController.m */; };
 		040257C9203186FA004E58FB /* Snip20180212_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 040257C8203186FA004E58FB /* Snip20180212_2.png */; };
+		040257DD2032E0D7004E58FB /* YDChartlineViewTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040257DC2032E0D7004E58FB /* YDChartlineViewTCell.m */; };
+		040257E02032E337004E58FB /* YDChartLineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040257DF2032E337004E58FB /* YDChartLineTableViewController.m */; };
+		040257E62032E55D004E58FB /* YDChartLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040257E52032E55D004E58FB /* YDChartLineModel.m */; };
 		0438E73E201EC60D0032E8F8 /* YDDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E73D201EC60D0032E8F8 /* YDDisplayView.m */; };
 		0438E74A201F13280032E8F8 /* NSString+GHTransformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E749201F13280032E8F8 /* NSString+GHTransformation.m */; };
 		0438E74C201F27450032E8F8 /* Strawberry Blossom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0438E74B201F27450032E8F8 /* Strawberry Blossom.ttf */; };
@@ -108,9 +111,9 @@
 		04FFAF582019C98200E54521 /* XB NiloofarBd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04FFAF342019C98200E54521 /* XB NiloofarBd.ttf */; };
 		411E4B40202CBCB3006747A5 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 411E4B3F202CBCB2006747A5 /* libxml2.2.tbd */; };
 		418EAD3B202B4E2C0067612B /* YDTest16ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418EAD3A202B4E2C0067612B /* YDTest16ViewController.m */; };
-		79514CA19E40136F94857CDF /* Pods_TestCoreTextUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911C317994B5CD9056456523 /* Pods_TestCoreTextUITests.framework */; };
-		99997D239AE5A61F4F7B066B /* Pods_TestCoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F939508B49858ED6D53F215 /* Pods_TestCoreText.framework */; };
-		A8BEEEEAE7C35CB6A72E877F /* Pods_TestCoreTextTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B4E94BD0C96FEEC7F2B9A35 /* Pods_TestCoreTextTests.framework */; };
+		5FB4404CAD073B11780BB68E /* libPods-TestCoreText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC41560E287F52D41DF54FB /* libPods-TestCoreText.a */; };
+		7693EFEC4EF3EF956B5B0D6C /* libPods-TestCoreTextUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5295345145CF26204980AE8 /* libPods-TestCoreTextUITests.a */; };
+		8B45CBD5179957D2DC88AAE5 /* libPods-TestCoreTextTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B857DDB57AB1BC48493C75 /* libPods-TestCoreTextTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +137,12 @@
 		040257C5203185CA004E58FB /* YDTestlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTestlayerViewController.h; sourceTree = "<group>"; };
 		040257C6203185CA004E58FB /* YDTestlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTestlayerViewController.m; sourceTree = "<group>"; };
 		040257C8203186FA004E58FB /* Snip20180212_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20180212_2.png; sourceTree = "<group>"; };
+		040257DB2032E0D7004E58FB /* YDChartlineViewTCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDChartlineViewTCell.h; sourceTree = "<group>"; };
+		040257DC2032E0D7004E58FB /* YDChartlineViewTCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDChartlineViewTCell.m; sourceTree = "<group>"; };
+		040257DE2032E337004E58FB /* YDChartLineTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDChartLineTableViewController.h; sourceTree = "<group>"; };
+		040257DF2032E337004E58FB /* YDChartLineTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDChartLineTableViewController.m; sourceTree = "<group>"; };
+		040257E42032E55D004E58FB /* YDChartLineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDChartLineModel.h; sourceTree = "<group>"; };
+		040257E52032E55D004E58FB /* YDChartLineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDChartLineModel.m; sourceTree = "<group>"; };
 		0438E73C201EC60D0032E8F8 /* YDDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDDisplayView.h; sourceTree = "<group>"; };
 		0438E73D201EC60D0032E8F8 /* YDDisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDDisplayView.m; sourceTree = "<group>"; };
 		0438E748201F13280032E8F8 /* NSString+GHTransformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+GHTransformation.h"; sourceTree = "<group>"; };
@@ -5098,18 +5107,18 @@
 		04FFAF322019C98200E54521 /* WarAndPeace.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WarAndPeace.html; sourceTree = "<group>"; };
 		04FFAF332019C98200E54521 /* XB Niloofar.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "XB Niloofar.ttf"; sourceTree = "<group>"; };
 		04FFAF342019C98200E54521 /* XB NiloofarBd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "XB NiloofarBd.ttf"; sourceTree = "<group>"; };
+		0BC41560E287F52D41DF54FB /* libPods-TestCoreText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestCoreText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D663F57728E95195C4A930D /* Pods-TestCoreTextUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreTextUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreTextUITests/Pods-TestCoreTextUITests.release.xcconfig"; sourceTree = "<group>"; };
+		27B857DDB57AB1BC48493C75 /* libPods-TestCoreTextTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestCoreTextTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D1CC46F87D62916D9E5AF6 /* Pods-TestCoreTextUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreTextUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreTextUITests/Pods-TestCoreTextUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		411E4B3F202CBCB2006747A5 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		418EAD39202B4E2C0067612B /* YDTest16ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest16ViewController.h; sourceTree = "<group>"; };
 		418EAD3A202B4E2C0067612B /* YDTest16ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest16ViewController.m; sourceTree = "<group>"; };
 		577D688E89FEBC59AFA51163 /* Pods-TestCoreText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreText.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreText/Pods-TestCoreText.release.xcconfig"; sourceTree = "<group>"; };
-		6B4E94BD0C96FEEC7F2B9A35 /* Pods_TestCoreTextTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCoreTextTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71285063B261E4180888E2DD /* Pods-TestCoreText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreText/Pods-TestCoreText.debug.xcconfig"; sourceTree = "<group>"; };
 		806E1DDAD892EE767BD8D819 /* Pods-TestCoreTextTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreTextTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreTextTests/Pods-TestCoreTextTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8F939508B49858ED6D53F215 /* Pods_TestCoreText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCoreText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		911C317994B5CD9056456523 /* Pods_TestCoreTextUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCoreTextUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE6A81D567AC1B538A3F478 /* Pods-TestCoreTextTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreTextTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreTextTests/Pods-TestCoreTextTests.release.xcconfig"; sourceTree = "<group>"; };
+		A5295345145CF26204980AE8 /* libPods-TestCoreTextUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestCoreTextUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -5118,7 +5127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				411E4B40202CBCB3006747A5 /* libxml2.2.tbd in Frameworks */,
-				99997D239AE5A61F4F7B066B /* Pods_TestCoreText.framework in Frameworks */,
+				5FB4404CAD073B11780BB68E /* libPods-TestCoreText.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5126,7 +5135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8BEEEEAE7C35CB6A72E877F /* Pods_TestCoreTextTests.framework in Frameworks */,
+				8B45CBD5179957D2DC88AAE5 /* libPods-TestCoreTextTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5134,7 +5143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79514CA19E40136F94857CDF /* Pods_TestCoreTextUITests.framework in Frameworks */,
+				7693EFEC4EF3EF956B5B0D6C /* libPods-TestCoreTextUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5148,6 +5157,19 @@
 				040257C6203185CA004E58FB /* YDTestlayerViewController.m */,
 			);
 			path = chartView;
+			sourceTree = "<group>";
+		};
+		040257DA2032E0B2004E58FB /* tableView + chartView */ = {
+			isa = PBXGroup;
+			children = (
+				040257DB2032E0D7004E58FB /* YDChartlineViewTCell.h */,
+				040257DC2032E0D7004E58FB /* YDChartlineViewTCell.m */,
+				040257DE2032E337004E58FB /* YDChartLineTableViewController.h */,
+				040257DF2032E337004E58FB /* YDChartLineTableViewController.m */,
+				040257E42032E55D004E58FB /* YDChartLineModel.h */,
+				040257E52032E55D004E58FB /* YDChartLineModel.m */,
+			);
+			path = "tableView + chartView";
 			sourceTree = "<group>";
 		};
 		0438E74D201F27480032E8F8 /* resources */ = {
@@ -11094,6 +11116,7 @@
 		04FF49092015910500C02EEF /* TestCoreText */ = {
 			isa = PBXGroup;
 			children = (
+				040257DA2032E0B2004E58FB /* tableView + chartView */,
 				040257C2203185A8004E58FB /* chartView */,
 				048B581E202D7E0800FAEB19 /* libxml2 */,
 				418EAD38202B4E0B0067612B /* semaphore */,
@@ -11245,9 +11268,9 @@
 			isa = PBXGroup;
 			children = (
 				411E4B3F202CBCB2006747A5 /* libxml2.2.tbd */,
-				8F939508B49858ED6D53F215 /* Pods_TestCoreText.framework */,
-				6B4E94BD0C96FEEC7F2B9A35 /* Pods_TestCoreTextTests.framework */,
-				911C317994B5CD9056456523 /* Pods_TestCoreTextUITests.framework */,
+				0BC41560E287F52D41DF54FB /* libPods-TestCoreText.a */,
+				27B857DDB57AB1BC48493C75 /* libPods-TestCoreTextTests.a */,
+				A5295345145CF26204980AE8 /* libPods-TestCoreTextUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -11637,6 +11660,7 @@
 				04FFAF0D2019C54D00E54521 /* YDHeaderView.m in Sources */,
 				048B423420283C0400FAEB19 /* YDTest13ViewViewController.m in Sources */,
 				0441EF9D2015D44B0048F881 /* YDCTImageModel.m in Sources */,
+				040257E62032E55D004E58FB /* YDChartLineModel.m in Sources */,
 				048B4263202AA64E00FAEB19 /* YDTest17ViewController.m in Sources */,
 				04AAA63B202835E8007AC7E9 /* YDTest12View.m in Sources */,
 				048B424C2028673000FAEB19 /* YDTest14ViewController.m in Sources */,
@@ -11648,6 +11672,7 @@
 				048B425C202A961200FAEB19 /* YDTest16Label.m in Sources */,
 				04FF490F2015910500C02EEF /* ViewController.m in Sources */,
 				0441EF902015D0520048F881 /* YDCTModel.m in Sources */,
+				040257E02032E337004E58FB /* YDChartLineTableViewController.m in Sources */,
 				04FF49502015B1AC00C02EEF /* UIView+frameAdjust.m in Sources */,
 				040257C7203185CA004E58FB /* YDTestlayerViewController.m in Sources */,
 				04FF491A2015910500C02EEF /* main.m in Sources */,
@@ -11672,6 +11697,7 @@
 				04AAA638202830E5007AC7E9 /* YDTest12ViewController.m in Sources */,
 				0441EFAF2015E2160048F881 /* WebContentViewController.m in Sources */,
 				0438E74A201F13280032E8F8 /* NSString+GHTransformation.m in Sources */,
+				040257DD2032E0D7004E58FB /* YDChartlineViewTCell.m in Sources */,
 				048B428E202C41EF00FAEB19 /* YDHtmlElementModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

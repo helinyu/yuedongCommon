@@ -18,9 +18,9 @@
 #import "WebContentViewController.h"
 #import "YDCTImageModel.h"
 #import "YDTransView.h"
-#import <DTCoreText.h>
+#import "DTCoreText.h"
 #import "YDHeaderView.h"
-#import <DTWebVideoView.h>
+#import "DTWebVideoView.h"
 #import "Masonry.h"
 #import "YDDisplayView.h"
 #import "YDDisplayView.h"
@@ -52,6 +52,7 @@
 
 #import "YDTest16ViewController.h"
 #import "YDTestlayerViewController.h"
+#import "YDChartLineTableViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,CALayerDelegate,YYAsyncLayerDelegate>
 // html 页面解析
@@ -130,7 +131,21 @@
 //    [self test16];
 //    [self test17];
 //    [self test18];
-    [self test19];
+//    [self test19];
+    [self test20];
+}
+
+- (void)test20 {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [self.view addSubview:btn];
+    btn.frame = CGRectMake(100, 100, 100, 100);
+    [btn setTitle:@"test20" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(onTap20) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)onTap20 {
+    YDChartLineTableViewController *vc = [YDChartLineTableViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)test19 {
@@ -373,7 +388,6 @@
 
 }
 
-
 - (void)test5 {
     _test5view = [YDDisplayView new];
     _test5view.frame = CGRectMake(100, 100, 200, 200);
@@ -385,7 +399,6 @@
 }
 
 - (void)test4 {
-    
     _displayView = [YDDisplayView new];
     [self.view addSubview:_displayView];
     _displayView.backgroundColor = [UIColor yellowColor];
