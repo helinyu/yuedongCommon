@@ -49,6 +49,7 @@
     
     _datas = @[].mutableCopy;
     NSInteger allIndex =0;
+    CGFloat detaH = 0.f;
     for (NSInteger index =0; index < _originDatas.count; index++) {
         YDChartLineModel *originItem = _originDatas[index];
         YDChartLineModel *item = [YDChartLineModel new];
@@ -56,17 +57,25 @@
         item.index = allIndex;
         item.detaNum = originItem.detaNum;
         item.dotPoint = originItem.dotPoint;
-                item.dotText = [NSString stringWithFormat:@"%f",item.dotPoint];
+        item.dotText = [NSString stringWithFormat:@"%f",item.dotPoint];
         item.timeText =[NSString stringWithFormat:@"%zd月",allIndex];
         [_datas addObject:item];
         allIndex++;
         NSInteger nextIndex = index +1;
-        if (nextIndex <_originDatas.count) {
+        if (nextIndex >= _originDatas.count) {
+            item.beginPoint =item.dotPoint -detaH/2.f;
+        }
+        else {
             NSInteger num = item.detaNum + 1;
             YDChartLineModel *nextItem = _originDatas[nextIndex];
-            CGFloat detaH = (nextItem.dotPoint - item.dotPoint)/num;
-            item.endPoint = item.dotPoint + detaH/2.f;
-            
+            detaH = (nextItem.dotPoint - item.dotPoint)/num;
+            if (index ==0) {
+                item.endPoint = item.dotPoint + detaH/2.f;
+            }
+            else {
+                item.endPoint = item.dotPoint + detaH/2.f;
+                item.beginPoint = item.dotPoint - detaH/2.f;
+            }
             for (NSInteger innerIndex = 0; innerIndex <num; innerIndex++) {
                 YDChartLineModel *lastItem = _datas.lastObject; // alway has
                 YDChartLineModel *innerItem = [YDChartLineModel new];
@@ -104,8 +113,14 @@
     YDChartlineViewTCell *cell =  [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([YDChartlineViewTCell class]) forIndexPath:indexPath];
     YDChartLineModel *item = _datas[indexPath.row];
     cell.timeText = item.timeText;
-    if (item.hasDot) {
+    if (item.hasDot && (indexPath.row ==0 || indexPath.row ==(_datas.count-1))) {
         cell.dotPoint = item.dotPoint;
+        if (indexPath.row == 0) {
+            [cell configureDotPoint:item.dotPoint oneOfDoubleEndPoint:item.endPoint isStart:YES];
+        }
+        else {
+            [cell configureDotPoint:item.dotPoint oneOfDoubleEndPoint:item.beginPoint isStart:NO];
+        }
     }else {
         [cell configureStartPoint:item.beginPoint endPoint:item.endPoint];
     }

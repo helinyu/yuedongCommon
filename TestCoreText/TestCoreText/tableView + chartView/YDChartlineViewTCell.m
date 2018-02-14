@@ -23,14 +23,6 @@
 
 @implementation YDChartlineViewTCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-}
-
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
@@ -70,11 +62,14 @@
         [self.contentView.layer addSublayer:_timeTextLayer];
     }
     
+    self.contentView.backgroundColor = [UIColor grayColor];
     _verticalLineLayer.frame = CGRectMake(50.f, 0, 5.f, self.bounds.size.height);
     _verticalLineLayer.backgroundColor = [UIColor yellowColor].CGColor;
-    _horizontalLineLayer.frame = CGRectMake(50.f, (self.size.height-5.f)/2.f, self.size.width-50.f, 5.f);
+
+    _horizontalLineLayer.frame = CGRectMake(50.f, (self.size.height -5.f)/2.f, [UIScreen mainScreen].bounds.size.width -50, 5.f);
     _horizontalLineLayer.backgroundColor = [UIColor redColor].CGColor;
-    _timeTextLayer.frame = CGRectMake(0, 0, 50.f, self.size.height);
+    
+    _timeTextLayer.frame = CGRectMake(0, 10.f, 50.f, self.size.height);
     _timeTextLayer.foregroundColor = [UIColor redColor].CGColor;
     UIFont *font = [UIFont systemFontOfSize:15];
     CFStringRef fontName = (__bridge CFStringRef)font.fontName;
@@ -86,7 +81,6 @@
     _dotLayer.frame = CGRectMake(0, (self.size.height -8.f)/2.f, 8.f, 8.f);
     _dotLayer.hidden = YES;
     _dotLayer.backgroundColor = [UIColor blueColor].CGColor;
-    
     _trendLayer.strokeColor = [UIColor greenColor].CGColor;
     _trendLayer.fillColor = [UIColor redColor].CGColor;
 }
@@ -94,17 +88,40 @@
 - (void)setDotPoint:(CGFloat)dotPoint {
     _dotPoint = dotPoint;
     _dotLayer.hidden = NO;
-    _dotLayer.frame = CGRectMake(dotPoint *self.size.width-50.f-4.f, (self.size.height -8.f)/2.f, 8.f, 8.f);
+    _dotLayer.frame = CGRectMake(dotPoint *(self.size.width-50.f) +50.f, (self.size.height -8.f)/2.f, 8.f, 8.f);
 }
 
 - (void)configureStartPoint:(CGFloat)startPoint endPoint:(CGFloat)endPoint {
     _startPoint = startPoint;
     _endPoint = endPoint;
-    UIBezierPath *path = [[UIBezierPath alloc] init];
-    [path moveToPoint:CGPointMake(_startPoint, 0.f)];
-    [path moveToPoint:CGPointMake(_endPoint, self.size.height)];
-    [path closePath];  _trendLayer.strokeColor = [UIColor greenColor].CGColor;
+    UIBezierPath *path = [UIBezierPath new];
+    [path moveToPoint:CGPointMake(_startPoint *([UIScreen mainScreen].bounds.size.width-50.f)+50.f, 0.f)];
+    [path addLineToPoint:CGPointMake(_endPoint *([UIScreen mainScreen].bounds.size.width-50.f) + 50.f, self.size.height)];
+    _trendLayer.strokeColor = [UIColor greenColor].CGColor;
     _trendLayer.fillColor = [UIColor redColor].CGColor;
+    _trendLayer.lineWidth = 8.f;
+    _trendLayer.path = path.CGPath;
+}
+
+- (void)configureDotPoint:(CGFloat)dotPoint oneOfDoubleEndPoint:(CGFloat)oneEndPoint isStart:(BOOL)flag {
+    if (flag) {
+        UIBezierPath *path = [UIBezierPath new];
+        [path moveToPoint:CGPointMake(dotPoint *([UIScreen mainScreen].bounds.size.width-50.f)+50.f, (self.contentView.height -8.f)/2.f)];
+        [path addLineToPoint:CGPointMake(oneEndPoint *([UIScreen mainScreen].bounds.size.width-50.f) + 50.f, self.contentView.height)];
+        _trendLayer.strokeColor = [UIColor purpleColor].CGColor;
+        _trendLayer.fillColor = [UIColor redColor].CGColor;
+        _trendLayer.lineWidth = 8.f;
+        _trendLayer.path = path.CGPath;
+    }
+    else {
+        UIBezierPath *path = [UIBezierPath new];
+        [path moveToPoint:CGPointMake(oneEndPoint *([UIScreen mainScreen].bounds.size.width-50.f) + 50.f, 0.f)];
+        [path addLineToPoint:CGPointMake(dotPoint *([UIScreen mainScreen].bounds.size.width-50.f)+50.f, (self.contentView.height -8.f)/2.f)];
+        _trendLayer.strokeColor = [UIColor orangeColor].CGColor;
+        _trendLayer.fillColor = [UIColor redColor].CGColor;
+        _trendLayer.lineWidth = 8.f;
+        _trendLayer.path = path.CGPath;
+    }
 }
 
 - (void)setTimeText:(NSString *)timeText {

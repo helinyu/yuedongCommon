@@ -53,6 +53,7 @@
 #import "YDTest16ViewController.h"
 #import "YDTestlayerViewController.h"
 #import "YDChartLineTableViewController.h"
+#import "YDLayerViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,CALayerDelegate,YYAsyncLayerDelegate>
 // html 页面解析
@@ -133,6 +134,12 @@
 //    [self test18];
 //    [self test19];
     [self test20];
+//    [self test21];
+}
+
+- (void)test21 {
+    YDLayerViewController *vc = [YDLayerViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)test20 {

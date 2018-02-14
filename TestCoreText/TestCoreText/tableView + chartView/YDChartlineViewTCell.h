@@ -17,5 +17,5 @@
 @property (nonatomic, assign) CGFloat endPoint;
 
 - (void)configureStartPoint:(CGFloat)startPoint endPoint:(CGFloat)endPoint;
-
+- (void)configureDotPoint:(CGFloat)dotPoint oneOfDoubleEndPoint:(CGFloat)oneEndPoint isStart:(BOOL)flag;
 @end

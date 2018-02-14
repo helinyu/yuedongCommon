@@ -12,6 +12,7 @@
 		040257DD2032E0D7004E58FB /* YDChartlineViewTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040257DC2032E0D7004E58FB /* YDChartlineViewTCell.m */; };
 		040257E02032E337004E58FB /* YDChartLineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040257DF2032E337004E58FB /* YDChartLineTableViewController.m */; };
 		040257E62032E55D004E58FB /* YDChartLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040257E52032E55D004E58FB /* YDChartLineModel.m */; };
+		040257EC2033CDC4004E58FB /* YDLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040257EB2033CDC4004E58FB /* YDLayerViewController.m */; };
 		0438E73E201EC60D0032E8F8 /* YDDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E73D201EC60D0032E8F8 /* YDDisplayView.m */; };
 		0438E74A201F13280032E8F8 /* NSString+GHTransformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E749201F13280032E8F8 /* NSString+GHTransformation.m */; };
 		0438E74C201F27450032E8F8 /* Strawberry Blossom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0438E74B201F27450032E8F8 /* Strawberry Blossom.ttf */; };
@@ -143,6 +144,8 @@
 		040257DF2032E337004E58FB /* YDChartLineTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDChartLineTableViewController.m; sourceTree = "<group>"; };
 		040257E42032E55D004E58FB /* YDChartLineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDChartLineModel.h; sourceTree = "<group>"; };
 		040257E52032E55D004E58FB /* YDChartLineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDChartLineModel.m; sourceTree = "<group>"; };
+		040257EA2033CDC4004E58FB /* YDLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDLayerViewController.h; sourceTree = "<group>"; };
+		040257EB2033CDC4004E58FB /* YDLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDLayerViewController.m; sourceTree = "<group>"; };
 		0438E73C201EC60D0032E8F8 /* YDDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDDisplayView.h; sourceTree = "<group>"; };
 		0438E73D201EC60D0032E8F8 /* YDDisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDDisplayView.m; sourceTree = "<group>"; };
 		0438E748201F13280032E8F8 /* NSString+GHTransformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+GHTransformation.h"; sourceTree = "<group>"; };
@@ -5170,6 +5173,15 @@
 				040257E52032E55D004E58FB /* YDChartLineModel.m */,
 			);
 			path = "tableView + chartView";
+			sourceTree = "<group>";
+		};
+		040257E92033CDA0004E58FB /* layer */ = {
+			isa = PBXGroup;
+			children = (
+				040257EA2033CDC4004E58FB /* YDLayerViewController.h */,
+				040257EB2033CDC4004E58FB /* YDLayerViewController.m */,
+			);
+			path = layer;
 			sourceTree = "<group>";
 		};
 		0438E74D201F27480032E8F8 /* resources */ = {
@@ -11116,6 +11128,7 @@
 		04FF49092015910500C02EEF /* TestCoreText */ = {
 			isa = PBXGroup;
 			children = (
+				040257E92033CDA0004E58FB /* layer */,
 				040257DA2032E0B2004E58FB /* tableView + chartView */,
 				040257C2203185A8004E58FB /* chartView */,
 				048B581E202D7E0800FAEB19 /* libxml2 */,
@@ -11691,6 +11704,7 @@
 				048B4259202A959B00FAEB19 /* YDTest1q6ViewController.m in Sources */,
 				04FF494D20159C3800C02EEF /* CTDisplayView.m in Sources */,
 				0438E73E201EC60D0032E8F8 /* YDDisplayView.m in Sources */,
+				040257EC2033CDC4004E58FB /* YDLayerViewController.m in Sources */,
 				0441EFB32015E21D0048F881 /* ImageViewController.m in Sources */,
 				048B4275202AEF8100FAEB19 /* YDHtmlParser.m in Sources */,
 				0441EFB72015EFB90048F881 /* MagnifiterView.m in Sources */,
