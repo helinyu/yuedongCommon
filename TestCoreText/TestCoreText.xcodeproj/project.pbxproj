@@ -36,6 +36,8 @@
 		0441EFB32015E21D0048F881 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441EFB12015E21C0048F881 /* ImageViewController.m */; };
 		0441EFB42015E21D0048F881 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0441EFB22015E21C0048F881 /* ImageViewController.xib */; };
 		0441EFB72015EFB90048F881 /* MagnifiterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441EFB52015EFB90048F881 /* MagnifiterView.m */; };
+		04715049203E9C6D00278E15 /* YDLayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04715048203E9C6D00278E15 /* YDLayerCell.m */; };
+		0471504C203E9F0300278E15 /* YDLayerCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0471504B203E9F0300278E15 /* YDLayerCellView.m */; };
 		048B423420283C0400FAEB19 /* YDTest13ViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B423320283C0400FAEB19 /* YDTest13ViewViewController.m */; };
 		048B42372028469700FAEB19 /* YDCollectionNullReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B42362028469700FAEB19 /* YDCollectionNullReusableView.m */; };
 		048B423D202847E400FAEB19 /* YDCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B423B202847E300FAEB19 /* YDCollectionReusableView.m */; };
@@ -185,6 +187,10 @@
 		0441EFB22015E21C0048F881 /* ImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
 		0441EFB52015EFB90048F881 /* MagnifiterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagnifiterView.m; sourceTree = "<group>"; };
 		0441EFB62015EFB90048F881 /* MagnifiterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnifiterView.h; sourceTree = "<group>"; };
+		04715047203E9C6D00278E15 /* YDLayerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDLayerCell.h; sourceTree = "<group>"; };
+		04715048203E9C6D00278E15 /* YDLayerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDLayerCell.m; sourceTree = "<group>"; };
+		0471504A203E9F0300278E15 /* YDLayerCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDLayerCellView.h; sourceTree = "<group>"; };
+		0471504B203E9F0300278E15 /* YDLayerCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDLayerCellView.m; sourceTree = "<group>"; };
 		048B423220283C0400FAEB19 /* YDTest13ViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest13ViewViewController.h; sourceTree = "<group>"; };
 		048B423320283C0400FAEB19 /* YDTest13ViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest13ViewViewController.m; sourceTree = "<group>"; };
 		048B42352028469700FAEB19 /* YDCollectionNullReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCollectionNullReusableView.h; sourceTree = "<group>"; };
@@ -5180,6 +5186,10 @@
 			children = (
 				040257EA2033CDC4004E58FB /* YDLayerViewController.h */,
 				040257EB2033CDC4004E58FB /* YDLayerViewController.m */,
+				0471504A203E9F0300278E15 /* YDLayerCellView.h */,
+				0471504B203E9F0300278E15 /* YDLayerCellView.m */,
+				04715047203E9C6D00278E15 /* YDLayerCell.h */,
+				04715048203E9C6D00278E15 /* YDLayerCell.m */,
 			);
 			path = layer;
 			sourceTree = "<group>";
@@ -11364,7 +11374,7 @@
 				TargetAttributes = {
 					04FF49062015910500C02EEF = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					04FF491E2015910500C02EEF = {
 						CreatedOnToolsVersion = 9.2;
@@ -11688,6 +11698,7 @@
 				040257E02032E337004E58FB /* YDChartLineTableViewController.m in Sources */,
 				04FF49502015B1AC00C02EEF /* UIView+frameAdjust.m in Sources */,
 				040257C7203185CA004E58FB /* YDTestlayerViewController.m in Sources */,
+				0471504C203E9F0300278E15 /* YDLayerCellView.m in Sources */,
 				04FF491A2015910500C02EEF /* main.m in Sources */,
 				048B424F202867FC00FAEB19 /* YDLabel.m in Sources */,
 				0441EFA02015D53C0048F881 /* YDCTLinkModel.m in Sources */,
@@ -11700,6 +11711,7 @@
 				048B4278202AEF9400FAEB19 /* YDHtmlElementBuilder.m in Sources */,
 				048B4282202C290700FAEB19 /* YDDefaultCss.m in Sources */,
 				04FF490C2015910500C02EEF /* AppDelegate.m in Sources */,
+				04715049203E9C6D00278E15 /* YDLayerCell.m in Sources */,
 				0441EFA62015DA1A0048F881 /* YDCTConfig.m in Sources */,
 				048B4259202A959B00FAEB19 /* YDTest1q6ViewController.m in Sources */,
 				04FF494D20159C3800C02EEF /* CTDisplayView.m in Sources */,
@@ -11876,12 +11888,15 @@
 			baseConfigurationReference = 71285063B261E4180888E2DD /* Pods-TestCoreText.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
 				GCC_PREFIX_HEADER = "TestCoreText/TestCoreText-Prefix.pch";
 				INFOPLIST_FILE = TestCoreText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.linyu.music.TestCoreText;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f453e85d-590c-40db-8226-1010dbbbfb05";
+				PROVISIONING_PROFILE_SPECIFIER = dev_sp;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -11891,12 +11906,14 @@
 			baseConfigurationReference = 577D688E89FEBC59AFA51163 /* Pods-TestCoreText.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "TestCoreText/TestCoreText-Prefix.pch";
 				INFOPLIST_FILE = TestCoreText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.linyu.music.TestCoreText;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sport.yuedong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

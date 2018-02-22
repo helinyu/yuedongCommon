@@ -16,6 +16,7 @@ target 'TestCoreText' do
    pod 'YYCategories', '~> 1.0.4'
    pod 'YYModel', '~> 1.0.4'
    pod 'JBChartView', '~> 3.0.13'
+   pod 'NSLogger', '~> 1.8.3'
 #   pod 'Charts', '~> 3.0.4'
 
 

@@ -18,4 +18,5 @@
 
 - (void)configureStartPoint:(CGFloat)startPoint endPoint:(CGFloat)endPoint;
 - (void)configureDotPoint:(CGFloat)dotPoint oneOfDoubleEndPoint:(CGFloat)oneEndPoint isStart:(BOOL)flag;
+- (void)configureDotPoint:(CGFloat)dotPoint startPoint:(CGFloat)startPoint endPoint:(CGFloat)endPoint dotPoint:(CGFloat)dotPoint;
 @end

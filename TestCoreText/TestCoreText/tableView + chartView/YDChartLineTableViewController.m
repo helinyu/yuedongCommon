@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     YDChartLineModel *oi0 = [YDChartLineModel new];
     oi0.dotPoint = 0.2;
     oi0.detaNum = 3; // 暂时将index作为增加的个数（中间有多少个数目）
@@ -63,40 +63,44 @@
         allIndex++;
         NSInteger nextIndex = index +1;
         if (nextIndex >= _originDatas.count) {
-            item.beginPoint =item.dotPoint -detaH/2.f;
+            item.beginPoint = item.dotPoint -detaH/2.f;
         }
         else {
             NSInteger num = item.detaNum + 1;
             YDChartLineModel *nextItem = _originDatas[nextIndex];
-            detaH = (nextItem.dotPoint - item.dotPoint)/num;
+            if (index !=0) {
+                item.beginPoint = item.dotPoint - detaH/2.f;
+            }
+            CGFloat allDetalH = nextItem.dotPoint - item.dotPoint;
+            detaH = allDetalH/num;
             if (index ==0) {
                 item.endPoint = item.dotPoint + detaH/2.f;
             }
             else {
                 item.endPoint = item.dotPoint + detaH/2.f;
-                item.beginPoint = item.dotPoint - detaH/2.f;
             }
-            for (NSInteger innerIndex = 0; innerIndex <num; innerIndex++) {
+            for (NSInteger innerIndex = 0; innerIndex <item.detaNum; innerIndex++) {
                 YDChartLineModel *lastItem = _datas.lastObject; // alway has
                 YDChartLineModel *innerItem = [YDChartLineModel new];
                 innerItem.hasDot = NO;
                 innerItem.index = allIndex;
                 innerItem.beginPoint = lastItem.endPoint;
                 innerItem.endPoint = innerItem.beginPoint +detaH;
-                innerItem.timeText =[NSString stringWithFormat:@"%zd月",allIndex];
+                innerItem.timeText = [NSString stringWithFormat:@"%zd月",allIndex];
                 [_datas addObject:innerItem];
                 allIndex ++;
             }
         }
     }
-    
+
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     [_tableView registerClass:[YDChartlineViewTCell class] forCellReuseIdentifier:NSStringFromClass([YDChartlineViewTCell class])];
     _tableView.dataSource = self;
     _tableView.delegate  = self;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    _tableView.separatorInset = UIEdgeInsetsMake(0.f, 0.f, 0.f, 0.f);
+    _tableView.allowsSelection = NO;
     [self.view addSubview:_tableView];
-    
 }
 
 #pragma mark - Table view data source
@@ -113,14 +117,17 @@
     YDChartlineViewTCell *cell =  [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([YDChartlineViewTCell class]) forIndexPath:indexPath];
     YDChartLineModel *item = _datas[indexPath.row];
     cell.timeText = item.timeText;
-    if (item.hasDot && (indexPath.row ==0 || indexPath.row ==(_datas.count-1))) {
-        cell.dotPoint = item.dotPoint;
-        if (indexPath.row == 0) {
-            [cell configureDotPoint:item.dotPoint oneOfDoubleEndPoint:item.endPoint isStart:YES];
+    if (item.hasDot) {
+        if (indexPath.row ==0) {
+           [cell configureDotPoint:item.dotPoint oneOfDoubleEndPoint:item.endPoint isStart:YES];
         }
-        else {
+        else if ((_datas.count -1)==indexPath.row){
             [cell configureDotPoint:item.dotPoint oneOfDoubleEndPoint:item.beginPoint isStart:NO];
         }
+        else {
+            [cell configureDotPoint:item.dotPoint startPoint:item.beginPoint endPoint:item.endPoint dotPoint:item.dotPoint];
+        }
+        cell.dotPoint = item.dotPoint;
     }else {
         [cell configureStartPoint:item.beginPoint endPoint:item.endPoint];
     }
