@@ -26,7 +26,6 @@
 - (void)registerClass:(nullable Class)cellClass forCellReuseIdentifier:(NSString *)identifier;
 - (YDLayerCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath;
 
-- (void)prepareForReuse;
 - (void)reloadData;
 
 @end

@@ -18,6 +18,8 @@
 
 @property (nonatomic, strong) YDLayerCellView *scrollView;
 
+@property (nonatomic, strong) UITableView *tableView;
+
 @end
 
 @implementation YDLayerViewController
@@ -147,5 +149,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+// scroll view delegate
+
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    NSLog(@"gh- scrollViewDidScroll : %f",scrollView.contentOffset.x);
+//}
 
 @end

@@ -18,8 +18,6 @@
 
 
 @property (nonatomic, assign) NSInteger beginIndex;
-//@property (nonatomic, strong) NSIndexPath *currentIndexPath;
-//@property (nonatomic, strong) NSIndexPath *endIndexPath;
 
 @end
 
@@ -107,5 +105,21 @@
     }
     [self layoutIfNeeded];
 }
+
+// uiresponder
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
+    NSLog(@"touchesBegan");
+}
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
+    NSLog(@"touchesMoved");
+}
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
+    NSLog(@"touchesEnded");
+}
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
+    NSLog(@"touchesCancelled");
+}
+
 
 @end

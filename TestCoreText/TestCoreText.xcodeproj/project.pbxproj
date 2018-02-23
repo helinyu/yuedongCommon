@@ -38,6 +38,17 @@
 		0441EFB72015EFB90048F881 /* MagnifiterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441EFB52015EFB90048F881 /* MagnifiterView.m */; };
 		04715049203E9C6D00278E15 /* YDLayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04715048203E9C6D00278E15 /* YDLayerCell.m */; };
 		0471504C203E9F0300278E15 /* YDLayerCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0471504B203E9F0300278E15 /* YDLayerCellView.m */; };
+		04715055203FC1D600278E15 /* YDFlyWeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04715054203FC1D600278E15 /* YDFlyWeightViewController.m */; };
+		04715058203FC24F00278E15 /* FlowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04715057203FC24F00278E15 /* FlowerView.m */; };
+		0471505B203FC2B600278E15 /* FlowerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0471505A203FC2B600278E15 /* FlowerFactory.m */; };
+		04715063203FC4AF00278E15 /* anemone.png in Resources */ = {isa = PBXBuildFile; fileRef = 0471505D203FC4AE00278E15 /* anemone.png */; };
+		04715064203FC4AF00278E15 /* cosmos.png in Resources */ = {isa = PBXBuildFile; fileRef = 0471505E203FC4AE00278E15 /* cosmos.png */; };
+		04715065203FC4AF00278E15 /* gerberas.png in Resources */ = {isa = PBXBuildFile; fileRef = 0471505F203FC4AE00278E15 /* gerberas.png */; };
+		04715066203FC4AF00278E15 /* hollyhock.png in Resources */ = {isa = PBXBuildFile; fileRef = 04715060203FC4AE00278E15 /* hollyhock.png */; };
+		04715067203FC4AF00278E15 /* jasmine.png in Resources */ = {isa = PBXBuildFile; fileRef = 04715061203FC4AE00278E15 /* jasmine.png */; };
+		04715068203FC4AF00278E15 /* zinnia.png in Resources */ = {isa = PBXBuildFile; fileRef = 04715062203FC4AE00278E15 /* zinnia.png */; };
+		04715071203FCB6600278E15 /* FlyweightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0471506D203FCB6500278E15 /* FlyweightView.m */; };
+		04715073203FCD5800278E15 /* ExtrinsicFlowerState.m in Sources */ = {isa = PBXBuildFile; fileRef = 04715072203FCD5800278E15 /* ExtrinsicFlowerState.m */; };
 		048B423420283C0400FAEB19 /* YDTest13ViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B423320283C0400FAEB19 /* YDTest13ViewViewController.m */; };
 		048B42372028469700FAEB19 /* YDCollectionNullReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B42362028469700FAEB19 /* YDCollectionNullReusableView.m */; };
 		048B423D202847E400FAEB19 /* YDCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B423B202847E300FAEB19 /* YDCollectionReusableView.m */; };
@@ -191,6 +202,22 @@
 		04715048203E9C6D00278E15 /* YDLayerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDLayerCell.m; sourceTree = "<group>"; };
 		0471504A203E9F0300278E15 /* YDLayerCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDLayerCellView.h; sourceTree = "<group>"; };
 		0471504B203E9F0300278E15 /* YDLayerCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDLayerCellView.m; sourceTree = "<group>"; };
+		04715053203FC1D600278E15 /* YDFlyWeightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDFlyWeightViewController.h; sourceTree = "<group>"; };
+		04715054203FC1D600278E15 /* YDFlyWeightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDFlyWeightViewController.m; sourceTree = "<group>"; };
+		04715056203FC24F00278E15 /* FlowerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowerView.h; sourceTree = "<group>"; };
+		04715057203FC24F00278E15 /* FlowerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerView.m; sourceTree = "<group>"; };
+		04715059203FC2B600278E15 /* FlowerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowerFactory.h; sourceTree = "<group>"; };
+		0471505A203FC2B600278E15 /* FlowerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerFactory.m; sourceTree = "<group>"; };
+		0471505D203FC4AE00278E15 /* anemone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anemone.png; sourceTree = "<group>"; };
+		0471505E203FC4AE00278E15 /* cosmos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cosmos.png; sourceTree = "<group>"; };
+		0471505F203FC4AE00278E15 /* gerberas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gerberas.png; sourceTree = "<group>"; };
+		04715060203FC4AE00278E15 /* hollyhock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hollyhock.png; sourceTree = "<group>"; };
+		04715061203FC4AE00278E15 /* jasmine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jasmine.png; sourceTree = "<group>"; };
+		04715062203FC4AE00278E15 /* zinnia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zinnia.png; sourceTree = "<group>"; };
+		04715069203FC6F000278E15 /* ExtrinsicFlowerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtrinsicFlowerState.h; sourceTree = "<group>"; };
+		0471506D203FCB6500278E15 /* FlyweightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyweightView.m; sourceTree = "<group>"; };
+		04715070203FCB6600278E15 /* FlyweightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyweightView.h; sourceTree = "<group>"; };
+		04715072203FCD5800278E15 /* ExtrinsicFlowerState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtrinsicFlowerState.m; sourceTree = "<group>"; };
 		048B423220283C0400FAEB19 /* YDTest13ViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest13ViewViewController.h; sourceTree = "<group>"; };
 		048B423320283C0400FAEB19 /* YDTest13ViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest13ViewViewController.m; sourceTree = "<group>"; };
 		048B42352028469700FAEB19 /* YDCollectionNullReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCollectionNullReusableView.h; sourceTree = "<group>"; };
@@ -5235,6 +5262,37 @@
 				0441EF912015D1C40048F881 /* content.json */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		04715050203FC1A200278E15 /* flyweight-pattern */ = {
+			isa = PBXGroup;
+			children = (
+				0471505C203FC4AE00278E15 /* images */,
+				04715053203FC1D600278E15 /* YDFlyWeightViewController.h */,
+				04715054203FC1D600278E15 /* YDFlyWeightViewController.m */,
+				04715056203FC24F00278E15 /* FlowerView.h */,
+				04715057203FC24F00278E15 /* FlowerView.m */,
+				04715059203FC2B600278E15 /* FlowerFactory.h */,
+				0471505A203FC2B600278E15 /* FlowerFactory.m */,
+				04715069203FC6F000278E15 /* ExtrinsicFlowerState.h */,
+				04715072203FCD5800278E15 /* ExtrinsicFlowerState.m */,
+				04715070203FCB6600278E15 /* FlyweightView.h */,
+				0471506D203FCB6500278E15 /* FlyweightView.m */,
+			);
+			path = "flyweight-pattern";
+			sourceTree = "<group>";
+		};
+		0471505C203FC4AE00278E15 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0471505D203FC4AE00278E15 /* anemone.png */,
+				0471505E203FC4AE00278E15 /* cosmos.png */,
+				0471505F203FC4AE00278E15 /* gerberas.png */,
+				04715060203FC4AE00278E15 /* hollyhock.png */,
+				04715061203FC4AE00278E15 /* jasmine.png */,
+				04715062203FC4AE00278E15 /* zinnia.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		048B42492028670D00FAEB19 /* test14 */ = {
@@ -11138,6 +11196,7 @@
 		04FF49092015910500C02EEF /* TestCoreText */ = {
 			isa = PBXGroup;
 			children = (
+				04715050203FC1A200278E15 /* flyweight-pattern */,
 				040257E92033CDA0004E58FB /* layer */,
 				040257DA2032E0B2004E58FB /* tableView + chartView */,
 				040257C2203185A8004E58FB /* chartView */,
@@ -11428,18 +11487,22 @@
 				04FFAF4C2019C98200E54521 /* LoremIpsum.html in Resources */,
 				0441EFB42015E21D0048F881 /* ImageViewController.xib in Resources */,
 				04FFAF442019C98200E54521 /* Icon@2x.png in Resources */,
+				04715067203FC4AF00278E15 /* jasmine.png in Resources */,
+				04715068203FC4AF00278E15 /* zinnia.png in Resources */,
 				04FFAF412019C98200E54521 /* EmojiTest.html in Resources */,
 				04FFAF432019C98200E54521 /* Icon.png in Resources */,
 				04FFAF3B2019C98200E54521 /* CurrentTest.html in Resources */,
 				0441EFAE2015E2160048F881 /* WebContentViewController.xib in Resources */,
 				04FFAF572019C98200E54521 /* XB Niloofar.ttf in Resources */,
 				0441EF9A2015D1F70048F881 /* cursor@2x.png in Resources */,
+				04715064203FC4AF00278E15 /* cosmos.png in Resources */,
 				04FFAF3C2019C98200E54521 /* custom0.html in Resources */,
 				04FF49172015910500C02EEF /* LaunchScreen.storyboard in Resources */,
 				04FFAF4B2019C98200E54521 /* ListTest.html in Resources */,
 				0441EF982015D1EF0048F881 /* red@2x.png in Resources */,
 				048B4294202C7EDA00FAEB19 /* needtofix_parserdata.json in Resources */,
 				0441EF962015D1D10048F881 /* coretext-image-1.jpg in Resources */,
+				04715063203FC4AF00278E15 /* anemone.png in Resources */,
 				04FFAF402019C98200E54521 /* eg_tulip.jpg in Resources */,
 				04FFAF582019C98200E54521 /* XB NiloofarBd.ttf in Resources */,
 				04FFAF472019C98200E54521 /* iOS6.html in Resources */,
@@ -11449,6 +11512,7 @@
 				04FFAF482019C98200E54521 /* Languages.html in Resources */,
 				048B427F202C28EA00FAEB19 /* default.css in Resources */,
 				04FFAF4F2019C98200E54521 /* Oliver@2x.jpg in Resources */,
+				04715065203FC4AF00278E15 /* gerberas.png in Resources */,
 				04FFAF562019C98200E54521 /* WarAndPeace.html in Resources */,
 				04FFAF392019C98200E54521 /* CoreTextIssues.html in Resources */,
 				04FFAF3D2019C98200E54521 /* CustomFont.html in Resources */,
@@ -11464,6 +11528,7 @@
 				04FFAF382019C98200E54521 /* ArabicTest.html in Resources */,
 				04FF49122015910500C02EEF /* Main.storyboard in Resources */,
 				04FFAF552019C98200E54521 /* Video.html in Resources */,
+				04715066203FC4AF00278E15 /* hollyhock.png in Resources */,
 				04FFAF362019C98200E54521 /* Alignment.html in Resources */,
 				04FFAF4E2019C98200E54521 /* Oliver.jpg in Resources */,
 				0438E74C201F27450032E8F8 /* Strawberry Blossom.ttf in Resources */,
@@ -11697,21 +11762,25 @@
 				0441EF902015D0520048F881 /* YDCTModel.m in Sources */,
 				040257E02032E337004E58FB /* YDChartLineTableViewController.m in Sources */,
 				04FF49502015B1AC00C02EEF /* UIView+frameAdjust.m in Sources */,
+				0471505B203FC2B600278E15 /* FlowerFactory.m in Sources */,
 				040257C7203185CA004E58FB /* YDTestlayerViewController.m in Sources */,
 				0471504C203E9F0300278E15 /* YDLayerCellView.m in Sources */,
 				04FF491A2015910500C02EEF /* main.m in Sources */,
 				048B424F202867FC00FAEB19 /* YDLabel.m in Sources */,
 				0441EFA02015D53C0048F881 /* YDCTLinkModel.m in Sources */,
 				0441EFAA2015DB440048F881 /* YDCTParser.m in Sources */,
+				04715055203FC1D600278E15 /* YDFlyWeightViewController.m in Sources */,
 				418EAD3B202B4E2C0067612B /* YDTest16ViewController.m in Sources */,
 				048B425320286A3200FAEB19 /* YDTest15ViewController.m in Sources */,
 				04FFAF0A2019A8EE00E54521 /* YDTransView.m in Sources */,
 				0438E7772021DB510032E8F8 /* YDCustomCollectionViewCell.m in Sources */,
 				0441EF8D2015C9A80048F881 /* YDCTView.m in Sources */,
 				048B4278202AEF9400FAEB19 /* YDHtmlElementBuilder.m in Sources */,
+				04715058203FC24F00278E15 /* FlowerView.m in Sources */,
 				048B4282202C290700FAEB19 /* YDDefaultCss.m in Sources */,
 				04FF490C2015910500C02EEF /* AppDelegate.m in Sources */,
 				04715049203E9C6D00278E15 /* YDLayerCell.m in Sources */,
+				04715071203FCB6600278E15 /* FlyweightView.m in Sources */,
 				0441EFA62015DA1A0048F881 /* YDCTConfig.m in Sources */,
 				048B4259202A959B00FAEB19 /* YDTest1q6ViewController.m in Sources */,
 				04FF494D20159C3800C02EEF /* CTDisplayView.m in Sources */,
@@ -11720,6 +11789,7 @@
 				0441EFB32015E21D0048F881 /* ImageViewController.m in Sources */,
 				048B4275202AEF8100FAEB19 /* YDHtmlParser.m in Sources */,
 				0441EFB72015EFB90048F881 /* MagnifiterView.m in Sources */,
+				04715073203FCD5800278E15 /* ExtrinsicFlowerState.m in Sources */,
 				04AAA638202830E5007AC7E9 /* YDTest12ViewController.m in Sources */,
 				0441EFAF2015E2160048F881 /* WebContentViewController.m in Sources */,
 				0438E74A201F13280032E8F8 /* NSString+GHTransformation.m in Sources */,
