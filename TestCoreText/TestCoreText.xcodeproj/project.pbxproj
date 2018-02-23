@@ -49,6 +49,11 @@
 		04715068203FC4AF00278E15 /* zinnia.png in Resources */ = {isa = PBXBuildFile; fileRef = 04715062203FC4AE00278E15 /* zinnia.png */; };
 		04715071203FCB6600278E15 /* FlyweightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0471506D203FCB6500278E15 /* FlyweightView.m */; };
 		04715073203FCD5800278E15 /* ExtrinsicFlowerState.m in Sources */ = {isa = PBXBuildFile; fileRef = 04715072203FCD5800278E15 /* ExtrinsicFlowerState.m */; };
+		04715078203FE28900278E15 /* YDHorizontalTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04715077203FE28900278E15 /* YDHorizontalTableView.m */; };
+		0471507B203FE35400278E15 /* YDHorizontalBaseViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0471507A203FE35400278E15 /* YDHorizontalBaseViewCell.m */; };
+		0471507E203FE37F00278E15 /* YDHorizontalBaseLayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0471507D203FE37F00278E15 /* YDHorizontalBaseLayerCell.m */; };
+		04715082203FECD600278E15 /* YDTest23ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04715081203FECD600278E15 /* YDTest23ViewController.m */; };
+		04715085203FF63300278E15 /* YDHorizontalRowDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 04715084203FF63300278E15 /* YDHorizontalRowDetail.m */; };
 		048B423420283C0400FAEB19 /* YDTest13ViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B423320283C0400FAEB19 /* YDTest13ViewViewController.m */; };
 		048B42372028469700FAEB19 /* YDCollectionNullReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B42362028469700FAEB19 /* YDCollectionNullReusableView.m */; };
 		048B423D202847E400FAEB19 /* YDCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B423B202847E300FAEB19 /* YDCollectionReusableView.m */; };
@@ -218,6 +223,16 @@
 		0471506D203FCB6500278E15 /* FlyweightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyweightView.m; sourceTree = "<group>"; };
 		04715070203FCB6600278E15 /* FlyweightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyweightView.h; sourceTree = "<group>"; };
 		04715072203FCD5800278E15 /* ExtrinsicFlowerState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtrinsicFlowerState.m; sourceTree = "<group>"; };
+		04715076203FE28900278E15 /* YDHorizontalTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDHorizontalTableView.h; sourceTree = "<group>"; };
+		04715077203FE28900278E15 /* YDHorizontalTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDHorizontalTableView.m; sourceTree = "<group>"; };
+		04715079203FE35400278E15 /* YDHorizontalBaseViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDHorizontalBaseViewCell.h; sourceTree = "<group>"; };
+		0471507A203FE35400278E15 /* YDHorizontalBaseViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDHorizontalBaseViewCell.m; sourceTree = "<group>"; };
+		0471507C203FE37F00278E15 /* YDHorizontalBaseLayerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDHorizontalBaseLayerCell.h; sourceTree = "<group>"; };
+		0471507D203FE37F00278E15 /* YDHorizontalBaseLayerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDHorizontalBaseLayerCell.m; sourceTree = "<group>"; };
+		04715080203FECD600278E15 /* YDTest23ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest23ViewController.h; sourceTree = "<group>"; };
+		04715081203FECD600278E15 /* YDTest23ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest23ViewController.m; sourceTree = "<group>"; };
+		04715083203FF63300278E15 /* YDHorizontalRowDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDHorizontalRowDetail.h; sourceTree = "<group>"; };
+		04715084203FF63300278E15 /* YDHorizontalRowDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDHorizontalRowDetail.m; sourceTree = "<group>"; };
 		048B423220283C0400FAEB19 /* YDTest13ViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest13ViewViewController.h; sourceTree = "<group>"; };
 		048B423320283C0400FAEB19 /* YDTest13ViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest13ViewViewController.m; sourceTree = "<group>"; };
 		048B42352028469700FAEB19 /* YDCollectionNullReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCollectionNullReusableView.h; sourceTree = "<group>"; };
@@ -5293,6 +5308,31 @@
 				04715062203FC4AE00278E15 /* zinnia.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		04715075203FE23E00278E15 /* tableView */ = {
+			isa = PBXGroup;
+			children = (
+				0471507F203FECB900278E15 /* test */,
+				04715076203FE28900278E15 /* YDHorizontalTableView.h */,
+				04715077203FE28900278E15 /* YDHorizontalTableView.m */,
+				04715079203FE35400278E15 /* YDHorizontalBaseViewCell.h */,
+				0471507A203FE35400278E15 /* YDHorizontalBaseViewCell.m */,
+				0471507C203FE37F00278E15 /* YDHorizontalBaseLayerCell.h */,
+				0471507D203FE37F00278E15 /* YDHorizontalBaseLayerCell.m */,
+				04715083203FF63300278E15 /* YDHorizontalRowDetail.h */,
+				04715084203FF63300278E15 /* YDHorizontalRowDetail.m */,
+			);
+			path = tableView;
+			sourceTree = "<group>";
+		};
+		0471507F203FECB900278E15 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				04715080203FECD600278E15 /* YDTest23ViewController.h */,
+				04715081203FECD600278E15 /* YDTest23ViewController.m */,
+			);
+			path = test;
 			sourceTree = "<group>";
 		};
 		048B42492028670D00FAEB19 /* test14 */ = {
@@ -11196,6 +11236,7 @@
 		04FF49092015910500C02EEF /* TestCoreText */ = {
 			isa = PBXGroup;
 			children = (
+				04715075203FE23E00278E15 /* tableView */,
 				04715050203FC1A200278E15 /* flyweight-pattern */,
 				040257E92033CDA0004E58FB /* layer */,
 				040257DA2032E0B2004E58FB /* tableView + chartView */,
@@ -11754,6 +11795,7 @@
 				048B424C2028673000FAEB19 /* YDTest14ViewController.m in Sources */,
 				0441EFA32015D5D90048F881 /* YDCTUtils.m in Sources */,
 				048B42372028469700FAEB19 /* YDCollectionNullReusableView.m in Sources */,
+				0471507E203FE37F00278E15 /* YDHorizontalBaseLayerCell.m in Sources */,
 				048B4242202849B600FAEB19 /* YDTest13TableViewCell.m in Sources */,
 				048B423D202847E400FAEB19 /* YDCollectionReusableView.m in Sources */,
 				048B4287202C2EBA00FAEB19 /* YDHtmlParserNode.m in Sources */,
@@ -11767,6 +11809,8 @@
 				0471504C203E9F0300278E15 /* YDLayerCellView.m in Sources */,
 				04FF491A2015910500C02EEF /* main.m in Sources */,
 				048B424F202867FC00FAEB19 /* YDLabel.m in Sources */,
+				0471507B203FE35400278E15 /* YDHorizontalBaseViewCell.m in Sources */,
+				04715085203FF63300278E15 /* YDHorizontalRowDetail.m in Sources */,
 				0441EFA02015D53C0048F881 /* YDCTLinkModel.m in Sources */,
 				0441EFAA2015DB440048F881 /* YDCTParser.m in Sources */,
 				04715055203FC1D600278E15 /* YDFlyWeightViewController.m in Sources */,
@@ -11777,9 +11821,11 @@
 				0441EF8D2015C9A80048F881 /* YDCTView.m in Sources */,
 				048B4278202AEF9400FAEB19 /* YDHtmlElementBuilder.m in Sources */,
 				04715058203FC24F00278E15 /* FlowerView.m in Sources */,
+				04715078203FE28900278E15 /* YDHorizontalTableView.m in Sources */,
 				048B4282202C290700FAEB19 /* YDDefaultCss.m in Sources */,
 				04FF490C2015910500C02EEF /* AppDelegate.m in Sources */,
 				04715049203E9C6D00278E15 /* YDLayerCell.m in Sources */,
+				04715082203FECD600278E15 /* YDTest23ViewController.m in Sources */,
 				04715071203FCB6600278E15 /* FlyweightView.m in Sources */,
 				0441EFA62015DA1A0048F881 /* YDCTConfig.m in Sources */,
 				048B4259202A959B00FAEB19 /* YDTest1q6ViewController.m in Sources */,
