@@ -48,6 +48,11 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     NSLog(@"gh- layout subViews");
+    
+}
+
+- (void)layoutSublayersOfLayer:(CALayer *)layer {
+    [super layoutSublayersOfLayer:layer];
     if (_rowRecords.count >0) {
         [self layoutTableView];
     }

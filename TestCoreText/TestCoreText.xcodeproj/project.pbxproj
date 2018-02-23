@@ -5313,7 +5313,7 @@
 			path = images;
 			sourceTree = "<group>";
 		};
-		04715075203FE23E00278E15 /* tableView */ = {
+		04715075203FE23E00278E15 /* layer tableView */ = {
 			isa = PBXGroup;
 			children = (
 				0471507F203FECB900278E15 /* test */,
@@ -5328,7 +5328,7 @@
 				04715083203FF63300278E15 /* YDHorizontalRowDetail.h */,
 				04715084203FF63300278E15 /* YDHorizontalRowDetail.m */,
 			);
-			path = tableView;
+			path = "layer tableView";
 			sourceTree = "<group>";
 		};
 		0471507F203FECB900278E15 /* test */ = {
@@ -11241,7 +11241,7 @@
 		04FF49092015910500C02EEF /* TestCoreText */ = {
 			isa = PBXGroup;
 			children = (
-				04715075203FE23E00278E15 /* tableView */,
+				04715075203FE23E00278E15 /* layer tableView */,
 				04715050203FC1A200278E15 /* flyweight-pattern */,
 				040257E92033CDA0004E58FB /* layer */,
 				040257DA2032E0B2004E58FB /* tableView + chartView */,
