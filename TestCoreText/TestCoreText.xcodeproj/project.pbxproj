@@ -54,6 +54,7 @@
 		0471507E203FE37F00278E15 /* YDHorizontalBaseLayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0471507D203FE37F00278E15 /* YDHorizontalBaseLayerCell.m */; };
 		04715082203FECD600278E15 /* YDTest23ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04715081203FECD600278E15 /* YDTest23ViewController.m */; };
 		04715085203FF63300278E15 /* YDHorizontalRowDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 04715084203FF63300278E15 /* YDHorizontalRowDetail.m */; };
+		0471508B2040163900278E15 /* YDChartLayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0471508A2040163900278E15 /* YDChartLayerCell.m */; };
 		048B423420283C0400FAEB19 /* YDTest13ViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B423320283C0400FAEB19 /* YDTest13ViewViewController.m */; };
 		048B42372028469700FAEB19 /* YDCollectionNullReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B42362028469700FAEB19 /* YDCollectionNullReusableView.m */; };
 		048B423D202847E400FAEB19 /* YDCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B423B202847E300FAEB19 /* YDCollectionReusableView.m */; };
@@ -233,6 +234,8 @@
 		04715081203FECD600278E15 /* YDTest23ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest23ViewController.m; sourceTree = "<group>"; };
 		04715083203FF63300278E15 /* YDHorizontalRowDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDHorizontalRowDetail.h; sourceTree = "<group>"; };
 		04715084203FF63300278E15 /* YDHorizontalRowDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDHorizontalRowDetail.m; sourceTree = "<group>"; };
+		047150892040163900278E15 /* YDChartLayerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDChartLayerCell.h; sourceTree = "<group>"; };
+		0471508A2040163900278E15 /* YDChartLayerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDChartLayerCell.m; sourceTree = "<group>"; };
 		048B423220283C0400FAEB19 /* YDTest13ViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest13ViewViewController.h; sourceTree = "<group>"; };
 		048B423320283C0400FAEB19 /* YDTest13ViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest13ViewViewController.m; sourceTree = "<group>"; };
 		048B42352028469700FAEB19 /* YDCollectionNullReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCollectionNullReusableView.h; sourceTree = "<group>"; };
@@ -5320,6 +5323,8 @@
 				0471507A203FE35400278E15 /* YDHorizontalBaseViewCell.m */,
 				0471507C203FE37F00278E15 /* YDHorizontalBaseLayerCell.h */,
 				0471507D203FE37F00278E15 /* YDHorizontalBaseLayerCell.m */,
+				047150892040163900278E15 /* YDChartLayerCell.h */,
+				0471508A2040163900278E15 /* YDChartLayerCell.m */,
 				04715083203FF63300278E15 /* YDHorizontalRowDetail.h */,
 				04715084203FF63300278E15 /* YDHorizontalRowDetail.m */,
 			);
@@ -11835,6 +11840,7 @@
 				0441EFB32015E21D0048F881 /* ImageViewController.m in Sources */,
 				048B4275202AEF8100FAEB19 /* YDHtmlParser.m in Sources */,
 				0441EFB72015EFB90048F881 /* MagnifiterView.m in Sources */,
+				0471508B2040163900278E15 /* YDChartLayerCell.m in Sources */,
 				04715073203FCD5800278E15 /* ExtrinsicFlowerState.m in Sources */,
 				04AAA638202830E5007AC7E9 /* YDTest12ViewController.m in Sources */,
 				0441EFAF2015E2160048F881 /* WebContentViewController.m in Sources */,

@@ -10,4 +10,6 @@
 
 @interface YDHorizontalBaseLayerCell : CALayer
 
+@property (nonatomic, assign) NSInteger cellIndex;
+
 @end

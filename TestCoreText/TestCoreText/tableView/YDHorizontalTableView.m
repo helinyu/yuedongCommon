@@ -8,7 +8,7 @@
 
 #import "YDHorizontalTableView.h"
 #import "YDHorizontalBaseViewCell.h"
-#import "YDHorizontalBaseLayerCell.h"
+#import "YDLayerCell.h"
 #import "YDHorizontalRowDetail.h"
 
 @interface YDHorizontalTableView ()
@@ -19,6 +19,8 @@
 @property (nonatomic, strong) NSMutableDictionary *visibleCells;
 
 @property (nonatomic, strong) NSMutableDictionary *cellPool;
+
+@property (nonatomic, strong) Class currentCls;
 
 @end
 
@@ -39,6 +41,8 @@
     _rowRecords = @[].mutableCopy;
     _visibleRows = [NSMutableIndexSet new];
     _visibleCells = @{}.mutableCopy;
+    self.bounces = NO;
+    self.alwaysBounceHorizontal = NO;
 }
 
 - (void)layoutSubviews {
@@ -55,25 +59,47 @@
     NSRange willShowRange = [self rangeOfWillShowWithStartX:startX endX:endX];
     for (NSUInteger i = willShowRange.location; i < willShowRange.location + willShowRange.length; i++) {
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
-        YDHorizontalBaseViewCell *cell = [self.visibleCells objectForKey:@(i)];
-        if (!cell) {
-            cell = [self.dataSource horizontalTableView:self cellForRowAtIndexPath:indexPath];
-            if (cell) {
-                [_visibleCells setObject:cell forKey:@(i)];
+        if (_cellType ==YDHorizontalTableViewCelltypeLayer) {
+            YDLayerCell *cell = [self.visibleCells objectForKey:@(i)];
+            if (!cell) {
+                cell = (YDLayerCell *)[self.dataSource horizontalLayerTableView:self cellForRowAtIndexPath:indexPath];
+                if (cell) {
+                    [_visibleCells setObject:cell forKey:@(i)];
+                }
+                YDHorizontalRowDetail *detail = self.rowRecords[i];
+                cell.frame = CGRectMake(detail.startX, 0.f, detail.rowWidth, self.frame.size.height);
+                [self.layer addSublayer:cell];
             }
-            YDHorizontalRowDetail *detail = self.rowRecords[i];
-            cell.frame = CGRectMake(detail.startX, 0.f, detail.rowWidth, self.frame.size.height);
-            [self addSubview:cell];
+        }
+        else {
+            YDHorizontalBaseViewCell *cell = [self.visibleCells objectForKey:@(i)];
+            if (!cell) {
+                cell = [self.dataSource horizontalTableView:self cellForRowAtIndexPath:indexPath];
+                if (cell) {
+                    [_visibleCells setObject:cell forKey:@(i)];
+                }
+                YDHorizontalRowDetail *detail = self.rowRecords[i];
+                cell.frame = CGRectMake(detail.startX, 0.f, detail.rowWidth, self.frame.size.height);
+                [self addSubview:cell];
+            }
         }
     }
     
     NSArray *allVisibleCells = [self.visibleCells allKeys];
     for (NSNumber *numb in allVisibleCells) {
         if (!NSLocationInRange([numb integerValue], willShowRange)) {
-            YDHorizontalBaseViewCell *cell = [self.visibleCells objectForKey:numb];
-            [_cellPool setObject:cell forKey:@(cell.cellIndex)];
-            [_visibleCells removeObjectForKey:numb];
-            [cell removeFromSuperview];
+            if (_cellType == YDHorizontalTableViewCelltypeLayer) {
+                YDLayerCell *cell = [self.visibleCells objectForKey:numb];
+                [_cellPool setObject:cell forKey:@(cell.cellIndex)];
+                [_visibleCells removeObjectForKey:numb];
+                [cell removeFromSuperlayer];
+            }
+            else {
+                YDHorizontalBaseViewCell *cell = [self.visibleCells objectForKey:numb];
+                [_cellPool setObject:cell forKey:@(cell.cellIndex)];
+                [_visibleCells removeObjectForKey:numb];
+                [cell removeFromSuperview];
+            }
         }
     }
 }
@@ -94,8 +120,7 @@
         if (obj1.startX < obj2.startX) return NSOrderedAscending;
         return NSOrderedDescending;
     }];
-    if (endIndex > 0) endIndex--;
-    
+//    if (endIndex > 0) endIndex--;
     return NSMakeRange(startIndex, endIndex - startIndex + 1);
 }
 
@@ -121,12 +146,12 @@
             [self.rowRecords addObject:rowDetail];
         }
     }
-    self.contentSize = CGSizeMake(totalWidth, self.frame.size.height);
+    self.contentSize = CGSizeMake(ceilf(totalWidth), self.frame.size.height);
 }
 
 - (void)registerClass:(nullable Class)cellClass forCellReuseIdentifier:(NSString *)identifier {
     if (_cellIdentifiers.count >0) {
-        YDHorizontalBaseViewCell *cell = [_cellIdentifiers objectForKey:identifier];
+        id cell = [_cellIdentifiers objectForKey:identifier];
         if (cell) return;
     }
      [_cellIdentifiers setObject:cellClass forKey:identifier];
@@ -151,6 +176,34 @@
     }
     else {
         cell = [YDHorizontalBaseViewCell new];
+    }
+    cell.cellIndex = indexPath.row;
+    return cell;
+}
+
+- (YDLayerCell *)dequeueReusableLayerCellWithIdentifier:(NSString *)identifier indexPath:(NSIndexPath *)indexPath {
+    NSAssert(identifier.length >0, @"please asset that the identifier length must larger then 0");
+    Class cls = [_cellIdentifiers objectForKey:identifier];
+    NSAssert(cls, @"must register the cell");
+    
+    YDLayerCell *cell;
+    if (_cellPool.count >0) {
+        YDLayerCell *cell = [_cellPool objectForKey:@(indexPath.row)];
+        if (!cell) {
+            NSArray *allKeys = _cellPool.allKeys;
+            cell = [_cellPool objectForKey:allKeys.firstObject];
+            [_cellPool removeObjectForKey:allKeys.firstObject];
+        }
+        else {
+            cell = [YDLayerCell new];
+            CGFloat cellWidth = [self.dataSource widthOfRow];
+            cell.frame = CGRectMake(0, indexPath.row *cellWidth, cellWidth, self.bounds.size.height);
+        }
+    }
+    else {
+        cell = [YDLayerCell new];
+        CGFloat cellWidth = [self.dataSource widthOfRow];
+        cell.frame = CGRectMake(0, indexPath.row *cellWidth, cellWidth, self.bounds.size.height);
     }
     cell.cellIndex = indexPath.row;
     return cell;
