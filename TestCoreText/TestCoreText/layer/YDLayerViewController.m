@@ -114,7 +114,7 @@
                 allIndex ++;
             }
         }
-    }[
+    }
 }
 
 - (CGFloat)widthOfLayerCell {
