@@ -39,8 +39,8 @@
     for (int i =0; i < 500; ++i) {
         FlowerType flowerType = arc4random() %kTotalNumberOfFlowerTypes;
         UIView *flowerView = [factory flowerViewWithType:flowerType];
-        
-//         位置
+
+        //         位置
         CGRect screenRect = [[UIScreen mainScreen] bounds];
         CGFloat x = (arc4random() % (NSInteger)screenRect.size.width);
         CGFloat y = (arc4random() %(NSInteger)screenRect.size.height);

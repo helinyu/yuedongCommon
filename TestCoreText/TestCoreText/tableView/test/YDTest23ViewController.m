@@ -51,7 +51,4 @@ static NSString *const kLayerCellIdentifier = @"k.layer.cell.identifier";
     return cell;
 }
 
-
-
-
 @end
