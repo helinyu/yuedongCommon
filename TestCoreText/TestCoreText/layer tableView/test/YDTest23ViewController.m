@@ -32,12 +32,13 @@ static NSString *const kLayerCellIdentifier = @"k.layer.cell.identifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-//    [self test0];
-    [self test1];
+    [self data0];
+
+    [self test0];
+//    [self test1];
 }
 
 - (void)test1 {
-    [self data0];
     _tableView = [[YDHorizontalTableView alloc] initWithFrame:CGRectMake(0, 64.f, self.view.bounds.size.width, self.view.bounds.size.height -64.f)];
     _tableView.cellType = YDHorizontalTableViewCelltypeLayer;
     [_tableView registerClass:[YDLayerCell class] forCellReuseIdentifier:kLayerCellIdentifier];

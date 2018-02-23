@@ -38,7 +38,7 @@
 - (void)view0 {
     self.view.backgroundColor = [UIColor whiteColor];
     _scrollView = [YDLayerCellView new];
-    _scrollView.frame = CGRectMake(0, 64.f, self.view.bounds.size.width, 200.f);
+    _scrollView.frame = CGRectMake(0, 64.f, self.view.bounds.size.width, self.view.bounds.size.height -64.f);
     _scrollView.contentSize = CGSizeMake(self.view.bounds.size.width *2, 200.f);
     _scrollView.backgroundColor = [UIColor yellowColor];
     [_scrollView registerClass:[YDLayerCell class] forCellReuseIdentifier:NSStringFromClass([YDLayerCell class])];
@@ -114,11 +114,11 @@
                 allIndex ++;
             }
         }
-    }
+    }[
 }
 
 - (CGFloat)widthOfLayerCell {
-    return 50.f;
+    return 80.f;
 }
 
 - (YDLayerCell *)layerCellView:(YDLayerCellView *)layerCellView indexPath:(NSIndexPath *)indexPath {

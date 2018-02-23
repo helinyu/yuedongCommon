@@ -5340,6 +5340,13 @@
 			path = test;
 			sourceTree = "<group>";
 		};
+		0471508C2040282700278E15 /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
 		048B42492028670D00FAEB19 /* test14 */ = {
 			isa = PBXGroup;
 			children = (
@@ -11241,6 +11248,7 @@
 		04FF49092015910500C02EEF /* TestCoreText */ = {
 			isa = PBXGroup;
 			children = (
+				0471508C2040282700278E15 /* delegate */,
 				04715075203FE23E00278E15 /* layer tableView */,
 				04715050203FC1A200278E15 /* flyweight-pattern */,
 				040257E92033CDA0004E58FB /* layer */,

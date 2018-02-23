@@ -136,9 +136,9 @@
 //    [self test18];
 //    [self test19];
 //    [self test20];
-//    [self test21];
+    [self test21];
 //    [self test22];
-    [self test23];
+//    [self test23];
 }
 
 - (void)test23 {
