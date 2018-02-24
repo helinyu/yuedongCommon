@@ -6,9 +6,9 @@
 //  Copyright © 2018年 mac. All rights reserved.
 //
 
-#import "YDLayerCell.h"
+#import "YDHorizontalLayerCell.h"
 
-@interface YDLayerCell ()
+@interface YDHorizontalLayerCell ()
 
 @property (nonatomic, strong) CAShapeLayer *verticalLayer;
 @property (nonatomic, strong) CAShapeLayer *horizontalLayer;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation YDLayerCell
+@implementation YDHorizontalLayerCell
 
 - (instancetype)init
 {

@@ -7,9 +7,10 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
-#import "YDHorizontalBaseLayerCell.h"
 
-@interface YDLayerCell : YDHorizontalBaseLayerCell
+@interface YDHorizontalLayerCell : CALayer
+
+@property (nonatomic, assign) NSInteger cellIndex;
 
 - (void)configureWithDate:(NSString *)dateString dotPoint:(CGFloat)dotPoint;
 

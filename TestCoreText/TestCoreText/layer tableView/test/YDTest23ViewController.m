@@ -9,10 +9,7 @@
 #import "YDTest23ViewController.h"
 
 #import "YDHorizontalTableView.h"
-#import "YDHorizontalBaseViewCell.h"
-#import "YDHorizontalBaseLayerCell.h"
-//#import "YDChartLayerCell.h"
-#import "YDLayerCell.h"
+#import "YDHorizontalLayerCell.h"
 #import "YDChartLineModel.h"
 
 static NSString *const kViewCellIdentifier = @"k.view.cell.identifier";
@@ -34,15 +31,14 @@ static NSString *const kLayerCellIdentifier = @"k.layer.cell.identifier";
     self.view.backgroundColor = [UIColor whiteColor];
     [self data0];
 
-    [self test0];
-//    [self test1];
+//    [self test0];
+    [self test1];
 }
 
 - (void)test1 {
     _tableView = [[YDHorizontalTableView alloc] initWithFrame:CGRectMake(0, 64.f, self.view.bounds.size.width, self.view.bounds.size.height -64.f)];
-    _tableView.cellType = YDHorizontalTableViewCelltypeLayer;
-    [_tableView registerClass:[YDLayerCell class] forCellReuseIdentifier:kLayerCellIdentifier];
     _tableView.dataSource = self;
+    [_tableView registerClass:[YDHorizontalLayerCell class] forCellReuseIdentifier:kLayerCellIdentifier];
     [_tableView reloadData];
     [self.view addSubview:_tableView];
 }
@@ -118,15 +114,6 @@ static NSString *const kLayerCellIdentifier = @"k.layer.cell.identifier";
     }
 }
 
-- (void)test0 {
-    _tableView = [[YDHorizontalTableView alloc] initWithFrame:CGRectMake(0, 64.f, self.view.bounds.size.width, self.view.bounds.size.height)];
-    _tableView.dataSource = self;
-    _tableView.bounces = NO;
-    [_tableView registerClass:[YDHorizontalBaseViewCell class] forCellReuseIdentifier:kViewCellIdentifier];
-    [_tableView reloadData];
-    [self.view addSubview:_tableView];
-}
-
 #pragma mark -- delegate
 
 - (NSInteger)numberOfRows {
@@ -138,15 +125,12 @@ static NSString *const kLayerCellIdentifier = @"k.layer.cell.identifier";
     return 80.f;
 }
 
-- (YDHorizontalBaseViewCell *)horizontalTableView:(YDHorizontalTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    YDHorizontalBaseViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kViewCellIdentifier indexPath:indexPath];
-   cell.backgroundColor = [UIColor colorWithRed:arc4random() % 255 / 255.0 green:arc4random() % 255 / 255.0 blue:arc4random() % 255 / 255.0 alpha:1.0];
-    cell.indexLabel.text = [NSString stringWithFormat:@"%zd",indexPath.row];
-    return cell;
-}
-
-- (YDLayerCell *)horizontalLayerTableView:(YDHorizontalTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    YDLayerCell *cell = (YDLayerCell *)[tableView  dequeueReusableLayerCellWithIdentifier:kLayerCellIdentifier indexPath:indexPath];
+- (YDHorizontalLayerCell *)horizontalLayerTableView:(YDHorizontalTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"out indexPath: %zd",indexPath.row);
+    if (indexPath.row == 31) {
+        NSLog(@"indexPath: %zd",indexPath.row);
+    }
+    YDHorizontalLayerCell *cell = (YDHorizontalLayerCell *)[tableView  dequeueReusableLayerCellWithIdentifier:kLayerCellIdentifier indexPath:indexPath];
     cell.backgroundColor = [UIColor redColor].CGColor;
     YDChartLineModel *item = _datas[indexPath.row];
     if (item.hasDot) {
@@ -165,6 +149,5 @@ static NSString *const kLayerCellIdentifier = @"k.layer.cell.identifier";
     [cell configureWithDate:[NSString stringWithFormat:@"%@",item.timeText] dotPoint:item.dotPoint];
     return cell;
 }
-
 
 @end

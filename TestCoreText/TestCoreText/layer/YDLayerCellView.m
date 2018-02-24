@@ -56,7 +56,7 @@
     }
 }
 
-- (YDLayerCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath {
+- (YDHorizontalLayerCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath {
  
     NSString *objId = [_mIdentifiers objectForKey:identifier];
     NSAssert(objId.length >0, @"please use this method , registerClass:forCellReuseIdentifier: to register");
@@ -64,9 +64,9 @@
     Class cellCategories = [_mCellCategories objectForKey:identifier];
     NSAssert(cellCategories, @"please use this method , registerClass:forCellReuseIdentifier: to register");
  
-    YDLayerCell *layerCell = [_mCells objectForKey:identifier];
+    YDHorizontalLayerCell *layerCell = [_mCells objectForKey:identifier];
     if (!layerCell) {
-        layerCell = [YDLayerCell new];
+        layerCell = [YDHorizontalLayerCell new];
     }
   
     NSAssert([self.layerCellDelegate respondsToSelector:@selector(numberOfCell)], @"please implent this method 'numberOfCell' of the delegate ");

@@ -10,7 +10,7 @@
 @class YDHorizontalTableView;
 @class YDHorizontalBaseViewCell;
 @class YDHorizontalBaseLayerCell;
-@class YDLayerCell;
+@class YDHorizontalLayerCell;
 
 typedef NS_ENUM(NSInteger, YDHorizontalTableViewCelltype) {
     YDHorizontalTableViewCelltypeView = 0,
@@ -28,14 +28,13 @@ typedef NS_ENUM(NSInteger, YDHorizontalTableViewCelltype) {
 - (YDHorizontalBaseViewCell *)horizontalTableView:(YDHorizontalTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 
 //for layer
-- (YDLayerCell *)horizontalLayerTableView:(YDHorizontalTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (YDHorizontalLayerCell *)horizontalLayerTableView:(YDHorizontalTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
 @interface YDHorizontalTableView : UIScrollView
 
 @property (nonatomic, weak) id <YDHorizontalTableViewDataSource> dataSource;
-@property (nonatomic, assign) YDHorizontalTableViewCelltype cellType;
 
 /**
  refresh the datas
@@ -49,15 +48,6 @@ typedef NS_ENUM(NSInteger, YDHorizontalTableViewCelltype) {
  @param identifier 标识符 （用于重用）
  */
 - (void)registerClass:(nullable Class)cellClass forCellReuseIdentifier:(NSString *)identifier;
-
-/**
- reuse cell for the identifier
-
- @param identifier <#identifier description#>
- @param indexPath <#indexPath description#>
- @return <#return value description#>
- */
-- (YDHorizontalBaseViewCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier indexPath:(NSIndexPath *)indexPath;
 
 /**
  reuser cell fot the identifeir

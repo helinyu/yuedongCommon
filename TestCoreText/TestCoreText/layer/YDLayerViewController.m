@@ -18,8 +18,6 @@
 
 @property (nonatomic, strong) YDLayerCellView *scrollView;
 
-//@property (nonatomic, strong) UITableView *tableView;
-
 @end
 
 @implementation YDLayerViewController
@@ -41,7 +39,7 @@
     _scrollView.frame = CGRectMake(0, 64.f, self.view.bounds.size.width, self.view.bounds.size.height -64.f);
     _scrollView.contentSize = CGSizeMake(self.view.bounds.size.width *2, 200.f);
     _scrollView.backgroundColor = [UIColor yellowColor];
-    [_scrollView registerClass:[YDLayerCell class] forCellReuseIdentifier:NSStringFromClass([YDLayerCell class])];
+    [_scrollView registerClass:[YDHorizontalLayerCell class] forCellReuseIdentifier:NSStringFromClass([YDHorizontalLayerCell class])];
     _scrollView.layerCellDelegate = self;
     [self.view addSubview:_scrollView];
 }
@@ -121,8 +119,8 @@
     return 80.f;
 }
 
-- (YDLayerCell *)layerCellView:(YDLayerCellView *)layerCellView indexPath:(NSIndexPath *)indexPath {
-    YDLayerCell *cell = [layerCellView  dequeueReusableCellWithIdentifier:NSStringFromClass([YDLayerCell class]) forIndexPath:indexPath];
+- (YDHorizontalLayerCell *)layerCellView:(YDLayerCellView *)layerCellView indexPath:(NSIndexPath *)indexPath {
+    YDHorizontalLayerCell *cell = [layerCellView  dequeueReusableCellWithIdentifier:NSStringFromClass([YDHorizontalLayerCell class]) forIndexPath:indexPath];
     cell.backgroundColor = [UIColor redColor].CGColor;
     YDChartLineModel *item = _datas[indexPath.row];
     if (item.hasDot) {
