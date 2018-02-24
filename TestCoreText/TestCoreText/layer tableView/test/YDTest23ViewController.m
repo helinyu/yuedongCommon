@@ -40,7 +40,9 @@ static NSString *const kLayerCellIdentifier = @"k.layer.cell.identifier";
     _tableView.dataSource = self;
     [_tableView registerClass:[YDHorizontalLayerCell class] forCellReuseIdentifier:kLayerCellIdentifier];
     [_tableView reloadData];
+    CGRect visibleRect = CGRectMake(80*_datas.count -self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.height-64.f);
     [self.view addSubview:_tableView];
+    [_tableView scrollRectToVisible:visibleRect animated:NO];
 }
 
 - (void)data0 {
@@ -118,7 +120,6 @@ static NSString *const kLayerCellIdentifier = @"k.layer.cell.identifier";
 
 - (NSInteger)numberOfRows {
     return _datas.count;
-//    return 20;
 }
 
 - (CGFloat)widthOfRow {
