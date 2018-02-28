@@ -18,7 +18,9 @@ target 'TestCoreText' do
    pod 'JBChartView', '~> 3.0.13'
    pod 'NSLogger', '~> 1.8.3'
 #   pod 'Charts', '~> 3.0.4'
-
+   pod 'SDWebImage', '~> 4.3.0'
+   pod 'YYImage', '~> 1.0.4'
+   pod 'YYWebImage', '~> 1.0.5'
 
   # Pods for TestCoreText
 

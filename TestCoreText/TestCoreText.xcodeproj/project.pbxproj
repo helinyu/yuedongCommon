@@ -13,6 +13,15 @@
 		040257E02032E337004E58FB /* YDChartLineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040257DF2032E337004E58FB /* YDChartLineTableViewController.m */; };
 		040257E62032E55D004E58FB /* YDChartLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040257E52032E55D004E58FB /* YDChartLineModel.m */; };
 		040257EC2033CDC4004E58FB /* YDLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040257EB2033CDC4004E58FB /* YDLayerViewController.m */; };
+		0426CC852046E0DE007EF161 /* YDChainReponsibilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426CC842046E0DE007EF161 /* YDChainReponsibilityViewController.m */; };
+		0426CC882046E143007EF161 /* Attack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426CC872046E143007EF161 /* Attack.m */; };
+		0426CC8B2046E175007EF161 /* AttackHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426CC8A2046E175007EF161 /* AttackHandler.m */; };
+		0426CC902046E259007EF161 /* MetalArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426CC8F2046E259007EF161 /* MetalArmor.m */; };
+		0426CC942046E2C6007EF161 /* SwordAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426CC932046E2C6007EF161 /* SwordAttack.m */; };
+		0426CC972046E3A8007EF161 /* CrystalShield.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426CC962046E3A8007EF161 /* CrystalShield.m */; };
+		0426CC9A2046E412007EF161 /* MaginfireAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426CC992046E412007EF161 /* MaginfireAttack.m */; };
+		0426CC9D2046E48E007EF161 /* Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426CC9C2046E48E007EF161 /* Avatar.m */; };
+		0426CCA02046E70E007EF161 /* LightAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426CC9F2046E70E007EF161 /* LightAttack.m */; };
 		0438E73E201EC60D0032E8F8 /* YDDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E73D201EC60D0032E8F8 /* YDDisplayView.m */; };
 		0438E74A201F13280032E8F8 /* NSString+GHTransformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E749201F13280032E8F8 /* NSString+GHTransformation.m */; };
 		0438E74C201F27450032E8F8 /* Strawberry Blossom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0438E74B201F27450032E8F8 /* Strawberry Blossom.ttf */; };
@@ -78,6 +87,7 @@
 		048B4296202C7F7B00FAEB19 /* struct _xmlSAXHandler { in Resources */ = {isa = PBXBuildFile; fileRef = 048B4295202C7F7B00FAEB19 /* struct _xmlSAXHandler { */; };
 		04AAA638202830E5007AC7E9 /* YDTest12ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AAA637202830E5007AC7E9 /* YDTest12ViewController.m */; };
 		04AAA63B202835E8007AC7E9 /* YDTest12View.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AAA63A202835E8007AC7E9 /* YDTest12View.m */; };
+		04F5E22D20456F810085D408 /* YDTestYYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F5E22C20456F810085D408 /* YDTestYYViewController.m */; };
 		04FF490C2015910500C02EEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FF490B2015910500C02EEF /* AppDelegate.m */; };
 		04FF490F2015910500C02EEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FF490E2015910500C02EEF /* ViewController.m */; };
 		04FF49122015910500C02EEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FF49102015910500C02EEF /* Main.storyboard */; };
@@ -162,6 +172,24 @@
 		040257E52032E55D004E58FB /* YDChartLineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDChartLineModel.m; sourceTree = "<group>"; };
 		040257EA2033CDC4004E58FB /* YDLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDLayerViewController.h; sourceTree = "<group>"; };
 		040257EB2033CDC4004E58FB /* YDLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDLayerViewController.m; sourceTree = "<group>"; };
+		0426CC832046E0DE007EF161 /* YDChainReponsibilityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDChainReponsibilityViewController.h; sourceTree = "<group>"; };
+		0426CC842046E0DE007EF161 /* YDChainReponsibilityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDChainReponsibilityViewController.m; sourceTree = "<group>"; };
+		0426CC862046E143007EF161 /* Attack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Attack.h; sourceTree = "<group>"; };
+		0426CC872046E143007EF161 /* Attack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Attack.m; sourceTree = "<group>"; };
+		0426CC892046E175007EF161 /* AttackHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttackHandler.h; sourceTree = "<group>"; };
+		0426CC8A2046E175007EF161 /* AttackHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttackHandler.m; sourceTree = "<group>"; };
+		0426CC8E2046E259007EF161 /* MetalArmor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalArmor.h; sourceTree = "<group>"; };
+		0426CC8F2046E259007EF161 /* MetalArmor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalArmor.m; sourceTree = "<group>"; };
+		0426CC922046E2C6007EF161 /* SwordAttack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwordAttack.h; sourceTree = "<group>"; };
+		0426CC932046E2C6007EF161 /* SwordAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwordAttack.m; sourceTree = "<group>"; };
+		0426CC952046E3A8007EF161 /* CrystalShield.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrystalShield.h; sourceTree = "<group>"; };
+		0426CC962046E3A8007EF161 /* CrystalShield.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalShield.m; sourceTree = "<group>"; };
+		0426CC982046E412007EF161 /* MaginfireAttack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaginfireAttack.h; sourceTree = "<group>"; };
+		0426CC992046E412007EF161 /* MaginfireAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaginfireAttack.m; sourceTree = "<group>"; };
+		0426CC9B2046E48E007EF161 /* Avatar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Avatar.h; sourceTree = "<group>"; };
+		0426CC9C2046E48E007EF161 /* Avatar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Avatar.m; sourceTree = "<group>"; };
+		0426CC9E2046E70E007EF161 /* LightAttack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightAttack.h; sourceTree = "<group>"; };
+		0426CC9F2046E70E007EF161 /* LightAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightAttack.m; sourceTree = "<group>"; };
 		0438E73C201EC60D0032E8F8 /* YDDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDDisplayView.h; sourceTree = "<group>"; };
 		0438E73D201EC60D0032E8F8 /* YDDisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDDisplayView.m; sourceTree = "<group>"; };
 		0438E748201F13280032E8F8 /* NSString+GHTransformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+GHTransformation.h"; sourceTree = "<group>"; };
@@ -5092,6 +5120,8 @@
 		04AAA637202830E5007AC7E9 /* YDTest12ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest12ViewController.m; sourceTree = "<group>"; };
 		04AAA639202835E8007AC7E9 /* YDTest12View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest12View.h; sourceTree = "<group>"; };
 		04AAA63A202835E8007AC7E9 /* YDTest12View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest12View.m; sourceTree = "<group>"; };
+		04F5E22B20456F810085D408 /* YDTestYYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTestYYViewController.h; sourceTree = "<group>"; };
+		04F5E22C20456F810085D408 /* YDTestYYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTestYYViewController.m; sourceTree = "<group>"; };
 		04FF49072015910500C02EEF /* TestCoreText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCoreText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FF490A2015910500C02EEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04FF490B2015910500C02EEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -5226,6 +5256,54 @@
 				0471504B203E9F0300278E15 /* YDLayerCellView.m */,
 			);
 			path = layer;
+			sourceTree = "<group>";
+		};
+		0426CC792046AD81007EF161 /* Image download */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Image download";
+			sourceTree = "<group>";
+		};
+		0426CC802046E0C0007EF161 /* chans of reponsibility */ = {
+			isa = PBXGroup;
+			children = (
+				0426CC912046E2A2007EF161 /* Attack */,
+				0426CC8D2046E244007EF161 /* Handler */,
+				0426CC832046E0DE007EF161 /* YDChainReponsibilityViewController.h */,
+				0426CC842046E0DE007EF161 /* YDChainReponsibilityViewController.m */,
+			);
+			path = "chans of reponsibility";
+			sourceTree = "<group>";
+		};
+		0426CC8D2046E244007EF161 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				0426CC892046E175007EF161 /* AttackHandler.h */,
+				0426CC8A2046E175007EF161 /* AttackHandler.m */,
+				0426CC8E2046E259007EF161 /* MetalArmor.h */,
+				0426CC8F2046E259007EF161 /* MetalArmor.m */,
+				0426CC952046E3A8007EF161 /* CrystalShield.h */,
+				0426CC962046E3A8007EF161 /* CrystalShield.m */,
+				0426CC9B2046E48E007EF161 /* Avatar.h */,
+				0426CC9C2046E48E007EF161 /* Avatar.m */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		0426CC912046E2A2007EF161 /* Attack */ = {
+			isa = PBXGroup;
+			children = (
+				0426CC862046E143007EF161 /* Attack.h */,
+				0426CC872046E143007EF161 /* Attack.m */,
+				0426CC922046E2C6007EF161 /* SwordAttack.h */,
+				0426CC932046E2C6007EF161 /* SwordAttack.m */,
+				0426CC982046E412007EF161 /* MaginfireAttack.h */,
+				0426CC992046E412007EF161 /* MaginfireAttack.m */,
+				0426CC9E2046E70E007EF161 /* LightAttack.h */,
+				0426CC9F2046E70E007EF161 /* LightAttack.m */,
+			);
+			path = Attack;
 			sourceTree = "<group>";
 		};
 		0438E74D201F27480032E8F8 /* resources */ = {
@@ -11208,6 +11286,15 @@
 			path = test13;
 			sourceTree = "<group>";
 		};
+		04F5E22820456F680085D408 /* YY */ = {
+			isa = PBXGroup;
+			children = (
+				04F5E22B20456F810085D408 /* YDTestYYViewController.h */,
+				04F5E22C20456F810085D408 /* YDTestYYViewController.m */,
+			);
+			path = YY;
+			sourceTree = "<group>";
+		};
 		04FF48FE2015910500C02EEF = {
 			isa = PBXGroup;
 			children = (
@@ -11233,6 +11320,9 @@
 		04FF49092015910500C02EEF /* TestCoreText */ = {
 			isa = PBXGroup;
 			children = (
+				0426CC802046E0C0007EF161 /* chans of reponsibility */,
+				0426CC792046AD81007EF161 /* Image download */,
+				04F5E22820456F680085D408 /* YY */,
 				0471508C2040282700278E15 /* delegate */,
 				04715075203FE23E00278E15 /* layer tableView */,
 				04715050203FC1A200278E15 /* flyweight-pattern */,
@@ -11781,6 +11871,7 @@
 				048B4292202C47EC00FAEB19 /* YDExtension.m in Sources */,
 				048B423F2028482600FAEB19 /* YDCollectionReusableView.h in Sources */,
 				048B4245202854ED00FAEB19 /* YDTest12Layer.m in Sources */,
+				04F5E22D20456F810085D408 /* YDTestYYViewController.m in Sources */,
 				0438E7742021D8600032E8F8 /* YDTest10ViewController.m in Sources */,
 				0438E77A2022B0FD0032E8F8 /* YDTest11ViewController.m in Sources */,
 				048B428A202C30C200FAEB19 /* YDHtmlElement.m in Sources */,
@@ -11795,6 +11886,7 @@
 				048B42372028469700FAEB19 /* YDCollectionNullReusableView.m in Sources */,
 				048B4242202849B600FAEB19 /* YDTest13TableViewCell.m in Sources */,
 				048B423D202847E400FAEB19 /* YDCollectionReusableView.m in Sources */,
+				0426CC9A2046E412007EF161 /* MaginfireAttack.m in Sources */,
 				048B4287202C2EBA00FAEB19 /* YDHtmlParserNode.m in Sources */,
 				048B425C202A961200FAEB19 /* YDTest16Label.m in Sources */,
 				04FF490F2015910500C02EEF /* ViewController.m in Sources */,
@@ -11810,7 +11902,9 @@
 				0441EFA02015D53C0048F881 /* YDCTLinkModel.m in Sources */,
 				0441EFAA2015DB440048F881 /* YDCTParser.m in Sources */,
 				04715055203FC1D600278E15 /* YDFlyWeightViewController.m in Sources */,
+				0426CC852046E0DE007EF161 /* YDChainReponsibilityViewController.m in Sources */,
 				418EAD3B202B4E2C0067612B /* YDTest16ViewController.m in Sources */,
+				0426CC8B2046E175007EF161 /* AttackHandler.m in Sources */,
 				048B425320286A3200FAEB19 /* YDTest15ViewController.m in Sources */,
 				04FFAF0A2019A8EE00E54521 /* YDTransView.m in Sources */,
 				0438E7772021DB510032E8F8 /* YDCustomCollectionViewCell.m in Sources */,
@@ -11822,17 +11916,23 @@
 				04FF490C2015910500C02EEF /* AppDelegate.m in Sources */,
 				04715049203E9C6D00278E15 /* YDHorizontalLayerCell.m in Sources */,
 				04715082203FECD600278E15 /* YDTest23ViewController.m in Sources */,
+				0426CC9D2046E48E007EF161 /* Avatar.m in Sources */,
 				04715071203FCB6600278E15 /* FlyweightView.m in Sources */,
+				0426CCA02046E70E007EF161 /* LightAttack.m in Sources */,
 				0441EFA62015DA1A0048F881 /* YDCTConfig.m in Sources */,
 				048B4259202A959B00FAEB19 /* YDTest1q6ViewController.m in Sources */,
 				04FF494D20159C3800C02EEF /* CTDisplayView.m in Sources */,
 				0438E73E201EC60D0032E8F8 /* YDDisplayView.m in Sources */,
 				040257EC2033CDC4004E58FB /* YDLayerViewController.m in Sources */,
+				0426CC902046E259007EF161 /* MetalArmor.m in Sources */,
 				0441EFB32015E21D0048F881 /* ImageViewController.m in Sources */,
 				048B4275202AEF8100FAEB19 /* YDHtmlParser.m in Sources */,
 				0441EFB72015EFB90048F881 /* MagnifiterView.m in Sources */,
 				04715073203FCD5800278E15 /* ExtrinsicFlowerState.m in Sources */,
 				04AAA638202830E5007AC7E9 /* YDTest12ViewController.m in Sources */,
+				0426CC972046E3A8007EF161 /* CrystalShield.m in Sources */,
+				0426CC942046E2C6007EF161 /* SwordAttack.m in Sources */,
+				0426CC882046E143007EF161 /* Attack.m in Sources */,
 				0441EFAF2015E2160048F881 /* WebContentViewController.m in Sources */,
 				0438E74A201F13280032E8F8 /* NSString+GHTransformation.m in Sources */,
 				040257DD2032E0D7004E58FB /* YDChartlineViewTCell.m in Sources */,

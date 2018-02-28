@@ -56,6 +56,8 @@
 #import "YDLayerViewController.h"
 #import "YDFlyWeightViewController.h"
 #import "YDTest23ViewController.h"
+#import "YDTestYYViewController.h"
+#import "YDChainReponsibilityViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,CALayerDelegate,YYAsyncLayerDelegate>
 // html 页面解析
@@ -138,7 +140,19 @@
 //    [self test20];
 //    [self test21];
 //    [self test22];
-    [self test23];
+//    [self test23];
+//    [self test24];
+    [self test25];
+}
+
+- (void)test25 {
+    YDChainReponsibilityViewController *vc = [YDChainReponsibilityViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)test24 {
+    YDTestYYViewController *vc = [YDTestYYViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)test23 {
