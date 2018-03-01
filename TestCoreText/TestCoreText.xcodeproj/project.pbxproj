@@ -22,6 +22,7 @@
 		0426CC9A2046E412007EF161 /* MaginfireAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426CC992046E412007EF161 /* MaginfireAttack.m */; };
 		0426CC9D2046E48E007EF161 /* Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426CC9C2046E48E007EF161 /* Avatar.m */; };
 		0426CCA02046E70E007EF161 /* LightAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426CC9F2046E70E007EF161 /* LightAttack.m */; };
+		0426CCA52047CAB6007EF161 /* YDTextImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426CCA42047CAB6007EF161 /* YDTextImageViewController.m */; };
 		0438E73E201EC60D0032E8F8 /* YDDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E73D201EC60D0032E8F8 /* YDDisplayView.m */; };
 		0438E74A201F13280032E8F8 /* NSString+GHTransformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438E749201F13280032E8F8 /* NSString+GHTransformation.m */; };
 		0438E74C201F27450032E8F8 /* Strawberry Blossom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0438E74B201F27450032E8F8 /* Strawberry Blossom.ttf */; };
@@ -190,6 +191,8 @@
 		0426CC9C2046E48E007EF161 /* Avatar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Avatar.m; sourceTree = "<group>"; };
 		0426CC9E2046E70E007EF161 /* LightAttack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightAttack.h; sourceTree = "<group>"; };
 		0426CC9F2046E70E007EF161 /* LightAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightAttack.m; sourceTree = "<group>"; };
+		0426CCA32047CAB6007EF161 /* YDTextImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTextImageViewController.h; sourceTree = "<group>"; };
+		0426CCA42047CAB6007EF161 /* YDTextImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTextImageViewController.m; sourceTree = "<group>"; };
 		0438E73C201EC60D0032E8F8 /* YDDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDDisplayView.h; sourceTree = "<group>"; };
 		0438E73D201EC60D0032E8F8 /* YDDisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDDisplayView.m; sourceTree = "<group>"; };
 		0438E748201F13280032E8F8 /* NSString+GHTransformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+GHTransformation.h"; sourceTree = "<group>"; };
@@ -5304,6 +5307,16 @@
 				0426CC9F2046E70E007EF161 /* LightAttack.m */,
 			);
 			path = Attack;
+			sourceTree = "<group>";
+		};
+		0426CCA22047CA9F007EF161 /* draw view */ = {
+			isa = PBXGroup;
+			children = (
+				0426CCA32047CAB6007EF161 /* YDTextImageViewController.h */,
+				0426CCA42047CAB6007EF161 /* YDTextImageViewController.m */,
+			);
+			name = "draw view";
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		0438E74D201F27480032E8F8 /* resources */ = {
@@ -11320,6 +11333,7 @@
 		04FF49092015910500C02EEF /* TestCoreText */ = {
 			isa = PBXGroup;
 			children = (
+				0426CCA22047CA9F007EF161 /* draw view */,
 				0426CC802046E0C0007EF161 /* chans of reponsibility */,
 				0426CC792046AD81007EF161 /* Image download */,
 				04F5E22820456F680085D408 /* YY */,
@@ -11900,6 +11914,7 @@
 				048B424F202867FC00FAEB19 /* YDLabel.m in Sources */,
 				04715085203FF63300278E15 /* YDHorizontalRowDetail.m in Sources */,
 				0441EFA02015D53C0048F881 /* YDCTLinkModel.m in Sources */,
+				0426CCA52047CAB6007EF161 /* YDTextImageViewController.m in Sources */,
 				0441EFAA2015DB440048F881 /* YDCTParser.m in Sources */,
 				04715055203FC1D600278E15 /* YDFlyWeightViewController.m in Sources */,
 				0426CC852046E0DE007EF161 /* YDChainReponsibilityViewController.m in Sources */,

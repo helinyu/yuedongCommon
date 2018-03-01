@@ -58,6 +58,7 @@
 #import "YDTest23ViewController.h"
 #import "YDTestYYViewController.h"
 #import "YDChainReponsibilityViewController.h"
+#import "YDTextImageViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,CALayerDelegate,YYAsyncLayerDelegate>
 // html 页面解析
@@ -142,7 +143,13 @@
 //    [self test22];
 //    [self test23];
 //    [self test24];
-    [self test25];
+//    [self test25];
+    [self test26];
+}
+
+- (void)test26 {
+    YDTextImageViewController *vc = [YDTextImageViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)test25 {
