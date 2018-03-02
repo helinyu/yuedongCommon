@@ -7,8 +7,12 @@
 //
 
 #import "YDTextImageViewController.h"
+#import <DTCoreText.h>
 
 @interface YDTextImageViewController ()
+
+@property (nonatomic, strong) DTAttributedLabel *subLabel;
+@property (nonatomic, strong) UILabel *label;
 
 @end
 
@@ -17,6 +21,60 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
+//    [self test1];
+//    [self test2];
+//    [self test3];
+    [self test4];
+    [self test5];
+}
+
+- (void)test5 {
+    _label = [UILabel new];
+    [self.view addSubview:_label];
+    _label.frame = CGRectMake(100, 100.f, 200.f, 200.f);
+    _label.attributedText = [[NSAttributedString alloc] initWithString:@"hello" attributes:@{NSBackgroundColorAttributeName:[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:12.f],NSObliquenessAttributeName:@(0.5)}];
+}
+
+- (void)test4 {
+    _subLabel = [DTAttributedLabel new];
+    [self.view addSubview:_subLabel];
+    _subLabel.frame = CGRectMake(200, 200, 200.f, 200.f);
+    _subLabel.attributedString =[[NSAttributedString alloc] initWithString:@"hello" attributes:@{NSBackgroundColorAttributeName:[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:12.f],NSObliquenessAttributeName:@(0.5)}];
+}
+
+- (void)test3 {
+    UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(30, 200, 300, 30)];
+    label.backgroundColor = [UIColor redColor];
+    label.text = @"forContro将label的字体设置为斜体";
+    CGAffineTransform matrix = CGAffineTransformMake(1, 0, tanf(-15 * (CGFloat)M_PI / 180), 1, 0, 0);
+    label.transform = matrix;
+    [self.view addSubview:label];
+}
+
+- (void)test2 {
+    self.view.backgroundColor = [UIColor whiteColor];
+    UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(30, 200, 300, 30)];
+//    label.text = @"forControlEvents:UIControlEven";
+    label.text = @"你好";
+    label.font = [UIFont italicSystemFontOfSize:20];//设置字体为斜体
+    [self.view addSubview:label];
+}
+
+- (void)test1 {
+//    本地加载图片
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSString *resourcePath = [bundle resourcePath];
+    NSString *filePath = [resourcePath stringByAppendingPathComponent:@"Snip20180212_2.png"];
+    UIImage *image = [UIImage imageWithContentsOfFile:filePath]; // 不缓存（系统+沙盒）
+    UIImage *image1 =  [UIImage imageNamed:@"Snip20180212_2.png"]; // 缓存（系统）
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100.f, 100.f, 100.f, 100.f)];
+    imageView.image = image;
+    [self.view addSubview:imageView];
+}
+
+- (void)test0 {
     UIView *view0  = [[UIView alloc] initWithFrame:CGRectMake(100.f, 100.f, 200.f, 200.f)];
     [self.view addSubview:view0];
     view0.backgroundColor = [UIColor yellowColor];
