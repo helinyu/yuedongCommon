@@ -40,6 +40,9 @@
     NSLog(@"main done ouitside");
 }
 
+//应用场景
+//那么，dispatch_apply有什么用呢，因为dispatch_apply并行的运行机制，效率一般快于for循环的类串行机制（在for一次循环中的处理任务很多时差距比较大）。比如这可以用来拉取网络数据后提前算出各个控件的大小，防止绘制时计算，提高表单滑动流畅性，如果用for循环，耗时较多，并且每个表单的数据没有依赖关系，所以用dispatch_apply比较好。
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
