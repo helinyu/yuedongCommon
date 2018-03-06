@@ -30,12 +30,11 @@
 //        dispatch_apply([array count], dispatch_get_main_queue(), ^(size_t index) { 错误
 //这个可以在主线程的，会执行完block里面的内容在进行你处理其他的；
 //    网络请求上都是用group，是否也可以使用这个？有待验证
+    NSLog(@"main thread:%@",[NSThread currentThread]);
     dispatch_apply([array count], queue, ^(size_t index) {
+        NSLog(@"THRED:%@",[NSThread currentThread]);
             NSLog(@" %zu: %@",index, [array objectAtIndex:index]);
         });
-    dispatch_async(dispatch_get_main_queue(), ^{
-        NSLog(@"asy queue");
-    });
 //    });
     NSLog(@"main done ouitside");
 }
