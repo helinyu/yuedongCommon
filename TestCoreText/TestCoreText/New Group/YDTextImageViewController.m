@@ -26,21 +26,39 @@
 //    [self test2];
 //    [self test3];
     [self test4];
-    [self test5];
+//    [self test5];
+//    [self test6];
+    [self test7];
 }
 
+- (void)test7 {
+//    CGContextRef __nullable CGBitmapContextCreate(void * __nullable data,
+//                                                  size_t width, size_t height, size_t bitsPerComponent, size_t bytesPerRow, CGColorSpaceRef cg_nullable space, uint32_t bitmapInfo)
+}
+
+- (void)test6 {
+    UILabel*label=[[UILabel alloc]initWithFrame:CGRectMake(10,50,355,220)];
+    label.numberOfLines=0;
+    NSString *text=@"大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦大家看我们斜体啦";
+    NSMutableAttributedString*str = [[NSMutableAttributedString alloc] initWithString:text attributes:nil];
+    [str addAttribute:NSObliquenessAttributeName value:@0.15 range:NSMakeRange(0, text.length)];    
+    label.attributedText= str;
+    [self.view addSubview:label];
+}
 - (void)test5 {
     _label = [UILabel new];
     [self.view addSubview:_label];
-    _label.frame = CGRectMake(100, 100.f, 200.f, 200.f);
-    _label.attributedText = [[NSAttributedString alloc] initWithString:@"hello" attributes:@{NSBackgroundColorAttributeName:[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:12.f],NSObliquenessAttributeName:@(0.5)}];
+    _label.frame = CGRectMake(100, 100.f, 100.f, 100.f);
+    NSAttributedString *attrText = [[NSAttributedString alloc] initWithString:@"forContro将label的字体设置为斜体" attributes:@{NSBackgroundColorAttributeName:[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:12.f],NSObliquenessAttributeName:@(0.5)}];
+    _label.attributedText = attrText;
 }
 
 - (void)test4 {
     _subLabel = [DTAttributedLabel new];
     [self.view addSubview:_subLabel];
     _subLabel.frame = CGRectMake(200, 200, 200.f, 200.f);
-    _subLabel.attributedString =[[NSAttributedString alloc] initWithString:@"hello" attributes:@{NSBackgroundColorAttributeName:[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:12.f],NSObliquenessAttributeName:@(0.5)}];
+    NSAttributedString *attrText =[[NSAttributedString alloc] initWithString:@"forContro" attributes:@{NSBackgroundColorAttributeName:[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:12.f],NSObliquenessAttributeName:@(0.8)}];
+    _subLabel.attributedString = attrText;
 }
 
 - (void)test3 {
@@ -56,7 +74,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(30, 200, 300, 30)];
 //    label.text = @"forControlEvents:UIControlEven";
-    label.text = @"你好";
+    label.text = @"forContro将label的字体设置为斜体";
     label.font = [UIFont italicSystemFontOfSize:20];//设置字体为斜体
     [self.view addSubview:label];
 }
