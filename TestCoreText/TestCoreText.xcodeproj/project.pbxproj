@@ -139,6 +139,7 @@
 		04FFAF582019C98200E54521 /* XB NiloofarBd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04FFAF342019C98200E54521 /* XB NiloofarBd.ttf */; };
 		411E4B40202CBCB3006747A5 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 411E4B3F202CBCB2006747A5 /* libxml2.2.tbd */; };
 		418EAD3B202B4E2C0067612B /* YDTest16ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418EAD3A202B4E2C0067612B /* YDTest16ViewController.m */; };
+		41CE38E5204DAAB6005279B6 /* YDDispatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CE38E4204DAAB6005279B6 /* YDDispatchViewController.m */; };
 		5FB4404CAD073B11780BB68E /* libPods-TestCoreText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC41560E287F52D41DF54FB /* libPods-TestCoreText.a */; };
 		7693EFEC4EF3EF956B5B0D6C /* libPods-TestCoreTextUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5295345145CF26204980AE8 /* libPods-TestCoreTextUITests.a */; };
 		8B45CBD5179957D2DC88AAE5 /* libPods-TestCoreTextTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B857DDB57AB1BC48493C75 /* libPods-TestCoreTextTests.a */; };
@@ -5192,6 +5193,8 @@
 		411E4B3F202CBCB2006747A5 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		418EAD39202B4E2C0067612B /* YDTest16ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest16ViewController.h; sourceTree = "<group>"; };
 		418EAD3A202B4E2C0067612B /* YDTest16ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest16ViewController.m; sourceTree = "<group>"; };
+		41CE38E3204DAAB6005279B6 /* YDDispatchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDDispatchViewController.h; sourceTree = "<group>"; };
+		41CE38E4204DAAB6005279B6 /* YDDispatchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDDispatchViewController.m; sourceTree = "<group>"; };
 		577D688E89FEBC59AFA51163 /* Pods-TestCoreText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreText.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreText/Pods-TestCoreText.release.xcconfig"; sourceTree = "<group>"; };
 		71285063B261E4180888E2DD /* Pods-TestCoreText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreText/Pods-TestCoreText.debug.xcconfig"; sourceTree = "<group>"; };
 		806E1DDAD892EE767BD8D819 /* Pods-TestCoreTextTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreTextTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreTextTests/Pods-TestCoreTextTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -11333,6 +11336,7 @@
 		04FF49092015910500C02EEF /* TestCoreText */ = {
 			isa = PBXGroup;
 			children = (
+				41CE38E2204DAA9B005279B6 /* dispatch_applay */,
 				0426CCA22047CA9F007EF161 /* draw view */,
 				0426CC802046E0C0007EF161 /* chans of reponsibility */,
 				0426CC792046AD81007EF161 /* Image download */,
@@ -11487,6 +11491,15 @@
 				418EAD3A202B4E2C0067612B /* YDTest16ViewController.m */,
 			);
 			path = semaphore;
+			sourceTree = "<group>";
+		};
+		41CE38E2204DAA9B005279B6 /* dispatch_applay */ = {
+			isa = PBXGroup;
+			children = (
+				41CE38E3204DAAB6005279B6 /* YDDispatchViewController.h */,
+				41CE38E4204DAAB6005279B6 /* YDDispatchViewController.m */,
+			);
+			path = dispatch_applay;
 			sourceTree = "<group>";
 		};
 		B2F2B1BDBCAF68EF29E81E31 /* Frameworks */ = {
@@ -11939,6 +11952,7 @@
 				04FF494D20159C3800C02EEF /* CTDisplayView.m in Sources */,
 				0438E73E201EC60D0032E8F8 /* YDDisplayView.m in Sources */,
 				040257EC2033CDC4004E58FB /* YDLayerViewController.m in Sources */,
+				41CE38E5204DAAB6005279B6 /* YDDispatchViewController.m in Sources */,
 				0426CC902046E259007EF161 /* MetalArmor.m in Sources */,
 				0441EFB32015E21D0048F881 /* ImageViewController.m in Sources */,
 				048B4275202AEF8100FAEB19 /* YDHtmlParser.m in Sources */,

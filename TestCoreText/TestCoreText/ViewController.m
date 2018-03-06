@@ -59,6 +59,7 @@
 #import "YDTestYYViewController.h"
 #import "YDChainReponsibilityViewController.h"
 #import "YDTextImageViewController.h"
+#import "YDDispatchViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,CALayerDelegate,YYAsyncLayerDelegate>
 // html 页面解析
@@ -144,7 +145,13 @@
 //    [self test23];
 //    [self test24];
 //    [self test25];
-    [self test26];
+//    [self test26];
+    [self test27];
+}
+
+- (void)test27 {
+    YDDispatchViewController *vc = [YDDispatchViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)test26 {
