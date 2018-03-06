@@ -60,6 +60,7 @@
 #import "YDChainReponsibilityViewController.h"
 #import "YDTextImageViewController.h"
 #import "YDDispatchViewController.h"
+#import "YDDecorateViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,CALayerDelegate,YYAsyncLayerDelegate>
 // html 页面解析
@@ -147,6 +148,11 @@
 //    [self test25];
 //    [self test26];
     [self test27];
+}
+
+- (void)test28 {
+    YDDecorateViewController *vc =[YDDecorateViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)test27 {

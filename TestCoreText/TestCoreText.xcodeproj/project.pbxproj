@@ -140,6 +140,11 @@
 		411E4B40202CBCB3006747A5 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 411E4B3F202CBCB2006747A5 /* libxml2.2.tbd */; };
 		418EAD3B202B4E2C0067612B /* YDTest16ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418EAD3A202B4E2C0067612B /* YDTest16ViewController.m */; };
 		41CE38E5204DAAB6005279B6 /* YDDispatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CE38E4204DAAB6005279B6 /* YDDispatchViewController.m */; };
+		41CE38E9204EDDA7005279B6 /* YDDecorateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CE38E8204EDDA7005279B6 /* YDDecorateViewController.m */; };
+		41CE38ED204EDEE7005279B6 /* UIImage+ImageComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CE38EC204EDEE7005279B6 /* UIImage+ImageComponent.m */; };
+		41CE38F0204EDFFB005279B6 /* ImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CE38EF204EDFFB005279B6 /* ImageFilter.m */; };
+		41CE38F3204EE1AA005279B6 /* ImageTransformFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CE38F2204EE1AA005279B6 /* ImageTransformFilter.m */; };
+		41CE38F6204EE2DC005279B6 /* ImageShadowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CE38F5204EE2DC005279B6 /* ImageShadowFilter.m */; };
 		5FB4404CAD073B11780BB68E /* libPods-TestCoreText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC41560E287F52D41DF54FB /* libPods-TestCoreText.a */; };
 		7693EFEC4EF3EF956B5B0D6C /* libPods-TestCoreTextUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5295345145CF26204980AE8 /* libPods-TestCoreTextUITests.a */; };
 		8B45CBD5179957D2DC88AAE5 /* libPods-TestCoreTextTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B857DDB57AB1BC48493C75 /* libPods-TestCoreTextTests.a */; };
@@ -5195,6 +5200,17 @@
 		418EAD3A202B4E2C0067612B /* YDTest16ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest16ViewController.m; sourceTree = "<group>"; };
 		41CE38E3204DAAB6005279B6 /* YDDispatchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDDispatchViewController.h; sourceTree = "<group>"; };
 		41CE38E4204DAAB6005279B6 /* YDDispatchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDDispatchViewController.m; sourceTree = "<group>"; };
+		41CE38E7204EDDA7005279B6 /* YDDecorateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDDecorateViewController.h; sourceTree = "<group>"; };
+		41CE38E8204EDDA7005279B6 /* YDDecorateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDDecorateViewController.m; sourceTree = "<group>"; };
+		41CE38EA204EDE21005279B6 /* ImageComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageComponent.h; sourceTree = "<group>"; };
+		41CE38EB204EDEE7005279B6 /* UIImage+ImageComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageComponent.h"; sourceTree = "<group>"; };
+		41CE38EC204EDEE7005279B6 /* UIImage+ImageComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageComponent.m"; sourceTree = "<group>"; };
+		41CE38EE204EDFFB005279B6 /* ImageFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageFilter.h; sourceTree = "<group>"; };
+		41CE38EF204EDFFB005279B6 /* ImageFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageFilter.m; sourceTree = "<group>"; };
+		41CE38F1204EE1AA005279B6 /* ImageTransformFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageTransformFilter.h; sourceTree = "<group>"; };
+		41CE38F2204EE1AA005279B6 /* ImageTransformFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageTransformFilter.m; sourceTree = "<group>"; };
+		41CE38F4204EE2DC005279B6 /* ImageShadowFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageShadowFilter.h; sourceTree = "<group>"; };
+		41CE38F5204EE2DC005279B6 /* ImageShadowFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageShadowFilter.m; sourceTree = "<group>"; };
 		577D688E89FEBC59AFA51163 /* Pods-TestCoreText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreText.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreText/Pods-TestCoreText.release.xcconfig"; sourceTree = "<group>"; };
 		71285063B261E4180888E2DD /* Pods-TestCoreText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreText/Pods-TestCoreText.debug.xcconfig"; sourceTree = "<group>"; };
 		806E1DDAD892EE767BD8D819 /* Pods-TestCoreTextTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreTextTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreTextTests/Pods-TestCoreTextTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -11336,6 +11352,7 @@
 		04FF49092015910500C02EEF /* TestCoreText */ = {
 			isa = PBXGroup;
 			children = (
+				41CE38E6204EDD53005279B6 /* 装饰 */,
 				41CE38E2204DAA9B005279B6 /* dispatch_applay */,
 				0426CCA22047CA9F007EF161 /* draw view */,
 				0426CC802046E0C0007EF161 /* chans of reponsibility */,
@@ -11500,6 +11517,24 @@
 				41CE38E4204DAAB6005279B6 /* YDDispatchViewController.m */,
 			);
 			path = dispatch_applay;
+			sourceTree = "<group>";
+		};
+		41CE38E6204EDD53005279B6 /* 装饰 */ = {
+			isa = PBXGroup;
+			children = (
+				41CE38E7204EDDA7005279B6 /* YDDecorateViewController.h */,
+				41CE38E8204EDDA7005279B6 /* YDDecorateViewController.m */,
+				41CE38EA204EDE21005279B6 /* ImageComponent.h */,
+				41CE38EB204EDEE7005279B6 /* UIImage+ImageComponent.h */,
+				41CE38EC204EDEE7005279B6 /* UIImage+ImageComponent.m */,
+				41CE38EE204EDFFB005279B6 /* ImageFilter.h */,
+				41CE38EF204EDFFB005279B6 /* ImageFilter.m */,
+				41CE38F1204EE1AA005279B6 /* ImageTransformFilter.h */,
+				41CE38F2204EE1AA005279B6 /* ImageTransformFilter.m */,
+				41CE38F4204EE2DC005279B6 /* ImageShadowFilter.h */,
+				41CE38F5204EE2DC005279B6 /* ImageShadowFilter.m */,
+			);
+			path = "装饰";
 			sourceTree = "<group>";
 		};
 		B2F2B1BDBCAF68EF29E81E31 /* Frameworks */ = {
@@ -11898,6 +11933,7 @@
 				048B4292202C47EC00FAEB19 /* YDExtension.m in Sources */,
 				048B423F2028482600FAEB19 /* YDCollectionReusableView.h in Sources */,
 				048B4245202854ED00FAEB19 /* YDTest12Layer.m in Sources */,
+				41CE38F0204EDFFB005279B6 /* ImageFilter.m in Sources */,
 				04F5E22D20456F810085D408 /* YDTestYYViewController.m in Sources */,
 				0438E7742021D8600032E8F8 /* YDTest10ViewController.m in Sources */,
 				0438E77A2022B0FD0032E8F8 /* YDTest11ViewController.m in Sources */,
@@ -11905,6 +11941,7 @@
 				04FFAF0D2019C54D00E54521 /* YDHeaderView.m in Sources */,
 				048B423420283C0400FAEB19 /* YDTest13ViewViewController.m in Sources */,
 				0441EF9D2015D44B0048F881 /* YDCTImageModel.m in Sources */,
+				41CE38E9204EDDA7005279B6 /* YDDecorateViewController.m in Sources */,
 				040257E62032E55D004E58FB /* YDChartLineModel.m in Sources */,
 				048B4263202AA64E00FAEB19 /* YDTest17ViewController.m in Sources */,
 				04AAA63B202835E8007AC7E9 /* YDTest12View.m in Sources */,
@@ -11934,10 +11971,12 @@
 				418EAD3B202B4E2C0067612B /* YDTest16ViewController.m in Sources */,
 				0426CC8B2046E175007EF161 /* AttackHandler.m in Sources */,
 				048B425320286A3200FAEB19 /* YDTest15ViewController.m in Sources */,
+				41CE38F6204EE2DC005279B6 /* ImageShadowFilter.m in Sources */,
 				04FFAF0A2019A8EE00E54521 /* YDTransView.m in Sources */,
 				0438E7772021DB510032E8F8 /* YDCustomCollectionViewCell.m in Sources */,
 				0441EF8D2015C9A80048F881 /* YDCTView.m in Sources */,
 				048B4278202AEF9400FAEB19 /* YDHtmlElementBuilder.m in Sources */,
+				41CE38F3204EE1AA005279B6 /* ImageTransformFilter.m in Sources */,
 				04715058203FC24F00278E15 /* FlowerView.m in Sources */,
 				04715078203FE28900278E15 /* YDHorizontalTableView.m in Sources */,
 				048B4282202C290700FAEB19 /* YDDefaultCss.m in Sources */,
@@ -11955,6 +11994,7 @@
 				41CE38E5204DAAB6005279B6 /* YDDispatchViewController.m in Sources */,
 				0426CC902046E259007EF161 /* MetalArmor.m in Sources */,
 				0441EFB32015E21D0048F881 /* ImageViewController.m in Sources */,
+				41CE38ED204EDEE7005279B6 /* UIImage+ImageComponent.m in Sources */,
 				048B4275202AEF8100FAEB19 /* YDHtmlParser.m in Sources */,
 				0441EFB72015EFB90048F881 /* MagnifiterView.m in Sources */,
 				04715073203FCD5800278E15 /* ExtrinsicFlowerState.m in Sources */,
