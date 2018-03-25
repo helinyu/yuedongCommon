@@ -147,7 +147,6 @@
 		4107DDCB2067D2F900C42A7A /* YDClothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDCA2067D2F900C42A7A /* YDClothViewController.m */; };
 		4107DDCE2067D4C300C42A7A /* CanvasGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDCD2067D4C300C42A7A /* CanvasGenerator.m */; };
 		4107DDD02067D67900C42A7A /* Snip20180325_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4107DDCF2067D67900C42A7A /* Snip20180325_2.png */; };
-		4107DDD32067D83900C42A7A /* YDAabstractFactoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDD22067D83900C42A7A /* YDAabstractFactoryViewController.m */; };
 		4107DDD72067D85D00C42A7A /* YDAabstractFactoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDD62067D85D00C42A7A /* YDAabstractFactoryViewController.m */; };
 		4107DDDA2067D91C00C42A7A /* BrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDD92067D91C00C42A7A /* BrandingFactory.m */; };
 		4107DDDD2067DA0100C42A7A /* AcmeBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDDC2067DA0100C42A7A /* AcmeBrandingFactory.m */; };
@@ -155,8 +154,6 @@
 		4107DDE52067DB5800C42A7A /* AcmeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDE42067DB5800C42A7A /* AcmeView.m */; };
 		4107DDE82067DB7700C42A7A /* AcmeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDE72067DB7700C42A7A /* AcmeButton.m */; };
 		4107DDEB2067DB8400C42A7A /* AcmeToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDEA2067DB8400C42A7A /* AcmeToolbar.m */; };
-		4107DDFC2067EE1A00C42A7A /* SierraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDFA2067EE1A00C42A7A /* SierraView.m */; };
-		4107DDFF2067EE3500C42A7A /* SierraButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDFE2067EE3500C42A7A /* SierraButton.m */; };
 		4107DE022067EE4700C42A7A /* SierraToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE012067EE4700C42A7A /* SierraToolbar.m */; };
 		4107DE062067F0E900C42A7A /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE052067F0E900C42A7A /* Character.m */; };
 		4107DE092067F37600C42A7A /* Characterbuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE082067F37600C42A7A /* Characterbuilder.m */; };
@@ -12154,7 +12151,6 @@
 				41CE38F3204EE1AA005279B6 /* ImageTransformFilter.m in Sources */,
 				04715058203FC24F00278E15 /* FlowerView.m in Sources */,
 				4107DE092067F37600C42A7A /* Characterbuilder.m in Sources */,
-				4107DDD32067D83900C42A7A /* YDAabstractFactoryViewController.m in Sources */,
 				04715078203FE28900278E15 /* YDHorizontalTableView.m in Sources */,
 				048B4282202C290700FAEB19 /* YDDefaultCss.m in Sources */,
 				04FF490C2015910500C02EEF /* AppDelegate.m in Sources */,
@@ -12165,13 +12161,11 @@
 				0426CC9D2046E48E007EF161 /* Avatar.m in Sources */,
 				04715071203FCB6600278E15 /* FlyweightView.m in Sources */,
 				4107DDCB2067D2F900C42A7A /* YDClothViewController.m in Sources */,
-				4107DDFC2067EE1A00C42A7A /* SierraView.m in Sources */,
 				0426CCA02046E70E007EF161 /* LightAttack.m in Sources */,
 				0441EFA62015DA1A0048F881 /* YDCTConfig.m in Sources */,
 				048B4259202A959B00FAEB19 /* YDTest1q6ViewController.m in Sources */,
 				04FF494D20159C3800C02EEF /* CTDisplayView.m in Sources */,
 				0438E73E201EC60D0032E8F8 /* YDDisplayView.m in Sources */,
-				4107DDFF2067EE3500C42A7A /* SierraButton.m in Sources */,
 				4107DDDD2067DA0100C42A7A /* AcmeBrandingFactory.m in Sources */,
 				040257EC2033CDC4004E58FB /* YDLayerViewController.m in Sources */,
 				4107DDC22067D09100C42A7A /* ClosCanvasView.m in Sources */,
