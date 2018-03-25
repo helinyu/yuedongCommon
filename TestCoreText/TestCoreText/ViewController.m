@@ -63,6 +63,7 @@
 #import "YDDecorateViewController.h"
 #import "YDFactoryViewController.h"
 #import "YDAabstractFactoryViewController.h"
+#import "AppearancePatternViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,CALayerDelegate,YYAsyncLayerDelegate>
 // html 页面解析
@@ -151,7 +152,13 @@
 //    [self test26];
 //    [self test27];
 //    [self test29];
-    [self test30];
+//    [self test30];
+    [self test31];
+}
+
+- (void)test31 {
+    AppearancePatternViewController *vc = [AppearancePatternViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)test30 {

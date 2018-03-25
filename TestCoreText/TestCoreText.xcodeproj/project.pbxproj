@@ -159,6 +159,14 @@
 		4107DE092067F37600C42A7A /* Characterbuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE082067F37600C42A7A /* Characterbuilder.m */; };
 		4107DE0C2067F51100C42A7A /* StandardCharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE0B2067F51100C42A7A /* StandardCharacterBuilder.m */; };
 		4107DE0F2067F6BC00C42A7A /* ChasingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE0E2067F6BC00C42A7A /* ChasingGame.m */; };
+		4107DE132067FCCC00C42A7A /* YDAdaptation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE122067FCCC00C42A7A /* YDAdaptation.m */; };
+		4107DE162067FCD800C42A7A /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE152067FCD800C42A7A /* Command.m */; };
+		4107DE1A2067FDB700C42A7A /* SetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE192067FDB700C42A7A /* SetStrokeColorCommand.m */; };
+		4107DE1D2067FF3700C42A7A /* CoordinatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE1C2067FF3700C42A7A /* CoordinatingViewController.m */; };
+		4107DE212068015700C42A7A /* AppearancePatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE202068015700C42A7A /* AppearancePatternViewController.m */; };
+		4107DE242068017300C42A7A /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE232068017300C42A7A /* Car.m */; };
+		4107DE27206802AF00C42A7A /* TaxiMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE26206802AF00C42A7A /* TaxiMeter.m */; };
+		4107DE2A206803EC00C42A7A /* CabDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE29206803EC00C42A7A /* CabDriver.m */; };
 		411E4B40202CBCB3006747A5 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 411E4B3F202CBCB2006747A5 /* libxml2.2.tbd */; };
 		418EAD3B202B4E2C0067612B /* YDTest16ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418EAD3A202B4E2C0067612B /* YDTest16ViewController.m */; };
 		41CE38E5204DAAB6005279B6 /* YDDispatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CE38E4204DAAB6005279B6 /* YDDispatchViewController.m */; };
@@ -5265,6 +5273,22 @@
 		4107DE0B2067F51100C42A7A /* StandardCharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StandardCharacterBuilder.m; sourceTree = "<group>"; };
 		4107DE0D2067F6BC00C42A7A /* ChasingGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChasingGame.h; sourceTree = "<group>"; };
 		4107DE0E2067F6BC00C42A7A /* ChasingGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChasingGame.m; sourceTree = "<group>"; };
+		4107DE112067FCCC00C42A7A /* YDAdaptation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAdaptation.h; sourceTree = "<group>"; };
+		4107DE122067FCCC00C42A7A /* YDAdaptation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAdaptation.m; sourceTree = "<group>"; };
+		4107DE142067FCD800C42A7A /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		4107DE152067FCD800C42A7A /* Command.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		4107DE182067FDB700C42A7A /* SetStrokeColorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetStrokeColorCommand.h; sourceTree = "<group>"; };
+		4107DE192067FDB700C42A7A /* SetStrokeColorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetStrokeColorCommand.m; sourceTree = "<group>"; };
+		4107DE1B2067FF3700C42A7A /* CoordinatingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinatingViewController.h; sourceTree = "<group>"; };
+		4107DE1C2067FF3700C42A7A /* CoordinatingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoordinatingViewController.m; sourceTree = "<group>"; };
+		4107DE1F2068015700C42A7A /* AppearancePatternViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppearancePatternViewController.h; sourceTree = "<group>"; };
+		4107DE202068015700C42A7A /* AppearancePatternViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppearancePatternViewController.m; sourceTree = "<group>"; };
+		4107DE222068017300C42A7A /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		4107DE232068017300C42A7A /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		4107DE25206802AF00C42A7A /* TaxiMeter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaxiMeter.h; sourceTree = "<group>"; };
+		4107DE26206802AF00C42A7A /* TaxiMeter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaxiMeter.m; sourceTree = "<group>"; };
+		4107DE28206803EC00C42A7A /* CabDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CabDriver.h; sourceTree = "<group>"; };
+		4107DE29206803EC00C42A7A /* CabDriver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CabDriver.m; sourceTree = "<group>"; };
 		411E4B3F202CBCB2006747A5 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		418EAD39202B4E2C0067612B /* YDTest16ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest16ViewController.h; sourceTree = "<group>"; };
 		418EAD3A202B4E2C0067612B /* YDTest16ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest16ViewController.m; sourceTree = "<group>"; };
@@ -11422,6 +11446,8 @@
 		04FF49092015910500C02EEF /* TestCoreText */ = {
 			isa = PBXGroup;
 			children = (
+				4107DE1E2068014100C42A7A /* Appearance pattern   */,
+				4107DE102067FC9D00C42A7A /* 适配 */,
 				4107DE032067F0C200C42A7A /* generator   */,
 				4107DDD42067D83F00C42A7A /* AbstractFactory */,
 				4107DDB42067CD5C00C42A7A /* Factory */,
@@ -11657,6 +11683,36 @@
 				4107DE0E2067F6BC00C42A7A /* ChasingGame.m */,
 			);
 			path = "generator  ";
+			sourceTree = "<group>";
+		};
+		4107DE102067FC9D00C42A7A /* 适配 */ = {
+			isa = PBXGroup;
+			children = (
+				4107DE112067FCCC00C42A7A /* YDAdaptation.h */,
+				4107DE122067FCCC00C42A7A /* YDAdaptation.m */,
+				4107DE142067FCD800C42A7A /* Command.h */,
+				4107DE152067FCD800C42A7A /* Command.m */,
+				4107DE182067FDB700C42A7A /* SetStrokeColorCommand.h */,
+				4107DE192067FDB700C42A7A /* SetStrokeColorCommand.m */,
+				4107DE1B2067FF3700C42A7A /* CoordinatingViewController.h */,
+				4107DE1C2067FF3700C42A7A /* CoordinatingViewController.m */,
+			);
+			path = "适配";
+			sourceTree = "<group>";
+		};
+		4107DE1E2068014100C42A7A /* Appearance pattern   */ = {
+			isa = PBXGroup;
+			children = (
+				4107DE1F2068015700C42A7A /* AppearancePatternViewController.h */,
+				4107DE202068015700C42A7A /* AppearancePatternViewController.m */,
+				4107DE222068017300C42A7A /* Car.h */,
+				4107DE232068017300C42A7A /* Car.m */,
+				4107DE25206802AF00C42A7A /* TaxiMeter.h */,
+				4107DE26206802AF00C42A7A /* TaxiMeter.m */,
+				4107DE28206803EC00C42A7A /* CabDriver.h */,
+				4107DE29206803EC00C42A7A /* CabDriver.m */,
+			);
+			path = "Appearance pattern  ";
 			sourceTree = "<group>";
 		};
 		418EAD38202B4E0B0067612B /* semaphore */ = {
@@ -12092,6 +12148,7 @@
 				4107DE062067F0E900C42A7A /* Character.m in Sources */,
 				048B423E2028482600FAEB19 /* YDCollectionNullReusableView.h in Sources */,
 				048B4292202C47EC00FAEB19 /* YDExtension.m in Sources */,
+				4107DE2A206803EC00C42A7A /* CabDriver.m in Sources */,
 				048B423F2028482600FAEB19 /* YDCollectionReusableView.h in Sources */,
 				048B4245202854ED00FAEB19 /* YDTest12Layer.m in Sources */,
 				41CE38F0204EDFFB005279B6 /* ImageFilter.m in Sources */,
@@ -12103,9 +12160,11 @@
 				04FFAF0D2019C54D00E54521 /* YDHeaderView.m in Sources */,
 				048B423420283C0400FAEB19 /* YDTest13ViewViewController.m in Sources */,
 				0441EF9D2015D44B0048F881 /* YDCTImageModel.m in Sources */,
+				4107DE132067FCCC00C42A7A /* YDAdaptation.m in Sources */,
 				4107DDE52067DB5800C42A7A /* AcmeView.m in Sources */,
 				41CE38E9204EDDA7005279B6 /* YDDecorateViewController.m in Sources */,
 				4107DDBA2067CE5200C42A7A /* CanvasView.m in Sources */,
+				4107DE162067FCD800C42A7A /* Command.m in Sources */,
 				040257E62032E55D004E58FB /* YDChartLineModel.m in Sources */,
 				048B4263202AA64E00FAEB19 /* YDTest17ViewController.m in Sources */,
 				04AAA63B202835E8007AC7E9 /* YDTest12View.m in Sources */,
@@ -12116,6 +12175,7 @@
 				048B4242202849B600FAEB19 /* YDTest13TableViewCell.m in Sources */,
 				048B423D202847E400FAEB19 /* YDCollectionReusableView.m in Sources */,
 				0426CC9A2046E412007EF161 /* MaginfireAttack.m in Sources */,
+				4107DE242068017300C42A7A /* Car.m in Sources */,
 				048B4287202C2EBA00FAEB19 /* YDHtmlParserNode.m in Sources */,
 				048B425C202A961200FAEB19 /* YDTest16Label.m in Sources */,
 				4107DE0C2067F51100C42A7A /* StandardCharacterBuilder.m in Sources */,
@@ -12133,6 +12193,7 @@
 				0426CCA52047CAB6007EF161 /* YDTextImageViewController.m in Sources */,
 				0441EFAA2015DB440048F881 /* YDCTParser.m in Sources */,
 				04715055203FC1D600278E15 /* YDFlyWeightViewController.m in Sources */,
+				4107DE1D2067FF3700C42A7A /* CoordinatingViewController.m in Sources */,
 				0426CC852046E0DE007EF161 /* YDChainReponsibilityViewController.m in Sources */,
 				418EAD3B202B4E2C0067612B /* YDTest16ViewController.m in Sources */,
 				4107DE0F2067F6BC00C42A7A /* ChasingGame.m in Sources */,
@@ -12146,6 +12207,7 @@
 				4107DDCE2067D4C300C42A7A /* CanvasGenerator.m in Sources */,
 				0438E7772021DB510032E8F8 /* YDCustomCollectionViewCell.m in Sources */,
 				0441EF8D2015C9A80048F881 /* YDCTView.m in Sources */,
+				4107DE1A2067FDB700C42A7A /* SetStrokeColorCommand.m in Sources */,
 				048B4278202AEF9400FAEB19 /* YDHtmlElementBuilder.m in Sources */,
 				4107DDDA2067D91C00C42A7A /* BrandingFactory.m in Sources */,
 				41CE38F3204EE1AA005279B6 /* ImageTransformFilter.m in Sources */,
@@ -12162,7 +12224,9 @@
 				04715071203FCB6600278E15 /* FlyweightView.m in Sources */,
 				4107DDCB2067D2F900C42A7A /* YDClothViewController.m in Sources */,
 				0426CCA02046E70E007EF161 /* LightAttack.m in Sources */,
+				4107DE27206802AF00C42A7A /* TaxiMeter.m in Sources */,
 				0441EFA62015DA1A0048F881 /* YDCTConfig.m in Sources */,
+				4107DE212068015700C42A7A /* AppearancePatternViewController.m in Sources */,
 				048B4259202A959B00FAEB19 /* YDTest1q6ViewController.m in Sources */,
 				04FF494D20159C3800C02EEF /* CTDisplayView.m in Sources */,
 				0438E73E201EC60D0032E8F8 /* YDDisplayView.m in Sources */,

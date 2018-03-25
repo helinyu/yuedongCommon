@@ -13,4 +13,6 @@
 
 - (CanvasView *)canvasViewFrame:(CGRect)frame;
 
+@property (nonatomic, strong) UIColor *strokerColor;
+
 @end
