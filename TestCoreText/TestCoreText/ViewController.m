@@ -61,6 +61,8 @@
 #import "YDTextImageViewController.h"
 #import "YDDispatchViewController.h"
 #import "YDDecorateViewController.h"
+#import "YDFactoryViewController.h"
+#import "YDAabstractFactoryViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,CALayerDelegate,YYAsyncLayerDelegate>
 // html 页面解析
@@ -147,7 +149,19 @@
 //    [self test24];
 //    [self test25];
 //    [self test26];
-    [self test27];
+//    [self test27];
+//    [self test29];
+    [self test30];
+}
+
+- (void)test30 {
+    YDAabstractFactoryViewController *vc =[YDAabstractFactoryViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)test29 {
+    YDFactoryViewController *vc = [YDFactoryViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)test28 {

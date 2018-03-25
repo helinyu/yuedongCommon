@@ -137,6 +137,31 @@
 		04FFAF562019C98200E54521 /* WarAndPeace.html in Resources */ = {isa = PBXBuildFile; fileRef = 04FFAF322019C98200E54521 /* WarAndPeace.html */; };
 		04FFAF572019C98200E54521 /* XB Niloofar.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04FFAF332019C98200E54521 /* XB Niloofar.ttf */; };
 		04FFAF582019C98200E54521 /* XB NiloofarBd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04FFAF342019C98200E54521 /* XB NiloofarBd.ttf */; };
+		4107DDB72067CD7400C42A7A /* YDFactoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDB62067CD7400C42A7A /* YDFactoryViewController.m */; };
+		4107DDBA2067CE5200C42A7A /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDB92067CE5200C42A7A /* CanvasView.m */; };
+		4107DDBD2067CE6800C42A7A /* PaperCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDBC2067CE6800C42A7A /* PaperCanvasView.m */; };
+		4107DDBF2067CFD900C42A7A /* Snip20180325_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4107DDBE2067CFD800C42A7A /* Snip20180325_1.png */; };
+		4107DDC22067D09100C42A7A /* ClosCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDC12067D09000C42A7A /* ClosCanvasView.m */; };
+		4107DDC52067D1DE00C42A7A /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDC42067D1DE00C42A7A /* CanvasViewController.m */; };
+		4107DDC82067D20800C42A7A /* PaperCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDC72067D20800C42A7A /* PaperCanvasViewController.m */; };
+		4107DDCB2067D2F900C42A7A /* YDClothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDCA2067D2F900C42A7A /* YDClothViewController.m */; };
+		4107DDCE2067D4C300C42A7A /* CanvasGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDCD2067D4C300C42A7A /* CanvasGenerator.m */; };
+		4107DDD02067D67900C42A7A /* Snip20180325_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4107DDCF2067D67900C42A7A /* Snip20180325_2.png */; };
+		4107DDD32067D83900C42A7A /* YDAabstractFactoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDD22067D83900C42A7A /* YDAabstractFactoryViewController.m */; };
+		4107DDD72067D85D00C42A7A /* YDAabstractFactoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDD62067D85D00C42A7A /* YDAabstractFactoryViewController.m */; };
+		4107DDDA2067D91C00C42A7A /* BrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDD92067D91C00C42A7A /* BrandingFactory.m */; };
+		4107DDDD2067DA0100C42A7A /* AcmeBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDDC2067DA0100C42A7A /* AcmeBrandingFactory.m */; };
+		4107DDE02067DA2A00C42A7A /* SierraBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDDF2067DA2A00C42A7A /* SierraBrandingFactory.m */; };
+		4107DDE52067DB5800C42A7A /* AcmeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDE42067DB5800C42A7A /* AcmeView.m */; };
+		4107DDE82067DB7700C42A7A /* AcmeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDE72067DB7700C42A7A /* AcmeButton.m */; };
+		4107DDEB2067DB8400C42A7A /* AcmeToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDEA2067DB8400C42A7A /* AcmeToolbar.m */; };
+		4107DDFC2067EE1A00C42A7A /* SierraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDFA2067EE1A00C42A7A /* SierraView.m */; };
+		4107DDFF2067EE3500C42A7A /* SierraButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DDFE2067EE3500C42A7A /* SierraButton.m */; };
+		4107DE022067EE4700C42A7A /* SierraToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE012067EE4700C42A7A /* SierraToolbar.m */; };
+		4107DE062067F0E900C42A7A /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE052067F0E900C42A7A /* Character.m */; };
+		4107DE092067F37600C42A7A /* Characterbuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE082067F37600C42A7A /* Characterbuilder.m */; };
+		4107DE0C2067F51100C42A7A /* StandardCharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE0B2067F51100C42A7A /* StandardCharacterBuilder.m */; };
+		4107DE0F2067F6BC00C42A7A /* ChasingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE0E2067F6BC00C42A7A /* ChasingGame.m */; };
 		411E4B40202CBCB3006747A5 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 411E4B3F202CBCB2006747A5 /* libxml2.2.tbd */; };
 		418EAD3B202B4E2C0067612B /* YDTest16ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418EAD3A202B4E2C0067612B /* YDTest16ViewController.m */; };
 		41CE38E5204DAAB6005279B6 /* YDDispatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CE38E4204DAAB6005279B6 /* YDDispatchViewController.m */; };
@@ -5195,6 +5220,54 @@
 		1D663F57728E95195C4A930D /* Pods-TestCoreTextUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreTextUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreTextUITests/Pods-TestCoreTextUITests.release.xcconfig"; sourceTree = "<group>"; };
 		27B857DDB57AB1BC48493C75 /* libPods-TestCoreTextTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestCoreTextTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D1CC46F87D62916D9E5AF6 /* Pods-TestCoreTextUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreTextUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreTextUITests/Pods-TestCoreTextUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4107DDB52067CD7400C42A7A /* YDFactoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDFactoryViewController.h; sourceTree = "<group>"; };
+		4107DDB62067CD7400C42A7A /* YDFactoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDFactoryViewController.m; sourceTree = "<group>"; };
+		4107DDB82067CE5200C42A7A /* CanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		4107DDB92067CE5200C42A7A /* CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		4107DDBB2067CE6800C42A7A /* PaperCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaperCanvasView.h; sourceTree = "<group>"; };
+		4107DDBC2067CE6800C42A7A /* PaperCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaperCanvasView.m; sourceTree = "<group>"; };
+		4107DDBE2067CFD800C42A7A /* Snip20180325_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20180325_1.png; sourceTree = "<group>"; };
+		4107DDC02067D09000C42A7A /* ClosCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClosCanvasView.h; sourceTree = "<group>"; };
+		4107DDC12067D09000C42A7A /* ClosCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClosCanvasView.m; sourceTree = "<group>"; };
+		4107DDC32067D1DE00C42A7A /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
+		4107DDC42067D1DE00C42A7A /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		4107DDC62067D20800C42A7A /* PaperCanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaperCanvasViewController.h; sourceTree = "<group>"; };
+		4107DDC72067D20800C42A7A /* PaperCanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaperCanvasViewController.m; sourceTree = "<group>"; };
+		4107DDC92067D2F900C42A7A /* YDClothViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDClothViewController.h; sourceTree = "<group>"; };
+		4107DDCA2067D2F900C42A7A /* YDClothViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDClothViewController.m; sourceTree = "<group>"; };
+		4107DDCC2067D4C300C42A7A /* CanvasGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasGenerator.h; sourceTree = "<group>"; };
+		4107DDCD2067D4C300C42A7A /* CanvasGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasGenerator.m; sourceTree = "<group>"; };
+		4107DDCF2067D67900C42A7A /* Snip20180325_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20180325_2.png; sourceTree = "<group>"; };
+		4107DDD12067D83900C42A7A /* YDAabstractFactoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAabstractFactoryViewController.h; sourceTree = "<group>"; };
+		4107DDD22067D83900C42A7A /* YDAabstractFactoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAabstractFactoryViewController.m; sourceTree = "<group>"; };
+		4107DDD52067D85C00C42A7A /* YDAabstractFactoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YDAabstractFactoryViewController.h; path = TestCoreText/YDAabstractFactoryViewController.h; sourceTree = SOURCE_ROOT; };
+		4107DDD62067D85D00C42A7A /* YDAabstractFactoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YDAabstractFactoryViewController.m; path = TestCoreText/YDAabstractFactoryViewController.m; sourceTree = SOURCE_ROOT; };
+		4107DDD82067D91C00C42A7A /* BrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrandingFactory.h; sourceTree = "<group>"; };
+		4107DDD92067D91C00C42A7A /* BrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrandingFactory.m; sourceTree = "<group>"; };
+		4107DDDB2067DA0100C42A7A /* AcmeBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcmeBrandingFactory.h; sourceTree = "<group>"; };
+		4107DDDC2067DA0100C42A7A /* AcmeBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcmeBrandingFactory.m; sourceTree = "<group>"; };
+		4107DDDE2067DA2A00C42A7A /* SierraBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SierraBrandingFactory.h; sourceTree = "<group>"; };
+		4107DDDF2067DA2A00C42A7A /* SierraBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SierraBrandingFactory.m; sourceTree = "<group>"; };
+		4107DDE32067DB5800C42A7A /* AcmeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcmeView.h; sourceTree = "<group>"; };
+		4107DDE42067DB5800C42A7A /* AcmeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcmeView.m; sourceTree = "<group>"; };
+		4107DDE62067DB7700C42A7A /* AcmeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcmeButton.h; sourceTree = "<group>"; };
+		4107DDE72067DB7700C42A7A /* AcmeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcmeButton.m; sourceTree = "<group>"; };
+		4107DDE92067DB8400C42A7A /* AcmeToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcmeToolbar.h; sourceTree = "<group>"; };
+		4107DDEA2067DB8400C42A7A /* AcmeToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcmeToolbar.m; sourceTree = "<group>"; };
+		4107DDF82067EE1900C42A7A /* SierraView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SierraView.h; sourceTree = "<group>"; };
+		4107DDFA2067EE1A00C42A7A /* SierraView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SierraView.m; sourceTree = "<group>"; };
+		4107DDFD2067EE3500C42A7A /* SierraButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SierraButton.h; sourceTree = "<group>"; };
+		4107DDFE2067EE3500C42A7A /* SierraButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SierraButton.m; sourceTree = "<group>"; };
+		4107DE002067EE4700C42A7A /* SierraToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SierraToolbar.h; sourceTree = "<group>"; };
+		4107DE012067EE4700C42A7A /* SierraToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SierraToolbar.m; sourceTree = "<group>"; };
+		4107DE042067F0E900C42A7A /* Character.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		4107DE052067F0E900C42A7A /* Character.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		4107DE072067F37600C42A7A /* Characterbuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Characterbuilder.h; sourceTree = "<group>"; };
+		4107DE082067F37600C42A7A /* Characterbuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Characterbuilder.m; sourceTree = "<group>"; };
+		4107DE0A2067F51100C42A7A /* StandardCharacterBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StandardCharacterBuilder.h; sourceTree = "<group>"; };
+		4107DE0B2067F51100C42A7A /* StandardCharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StandardCharacterBuilder.m; sourceTree = "<group>"; };
+		4107DE0D2067F6BC00C42A7A /* ChasingGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChasingGame.h; sourceTree = "<group>"; };
+		4107DE0E2067F6BC00C42A7A /* ChasingGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChasingGame.m; sourceTree = "<group>"; };
 		411E4B3F202CBCB2006747A5 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		418EAD39202B4E2C0067612B /* YDTest16ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest16ViewController.h; sourceTree = "<group>"; };
 		418EAD3A202B4E2C0067612B /* YDTest16ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest16ViewController.m; sourceTree = "<group>"; };
@@ -11352,6 +11425,9 @@
 		04FF49092015910500C02EEF /* TestCoreText */ = {
 			isa = PBXGroup;
 			children = (
+				4107DE032067F0C200C42A7A /* generator   */,
+				4107DDD42067D83F00C42A7A /* AbstractFactory */,
+				4107DDB42067CD5C00C42A7A /* Factory */,
 				41CE38E6204EDD53005279B6 /* 装饰 */,
 				41CE38E2204DAA9B005279B6 /* dispatch_applay */,
 				0426CCA22047CA9F007EF161 /* draw view */,
@@ -11393,6 +11469,8 @@
 				0441EF972015D1EF0048F881 /* red@2x.png */,
 				0441EF992015D1F70048F881 /* cursor@2x.png */,
 				04FFAF102019C98200E54521 /* Resources */,
+				4107DDD12067D83900C42A7A /* YDAabstractFactoryViewController.h */,
+				4107DDD22067D83900C42A7A /* YDAabstractFactoryViewController.m */,
 			);
 			path = TestCoreText;
 			sourceTree = "<group>";
@@ -11499,6 +11577,89 @@
 				1D663F57728E95195C4A930D /* Pods-TestCoreTextUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4107DDB42067CD5C00C42A7A /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				4107DDB52067CD7400C42A7A /* YDFactoryViewController.h */,
+				4107DDB62067CD7400C42A7A /* YDFactoryViewController.m */,
+				4107DDC32067D1DE00C42A7A /* CanvasViewController.h */,
+				4107DDC42067D1DE00C42A7A /* CanvasViewController.m */,
+				4107DDC62067D20800C42A7A /* PaperCanvasViewController.h */,
+				4107DDC72067D20800C42A7A /* PaperCanvasViewController.m */,
+				4107DDC92067D2F900C42A7A /* YDClothViewController.h */,
+				4107DDCA2067D2F900C42A7A /* YDClothViewController.m */,
+				4107DDCC2067D4C300C42A7A /* CanvasGenerator.h */,
+				4107DDCD2067D4C300C42A7A /* CanvasGenerator.m */,
+				4107DDB82067CE5200C42A7A /* CanvasView.h */,
+				4107DDB92067CE5200C42A7A /* CanvasView.m */,
+				4107DDBB2067CE6800C42A7A /* PaperCanvasView.h */,
+				4107DDBC2067CE6800C42A7A /* PaperCanvasView.m */,
+				4107DDC02067D09000C42A7A /* ClosCanvasView.h */,
+				4107DDC12067D09000C42A7A /* ClosCanvasView.m */,
+				4107DDCF2067D67900C42A7A /* Snip20180325_2.png */,
+				4107DDBE2067CFD800C42A7A /* Snip20180325_1.png */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		4107DDD42067D83F00C42A7A /* AbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+				4107DDE22067DB2C00C42A7A /* Sierra */,
+				4107DDE12067DB2300C42A7A /* Acme */,
+				4107DDD52067D85C00C42A7A /* YDAabstractFactoryViewController.h */,
+				4107DDD62067D85D00C42A7A /* YDAabstractFactoryViewController.m */,
+				4107DDD82067D91C00C42A7A /* BrandingFactory.h */,
+				4107DDD92067D91C00C42A7A /* BrandingFactory.m */,
+			);
+			path = AbstractFactory;
+			sourceTree = "<group>";
+		};
+		4107DDE12067DB2300C42A7A /* Acme */ = {
+			isa = PBXGroup;
+			children = (
+				4107DDE32067DB5800C42A7A /* AcmeView.h */,
+				4107DDE42067DB5800C42A7A /* AcmeView.m */,
+				4107DDE62067DB7700C42A7A /* AcmeButton.h */,
+				4107DDE72067DB7700C42A7A /* AcmeButton.m */,
+				4107DDE92067DB8400C42A7A /* AcmeToolbar.h */,
+				4107DDEA2067DB8400C42A7A /* AcmeToolbar.m */,
+				4107DDDB2067DA0100C42A7A /* AcmeBrandingFactory.h */,
+				4107DDDC2067DA0100C42A7A /* AcmeBrandingFactory.m */,
+			);
+			path = Acme;
+			sourceTree = "<group>";
+		};
+		4107DDE22067DB2C00C42A7A /* Sierra */ = {
+			isa = PBXGroup;
+			children = (
+				4107DDDE2067DA2A00C42A7A /* SierraBrandingFactory.h */,
+				4107DDDF2067DA2A00C42A7A /* SierraBrandingFactory.m */,
+				4107DDF82067EE1900C42A7A /* SierraView.h */,
+				4107DDFA2067EE1A00C42A7A /* SierraView.m */,
+				4107DDFD2067EE3500C42A7A /* SierraButton.h */,
+				4107DDFE2067EE3500C42A7A /* SierraButton.m */,
+				4107DE002067EE4700C42A7A /* SierraToolbar.h */,
+				4107DE012067EE4700C42A7A /* SierraToolbar.m */,
+			);
+			path = Sierra;
+			sourceTree = "<group>";
+		};
+		4107DE032067F0C200C42A7A /* generator   */ = {
+			isa = PBXGroup;
+			children = (
+				4107DE042067F0E900C42A7A /* Character.h */,
+				4107DE052067F0E900C42A7A /* Character.m */,
+				4107DE072067F37600C42A7A /* Characterbuilder.h */,
+				4107DE082067F37600C42A7A /* Characterbuilder.m */,
+				4107DE0A2067F51100C42A7A /* StandardCharacterBuilder.h */,
+				4107DE0B2067F51100C42A7A /* StandardCharacterBuilder.m */,
+				4107DE0D2067F6BC00C42A7A /* ChasingGame.h */,
+				4107DE0E2067F6BC00C42A7A /* ChasingGame.m */,
+			);
+			path = "generator  ";
 			sourceTree = "<group>";
 		};
 		418EAD38202B4E0B0067612B /* semaphore */ = {
@@ -11693,6 +11854,7 @@
 				0441EF982015D1EF0048F881 /* red@2x.png in Resources */,
 				048B4294202C7EDA00FAEB19 /* needtofix_parserdata.json in Resources */,
 				0441EF962015D1D10048F881 /* coretext-image-1.jpg in Resources */,
+				4107DDD02067D67900C42A7A /* Snip20180325_2.png in Resources */,
 				04715063203FC4AF00278E15 /* anemone.png in Resources */,
 				04FFAF402019C98200E54521 /* eg_tulip.jpg in Resources */,
 				04FFAF582019C98200E54521 /* XB NiloofarBd.ttf in Resources */,
@@ -11729,6 +11891,7 @@
 				0441EF952015D1D10048F881 /* coretext-image-2.jpg in Resources */,
 				04FFAF492019C98200E54521 /* Launch Screen.xib in Resources */,
 				04FFAF352019C98200E54521 /* About.html in Resources */,
+				4107DDBF2067CFD900C42A7A /* Snip20180325_1.png in Resources */,
 				0441EF922015D1C40048F881 /* content.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -11929,30 +12092,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				048B42482028562100FAEB19 /* YDAction.m in Sources */,
+				4107DE062067F0E900C42A7A /* Character.m in Sources */,
 				048B423E2028482600FAEB19 /* YDCollectionNullReusableView.h in Sources */,
 				048B4292202C47EC00FAEB19 /* YDExtension.m in Sources */,
 				048B423F2028482600FAEB19 /* YDCollectionReusableView.h in Sources */,
 				048B4245202854ED00FAEB19 /* YDTest12Layer.m in Sources */,
 				41CE38F0204EDFFB005279B6 /* ImageFilter.m in Sources */,
 				04F5E22D20456F810085D408 /* YDTestYYViewController.m in Sources */,
+				4107DDC52067D1DE00C42A7A /* CanvasViewController.m in Sources */,
 				0438E7742021D8600032E8F8 /* YDTest10ViewController.m in Sources */,
 				0438E77A2022B0FD0032E8F8 /* YDTest11ViewController.m in Sources */,
 				048B428A202C30C200FAEB19 /* YDHtmlElement.m in Sources */,
 				04FFAF0D2019C54D00E54521 /* YDHeaderView.m in Sources */,
 				048B423420283C0400FAEB19 /* YDTest13ViewViewController.m in Sources */,
 				0441EF9D2015D44B0048F881 /* YDCTImageModel.m in Sources */,
+				4107DDE52067DB5800C42A7A /* AcmeView.m in Sources */,
 				41CE38E9204EDDA7005279B6 /* YDDecorateViewController.m in Sources */,
+				4107DDBA2067CE5200C42A7A /* CanvasView.m in Sources */,
 				040257E62032E55D004E58FB /* YDChartLineModel.m in Sources */,
 				048B4263202AA64E00FAEB19 /* YDTest17ViewController.m in Sources */,
 				04AAA63B202835E8007AC7E9 /* YDTest12View.m in Sources */,
 				048B424C2028673000FAEB19 /* YDTest14ViewController.m in Sources */,
 				0441EFA32015D5D90048F881 /* YDCTUtils.m in Sources */,
 				048B42372028469700FAEB19 /* YDCollectionNullReusableView.m in Sources */,
+				4107DDB72067CD7400C42A7A /* YDFactoryViewController.m in Sources */,
 				048B4242202849B600FAEB19 /* YDTest13TableViewCell.m in Sources */,
 				048B423D202847E400FAEB19 /* YDCollectionReusableView.m in Sources */,
 				0426CC9A2046E412007EF161 /* MaginfireAttack.m in Sources */,
 				048B4287202C2EBA00FAEB19 /* YDHtmlParserNode.m in Sources */,
 				048B425C202A961200FAEB19 /* YDTest16Label.m in Sources */,
+				4107DE0C2067F51100C42A7A /* StandardCharacterBuilder.m in Sources */,
 				04FF490F2015910500C02EEF /* ViewController.m in Sources */,
 				0441EF902015D0520048F881 /* YDCTModel.m in Sources */,
 				040257E02032E337004E58FB /* YDChartLineTableViewController.m in Sources */,
@@ -11969,30 +12138,46 @@
 				04715055203FC1D600278E15 /* YDFlyWeightViewController.m in Sources */,
 				0426CC852046E0DE007EF161 /* YDChainReponsibilityViewController.m in Sources */,
 				418EAD3B202B4E2C0067612B /* YDTest16ViewController.m in Sources */,
+				4107DE0F2067F6BC00C42A7A /* ChasingGame.m in Sources */,
 				0426CC8B2046E175007EF161 /* AttackHandler.m in Sources */,
+				4107DDC82067D20800C42A7A /* PaperCanvasViewController.m in Sources */,
+				4107DDD72067D85D00C42A7A /* YDAabstractFactoryViewController.m in Sources */,
 				048B425320286A3200FAEB19 /* YDTest15ViewController.m in Sources */,
 				41CE38F6204EE2DC005279B6 /* ImageShadowFilter.m in Sources */,
 				04FFAF0A2019A8EE00E54521 /* YDTransView.m in Sources */,
+				4107DE022067EE4700C42A7A /* SierraToolbar.m in Sources */,
+				4107DDCE2067D4C300C42A7A /* CanvasGenerator.m in Sources */,
 				0438E7772021DB510032E8F8 /* YDCustomCollectionViewCell.m in Sources */,
 				0441EF8D2015C9A80048F881 /* YDCTView.m in Sources */,
 				048B4278202AEF9400FAEB19 /* YDHtmlElementBuilder.m in Sources */,
+				4107DDDA2067D91C00C42A7A /* BrandingFactory.m in Sources */,
 				41CE38F3204EE1AA005279B6 /* ImageTransformFilter.m in Sources */,
 				04715058203FC24F00278E15 /* FlowerView.m in Sources */,
+				4107DE092067F37600C42A7A /* Characterbuilder.m in Sources */,
+				4107DDD32067D83900C42A7A /* YDAabstractFactoryViewController.m in Sources */,
 				04715078203FE28900278E15 /* YDHorizontalTableView.m in Sources */,
 				048B4282202C290700FAEB19 /* YDDefaultCss.m in Sources */,
 				04FF490C2015910500C02EEF /* AppDelegate.m in Sources */,
+				4107DDE82067DB7700C42A7A /* AcmeButton.m in Sources */,
+				4107DDEB2067DB8400C42A7A /* AcmeToolbar.m in Sources */,
 				04715049203E9C6D00278E15 /* YDHorizontalLayerCell.m in Sources */,
 				04715082203FECD600278E15 /* YDTest23ViewController.m in Sources */,
 				0426CC9D2046E48E007EF161 /* Avatar.m in Sources */,
 				04715071203FCB6600278E15 /* FlyweightView.m in Sources */,
+				4107DDCB2067D2F900C42A7A /* YDClothViewController.m in Sources */,
+				4107DDFC2067EE1A00C42A7A /* SierraView.m in Sources */,
 				0426CCA02046E70E007EF161 /* LightAttack.m in Sources */,
 				0441EFA62015DA1A0048F881 /* YDCTConfig.m in Sources */,
 				048B4259202A959B00FAEB19 /* YDTest1q6ViewController.m in Sources */,
 				04FF494D20159C3800C02EEF /* CTDisplayView.m in Sources */,
 				0438E73E201EC60D0032E8F8 /* YDDisplayView.m in Sources */,
+				4107DDFF2067EE3500C42A7A /* SierraButton.m in Sources */,
+				4107DDDD2067DA0100C42A7A /* AcmeBrandingFactory.m in Sources */,
 				040257EC2033CDC4004E58FB /* YDLayerViewController.m in Sources */,
+				4107DDC22067D09100C42A7A /* ClosCanvasView.m in Sources */,
 				41CE38E5204DAAB6005279B6 /* YDDispatchViewController.m in Sources */,
 				0426CC902046E259007EF161 /* MetalArmor.m in Sources */,
+				4107DDE02067DA2A00C42A7A /* SierraBrandingFactory.m in Sources */,
 				0441EFB32015E21D0048F881 /* ImageViewController.m in Sources */,
 				41CE38ED204EDEE7005279B6 /* UIImage+ImageComponent.m in Sources */,
 				048B4275202AEF8100FAEB19 /* YDHtmlParser.m in Sources */,
@@ -12001,6 +12186,7 @@
 				04AAA638202830E5007AC7E9 /* YDTest12ViewController.m in Sources */,
 				0426CC972046E3A8007EF161 /* CrystalShield.m in Sources */,
 				0426CC942046E2C6007EF161 /* SwordAttack.m in Sources */,
+				4107DDBD2067CE6800C42A7A /* PaperCanvasView.m in Sources */,
 				0426CC882046E143007EF161 /* Attack.m in Sources */,
 				0441EFAF2015E2160048F881 /* WebContentViewController.m in Sources */,
 				0438E74A201F13280032E8F8 /* NSString+GHTransformation.m in Sources */,
