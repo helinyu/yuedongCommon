@@ -64,6 +64,10 @@
 #import "YDFactoryViewController.h"
 #import "YDAabstractFactoryViewController.h"
 #import "AppearancePatternViewController.h"
+#import "MementoViewController.h"
+#import "StrategyViewController.h"
+#import "YDValidateViewController.h"
+#import "YDDesignViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DTLazyImageViewDelegate,DTAttributedTextContentViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,CALayerDelegate,YYAsyncLayerDelegate>
 // html 页面解析
@@ -153,7 +157,31 @@
 //    [self test27];
 //    [self test29];
 //    [self test30];
-    [self test31];
+//    [self test31];
+//    [self test32];
+//    [self test33];
+//    [self test34];
+    [self test35];
+}
+
+- (void)test35 {
+    YDDesignViewController*vc =[YDDesignViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)test34 {
+    YDValidateViewController *vc= [YDValidateViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)test33 {
+    StrategyViewController *vc = [StrategyViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)test32 {
+    MementoViewController *vc = [MementoViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)test31 {

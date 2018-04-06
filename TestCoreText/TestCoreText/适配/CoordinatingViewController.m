@@ -16,7 +16,7 @@
 
 + (instancetype)shareInstance {
     static dispatch_once_t onceToken;
-    static CoordinatingViewController sigle = nil;
+    static CoordinatingViewController* sigle = nil;
     dispatch_once(&onceToken, ^{
         CoordinatingViewController *vc = [CoordinatingViewController new];
         sigle = vc;

@@ -168,6 +168,15 @@
 		4107DE27206802AF00C42A7A /* TaxiMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE26206802AF00C42A7A /* TaxiMeter.m */; };
 		4107DE2A206803EC00C42A7A /* CabDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4107DE29206803EC00C42A7A /* CabDriver.m */; };
 		411E4B40202CBCB3006747A5 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 411E4B3F202CBCB2006747A5 /* libxml2.2.tbd */; };
+		412D59EA206954BA005528E6 /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 412D59DA206954B9005528E6 /* InputValidator.m */; };
+		412D59EC206954BA005528E6 /* NumericInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 412D59E2206954B9005528E6 /* NumericInputValidator.m */; };
+		412D59ED206954BA005528E6 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 412D59E3206954B9005528E6 /* CustomTextField.m */; };
+		412D59EE206954BA005528E6 /* AlphaInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 412D59E4206954B9005528E6 /* AlphaInputValidator.m */; };
+		412D59F3206A8A69005528E6 /* ConsoleEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 412D59F2206A8A69005528E6 /* ConsoleEmulator.m */; };
+		412D59F9206A9543005528E6 /* GameBoyEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 412D59F8206A9543005528E6 /* GameBoyEmulator.m */; };
+		412D59FC206A9591005528E6 /* GameGearEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 412D59FB206A9591005528E6 /* GameGearEmulator.m */; };
+		412D59FF206A9696005528E6 /* ConsoleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 412D59FE206A9696005528E6 /* ConsoleController.m */; };
+		412D5A02206A9757005528E6 /* TouchConsoleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 412D5A01206A9757005528E6 /* TouchConsoleController.m */; };
 		418EAD3B202B4E2C0067612B /* YDTest16ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418EAD3A202B4E2C0067612B /* YDTest16ViewController.m */; };
 		41CE38E5204DAAB6005279B6 /* YDDispatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CE38E4204DAAB6005279B6 /* YDDispatchViewController.m */; };
 		41CE38E9204EDDA7005279B6 /* YDDecorateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CE38E8204EDDA7005279B6 /* YDDecorateViewController.m */; };
@@ -175,6 +184,13 @@
 		41CE38F0204EDFFB005279B6 /* ImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CE38EF204EDFFB005279B6 /* ImageFilter.m */; };
 		41CE38F3204EE1AA005279B6 /* ImageTransformFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CE38F2204EE1AA005279B6 /* ImageTransformFilter.m */; };
 		41CE38F6204EE2DC005279B6 /* ImageShadowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CE38F5204EE2DC005279B6 /* ImageShadowFilter.m */; };
+		41D53C5520711A2D00ECACA5 /* YDValidateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D53C5420711A2D00ECACA5 /* YDValidateViewController.m */; };
+		41D53C5720711B4E00ECACA5 /* StrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D53C5620711B4E00ECACA5 /* StrategyViewController.m */; };
+		41D53C5B2071288800ECACA5 /* YDDesignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D53C5A2071288800ECACA5 /* YDDesignViewController.m */; };
+		41E74EA0206933C0004018B7 /* MementoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E74E9F206933C0004018B7 /* MementoViewController.m */; };
+		41E74EA3206943BC004018B7 /* YDCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E74EA2206943BC004018B7 /* YDCustomView.m */; };
+		41E74EAA20694450004018B7 /* YDCustomView+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E74EA920694450004018B7 /* YDCustomView+Private.m */; };
+		41E74EAD20694519004018B7 /* ScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E74EAC20694519004018B7 /* ScribbleMemento.m */; };
 		5FB4404CAD073B11780BB68E /* libPods-TestCoreText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC41560E287F52D41DF54FB /* libPods-TestCoreText.a */; };
 		7693EFEC4EF3EF956B5B0D6C /* libPods-TestCoreTextUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5295345145CF26204980AE8 /* libPods-TestCoreTextUITests.a */; };
 		8B45CBD5179957D2DC88AAE5 /* libPods-TestCoreTextTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B857DDB57AB1BC48493C75 /* libPods-TestCoreTextTests.a */; };
@@ -5290,6 +5306,26 @@
 		4107DE28206803EC00C42A7A /* CabDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CabDriver.h; sourceTree = "<group>"; };
 		4107DE29206803EC00C42A7A /* CabDriver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CabDriver.m; sourceTree = "<group>"; };
 		411E4B3F202CBCB2006747A5 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		412D59DA206954B9005528E6 /* InputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputValidator.m; sourceTree = "<group>"; };
+		412D59DC206954B9005528E6 /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
+		412D59DD206954B9005528E6 /* NumericInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumericInputValidator.h; sourceTree = "<group>"; };
+		412D59DE206954B9005528E6 /* AlphaInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaInputValidator.h; sourceTree = "<group>"; };
+		412D59E0206954B9005528E6 /* StrategyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrategyViewController.h; sourceTree = "<group>"; };
+		412D59E1206954B9005528E6 /* InputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputValidator.h; sourceTree = "<group>"; };
+		412D59E2206954B9005528E6 /* NumericInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumericInputValidator.m; sourceTree = "<group>"; };
+		412D59E3206954B9005528E6 /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
+		412D59E4206954B9005528E6 /* AlphaInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaInputValidator.m; sourceTree = "<group>"; };
+		412D59F1206A8A69005528E6 /* ConsoleEmulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConsoleEmulator.h; sourceTree = "<group>"; };
+		412D59F2206A8A69005528E6 /* ConsoleEmulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConsoleEmulator.m; sourceTree = "<group>"; };
+		412D59F4206A8AB0005528E6 /* ConsoleCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConsoleCommand.h; sourceTree = "<group>"; };
+		412D59F7206A9543005528E6 /* GameBoyEmulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameBoyEmulator.h; sourceTree = "<group>"; };
+		412D59F8206A9543005528E6 /* GameBoyEmulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameBoyEmulator.m; sourceTree = "<group>"; };
+		412D59FA206A9591005528E6 /* GameGearEmulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameGearEmulator.h; sourceTree = "<group>"; };
+		412D59FB206A9591005528E6 /* GameGearEmulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameGearEmulator.m; sourceTree = "<group>"; };
+		412D59FD206A9696005528E6 /* ConsoleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConsoleController.h; sourceTree = "<group>"; };
+		412D59FE206A9696005528E6 /* ConsoleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConsoleController.m; sourceTree = "<group>"; };
+		412D5A00206A9757005528E6 /* TouchConsoleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchConsoleController.h; sourceTree = "<group>"; };
+		412D5A01206A9757005528E6 /* TouchConsoleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchConsoleController.m; sourceTree = "<group>"; };
 		418EAD39202B4E2C0067612B /* YDTest16ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDTest16ViewController.h; sourceTree = "<group>"; };
 		418EAD3A202B4E2C0067612B /* YDTest16ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTest16ViewController.m; sourceTree = "<group>"; };
 		41CE38E3204DAAB6005279B6 /* YDDispatchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDDispatchViewController.h; sourceTree = "<group>"; };
@@ -5305,6 +5341,20 @@
 		41CE38F2204EE1AA005279B6 /* ImageTransformFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageTransformFilter.m; sourceTree = "<group>"; };
 		41CE38F4204EE2DC005279B6 /* ImageShadowFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageShadowFilter.h; sourceTree = "<group>"; };
 		41CE38F5204EE2DC005279B6 /* ImageShadowFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageShadowFilter.m; sourceTree = "<group>"; };
+		41D53C5320711A2D00ECACA5 /* YDValidateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDValidateViewController.h; sourceTree = "<group>"; };
+		41D53C5420711A2D00ECACA5 /* YDValidateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDValidateViewController.m; sourceTree = "<group>"; };
+		41D53C5620711B4E00ECACA5 /* StrategyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrategyViewController.m; sourceTree = "<group>"; };
+		41D53C592071288800ECACA5 /* YDDesignViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDDesignViewController.h; sourceTree = "<group>"; };
+		41D53C5A2071288800ECACA5 /* YDDesignViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDDesignViewController.m; sourceTree = "<group>"; };
+		41E74E9E206933C0004018B7 /* MementoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MementoViewController.h; sourceTree = "<group>"; };
+		41E74E9F206933C0004018B7 /* MementoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MementoViewController.m; sourceTree = "<group>"; };
+		41E74EA1206943BC004018B7 /* YDCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCustomView.h; sourceTree = "<group>"; };
+		41E74EA2206943BC004018B7 /* YDCustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDCustomView.m; sourceTree = "<group>"; };
+		41E74EA820694450004018B7 /* YDCustomView+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YDCustomView+Private.h"; sourceTree = "<group>"; };
+		41E74EA920694450004018B7 /* YDCustomView+Private.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YDCustomView+Private.m"; sourceTree = "<group>"; };
+		41E74EAB20694519004018B7 /* ScribbleMemento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleMemento.h; sourceTree = "<group>"; };
+		41E74EAC20694519004018B7 /* ScribbleMemento.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleMemento.m; sourceTree = "<group>"; };
+		41E74EAE2069455A004018B7 /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
 		577D688E89FEBC59AFA51163 /* Pods-TestCoreText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreText.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreText/Pods-TestCoreText.release.xcconfig"; sourceTree = "<group>"; };
 		71285063B261E4180888E2DD /* Pods-TestCoreText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreText/Pods-TestCoreText.debug.xcconfig"; sourceTree = "<group>"; };
 		806E1DDAD892EE767BD8D819 /* Pods-TestCoreTextTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreTextTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreTextTests/Pods-TestCoreTextTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -11446,6 +11496,10 @@
 		04FF49092015910500C02EEF /* TestCoreText */ = {
 			isa = PBXGroup;
 			children = (
+				41D53C582071286D00ECACA5 /* 设计模式例子 */,
+				412D59F0206A8A46005528E6 /* 桥接模式 */,
+				412D59D6206954AA005528E6 /* 策略 */,
+				41E74E9C20693283004018B7 /* 对象状态 */,
 				4107DE1E2068014100C42A7A /* Appearance pattern   */,
 				4107DE102067FC9D00C42A7A /* 适配 */,
 				4107DE032067F0C200C42A7A /* generator   */,
@@ -11715,6 +11769,44 @@
 			path = "Appearance pattern  ";
 			sourceTree = "<group>";
 		};
+		412D59D6206954AA005528E6 /* 策略 */ = {
+			isa = PBXGroup;
+			children = (
+				412D59D8206954B9005528E6 /* Classes */,
+			);
+			path = "策略";
+			sourceTree = "<group>";
+		};
+		412D59D8206954B9005528E6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				41D53C52207119B500ECACA5 /* inner */,
+				41D53C5620711B4E00ECACA5 /* StrategyViewController.m */,
+				412D59E0206954B9005528E6 /* StrategyViewController.h */,
+				41D53C5320711A2D00ECACA5 /* YDValidateViewController.h */,
+				41D53C5420711A2D00ECACA5 /* YDValidateViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		412D59F0206A8A46005528E6 /* 桥接模式 */ = {
+			isa = PBXGroup;
+			children = (
+				412D59F1206A8A69005528E6 /* ConsoleEmulator.h */,
+				412D59F2206A8A69005528E6 /* ConsoleEmulator.m */,
+				412D59F7206A9543005528E6 /* GameBoyEmulator.h */,
+				412D59F8206A9543005528E6 /* GameBoyEmulator.m */,
+				412D59FA206A9591005528E6 /* GameGearEmulator.h */,
+				412D59FB206A9591005528E6 /* GameGearEmulator.m */,
+				412D59F4206A8AB0005528E6 /* ConsoleCommand.h */,
+				412D59FD206A9696005528E6 /* ConsoleController.h */,
+				412D59FE206A9696005528E6 /* ConsoleController.m */,
+				412D5A00206A9757005528E6 /* TouchConsoleController.h */,
+				412D5A01206A9757005528E6 /* TouchConsoleController.m */,
+			);
+			path = "桥接模式";
+			sourceTree = "<group>";
+		};
 		418EAD38202B4E0B0067612B /* semaphore */ = {
 			isa = PBXGroup;
 			children = (
@@ -11749,6 +11841,54 @@
 				41CE38F5204EE2DC005279B6 /* ImageShadowFilter.m */,
 			);
 			path = "装饰";
+			sourceTree = "<group>";
+		};
+		41D53C52207119B500ECACA5 /* inner */ = {
+			isa = PBXGroup;
+			children = (
+				412D59DC206954B9005528E6 /* CustomTextField.h */,
+				412D59E3206954B9005528E6 /* CustomTextField.m */,
+				412D59E1206954B9005528E6 /* InputValidator.h */,
+				412D59DA206954B9005528E6 /* InputValidator.m */,
+				412D59DD206954B9005528E6 /* NumericInputValidator.h */,
+				412D59E2206954B9005528E6 /* NumericInputValidator.m */,
+				412D59DE206954B9005528E6 /* AlphaInputValidator.h */,
+				412D59E4206954B9005528E6 /* AlphaInputValidator.m */,
+			);
+			path = inner;
+			sourceTree = "<group>";
+		};
+		41D53C582071286D00ECACA5 /* 设计模式例子 */ = {
+			isa = PBXGroup;
+			children = (
+				41D53C592071288800ECACA5 /* YDDesignViewController.h */,
+				41D53C5A2071288800ECACA5 /* YDDesignViewController.m */,
+			);
+			path = "设计模式例子";
+			sourceTree = "<group>";
+		};
+		41E74E9C20693283004018B7 /* 对象状态 */ = {
+			isa = PBXGroup;
+			children = (
+				41E74E9D2069329E004018B7 /* 备忘录 */,
+			);
+			path = "对象状态";
+			sourceTree = "<group>";
+		};
+		41E74E9D2069329E004018B7 /* 备忘录 */ = {
+			isa = PBXGroup;
+			children = (
+				41E74E9E206933C0004018B7 /* MementoViewController.h */,
+				41E74E9F206933C0004018B7 /* MementoViewController.m */,
+				41E74EA1206943BC004018B7 /* YDCustomView.h */,
+				41E74EA2206943BC004018B7 /* YDCustomView.m */,
+				41E74EA820694450004018B7 /* YDCustomView+Private.h */,
+				41E74EA920694450004018B7 /* YDCustomView+Private.m */,
+				41E74EAB20694519004018B7 /* ScribbleMemento.h */,
+				41E74EAC20694519004018B7 /* ScribbleMemento.m */,
+				41E74EAE2069455A004018B7 /* Mark.h */,
+			);
+			path = "备忘录";
 			sourceTree = "<group>";
 		};
 		B2F2B1BDBCAF68EF29E81E31 /* Frameworks */ = {
@@ -12149,6 +12289,7 @@
 				048B423E2028482600FAEB19 /* YDCollectionNullReusableView.h in Sources */,
 				048B4292202C47EC00FAEB19 /* YDExtension.m in Sources */,
 				4107DE2A206803EC00C42A7A /* CabDriver.m in Sources */,
+				41E74EAD20694519004018B7 /* ScribbleMemento.m in Sources */,
 				048B423F2028482600FAEB19 /* YDCollectionReusableView.h in Sources */,
 				048B4245202854ED00FAEB19 /* YDTest12Layer.m in Sources */,
 				41CE38F0204EDFFB005279B6 /* ImageFilter.m in Sources */,
@@ -12162,6 +12303,7 @@
 				0441EF9D2015D44B0048F881 /* YDCTImageModel.m in Sources */,
 				4107DE132067FCCC00C42A7A /* YDAdaptation.m in Sources */,
 				4107DDE52067DB5800C42A7A /* AcmeView.m in Sources */,
+				41D53C5520711A2D00ECACA5 /* YDValidateViewController.m in Sources */,
 				41CE38E9204EDDA7005279B6 /* YDDecorateViewController.m in Sources */,
 				4107DDBA2067CE5200C42A7A /* CanvasView.m in Sources */,
 				4107DE162067FCD800C42A7A /* Command.m in Sources */,
@@ -12169,6 +12311,7 @@
 				048B4263202AA64E00FAEB19 /* YDTest17ViewController.m in Sources */,
 				04AAA63B202835E8007AC7E9 /* YDTest12View.m in Sources */,
 				048B424C2028673000FAEB19 /* YDTest14ViewController.m in Sources */,
+				412D59F9206A9543005528E6 /* GameBoyEmulator.m in Sources */,
 				0441EFA32015D5D90048F881 /* YDCTUtils.m in Sources */,
 				048B42372028469700FAEB19 /* YDCollectionNullReusableView.m in Sources */,
 				4107DDB72067CD7400C42A7A /* YDFactoryViewController.m in Sources */,
@@ -12177,6 +12320,8 @@
 				0426CC9A2046E412007EF161 /* MaginfireAttack.m in Sources */,
 				4107DE242068017300C42A7A /* Car.m in Sources */,
 				048B4287202C2EBA00FAEB19 /* YDHtmlParserNode.m in Sources */,
+				41E74EA0206933C0004018B7 /* MementoViewController.m in Sources */,
+				412D59FF206A9696005528E6 /* ConsoleController.m in Sources */,
 				048B425C202A961200FAEB19 /* YDTest16Label.m in Sources */,
 				4107DE0C2067F51100C42A7A /* StandardCharacterBuilder.m in Sources */,
 				04FF490F2015910500C02EEF /* ViewController.m in Sources */,
@@ -12185,6 +12330,7 @@
 				04FF49502015B1AC00C02EEF /* UIView+frameAdjust.m in Sources */,
 				0471505B203FC2B600278E15 /* FlowerFactory.m in Sources */,
 				040257C7203185CA004E58FB /* YDTestlayerViewController.m in Sources */,
+				412D59FC206A9591005528E6 /* GameGearEmulator.m in Sources */,
 				0471504C203E9F0300278E15 /* YDLayerCellView.m in Sources */,
 				04FF491A2015910500C02EEF /* main.m in Sources */,
 				048B424F202867FC00FAEB19 /* YDLabel.m in Sources */,
@@ -12192,16 +12338,21 @@
 				0441EFA02015D53C0048F881 /* YDCTLinkModel.m in Sources */,
 				0426CCA52047CAB6007EF161 /* YDTextImageViewController.m in Sources */,
 				0441EFAA2015DB440048F881 /* YDCTParser.m in Sources */,
+				412D5A02206A9757005528E6 /* TouchConsoleController.m in Sources */,
 				04715055203FC1D600278E15 /* YDFlyWeightViewController.m in Sources */,
 				4107DE1D2067FF3700C42A7A /* CoordinatingViewController.m in Sources */,
 				0426CC852046E0DE007EF161 /* YDChainReponsibilityViewController.m in Sources */,
 				418EAD3B202B4E2C0067612B /* YDTest16ViewController.m in Sources */,
+				41E74EAA20694450004018B7 /* YDCustomView+Private.m in Sources */,
+				412D59ED206954BA005528E6 /* CustomTextField.m in Sources */,
 				4107DE0F2067F6BC00C42A7A /* ChasingGame.m in Sources */,
 				0426CC8B2046E175007EF161 /* AttackHandler.m in Sources */,
 				4107DDC82067D20800C42A7A /* PaperCanvasViewController.m in Sources */,
+				41E74EA3206943BC004018B7 /* YDCustomView.m in Sources */,
 				4107DDD72067D85D00C42A7A /* YDAabstractFactoryViewController.m in Sources */,
 				048B425320286A3200FAEB19 /* YDTest15ViewController.m in Sources */,
 				41CE38F6204EE2DC005279B6 /* ImageShadowFilter.m in Sources */,
+				412D59F3206A8A69005528E6 /* ConsoleEmulator.m in Sources */,
 				04FFAF0A2019A8EE00E54521 /* YDTransView.m in Sources */,
 				4107DE022067EE4700C42A7A /* SierraToolbar.m in Sources */,
 				4107DDCE2067D4C300C42A7A /* CanvasGenerator.m in Sources */,
@@ -12209,6 +12360,7 @@
 				0441EF8D2015C9A80048F881 /* YDCTView.m in Sources */,
 				4107DE1A2067FDB700C42A7A /* SetStrokeColorCommand.m in Sources */,
 				048B4278202AEF9400FAEB19 /* YDHtmlElementBuilder.m in Sources */,
+				412D59EA206954BA005528E6 /* InputValidator.m in Sources */,
 				4107DDDA2067D91C00C42A7A /* BrandingFactory.m in Sources */,
 				41CE38F3204EE1AA005279B6 /* ImageTransformFilter.m in Sources */,
 				04715058203FC24F00278E15 /* FlowerView.m in Sources */,
@@ -12221,11 +12373,15 @@
 				04715049203E9C6D00278E15 /* YDHorizontalLayerCell.m in Sources */,
 				04715082203FECD600278E15 /* YDTest23ViewController.m in Sources */,
 				0426CC9D2046E48E007EF161 /* Avatar.m in Sources */,
+				412D59EE206954BA005528E6 /* AlphaInputValidator.m in Sources */,
+				41D53C5720711B4E00ECACA5 /* StrategyViewController.m in Sources */,
 				04715071203FCB6600278E15 /* FlyweightView.m in Sources */,
 				4107DDCB2067D2F900C42A7A /* YDClothViewController.m in Sources */,
+				412D59EC206954BA005528E6 /* NumericInputValidator.m in Sources */,
 				0426CCA02046E70E007EF161 /* LightAttack.m in Sources */,
 				4107DE27206802AF00C42A7A /* TaxiMeter.m in Sources */,
 				0441EFA62015DA1A0048F881 /* YDCTConfig.m in Sources */,
+				41D53C5B2071288800ECACA5 /* YDDesignViewController.m in Sources */,
 				4107DE212068015700C42A7A /* AppearancePatternViewController.m in Sources */,
 				048B4259202A959B00FAEB19 /* YDTest1q6ViewController.m in Sources */,
 				04FF494D20159C3800C02EEF /* CTDisplayView.m in Sources */,
