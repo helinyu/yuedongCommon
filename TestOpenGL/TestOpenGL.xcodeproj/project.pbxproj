@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15576E6F61030D741524BB53 /* libPods-TestOpenGLUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CBFDB2C5102FBB095C4ACE /* libPods-TestOpenGLUITests.a */; };
+		4199190A2077705700715F4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 419919092077705700715F4A /* AppDelegate.m */; };
+		4199190D2077705700715F4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4199190C2077705700715F4A /* ViewController.m */; };
+		419919102077705700715F4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4199190E2077705700715F4A /* Main.storyboard */; };
+		419919122077705900715F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419919112077705900715F4A /* Assets.xcassets */; };
+		419919152077705900715F4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419919132077705900715F4A /* LaunchScreen.storyboard */; };
+		419919182077705900715F4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 419919172077705900715F4A /* main.m */; };
+		419919222077705900715F4A /* TestOpenGLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 419919212077705900715F4A /* TestOpenGLTests.m */; };
+		4199192D2077705900715F4A /* TestOpenGLUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4199192C2077705900715F4A /* TestOpenGLUITests.m */; };
+		4199193D207783E100715F4A /* YDCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4199193C207783E100715F4A /* YDCustomView.m */; };
+		7FA8411185D2D7DB97308247 /* libPods-TestOpenGLTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5CFF14026E87035718CC9B /* libPods-TestOpenGLTests.a */; };
+		A5627BE3E761006372A3C40B /* libPods-TestOpenGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 847FB125C68B2E7F3A97A22E /* libPods-TestOpenGL.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4199191E2077705900715F4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 419918FD2077705700715F4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 419919042077705700715F4A;
+			remoteInfo = TestOpenGL;
+		};
+		419919292077705900715F4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 419918FD2077705700715F4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 419919042077705700715F4A;
+			remoteInfo = TestOpenGL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		419919052077705700715F4A /* TestOpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestOpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		419919082077705700715F4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		419919092077705700715F4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4199190B2077705700715F4A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4199190C2077705700715F4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4199190F2077705700715F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		419919112077705900715F4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		419919142077705900715F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		419919162077705900715F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		419919172077705900715F4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4199191D2077705900715F4A /* TestOpenGLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestOpenGLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		419919212077705900715F4A /* TestOpenGLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOpenGLTests.m; sourceTree = "<group>"; };
+		419919232077705900715F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		419919282077705900715F4A /* TestOpenGLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestOpenGLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4199192C2077705900715F4A /* TestOpenGLUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOpenGLUITests.m; sourceTree = "<group>"; };
+		4199192E2077705900715F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4199193B207783E100715F4A /* YDCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCustomView.h; sourceTree = "<group>"; };
+		4199193C207783E100715F4A /* YDCustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDCustomView.m; sourceTree = "<group>"; };
+		5592CA2A8D9C93FA00EF0607 /* Pods-TestOpenGLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestOpenGLTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestOpenGLTests/Pods-TestOpenGLTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C5CFF14026E87035718CC9B /* libPods-TestOpenGLTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestOpenGLTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71DE10E6AFFA400CC4B09FFD /* Pods-TestOpenGL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestOpenGL.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestOpenGL/Pods-TestOpenGL.release.xcconfig"; sourceTree = "<group>"; };
+		7B2B0448773CBC965EEAAA40 /* Pods-TestOpenGL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestOpenGL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestOpenGL/Pods-TestOpenGL.debug.xcconfig"; sourceTree = "<group>"; };
+		80C7DE5C7D814891F19D4D64 /* Pods-TestOpenGLUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestOpenGLUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestOpenGLUITests/Pods-TestOpenGLUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		847FB125C68B2E7F3A97A22E /* libPods-TestOpenGL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestOpenGL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C77B607F577B75B2298F1718 /* Pods-TestOpenGLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestOpenGLTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestOpenGLTests/Pods-TestOpenGLTests.release.xcconfig"; sourceTree = "<group>"; };
+		D4CBFDB2C5102FBB095C4ACE /* libPods-TestOpenGLUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestOpenGLUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA39FE76EABD41CF9DC15F5 /* Pods-TestOpenGLUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestOpenGLUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestOpenGLUITests/Pods-TestOpenGLUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		419919022077705700715F4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5627BE3E761006372A3C40B /* libPods-TestOpenGL.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4199191A2077705900715F4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA8411185D2D7DB97308247 /* libPods-TestOpenGLTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		419919252077705900715F4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15576E6F61030D741524BB53 /* libPods-TestOpenGLUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		419918FC2077705700715F4A = {
+			isa = PBXGroup;
+			children = (
+				419919072077705700715F4A /* TestOpenGL */,
+				419919202077705900715F4A /* TestOpenGLTests */,
+				4199192B2077705900715F4A /* TestOpenGLUITests */,
+				419919062077705700715F4A /* Products */,
+				B8B3746C7CC872D05991486B /* Pods */,
+				8725E21B919112CABD2B9A03 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		419919062077705700715F4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				419919052077705700715F4A /* TestOpenGL.app */,
+				4199191D2077705900715F4A /* TestOpenGLTests.xctest */,
+				419919282077705900715F4A /* TestOpenGLUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		419919072077705700715F4A /* TestOpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				4199193A207783CC00715F4A /* Test1 */,
+				419919082077705700715F4A /* AppDelegate.h */,
+				419919092077705700715F4A /* AppDelegate.m */,
+				4199190B2077705700715F4A /* ViewController.h */,
+				4199190C2077705700715F4A /* ViewController.m */,
+				4199190E2077705700715F4A /* Main.storyboard */,
+				419919112077705900715F4A /* Assets.xcassets */,
+				419919132077705900715F4A /* LaunchScreen.storyboard */,
+				419919162077705900715F4A /* Info.plist */,
+				419919172077705900715F4A /* main.m */,
+			);
+			path = TestOpenGL;
+			sourceTree = "<group>";
+		};
+		419919202077705900715F4A /* TestOpenGLTests */ = {
+			isa = PBXGroup;
+			children = (
+				419919212077705900715F4A /* TestOpenGLTests.m */,
+				419919232077705900715F4A /* Info.plist */,
+			);
+			path = TestOpenGLTests;
+			sourceTree = "<group>";
+		};
+		4199192B2077705900715F4A /* TestOpenGLUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4199192C2077705900715F4A /* TestOpenGLUITests.m */,
+				4199192E2077705900715F4A /* Info.plist */,
+			);
+			path = TestOpenGLUITests;
+			sourceTree = "<group>";
+		};
+		4199193A207783CC00715F4A /* Test1 */ = {
+			isa = PBXGroup;
+			children = (
+				4199193B207783E100715F4A /* YDCustomView.h */,
+				4199193C207783E100715F4A /* YDCustomView.m */,
+			);
+			path = Test1;
+			sourceTree = "<group>";
+		};
+		8725E21B919112CABD2B9A03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				847FB125C68B2E7F3A97A22E /* libPods-TestOpenGL.a */,
+				5C5CFF14026E87035718CC9B /* libPods-TestOpenGLTests.a */,
+				D4CBFDB2C5102FBB095C4ACE /* libPods-TestOpenGLUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8B3746C7CC872D05991486B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B2B0448773CBC965EEAAA40 /* Pods-TestOpenGL.debug.xcconfig */,
+				71DE10E6AFFA400CC4B09FFD /* Pods-TestOpenGL.release.xcconfig */,
+				5592CA2A8D9C93FA00EF0607 /* Pods-TestOpenGLTests.debug.xcconfig */,
+				C77B607F577B75B2298F1718 /* Pods-TestOpenGLTests.release.xcconfig */,
+				80C7DE5C7D814891F19D4D64 /* Pods-TestOpenGLUITests.debug.xcconfig */,
+				FBA39FE76EABD41CF9DC15F5 /* Pods-TestOpenGLUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		419919042077705700715F4A /* TestOpenGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 419919312077705900715F4A /* Build configuration list for PBXNativeTarget "TestOpenGL" */;
+			buildPhases = (
+				58FD53E6354D50A5D18537DD /* [CP] Check Pods Manifest.lock */,
+				419919012077705700715F4A /* Sources */,
+				419919022077705700715F4A /* Frameworks */,
+				419919032077705700715F4A /* Resources */,
+				505CE7CE206A25D79FD56988 /* [CP] Embed Pods Frameworks */,
+				55BAFB1E6B31D83AFC42F83B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestOpenGL;
+			productName = TestOpenGL;
+			productReference = 419919052077705700715F4A /* TestOpenGL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4199191C2077705900715F4A /* TestOpenGLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 419919342077705900715F4A /* Build configuration list for PBXNativeTarget "TestOpenGLTests" */;
+			buildPhases = (
+				60B79F52F7D732C77CCDD7AF /* [CP] Check Pods Manifest.lock */,
+				419919192077705900715F4A /* Sources */,
+				4199191A2077705900715F4A /* Frameworks */,
+				4199191B2077705900715F4A /* Resources */,
+				C220E9553A4F8E36848AA442 /* [CP] Embed Pods Frameworks */,
+				3AF763024AC2277280E320C6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4199191F2077705900715F4A /* PBXTargetDependency */,
+			);
+			name = TestOpenGLTests;
+			productName = TestOpenGLTests;
+			productReference = 4199191D2077705900715F4A /* TestOpenGLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		419919272077705900715F4A /* TestOpenGLUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 419919372077705900715F4A /* Build configuration list for PBXNativeTarget "TestOpenGLUITests" */;
+			buildPhases = (
+				5426A3FC286924D1216F1087 /* [CP] Check Pods Manifest.lock */,
+				419919242077705900715F4A /* Sources */,
+				419919252077705900715F4A /* Frameworks */,
+				419919262077705900715F4A /* Resources */,
+				6132D37260284D1B5100EB4A /* [CP] Embed Pods Frameworks */,
+				4E40732DF1D8505115A15895 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4199192A2077705900715F4A /* PBXTargetDependency */,
+			);
+			name = TestOpenGLUITests;
+			productName = TestOpenGLUITests;
+			productReference = 419919282077705900715F4A /* TestOpenGLUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		419918FD2077705700715F4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Aka;
+				TargetAttributes = {
+					419919042077705700715F4A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					4199191C2077705900715F4A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 419919042077705700715F4A;
+					};
+					419919272077705900715F4A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 419919042077705700715F4A;
+					};
+				};
+			};
+			buildConfigurationList = 419919002077705700715F4A /* Build configuration list for PBXProject "TestOpenGL" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 419918FC2077705700715F4A;
+			productRefGroup = 419919062077705700715F4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				419919042077705700715F4A /* TestOpenGL */,
+				4199191C2077705900715F4A /* TestOpenGLTests */,
+				419919272077705900715F4A /* TestOpenGLUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		419919032077705700715F4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419919152077705900715F4A /* LaunchScreen.storyboard in Resources */,
+				419919122077705900715F4A /* Assets.xcassets in Resources */,
+				419919102077705700715F4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4199191B2077705900715F4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		419919262077705900715F4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AF763024AC2277280E320C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestOpenGLTests/Pods-TestOpenGLTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E40732DF1D8505115A15895 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestOpenGLUITests/Pods-TestOpenGLUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		505CE7CE206A25D79FD56988 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestOpenGL/Pods-TestOpenGL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5426A3FC286924D1216F1087 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		55BAFB1E6B31D83AFC42F83B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestOpenGL/Pods-TestOpenGL-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58FD53E6354D50A5D18537DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		60B79F52F7D732C77CCDD7AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6132D37260284D1B5100EB4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestOpenGLUITests/Pods-TestOpenGLUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C220E9553A4F8E36848AA442 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestOpenGLTests/Pods-TestOpenGLTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		419919012077705700715F4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4199193D207783E100715F4A /* YDCustomView.m in Sources */,
+				4199190D2077705700715F4A /* ViewController.m in Sources */,
+				419919182077705900715F4A /* main.m in Sources */,
+				4199190A2077705700715F4A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		419919192077705900715F4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419919222077705900715F4A /* TestOpenGLTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		419919242077705900715F4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4199192D2077705900715F4A /* TestOpenGLUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4199191F2077705900715F4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 419919042077705700715F4A /* TestOpenGL */;
+			targetProxy = 4199191E2077705900715F4A /* PBXContainerItemProxy */;
+		};
+		4199192A2077705900715F4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 419919042077705700715F4A /* TestOpenGL */;
+			targetProxy = 419919292077705900715F4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4199190E2077705700715F4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4199190F2077705700715F4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		419919132077705900715F4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				419919142077705900715F4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4199192F2077705900715F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		419919302077705900715F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		419919322077705900715F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B2B0448773CBC965EEAAA40 /* Pods-TestOpenGL.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = TestOpenGL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.music.linyu.TestOpenGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		419919332077705900715F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71DE10E6AFFA400CC4B09FFD /* Pods-TestOpenGL.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = TestOpenGL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.music.linyu.TestOpenGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		419919352077705900715F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5592CA2A8D9C93FA00EF0607 /* Pods-TestOpenGLTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = TestOpenGLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.music.linyu.TestOpenGLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestOpenGL.app/TestOpenGL";
+			};
+			name = Debug;
+		};
+		419919362077705900715F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C77B607F577B75B2298F1718 /* Pods-TestOpenGLTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = TestOpenGLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.music.linyu.TestOpenGLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestOpenGL.app/TestOpenGL";
+			};
+			name = Release;
+		};
+		419919382077705900715F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80C7DE5C7D814891F19D4D64 /* Pods-TestOpenGLUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = TestOpenGLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.music.linyu.TestOpenGLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestOpenGL;
+			};
+			name = Debug;
+		};
+		419919392077705900715F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBA39FE76EABD41CF9DC15F5 /* Pods-TestOpenGLUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = TestOpenGLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.music.linyu.TestOpenGLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestOpenGL;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		419919002077705700715F4A /* Build configuration list for PBXProject "TestOpenGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4199192F2077705900715F4A /* Debug */,
+				419919302077705900715F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		419919312077705900715F4A /* Build configuration list for PBXNativeTarget "TestOpenGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				419919322077705900715F4A /* Debug */,
+				419919332077705900715F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		419919342077705900715F4A /* Build configuration list for PBXNativeTarget "TestOpenGLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				419919352077705900715F4A /* Debug */,
+				419919362077705900715F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		419919372077705900715F4A /* Build configuration list for PBXNativeTarget "TestOpenGLUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				419919382077705900715F4A /* Debug */,
+				419919392077705900715F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 419918FD2077705700715F4A /* Project object */;
+}
